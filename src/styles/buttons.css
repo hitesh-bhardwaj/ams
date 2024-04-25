@@ -1,0 +1,146 @@
+/* Main button */
+.btn {
+  display: inline-flex;
+  height: 3.5vw;
+  position: relative;
+  padding: 0 1.5vw 0 4vw;
+  width: 100%;
+  max-width: 12.5vw;
+  border-radius: 1000px;
+  background: transparent;
+  color: var(--button-primary);
+  font-size: 1.15vw;
+  font-weight: 400;
+  font-family: 'Aeonik';
+  text-rendering: geometricPrecision;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 1.5px solid var(--button-primary);
+}
+
+.btn .btn-circle {
+  clip-path: inset(0.5vw 75% 0.5vw calc(100% - 95%) round 4vw);
+  position: absolute;
+  inset: -1px;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5vw 0 4vw;
+  z-index: 2;
+  background-color: var(--button-primary);
+  color: var(--text-head);
+  transition: all .45s cubic-bezier(.785, .135, .15, .86);
+}
+
+.btn .btn-circle-text {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn .btn-icon {
+  width: 1vw;
+  overflow: hidden;
+  position: absolute;
+  left: 1.35vw;
+}
+
+.btn .btn-icon g{
+  fill: white;
+}
+
+.btn .btn-icon .btn-path {
+  transition: transform .45s cubic-bezier(.785, .135, .15, .86);
+  transform-origin: center center;
+}
+
+.btn .btn-icon .btn-path:first-child {
+  transform: translateX(-120%) scale(0);
+}
+
+.btn:hover .btn-icon .btn-path:first-child {
+  transform: translateX(0) scale(1);
+}
+
+.btn:hover .btn-icon .btn-path:last-child {
+  transform: translateX(120%) scale(0);
+}
+
+.btn:hover .btn-circle {
+  clip-path: inset(0 round 4vw);
+  color: white;
+}
+
+/* White Button */
+.btn.secondary{
+  color: white;
+  border-color: white;
+}
+.btn.secondary .btn-circle{
+  background-color: white;
+}
+.btn.secondary .btn-icon g{
+  fill: #4a4a4a;
+}
+.btn.secondary:hover .btn-circle{
+  color: #4a4a4a;
+}
+
+/* Link Button */
+.link-btn{
+  width: fit-content;
+  display: inline-flex;
+  font-size: 1.2vw;
+  align-items: center;
+  font-weight: 300;
+  position: relative;
+  color: #2a2a2a;
+  font-family: 'Sofia pro';
+  gap: 0.2vw;
+}
+
+.link-btn .btn-text{
+  width: 100%;
+  position: relative;
+  transition: var(--transition-1);
+}
+
+.link-btn .btn-text:after{
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  height: 1px;
+  width: 95%;
+  transform: scaleX(0);
+  transform-origin: center;
+  background: #2a2a2a;
+  transition: var(--transition-1);
+}
+
+.link-btn:hover .btn-text:after{
+  transform: scaleX(1);
+}
+
+.link-btn .btn-images{
+  width: 1.7vw;
+  overflow: hidden;
+}
+.link-btn .btn-images div{
+  display: inline-flex;
+  gap: 5px;
+  width: 200%;
+  transition: var(--transition-1);
+  transform: translateX(-50%);
+}
+.link-btn:hover .btn-images div{
+  transform: translateX(0%);
+}
+.link-btn svg{
+  width: 1.5vw;
+}
+
+/* Link Button END */

@@ -1,0 +1,213 @@
+/* Fonts Import Sofia Pro */
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-UltraLight.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-UltraLight-Italic.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-ExtraLight-Italic.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Light-Italic.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Regular-Italic.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Medium-Italic.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Semi-Bold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Semi-Bold-Italic.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Bold-Italic.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('/assets/fonts/sofia-pro/Sofia-Pro-Black-Italic.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+/* Fonts Import Aeonik*/
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-Thin.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-ThinItalic.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-Air.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-AirItalic.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/assets/fonts/aeonik/Aeonik-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}

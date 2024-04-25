@@ -1,0 +1,97 @@
+import PrimaryButton from "../Button/PrimaryButton"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { useRef } from "react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+/* eslint-disable @next/next/no-img-element */
+export default function Blog() {
+    const blogLeft = useRef(null);
+    const blogContainer = useRef(null);
+
+    useGSAP(() => {
+        ScrollTrigger.create({
+            trigger: blogLeft.current,
+            start: "top 10%",
+            endTrigger: blogContainer.current,
+            end: "bottom bottom",
+            invalidateOnRefresh: true,
+            pin: blogLeft.current,
+            // markers: true,
+        });
+    });
+
+    const BlogCard = ({img, title, content, date}) => {
+        return (
+            <>
+                <div className="flex items-start justify-between gap-[4%]">
+                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl fadeUp">
+                        <img 
+                            className="h-full w-full object-cover"
+                            src={img}
+                            alt="blog image"
+                            height="600"
+                            width="300"
+                        />
+                    </div>
+                    <div className="w-[60%] mt-[1vw] fadeUp">
+                        <span className="text-[0.9vw] font-light mb-[1vw] block">
+                            {date}
+                        </span>
+                        <h5 className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw]">
+                            {title}
+                        </h5>
+                        <p className="text-[0.9vw] font-light mb-[2.5vw] text-anim-2">
+                            {content}
+                        </p>
+                        <PrimaryButton link="/" btnText="Read More"/>
+                    </div>
+                </div>
+                <span className="block h-[1px] w-full my-[6vw] bg-[#d6d6d6] lineDraw"/>
+            </>
+        )
+    }
+
+    return (
+        <>
+            <section className="p-y-sm" ref={blogContainer}>
+                <div className="container-sm">
+                    <div className="flex items-start justify-between w-full">
+                        <div className="blog-left w-[45%] space-y-[3.5vw]" ref={blogLeft}>
+                            <h2 className="title-2 aeonik text-anim">
+                                <span>
+                                    Blog News
+                                </span>
+                            </h2>
+                            <p className="content-p w-[78%] text-anim-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div className="blog-right w-[55%]">
+                            <BlogCard 
+                                img={"/assets/home/blog-1.jpg"}
+                                title={"National Interventional Cardiology Congress 2023!"}
+                                content={"Shaping the future with ADVAGLIDE: AMS inspires at National Interventional Cardiology Congress."}
+                                date={"June, 2023"}
+                            />
+                            <BlogCard 
+                                img={"/assets/home/blog-2.png"}
+                                title={"Cardiovascular Care Redefined: IACTSCON 2024!"}
+                                content={"Cardiovascular Care Redefined with the pre-launch of ADVALVE: AMS at the Forefront of IACTSCON 2024."}
+                                date={"January, 2024"}
+                            />
+                            <BlogCard 
+                                img={"/assets/home/blog-3.jpeg"}
+                                title={"Arab Health 2024!"}
+                                content={"AMS Takes Center Stage at Arab Health in Dubai: Leading the Charge in Global MedTech with Industry leaders and partners Transforming Healthcare Worldwide"}
+                                date={"March, 2024"}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
