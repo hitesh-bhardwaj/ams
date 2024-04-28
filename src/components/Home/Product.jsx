@@ -86,9 +86,9 @@ export default function Product() {
                                                         ADVA GLIDE
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p-lg mb-[1.6vw]'>PTCA BALLOON CATHETER</h4>
-                                                <p className='content-p-md mb-[1.6vw]'><strong>Gliding The Science of Flow Restoration</strong></p>
-                                                <p className='content-p mb-[1.5vw]'>
+                                                <h4 className='content-p mb-[0.5vw]'>PTCA Balloon Catheter</h4>
+                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Gliding The Science of Flow Restoration</p>
+                                                <p className='content-p-md mb-[1.5vw]'>
                                                     Revolutionalized for the most challenging environments
                                                     <br />
                                                     <br />
@@ -122,8 +122,8 @@ export default function Product() {
                                                         ADVAGRIP 
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p-lg mb-[1.6vw] uppercase'>Knotless Tissue Control Device</h4>
-                                                <p className='content-p-md mb-[1.6vw]'><strong>A Grip like No Other</strong></p>
+                                                <h4 className='content-p mb-[0.5vw] capitalize'>Knotless Tissue Control Device</h4>
+                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>A Grip like No Other</p>
                                                 <p className='content-p mb-[1.5vw]'>
                                                     ADVAGRIP offers swift & secure tissue control without the hassle of tying knots. With AMS&apos; Tri-Cut Technology, ADVAGRIP ensures robust anchoring while maintaining suture strength. Its ultrasonically welded loop and angled tip provide added security and precision. Experience the efficiency and reliability of ADVAGRIP for superior wound closure.
                                                     <br />
@@ -158,8 +158,8 @@ export default function Product() {
                                                         ADVA PRO
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p-lg mb-[1.6vw] uppercase'>Sirolimus Eluting Coronary Stent System</h4>
-                                                <p className='content-p-md mb-[1.6vw]'><strong>Precision. Perfection. Pro.</strong></p>
+                                                <h4 className='content-p mb-[0.5vw] capitalize'>Sirolimus Eluting Coronary Stent System</h4>
+                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Precision. Perfection. Pro.</p>
                                                 <p className='content-p mb-[1.5vw]'>
                                                     The Pinnacle of Precision in Complex PCI is not just designed to transform lives; it&apos;s poised to redefine the very future of interventional cardiology for complex anatomies. Prepare to witness a revolution in cardiac care that will set a new standard for excellence.
                                                 </p>
@@ -191,8 +191,8 @@ export default function Product() {
                                                         ADVACRYL
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p-lg mb-[1.6vw]'>Polyglactin 910</h4>
-                                                <p className='content-p-md mb-[1.6vw]'><strong>Seal of Confidence</strong></p>
+                                                <h4 className='content-p mb-[0.5vw] capitalize'>Polyglactin 910</h4>
+                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Seal of Confidence</p>
                                                 <p className='content-p mb-[1.5vw]'>
                                                     ADVACRYL suture is braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. Braided ADVACRYL suture is coated with a mixture composed of Poly (Glycolide-co-lactide) (Glacomer 37) and calcium stearate. The suture is colored violet to increase visibility and is also available undyed.
                                                 </p>
