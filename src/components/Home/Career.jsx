@@ -14,18 +14,18 @@ export default function Career() {
                         className="h-full w-full object-cover left-0 top-0 rounded-[3vw] absolute"
                         src="/assets/home/career.mp4">
                     </video>
-                    <div className="w-1/2 relative z-10 space-y-[3.5vw]">
+                    <div className="w-[60%] relative z-10 space-y-[3.5vw]">
                         <h2 className="title-2 aeonik text-shadow text-anim">
                             <span className="">
-                                Passion Meets
+                                Join Our Mission to
                             </span>
                             <span>
-                                Purpose
+                                Create a Healthier World
                             </span>
                         </h2>
-                        <p className="content-p mr-[6vw] text-shadow text-anim-2">
+                        <p className="content-p w-[70%] text-shadow text-anim-2">
                             <span className="">
-                                Join our misstext-whiteion to push the boundaries of healthcare and achieve the extraordinary.
+                                To achieve the extraordinary, we need an exceptional team. At AMS, diversity and inclusiveness are the foundation for our dynamic and thriving culture. Unleash your potential and achieve the extraordinary in your career. Our unwavering commitment to revolutionizing healthcare is fuelled by our desire to make a difference and a meaningful impact in people’s lives.
                             </span>
                         </p>
                         <PrimaryButton className={"fadeUp"} link={"/"} btnText={"Career"}/>

@@ -45,7 +45,7 @@ export default function Hero() {
       });
 
     return (
-        <section className="hero main-gradient">
+        <section className="hero main-gradient mb-[12%]">
           <div className="hero-container relative">
             <div className="flex h-dvh w-full justify-start items-center">
               <div className="w-1/2">

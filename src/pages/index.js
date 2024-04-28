@@ -10,13 +10,15 @@ import Product from "@/components/Home/Product";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useEffect } from "react";
 import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Home() {
 
-  useGSAP(()=> {
+  useEffect(()=> {
+    const ctx = gsap.context(() => {
     const headings = document.querySelectorAll('.text-anim');
       headings.forEach((heading) => {
         const textAnim = new SplitType(heading, {types: 'words'});
@@ -32,9 +34,12 @@ export default function Home() {
           stagger: 0.04,
         });
       });
+    });
+    return () => ctx.revert();
   });
 
-  useGSAP(() => {
+  useEffect(()=>{
+    const ctx = gsap.context(() => {
     const sHeadings = document.querySelectorAll('.text-anim-2');
 
     sHeadings.forEach((sHeading) => {
@@ -52,9 +57,12 @@ export default function Home() {
           stagger: 0.01,
         });
       });
+    });
+    return () => ctx.revert();
   });
 
-  useGSAP(() => {
+  useEffect(()=>{
+    const ctx = gsap.context(() => {
     const lineDraws = document.querySelectorAll('.lineDraw');
       lineDraws.forEach((lineDraw) => {
         gsap.fromTo(
@@ -75,8 +83,11 @@ export default function Home() {
         );
       });
     });
+    return () => ctx.revert();
+    });
 
-  useGSAP(()=> {
+    useEffect(()=>{
+      const ctx = gsap.context(() => {
     const fadeUps = document.querySelectorAll('.fadeUp');
       fadeUps.forEach((fadeUp) => {
         gsap.fromTo(
@@ -97,6 +108,8 @@ export default function Home() {
           }
         );
       });
+    });
+    return () => ctx.revert();
   });
 
   return (
