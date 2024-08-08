@@ -46,7 +46,7 @@ export default function Hero() {
 
     return (
         <section className="hero main-gradient mb-[12%]">
-          <div className="hero-container relative">
+          <div className="px-[10%] relative">
             <div className="flex h-dvh w-full justify-start items-center">
               <div className="w-1/2">
                 <h1 className="title-1 aeonik drop-shadow-md hero-anim leading-[1]">

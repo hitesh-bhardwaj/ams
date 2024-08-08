@@ -99,7 +99,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
+                                            <Link href="/about" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
                                                 <span data-attr="About">
                                                     About
                                                 </span>

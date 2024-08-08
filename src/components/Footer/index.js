@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <>
             <footer className="main-gradient">
-                <div className="bg-white py-10 w-full rounded-b-[4vw]">
+                <div className="bg-white py-10 w-full ">
 
                 </div>
                 <div className="container-sm">

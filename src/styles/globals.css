@@ -7,9 +7,11 @@
 @import url('./buttons.css');
 @import url('./swiper-navigation.css');
 @import url('./swiper.css');
+@import url('./careerswiper.css');
 
 :root {
-  --text-color: #4a4a4a;
+  --text-color: #111111;
+  --p-text-color:#2A2A2A;
   --color-primary: #000;
   --button-primary: #143CA3;
 
@@ -114,6 +116,7 @@ body{
   color: var(--text-color);
   font-family: 'Sofia Pro';
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
 .aeonik{
@@ -157,40 +160,37 @@ body{
 
 /* Titles */
 .title-1{
-  font-size: 5.7vw;
+  font-size: 5vw;
   font-weight: 300;
   color: var(--text-color);
-  line-height: 0.8;
-  text-rendering: geometricPrecision;
+  line-height: 1.05;
 }
 
 .title-2{
-  font-size: 3.95vw;
+  font-size: 3.96vw;
   font-weight: 300;
   color: var(--text-color);
   line-height: 1.1;
-  text-rendering: geometricPrecision;
+ ;
 }
-
 .content-p-lg{
   color: var(--text-color);
-  text-rendering: geometricPrecision;
   font-weight: 400;
   font-size: 1.45vw;
 }
 
 .content-p-md{
   color: var(--text-color);
-  text-rendering: geometricPrecision;
   font-weight: 300;
   font-size: 1.25vw;
+  
 }
 
 .content-p{
-  color: var(--text-color);
-  text-rendering: geometricPrecision;
+  color: var(--p-text-color);
   font-weight: 300;
   font-size: 1.15vw;
+  line-height: 1.5;
 }
 
 .p-y-lg{
@@ -203,21 +203,19 @@ body{
   padding: 5% 0;
 }
 .container-lg{
-  width: 90%;
-  margin: auto;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container-sm{
-  width: 75%;
-  margin: auto;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Index Page CSS Start */
 
 /* Hero Section - 1920px */
-.hero-container{
-  padding: 0 10%;
-}
-
 .product-bg{
   background-image: url('/assets/home/product-bg.png');
   background-repeat: no-repeat;
@@ -284,11 +282,30 @@ body{
 
 /* text anim */
 .text-anim{
-  line-height: 0.8;
+  line-height: 1.05;
 }
 .text-anim span{
-  line-height: 1.2;
+  line-height: 1.05;
   overflow: hidden;
+}
+
+
+/*About page*/
+.molecular{
+  background-image: url('/assets/about/molecular-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+/*Career*/
+.career-container{
+  background-image: url('/assets/career/career-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.work-card{
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);  
 }
 
 /* Footer Links */
