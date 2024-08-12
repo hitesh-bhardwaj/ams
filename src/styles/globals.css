@@ -8,6 +8,7 @@
 @import url('./swiper-navigation.css');
 @import url('./swiper.css');
 @import url('./careerswiper.css');
+@import url('./endoswiper.css');
 
 :root {
   --text-color: #111111;
@@ -121,7 +122,6 @@ body{
 
 .aeonik{
   font-family: 'Aeonik';
-  text-rendering: geometricPrecision;
 }
 
 .c-text{
@@ -306,6 +306,47 @@ body{
 }
 .work-card{
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);  
+}
+.location{
+  box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.08);
+
+}
+/*Endo*/
+.endo-container{
+  background-image: url('/assets/endo/endo-hero.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.portfolio-text::before{
+  content: " ";
+  width: 15vw;
+  height: 0.1vw;
+  background-color: #000;
+  display: block;
+}
+
+/*Hernia*/
+.hernia-container{
+  background-image: url('/assets/hernia/hernia-hero.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+/*Manufacturing*/
+.manufacturing-container{
+  background-image: url('/assets/manufacturing/manufacturing-hero.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.capability-card-outer{
+  height: 20vw;
+  width: 20vw;
+  background-image: linear-gradient(#BDCFFD, #2280C6);
+  /* transform: rotate(-8.9deg); */
+  border-radius: 40px;
 }
 
 /* Footer Links */

@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div className='w-full'>
             <div className='h-[3vw] w-[3vw] relative top-[40%] left-[2%]'>
-            <img src='/assets/career/search.png'/>
+            <img src='/assets/career/search.png' alt='search-icon'/>
             </div>
             <input type='text' placeholder='Explore job openings' className='w-[95%] h-[4.5vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3]'/>
 

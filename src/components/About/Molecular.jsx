@@ -13,7 +13,7 @@ const Molecular = () => {
           </h2>
           </div>
             <p className='content-p w-[70%]'>
-            Exploring the fundamental elements that shape AMS's ethos and culture, illustrating the core principles guiding our character and values.
+            Exploring the fundamental elements that shape AMS&apos;s ethos and culture, illustrating the core principles guiding our character and values.
             </p>
 
         </div>
@@ -58,7 +58,7 @@ const Molecular = () => {
 
         </div>
                 <h2 className='text-[2.5vw] mt-[1vw] mb-[1.5vw]  font-light '>Lorem Ipsum</h2>
-                <p className='content-p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p className='content-p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
 
         </div>
         </div>

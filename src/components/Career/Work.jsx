@@ -19,6 +19,7 @@ const Work = () => {
                 src="/assets/career/career-work.png"
                 height={600}
                 width={600}
+                alt=" Career Work"
               />
             </div>
             <div className="w-[30%] text-[2vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111]">
@@ -43,6 +44,7 @@ const Work = () => {
                 src="/assets/career/career-employees.png"
                 height={600}
                 width={600}
+                alt="Career Employees"
               />
             </div>
             <div className="w-[30%] text-[2vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111]">
@@ -66,6 +68,7 @@ const Work = () => {
                 src="/assets/career/career-medical.png"
                 height={600}
                 width={600}
+                alt="Career Medical"
               />
             </div>
             <div className="w-[30%] text-[2vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111]">

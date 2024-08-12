@@ -14,7 +14,7 @@ const Connecting = () => {
           </div>
           <div className='mt-[2vw] mb-[5vw] content-p'>
           <p>
-          Ready to shape the future of healthcare with us? Reach out today and let's innovate together.
+          Ready to shape the future of healthcare with us? Reach out today and let&apos;s innovate together.
           </p>
           </div>
           <div>
