@@ -9,6 +9,7 @@
 @import url('./swiper.css');
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
+@import url('./productSwiper.css');
 
 :root {
   --text-color: #111111;
@@ -164,6 +165,8 @@ body{
   font-weight: 300;
   color: var(--text-color);
   line-height: 1.05;
+  
+  
 }
 
 .title-2{
@@ -190,7 +193,7 @@ body{
   color: var(--p-text-color);
   font-weight: 300;
   font-size: 1.15vw;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .p-y-lg{
@@ -321,7 +324,7 @@ body{
 .portfolio-text::before{
   content: " ";
   width: 15vw;
-  height: 0.1vw;
+  height: 1px;
   background-color: #000;
   display: block;
 }
@@ -369,4 +372,8 @@ body{
 .footer-link a:hover span{
   transform: translateY(-110%);
   transition: transform 1.2s cubic-bezier(.19,1,.22,1);
+}
+.glassmorphism {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.45);
 }

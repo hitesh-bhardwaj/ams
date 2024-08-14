@@ -9,7 +9,7 @@ gsap.registerPlugin(useGSAP);
 const Hero = () => {
   return (
    <>
-   <section className="hero main-gradient mb-[12%]">
+   <section className="hero main-gradient h-[120vh] mb-[12%]" id="hero">
           <div className="px-[10%] relative">
             <div className="flex h-dvh w-full justify-start items-center">
               <div className="">
@@ -28,16 +28,18 @@ const Hero = () => {
                   </span>
                 </p>
               </div>
-
-              <div className="absolute w-[61%] right-0 bottom-[5%]">
+              <div className="absolute right-0 top-[15%]">
+              <div className="w-[63vw] h-[45vw] relative  right-0 bottom-[5%]">
                 <Image
                   className="hero-img"
                   src="/assets/about/hero-image.png"
                   alt="Hero Image"
-                  width= {1000}
-                  height= {1000}
+                  fill
                 />
               </div>
+
+              </div>
+              
               
             </div>
           </div>

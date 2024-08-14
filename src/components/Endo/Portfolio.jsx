@@ -1,15 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-const PortfolioCard =({img, txt})=>{
+const PortfolioCard =({img, txt , className})=>{
   return (
     <>
-     <div className=" w-[21vw] h-[10vw] relative flex justify-center items-center  text-center text-[#fff] ">
+    <Link href={"#"}>
+    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} `}>
           <Image
             src={img}
            fill
             alt="portfolio-1"
-            className="rounded-[40px]"
+            
           />
           <div className="flex justify-center items-center absolute ">
           <p
@@ -19,19 +21,21 @@ const PortfolioCard =({img, txt})=>{
           </p>
           </div>
         </div>
+    </Link>
+  
     </>
   )
 }
 
 const Portfolio = () => {
   return (
-    <section className="container-lg flex flex-col items-center justify-center ">
+    <section className="container-lg flex flex-col items-center justify-center px-[4%] pb-[7%] ">
       <div>
         <h2 className="title-2 aeonik ">
           <span>Our Advanced Portfolio</span>
         </h2>
       </div>
-      <div className="flex items-center justify-between gap-[3vw] mt-[5vw]">
+      <div className="flex items-center justify-between gap-[3vw] mt-[7vw]">
        
         <PortfolioCard img={"/assets/portfolio/portfolio-1.png"} txt = {"Advanced Interventional Cardiology"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-2.png"} txt = {"Advanced Cardiovascular Solutions"}/>

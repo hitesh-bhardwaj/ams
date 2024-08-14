@@ -1,4 +1,4 @@
-.careerSwiper .myswiper{
+.careerSwiper .mySwiper{
     padding-bottom: 5vw;
 }
 .careerSwiper .swiper .swiper-wrapper .swiper-slide{
@@ -23,4 +23,7 @@ opacity:1;
     width: 2vw;
     border-radius: 10px;
     background-color: #143CA3;
+}
+.mySwiper .swiper-slide{
+    width: 25.5vw !important;
 }

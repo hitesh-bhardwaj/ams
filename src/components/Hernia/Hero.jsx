@@ -1,8 +1,8 @@
 import React from 'react'
 const Hero = () => {
   return (
-    <section className=" mb-[12%] hernia-container">
-    <div className="px-[10%] relative">
+    <section className=" mb-[12%] hernia-container" id='hero'>
+    <div className="px-[12%] relative">
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">
           <h1 className="title-1 aeonik drop-shadow-md  leading-[1] ">

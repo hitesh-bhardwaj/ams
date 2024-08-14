@@ -3,12 +3,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
+import Link from "next/link";
 
 
 const JobCard =({dept, designation, location})=>{
   return(
-    <>
-          <div className="pt-[5%] h-[23vw] px-[4%] w-[20vw] flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card">
+    <>   
+    <Link href={"#"} className="cursor-default w-[22vw] block">
+    <div className="pt-[5%] h-[23vw] px-[4%] w-[22vw] flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card cursor-pointer">
             <div className="content-p">
               {dept}
             </div>
@@ -17,19 +19,21 @@ const JobCard =({dept, designation, location})=>{
                 {designation} 
               </h2>
             </div>
-            <div className="content-p border-t-[1px] w-[20vw] h-[4vw] items-center  py-[3%] bg-white/90 flex  justify-center location rounded-b-[40px]">
+            <div className="content-p border-t-[1px] w-[22vw] h-[4vw] items-center  py-[3%] bg-white/90 flex  justify-center location rounded-b-[40px]">
              {location}
             </div>
           </div>
+    </Link>
+         
     </>
   )
 }
 const Jobs = () => {
   return (
-    <section>
+    <section id="jobs">
       <div className="container-sm mb-[15%] ">
         <div className=" flex items-center justify-center ">
-          <h2 className="title-2 aeonik  ml-[9%]">
+          <h2 className="title-2 aeonik ">
             <span>Featured Jobs</span>
           </h2>
         </div>
@@ -45,8 +49,8 @@ const Jobs = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[ Autoplay,Pagination]}
-        className="myswiper"
+        modules={[ Pagination]}
+        className="mySwiper"
       >
         <SwiperSlide>
           <JobCard dept={"Sales"} designation={"Territory Sales Manager"} location={"Jaipur"}/></SwiperSlide>

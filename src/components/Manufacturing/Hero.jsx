@@ -1,7 +1,7 @@
 import React from 'react'
 const Hero = () => {
   return (
-    <section className=" mb-[12%] manufacturing-container">
+    <section className=" mb-[12%] manufacturing-container" id='hero'>
     <div className="px-[10%] relative">
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">

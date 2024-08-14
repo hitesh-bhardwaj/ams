@@ -1,11 +1,11 @@
 import React from 'react'
 const Hero = () => {
   return (
-    <section className=" mb-[12%] endo-container">
-    <div className="px-[10%] relative">
+    <section className=" mb-[12%] endo-container" id='hero'>
+    <div className="px-[12%] relative">
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">
-          <h1 className="title-1 aeonik drop-shadow-md  leading-[1] ">
+          <h1 className="title-1 aeonik drop-shadow-lg  leading-[1] ">
             <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] ">
             Breaking New Ground
             </span>

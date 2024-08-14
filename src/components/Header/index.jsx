@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useEffect } from "react";
 import Menu from "./Menu";
 import { useLenis } from '@studio-freight/react-lenis';
+import { useRouter } from "next/router";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const router = useRouter();
     const lenis = useLenis();
 
     const openMenu = () => {
@@ -16,6 +19,18 @@ const Header = () => {
         setIsMenuOpen(false);
         lenis.start();
     };
+    
+  useEffect(() => {
+    const handleRouteChange = () => {
+      lenis.start();
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router, lenis]);
 
     return (
         <>

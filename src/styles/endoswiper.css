@@ -4,3 +4,13 @@
     left: -20%;
    top: 50%;
 }
+.endoSmallSwiper .swiper-wrapper{
+    display: flex ;
+    gap: 0.7vw;
+}
+.myswiper {
+    width: 85vw;
+}
+.myswiper .swiper-slide{
+    width: 85vw !important;
+}

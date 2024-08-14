@@ -1,9 +1,26 @@
 import React from 'react'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 const Molecular = () => {
+    useGSAP(()=>{
+        gsap.to(".molecular-left",{
+            scrollTrigger:{
+                trigger:".molecular",
+                pin:".molecular-left",
+                start:"top top",
+                end:"bottom 85%",
+                scrub:true,
+                
+            }
+        })
+    })
   return (
    <>
-   <section className='molecular py-[10%] mb-[10%]'>
-    <div className='container-sm'>
+   <section className='molecular ' id='molecular'>
+    <div className='container-sm py-[10%]'>
 <div className="flex items-start justify-between w-full" >
         <div className='molecular-left w-[50%] space-y-[2.5vw]'>
             <div className='w-[55%]'>
@@ -18,7 +35,7 @@ const Molecular = () => {
 
         </div>
         <div className='molecular-right w-[47%] flex flex-col gap-y-[2vw]'>
-        <div className='molecular-card  px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white'>
+        <div className='molecular-card  px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism'>
         <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white  flex flex-col items-center justify-center '>
             <p className='text-[3.5vw]'>Pa</p>
             <p className='text-[0.75vw] mt-[-1vw]'>Patient-centric</p>
@@ -29,7 +46,7 @@ const Molecular = () => {
 
         </div>
 
-        <div className='molecular-card mt-[2vw]  px-[3vw] py-[3vw]  border-[1px] rounded-[40px] bg-white/50 border-white'>
+        <div className='molecular-card mt-[2vw]  px-[3vw] py-[3vw]  border-[1px] rounded-[40px] bg-white/50 border-white glassmorphism'>
         <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white  flex flex-col items-center justify-center '>
             <p className='text-[3.5vw]'>Qu</p>
             <p className='text-[0.75vw] mt-[-1vw]'>Quality-First</p>
@@ -40,7 +57,7 @@ const Molecular = () => {
 
         </div>
 
-        <div className='molecular-card  px-[3vw] py-[3vw] border-[1px] rounded-[40px] bg-white/50 border-white'>
+        <div className='molecular-card  px-[3vw] py-[3vw] border-[1px] rounded-[40px] bg-white/50 border-white glassmorphism'>
         <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white  flex flex-col items-center justify-center '>
             <p className='text-[3.5vw]'>In</p>
             <p className='text-[0.75vw] mt-[-1vw]'>Innovation</p>
@@ -51,7 +68,7 @@ const Molecular = () => {
 
         </div>
 
-        <div className='molecular-card px-[3vw] py-[3vw] border-[1px] rounded-[40px] bg-white/50 border-white'>
+        <div className='molecular-card px-[3vw] py-[3vw] border-[1px] rounded-[40px] bg-white/50 border-white glassmorphism'>
         <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white  flex flex-col items-center justify-center '>
             <p className='text-[3.5vw]'>Cr</p>
             <p className='text-[0.75vw] mt-[-1vw]'>Caring</p>

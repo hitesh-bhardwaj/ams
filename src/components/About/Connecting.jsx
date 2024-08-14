@@ -4,8 +4,8 @@ import PrimaryButton from "../Button/PrimaryButton"
 
 const Connecting = () => {
   return (
-    <section className='mb-[10%]'>
-        <div className='container-lg '>
+    <section className='' id='connect'>
+        <div className='container-lg py-[10%]'>
             <div className='px-[3%] py-[5%]  border-[1px]  flex justify-between flex-col items-center rounded-[60px] bg-white/50 '>
                 <div className=''>
             <h2 className="title-2 aeonik ">
@@ -18,7 +18,7 @@ const Connecting = () => {
           </p>
           </div>
           <div>
-          <PrimaryButton link="/" btnText="Contact Us"/>
+          <PrimaryButton link="#" btnText="Contact Us" className={"w-[18vw]"}/>
           </div>
         
 

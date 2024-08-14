@@ -1,0 +1,8 @@
+.product-swiper{
+    width: 140%;
+    transform: translateX(-6%);
+    overflow: visible !important;
+}
+.product-swiper .swiper-slide{
+    width: 22vw !important;
+}

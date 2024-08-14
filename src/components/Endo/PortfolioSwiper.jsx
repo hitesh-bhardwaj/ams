@@ -1,4 +1,4 @@
-import React ,{useState, useRef} from "react";
+import React ,{useState} from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -13,7 +13,7 @@ const PortfolioCard =({src, heading, para})=>{
   return(
     <>
    
-    <div className="container-lg">
+    <div className="">
         <div className="w-[85vw] h-[50vw] relative rounded-[10px]">
             <Image src={src}
                 fill
@@ -32,15 +32,16 @@ const PortfolioCard =({src, heading, para})=>{
 const PortfolioSwiper = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <section>
-      <div className=" w-full mb-[15%] ml-[10%] mt-[-15%]">
-        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] relative left-[-52%] portfolio-text flex items-center gap-[2vw] ">Your Partner in Surgical Excellence</div>
-       <div className="mt-[10%] ">
+    <section id="endo-swiper">
+      <div className=" w-full mb-[15%] ml-[10%] relative py-[10%]">
+        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg]  left-[-52%] portfolio-text flex items-center gap-[2vw] absolute w-full top-[8%] ">Your Partner in Surgical Excellence</div>
+       <div className=" relative ">
        <Swiper
         slidesPerView={1}
-        thumbs={{ swiper: thumbsSwiper }}
+        spaceBetween={20}
+        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
         loop= {true}
-        modules={[  FreeMode, Thumbs]}
+        modules={[  FreeMode, Thumbs , Navigation]}
         className="myswiper"
       >
         <SwiperSlide>
@@ -62,17 +63,18 @@ const PortfolioSwiper = () => {
               para={"AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision. We provide the necessary tools and support to enhance surgical practice and improve patient care."}/>
             </SwiperSlide>
       </Swiper>
+      <div className="flex gap-[0.7vw] absolute top-[80%] w-full left-[-3%]">
       <Swiper
-        onSwipe={setThumbsSwiper}
+        onSwiper={setThumbsSwiper}
         // spaceBetween={10}
         slidesPerView={4}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="endoSmallSwiper mt-[-10%] mr-[50%]"
+        className="endoSmallSwiper"
       >
        <SwiperSlide>
-        <div className="h-[8vw] w-[12vw] relative">
+        <div className="h-[7vw] w-[12vw] relative cursor-pointer">
           <Image
           fill
           src="/assets/endo/endo-slider-1.png"
@@ -81,7 +83,7 @@ const PortfolioSwiper = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="h-[8vw] w-[12vw] relative">
+        <div className="h-[7vw] w-[12vw] relative cursor-pointer">
           <Image
           fill
           src="/assets/endo/endo-slider-2.png"
@@ -90,7 +92,7 @@ const PortfolioSwiper = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="h-[8vw] w-[12vw] relative">
+        <div className="h-[7vw] w-[12vw] relative cursor-pointer">
           <Image
           fill
           src="/assets/endo/endo-slider-3.png"
@@ -100,6 +102,8 @@ const PortfolioSwiper = () => {
         </SwiperSlide>
         
       </Swiper>
+        </div>
+      
       </div>
       </div>
       

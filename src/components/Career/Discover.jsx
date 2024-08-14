@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Discover = () => {
   return (
-   <section>
+   <section id='discover'>
     <div className='container-lg px-[5%] flex justify-between '>
         <div className='w-[45%] flex flex-col items-start justify-center gap-[3vw]'>
          <h2 className="title-2 aeonik">
