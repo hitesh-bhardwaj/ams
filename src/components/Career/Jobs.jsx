@@ -50,7 +50,7 @@ const Jobs = () => {
           clickable: true,
         }}
         modules={[ Pagination]}
-        className="mySwiper"
+        className="MySwiper"
       >
         <SwiperSlide>
           <JobCard dept={"Sales"} designation={"Territory Sales Manager"} location={"Jaipur"}/></SwiperSlide>

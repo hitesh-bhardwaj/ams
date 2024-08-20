@@ -24,7 +24,7 @@ const Hero = () => {
             <div className='h-[3vw] w-[3vw] relative top-[40%] left-[2%]'>
             <img src='/assets/career/search.png' alt='search-icon'/>
             </div>
-            <input type='text' placeholder='Explore job openings' className='w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3]'/>
+            <input type='text' placeholder='Explore job openings' className='w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] glassmorsphism'/>
 
             <div className='relative left-[90%] bottom-[35%]'>
                 <div className='bg-[#143CA3] w-[3vw] h-[3vw] text-[#ffffff] rounded-[50%] flex items-center justify-center p-[0.8%] cursor-pointer '>

@@ -49,17 +49,17 @@ export default function Hero() {
           <div className="px-[10%] relative">
             <div className="flex h-dvh w-full justify-start items-center">
               <div className="w-1/2">
-                <h1 className="title-1 aeonik drop-shadow-md hero-anim leading-[1]">
-                  <span className="leading-[1.2] overflow-hidden">
+                <h1 data-para-anim className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden">
+                  <span className="leading-[1.25] overflow-hidden">
                     Advancing the
                   </span>
                   <br />
-                  <span className="leading-[1.2] overflow-hidden">
+                  <span className="leading-[1.25] overflow-hidden">
                      way we care
                   </span>
                 </h1>
-                <p className="font-light max-w-[30vw] text-[1.25vw] mt-[4vw] mb-[4vw] hero-para">
-                  <span>
+                <p  className="font-light max-w-[30vw] text-[1.25vw] mt-[4vw] mb-[4vw]">
+                  <span data-para-anim>
                     AMS is dedicated to <strong>advancing</strong> the spectrum of healthcare by providing meaningful <strong>MedTech solutions</strong> for healthcare professionals, improving lives for <strong>patients</strong> around the <strong>world.</strong>
                   </span>
                 </p>

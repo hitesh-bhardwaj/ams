@@ -8,9 +8,9 @@
     display: flex ;
     gap: 0.7vw;
 }
-.myswiper {
+.mySwiper {
     width: 85vw;
 }
-.myswiper .swiper-slide{
+.mySwiper .swiper-slide{
     width: 85vw !important;
 }

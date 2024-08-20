@@ -42,7 +42,7 @@ const PortfolioSwiper = () => {
         thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
         loop= {true}
         modules={[  FreeMode, Thumbs , Navigation]}
-        className="myswiper"
+        className="mySwiper"
       >
         <SwiperSlide>
             <PortfolioCard

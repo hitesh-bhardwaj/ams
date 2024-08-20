@@ -12,10 +12,19 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import SplitType from "split-type";
+import { titleAnim, paraAnim, lineAnim, imageAnim, imgAnim, fadeIn, fadeUp } from '@/components/gsapAnimations';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Home() {
+
+  titleAnim();
+  paraAnim();
+  lineAnim();
+  imageAnim();
+  imgAnim();
+  fadeIn();
+  fadeUp();
 
   useEffect(()=> {
     const ctx = gsap.context(() => {

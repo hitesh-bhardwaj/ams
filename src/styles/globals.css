@@ -164,7 +164,7 @@ body{
   font-size: 5vw;
   font-weight: 300;
   color: var(--text-color);
-  line-height: 1.05;
+  line-height: 0;
   
   
 }
@@ -284,11 +284,16 @@ body{
 }
 
 /* text anim */
-.text-anim{
-  line-height: 1.05;
+[data-title-anim],
+[data-para-anim],
+.para-anim,
+.lineWord {
+  font-kerning: none;
 }
-.text-anim span{
-  line-height: 1.05;
+[data-title-anim] .line,
+[data-para-anim] .line,
+.para-anim .line,
+.lineWord .line {
   overflow: hidden;
 }
 

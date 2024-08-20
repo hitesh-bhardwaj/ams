@@ -41,7 +41,7 @@ const PortfolioSwiper = () => {
               disableOnInteraction: false,
             }}
             modules={[FreeMode, Thumbs, Navigation]}
-            className="myswiper"
+            className="mySwiper"
             thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
           >
             <SwiperSlide>
