@@ -4,11 +4,13 @@ import React from 'react'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { paraAnim } from '@/components/gsapAnimations';
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 
 
 const ProductCard=({img, txt , className, rotate})=>{
+  
 
   return(
     <>
@@ -69,80 +71,81 @@ const ProductCard=({img, txt , className, rotate})=>{
   )
 }
 const Product = () => {
+  paraAnim()
    
-  // useGSAP(()=>{
-  //   const tl = gsap.timeline({
-  //     defaults:{
-  //       ease:"none",
+  useGSAP(()=>{
+    const tl = gsap.timeline({
+      defaults:{
+        ease:"none",
 
-  //     },
-  //     scrollTrigger:{
-  //       trigger:".product",
-  //       pin:true,
-  //       // start:"top top",
-  //       // end:"+=2000 top",
-  //       scrub:true,
+      },
+      scrollTrigger:{
+        trigger:".product",
+        pin:true,
+        // start:"top top",
+        // end:"+=2000 top",
+        scrub:true,
         
-  //     }
+      }
       
 
-  //   });
+    });
   
-  //   // tl.to(".product-title",{
-  //   //   yPercent:-110,
-  //   //   ease:"power1.in",
-  //   // })
-  //   tl.to(".card1",{
-  //     rotateZ:-12,
-  //     yPercent:15,
-  //     xPercent:-124,
-  //     duration: 5,
-  //     delay: 0,
-  //   })
-  //   .to(".card2",{
-  //     rotateZ:0,
-  //     yPercent:-10,
-  //     xPercent:-124,
-  //     duration: 5,
-  //     delay: -5,
-  //   })
-  //   .to(".card3",{
-  //     rotateZ: 12,
-  //     yPercent:-33,
-  //     xPercent:-124,
-  //     duration: 5,
-  //     delay: -5,
-  //   })
-  //  .to(".card1",{
-  //     rotateZ:-24,
-  //     yPercent:50,
-  //     xPercent:-250,
-  //     duration: 5,
-  //     delay: 0,
-  //   })
-  //   .to(".card2",{
-  //     rotateZ:-12,
-  //     yPercent:-1,
-  //     xPercent:-255,
-  //     duration: 5,
-  //     delay: -5,
-  //   })
-  //   .to(".card3",{
-  //     rotateZ: 0,
-  //     yPercent:-50,
-  //     xPercent:-255,
+    // tl.to(".product-title",{
+    //   yPercent:-110,
+    //   ease:"power1.in",
+    // })
+    tl.to(".card1",{
+      rotateZ:-12,
+      yPercent:15,
+      xPercent:-124,
+      duration: 5,
+      delay: 0,
+    })
+    .to(".card2",{
+      rotateZ:0,
+      yPercent:-10,
+      xPercent:-124,
+      duration: 5,
+      delay: -5,
+    })
+    .to(".card3",{
+      rotateZ: 12,
+      yPercent:-33,
+      xPercent:-124,
+      duration: 5,
+      delay: -5,
+    })
+   .to(".card1",{
+      rotateZ:-24,
+      yPercent:50,
+      xPercent:-250,
+      duration: 5,
+      delay: 0,
+    })
+    .to(".card2",{
+      rotateZ:-12,
+      yPercent:-1,
+      xPercent:-255,
+      duration: 5,
+      delay: -5,
+    })
+    .to(".card3",{
+      rotateZ: 0,
+      yPercent:-50,
+      xPercent:-255,
       
-  //     duration: 5,
-  //     delay: -5,
-  //   })
-  // })
+      duration: 5,
+      delay: -5,
+    })
+  })
 
   return (
     <section className='w-full  mt-[15%] mb-[10%] product' id='product'>
       <div className='container-lg flex flex-col gap-[5vw] items-center  '>
       <div className='product-title'>
         <h2 data-para-anim className="title-2 aeonik  ">
-          <span>The Foundation of Durable Repair</span>
+          The Foundation of Durable Repair
         </h2>
       </div>
       <div className='h-[50vh] flex items-center justify-between gap-[7vw] translate-x-[35%]  card-section'>

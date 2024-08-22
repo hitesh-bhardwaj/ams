@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { paraAnim } from "../gsapAnimations";
 
 const Genesis = ({content}) => {
+  paraAnim()
   return (
     <section className="genesis " id="genesis">
       <div className="container-lg  ml-auto mr-auto flex items-center justify-center flex-col pb-[10%] relative">
@@ -11,13 +13,13 @@ const Genesis = ({content}) => {
           </h2>
           <div className="genesis-text flex w-full justify-center gap-x-[7vw] mt-[4vw]">  
             <div className="w-[38%] content-p leading-[1.4]">
-                <p>
+                <p data-para-anim>
                 {/* */}
                 {content.smallpara}
                 </p>
             </div>
             <div className="w-[36%] text-[2.5vw] leading-[1.25] font-light text-[#111111]">
-                <p>
+                <p data-para-anim>
                   {/*  */}
                   {content.bigpara}
 

@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import { paraAnim } from '../gsapAnimations'
 
 const Capabilities = () => {
+  paraAnim()
   return (
     <>
     <section id='capabilities'>

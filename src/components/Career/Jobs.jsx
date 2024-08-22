@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import Link from "next/link";
+import { paraAnim } from "../gsapAnimations";
 
 
 const JobCard =({dept, designation, location})=>{
@@ -15,7 +16,7 @@ const JobCard =({dept, designation, location})=>{
               {dept}
             </div>
             <div className="w-[70%]">
-              <h2 className="text-[2vw] aeonik leading-[1.3] font-light text-[#111111]">
+              <h2 data-para-anim className="text-[2vw] aeonik leading-[1.3] font-light text-[#111111]">
                 {designation} 
               </h2>
             </div>
@@ -29,12 +30,13 @@ const JobCard =({dept, designation, location})=>{
   )
 }
 const Jobs = () => {
+  paraAnim()
   return (
     <section id="jobs">
       <div className="container-sm mb-[15%] ">
         <div className=" flex items-center justify-center ">
           <h2 data-para-anim className="title-2 aeonik ">
-            <span>Featured Jobs</span>
+            Featured Jobs
           </h2>
         </div>
        <div className="mt-[10%] careerSwiper">

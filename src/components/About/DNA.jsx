@@ -1,7 +1,34 @@
 import Image from 'next/image'
 import React from 'react'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+import { paraAnim } from '../gsapAnimations'
+gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 const DNA = () => {
+  paraAnim()
+  useGSAP(()=>{
+   
+      
+    
+    gsap.from(".dna-card",{
+      yPercent:50,
+      opacity:0,
+     
+      duration:1,
+      scrollTrigger:{
+        trigger:".dna-card-container",
+        markers:true,
+        start:"top 80%",
+        end:"bottom 40%",
+       
+      },
+      stagger:0.4
+      
+    })
+
+  })
   return (
   <>
   <section className='dna' id='dna'>
@@ -12,7 +39,7 @@ const DNA = () => {
           </h2>
         </div>
         <div className='dna-card-container flex justify-between items-center p-[5%] gap-[2vw] '>
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] '>
+            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 '>
                 <div className=' ml-[1vw] w-[5.5vw] h-[6vw] relative'>
                 <Image
                   className="rounded-[20px] "

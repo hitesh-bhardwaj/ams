@@ -1,5 +1,7 @@
 import React from 'react'
+import { paraAnim } from '../gsapAnimations'
 const Hero = () => {
+paraAnim()
   return (
     <section className=" mb-[12%] manufacturing-container" id='hero'>
     <div className="px-[10%] relative">

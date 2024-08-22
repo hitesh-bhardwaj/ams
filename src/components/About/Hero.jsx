@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { paraAnim } from "../gsapAnimations";
 
 
 const Hero = () => {
+  paraAnim()
   return (
    <>
    <section className="hero main-gradient h-[120vh] mb-[12%]" id="hero">
@@ -24,7 +26,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="absolute right-0 top-[15%]">
-              <div className="w-[63vw] h-[45vw] relative  right-0 bottom-[5%]">
+              <div className="w-[60vw] h-[43vw] relative bottom-[5%]">
                 <Image
                   className="hero-img"
                   src="/assets/about/hero-image.png"

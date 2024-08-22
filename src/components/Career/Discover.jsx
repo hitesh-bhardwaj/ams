@@ -10,7 +10,7 @@ const Discover = () => {
          <h2 className="title-2 aeonik">
             <span data-para-anim  >Discover the profound impact our work is having on patients everywhere</span>
           </h2>
-          <PrimaryButton link='/' btnText="Let's Meet"/>
+          <PrimaryButton link='/' btnText="Let's Meet" />
           </div>
         <div className='w-[50%] flex flex-col items-end justify-center gap-[2vw]'>
             <Image

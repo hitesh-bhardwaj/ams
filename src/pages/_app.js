@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }) {
     <>
     <Head>
     <link rel="preload" href="/assets/fonts/aeonik/Aeonik-Light.woff" as="font" type="font/woff" crossOrigin=""/>
+    <link rel="preload" href="/assets/fonts/sofia-pro/Sofia-Pro-Light.woff" as="font" type="font/woff" crossOrigin=""/>
     </Head>
       <ReactLenis root duration={1}>
         <Component {...pageProps} />

@@ -7,12 +7,12 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Genesis from '@/components/layoutComponents/Genesis'
 import React from 'react'
-import { paraAnim } from '@/components/gsapAnimations';
+
 
 
 export default function  endo () {
   
-  paraAnim();
+  
 
 
     const content ={

@@ -9,11 +9,11 @@ import Discover from '@/components/Manufacturing/Discover'
 import Hero from '@/components/Manufacturing/Hero'
 import State from '@/components/Manufacturing/State'
 import React from 'react'
-import {  paraAnim } from '@/components/gsapAnimations';
+
 
 export default function manufacturing () {
 
-  paraAnim();
+  // paraAnim();
 
   
     const content ={

@@ -4,36 +4,38 @@ import { useGSAP } from '@gsap/react'
 import { useEffect, useRef } from "react";
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger, useGSAP);
+import { paraAnim } from '../gsapAnimations';
 
 const Molecular = () => {
+    paraAnim()
     const molecularLeft = useRef(null);
     const molecularContainer = useRef(null);
-    // useGSAP(()=>{
-    //     gsap.to(".molecular-left",{
-    //         scrollTrigger:{
-    //             trigger:".molecular",
-    //             pin:".molecular-left",
-    //             start:"top top",
-    //             end:"bottom 95%",
-    //             scrub:true,
+    useGSAP(()=>{
+        gsap.to(".molecular-left",{
+            scrollTrigger:{
+                trigger:".molecular",
+                pin:".molecular-left",
+                start:"top top",
+                end:"bottom 95%",
+                scrub:true,
                 
-    //         }
-    //     })
-    // })
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            ScrollTrigger.create({
-                trigger: molecularLeft.current,
-                start: "top 10%",
-                endTrigger: molecularContainer.current,
-                end: "bottom bottom",
-                invalidateOnRefresh: true,
-                pin: molecularLeft.current,
-                // markers: true,
-            });
-        });
-        return () => ctx.revert();
-    });
+            }
+        })
+    })
+    // useEffect(() => {
+    //     const ctx = gsap.context(() => {
+    //         ScrollTrigger.create({
+    //             trigger: molecularLeft.current,
+    //             start: "top 10%",
+    //             endTrigger: molecularContainer.current,
+    //             end: "bottom 80%",
+    //             invalidateOnRefresh: true,
+    //             pin: molecularLeft.current,
+    //             // markers: true,
+    //         });
+    //     });
+    //     return () => ctx.revert();
+    // });
   return (
    <>
    <section className='molecular ' id='molecular'  ref={molecularContainer}>
@@ -57,33 +59,33 @@ const Molecular = () => {
         <div className='molecular-card  px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism'>
         <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white  flex flex-col items-center justify-center '>
             <p className='text-[3.5vw]'>Pa</p>
-            <p className='text-[0.75vw] mt-[-1vw]'>Patient-centric</p>
+            <p data-para-anim className='text-[0.75vw] mt-[-1vw]'>Patient-centric</p>
 
         </div>
-                <h2 className='text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light'>Patients at the Heart</h2>
-                <p className='content-p'>Patients are the heart of our purpose, igniting every decision and innovation with unwavering compassion and dedication to transforming healthcare for the better.</p>
+                <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light'>Patients at the Heart</h2>
+                <p data-para-anim className='content-p'>Patients are the heart of our purpose, igniting every decision and innovation with unwavering compassion and dedication to transforming healthcare for the better.</p>
 
         </div>
 
         <div className='molecular-card mt-[2vw]  px-[3vw] py-[3vw]  border-[1px] rounded-[40px] bg-white/50 border-white glassmorphism'>
         <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white  flex flex-col items-center justify-center '>
             <p className='text-[3.5vw]'>Qu</p>
-            <p className='text-[0.75vw] mt-[-1vw]'>Quality-First</p>
+            <p data-para-anim className='text-[0.75vw] mt-[-1vw]'>Quality-First</p>
 
         </div>
-                <h2 className='text-[2.5vw] mt-[1vw] mb-[1.5vw]  font-light'>Uncompromising Quality</h2>
-                <p className='content-p'>Excellence is our benchmark. Our expert team ensures each device is crafted to the highest standards, delivering safety and reliability you can trust.</p>
+                <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw]  font-light'>Uncompromising Quality</h2>
+                <p data-para-anim className='content-p'>Excellence is our benchmark. Our expert team ensures each device is crafted to the highest standards, delivering safety and reliability you can trust.</p>
 
         </div>
 
         <div className='molecular-card  px-[3vw] py-[3vw] border-[1px] rounded-[40px] bg-white/50 border-white glassmorphism'>
         <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white  flex flex-col items-center justify-center '>
             <p className='text-[3.5vw]'>In</p>
-            <p className='text-[0.75vw] mt-[-1vw]'>Innovation</p>
+            <p data-para-anim className='text-[0.75vw] mt-[-1vw]'>Innovation</p>
 
         </div>
-                <h2 className='text-[2.5vw] mt-[1vw] mb-[1.5vw]  font-light'>Innovative Solutions</h2>
-                <p className='content-p'>Pioneering the future of Healthcare. AMS remains at the forefront of cutting-edge medical technology.</p>
+                <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw]  font-light'>Innovative Solutions</h2>
+                <p data-para-anim className='content-p'>Pioneering the future of Healthcare. AMS remains at the forefront of cutting-edge medical technology.</p>
 
         </div>
 
@@ -93,8 +95,8 @@ const Molecular = () => {
             <p className='text-[0.75vw] mt-[-1vw]'>Caring</p>
 
         </div>
-                <h2 className='text-[2.5vw] mt-[1vw] mb-[1.5vw]  font-light '>Lorem Ipsum</h2>
-                <p className='content-p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
+                <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw]  font-light '>Lorem Ipsum</h2>
+                <p data-para-anim className='content-p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
 
         </div>
         </div>

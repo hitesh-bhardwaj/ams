@@ -7,6 +7,7 @@ import 'swiper/css/thumbs';
 import 'swiper/css/pagination';
 import { FreeMode, Thumbs, Navigation } from 'swiper/modules';
 import Image from "next/image";
+import { paraAnim } from "../gsapAnimations";
 
 
 const PortfolioCard =({src, heading, para})=>{
@@ -21,8 +22,8 @@ const PortfolioCard =({src, heading, para})=>{
                 className="rounded-[20px]"
             />
             <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]">
-            <h2 className="text-[#FFFFFF] text-[2.5vw] font-extralight">{heading}</h2>
-            <p className="text-[#FFFFFF] text-[1.25vw] font-extralight w-[50%]">{para}</p>
+            <h2 data-para-anim className="text-[#FFFFFF] text-[2.5vw] font-extralight">{heading}</h2>
+            <p className="text-[#FFFFFF] text-[1.25vw] font-light w-[50%]">{para}</p>
             </div>
         </div>
     </div>
@@ -30,6 +31,7 @@ const PortfolioCard =({src, heading, para})=>{
   )
 }
 const PortfolioSwiper = () => {
+  paraAnim()
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <section id="endo-swiper">

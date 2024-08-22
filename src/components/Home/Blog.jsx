@@ -17,7 +17,7 @@ export default function Blog() {
                 trigger: blogLeft.current,
                 start: "top 10%",
                 endTrigger: blogContainer.current,
-                end: "bottom bottom",
+                end: "bottom 80%",
                 invalidateOnRefresh: true,
                 pin: blogLeft.current,
                 // markers: true,

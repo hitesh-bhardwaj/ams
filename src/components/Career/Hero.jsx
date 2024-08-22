@@ -1,7 +1,9 @@
 import React from 'react'
+import { paraAnim } from '@/components/gsapAnimations';
 const Hero = () => {
+  paraAnim()
   return (
-    <section className=" mb-[12%] career-container" id='hero'>
+    <section className=" career-container" id='hero'>
     <div className="px-[10%] relative">
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">
@@ -14,17 +16,17 @@ const Hero = () => {
             Healthier World
             </span>
           </h1>
-          <p className=" max-w-[25vw] mt-[4vw] mb-[4vw] content-p">
-            <span data-para-anim>
+          <p data-para-anim className="w-[25vw] mt-[4vw] mb-[4vw] content-p">
+            
             Be a part of a team making a meaningful difference in healthcare.
-            </span>
+           
           </p>
         </div>
         <div className='w-full'>
-            <div className='h-[3vw] w-[3vw] relative top-[40%] left-[2%]'>
+            <div className='h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2]'>
             <img src='/assets/career/search.png' alt='search-icon'/>
             </div>
-            <input type='text' placeholder='Explore job openings' className='w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] glassmorsphism'/>
+            <input type='text' placeholder='Explore job openings' className='w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] placeholder:opacity-75 text-[#143CA3] glassmorphism'/>
 
             <div className='relative left-[90%] bottom-[35%]'>
                 <div className='bg-[#143CA3] w-[3vw] h-[3vw] text-[#ffffff] rounded-[50%] flex items-center justify-center p-[0.8%] cursor-pointer '>

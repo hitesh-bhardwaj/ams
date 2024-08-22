@@ -126,41 +126,41 @@ export default function Manufacturing() {
                         <div className="w-1/3 h-full">
                             <div className="h-screen w-full flex justify-center items-center relative">
                                 <div className="absolute" ref={text1}>
-                                    <h2 className="title-2 aeonik text-anim">
-                                        <span>
+                                    <h2  className="title-2 aeonik">
+                                        
                                             Ushering in the Next Generation of Medical Technology
-                                        </span>
+                                        
                                     </h2>
-                                    <p className="content-p my-[4vw] text-anim-2">
-                                        <span>
+                                    <p className="content-p my-[4vw]">
+                                        
                                             AMS leverages strategic global partnerships to procure state-of-the-art manufacturing technology, ensuring uncompromising quality, innovation, and agility in our processes. Our adherence to LEAN principles and implementation of a robust quality management system guarantees compliance with the most stringent global regulatory standards.
-                                        </span>
+                                       
                                     </p>
                                     <PrimaryButton className={"fadeUp"} btnText={'Manufacturing'} link={'/'}/>
                                 </div>
                                 <div className="absolute opacity-0 translate-y-[20px]" ref={text2}>
                                     <h2 className="title-2 aeonik">
-                                        <span>
+                                       
                                             Building World Class Capability
-                                        </span>
+                                        
                                     </h2>
                                     <p className="content-p my-[4vw]">
-                                        <span>
+                                        
                                             Designed by renowned Spanish architect Ricardo Bofill, the AMS facility meets the Gold standard on Green building principles for sustainability and conforms to ISO 14001 safety and environmental specifications. Approx. 150,000 sq. ft. completed in Phase I and 180,000 sq.ft expansion in phase II.
-                                        </span>
+                                        
                                     </p>
                                     <PrimaryButton btnText={'Manufacturing'} link={'/'}/>
                                 </div>
                                 <div className="absolute opacity-0 translate-y-[20px]" ref={text3}>
                                     <h2 className="title-2 aeonik">
-                                        <span>
+                                        
                                             Robust Manufacturing Processes
-                                        </span>
+                                        
                                     </h2>
                                     <p className="content-p my-[4vw]">
-                                        <span>
+                                       
                                             The AMS plant design is based on LEAN concepts, Schedule M compliance, and Class C clean room principles. The Testing and Microbiological Laboratories are outfitted with best in class equipment. All under the supervision of experienced Manufacturing and Quality teams.
-                                        </span>
+                                        
                                     </p>
                                     <PrimaryButton btnText={'Manufacturing'} link={'/'}/>
                                 </div>

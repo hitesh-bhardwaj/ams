@@ -6,10 +6,11 @@ import Product from '@/components/Hernia/Product'
 import Genesis from '@/components/layoutComponents/Genesis'
 import PortfolioSwiper from '@/components/layoutComponents/PortfolioSwiper'
 import React from 'react'
-import { paraAnim } from '@/components/gsapAnimations';
+
+
 
 export default function  hernia () {
-  paraAnim();
+  
   
     const content ={
         heading : "Redefining Hernia  Surgery",

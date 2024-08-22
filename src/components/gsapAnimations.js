@@ -7,7 +7,7 @@ import { SplitInLineWordChar , SplitInLine } from './splitTextUtils';
 
 gsap.registerPlugin(ScrollTrigger, CustomEase, useGSAP);
 
-const primaryEase = CustomEase.create("cus-1", "0.82, 0.01, 0.5, 0.88");
+const primaryEase = CustomEase.create("cus-1", "0.62, 0.05, 0.01, 0.99");
 
 export function titleAnim(){
     useGSAP(() => {
@@ -39,6 +39,7 @@ export function paraAnim(){
           scrollTrigger: {
             trigger: paraAnimation,
             start: "top 90%",
+            
           },
           duration: 1.47,
           yPercent: 100,
