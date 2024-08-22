@@ -5,8 +5,12 @@ import Work from '@/components/Career/Work'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React from 'react'
+import {  paraAnim} from '@/components/gsapAnimations';
+
 
 export default function  career () {
+  paraAnim();
+  
   return (
     <>
    <Header/>

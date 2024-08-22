@@ -51,12 +51,12 @@ export default function Product() {
             <section className="p-y-sm product-bg">
                 <div className="container-lg">
                     <div className="product-top text-center flex flex-col items-center">
-                        <h2 className="title-2 aeonik text-anim">
+                        <h2 data-para-anim className="title-2 aeonik">
                             <span>
                                 Empowering Healthcare Professionals
                             </span>
                         </h2>
-                        <p className="content-p my-6 w-[55%] text-anim-2"> 
+                        <p data-para-anim className="content-p my-6 w-[55%]"> 
                             <span>
                                 Advanced MedTech Solutions empowers healthcare practitioners and caregivers to manage and treat a wide range of medical conditions, from chronic diseases to acute injuries, with the next generation of insight-driven medical device technology and innovation.
                             </span>

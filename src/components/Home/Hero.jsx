@@ -8,41 +8,41 @@ gsap.registerPlugin(useGSAP);
 
 export default function Hero() {
 
-      useGSAP(()=>{
-        const text = new SplitType('.hero-para', {types: 'words'});
-        const head = new SplitType('.hero-anim', {types: 'words'});
-        const heroPara = document.querySelectorAll('.hero-para span .word');
-        const heroAnim = document.querySelectorAll(".hero-anim span .word");
-        const headerAnim = document.querySelectorAll(".header-anim");
+      // useGSAP(()=>{
+      //   const text = new SplitType('.hero-para', {types: 'words'});
+      //   const head = new SplitType('.hero-anim', {types: 'words'});
+      //   const heroPara = document.querySelectorAll('.hero-para span .word');
+      //   const heroAnim = document.querySelectorAll(".hero-anim span .word");
+      //   const headerAnim = document.querySelectorAll(".header-anim");
 
-        const tl = gsap.timeline();
-        tl.from(headerAnim, 1,{
-          opacity: 0,
-          stagger: 0.05,
-          ease: 'power2.out',
-      }, "+=1")
-        tl.from(heroAnim, 0.8,{
-            y: '100%',
-            stagger: 0.1,
-            ease: 'power2.out',
-        }, "-=0.8")
-        .from(heroPara, 0.4,{
-            y: '100%',
-            opacity: 0,
-            ease: "Power2.out",
-            stagger: 0.01,
-        }, '-=0.8')
-        .from('.hero .btn', 0.8, {
-            y: 30,
-            opacity: 0,
-            ease: "power2.out",
-        }, '-=0.8')
-        .from('.hero-img', 2,{
-            y: 50,
-            opacity: 0,
-            ease: "expo.out",
-        }, '-=1.2');
-      });
+      //   const tl = gsap.timeline();
+      //   tl.from(headerAnim, 1,{
+      //     opacity: 0,
+      //     stagger: 0.05,
+      //     ease: 'power2.out',
+      // }, "+=1")
+      //   tl.from(heroAnim, 0.8,{
+      //       y: '100%',
+      //       stagger: 0.1,
+      //       ease: 'power2.out',
+      //   }, "-=0.8")
+      //   .from(heroPara, 0.4,{
+      //       y: '100%',
+      //       opacity: 0,
+      //       ease: "Power2.out",
+      //       stagger: 0.01,
+      //   }, '-=0.8')
+      //   .from('.hero .btn', 0.8, {
+      //       y: 30,
+      //       opacity: 0,
+      //       ease: "power2.out",
+      //   }, '-=0.8')
+      //   .from('.hero-img', 2,{
+      //       y: 50,
+      //       opacity: 0,
+      //       ease: "expo.out",
+      //   }, '-=1.2');
+      // });
 
     return (
         <section className="hero main-gradient mb-[12%]">

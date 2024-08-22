@@ -6,7 +6,7 @@ const Genesis = ({content}) => {
     <section className="genesis " id="genesis">
       <div className="container-lg  ml-auto mr-auto flex items-center justify-center flex-col pb-[10%] relative">
         <div className="genesis-card w-[85%] border-[1px] border-[#DADADA] z-[1] bg-white  rounded-[50px] py-[5%] glassmorphism">
-          <h2 className="title-2 aeonik  ml-[8%]">
+          <h2 data-para-anim className="title-2 aeonik  ml-[8%]">
             <span>{content.heading}</span>
           </h2>
           <div className="genesis-text flex w-full justify-center gap-x-[7vw] mt-[4vw]">  
@@ -35,9 +35,7 @@ const Genesis = ({content}) => {
                   alt="Genesis Image"
                  fill
                 />
-
             </div>
-
         </div>
       </div>
     </section>

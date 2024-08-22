@@ -7,12 +7,12 @@ export default function Facility() {
             <section className="pt-[0] pb-[4%]">
                 <div className="container-lg virtual">
                     <div className="w-1/2 relative z-10 space-y-[3.5vw]">
-                        <h2 className="title-2 aeonik text-anim">
+                        <h2 data-para-anim className="title-2 aeonik">
                             <span className="">
                                 Delve Deeper into the World of AMS
                             </span>
                         </h2>
-                        <p className="content-p mr-[6vw] text-anim-2">
+                        <p data-para-anim className="content-p mr-[6vw]">
                             <span className="">
                                 Experience our facility virtually.
                             </span>

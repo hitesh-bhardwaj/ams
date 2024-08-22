@@ -9,8 +9,13 @@ import Discover from '@/components/Manufacturing/Discover'
 import Hero from '@/components/Manufacturing/Hero'
 import State from '@/components/Manufacturing/State'
 import React from 'react'
+import {  paraAnim } from '@/components/gsapAnimations';
 
 export default function manufacturing () {
+
+  paraAnim();
+
+  
     const content ={
         heading : "Manufacturing",
             smallpara:"AMS operates a facility designed with LEED-certified principles to minimize environmental impact, incorporating green manufacturing practices such as energy-efficient operations, responsible waste management, wastewater recycling, and utilization of solar energy for electricity generation. This comprehensive approach underscores our commitment to sustainable manufacturing practices and environmental stewardship.",

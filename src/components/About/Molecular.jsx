@@ -1,36 +1,55 @@
 import React from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { useEffect, useRef } from "react";
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Molecular = () => {
-    useGSAP(()=>{
-        gsap.to(".molecular-left",{
-            scrollTrigger:{
-                trigger:".molecular",
-                pin:".molecular-left",
-                start:"top top",
-                end:"bottom 85%",
-                scrub:true,
+    const molecularLeft = useRef(null);
+    const molecularContainer = useRef(null);
+    // useGSAP(()=>{
+    //     gsap.to(".molecular-left",{
+    //         scrollTrigger:{
+    //             trigger:".molecular",
+    //             pin:".molecular-left",
+    //             start:"top top",
+    //             end:"bottom 95%",
+    //             scrub:true,
                 
-            }
-        })
-    })
+    //         }
+    //     })
+    // })
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            ScrollTrigger.create({
+                trigger: molecularLeft.current,
+                start: "top 10%",
+                endTrigger: molecularContainer.current,
+                end: "bottom bottom",
+                invalidateOnRefresh: true,
+                pin: molecularLeft.current,
+                // markers: true,
+            });
+        });
+        return () => ctx.revert();
+    });
   return (
    <>
-   <section className='molecular ' id='molecular'>
+   <section className='molecular ' id='molecular'  ref={molecularContainer}>
     <div className='container-sm py-[10%]'>
 <div className="flex items-start justify-between w-full" >
-        <div className='molecular-left w-[50%] space-y-[2.5vw]'>
-            <div className='w-[55%]'>
-        <h2 className="title-2 aeonik">
+        <div className='molecular-left w-[50%] space-y-[2.5vw]' ref={molecularLeft}>
+            <div className='w-[58%]'>
+        <h2 data-para-anim  className="title-2 aeonik">
             <span>Molecular Foundations </span>
                <span> of AMS</span>
           </h2>
           </div>
-            <p className='content-p w-[70%]'>
+            <p  className='content-p w-[75%]'>
+            <span data-para-anim>
             Exploring the fundamental elements that shape AMS&apos;s ethos and culture, illustrating the core principles guiding our character and values.
+            </span>
             </p>
 
         </div>

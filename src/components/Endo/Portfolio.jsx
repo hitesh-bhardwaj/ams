@@ -31,7 +31,7 @@ const Portfolio = () => {
   return (
     <section className="container-lg flex flex-col items-center justify-center px-[4%] pb-[7%] ">
       <div>
-        <h2 className="title-2 aeonik ">
+        <h2 data-para-anim className="title-2 aeonik ">
           <span>Our Advanced Portfolio</span>
         </h2>
       </div>

@@ -7,7 +7,7 @@ const DNA = () => {
   <section className='dna' id='dna'>
     <div className=' ml-auto mr-auto py-[7%]'>
         <div>
-        <h2 className="title-2 aeonik ml-[7%]">
+        <h2 data-para-anim className="title-2 aeonik ml-[7%]">
             <span>Our DNA</span>
           </h2>
         </div>

@@ -33,7 +33,7 @@ const Jobs = () => {
     <section id="jobs">
       <div className="container-sm mb-[15%] ">
         <div className=" flex items-center justify-center ">
-          <h2 className="title-2 aeonik ">
+          <h2 data-para-anim className="title-2 aeonik ">
             <span>Featured Jobs</span>
           </h2>
         </div>

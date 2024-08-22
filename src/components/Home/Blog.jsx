@@ -63,12 +63,12 @@ export default function Blog() {
                 <div className="container-sm">
                     <div className="flex items-start justify-between w-full">
                         <div className="blog-left w-[45%] space-y-[2.5vw]" ref={blogLeft}>
-                            <h2 className="title-2 aeonik text-anim">
+                            <h2 data-para-anim className="title-2 aeonik ">
                                 <span>
                                     Latest Blogs
                                 </span>
                             </h2>
-                            <p className="content-p w-[78%] text-anim-2">
+                            <p data-para-anim className="content-p w-[78%]">
                                 Unlocking Tomorrow&apos;s Healthcare: Discover Cutting-Edge Insights and Innovations in Medical Equipment Manufacturing.
                             </p>
                         </div>

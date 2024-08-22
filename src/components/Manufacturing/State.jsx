@@ -60,9 +60,11 @@ const State = () => {
             </div>
 
             <div className={`flex flex-col w-[50%] ${section.reverse ? 'mr-[5%]' : 'ml-[5%]'} items-left justify-center gap-[2vw]`}>
-              <h2 className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>{section.title}</h2>
+              <h2 data-para-anim className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>{section.title}</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
+                <span data-para-anim>
                 {section.description}
+                </span>
               </p>
             </div>
           </div>

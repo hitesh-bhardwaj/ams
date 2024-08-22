@@ -15,7 +15,7 @@ export default function Career() {
                         src="/assets/home/career.mp4">
                     </video>
                     <div className="w-[60%] relative z-10 space-y-[3.5vw]">
-                        <h2 className="title-2 aeonik text-shadow text-anim">
+                        <h2 data-para-anim className="title-2 aeonik text-shadow ">
                             <span className="">
                                 Join Our Mission to
                             </span>
@@ -23,7 +23,7 @@ export default function Career() {
                                 Create a Healthier World
                             </span>
                         </h2>
-                        <p className="content-p w-[70%] text-shadow text-anim-2">
+                        <p data-para-anim className="content-p w-[70%] text-shadow ">
                             <span className="">
                                 To achieve the extraordinary, we need an exceptional team. At AMS, diversity and inclusiveness are the foundation for our dynamic and thriving culture. Unleash your potential and achieve the extraordinary in your career. Our unwavering commitment to revolutionizing healthcare is fuelled by our desire to make a difference and a meaningful impact in people’s lives.
                             </span>

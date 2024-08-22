@@ -8,7 +8,7 @@ const Discover = () => {
     <div className='container-lg px-[5%] flex justify-between '>
         <div className='w-[45%] flex flex-col items-start justify-center gap-[3vw]'>
          <h2 className="title-2 aeonik">
-            <span>Discover the profound impact our work is having on patients everywhere</span>
+            <span data-para-anim  >Discover the profound impact our work is having on patients everywhere</span>
           </h2>
           <PrimaryButton link='/' btnText="Let's Meet"/>
           </div>

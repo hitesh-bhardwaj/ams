@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 export default function Home() {
 
   titleAnim();
-  paraAnim();
+  paraAnim(); 
   lineAnim();
   imageAnim();
   imgAnim();

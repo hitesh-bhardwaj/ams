@@ -29,7 +29,7 @@ const ProductCard = ({ img, heading, rotate, ref }) => {
 }
 
 const Product = () => {
-  const slideRefs = useRef([]); // Array to hold refs for each slide
+  const slideRefs = useRef([]); 
 
   useEffect(() => {
     const swiperInstance = document.querySelector('.product-swiper').swiper;
@@ -40,7 +40,7 @@ const Product = () => {
           rotate: `${index * 10 - 30}deg`, // Adjust rotation dynamically
           duration: 0.5,
           ease: 'power2.out'
-        });
+        });   
       });
     });
   }, []);
@@ -48,7 +48,7 @@ const Product = () => {
   return (
     <section className='w-full flex flex-col items-center gap-[10vw] mb-[15%]'>
       <div>
-        <h2 className="title-2 aeonik">
+        <h2 data-para-anim className="title-2 aeonik">
           <span>Our Advanced Endo Surgery Product Line</span>
         </h2>
       </div>
