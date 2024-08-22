@@ -41,7 +41,7 @@ export function paraAnim(){
             start: "top 90%",
             
           },
-          duration: 1.47,
+          duration: 1.2,
           yPercent: 100,
           stagger: 0.07,
           ease: primaryEase,

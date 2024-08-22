@@ -3,7 +3,7 @@ import PrimaryButton from "../Button/PrimaryButton";
 export default function Career() {
     return (
         <>
-            <section className="p-y-sm">
+            <section className="p-y-sm" id="career">
                 <div className="container-lg relative px-[8%] py-[8%]">
                     <video 
                         loading="lazy"

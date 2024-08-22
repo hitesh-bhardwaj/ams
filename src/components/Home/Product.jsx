@@ -48,7 +48,7 @@ export default function Product() {
 
     return (
         <>
-            <section className="p-y-sm product-bg">
+            <section className="p-y-sm product-bg" id='product'>
                 <div className="container-lg">
                     <div className="product-top text-center flex flex-col items-center">
                         <h2 data-para-anim className="title-2 aeonik leading-[1.3]">

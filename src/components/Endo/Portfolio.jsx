@@ -1,17 +1,22 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 
 const PortfolioCard =({img, txt , className})=>{
   return (
     <>
     <Link href={"#"}>
-    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} `}>
+    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className}`}>
           <Image
             src={img}
            fill
-            alt="portfolio-1"
-            
+            alt="portfolio-1" 
           />
           <div className="flex justify-center items-center absolute ">
           <p
@@ -29,7 +34,8 @@ const PortfolioCard =({img, txt , className})=>{
 
 const Portfolio = () => {
   return (
-    <section className="container-lg flex flex-col items-center justify-center px-[4%] pb-[7%] ">
+    <section id="portfolio">
+      <div  className="container-lg flex flex-col items-center justify-center px-[4%] pb-[7%] ">
       <div>
         <h2 data-para-anim className="title-2 aeonik ">
           <span>Our Advanced Portfolio</span>
@@ -42,6 +48,7 @@ const Portfolio = () => {
         <PortfolioCard img={"/assets/portfolio/portfolio-3.png"} txt = {"Advanced Endo Surgery"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-4.png"} txt = {"Advanced Hernia Solutions"}/>
 
+      </div>
       </div>
     </section>
   );

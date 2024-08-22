@@ -1,8 +1,29 @@
 .product-swiper{
     width: 140%;
-    transform: translateX(-6%);
     overflow: visible !important;
+    transform: translateX(5%);
+
 }
 .product-swiper .swiper-slide{
     width: 22vw !important;
+    margin-right: 10vw !important;
+}
+.product-swiper .swiper-slide img{
+    transition: all 0.5s ease-in-out;
+}
+.product-swiper .swiper-slide-prev img{
+    position: absolute;
+    top: -10vw;
+    transition: all 1s ease-in-out;
+    scale:1.2;
+}
+@media(max-width:1440px){
+    .product-swiper .swiper-slide{
+        margin-right: 8vw !important;
+    }
+}
+@media(max-width: 1920px){
+.product-swiper{
+    transform: translateX(-3%);
+}
 }

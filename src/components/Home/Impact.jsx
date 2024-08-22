@@ -3,7 +3,7 @@ import PrimaryButton from "../Button/PrimaryButton";
 export default function Impact() {
     return (
         <>
-            <section className="p-y-sm mt-[7%]">
+            <section className="p-y-sm mt-[7%]" id="impact">
                 <div className="container-lg relative px-[8%] h-full py-[8%]">
                     <video 
                         loading="lazy"

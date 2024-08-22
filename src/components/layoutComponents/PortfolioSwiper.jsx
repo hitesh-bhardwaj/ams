@@ -27,7 +27,7 @@ const PortfolioSwiper = () => {
 
   return (
     <section id="hernia-swiper">
-      <div className="w-full mb-[10%] ml-[10%] py-[10%] relative h-full">
+      <div className="w-full mb-[5%] ml-[10%] py-[10%] relative h-full">
         <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]">
           <p className="text-end">A Partner in Your Success</p>
         </div>

@@ -120,7 +120,7 @@ export default function Manufacturing() {
 
     return (
         <>
-            <section className="pb-[12%]" ref={section}>
+            <section className="pb-[12%]" ref={section} id="manufacturing">
                 <div className="container-lg">
                     <div className="flex justify-between items-center">
                         <div className="w-1/3 h-full">

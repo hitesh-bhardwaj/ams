@@ -59,7 +59,7 @@ export default function Blog() {
 
     return (
         <>
-            <section className="p-y-sm" ref={blogContainer}>
+            <section className="p-y-sm" ref={blogContainer} id="blogs">
                 <div className="container-sm">
                     <div className="flex items-start justify-between w-full">
                         <div className="blog-left w-[45%] space-y-[2.5vw]" ref={blogLeft}>

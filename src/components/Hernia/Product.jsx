@@ -141,7 +141,7 @@ const Product = () => {
   })
 
   return (
-    <section className='w-full  mt-[15%] mb-[10%] product' id='product'>
+    <section className='w-full mb-[15%] product' id='product'>
       <div className='container-lg flex flex-col gap-[5vw] items-center  '>
       <div className='product-title'>
         <h2 data-para-anim className="title-2 aeonik  ">

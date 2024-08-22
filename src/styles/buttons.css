@@ -1,9 +1,9 @@
 /* Main button */
 .btn {
   display: inline-flex;
-  height: 3.5vw;
+  height: 3.5vw;  
   position: relative;
-  padding: 0 1.5vw 0 4vw;
+  /* padding: 0 1.5vw 0 4vw; */
   width: 100%;
   max-width: 18vw;
   border-radius: 1000px;
@@ -26,7 +26,7 @@
   border-radius: 1000px;
   display: flex;
   align-items: center;
-  padding: 0 1.5vw 0 4vw;
+  /* padding: 0 1.5vw 0 4vw; */
   z-index: 2;
   background-color: var(--button-primary);
   color: var(--text-head);
