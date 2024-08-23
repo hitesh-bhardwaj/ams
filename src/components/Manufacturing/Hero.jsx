@@ -5,7 +5,7 @@ const Hero = () => {
 paraAnim()
   return (
     <section className=" mb-[12%] " id='hero'>
-      <div className='w-[100vw] h-[100vw]'>
+      <div className='w-[100vw] h-[100vh]'>
        <Image
                   className="hero-img absolute object-cover"
                   src="/assets/manufacturing/manufacturing-hero.png"
