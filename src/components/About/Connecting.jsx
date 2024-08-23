@@ -18,7 +18,7 @@ const Connecting = () => {
           </p>
           </div>
           <div>
-          <PrimaryButton link="#" btnText="Contact Us" className={"w-[18vw]"}/>
+          <PrimaryButton link="#" btnText="Contact Us"/>
           </div>
         
 
