@@ -1,10 +1,20 @@
 import React from 'react'
 import { paraAnim } from '../gsapAnimations'
+import Image from 'next/image'
 const Hero = () => {
 paraAnim()
   return (
-    <section className=" mb-[12%] manufacturing-container" id='hero'>
+    <section className=" mb-[12%] " id='hero'>
+      <div className='w-[100vw] h-[100vw]'>
+       <Image
+                  className="hero-img absolute object-cover"
+                  src="/assets/manufacturing/manufacturing-hero.png"
+                  alt="Hero Image"
+                  priority={true}
+                  fill
+                />
     <div className="px-[10%] relative">
+   
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">
           <h1 data-para-anim className="title-1 aeonik drop-shadow-md  leading-[1] ">
@@ -23,6 +33,7 @@ paraAnim()
           </p>
         </div>
       </div>
+    </div>
     </div>
   </section>
   )

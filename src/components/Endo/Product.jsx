@@ -7,9 +7,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import 'swiper/css/pagination';
 import { EffectFade, Navigation, Autoplay } from 'swiper/modules';
+import Link from 'next/link';
 
 const ProductCard = ({ img, heading }) => {
   return (
+    <Link href="/#">
     <div className={`h-[30vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative`}>
       <div className="h-[25vw] w-[30vw] absolute top-[-7vw]">
         <Image
@@ -52,6 +54,7 @@ const ProductCard = ({ img, heading }) => {
           </button>
       </div>
     </div>
+    </Link>
   );
 }
 

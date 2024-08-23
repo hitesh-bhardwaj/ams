@@ -1,9 +1,19 @@
 import React from 'react'
+import Image from 'next/image';
 import { paraAnim } from '@/components/gsapAnimations';
 const Hero = () => {
   paraAnim()
   return (
-    <section className=" career-container" id='hero'>
+    <section className="" id='hero'>
+      <div className='w-[100vw] h-[100vh]'>
+      <Image
+                  className="hero-img absolute object-cover"
+                  src="/assets/career/career-bg.png"
+                  alt="Hero Image"
+                  priority={true}
+                  fill
+                />
+      
     <div className="px-[10%] relative">
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">
@@ -43,6 +53,7 @@ const Hero = () => {
 
         </div>
       </div>
+    </div>
     </div>
   </section>
   )

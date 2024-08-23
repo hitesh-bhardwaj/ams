@@ -305,13 +305,7 @@ body{
   background-position: top center;
   background-size: cover;
 }
-/*Career*/
-.career-container{
-  background-image: url('/assets/career/career-bg.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
+
 .work-card{
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);  
 }
@@ -319,13 +313,7 @@ body{
   box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.08);
 
 }
-/*Endo*/
-.endo-container{
-  background-image: url('/assets/endo/endo-hero.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
+
 .portfolio-text::before{
   content: " ";
   width: 15vw;
@@ -334,21 +322,6 @@ body{
   display: block;
 }
 
-/*Hernia*/
-.hernia-container{
-  background-image: url('/assets/hernia/hernia-hero.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-
-/*Manufacturing*/
-.manufacturing-container{
-  background-image: url('/assets/manufacturing/manufacturing-hero.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
 .capability-card-outer{
   height: 20vw;
   width: 20vw;

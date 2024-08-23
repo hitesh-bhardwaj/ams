@@ -18,7 +18,7 @@ export default function Footer() {
                                         do you have any questions?
                                     </span>
                                 </p>
-                                <Link href="#" className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp">
+                                <Link href="/#" className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp">
                                     <span className="text-[5.3vw] text-head aeonik leading-[1] font-light">
                                         Contact
                                     </span>
@@ -46,7 +46,7 @@ export default function Footer() {
                                     </a>
                                 </div>
                                 <div className="social-icons flex items-bottom gap-[3vw] fadeUp">
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.5vw] h-[1.5vw]"
                                             src="/assets/icons/fb.svg"
@@ -55,7 +55,7 @@ export default function Footer() {
                                             width="30"
                                         />
                                     </Link>
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.5vw] h-[1.5vw]"
                                             src="/assets/icons/linkedin.svg"
@@ -64,7 +64,7 @@ export default function Footer() {
                                             width="30"
                                         />
                                     </Link>
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.5vw] h-[1.5vw]"
                                             src="/assets/icons/twitter.svg"
@@ -73,7 +73,7 @@ export default function Footer() {
                                             width="30"
                                         />
                                     </Link>
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.5vw] h-[1.5vw]"
                                             src="/assets/icons/insta.svg"
@@ -82,7 +82,7 @@ export default function Footer() {
                                             width="30"
                                         />
                                     </Link>
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.6vw] h-[1.5vw]"
                                             src="/assets/icons/youtube.svg"
@@ -103,35 +103,35 @@ export default function Footer() {
                                 </h6>
                                 <ul className="space-y-[0.8vw] leading-[135%] fadeUp">
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link  className="content-p text-head font-light" href="/#">
                                             <span data-attr="Our Promise">
                                                 Our Promise
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/#">
                                             <span data-attr="Leadership">
                                                 Leadership
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/maufacturing">
                                             <span data-attr="Manufacturing">
                                                 Manufacturing
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/career">
                                             <span data-attr="Careers">
                                             Careers
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/#">
                                             <span data-attr="Contact Us">
                                             Contact Us
                                             </span>
@@ -147,35 +147,35 @@ export default function Footer() {
                                 </h6>
                                 <ul className="space-y-[0.8vw] leading-[135%] fadeUp">
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/#">
                                             <span data-attr="Wound Closure">
                                             Wound Closure
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/endo">
                                             <span data-attr="Endo Surgery">
                                             Endo Surgery
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/hernia">
                                             <span data-attr="Hernia Solutions">
                                             Hernia Solutions
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/#">
                                             <span data-attr="Interventional Cardiology">
                                             Interventional Cardiology
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/">
+                                        <Link className="content-p text-head font-light" href="/#">
                                             <span data-attr="Cardiovascular Solutions">
                                             Cardiovascular Solutions
                                             </span>

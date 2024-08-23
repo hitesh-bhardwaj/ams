@@ -92,7 +92,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                 <div className="border-r border-[#D8D8D8] py-[1.8vw] pr-[5vw]">
                                     <ul className="space-y-[0.8vw]">
                                         <li className="footer-link">
-                                            <Link href="/" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
+                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
                                                 <span data-attr="Home">
                                                     Home
                                                 </span>
@@ -106,7 +106,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
+                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
                                                 <span data-attr="Products">
                                                     Products
                                                 </span>
@@ -127,14 +127,14 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
+                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
                                                 <span data-attr="News">
                                                     News
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
+                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a]">
                                                 <span data-attr="Contact">
                                                     Contact
                                                 </span>
@@ -145,7 +145,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                 <div className="py-[1.8vw] pl-[5vw]">
                                     <ul className="space-y-[0.3vw]">
                                         <li className="footer-link">
-                                            <Link href="/" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a]">
+                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a]">
                                                 <span data-attr="Wound Care">
                                                     Wound Care
                                                 </span>
@@ -166,14 +166,14 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a]">
+                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a]">
                                                 <span data-attr="Interventional Cardiology">
                                                     Interventional Cardiology
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a]">
+                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a]">
                                                 <span data-attr="Cardiovascular Solutions">
                                                     Cardiovascular Solutions
                                                 </span>
@@ -184,7 +184,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                             </div>
                             <div className="flex justify-between items-center w-full absolute bottom-0">
                                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2">
-                                    <Link href="/">
+                                    <Link href="/#">
                                         <span>
                                             Privacy Policy
                                         </span>
@@ -192,14 +192,14 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                     <span>
                                         |
                                     </span>
-                                    <Link href="/">
+                                    <Link href="/#">
                                         <span>
                                             Terms & Conditions
                                         </span>
                                     </Link>
                                 </div>
                                 <div className="flex gap-[1vw]">
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.4vw] h-[1.4vw]"
                                             src="/assets/icons/fb.svg"
@@ -208,7 +208,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                             width="30"
                                         />
                                     </Link>
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.4vw] h-[1.4vw]"
                                             src="/assets/icons/linkedin.svg"
@@ -217,7 +217,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                             width="30"
                                         />
                                     </Link>
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.4vw] h-[1.4vw]"
                                             src="/assets/icons/twitter.svg"
@@ -226,7 +226,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                             width="30"
                                         />
                                     </Link>
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.4vw] h-[1.4vw]"
                                             src="/assets/icons/insta.svg"
@@ -235,7 +235,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                             width="30"
                                         />
                                     </Link>
-                                    <Link href="/" className="opacity-60 hover:opacity-100 duration-300">
+                                    <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                         <img 
                                             className="w-[1.5vw] h-[1.4vw]"
                                             src="/assets/icons/youtube.svg"
