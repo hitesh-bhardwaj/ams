@@ -117,7 +117,7 @@ export default function Footer() {
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light" href="/maufacturing">
+                                        <Link className="content-p text-head font-light" href="/manufacturing">
                                             <span data-attr="Manufacturing">
                                                 Manufacturing
                                             </span>
