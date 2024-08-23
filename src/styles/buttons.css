@@ -1,11 +1,11 @@
 /* Main button */
 .btn {
-  padding: 0 4vw;
+  padding: 0 3vw;
     display: inline-flex;
     height: 3.5vw;
     position: relative;
     width: fit-content;
-    max-width: 100%;
+    min-width: 12vw;
     border-radius: 1000px;
     background: transparent;
     color: var(--button-primary);
@@ -38,8 +38,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-left: 2vw;
 }
-
+.btn .btn-text{
+  margin-left: 2vw;
+}
 .btn .btn-icon {
   width: 1vw;
   overflow: hidden;

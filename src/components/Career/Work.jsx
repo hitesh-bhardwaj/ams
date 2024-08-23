@@ -23,7 +23,7 @@ const WorkCard = ({ no, heading, src, para, btn ,className }) => {
           </div>
           <div className="w-[50%] text-[2.5vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111]">
             <p >{para}</p>
-            <PrimaryButton link="/" btnText={btn} className={"w-full"} />
+            <PrimaryButton link="/" btnText={btn} />
           </div>
         </div>
       </div>
