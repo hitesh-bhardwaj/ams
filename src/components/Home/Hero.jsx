@@ -75,6 +75,7 @@ export default function Hero() {
                   alt="Hero Image"
                   width= {1000}
                   height= {1000}
+                  priority={true}
                 />
               </div>
               

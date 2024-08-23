@@ -56,6 +56,7 @@ const Hero = () => {
                   className="hero-img"
                   src="/assets/about/hero-image.png"
                   alt="Hero Image"
+                  priority={true}
                   fill
                 />
               </div>
