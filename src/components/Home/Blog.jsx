@@ -3,11 +3,13 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { paraAnim } from "../gsapAnimations";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 /* eslint-disable @next/next/no-img-element */
 export default function Blog() {
+    paraAnim()
     const blogLeft = useRef(null);
     const blogContainer = useRef(null);
 
@@ -43,10 +45,10 @@ export default function Blog() {
                         <span className="text-[0.9vw] font-light mb-[1vw] block">
                             {date}
                         </span>
-                        <h5 className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw]">
+                        <h5 data-para-anim className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw]">
                             {title}
                         </h5>
-                        <p className="text-[0.9vw] font-light mb-[2.5vw] text-anim-2">
+                        <p data-para-anim className="text-[0.9vw] font-light mb-[2.5vw] text-anim-2">
                             {content}
                         </p>
                         <PrimaryButton link="/" btnText="Read More"/>

@@ -2,49 +2,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import LinkButton from '../Button/LinkButton';
+import { paraAnim } from '../gsapAnimations';
 
 export default function Product() {
+    paraAnim()
 
-    // const Slide = () => {
-    //     return (
-    //         <>
-    //             <div className='product-card'>
-    //                 <div className='main relative'>
-    //                     <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-    //                         <span className='text-[0.9vw] pt-1'>01</span>
-    //                     </div>
-    //                     <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-    //                         <div className='w-2/3'>
-    //                             <img 
-    //                                 className='fadeUp'
-    //                                 src='/assets/products/ADVA-Glide.png'
-    //                                 alt='Product Image'
-    //                                 width={1000}
-    //                                 height={1000}
-    //                             />
-    //                         </div>
-    //                         <div className='flex flex-col w-full pr-[3vw]'>
-    //                             <h3 className='title-2 aeonik mb-[1vw]'>
-    //                                 <span>
-    //                                     ADVA GLIDE
-    //                                 </span>
-    //                             </h3>
-    //                             <h4 className='content-p-lg mb-[1.6vw]'>PTCA BALLOON CATHETER</h4>
-    //                             <p className='content-p-md mb-[1.6vw]'><strong>Gliding The Science of Flow Restoration</strong></p>
-    //                             <p className='content-p mb-[1.5vw]'>
-    //                                 Revolutionalized for the most challenging environments
-    //                                 <br />
-    //                                 <br />
-    //                                 ADVA GLIDE’s revolutionary technology is specially designed to succeed in the most challenging Coronary Anatomies. With the fastest delation time, superior controlled and enhanced performance properties of trackability, crossability and navigablity in a wide range of complex lesions.
-    //                             </p>
-    //                             <LinkButton btnText={"Know More"} link={"/"}/>
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         </>
-    //     )
-    // }
 
     return (
         <>

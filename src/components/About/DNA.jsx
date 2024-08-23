@@ -19,7 +19,7 @@ const DNA = () => {
       duration:1,
       scrollTrigger:{
         trigger:".dna-card-container",
-        markers:true,
+      
         start:"top 80%",
         end:"bottom 40%",
        

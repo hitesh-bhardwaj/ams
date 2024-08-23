@@ -11,64 +11,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
-import SplitType from "split-type";
-import { titleAnim, paraAnim, lineAnim, imageAnim, imgAnim, fadeIn, fadeUp } from '@/components/gsapAnimations';
+
+
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Home() {
 
-  titleAnim();
-  paraAnim(); 
-  lineAnim();
-  imageAnim();
-  imgAnim();
-  fadeIn();
-  fadeUp();
-
-  useEffect(()=> {
-    const ctx = gsap.context(() => {
-    const headings = document.querySelectorAll('.text-anim');
-      headings.forEach((heading) => {
-        const textAnim = new SplitType(heading, {types: 'words'});
-        let animWord = heading.querySelectorAll('.word');
-
-        gsap.from(animWord, {
-          scrollTrigger: {
-            trigger: heading,
-            start: 'top 80%',
-          },
-          duration: 0.6,
-          yPercent: 100,
-          stagger: 0.04,
-        });
-      });
-    });
-    return () => ctx.revert();
-  });
-
-  useEffect(()=>{
-    const ctx = gsap.context(() => {
-    const sHeadings = document.querySelectorAll('.text-anim-2');
-
-    sHeadings.forEach((sHeading) => {
-        const textAnim2 = new SplitType(sHeading, {types: 'words'});
-        let animWord2 = sHeading.querySelectorAll('.word');
-
-        gsap.from(animWord2, {
-          scrollTrigger: {
-            trigger: sHeading,
-            start: 'top 80%',
-          },
-          duration: 0.5,
-          yPercent: 100,
-          opacity: 0,
-          stagger: 0.01,
-        });
-      });
-    });
-    return () => ctx.revert();
-  });
 
   useEffect(()=>{
     const ctx = gsap.context(() => {

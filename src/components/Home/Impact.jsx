@@ -1,6 +1,8 @@
 import PrimaryButton from "../Button/PrimaryButton";
+import { paraAnim } from "../gsapAnimations";
 
 export default function Impact() {
+    paraAnim()
     return (
         <>
             <section className="p-y-sm mt-[7%]" id="impact">

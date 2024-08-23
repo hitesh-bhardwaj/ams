@@ -1,8 +1,33 @@
 import Image from "next/image";
 import { paraAnim } from "../gsapAnimations";
+import { useEffect } from "react";
+import { gsap } from 'gsap/dist/gsap';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 
 const Hero = () => {
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+             gsap.to(".fadeUp",{
+              yPercent:-10,
+              opacity:1,
+              delay:0.2,
+              duration:1,
+              scrollTrigger:{
+                trigger:".fadeUp",
+                start:"top 34%",
+                
+              }
+             })
+          });
+          return () => ctx.revert();
+    
+    
+  }, []); 
+
+
   paraAnim()
   return (
    <>
@@ -25,8 +50,8 @@ const Hero = () => {
                   </span>
                 </p>
               </div>
-              <div className="absolute right-0 top-[15%]">
-              <div className="w-[60vw] h-[43vw] relative bottom-[5%]">
+              <div className="absolute right-0 top-[25%] fadeUp opacity-0">
+              <div className="w-[60vw] h-[43vw] relative bottom-[5%] ">
                 <Image
                   className="hero-img"
                   src="/assets/about/hero-image.png"

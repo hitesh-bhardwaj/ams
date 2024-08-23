@@ -97,7 +97,7 @@ const Product = () => {
     // })
     tl.to(".card1",{
       rotateZ:-12,
-      yPercent:15,
+      yPercent:16,
       xPercent:-124,
       duration: 5,
       delay: 0,
@@ -111,28 +111,28 @@ const Product = () => {
     })
     .to(".card3",{
       rotateZ: 12,
-      yPercent:-33,
+      yPercent:-32,
       xPercent:-124,
       duration: 5,
       delay: -5,
     })
    .to(".card1",{
       rotateZ:-24,
-      yPercent:50,
-      xPercent:-250,
+      yPercent:40,
+      xPercent:-252,
       duration: 5,
       delay: 0,
     })
     .to(".card2",{
       rotateZ:-12,
-      yPercent:-1,
-      xPercent:-255,
+      yPercent:-7,
+      xPercent:-257,
       duration: 5,
       delay: -5,
     })
     .to(".card3",{
       rotateZ: 0,
-      yPercent:-50,
+      yPercent:-53,
       xPercent:-255,
       
       duration: 5,
@@ -154,7 +154,7 @@ const Product = () => {
         <ProductCard img={"/assets/hernia/product-3.png"} txt={"Mid-Weight Mesh"} className={"text-white"} rotate={"rotate-[24deg] translate-y-[48%] card3"}/>
       </div> 
       <div className='w-full mt-[2vw] product-base-text'>
-        <p className='aeonik font-light uppercase tracking-widest text-[2.2vw] text-center'>advamesh range</p>
+        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[2.2vw] text-center'>advamesh range</p>
       </div>
       </div>
        

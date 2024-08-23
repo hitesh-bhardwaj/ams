@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import PrimaryButton from "../Button/PrimaryButton";
+import { paraAnim } from "../gsapAnimations";
 
 export default function Facility() {
+    paraAnim()
     return (
         <>
             <section className="pt-[0] pb-[4%]" id="facility">

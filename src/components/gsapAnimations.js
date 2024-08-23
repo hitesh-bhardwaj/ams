@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useGSAP } from '@gsap/react';
-import { gsap } from 'gsap/dist/gsap';
+import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 import { CustomEase } from 'gsap/dist/CustomEase';
 import { SplitInLineWordChar , SplitInLine } from './splitTextUtils';

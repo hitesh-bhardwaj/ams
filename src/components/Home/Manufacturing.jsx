@@ -3,12 +3,13 @@
 import gsap from "gsap"
 import ScrollTrigger from "gsap/dist/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 import PrimaryButton from "../Button/PrimaryButton";
-
+import { paraAnim } from "../gsapAnimations";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Manufacturing() {
+  paraAnim()
 
     const picture1 = useRef(null);
     const inner1 = useRef(null);
@@ -21,7 +22,7 @@ export default function Manufacturing() {
     const text2 = useRef(null);
     const text3 = useRef(null);
 
-    useEffect(() => {
+    useGSAP(() => {
        const tl = gsap.timeline({
           scrollTrigger: {
             trigger: section.current,
@@ -115,8 +116,8 @@ export default function Manufacturing() {
         zIndex: 0,
       }, "+=1");
   
-      return () => tl.kill();
-    }, []);
+      
+    });
 
     return (
         <>
@@ -126,12 +127,12 @@ export default function Manufacturing() {
                         <div className="w-1/3 h-full">
                             <div className="h-screen w-full flex justify-center items-center relative">
                                 <div className="absolute" ref={text1}>
-                                    <h2  className="title-2 aeonik">
+                                    <h2 data-para-anim className="title-2 aeonik">
                                         
                                             Ushering in the Next Generation of Medical Technology
                                         
                                     </h2>
-                                    <p className="content-p my-[4vw]">
+                                    <p data-para-anim className="content-p my-[4vw]">
                                         
                                             AMS leverages strategic global partnerships to procure state-of-the-art manufacturing technology, ensuring uncompromising quality, innovation, and agility in our processes. Our adherence to LEAN principles and implementation of a robust quality management system guarantees compliance with the most stringent global regulatory standards.
                                        

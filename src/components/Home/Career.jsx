@@ -1,6 +1,8 @@
 import PrimaryButton from "../Button/PrimaryButton";
+import { paraAnim } from "../gsapAnimations";
 
 export default function Career() {
+    paraAnim()
     return (
         <>
             <section className="p-y-sm" id="career">

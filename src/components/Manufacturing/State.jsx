@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { fadeIn } from '../gsapAnimations';
 
 const stateSections = [
   {
@@ -40,6 +41,7 @@ const stateSections = [
 ];
 
 const State = () => {
+  fadeIn()
   return (
     <section id='state'>
       <div className='container-lg flex flex-col items-center justify-center mt-[15%] gap-[8vw]'>

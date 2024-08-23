@@ -3,10 +3,12 @@ import PrimaryButton from "../Button/PrimaryButton";
 import gsap from "gsap";
 import SplitType from "split-type";
 import { useGSAP } from "@gsap/react";
+import { paraAnim } from "../gsapAnimations";
 
 gsap.registerPlugin(useGSAP);
 
 export default function Hero() {
+  paraAnim()
 
       // useGSAP(()=>{
       //   const text = new SplitType('.hero-para', {types: 'words'});
