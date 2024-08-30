@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-import {  paraAnim , imgAnim} from '../gsapAnimations';
+import {  paraAnim } from '../gsapAnimations';
 import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger,useGSAP);
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger,useGSAP);
 const Molecular = () => {
   // Register animations
   paraAnim();
-  imgAnim();
+  
   
 
   // Create refs
@@ -22,7 +22,7 @@ const Molecular = () => {
       trigger:".molecular",
       pin:true,
       start:"top top",
-      end:"+=2000 bottom",
+      end:"+=2500 bottom",
       
       scrub:true
     }
@@ -32,6 +32,33 @@ const Molecular = () => {
     duration:3
    })
 })
+useGSAP(() => {
+  
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".molecular",
+        start: "top bottom",
+        end:"bottom 20%",
+       
+        
+        scrub:true
+      },
+
+    })
+    tl.to(".molecular-bg-img", {
+      scale:1.2,
+      delay:-1
+
+    });
+    tl.to(".molecular-bg-img",{
+      yPercent:30,
+      delay:-1
+      
+    })
+  
+});
+
+
 
 //   useEffect(() => {
 //     // Create GSAP context
@@ -68,7 +95,7 @@ const Molecular = () => {
     <>
       <section className='molecular h-[100vh] overflow-hidden' id='molecular' ref={molecularContainer}>
         <div className='w-screen h-screen absolute z-[1] overflow-hidden'>
-          <Image src={"/assets/about/molecular-bg.png"} fill alt={'molecular-bg'} className='object-cover imageanim'/>
+          <Image src={"/assets/about/molecular-bg.png"} fill alt={'molecular-bg'} className='object-cover molecular-bg-img scale-[1.3] translate-y-[-30%]'/>
         </div>
         <div className='container-sm py-[10%] relative z-[2]'>
           <div className="flex items-start justify-between w-full">

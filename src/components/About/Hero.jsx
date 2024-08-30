@@ -13,7 +13,7 @@ const Hero = () => {
              gsap.to(".fadeUp",{
               yPercent:-10,
               opacity:1,
-              delay:0.2,
+              delay:0.5,
               duration:1,
               scrollTrigger:{
                 trigger:".fadeUp",

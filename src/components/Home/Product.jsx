@@ -3,14 +3,45 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import LinkButton from '../Button/LinkButton';
 import { paraAnim } from '../gsapAnimations';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import Image from 'next/image';
+gsap.registerPlugin(ScrollTrigger,useGSAP);
 
 export default function Product() {
     paraAnim()
+    useGSAP(() => {
+  
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#product",
+            start: "top bottom",
+            end:"bottom 20%",
+            scrub:true
+          },
+    
+        })
+        tl.to(".product-bg-img", {
+          scale:1.2,
+          delay:-1
+    
+        });
+        tl.to(".product-bg-img",{
+          yPercent:30,
+          delay:-1
+          
+        })
+      
+    });
 
 
     return (
         <>
-            <section className="p-y-sm product-bg" id='product'>
+            <section id='product' className='py-[5%] relative overflow-hidden'>
+            
+          <Image src={"/assets/home/product-bg.png"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%]'/>
+        
                 <div className="container-lg">
                     <div className="product-top text-center flex flex-col items-center">
                         <h2 data-para-anim className="title-2 aeonik leading-[1.3]">

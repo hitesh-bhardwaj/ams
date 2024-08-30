@@ -1,51 +1,44 @@
 import Image from "next/image";
 import PrimaryButton from "../Button/PrimaryButton";
 import gsap from "gsap";
-import SplitType from "split-type";
 import { useGSAP } from "@gsap/react";
 import { paraAnim } from "../gsapAnimations";
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 
-gsap.registerPlugin(useGSAP);
+
+gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 export default function Hero() {
   paraAnim()
+  // useEffect(() => {
+  //   const ctx = gsap.context(() => {
+  //            gsap.to(".fadeUp",{
+  //             yPercent:-10,
+  //             opacity:1,
+  //             delay:0.2,
+  //             duration:1,
+  //             scrollTrigger:{
+  //               trigger:".fadeUp",
+  //               start:"top 34%",
+                
+  //             }
+  //            })
+  //         });
+  //         return () => ctx.revert();
+    
+    
+  // }, []); 
+  useGSAP(()=>{
+    const tl = gsap.timeline();
+    tl.from(".hero-img-anim",{
+      yPercent:10,
+      opacity:0,
+      delay:0.5
+    })
 
-      // useGSAP(()=>{
-      //   const text = new SplitType('.hero-para', {types: 'words'});
-      //   const head = new SplitType('.hero-anim', {types: 'words'});
-      //   const heroPara = document.querySelectorAll('.hero-para span .word');
-      //   const heroAnim = document.querySelectorAll(".hero-anim span .word");
-      //   const headerAnim = document.querySelectorAll(".header-anim");
+  })
 
-      //   const tl = gsap.timeline();
-      //   tl.from(headerAnim, 1,{
-      //     opacity: 0,
-      //     stagger: 0.05,
-      //     ease: 'power2.out',
-      // }, "+=1")
-      //   tl.from(heroAnim, 0.8,{
-      //       y: '100%',
-      //       stagger: 0.1,
-      //       ease: 'power2.out',
-      //   }, "-=0.8")
-      //   .from(heroPara, 0.4,{
-      //       y: '100%',
-      //       opacity: 0,
-      //       ease: "Power2.out",
-      //       stagger: 0.01,
-      //   }, '-=0.8')
-      //   .from('.hero .btn', 0.8, {
-      //       y: 30,
-      //       opacity: 0,
-      //       ease: "power2.out",
-      //   }, '-=0.8')
-      //   .from('.hero-img', 2,{
-      //       y: 50,
-      //       opacity: 0,
-      //       ease: "expo.out",
-      //   }, '-=1.2');
-      // });
-
+  
     return (
         <section className="hero main-gradient mb-[12%]" id="hero">
           <div className="px-[10%] relative">
@@ -68,7 +61,7 @@ export default function Hero() {
                 <PrimaryButton btnText={'Discover'} link={'/'}/>
               </div>
 
-              <div className="absolute w-[43%] right-0 bottom-0">
+              <div className="absolute w-[43%] right-0 bottom-0 hero-img-anim">
                 <Image
                   className="hero-img"
                   src="/assets/home/hero-image.png"
