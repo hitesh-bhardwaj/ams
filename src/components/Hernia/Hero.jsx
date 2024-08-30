@@ -4,8 +4,8 @@ import { paraAnim } from '../gsapAnimations'
 const Hero = () => {
   paraAnim()
   return (
-    <section className=" hernia-container mb-[12%]" id='hero'>
-      <div className=' relative'>
+    <section className=" mb-[12%] hernia-container" id='hero'>
+      <div className='w-[100vw] h-[100vh]'>
       <Image
                   className="hero-img absolute object-cover"
                   src="/assets/hernia/hernia-hero.png"
