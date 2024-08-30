@@ -5,7 +5,9 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <>
-            <footer className="main-gradient">
+            <footer className="main-gradient h-full mt-[4vw] pt-[3vw]">
+                
+
                 <div className="container-sm">
                     <div className="grid grid-cols-12 pt-[3.5vw] pb-[1.5vw]">
                         <div className="col-span-4">
@@ -182,7 +184,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <img
-                            className="col-span-full my-[5vw] fadeUp drop-shadow-2xl"
+                            className="col-span-full my-[3vw] fadeUp drop-shadow-2xl"
                             src="/ams-logo-with-tag.png"
                             alt="Logo"
                             height="248"

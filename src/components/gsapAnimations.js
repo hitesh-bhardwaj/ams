@@ -98,16 +98,26 @@ export function imageAnim(){
   useGSAP(() => {
     const images = document.querySelectorAll(".imageanim");
     images.forEach((img) => {
-      gsap.to(img, {
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: img,
-          start: "top 90%",
+          start: "top 70%",
+          end:"+=2000 top",
+          
+          scrub:true
         },
-        '--beforeHeight': '0%',
-        duration: 1.5,
-        stagger: 0.05,
-        ease: "power3.inOut",
+
+      })
+      tl.to(img, {
+        scale:1.1,
+        delay:-1
+
       });
+      tl.to(img,{
+        yPercent:30,
+        delay:-1
+        
+      })
     });
   });
 }

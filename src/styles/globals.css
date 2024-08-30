@@ -301,7 +301,7 @@ body{
 
 /*About page*/
 .molecular{
-  background-image: url('/assets/about/molecular-bg.png');
+  
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -355,4 +355,10 @@ body{
 .glassmorphism {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.45);
+}
+
+.imageanim{
+  transform: translateY(-20%);
+  scale: 1.2;
+  
 }

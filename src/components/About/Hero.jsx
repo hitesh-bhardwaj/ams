@@ -31,7 +31,7 @@ const Hero = () => {
   paraAnim()
   return (
    <>
-   <section className="hero main-gradient h-[120vh] mb-[12%]" id="hero">
+   <section className="hero main-gradient h-[100vh] mb-[12%]" id="hero">
           <div className="px-[10%] relative">
             <div className="flex h-dvh w-full justify-start items-center">
               <div className="">
@@ -51,7 +51,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="absolute right-0 top-[25%] fadeUp opacity-0">
-              <div className="w-[60vw] h-[43vw] relative bottom-[5%] ">
+              <div className="w-[55vw] h-[38vw] relative bottom-[5%] ">
                 <Image
                   className="hero-img"
                   src="/assets/about/hero-image.png"

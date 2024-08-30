@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { paraAnim } from "../gsapAnimations";
+import { paraAnim ,imageAnim} from "../gsapAnimations";
 
 const Genesis = ({content}) => {
+  imageAnim()
   paraAnim()
   return (
     <section className="genesis " id="genesis">
@@ -30,9 +31,9 @@ const Genesis = ({content}) => {
         </div>
 
         <div className="genesis-image">
-            <div className="w-[90vw] h-[30vw] absolute bottom-[8%] left-0">
+            <div className="w-[90vw] h-[30vw] absolute bottom-[8%] left-0 overflow-hidden rounded-[50px]">
             <Image
-                  className="rounded-[50px] "
+                  className=" imageanim "
                   src= {content.src}
                   alt="Genesis Image"
                  fill
