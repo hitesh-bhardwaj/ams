@@ -50,7 +50,7 @@ export default function Product() {
                                                 </h3>
                                                 <h4 className='content-p mb-[0.5vw]'>PTCA Balloon Catheter</h4>
                                                 <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Gliding The Science of Flow Restoration</p>
-                                                <p className='content-p-md mb-[1.5vw]'>
+                                                <p className='content-p-md mb-[1.5vw] '>
                                                     Revolutionalized for the most challenging environments
                                                     <br />
                                                     <br />

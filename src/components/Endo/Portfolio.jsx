@@ -13,7 +13,7 @@ const PortfolioCard =({img, txt , className})=>{
   return (
     <>
     <Link href={"#"}>
-    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card`}>
+    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card `}>
           <Image
             src={img}
            fill
@@ -21,7 +21,7 @@ const PortfolioCard =({img, txt , className})=>{
           />
           <div className="flex justify-center items-center absolute ">
           <p
-            className=" font-light text-[1.2vw]"
+            className=" font-light text-[1.2vw] text-shadow"
           >
            {txt}
           </p>

@@ -15,8 +15,8 @@ const PortfolioCard = ({ src, heading, para }) => {
       <div className="w-[85vw] h-[50vw] relative rounded-[10px]">
         <Image src={src} fill alt="Hernia Slider" className="rounded-[20px]" />
         <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]">
-          <h2 data-para-anim className="text-[#111111] text-[2.8vw] font-light">{heading}</h2>
-          <p data-para-anim className="text-[#111111] text-[1.4vw] font-extralight w-[70%]">{para}</p>
+          <h2  className="text-[#ffffff] text-[2.8vw] font-light text-shadow">{heading}</h2>
+          <p  className="text-[#ffffff] text-[1.4vw] font-extralight w-[70%] text-shadow">{para}</p>
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@ const PortfolioCard = ({ src, heading, para }) => {
 };
 
 const PortfolioSwiper = () => {
-  paraAnim()
+  // paraAnim()
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (

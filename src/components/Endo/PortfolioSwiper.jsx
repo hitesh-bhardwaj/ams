@@ -22,8 +22,8 @@ const PortfolioCard =({src, heading, para})=>{
                 className="rounded-[20px]"
             />
             <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]">
-            <h2 data-para-anim className="text-[#FFFFFF] text-[2.5vw] font-extralight">{heading}</h2>
-            <p data-para-anim className="text-[#FFFFFF] text-[1.25vw] font-light w-[70%]">{para}</p>
+            <h2 data-para-anim className="text-[#FFFFFF] text-[2.5vw] font-extralight text-shadow">{heading}</h2>
+            <p data-para-anim className="text-[#FFFFFF] text-[1.25vw] font-light w-[70%] text-shadow">{para}</p>
             </div>
         </div>
     </div>

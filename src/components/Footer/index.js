@@ -6,9 +6,6 @@ export default function Footer() {
     return (
         <>
             <footer className="main-gradient">
-                <div className="bg-white py-10 w-full ">
-
-                </div>
                 <div className="container-sm">
                     <div className="grid grid-cols-12 pt-[3.5vw] pb-[1.5vw]">
                         <div className="col-span-4">
@@ -185,7 +182,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <img
-                            className="col-span-full my-[5vw] fadeUp"
+                            className="col-span-full my-[5vw] fadeUp drop-shadow-2xl"
                             src="/ams-logo-with-tag.png"
                             alt="Logo"
                             height="248"

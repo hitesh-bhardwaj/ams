@@ -3,6 +3,7 @@ import Hero from '@/components/Endo/Hero'
 import Portfolio from '@/components/Endo/Portfolio'
 import PortfolioSwiper from '@/components/Endo/PortfolioSwiper'
 import Product from '@/components/Endo/Product'
+import Product2 from '@/components/Endo/Product2'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Genesis from '@/components/layoutComponents/Genesis'
@@ -29,7 +30,8 @@ export default function  endo () {
   <Hero/>
   <Genesis content = {content}/>
   <PortfolioSwiper/>
-  <Product/>
+  {/* <Product/> */}
+  <Product2/>
   <Portfolio/>
    </main>
    <Footer/>

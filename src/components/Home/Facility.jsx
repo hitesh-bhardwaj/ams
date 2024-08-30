@@ -7,7 +7,7 @@ export default function Facility() {
     return (
         <>
             <section className="pt-[0] pb-[4%]" id="facility">
-                <div className="container-lg virtual">
+                <div className="container-lg virtual glassmorphism">
                     <div className="w-1/2 relative z-10 space-y-[3.5vw]">
                         <h2 data-para-anim className="title-2 aeonik">
                             

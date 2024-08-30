@@ -65,38 +65,9 @@ const ProductCard = ({ img, heading,rotate }) => {
   );
 }
 
-const Product = () => {
+const Product2 = () => {
   paraAnim()
 
-  // useEffect(() => {
-  //   const multiplier = {
-  //     translate: 0.2,
-  //     rotate: 0.013
-  //   };
-    
-  //   function calculateWheel() {
-  //     const slides = document.querySelectorAll('.single');
-  //     slides.forEach((slide) => {
-  //       const rect = slide.getBoundingClientRect();
-  //       const r = window.innerWidth * 0.5 - (rect.x + rect.width * 0.5);
-  //       let ty = Math.abs(r) * multiplier.translate - rect.width * multiplier.translate;
-
-  //       if (ty < 0) {
-  //         ty = 0;
-  //       }
-  //       const transformOrigin = r < 0 ? 'left top' : 'right top';
-  //       slide.style.transform = `translate(0, ${ty}px) rotate(${-r * multiplier.rotate}deg)`;
-  //       slide.style.transformOrigin = transformOrigin;
-  //     });
-  //   }
-
-  //   function raf() {
-  //     requestAnimationFrame(raf);
-  //     calculateWheel();
-  //   }
-
-  //   raf();
-  // }, [])
  
   useGSAP(()=>{
     const tl = gsap.timeline({
@@ -121,26 +92,40 @@ const Product = () => {
     //   ease:"power1.in",
     // })
     tl.to(".card1",{
-      rotateZ:-12,
+      rotateZ:-24,
       yPercent:16,
       xPercent:-124,
       duration: 5,
       delay: 0,
     })
     .to(".card2",{
-      rotateZ:0,
+      rotateZ:-12,
       yPercent:-10,
       xPercent:-124,
       duration: 5,
       delay: -5,
     })
     .to(".card3",{
-      rotateZ: 12,
+      rotateZ: 0,
       yPercent:-32,
       xPercent:-124,
       duration: 5,
       delay: -5,
     })
+    .to(".card4",{
+        rotateZ: 12,
+        yPercent:-32,
+        xPercent:-124,
+        duration: 5,
+        delay: -5,
+      })
+      .to(".card5",{
+        rotateZ: 24,
+        yPercent:-32,
+        xPercent:-124,
+        duration: 5,
+        delay: -5,
+      })
    .to(".card1",{
       rotateZ:-24,
       yPercent:40,
@@ -163,19 +148,20 @@ const Product = () => {
       delay: -5,
     })
     .to(".card4",{
-      rotateZ: 0,
-      yPercent:-53,
-      xPercent:-255,
-      duration: 5,
-      delay: -5,
-    })
-    .to(".card5",{
-      rotateZ: 0,
-      yPercent:-53,
-      xPercent:-255,
-      duration: 5,
-      delay: -5,
-    })
+        rotateZ: 12,
+        yPercent:-32,
+        xPercent:-252,
+        duration: 5,
+        delay: -5,
+      })
+      .to(".card5",{
+        rotateZ: 24,
+        yPercent:-7,
+        xPercent:-257,
+        duration: 5,
+        delay: -5,
+      })
+   
   })
 
   return (
@@ -198,60 +184,8 @@ const Product = () => {
         <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[2.2vw] text-center'>advamesh range</p>
       </div>
       </div>
-       
-
-      {/* <div className="relative w-full h-full">
-        <Swiper
-          slidesPerView={5}
-          // spaceBetween={180}
-          
-          // grabCursor={true}
-          centeredSlides={true}
-          loop={true}
-          speed={1000}  
-          // autoplay={{  
-          //   delay: 1000,  
-          //   disableOnInteraction:false,
-          // }}
-          modules={[ Navigation, Autoplay]}
-          className="product-swiper"
-        >
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product1.png"} heading={"Powered Linear Cutter III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product2.png"} heading={"Linear Cutter III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product3.png"} heading={"Hemorrhoid Stapler III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product4.png"} heading={"Circular Stapler III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product5.png"} heading={"Endo Linear Cutter III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product1.png"} heading={"Powered Linear Cutter III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product2.png"} heading={"Linear Cutter III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product3.png"} heading={"Hemorrhoid Stapler III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product4.png"} heading={"Circular Stapler III"} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProductCard img={"/assets/endo/Product5.png"} heading={"Endo Linear Cutter III"} />
-          </SwiperSlide>
-    
-        </Swiper>
-      </div> */}
-      {/* </div> */}
     </section>
   );
 }
 
-export default Product;
+export default Product2;

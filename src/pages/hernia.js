@@ -19,7 +19,7 @@ export default function  hernia () {
             src:"/assets/hernia/hernia-redefine.png"
       
       }
-  return (
+  return ( 
     <>
    <Header/>
    <main>
