@@ -1,13 +1,16 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import dynamic from 'next/dynamic';
+import Background from '@/components/Test/Background';
 
-const CanvasBg = dynamic(() => import('@/components/layoutComponents/CanvasBg'), {
-    ssr: false,
-  });
+const Bg = dynamic(() => import('@/components/Test/Bg'), {
+  ssr: false,
+});
+
 const trial = () => {
   return (
     <>
-    <CanvasBg/>
+ {/* <Bg/> */}
+ {/* <Background/> */}
     </>
   )
 }

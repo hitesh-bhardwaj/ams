@@ -10,10 +10,8 @@
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
 @import url('./productSwiper.css');
-/* @import url('./testCard.css');
-@import url('./test.css');
-@import url('./CardSlider.css'); */
-
+@import url('./homecarousel.css');
+/* @import url('./slider.css'); */
 
 :root {
   --text-color: #111111;
@@ -22,6 +20,7 @@
   --button-primary: #143CA3;
 
   --transition-1:  all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  
 }
 
 

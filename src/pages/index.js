@@ -4,6 +4,7 @@ import Blog from "@/components/Home/Blog";
 import Career from "@/components/Home/Career";
 import Facility from "@/components/Home/Facility";
 import Hero from "@/components/Home/Hero";
+import HeroCarousel from "@/components/Home/HeroCarousel";
 import Impact from "@/components/Home/Impact";
 import Manufacturing from "@/components/Home/Manufacturing";
 import Product from "@/components/Home/Product";
@@ -77,7 +78,8 @@ export default function Home() {
       <main>
         <Hero />
         <Manufacturing />
-        <Product />
+        {/* <Product /> */}
+        <HeroCarousel/>
         <Impact />
         <Career />
         <Blog />

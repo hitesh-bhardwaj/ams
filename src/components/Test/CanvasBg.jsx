@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import p5 from 'p5';
 
-const CanvasBgComponent = () => {
+const CanvasBg = () => {
   const sketchRef = useRef(null);
 
   const vertShader = `
@@ -110,4 +110,4 @@ const CanvasBgComponent = () => {
   );
 };
 
-export default CanvasBgComponent;
+export default CanvasBg;

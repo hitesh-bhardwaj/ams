@@ -1,69 +1,115 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { useEffect, useRef } from 'react';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+import { gsap } from 'gsap';
 import LinkButton from '../Button/LinkButton';
-import { paraAnim } from '../gsapAnimations';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import Image from 'next/image';
-gsap.registerPlugin(ScrollTrigger,useGSAP);
 
-export default function Product() {
-    paraAnim()
-    useGSAP(() => {
+
+
+const HeroCarousel = () => {
+  const swiperContainerRef = useRef(null);
+  useEffect(() => {
+    const fashionSlider = new Swiper(swiperContainerRef.current, {
+      speed: 1000,
+      allowTouchMove: false,
+      parallax: true,
+      on: {
+        init: (e) => {
+          const active = e.slides[e.activeIndex];
+          gsap.set(active, { scale: 0.8 });
   
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: "#product",
-            start: "top bottom",
-            end:"bottom 20%",
-            scrub:true
-          },
-    
-        })
-        tl.to(".product-bg-img", {
-          scale:1.2,
-          delay:-1
-    
-        });
-        tl.to(".product-bg-img",{
-          yPercent:30,
-          delay:-1
-          
-        })
-      
+          e.emit('transitionEnd');
+        },
+        transitionStart: (e) => {
+          const prev = e.slides[e.previousIndex];
+          const motion = gsap.timeline();
+  
+          motion
+            .to(prev, {
+              duration: 0.5,
+              ease: 'cubic-bezier(.5,0,0,1)',
+              scale: 0.8,
+            })
+        },
+        transitionEnd: (e) => {
+          const active = e.slides[e.activeIndex];
+          const next = e.slides[e.nextIndex];
+  
+          const motion = gsap.timeline();
+  
+          gsap.set(active, { scale: 0.8, delay:-2 });
+  
+          motion
+            .to(next, {
+              scale: 0.8,
+              delay: -1,
+            })
+            .to(active, {
+              scale: 0.8,
+              duration: 0.5,
+              ease: 'cubic-bezier(.5,0,0,1)',
+            })
+            .to(active, {
+              duration: 0.5,
+              ease: 'cubic-bezier(.5,0,0,1)',
+              scale: 1,
+            })
+  
+          e.activeIndex === 0
+            ? document.querySelector('.swiper-button-prev').classList.add('swiper-button-disabled')
+            : document.querySelector('.swiper-button-prev').classList.remove('swiper-button-disabled');
+  
+          e.activeIndex === e.slides.length - 1
+            ? document.querySelector('.swiper-button-next').classList.add('swiper-button-disabled')
+            : document.querySelector('.swiper-button-next').classList.remove('swiper-button-disabled');
+        },
+      },
     });
+  
+    const btnPrev = document.querySelector('.navigator .swiper-button-prev');
+    btnPrev.addEventListener('click', () => fashionSlider.slidePrev());
+  
+    const btnNext = document.querySelector('.navigator .swiper-button-next');
+    btnNext.addEventListener('click', () => fashionSlider.slideNext());
+  
+    return () => {
+      btnPrev.removeEventListener('click', () => fashionSlider.slidePrev());
+      btnNext.removeEventListener('click', () => fashionSlider.slideNext());
+    };
+  }, []);
+  
 
-
-    return (
-        <>
-            <section id='product' className='py-[5%] relative overflow-hidden'>
+  return (
+    <section id='product' className='relative  overflow-hidden py-[5%] pb-[15%]'>
             
-          <Image src={"/assets/home/product-bg.png"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%]'/>
-        
-                <div className="container-lg">
-                    <div className="product-top text-center flex flex-col items-center">
-                        <h2 data-para-anim className="title-2 aeonik leading-[1.3]">
-                            
-                                Empowering Healthcare Professionals
-                            
-                        </h2>
-                        <p data-para-anim className="content-p my-6 w-[55%]"> 
-                            
-                                Advanced MedTech Solutions empowers healthcare practitioners and caregivers to manage and treat a wide range of medical conditions, from chronic diseases to acute injuries, with the next generation of insight-driven medical device technology and innovation.
-                            
-                        </p>
-                    </div>
-                    <div className='fadeUp'>
-                        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                            <SwiperSlide>
-                                <div className='product-card'>
+    <Image src={"/assets/home/product-bg.png"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%] z-[-1]'/>
+  
+          <div className="container-lg">
+              <div className="product-top text-center flex flex-col items-center">
+                  <h2  className="title-2 aeonik leading-[1.3]">
+                      
+                          Empowering Healthcare Professionals
+                      
+                  </h2>
+                  <p  className="content-p my-6 w-[55%]"> 
+                      
+                          Advanced MedTech Solutions empowers healthcare practitioners and caregivers to manage and treat a wide range of medical conditions, from chronic diseases to acute injuries, with the next generation of insight-driven medical device technology and innovation.
+                      
+                  </p>
+              </div>
+              </div>
+    <div class="fashion-slider">
+    <div class="swiper" ref={swiperContainerRef}>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <div className='product-card'>
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1'>01</span>
+                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
+                                            <span className='text-[0.9vw] pt-1 '>01</span>
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-                                            <div className='w-2/3'>
+                                            <div className='w-2/3 ml-[5%]'>
                                                 <img 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVA-Glide.png'
@@ -91,15 +137,15 @@ export default function Product() {
                                         </div>
                                     </div>
                                 </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            <div className='product-card'>
+            </div>
+            <div class="swiper-slide">
+            <div className='product-card'>
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
+                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
                                             <span className='text-[0.9vw] pt-1'>02</span>
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-                                            <div className='w-2/3'>
+                                            <div className='w-2/3 ml-[5%]'>
                                                 <img 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVAGRIP.png'
@@ -127,15 +173,15 @@ export default function Product() {
                                         </div>
                                     </div>
                                 </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            <div className='product-card'>
+            </div>
+            <div class="swiper-slide">
+            <div className='product-card'>
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
+                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
                                             <span className='text-[0.9vw] pt-1'>03</span>
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-                                            <div className='w-2/3'>
+                                            <div className='w-2/3 ml-[5%]'>
                                                 <img 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVA-Pro.png'
@@ -160,15 +206,15 @@ export default function Product() {
                                         </div>
                                     </div>
                                 </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            <div className='product-card'>
+            </div>
+            <div class="swiper-slide">
+            <div className='product-card'>
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
+                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
                                             <span className='text-[0.9vw] pt-1'>04</span>
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-                                            <div className='w-2/3'>
+                                            <div className='w-2/3 ml-[5%]'>
                                                 <img 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVACRYL.png'
@@ -193,11 +239,18 @@ export default function Product() {
                                         </div>
                                     </div>
                                 </div>
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
+            </div>
+        </div>
+
+        <div class="navigator">
+            <div class="swiper-button-prev ml-[5%]"><div className='hover:cursor-pointer '><img src='/assets/icons/arrow-left.svg'/></div></div>
+            <div class="swiper-button-next mr-[5%]"><div className='hover:cursor-pointer'><img src='/assets/icons/arrow-right-white.svg' className=''/></div></div>
+        </div>
+    </div>
+</div>
+</section>
+
+  );
+};
+
+export default HeroCarousel;
