@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import { fadeIn } from '../gsapAnimations';
+import { fadeIn,imgAnim } from '../gsapAnimations';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
 gsap.registerPlugin(useGSAP,ScrollTrigger)
+
 
 const stateSections = [
   {
@@ -46,6 +48,8 @@ const stateSections = [
 
 const State = () => {
   fadeIn()
+  imgAnim()
+ 
   useGSAP(()=>{
     const tl = gsap.timeline({
       scrollTrigger:{
@@ -53,7 +57,7 @@ const State = () => {
         pin:true,
         
         start:"top top ",
-        end:"+=3000 bottom",
+        end:"+=4000 bottom",
 
         scrub:true,
       }
@@ -61,25 +65,25 @@ const State = () => {
     })
     tl.to(".feature-container2",{
           yPercent:-124,
-          
-          ease:"power4.out"
+          ease:"power4.out",
+          delay:-0.1
           
         })
         tl.to(".feature-container1",{
           scale:0.90,
-          delay:-0.5,
+          delay:-0.6,
           opacity:0
           
         })
         tl.to(".feature-container3",{
           yPercent:-248,
           ease:"power4.out",
-          delay:-0.3
+          delay:-0.25
 
         })
         tl.to(".feature-container2",{
           scale:0.94,
-          delay:-0.5,
+          delay:-0.55,
           opacity:0
           
           
@@ -87,12 +91,12 @@ const State = () => {
         tl.to(".feature-container4",{
           yPercent:-372,
           ease:"power4.out",
-          delay:-0.3
+          delay:-0.2
 
         })
         tl.to(".feature-container3",{
           scale:0.97,
-          delay:-0.5,
+          delay:-0.55,
           opacity:0
          
           
@@ -113,14 +117,14 @@ const State = () => {
                 src={"/assets/manufacturing/state-1.png"}
                 fill
                 alt={`state-1`}
-                className={'rounded-[30px]'}
+                className={'imageAnim'}
               />
             </div>
 
             <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw]`}>
-              <h2 data-para-anim className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
+              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
-                <span data-para-anim>
+                <span >
                 Crafted by the visionary Spanish architect Ricardo Bofill, the AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac sq. ft., with Phase II and III expanding by an additional 1 Lac sq. ft. each. Embracing Gold standards in Green building principles, our facility embodies sustainability fused with operational brilliance.
                 </span>
               </p>
@@ -135,14 +139,14 @@ const State = () => {
                 src={"/assets/manufacturing/state-2.png"}
                 fill
                 alt={`state-1`}
-                className={'rounded-[30px]'}
+                className={'imageAnim'}
               />
             </div>
 
             <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw]`}>
-              <h2 data-para-anim className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
+              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
-                <span data-para-anim>
+                <span >
                 Crafted by the visionary Spanish architect Ricardo Bofill, the AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac sq. ft., with Phase II and III expanding by an additional 1 Lac sq. ft. each. Embracing Gold standards in Green building principles, our facility embodies sustainability fused with operational brilliance.
                 </span>
               </p>
@@ -157,14 +161,14 @@ const State = () => {
                 src={"/assets/manufacturing/state-3.png"}
                 fill
                 alt={`state-1`}
-                className={'rounded-[30px]'}
+                className={'imageAnim'}
               />
             </div>
 
             <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw]`}>
-              <h2 data-para-anim className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
+              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
-                <span data-para-anim>
+                <span >
                 Crafted by the visionary Spanish architect Ricardo Bofill, the AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac sq. ft., with Phase II and III expanding by an additional 1 Lac sq. ft. each. Embracing Gold standards in Green building principles, our facility embodies sustainability fused with operational brilliance.
                 </span>
               </p>
@@ -179,14 +183,14 @@ const State = () => {
                 src={"/assets/manufacturing/state-4.png"}
                 fill
                 alt={`state-1`}
-                className={'rounded-[30px]'}
+                className={'imageAnim'}
               />
             </div>
 
             <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw]`}>
-              <h2 data-para-anim className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
+              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
-                <span data-para-anim>
+                <span >
                 Crafted by the visionary Spanish architect Ricardo Bofill, the AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac sq. ft., with Phase II and III expanding by an additional 1 Lac sq. ft. each. Embracing Gold standards in Green building principles, our facility embodies sustainability fused with operational brilliance.
                 </span>
               </p>

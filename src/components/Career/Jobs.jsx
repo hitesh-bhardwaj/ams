@@ -39,7 +39,7 @@ const Jobs = () => {
             Featured Jobs
           </h2>
         </div>
-       <div className="mt-[10%] careerSwiper">
+       <div className="mt-[10%] careerSwiper fadeUp">
        <Swiper
         slidesPerView={3}
         spaceBetween={0}

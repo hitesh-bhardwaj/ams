@@ -5,6 +5,7 @@ import Hero from '@/components/Hernia/Hero'
 import Product from '@/components/Hernia/Product'
 import Genesis from '@/components/layoutComponents/Genesis'
 import PortfolioSwiper from '@/components/layoutComponents/PortfolioSwiper'
+import Transition from '@/components/Transition'
 import React from 'react'
 
 
@@ -30,6 +31,7 @@ export default function  hernia () {
   <Portfolio/>
    </main>
    <Footer/>
+   <Transition/>
    </>
   )
 }

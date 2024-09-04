@@ -1,18 +1,51 @@
 import React from 'react'
 import { paraAnim } from '../gsapAnimations'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(useGSAP,ScrollTrigger)
 import Image from 'next/image'
 const Hero = () => {
+
 paraAnim()
+useGSAP(()=>{
+  const tl = gsap.timeline({
+    scrollTrigger:{
+      trigger:"manufacturing-container",
+      scrub:true,
+     
+    }
+  })
+  tl.to(".hero-img",{
+    yPercent:60,
+
+  })
+  gsap.fromTo(".hero-img",{
+    scale:1.1,
+    yPercent:-30,
+  },{
+    scale:1,
+    yPercent:0,
+    duration:1,
+    delay:0.1,
+    ease: "power3.out"
+  })
+
+})
   return (
-    <section className=" mb-[12%] " id='hero'>
-      <div className='w-[100vw] h-[100vh]'>
-       <Image
+    <section className=" mb-[12%] manufacturing-container " id='hero'>
+      <div className='w-[100vw] h-[100vh] relative overflow-hidden'>
+        <div className='w-screen h-screen absolute'>
+        <Image
                   className="hero-img absolute object-cover"
                   src="/assets/manufacturing/manufacturing-hero.png"
                   alt="Hero Image"
                   priority={true}
                   fill
                 />
+
+        </div>
+        
     <div className="px-[10%] relative">
    
       <div className="flex h-dvh w-full flex-col justify-center items-start">

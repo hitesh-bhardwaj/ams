@@ -1,18 +1,50 @@
 import React from 'react'
 import Image from 'next/image';
 import { paraAnim } from '@/components/gsapAnimations';
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(useGSAP,ScrollTrigger)
 const Hero = () => {
   paraAnim()
+  useGSAP(()=>{
+    const tl = gsap.timeline({
+      scrollTrigger:{
+        trigger:"career-container",
+        scrub:true,
+     
+      }
+    })
+    tl.to(".hero-img",{
+      yPercent:60,
+
+    })
+    gsap.fromTo(".hero-img",{
+      scale:1.1,
+      yPercent:-30,
+    },{
+      scale:1,
+      yPercent:0,
+      duration:1,
+      delay:0.1,
+      ease: "power3.out"
+    })
+  
+  })
   return (
-    <section className="" id='hero'>
-      <div className='w-[100vw] h-[100vh]'>
-      <Image
+    <section className="career-container" id='hero'>
+      <div className='w-[100vw] h-[100vh] relative overflow-hidden'>
+        <div className='w-screen h-screen absolute'>
+        <Image
                   className="hero-img absolute object-cover"
                   src="/assets/career/career-bg.png"
                   alt="Hero Image"
                   priority={true}
                   fill
                 />
+
+        </div>
+      
       
     <div className="px-[10%] relative">
       <div className="flex h-dvh w-full flex-col justify-center items-start">
@@ -32,8 +64,8 @@ const Hero = () => {
            
           </p>
         </div>
-        <div className='w-full'>
-            <div className='h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2]'>
+        <div className='w-full fadeUp'>
+            <div className='h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2] '>
             <img src='/assets/career/search.png' alt='search-icon'/>
             </div>
             <input type='text' placeholder='Explore job openings' className='w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] placeholder:opacity-75 text-[#143CA3] glassmorphism placeholder:text-shadow'/>

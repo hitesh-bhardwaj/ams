@@ -97,43 +97,43 @@ const Product = () => {
     // })
     tl.to(".card1",{
       rotateZ:-12,
-      yPercent:16,
-      xPercent:-124,
+      yPercent:12,
+      xPercent:-118,
       duration: 5,
       delay: 0,
     })
     .to(".card2",{
       rotateZ:0,
       yPercent:-10,
-      xPercent:-124,
+      xPercent:-118,
       duration: 5,
       delay: -5,
     })
     .to(".card3",{
       rotateZ: 12,
-      yPercent:-32,
-      xPercent:-124,
+      yPercent:-35,
+      xPercent:-115,
       duration: 5,
       delay: -5,
     })
    .to(".card1",{
       rotateZ:-24,
-      yPercent:40,
-      xPercent:-252,
+      yPercent:35,
+      xPercent:-236,
       duration: 5,
       delay: 0,
     })
     .to(".card2",{
       rotateZ:-12,
-      yPercent:-7,
-      xPercent:-257,
+      yPercent:-10,
+      xPercent:-238,
       duration: 5,
       delay: -5,
     })
     .to(".card3",{
       rotateZ: 0,
-      yPercent:-53,
-      xPercent:-255,
+      yPercent:-55,
+      xPercent:-232,
       
       duration: 5,
       delay: -5,
@@ -148,10 +148,10 @@ const Product = () => {
           The Foundation of Durable Repair
         </h2>
       </div>
-      <div className='h-[50vh] flex items-center justify-between gap-[7vw] translate-x-[35%]  card-section'>
+      <div className='h-[50vh] flex items-center justify-between gap-[4vw] translate-x-[36%]  card-section'>
         <ProductCard img={"/assets/hernia/product-1.png"} txt={"Polypropylene Mesh"} rotate={"rotate-[0deg] card1"}/>
-        <ProductCard img={"/assets/hernia/product-2.png"} txt={"Macroporous Mesh"} rotate={"rotate-[12deg] translate-y-[12%] card2"} />
-        <ProductCard img={"/assets/hernia/product-3.png"} txt={"Mid-Weight Mesh"} className={"text-white"} rotate={"rotate-[24deg] translate-y-[48%] card3"}/>
+        <ProductCard img={"/assets/hernia/product-2.png"} txt={"Macroporous Mesh"} rotate={"rotate-[12deg] translate-y-[12%] translate-x-[-1%] card2"} />
+        <ProductCard img={"/assets/hernia/product-3.png"} txt={"Mid-Weight Mesh"} className={"text-white"} rotate={"rotate-[24deg] translate-y-[47%] translate-x-[-6%] card3"}/>
       </div> 
       <div className='w-full mt-[2vw] product-base-text'>
         <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[2.2vw] text-center'>advamesh range</p>

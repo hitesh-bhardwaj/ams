@@ -24,7 +24,7 @@ const DNA = () => {
         end:"bottom 40%",
        
       },
-      stagger:0.4
+      stagger:0.2
       
     })
 

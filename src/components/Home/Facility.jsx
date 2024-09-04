@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import PrimaryButton from "../Button/PrimaryButton";
-import { paraAnim } from "../gsapAnimations";
+import { paraAnim , imageAnim} from "../gsapAnimations";
 
 export default function Facility() {
     paraAnim()
+    imageAnim()
     return (
         <>
             <section className="pt-[0] pb-[4%]" id="facility">
@@ -23,7 +24,7 @@ export default function Facility() {
                     </div>
                     <div className="relative w-[55%] rounded-[3vw] overflow-hidden fadeUp">
                         <img
-                            className="w-full object-cover"
+                            className="w-full object-cover imageanim"
                             src="/assets/home/virtual.png" 
                             alt="facility"
                             loading="lazy"

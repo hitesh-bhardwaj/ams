@@ -27,7 +27,7 @@ export default function Manufacturing() {
           scrollTrigger: {
             trigger: section.current,
             start: 'top top',
-            end: 'bottom -=2500',
+            end: 'bottom -=2000',
             scrub: true,
             pin: true,
             // markers: true,
@@ -40,13 +40,13 @@ export default function Manufacturing() {
       // Timeline for Picture 1 and Text 1
       tl.to(picture1.current, {
         y: 0,
-        duration: 2,
-        delay: -1
+        duration: 1,
+        delay: -2
       })
       .to(inner1.current, {
         y: 0,
         scale: 1,
-        duration: 2,
+        duration: 1,
         onStart: () => {
           gsap.set(text1.current, {opacity: 1});
         }

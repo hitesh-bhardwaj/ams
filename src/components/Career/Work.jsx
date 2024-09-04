@@ -38,6 +38,8 @@ const Work = () => {
       scrollTrigger:{
         trigger:".works-container",
         pin:true,
+        start:"top top",
+        end:"bottom -=1000",
         scrub:true,
       }
       

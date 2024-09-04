@@ -10,6 +10,10 @@
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
 @import url('./productSwiper.css');
+/* @import url('./testCard.css');
+@import url('./test.css');
+@import url('./CardSlider.css'); */
+
 
 :root {
   --text-color: #111111;
@@ -19,6 +23,8 @@
 
   --transition-1:  all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+
 
 /* Hamburger Button Start */
 .header .burger-wrapper .menu-btn:hover .line-wrapper .line
@@ -127,6 +133,19 @@ body{
 
 .c-text{
   color: var(--text-color);
+}
+[data-title-anim],
+[data-para-anim],
+.para-anim,
+.lineWord {
+  font-kerning: none;
+}
+[data-title-anim] .line,
+[data-para-anim] .line,
+.para-anim .line,
+.lineWord .line {
+  overflow: hidden;
+  
 }
 
 /* .main-gradient {

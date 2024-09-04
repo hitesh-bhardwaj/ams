@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <>
-            <footer className="main-gradient h-full mt-[4vw] pt-[3vw]">
+            <footer className=" h-full mt-[4vw] pt-[3vw]">
                 
 
                 <div className="container-sm">

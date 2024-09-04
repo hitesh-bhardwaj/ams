@@ -58,7 +58,7 @@ const Portfolio = () => {
   })
   return (
     <section id="portfolio">
-      <div  className="container-lg flex flex-col items-center justify-center px-[4%] pb-[7%] ">
+      <div  className="container-lg flex flex-col items-center justify-center px-[4%] py-[7%] ">
       <div>
         <h2 data-para-anim className="title-2 aeonik ">
           Our Advanced Portfolio

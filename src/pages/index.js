@@ -7,6 +7,7 @@ import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import Manufacturing from "@/components/Home/Manufacturing";
 import Product from "@/components/Home/Product";
+import Transition from "@/components/Transition";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -83,6 +84,7 @@ export default function Home() {
         <Facility />
       </main>
       <Footer />
+      <Transition/>
     </>
   );
 }

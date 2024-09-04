@@ -124,17 +124,22 @@ export function imageAnim(){
 
 export function imgAnim(){
   useGSAP(() => {
-    const images = document.querySelectorAll(".imganim");
+    const images = document.querySelectorAll(".imageAnim");
     images.forEach((img) => {
-      gsap.to(img, {
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: img,
-          start: "top 90%",
+          start: "top 70%",
+          end:"+=2000 top",
+          
+          scrub:true
         },
-        '--beforeHeight': '0%',
-        duration: 1.5,
-        stagger: 0.05,
-        ease: "power3.inOut",
+
+      })
+      tl.from(img, {
+        scale:1.2,
+        delay:-1
+
       });
     });
   });
