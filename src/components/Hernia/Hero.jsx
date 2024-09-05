@@ -48,12 +48,12 @@ const Hero = () => {
     <div className="px-[12%] relative">
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">
-          <h1 data-para-anim className="title-1 aeonik drop-shadow-md  leading-[1]text-shadow ">
-            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF]">
+          <h1 data-para-anim className="title-1 aeonik drop-shadow-md  leading-[1] text-shadow ">
+            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] text-shadow">
             Advanced Hernia Repair
             </span>
             <br />
-            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF]">
+            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] text-shadow">
           Solutions for Superior Outcomes
             </span>
           </h1>

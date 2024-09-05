@@ -84,9 +84,7 @@ const State = () => {
         tl.to(".feature-container2",{
           scale:0.94,
           delay:-0.55,
-          opacity:0
-          
-          
+          opacity:0  
         })
         tl.to(".feature-container4",{
           yPercent:-372,
@@ -98,8 +96,17 @@ const State = () => {
           scale:0.97,
           delay:-0.55,
           opacity:0
-         
-          
+        })
+        tl.to(".feature-container5",{
+          yPercent:-496,
+          ease:"power4.out",
+          delay:-0.2
+
+        })
+        tl.to(".feature-container4",{
+          scale:0.99,
+          delay:-0.55,
+          opacity:0
         })
     
    
@@ -144,10 +151,10 @@ const State = () => {
             </div>
 
             <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw]`}>
-              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
+              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>Cultivating High Standards</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
                 <span >
-                Crafted by the visionary Spanish architect Ricardo Bofill, the AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac sq. ft., with Phase II and III expanding by an additional 1 Lac sq. ft. each. Embracing Gold standards in Green building principles, our facility embodies sustainability fused with operational brilliance.
+                AMS leverages global partnerships for cutting-edge technology, ensuring uncompromising quality and innovation. Our LEAN manufacturing and Class C clean room maintain precision and efficiency.
                 </span>
               </p>
             </div>
@@ -166,10 +173,10 @@ const State = () => {
             </div>
 
             <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw]`}>
-              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
+              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>Commitment to Quality</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
                 <span >
-                Crafted by the visionary Spanish architect Ricardo Bofill, the AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac sq. ft., with Phase II and III expanding by an additional 1 Lac sq. ft. each. Embracing Gold standards in Green building principles, our facility embodies sustainability fused with operational brilliance.
+                Quality is our priority. We adhere to rigorous standards (Schedule M, L-1), backed by ISO 13485:2016 and CE certifications. Our advanced testing facilities ensure product safety and efficacy, reflecting our dedication to excellence.
                 </span>
               </p>
             </div>
@@ -188,10 +195,33 @@ const State = () => {
             </div>
 
             <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw]`}>
-              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>State Of The Art Excellence</h2>
+              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>AMS OEM Solutions</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
                 <span >
-                Crafted by the visionary Spanish architect Ricardo Bofill, the AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac sq. ft., with Phase II and III expanding by an additional 1 Lac sq. ft. each. Embracing Gold standards in Green building principles, our facility embodies sustainability fused with operational brilliance.
+                AMS offers comprehensive OEM solutions tailored to meet diverse client needs. With our state-of-the-art facility and expertise in manufacturing medical devices, we provide flexible and innovative OEM partnerships. From design to delivery, AMS ensures quality and compliance, empowering partners to bring their healthcare innovations to market with confidence.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div
+            
+            className={`rounded-[45px] border-[1px] border-gray-200 h-[33vw] px-[4vw] py-[3vw] flex bg-white/50 feature-container5 `}
+          >
+            <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden'>
+              <Image
+                src={"/assets/manufacturing/state-5.png"}
+                fill
+                alt={`state-1`}
+                className={'imageAnim'}
+              />
+            </div>
+
+            <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw]`}>
+              <h2  className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3]'>Logistical Precision</h2>
+              <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw]'>
+                <span >
+                AMS excels in optimizing our supply chain to deliver efficient solutions for both patients and healthcare organizations. Our state-of-the-art warehousing and logistics operations ensure intense dedication, precision, and safety through continuous improvement initiatives.
                 </span>
               </p>
             </div>

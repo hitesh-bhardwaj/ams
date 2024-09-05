@@ -80,7 +80,7 @@ useGSAP(() => {
               <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  '>
                 <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center'>
                   <p className='text-[3.5vw]'>Pa</p>
-                  <p data-para-anim className='text-[0.75vw] mt-[-1vw]'>Patient-centric</p>
+                  <p data-para-anim className='text-[0.75vw] mt-[-1vw] '>Patient-centric</p>
                 </div>
                 <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light'>Patients at the Heart</h2>
                 <p data-para-anim className='content-p'>

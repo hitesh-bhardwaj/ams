@@ -7,8 +7,8 @@ const Connecting = () => {
   
   return (
     <section className='' id='connect'>
-        <div className='container-lg py-[10%] fadeUp'>
-            <div className='px-[3%] py-[5%]  border-[1px]  flex justify-between flex-col items-center rounded-[60px] bg-white/50 '>
+        <div className='container-lg my-[10%] fadeUp group'>
+            <div className='px-[3%] py-[5%]  border-[1px]  flex justify-between flex-col items-center rounded-[60px] bg-white/50 group-hover:bg-white group-hover:shadow-xl duration-300'>
                 <div className=''>
             <h2 data-para-anim className="title-2 aeonik ">
             Connecting for a Healthier Tomorrow.

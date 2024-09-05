@@ -51,7 +51,7 @@ const Jobs = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[ Pagination]}
+        modules={[ Pagination, Autoplay]}
         className="MySwiper"
       >
         <SwiperSlide>

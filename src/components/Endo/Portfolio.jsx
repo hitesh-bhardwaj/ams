@@ -13,12 +13,14 @@ const PortfolioCard =({img, txt , className})=>{
   return (
     <>
     <Link href={"#"}>
-    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card `}>
+    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group`}>
           <Image
             src={img}
            fill
             alt="portfolio-1" 
+            className="group-hover:scale-[1.2] duration-300"
           />
+          <div className="imgoverlay glassmorphism absolute w-[10vw] h-[11.5vw]  left-[-50%] duration-300 block top-0 group-hover:left-[0%]"></div>
           <div className="flex justify-center items-center absolute ">
           <p
             className=" font-light text-[1.2vw] text-shadow"
@@ -36,17 +38,12 @@ const PortfolioCard =({img, txt , className})=>{
 const Portfolio = () => {
   paraAnim()
   useGSAP(()=>{
-   
-      
-    
     gsap.from(".portfolio-card",{
       yPercent:50,
       opacity:0,
-     
       duration:0.7,
       scrollTrigger:{
         trigger:".portfolio-card-container",
-      
         start:"top 80%",
         end:"bottom 40%",
        
@@ -58,7 +55,7 @@ const Portfolio = () => {
   })
   return (
     <section id="portfolio">
-      <div  className="container-lg flex flex-col items-center justify-center px-[4%] py-[7%] ">
+      <div  className="container-lg flex flex-col items-center justify-center px-[4%] py-[4%] bg-[white]">
       <div>
         <h2 data-para-anim className="title-2 aeonik ">
           Our Advanced Portfolio
@@ -70,7 +67,6 @@ const Portfolio = () => {
         <PortfolioCard img={"/assets/portfolio/portfolio-2.png"} txt = {"Advanced Cardiovascular Solutions"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-3.png"} txt = {"Advanced Endo Surgery"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-4.png"} txt = {"Advanced Hernia Solutions"}/>
-
       </div>
       </div>
     </section>

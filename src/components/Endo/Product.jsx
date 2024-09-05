@@ -10,7 +10,7 @@ const ProductCard = ({ img, heading,rotate }) => {
   return (
     <div className={`${rotate}`}>
     <Link href={"#"}>
-    <div className={`h-[30vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border border-black`}>
+    <div className={`h-[30vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border border-gray-200`}>
       <div className="h-[25vw] w-[30vw] absolute top-[-7vw]">
         <Image
           fill

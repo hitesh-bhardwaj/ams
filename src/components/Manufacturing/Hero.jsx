@@ -50,17 +50,17 @@ useGSAP(()=>{
    
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">
-          <h1 data-para-anim className="title-1 aeonik drop-shadow-md  leading-[1] ">
-            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] ">
+          <h1 data-para-anim className="title-1 aeonik drop-shadow-md  leading-[1] text-shadow">
+            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] text-shadow">
            Commitment To
             </span>
             <br />
-            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF]">
+            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] text-shadow">
           Global Standards
             </span>
           </h1>
           <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p ">
-            <span data-para-anim className='text-[#FFFFFF]'>
+            <span data-para-anim className='text-[#FFFFFF] text-shadow'>
             The eco-friendly AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications.
             </span>
           </p>

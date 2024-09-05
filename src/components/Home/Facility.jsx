@@ -7,9 +7,9 @@ export default function Facility() {
     imageAnim()
     return (
         <>
-            <section className="pt-[0] pb-[4%]" id="facility">
-                <div className="container-lg virtual glassmorphism">
-                    <div className="w-1/2 relative z-10 space-y-[3.5vw]">
+            <section className="pt-[0] pb-[4%] " id="facility">
+                <div className="container-lg virtual">
+                    <div className="w-1/2 relative z-10 space-y-[3.5vw] duration-300">
                         <h2 data-para-anim className="title-2 aeonik">
                             
                                 Delve Deeper into the World of AMS

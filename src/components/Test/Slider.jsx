@@ -15,7 +15,7 @@ const Slider = () => {
       };
       const nextButton = document.querySelector('.btn.next');
       const prevButton = document.querySelector('.btn.prev');
-  
+    
       nextButton.addEventListener('click', activate);
       prevButton.addEventListener('click', activate);
   
@@ -71,19 +71,6 @@ const Slider = () => {
 
         {/* Fourth Item */}
         <div className="item">
-          <img src="https://unsplash.it/1920/1080?random=4" loading="eager" alt="Commodi Veniam" className="image" />
-          <div className="content">
-            <h2 className="title">Last Trace Of Us</h2>
-            <p className="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis
-              inventore praesentium nisi. Id laboriosam ipsam enim.
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-
-        {/* Fifth Item */}
-        <div className="item">
           <img src="https://unsplash.it/1920/1080?random=5" loading="eager" alt="Ipsam Tenetur" className="image" />
           <div className="content">
             <h2 className="title">Urban Decay</h2>
@@ -95,7 +82,7 @@ const Slider = () => {
           </div>
         </div>
 
-        {/* Sixth Item */}
+        {/* Fifth Item */}
         <div className="item">
           <img src="https://unsplash.it/1920/1080?random=6" loading="eager" alt="Nesciunt Consectetur Similique Sit" className="image" />
           <div className="content">
@@ -107,7 +94,7 @@ const Slider = () => {
             <button>Read More</button>
           </div>
         </div>
-      </div>
+      </div> 
 
       <nav className="nav">
         {/* <IonIcon className="btn prev" icon={arrowBackOutline} /> */}

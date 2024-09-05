@@ -49,11 +49,11 @@ const Hero = () => {
       <div className="flex h-dvh w-full flex-col justify-center items-start">
         <div className="">
           <h1 data-para-anim className="title-1 aeonik drop-shadow-lg  leading-[1] text-shadow">
-            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] ">
+            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] text-shadow ">
             Breaking New Ground
             </span>
             <br />
-            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF]">
+            <span className="leading-[1.2] overflow-hidden text-[#FFFFFF] text-shadow">
            in Endo Surgery
             </span>
           </h1>
