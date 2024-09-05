@@ -3,13 +3,14 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { paraAnim } from "../gsapAnimations";
+import { paraAnim,imageAnim } from "../gsapAnimations";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 /* eslint-disable @next/next/no-img-element */
 export default function Blog() {
     paraAnim()
+    imageAnim()
     const blogLeft = useRef(null);
     const blogContainer = useRef(null);
 
@@ -32,9 +33,9 @@ export default function Blog() {
         return (
             <>
                 <div className="flex items-start justify-between gap-[4%]">
-                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl fadeUp">
+                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl ">
                         <img 
-                            className="h-full w-full object-cover"
+                            className="h-full w-full object-cover imageanim"
                             src={img}
                             alt="blog image"
                             height="600"
@@ -54,7 +55,7 @@ export default function Blog() {
                         <PrimaryButton link="/" btnText="Read More"/>
                     </div>
                 </div>
-                <span className="block h-[1px] w-full my-[6vw] bg-[#d6d6d6] lineDraw"/>
+                <span className="block h-[1px] w-full my-[4vw] bg-[#d6d6d6] lineDraw"/>
             </>
         )
     }

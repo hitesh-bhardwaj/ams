@@ -1,19 +1,43 @@
 import PrimaryButton from "../Button/PrimaryButton";
 import { paraAnim } from "../gsapAnimations";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 export default function Career() {
     paraAnim()
+    // useGSAP(()=>{
+
+        
+    //     const tl = gsap.timeline({
+    //         scrollTrigger: {
+    //           trigger: ".imageAnim",
+    //           start: "top 70%",
+    //           end:"bottom top",
+              
+    //           scrub:true
+    //         },
+    
+    //       })
+    //       tl.from(".imageAnim", {
+    //         scale:1.2,
+    //         delay:-1
+    
+    //       });
+    // })
+    
     return (
         <>
             <section className="p-y-sm" id="career">
-                <div className="container-lg relative px-[8%] py-[8%]">
+                <div className="container-lg relative px-[8%] py-[8%] overflow-hidden rounded-[3vw]">
                     <video 
                         loading="lazy"
                         autoPlay 
                         loop
                         muted 
                         playsInline 
-                        className="h-full w-full object-cover left-0 top-0 rounded-[3vw] absolute"
+                        className="h-full w-full object-cover left-0 top-0 rounded-[3vw] absolute imageAnim"
                         src="/assets/home/career.mp4">
                     </video>
                     <div className="w-[60%] relative z-10 space-y-[3.5vw]">

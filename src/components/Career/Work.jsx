@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP,ScrollTrigger)
-import { paraAnim } from '@/components/gsapAnimations';
+import { paraAnim , imgAnim } from '@/components/gsapAnimations';
 
 const WorkCard = ({ no, heading, src, para, btn ,className }) => {
   return (
@@ -33,6 +33,7 @@ const WorkCard = ({ no, heading, src, para, btn ,className }) => {
 
 const Work = () => {
   paraAnim()
+  imgAnim()
   useGSAP(()=>{
     const tl = gsap.timeline({
       scrollTrigger:{

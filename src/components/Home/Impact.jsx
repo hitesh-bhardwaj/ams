@@ -1,19 +1,41 @@
 import PrimaryButton from "../Button/PrimaryButton";
-import { paraAnim } from "../gsapAnimations";
+import { paraAnim} from "../gsapAnimations";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 export default function Impact() {
     paraAnim()
+    useGSAP(()=>{
+        const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".imageAnim",
+              start: "top 70%",
+              end:"bottom top",
+            //markers:true,
+              scrub:true
+            },
+    
+          })
+          tl.from(".imageAnim", {
+            scale:1.2,
+            delay:-1
+    
+          });
+    })
+    
     return (
         <>
-            <section className="p-y-sm mt-[7%]" id="impact">
-                <div className="container-lg relative px-[8%] h-full py-[8%]">
+            <section className="p-y-sm mt-[5%]" id="impact">
+                <div className="container-lg relative px-[8%] h-full py-[8%] overflow-hidden rounded-[3vw]">
                     <video 
                         loading="lazy"
                         autoPlay 
                         loop
                         muted 
                         playsInline 
-                        className="h-full w-full object-cover left-0 top-0 rounded-[3vw] absolute"
+                        className="h-full w-full object-cover left-0 top-0 absolute imageAnim"
                         src="/assets/home/impact-video.mp4">
                     </video>
                     <div className="flex items-center">

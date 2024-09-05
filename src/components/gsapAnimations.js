@@ -131,6 +131,7 @@ export function imgAnim(){
           trigger: img,
           start: "top 70%",
           end:"+=2000 top",
+          // markers:true,
           
           scrub:true
         },

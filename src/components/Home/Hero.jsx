@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { paraAnim } from "../gsapAnimations";
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
+import Link from "next/link";
 
 
 gsap.registerPlugin(useGSAP,ScrollTrigger);
@@ -59,6 +60,7 @@ export default function Hero() {
                   </span>
                 </p>
                 <PrimaryButton btnText={'Discover'} link={'/'}/>
+               
               </div>
 
               <div className="absolute w-[43%] right-0 bottom-0 hero-img-anim">

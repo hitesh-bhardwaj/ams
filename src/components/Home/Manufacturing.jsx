@@ -38,12 +38,12 @@ export default function Manufacturing() {
         });
   
       // Timeline for Picture 1 and Text 1
-      tl.to(picture1.current, {
-        y: 0,
-        duration: 1,
-        delay: -2
-      })
-      .to(inner1.current, {
+      // tl.to(picture1.current, {
+      //   y: 0,
+      //   duration: 1,
+      //   delay: 0
+      // })
+      tl.to(inner1.current, {
         y: 0,
         scale: 1,
         duration: 1,
@@ -68,6 +68,7 @@ export default function Manufacturing() {
       tl.to(picture2.current, {
         y: 0,
         duration: 2,
+        delay: -1,
       })
       .to(inner2.current, {
         y: 0,

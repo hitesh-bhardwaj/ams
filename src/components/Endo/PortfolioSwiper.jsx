@@ -5,7 +5,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import 'swiper/css/pagination';
-import { FreeMode, Thumbs, Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css/effect-creative';
+import { FreeMode, Thumbs, Navigation, Autoplay, EffectCreative } from 'swiper/modules';
 import Image from "next/image";
 import { paraAnim } from "../gsapAnimations";
 import { gsap } from "gsap";
@@ -14,11 +15,7 @@ const PortfolioCard = ({ src, heading, para }) => {
   return (
     <div className="">
       <div className="w-[85vw] h-[50vw] relative rounded-[10px]">
-        <Image src={src}
-          fill
-          alt="Endo Slider"
-          className=""
-        />
+        <Image src={src} fill alt="Endo Slider" className="" />
         <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]">
           <h2 className="text-[#FFFFFF] text-[2.5vw] font-extralight text-shadow">{heading}</h2>
           <p className="text-[#FFFFFF] text-[1.25vw] font-light w-[50%] text-shadow">{para}</p>
@@ -31,47 +28,43 @@ const PortfolioCard = ({ src, heading, para }) => {
 const PortfolioSwiper = () => {
   paraAnim();
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const [activeIndex, setActiveIndex] = useState(0);
   const thumbnailsRefs = useRef([]);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  // Function to handle slide change and trigger GSAP animations
   const handleSlideChange = (swiper) => {
-    setActiveIndex(swiper.activeIndex);
-  };
+    const newActiveIndex = swiper.activeIndex % thumbnailsRefs.current.length;
+    setActiveIndex(newActiveIndex);
 
-  const handleAutoplay = (swiper) => {
-    const progress = swiper.autoplay.running ? swiper.autoplay.progress : 0;
-
-    // Animate overlay on active thumbnail based on autoplay progress
-    const activeThumb = thumbnailsRefs.current[swiper.activeIndex % thumbnailsRefs.current.length];
-    if (activeThumb) {
-      gsap.to(activeThumb, {
-        opacity: 1 - progress,
-        duration: 0.1,
-        ease: 'linear',
-      });
-    }
-
-    // Apply overlay to non-active thumbnails
     thumbnailsRefs.current.forEach((thumb, index) => {
-      if (index !== swiper.activeIndex % thumbnailsRefs.current.length) {
-        gsap.to(thumb, {
-          opacity: 1,
-          duration: 0.1,
-          ease: 'linear',
-        });
+      if (thumb) {
+        if (index === newActiveIndex) {
+          // Remove overlay for the active thumbnail
+          gsap.to(thumb, { opacity: 0, duration: 0.3 });
+        } else {
+          // Add overlay for inactive thumbnails
+          gsap.to(thumb, { opacity: 0.5, duration: 0.3 });
+        }
       }
     });
   };
 
   useEffect(() => {
     if (thumbsSwiper) {
-      thumbsSwiper.on('autoplay', handleAutoplay);
+      thumbsSwiper.on('slideChange', handleSlideChange);
+      // Initial call to set the correct overlay state
+      handleSlideChange(thumbsSwiper);
 
-      // Clean up event listener when component unmounts or thumbsSwiper changes
+      // Listen for when the swiper resets
+      thumbsSwiper.on('slideChangeTransitionEnd', () => {
+        handleSlideChange(thumbsSwiper);
+      },[thumbsSwiper]);
+
       return () => {
         if (thumbsSwiper) {
-          thumbsSwiper.off('autoplay', handleAutoplay);
+          thumbsSwiper.off('slideChange', handleSlideChange);
+          thumbsSwiper.off('slideChangeTransitionEnd', () => {
+            handleSlideChange(thumbsSwiper);
+          });
         }
       };
     }
@@ -89,10 +82,21 @@ const PortfolioSwiper = () => {
             spaceBetween={0}
             thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
             loop={true}
-            modules={[FreeMode, Thumbs, Navigation, Autoplay]}
+            effect={'creative'}
+            speed={1500}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: ['-40%', 0, -1],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+              },
+            }}
+            modules={[FreeMode, Thumbs, Navigation, Autoplay, EffectCreative]}
             className="mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden"
             onSlideChange={handleSlideChange}
-            autoplay={{ delay: 3000, disableOnInteraction: false }} // Enable autoplay
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
           >
             <SwiperSlide>
               <PortfolioCard
@@ -124,15 +128,12 @@ const PortfolioSwiper = () => {
             >
               {['/assets/endo/endo-slider-1.png', '/assets/endo/endo-slider-2.png', '/assets/endo/endo-slider-3.png'].map((src, index) => (
                 <SwiperSlide key={index}>
-                  <div
-                    className="h-[7vw] w-[12vw] relative cursor-pointer overflow-hidden rounded-[20px]"
-                     // Store the ref for each thumbnail
-                  >
-                    <div className="w-full h-full bg-black opacity-50 absolute top-0 left-0 z-[2] overlay" ref={el => thumbnailsRefs.current[index] = el}></div>
+                  <div className="h-[7vw] w-[12vw] relative cursor-pointer overflow-hidden rounded-[20px]">
+                    {/* <div className="w-full h-full bg-black opacity-50 absolute top-0 left-0 z-[2] " ref={el => thumbnailsRefs.current[index] = el}></div> */}
                     <Image
                       fill
                       src={src}
-                      className={`border-[1px]  opacity-100`}
+                      className={` opacity-100`}
                       alt={`thumbnail ${index}`}
                     />
                   </div>

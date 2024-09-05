@@ -4,6 +4,7 @@ import Head from "next/head";
 import { AnimatePresence } from "framer-motion";
 import Transition from "@/components/Transition";
 import dynamic from 'next/dynamic';
+import Pixi from "@/components/Pixi";
 
 
 const CanvasBg = dynamic(() => import('@/components/Test/CanvasBg'), {
@@ -29,13 +30,12 @@ export default function App({ Component, pageProps, router }) {
           crossOrigin=""
         />
       </Head>
-      <ReactLenis root options={{ duration: 2 }}>
+      <ReactLenis root>
         <AnimatePresence mode="wait">
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </ReactLenis>
-    
-      
+      <Pixi/>
       
     </>
   );

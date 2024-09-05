@@ -5,7 +5,7 @@ export default function Discover() {
   return (
     <>
       <section className="pt-[0] pb-[4%] group" id="discover">
-        <div className="container-lg flex justify-between mt-[10%] items-center border-[1px] bg-white/50  border-[#DADADA] rounded-[60px] w-full h-[30vw] fadeUp group-hover:shadow-xl duration-300 overflow-hidden">
+        <div className="container-lg flex justify-between items-center border-[1px] bg-white/50  border-[#DADADA] rounded-[60px] w-full h-[30vw] fadeUp group-hover:shadow-xl duration-300 overflow-hidden">
           <div className="w-[70%] relative  space-y-[3vw] px-[7vw]">
             <h2 data-para-anim className="title-2 aeonik">
               <span className="">Discover Our R&D</span>
@@ -19,8 +19,9 @@ export default function Discover() {
               <PrimaryButton link={"/"} btnText={"Let's Meet"} />
             </div>
           </div>
-          <div className="relative w-[32vw] h-[25vw] overflow-hidden fadeUp group-hover:w-[40vw] duration-300 group-hover:drop-shadow-2xl">
+          <div className="relative w-[32vw] h-[25vw] fadeUp">
             <Image
+            className="group-hover:scale-[1.1] duration-300"
               fill
               src="/assets/manufacturing/discover.png"
               alt="Discover"

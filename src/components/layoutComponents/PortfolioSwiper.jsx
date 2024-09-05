@@ -5,7 +5,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import 'swiper/css/pagination';
-import { FreeMode, Thumbs, Navigation } from 'swiper/modules';
+import { FreeMode, Thumbs, Navigation , EffectCreative, Autoplay} from 'swiper/modules';
 import Image from "next/image";
 import { paraAnim } from "../gsapAnimations";
 
@@ -36,14 +36,25 @@ const PortfolioSwiper = () => {
         <div className=" relative">
           <Swiper
             slidesPerView={1}
-            spaceBetween={20}
+            spaceBetween={0}
             loop={true}
             autoplay={{
               delay: 1500,
               disableOnInteraction: false,
             }}
-            modules={[FreeMode, Thumbs, Navigation]}
-            className="mySwiper"
+            effect={'creative'}
+            speed={1500}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: ['-40%', 0, -1],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+              },
+            }}
+            modules={[FreeMode, Thumbs, Navigation,EffectCreative , Autoplay]}
+            className="mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden"
             thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
           >
             <SwiperSlide>
@@ -87,7 +98,7 @@ const PortfolioSwiper = () => {
                   <Image
                     fill
                     src="/assets/hernia/portfolio-1.png"
-                    className="border-[1px] border-[#FFFFFF] rounded-[20px]"
+                    className="rounded-[20px]"
                     alt="small swiper"
                   />
                 </div>
@@ -97,7 +108,7 @@ const PortfolioSwiper = () => {
                   <Image
                     fill
                     src="/assets/hernia/portfolio-2.png"
-                    className="border-[1px] border-[#FFFFFF] rounded-[20px]"
+                    className=" rounded-[20px]"
                     alt="small swiper"
                   />
                 </div>
@@ -107,7 +118,7 @@ const PortfolioSwiper = () => {
                   <Image
                     fill
                     src="/assets/hernia/portfolio-3.png"
-                    className="border-[1px] border-[#FFFFFF] rounded-[20px]"
+                    className="rounded-[20px]"
                     alt="small swiper"
                   />
                 </div>
