@@ -78,8 +78,8 @@ export default function Home() {
       <main>
         <Hero />
         <Manufacturing />
-        {/* <Product /> */}
-        <HeroCarousel/>
+        <Product />
+        {/* <HeroCarousel/> */}
         <Impact />
         <Career />
         <Blog />
