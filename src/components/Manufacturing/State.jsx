@@ -11,35 +11,35 @@ gsap.registerPlugin(useGSAP,ScrollTrigger)
 const stateSections = [
   {
     id: 1,
-    imageSrc: "/assets/manufacturing/state-1.png",
+    imageSrc: "/assets/manufacturing/state-1.webp",
     title: "State Of The Art Excellence",
     description: "Crafted by the visionary Spanish architect Ricardo Bofill, the AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac sq. ft., with Phase II and III expanding by an additional 1 Lac sq. ft. each. Embracing Gold standards in Green building principles, our facility embodies sustainability fused with operational brilliance.",
     reverse: false,
   },
   {
     id: 2,
-    imageSrc: "/assets/manufacturing/state-2.png",
+    imageSrc: "/assets/manufacturing/state-2.webp",
     title: "Cultivating High Standards",
     description: "AMS leverages global partnerships for cutting-edge technology, ensuring uncompromising quality and innovation. Our LEAN manufacturing and Class C clean room maintain precision and efficiency.",
     reverse: true,
   },
   {
     id: 3,
-    imageSrc: "/assets/manufacturing/state-3.png",
+    imageSrc: "/assets/manufacturing/state-3.webp",
     title: "Commitment to Quality",
     description: "Quality is our priority. We adhere to rigorous standards (Schedule M, L-1), backed by ISO 13485:2016 and CE certifications. Our advanced testing facilities ensure product safety and efficacy, reflecting our dedication to excellence.",
     reverse: false,
   },
   {
     id: 4,
-    imageSrc: "/assets/manufacturing/state-4.png",
+    imageSrc: "/assets/manufacturing/state-4.webp",
     title: "AMS OEM Solutions",
     description: "AMS offers comprehensive OEM solutions tailored to meet diverse client needs. With our state-of-the-art facility and expertise in manufacturing medical devices, we provide flexible and innovative OEM partnerships. From design to delivery, AMS ensures quality and compliance, empowering partners to bring their healthcare innovations to market with confidence.",
     reverse: true,
   },
   {
     id: 5,
-    imageSrc: "/assets/manufacturing/state-5.png",
+    imageSrc: "/assets/manufacturing/state-5.webp",
     title: "Logistical Precision",
     description: "AMS excels in optimizing our supply chain to deliver efficient solutions for both patients and healthcare organizations. Our state-of-the-art warehousing and logistics operations ensure intense dedication, precision, and safety through continuous improvement initiatives.",
     reverse: false,
@@ -121,7 +121,7 @@ const State = () => {
           >
             <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden'>
               <Image
-                src={"/assets/manufacturing/state-1.png"}
+                src={"/assets/manufacturing/state-1.webp"}
                 fill
                 alt={`state-1`}
                 className={'imageAnim'}
@@ -143,7 +143,7 @@ const State = () => {
           >
             <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden'>
               <Image
-                src={"/assets/manufacturing/state-2.png"}
+                src={"/assets/manufacturing/state-2.webp"}
                 fill
                 alt={`state-1`}
                 className={'imageAnim'}
@@ -165,7 +165,7 @@ const State = () => {
           >
             <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden'>
               <Image
-                src={"/assets/manufacturing/state-3.png"}
+                src={"/assets/manufacturing/state-3.webp"}
                 fill
                 alt={`state-1`}
                 className={'imageAnim'}
@@ -187,7 +187,7 @@ const State = () => {
           >
             <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden'>
               <Image
-                src={"/assets/manufacturing/state-4.png"}
+                src={"/assets/manufacturing/state-4.webp"}
                 fill
                 alt={`state-1`}
                 className={'imageAnim'}
@@ -210,7 +210,7 @@ const State = () => {
           >
             <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden'>
               <Image
-                src={"/assets/manufacturing/state-5.png"}
+                src={"/assets/manufacturing/state-5.webp"}
                 fill
                 alt={`state-1`}
                 className={'imageAnim'}

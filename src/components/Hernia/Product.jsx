@@ -149,9 +149,9 @@ const Product = () => {
         </h2>
       </div>
       <div className='h-[50vh] flex items-center justify-between gap-[4vw] translate-x-[36%]  card-section'>
-        <ProductCard img={"/assets/hernia/product-1.png"} txt={"Polypropylene Mesh"} rotate={"rotate-[0deg] card1"}/>
-        <ProductCard img={"/assets/hernia/product-2.png"} txt={"Macroporous Mesh"} rotate={"rotate-[12deg] translate-y-[12%] translate-x-[-1%] card2"} />
-        <ProductCard img={"/assets/hernia/product-3.png"} txt={"Mid-Weight Mesh"} className={"text-white"} rotate={"rotate-[24deg] translate-y-[47%] translate-x-[-6%] card3"}/>
+        <ProductCard img={"/assets/hernia/product-1.webp"} txt={"Polypropylene Mesh"} rotate={"rotate-[0deg] card1"}/>
+        <ProductCard img={"/assets/hernia/product-2.webp"} txt={"Macroporous Mesh"} rotate={"rotate-[12deg] translate-y-[12%] translate-x-[-1%] card2"} />
+        <ProductCard img={"/assets/hernia/product-3.webp"} txt={"Mid-Weight Mesh"} className={"text-white"} rotate={"rotate-[24deg] translate-y-[47%] translate-x-[-6%] card3"}/>
       </div> 
       <div className='w-full mt-[2vw] product-base-text'>
         <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[2.2vw] text-center'>advamesh range</p>

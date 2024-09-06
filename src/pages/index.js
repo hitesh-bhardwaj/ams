@@ -8,7 +8,6 @@ import HeroCarousel from "@/components/Home/HeroCarousel";
 import Impact from "@/components/Home/Impact";
 import Manufacturing from "@/components/Home/Manufacturing";
 // import Product from "@/components/Home/Product";
-
 import Transition from "@/components/Transition";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";

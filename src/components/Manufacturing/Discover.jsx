@@ -24,7 +24,7 @@ export default function Discover() {
             <Image
             className="group-hover:scale-[1.1] duration-300"
               fill
-              src="/assets/manufacturing/discover.png"
+              src="/assets/manufacturing/discover.webp"
               alt="Discover"
             />
           </div>

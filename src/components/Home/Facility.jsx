@@ -25,7 +25,7 @@ export default function Facility() {
                     <div className="relative w-[55%] rounded-[3vw] overflow-hidden fadeUp">
                         <img
                             className="w-full object-cover imageanim"
-                            src="/assets/home/virtual.png" 
+                            src="/assets/home/virtual.webp" 
                             alt="facility"
                             loading="lazy"
                             width={800}

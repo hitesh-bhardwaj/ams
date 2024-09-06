@@ -46,7 +46,7 @@ const DNA = () => {
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative '> 
                 <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl"
-                  src="/assets/about/accessible.png"
+                  src="/assets/about/accessible.webp"
                   alt="Accessible Image"
                   fill
                 />
@@ -70,7 +70,7 @@ const DNA = () => {
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative '> 
                 <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl"
-                  src="/assets/about/globe.png"
+                  src="/assets/about/globe.webp"
                   alt="Accessible Image"
                   fill
                 />
@@ -95,7 +95,7 @@ const DNA = () => {
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative '> 
                 <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl"
-                  src="/assets/about/accessible.png"
+                  src="/assets/about/accessible.webp"
                   alt="Accessible Image"
                   fill
                 />

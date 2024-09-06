@@ -233,11 +233,11 @@ const Product = () => {
       </div>
     
       <div className='h-full flex items-center justify-between gap-[4vw] translate-x-[41%] card-section product'>
-        <ProductCard img={"/assets/endo/Product1.png"} heading={"Powered Linear Cutter III"}  rotate={"rotate-[] card1"}/>
-        <ProductCard img={"/assets/endo/Product2.png"} heading={"Linear Cutter III"} rotate={"rotate-[12deg] translate-y-[10%] card2"} />
-        <ProductCard  img={"/assets/endo/Product3.png"} heading={"Hemorrhoid Stapler III"} rotate={"rotate-[24deg] translate-y-[42%] translate-x-[-5%] card3"}/>
-        <ProductCard   img={"/assets/endo/Product4.png"} heading={"Circular Stapler III"} rotate={"rotate-[36deg] translate-y-[94%] translate-x-[-20%] card4"}/>
-        <ProductCard  img={"/assets/endo/Product5.png"} heading={"Endo Linear Cutter III"} rotate={"rotate-[48deg] translate-y-[48%] card5"}/>
+        <ProductCard img={"/assets/endo/Product1.webp"} heading={"Powered Linear Cutter III"}  rotate={"rotate-[] card1"}/>
+        <ProductCard img={"/assets/endo/Product2.webp"} heading={"Linear Cutter III"} rotate={"rotate-[12deg] translate-y-[10%] card2"} />
+        <ProductCard  img={"/assets/endo/Product3.webp"} heading={"Hemorrhoid Stapler III"} rotate={"rotate-[24deg] translate-y-[42%] translate-x-[-5%] card3"}/>
+        <ProductCard   img={"/assets/endo/Product4.webp"} heading={"Circular Stapler III"} rotate={"rotate-[36deg] translate-y-[94%] translate-x-[-20%] card4"}/>
+        <ProductCard  img={"/assets/endo/Product5.webp"} heading={"Endo Linear Cutter III"} rotate={"rotate-[48deg] translate-y-[48%] card5"}/>
       </div> 
       <div className='w-full product-base-text'>
         <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[2.2vw] text-center'>advamesh range</p>

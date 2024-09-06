@@ -35,7 +35,7 @@ const Hero = () => {
               <div className="w-[58vw] h-[42vw] relative bottom-[10%] ">
                 <Image
                   className="hero-img"
-                  src="/assets/about/hero-image.png"
+                  src="/assets/about/hero-image.webp"
                   alt="Hero Image"
                   priority={true}
                   fill

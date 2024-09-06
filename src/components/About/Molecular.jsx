@@ -59,7 +59,7 @@ useGSAP(() => {
     <>
       <section className='molecular h-[100vh] overflow-hidden' id='molecular' ref={molecularContainer}>
         <div className='w-screen h-screen absolute z-[1] overflow-hidden'>
-          <Image src={"/assets/about/molecular-bg.png"} fill alt={'molecular-bg'} className='object-cover molecular-bg-img scale-[1.3] translate-y-[-30%]'/>
+          <Image src={"/assets/about/molecular-bg.webp"} fill alt={'molecular-bg'} className='object-cover molecular-bg-img scale-[1.3] translate-y-[-30%]'/>
         </div>
         <div className='container-sm py-[10%] relative z-[2]'>
           <div className="flex items-start justify-between w-full">

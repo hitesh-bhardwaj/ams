@@ -76,7 +76,7 @@ const Work = () => {
         <WorkCard
           no={1}
           heading={"Our work Environment"}
-          src={"/assets/career/career-work.png"}
+          src={"/assets/career/career-work.webp"}
           para={
             "Innovative, collaborative, and Driven by a mission to improve lives."
           }
@@ -89,7 +89,7 @@ const Work = () => {
         <WorkCard
           no={2}
           heading={"Inclusivity & Equality"}
-          src={"/assets/career/career-employees.png"}
+          src={"/assets/career/career-employees.webp"}
           para={
             " Creating a space where every individual is valued and respected."
           }
@@ -102,7 +102,7 @@ const Work = () => {
        <WorkCard
           no={3}
           heading={"Build your future with Us"}
-          src={"/assets/career/career-medical.png"}
+          src={"/assets/career/career-medical.webp"}
           para={"Contribute to cutting-edge medical technology."}
           btn={"Start Your Journey"}
           
