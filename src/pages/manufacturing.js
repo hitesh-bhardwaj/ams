@@ -1,11 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Genesis from "@/components/layoutComponents/Genesis";
 import Capabilities from "@/components/Manufacturing/Capabilities";
 import Discover from "@/components/Manufacturing/Discover";
-import Hero from "@/components/Manufacturing/Hero";
 import State from "@/components/Manufacturing/State";
 import Transition from "@/components/Transition";
 import React from "react";
@@ -13,11 +11,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
+import Hero from "@/components/Hero";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function manufacturing() {
-  // paraAnim();
-
   const content = {
     heading: "Manufacturing",
     smallpara:
@@ -26,6 +23,12 @@ export default function manufacturing() {
       "We prioritize rigorous R&D and adhere to global standards, guaranteeing our products meet the highest quality and innovation benchmarks in the industry.",
     src: "/assets/manufacturing/manufacturing.png",
   };
+  const hero = {
+    line1:"Commitment To",
+    line2:"Global Standards",
+    src:"/assets/manufacturing/manufacturing-hero.png",
+    content:"The eco-friendly AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications."
+  }
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -58,7 +61,7 @@ export default function manufacturing() {
     <>
       <Header />
       <main>
-        <Hero />
+        <Hero line1={hero.line1} line2={hero.line2} src={hero.src} content={hero.content} className="hidden"/>
         <Genesis content={content} />
         <Capabilities />
         <State />

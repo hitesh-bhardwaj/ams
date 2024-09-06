@@ -14,18 +14,3 @@
 .mySwiper .swiper-slide{
     width: 85vw !important;
 }
-
-
-/* @keyframes shutter {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  .animate-shutter {
-    animation: shutter 1s forwards;
-  }
-   */

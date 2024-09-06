@@ -5,9 +5,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import 'swiper/css/pagination';
-import { FreeMode, Thumbs, Navigation , EffectCreative, Autoplay} from 'swiper/modules';
+import { FreeMode, Thumbs, Navigation, EffectCreative, Autoplay } from 'swiper/modules';
 import Image from "next/image";
-import { paraAnim } from "../gsapAnimations";
 
 const PortfolioCard = ({ src, heading, para }) => {
   return (
@@ -15,25 +14,24 @@ const PortfolioCard = ({ src, heading, para }) => {
       <div className="w-[85vw] h-[50vw] relative rounded-[10px]">
         <Image src={src} fill alt="Hernia Slider" className="rounded-[20px]" />
         <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]">
-          <h2  className="text-[#ffffff] text-[2.8vw] font-light text-shadow">{heading}</h2>
-          <p  className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow ">{para}</p>
+          <h2 className="text-[#ffffff] text-[2.8vw] font-light text-shadow">{heading}</h2>
+          <p className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow">{para}</p>
         </div>
       </div>
     </div>
   );
 };
 
-const PortfolioSwiper = () => {
-  // paraAnim()
+const PortfolioSwiper = ({slidesData }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     <section id="hernia-swiper">
       <div className="w-full mb-[5%] ml-[10%] py-[10%] relative h-full">
         <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]">
-          <p className="text-end">A Partner in Your Success</p>
+          <p className="text-end">{slidesData[0].title}</p>
         </div>
-        <div className=" relative">
+        <div className="relative fadeUp rounded-bl-[10px] rounded-tl-[10px] overflow-hidden">
           <Swiper
             slidesPerView={1}
             spaceBetween={0}
@@ -53,34 +51,15 @@ const PortfolioSwiper = () => {
                 translate: ['100%', 0, 0],
               },
             }}
-            modules={[FreeMode, Thumbs, Navigation,EffectCreative , Autoplay]}
+            modules={[FreeMode, Thumbs, Navigation, EffectCreative, Autoplay]}
             className="mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden"
             thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
           >
-            <SwiperSlide>
-              <PortfolioCard
-                src={"/assets/hernia/portfolio-1.png"}
-                heading={"Advancing Patient Recovery"}
-                para={"Our ADVAMESH products are designed to enhance patient recovery and comfort. By offering exceptional support and promoting natural tissue integration, our meshes minimize bioreactivity and reduce recurrence rates, ensuring a smoother recovery process."}
-                className="bgfilter"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PortfolioCard
-                src={"/assets/hernia/portfolio-2.png"}
-                heading={"Commitment to Excellence"}
-                para={"AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability. We continuously strive to meet the evolving needs of hernia repair through ongoing research and collaboration with leading surgeons."}
-                className="bgfilter"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PortfolioCard
-                src={"/assets/hernia/portfolio-3.png"}
-                heading={"Empowering Surgical Success"}
-                para={"AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision. We provide the necessary tools and support to enhance surgical practice and improve patient care."}
-                 className="bgfilter"
-              />
-            </SwiperSlide>
+            {slidesData.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <PortfolioCard src={slide.src} heading={slide.heading} para={slide.para} />
+              </SwiperSlide>
+            ))}
           </Swiper>
 
           <div className="absolute top-[80%] w-full left-[-3%]">
@@ -93,36 +72,13 @@ const PortfolioSwiper = () => {
               modules={[FreeMode, Navigation, Thumbs]}
               className="endoSmallSwiper"
             >
-              <SwiperSlide className="flex gap-[1vw]">
-                <div className="h-[7vw] w-[12vw] relative cursor-pointer">
-                  <Image
-                    fill
-                    src="/assets/hernia/portfolio-1.png"
-                    className="rounded-[20px]"
-                    alt="small swiper"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="h-[7vw] w-[12vw] relative cursor-pointer">
-                  <Image
-                    fill
-                    src="/assets/hernia/portfolio-2.png"
-                    className=" rounded-[20px]"
-                    alt="small swiper"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="h-[7vw] w-[12vw] relative cursor-pointer">
-                  <Image
-                    fill
-                    src="/assets/hernia/portfolio-3.png"
-                    className="rounded-[20px]"
-                    alt="small swiper"
-                  />
-                </div>
-              </SwiperSlide>
+              {slidesData.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="h-[7vw] w-[12vw] relative cursor-pointer">
+                    <Image fill src={slide.src} className="rounded-[20px]" alt={`Thumbnail ${index + 1}`} />
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

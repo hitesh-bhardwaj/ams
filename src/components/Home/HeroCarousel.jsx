@@ -40,11 +40,11 @@
             gsap.set(active, { scale: 0.8, delay:-2 });
     
             motion
-                // .to(next, {
-                // scale: 0.8,
-                // delay: -1,
-                // ease: 'cubic-bezier(.5,0,0,1)',
-                // })
+                .to(next, {
+                scale: 0.8,
+                delay: -1,
+                ease: 'cubic-bezier(.5,0,0,1)',
+                })
                 .to(active, {
                 scale: 0.8,
                 duration: 0.5,
@@ -83,10 +83,10 @@
   return (
     <section id='product' className='relative  overflow-hidden py-[5%]'>
             
-    <Image src={"/assets/home/product-bg.png"} fill alt={'product-bg'} className='object-cover product-bg-img z-[-1]'/>
+    <Image src={"/assets/home/product-bg.png"} fill alt={'product-bg'} className='object-cover product-bg-img z-0'/>
   
           <div className="container-lg">
-              <div className="product-top text-center flex flex-col items-center">
+              <div className="product-top text-center flex flex-col items-center relative z-[2]">
                   <h2  className="title-2 aeonik leading-[1.3]">
                       
                           Empowering Healthcare Professionals

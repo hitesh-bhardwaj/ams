@@ -33,7 +33,7 @@ const Jobs = () => {
   paraAnim()
   return (
     <section id="jobs">
-      <div className="container-sm mb-[15%] ">
+      <div className="container-sm mb-[10%] ">
         <div className=" flex items-center justify-center ">
           <h2 data-para-anim className="title-2 aeonik ">
             Featured Jobs

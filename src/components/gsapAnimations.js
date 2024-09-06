@@ -1,100 +1,35 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
-import { CustomEase } from 'gsap/dist/CustomEase';
-import { SplitInLineWordChar , SplitInLine } from './splitTextUtils';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { CustomEase } from "gsap/dist/CustomEase";
+import { SplitInLine } from "./splitTextUtils";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase, useGSAP);
 
 const primaryEase = CustomEase.create("cus-1", "0.62, 0.05, 0.01, 0.99");
 
-export function titleAnim(){
-    useGSAP(() => {
-        const headings = document.querySelectorAll("[data-title-anim]");
-        headings.forEach((heading) => {
-          SplitInLineWordChar(heading);
-          let headingWord = heading.querySelectorAll(".word .char");
-          gsap.from(headingWord, {
-            scrollTrigger: {
-              trigger: heading,
-              start: "top 85%",
-            },
-            rotate: "5deg",
-            duration: 0.8,
-            yPercent: 100,
-            stagger: 0.05,
-            ease: primaryEase,
-          });
-        });
-    }); 
-}
-export function paraAnim(){
+export function paraAnim() {
   useGSAP(() => {
     const paraAnimations = document.querySelectorAll("[data-para-anim]");
-      paraAnimations.forEach((paraAnimation) => {
-        SplitInLine(paraAnimation);
-        let paraLine = paraAnimation.querySelectorAll(".line-internal");
-        gsap.from(paraLine, {
-          scrollTrigger: {
-            trigger: paraAnimation,
-            start: "top 90%",
-            
-          },
-          duration: 1.2,
-          yPercent: 100,
-          stagger: 0.07,
-          ease: primaryEase,
-        });
+    paraAnimations.forEach((paraAnimation) => {
+      SplitInLine(paraAnimation);
+      let paraLine = paraAnimation.querySelectorAll(".line-internal");
+      gsap.from(paraLine, {
+        scrollTrigger: {
+          trigger: paraAnimation,
+          start: "top 90%",
+        },
+        duration: 1.2,
+        yPercent: 100,
+        stagger: 0.07,
+        ease: primaryEase,
       });
-  }); 
+    });
+  });
 }
 
-export function lineAnim(){
-  if(globalThis.innerWidth<=1023&&globalThis.innerWidth>541){
-    useGSAP(() => {
-      const lineDraws = document.querySelectorAll(".lineDraw");
-      lineDraws.forEach((lineDraw) => {
-        gsap.from(lineDraw, {
-          scrollTrigger: {
-            trigger: lineDraw,
-            start: "top 80%",
-          },
-          scaleX: 0,
-          transformOrigin: "left",
-          duration: 1.47,
-          yPercent: 100,
-          stagger: 0.07,
-          ease: primaryEase,
-        });
-      });
-    }); 
-
-  }
-  else{
-    useGSAP(() => {
-      const lineDraws = document.querySelectorAll(".lineDraw");
-      lineDraws.forEach((lineDraw) => {
-        gsap.from(lineDraw, {
-          scrollTrigger: {
-            trigger: lineDraw,
-            start: "top 95%",
-          },
-          scaleX: 0,
-          transformOrigin: "left",
-          duration: 1.47,
-          yPercent: 100,
-          stagger: 0.07,
-          ease: primaryEase,
-        });
-      });
-    }); 
-
-  }
-  
-}
-
-export function imageAnim(){
+export function imageAnim() {
   useGSAP(() => {
     const images = document.querySelectorAll(".imageanim");
     images.forEach((img) => {
@@ -102,27 +37,24 @@ export function imageAnim(){
         scrollTrigger: {
           trigger: img,
           start: "top 70%",
-          end:"+=2000 top",
-          
-          scrub:true
+          end: "+=2000 top",
+
+          scrub: true,
         },
-
-      })
-      tl.to(img, {
-        scale:1.1,
-        delay:-1
-
       });
-      tl.to(img,{
-        yPercent:30,
-        delay:-1
-        
-      })
+      tl.to(img, {
+        scale: 1.1,
+        delay: -1,
+      });
+      tl.to(img, {
+        yPercent: 30,
+        delay: -1,
+      });
     });
   });
 }
 
-export function imgAnim(){
+export function imgAnim() {
   useGSAP(() => {
     const images = document.querySelectorAll(".imageAnim");
     images.forEach((img) => {
@@ -130,23 +62,20 @@ export function imgAnim(){
         scrollTrigger: {
           trigger: img,
           start: "top 70%",
-          end:"+=2000 top",
+          end: "+=2000 top",
           // markers:true,
-          
-          scrub:true
+
+          scrub: true,
         },
-
-      })
+      });
       tl.from(img, {
-        scale:1.2,
-        delay:-1
-
+        scale: 1.2,
+        delay: -1,
       });
     });
   });
-
 }
-export function fadeIn(){
+export function fadeIn() {
   useGSAP(() => {
     const content = document.querySelectorAll(".fadein");
     content.forEach((content) => {
@@ -154,18 +83,17 @@ export function fadeIn(){
         scrollTrigger: {
           trigger: content,
           start: "top 90%",
-          end:"bottom 60%",
+          end: "bottom 60%",
         },
-        opacity:0,
-        ease:"power3.Out",
-        duration:1,
-        stagger:0.5
+        opacity: 0,
+        ease: "power3.Out",
+        duration: 1,
+        stagger: 0.5,
       });
     });
   });
-
 }
-export function fadeUp(){
+export function fadeUp() {
   useGSAP(() => {
     const content = document.querySelectorAll(".fadeup");
     content.forEach((content) => {
@@ -173,38 +101,35 @@ export function fadeUp(){
         scrollTrigger: {
           trigger: content,
           start: "top 90%",
-          end:"bottom 60%",
-          
+          end: "bottom 60%",
         },
-        opacity:0,
-        delay:0.3,
-        y:50,
-        ease:"power3.Out",
-        duration:0.7,
-        stagger:0.5
+        opacity: 0,
+        delay: 0.3,
+        y: 50,
+        ease: "power3.Out",
+        duration: 0.7,
+        stagger: 0.5,
       });
     });
   });
-
 }
 
-
-export function paraAnimWordpress(){
+export function paraAnimWordpress() {
   useGSAP(() => {
     const paraAnimations = document.querySelectorAll(".para-anim");
-      paraAnimations.forEach((paraAnimation) => {
-        SplitInLine(paraAnimation);
-        let paraLine = paraAnimation.querySelectorAll(".line-internal");
-        gsap.from(paraLine, {
-          scrollTrigger: {
-            trigger: paraAnimation,
-            start: "top 90%",
-          },
-          duration: 1.47,
-          yPercent: 100,
-          stagger: 0.07,
-          ease: primaryEase,
-        });
+    paraAnimations.forEach((paraAnimation) => {
+      SplitInLine(paraAnimation);
+      let paraLine = paraAnimation.querySelectorAll(".line-internal");
+      gsap.from(paraLine, {
+        scrollTrigger: {
+          trigger: paraAnimation,
+          start: "top 90%",
+        },
+        duration: 1.47,
+        yPercent: 100,
+        stagger: 0.07,
+        ease: primaryEase,
       });
-  }); 
+    });
+  });
 }

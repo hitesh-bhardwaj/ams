@@ -4,8 +4,9 @@ import PrimaryButton from "../Button/PrimaryButton";
 export default function Discover() {
   return (
     <>
-      <section className="pt-[0] pb-[4%] group" id="discover">
-        <div className="container-lg flex justify-between items-center border-[1px] bg-white/50  border-[#DADADA] rounded-[60px] w-full h-[30vw] fadeUp group-hover:shadow-xl duration-300 overflow-hidden">
+      <section className="pt-[0] pb-[7%]" id="discover">
+        <div className="group">
+        <div className="container-lg flex justify-between items-center border-[1px] bg-white/50  border-[#DADADA] rounded-[60px] w-full h-[30vw] fadeUp group-hover:shadow-xl duration-300 overflow-hidden group-hover:bg-white">
           <div className="w-[70%] relative  space-y-[3vw] px-[7vw]">
             <h2 data-para-anim className="title-2 aeonik">
               <span className="">Discover Our R&D</span>
@@ -27,6 +28,8 @@ export default function Discover() {
               alt="Discover"
             />
           </div>
+        </div>
+
         </div>
       </section>
     </>

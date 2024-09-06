@@ -57,7 +57,7 @@ const State = () => {
         pin:true,
         
         start:"top top ",
-        end:"+=4000 bottom",
+        end:"+=3500 bottom",
 
         scrub:true,
       }

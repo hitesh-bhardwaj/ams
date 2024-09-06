@@ -5,13 +5,11 @@
 /* Import Fonts */
 @import url('./fonts.css');
 @import url('./buttons.css');
-@import url('./swiper-navigation.css');
-@import url('./swiper.css');
+/* @import url('./swiper.css'); */
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
-@import url('./productSwiper.css');
 @import url('./homecarousel.css');
-/* @import url('./slider.css'); */
+
 
 :root {
   --text-color: #111111;
@@ -160,13 +158,13 @@ body{
   
 }
 
-/* .button-gradient {
-  background: linear-gradient(106.7DEG, #9676DE 0, #ff73e1 40%);
+.main-gradient {
+  background: linear-gradient(106.7DEG, #9676DE 0, #d073ff 40%);
   background-size: 300% 300%;
-  -webkit-animation: gradient 3s ease infinite;
-  -moz-animation: gradient 3s ease infinite;
-  -o-animation: gradient 3s ease infinite;
-  animation: gradient 3s ease infinite;
+  -webkit-animation: gradient 10s ease infinite;
+  -moz-animation: gradient 10s ease infinite;
+  -o-animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 
 @-webkit-keyframes gradient {
@@ -188,7 +186,7 @@ body{
   0%{background-position:0% 100%}
   50%{background-position:100% 68%}
   100%{background-position:0% 33%}
-} */
+}
 
 /* Titles */
 .title-1{
@@ -405,5 +403,7 @@ body{
   background: rgba(255, 255, 255, 0.227);
   transition:  all 1s cubic-bezier(.19,1,.22,1);
 }
+
+
 
 

@@ -12,7 +12,7 @@ const Hero = () => {
   paraAnim()
   return (
    <>
-   <section className="hero main-gradient h-[100vh] mb-[15%]" id="hero">
+   <section className="hero h-[100vh] mb-[15%]" id="hero">
           <div className="px-[10%] relative">
             <div className="flex h-dvh w-full justify-start items-center">
               <div className="">

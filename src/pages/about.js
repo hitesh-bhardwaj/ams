@@ -12,18 +12,11 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import Transition from '@/components/Transition'
-
-
-
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 
 
 export default function  about () {
-
-  
-
-  
 const content ={
   heading : "Our Genesis",
       smallpara:"At AMS, each decision is guided by empathy and a relentless pursuit of medical advancements, ensuring that our contributions resonate with compassion and integrity. Our journey is defined by a steadfast commitment to pushing the boundaries of what's possible in healthcare, driven by the belief that every innovation has the potential to shape a brighter, healthier future for all. ",

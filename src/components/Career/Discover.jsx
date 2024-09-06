@@ -7,7 +7,7 @@ const Discover = () => {
   imgAnim()
   return (
    <section id='discover'>
-    <div className='container-lg px-[5%] flex justify-between '>
+    <div className='container-lg px-[5%] pb-[7%] flex justify-between '>
         <div className='w-[45%] flex flex-col items-start justify-center gap-[4vw]'>
          <h2 className="title-2 aeonik">
             <span data-para-anim  >Discover the profound impact our work is having on patients everywhere</span>

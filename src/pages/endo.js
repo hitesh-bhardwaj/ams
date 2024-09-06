@@ -1,8 +1,7 @@
 
 /* eslint-disable react-hooks/rules-of-hooks */
-import Hero from '@/components/Endo/Hero'
+
 import Portfolio from '@/components/Endo/Portfolio'
-import PortfolioSwiper from '@/components/Endo/PortfolioSwiper'
 import Product from '@/components/Endo/Product'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -13,7 +12,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
-// import TestSlider from '@/components/Endo/testSlider'
+import Hero from '@/components/Hero'
+import PortfolioSwiper from '@/components/layoutComponents/PortfolioSwiper'
+
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 
@@ -26,6 +27,30 @@ export default function  endo () {
             src:"/assets/endo/endo-redefine.png"
       
       }
+      const hero = {
+        line1:"Breaking New Ground",
+        line2:"in Endo Surgery",
+        src:"/assets/endo/endo-hero.png",
+        content:"At AMS, we push the boundaries of endo surgery and set new benchmarks in surgical excellence with our innovative and reliable solutions."
+      }
+      const slidesData = [
+        {
+          title:"Your Partner in Surgical Excellence",
+          src: "/assets/endo/endo-slider-1.png",
+          heading: "Advancing Patient Recovery",
+          para: "Our ADVAMESH products are designed to enhance patient recovery and comfort. By offering exceptional support and promoting natural tissue integration, our meshes minimize bioreactivity and reduce recurrence rates, ensuring a smoother recovery process."
+        },
+        { 
+          src: "/assets/endo/endo-slider-2.png",
+          heading: "Commitment to Excellence",
+          para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability."
+        },
+        { 
+          src: "/assets/endo/endo-slider-3.png",
+          heading: "Empowering Surgical Success",
+          para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision."
+        }
+      ];
 
       useEffect(()=>{
         const ctx = gsap.context(() => {
@@ -58,11 +83,10 @@ export default function  endo () {
     <>
    <Header/>
    <main>
-  <Hero/>
+  <Hero line1={hero.line1} line2={hero.line2} src={hero.src} content={hero.content} className="hidden"/>
   <Genesis content = {content}/>
-  <PortfolioSwiper/>
+  <PortfolioSwiper slidesData={slidesData}/>
   <Product/>
-  {/* <Product2/> */}
   <Portfolio/>
    </main>
    <Footer/>
