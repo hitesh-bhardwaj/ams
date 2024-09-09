@@ -19,7 +19,7 @@ const WorkCard = ({ no, heading, src, para, btn ,className }) => {
         </div>
         <div className="flex justify-center items-center gap-x-[7vw] w-[80%] mx-auto">
           <div className="w-[35vw] h-[40vh] rounded-[40px] overflow-hidden relative">
-            <Image src={src} fill alt=" Career Work" className="object-cover"/>
+            <Image src={src} fill alt="Career Work" className="object-cover"/>
           </div>
           <div className="w-[50%] text-[2.5vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111]">
             <p >{para}</p>

@@ -2,10 +2,9 @@ import React from 'react'
 import PrimaryButton from "../Button/PrimaryButton"
 
 
-
 const Connecting = () => {
   
-  return (
+  return (  
     <section className='' id='connect'>
         <div className='container-lg my-[10%] fadeUp group'>
             <div className='px-[3%] py-[5%]  border-[1px]  flex justify-between flex-col items-center rounded-[60px] bg-white/50 group-hover:bg-white group-hover:shadow-xl duration-300'>

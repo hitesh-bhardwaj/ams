@@ -72,36 +72,14 @@ const PortfolioSwiper = ({slidesData }) => {
               modules={[FreeMode, Navigation, Thumbs]}
               className="endoSmallSwiper"
             >
-              <SwiperSlide className="flex gap-[1vw]">
-                <div className="h-[7vw] w-[12vw] relative cursor-pointer">
-                  <Image
-                    fill
-                    src="/assets/hernia/portfolio-1.png"
-                    className="rounded-[20px]"
-                    alt="small swiper"
-                  />
-                </div>
+             {slidesData.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <Image src={slide.src} className="rounded-[20px] cursor-pointer"
+                width={500}
+                height={500}
+                    alt="small swiper"  />
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="h-[7vw] w-[12vw] relative cursor-pointer">
-                  <Image
-                    fill
-                    src="/assets/hernia/portfolio-2.png"
-                    className=" rounded-[20px]"
-                    alt="small swiper"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="h-[7vw] w-[12vw] relative cursor-pointer">
-                  <Image
-                    fill
-                    src="/assets/hernia/portfolio-3.png"
-                    className="rounded-[20px]"
-                    alt="small swiper"
-                  />
-                </div>
-              </SwiperSlide>
+            ))} 
             </Swiper>
           </div>
         </div>

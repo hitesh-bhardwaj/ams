@@ -66,12 +66,13 @@ const Header = () => {
           <div className="flex justify-between items-center">
             <div className="w-[7vw] header-anim">
               <Link href="/">
+              <div className="relative h-[7vw] w-[7vw]">
                 <Image
                   src="/logo.svg"
-                  width={130}
-                  height={100}
+                  fill
                   alt="AMS Logo"
                 />
+                </div>
               </Link>
             </div>
             <div className="flex justify-center w-fit items-center gap-8">

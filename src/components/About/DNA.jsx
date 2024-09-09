@@ -10,8 +10,6 @@ gsap.registerPlugin(useGSAP,ScrollTrigger)
 const DNA = () => {
   paraAnim()
   useGSAP(()=>{
-   
-      
     
     gsap.from(".dna-card",{
       yPercent:50,

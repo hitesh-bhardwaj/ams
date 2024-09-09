@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -25,6 +24,8 @@ export default function Footer() {
                                         className="inline w-[11%]"
                                         src="/assets/icons/arrow-up-right.svg"
                                         alt="arrow"
+                                        height="50px"
+                                        width="50px"
                                     />
                                 </Link>
                                 <div className="mb-[2.5vw]">

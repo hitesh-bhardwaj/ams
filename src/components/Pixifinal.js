@@ -50,7 +50,7 @@ export default function Pixifinal() {
                         this.radius = random(window.innerHeight / 5, window.innerHeight / 3);
                         this.xOff = random(0, 100);
                         this.yOff = random(0, 100);
-                        this.inc = 0.001;
+                        this.inc = 0.0009;
 
                         this.graphics = new PIXI.Graphics();
                         this.graphics.alpha = 0.825;

@@ -179,7 +179,7 @@
                                     <div className='main relative'>
                                         <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
                                             <span className='text-[0.9vw] pt-1'>03</span>
-                                        </div>
+                                    </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3 ml-[5%]'>
                                                 <Image
@@ -243,8 +243,12 @@
         </div>
 
             <div class="navigator">
-                <div class="swiper-button-prev ml-[5%]"><div className='hover:cursor-pointer '><img src='/assets/icons/arrow-left.svg'/></div></div>
-                <div class="swiper-button-next mr-[5%]"><div className='hover:cursor-pointer'><img src='/assets/icons/arrow-right-white.svg' className=''/></div></div>
+                <div class="swiper-button-prev ml-[5%]">
+                    <div className='hover:cursor-pointer '>
+                        <img src='/assets/icons/arrow-left.svg' alt="arrow-left" height="50px" width="50px"/>
+                        </div>
+                        </div>
+                <div class="swiper-button-next mr-[5%]"><div className='hover:cursor-pointer'><img src='/assets/icons/arrow-right-white.svg' alt='arrow-right' height="50px" width="50px"/></div></div>
             </div>
         </div>
     </div>
