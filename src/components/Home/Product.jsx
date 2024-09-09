@@ -39,7 +39,7 @@ export default function Product() {
         <>
             <section id='product' className='py-[5%] relative overflow-hidden'>
             
-          <Image src={"/assets/home/product-bg.png"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%]'/>
+          <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%]'/>
         
                 <div className="container-lg">
                     <div className="product-top text-center flex flex-col items-center">
@@ -66,7 +66,7 @@ export default function Product() {
                                             <div className='w-2/3'>
                                                 <Image 
                                                     className='fadeUp'
-                                                    src='/assets/products/ADVA-Glide.png'
+                                                    src='/assets/products/ADVA-Glide.webp'
                                                     alt='Product Image'
                                                     width={1000}
                                                     height={1000}
@@ -102,7 +102,7 @@ export default function Product() {
                                             <div className='w-2/3'>
                                                 <Image 
                                                     className='fadeUp'
-                                                    src='/assets/products/ADVAGRIP.png'
+                                                    src='/assets/products/ADVAGRIP.webp'
                                                     alt='Product Image'
                                                     width={1000}
                                                     height={1000}
@@ -138,7 +138,7 @@ export default function Product() {
                                             <div className='w-2/3'>
                                                 <Image 
                                                     className='fadeUp'
-                                                    src='/assets/products/ADVA-Pro.png'
+                                                    src='/assets/products/ADVA-Pro.webp'
                                                     alt='Product Image'
                                                     width={1000}
                                                     height={1000}
@@ -171,7 +171,7 @@ export default function Product() {
                                             <div className='w-2/3'>
                                                 <Image 
                                                     className='fadeUp'
-                                                    src='/assets/products/ADVACRYL.png'
+                                                    src='/assets/products/ADVACRYL.webp'
                                                     alt='Product Image'
                                                     width={1000}
                                                     height={1000}

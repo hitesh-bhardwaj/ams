@@ -83,7 +83,7 @@
   return (
     <section id='product' className='relative  overflow-hidden py-[5%]'>
             
-    <Image src={"/assets/home/product-bg.png"} fill alt={'product-bg'} className='object-cover product-bg-img z-0'/>
+    <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img z-[-1]'/>
   
           <div className="container-lg">
               <div className="product-top text-center flex flex-col items-center relative z-[2]">
@@ -112,7 +112,7 @@
                                             <div className='w-2/3 ml-[5%] '>
                                                 <Image 
                                                     className='fadeUp'
-                                                    src='/assets/products/ADVA-Glide.png'
+                                                    src='/assets/products/ADVA-Glide.webp'
                                                     alt='Product Image'
                                                     width={1000}
                                                     height={1000}
@@ -148,7 +148,7 @@
                                             <div className='w-2/3 ml-[5%]'>
                                                 <Image 
                                                     className='fadeUp'
-                                                    src='/assets/products/ADVAGRIP.png'
+                                                    src='/assets/products/ADVAGRIP.webp'
                                                     alt='Product Image'
                                                     width={1000}
                                                     height={1000}
@@ -184,7 +184,7 @@
                                             <div className='w-2/3 ml-[5%]'>
                                                 <Image
                                                     className='fadeUp'
-                                                    src='/assets/products/ADVA-Pro.png'
+                                                    src='/assets/products/ADVA-Pro.webp'
                                                     alt='Product Image'
                                                     width={1000}
                                                     height={1000}
@@ -217,7 +217,7 @@
                                             <div className='w-2/3 ml-[5%]'>
                                                 <Image 
                                                     className='fadeUp'
-                                                    src='/assets/products/ADVACRYL.png'
+                                                    src='/assets/products/ADVACRYL.webp'
                                                     alt='Product Image'
                                                     width={1000}
                                                     height={1000}

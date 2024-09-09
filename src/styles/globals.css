@@ -5,7 +5,7 @@
 /* Import Fonts */
 @import url('./fonts.css');
 @import url('./buttons.css');
-/* @import url('./swiper.css'); */
+@import url('./swiper.css');
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
 @import url('./homecarousel.css');
@@ -160,7 +160,7 @@ body{
 }
 
 .main-gradient {
-  background: linear-gradient(106.7DEG, #9676DE 0, #d073ff 40%);
+  background: linear-gradient(106.7DEG, #EEDDEB 0, #b3bcff 100%);
   background-size: 300% 300%;
   -webkit-animation: gradient 10s ease infinite;
   -moz-animation: gradient 10s ease infinite;

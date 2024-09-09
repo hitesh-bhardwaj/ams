@@ -17,7 +17,7 @@ const Discover = () => {
         <div className='w-[50%] flex flex-col items-end justify-center gap-[2vw]'>
           <div className='w-[25vw] h-[20vw] rounded-[40px] overflow-hidden relative fadeUp'>
           <Image
-            src="/assets/career/career-discover-1.png"
+            src="/assets/career/career-discover-1.webp"
             fill
             alt="Discover"
             className='imageAnim object-cover'/>
@@ -25,7 +25,7 @@ const Discover = () => {
           </div>
           <div className='w-[35vw] h-[25vw] rounded-[40px] overflow-hidden relative fadeUp'>
           <Image
-            src="/assets/career/career-discover-2.png"
+            src="/assets/career/career-discover-2.webp"
            fill
             alt="Discover"
             className='imageAnim object-cover'

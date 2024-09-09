@@ -185,7 +185,7 @@ export default function Manufacturing() {
                                 <img 
                                     ref={inner2}
                                     className="w-full h-full object-cover -translate-y-full scale-[1.4]"
-                                    src="/assets/home/manufacturing-2.png"
+                                    src="/assets/home/manufacturing-2.webp"
                                     alt="image"
                                     loading="lazy"
                                 />
@@ -194,7 +194,7 @@ export default function Manufacturing() {
                                 <img 
                                     ref={inner3}
                                     className="w-full h-full object-cover -translate-y-full scale-[1.4]"
-                                    src="/assets/home/manufacturing-3.png"
+                                    src="/assets/home/manufacturing-3.webp"
                                     alt="image"
                                     loading="lazy"
                                 />

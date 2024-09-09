@@ -24,13 +24,14 @@
     outline: none;
     border: none;
   }
-  .swiper-button-disabled {
-    /* cursor: not-allowed; */
+  /* .swiper-button-disabled {
+    cursor: not-allowed;
     opacity: 0.5;
-  }
-  .swiper-button-prev::after ,.swiper-button-next::after{
+  }*/
+  /* .swiper-button-prev::after ,.swiper-button-next::after{
     display: none;
-  }
-  .swiper-button-prev, .swiper-button-next{
+  } */
+  .swiper-button-prev::after, .swiper-button-next::after{
     width: 50px!important;
-  }
+    color: white;
+  } 

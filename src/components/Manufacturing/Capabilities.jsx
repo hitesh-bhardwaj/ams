@@ -20,7 +20,7 @@ const Capabilities = () => {
         <div className='h-[20vw] w-[20vw] flex flex-col items-center justify-center'>
     <div className='h-[8vw] w-[5vw] relative top-[-10%] group-hover:scale-[1.5] transition-all duration-300 ease-in-out'>
       <Image
-        src="/assets/manufacturing/capability-1.png"
+        src="/assets/manufacturing/capability-1.webp"
         fill
         alt='capability-1'
         className='object-contain'
@@ -38,7 +38,7 @@ const Capabilities = () => {
         <div className='h-[20vw] w-[20vw] flex flex-col items-center justify-center'>
     <div className='h-[10vw] w-[6vw] relative top-[-10%] group-hover:scale-[1.5] transition-all duration-300 ease-in-out '>
       <Image
-        src="/assets/manufacturing/capability-2.png"
+        src="/assets/manufacturing/capability-2.webp"
         fill
         alt='capability-1'
         className='object-contain'
@@ -57,7 +57,7 @@ const Capabilities = () => {
         <div className='h-[20vw] w-[20vw] flex flex-col items-center justify-center'>
     <div className='h-[10vw] w-[6vw] relative top-[-10%] group-hover:scale-[1.5] transition-all duration-300 ease-in-out'>
       <Image
-        src="/assets/manufacturing/capability-3.png"
+        src="/assets/manufacturing/capability-3.webp"
         fill
         alt='capability-1'
         className='object-contain'

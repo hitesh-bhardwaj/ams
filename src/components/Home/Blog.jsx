@@ -77,19 +77,19 @@ export default function Blog() {
                         </div>
                         <div className="blog-right w-[55%]">
                             <BlogCard 
-                                img={"/assets/home/blog-1.jpg"}
+                                img={"/assets/home/blog-1.webp"}
                                 title={"National Interventional Cardiology Congress 2023!"}
                                 content={"Shaping the future with ADVAGLIDE: AMS inspires at National Interventional Cardiology Congress."}
                                 date={"June, 2023"}
                             />
                             <BlogCard 
-                                img={"/assets/home/blog-2.png"}
+                                img={"/assets/home/blog-2.webp"}
                                 title={"Cardiovascular Care Redefined: IACTSCON 2024!"}
                                 content={"Cardiovascular Care Redefined with the pre-launch of ADVALVE: AMS at the Forefront of IACTSCON 2024."}
                                 date={"January, 2024"}
                             />
                             <BlogCard 
-                                img={"/assets/home/blog-3.png"}
+                                img={"/assets/home/blog-3.webp"}
                                 title={"Arab Health 2024!"}
                                 content={"AMS Takes Center Stage at Arab Health in Dubai: Leading the Charge in Global MedTech with Industry leaders and partners Transforming Healthcare Worldwide"}
                                 date={"March, 2024"}

@@ -66,7 +66,7 @@ export default function Hero() {
               <div className="absolute w-[43%] right-0 bottom-0 hero-img-anim">
                 <Image
                   className="hero-img"
-                  src="/assets/home/hero-image.png"
+                  src="/assets/home/hero-image.webp"
                   alt="Hero Image"
                   width= {1000}
                   height= {1000}
