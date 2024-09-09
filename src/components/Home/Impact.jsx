@@ -63,7 +63,7 @@ export default function Impact() {
                         playsInline
                         loop
                         className="h-full w-full object-cover left-0 top-0 absolute imageAnim"
-                        poster="/assets/home/impact-video-poster.png" // Use poster image
+                        poster="/assets/home/impact-video-poster.webp" // Use poster image
                         src="/assets/home/impact-video.mp4" // Set the video source
                     >
                     </video>

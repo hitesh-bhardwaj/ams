@@ -51,7 +51,7 @@ export default function Career() {
                         playsInline
                         ref={careerVideoRef}
                         className="h-full w-full object-cover left-0 top-0 rounded-[3vw] absolute imageAnim"
-                        poster="/assets/home/career-video-poster.png" // Set a poster image before the video loads
+                        poster="/assets/home/career-video-poster.webp" // Set a poster image before the video loads
                     >
                         {/* The video source will be added dynamically via the IntersectionObserver */}
                     </video>
