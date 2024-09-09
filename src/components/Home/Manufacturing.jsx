@@ -187,6 +187,7 @@ export default function Manufacturing() {
                                     className="w-full h-full object-cover -translate-y-full scale-[1.4]"
                                     src="/assets/home/manufacturing-2.png"
                                     alt="image"
+                                    loading="lazy"
                                 />
                             </div>
                             <div className="absolute overflow-hidden top-0 left-0 w-full h-full translate-y-full" ref={picture3}>
@@ -195,6 +196,7 @@ export default function Manufacturing() {
                                     className="w-full h-full object-cover -translate-y-full scale-[1.4]"
                                     src="/assets/home/manufacturing-3.png"
                                     alt="image"
+                                    loading="lazy"
                                 />
                             </div>
                         </div>

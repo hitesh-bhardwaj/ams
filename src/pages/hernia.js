@@ -57,6 +57,7 @@ export default function hernia() {
         <Genesis content={content} />
         <PortfolioSwiper slidesData={slidesData} />
         <Product />
+        
         <Portfolio />
       </main>
       <Footer />

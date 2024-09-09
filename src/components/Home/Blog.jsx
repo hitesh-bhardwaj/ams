@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react"
 import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { paraAnim,imageAnim } from "../gsapAnimations";
+import Image from "next/image";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -33,13 +34,12 @@ export default function Blog() {
         return (
             <>
                 <div className="flex items-start justify-between gap-[4%]">
-                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl ">
-                        <img 
+                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative ">
+                        <Image
                             className="h-full w-full object-cover imageanim"
                             src={img}
                             alt="blog image"
-                            height="600"
-                            width="300"
+                            fill
                         />
                     </div>
                     <div className="w-[60%] mt-[1vw] fadeUp">

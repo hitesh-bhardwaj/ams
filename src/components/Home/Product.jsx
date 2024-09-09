@@ -64,7 +64,7 @@ export default function Product() {
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3'>
-                                                <img 
+                                                <Image 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVA-Glide.png'
                                                     alt='Product Image'
@@ -100,7 +100,7 @@ export default function Product() {
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3'>
-                                                <img 
+                                                <Image 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVAGRIP.png'
                                                     alt='Product Image'
@@ -136,7 +136,7 @@ export default function Product() {
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3'>
-                                                <img 
+                                                <Image 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVA-Pro.png'
                                                     alt='Product Image'
@@ -169,7 +169,7 @@ export default function Product() {
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3'>
-                                                <img 
+                                                <Image 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVACRYL.png'
                                                     alt='Product Image'

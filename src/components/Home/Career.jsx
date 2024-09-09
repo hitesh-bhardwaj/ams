@@ -3,29 +3,39 @@ import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useEffect, useRef } from "react";
 gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 export default function Career() {
     paraAnim()
-    // useGSAP(()=>{
+    const careerVideoRef = useRef(null);
 
-        
-    //     const tl = gsap.timeline({
-    //         scrollTrigger: {
-    //           trigger: ".imageAnim",
-    //           start: "top 70%",
-    //           end:"bottom top",
-              
-    //           scrub:true
-    //         },
-    
-    //       })
-    //       tl.from(".imageAnim", {
-    //         scale:1.2,
-    //         delay:-1
-    
-    //       });
-    // })
+    useEffect(() => {
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const video = careerVideoRef.current;
+                        if (video) {
+                            video.play(); // Start playing the video when in view
+                        }
+                        observer.unobserve(entry.target); // Stop observing once it's loaded
+                    }
+                });
+            },
+            { threshold: 0.5 } // Trigger when 50% of the video is visible
+        );
+
+        const videoElement = careerVideoRef.current;
+        if (videoElement) {
+            observer.observe(videoElement);
+        }
+
+        return () => {
+            if (videoElement) observer.unobserve(videoElement);
+        };
+    }, []);
     
     return (
         <>
@@ -37,6 +47,7 @@ export default function Career() {
                         loop
                         muted 
                         playsInline 
+                        ref={careerVideoRef}
                         className="h-full w-full object-cover left-0 top-0 rounded-[3vw] absolute imageAnim"
                         src="/assets/home/career.mp4">
                     </video>
