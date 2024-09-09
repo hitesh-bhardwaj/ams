@@ -3,7 +3,7 @@ import ReactLenis from "@studio-freight/react-lenis";
 import Head from "next/head";
 import { AnimatePresence } from "framer-motion";
 import Pixifinal from "@/components/Pixifinal";
-import Pixi from "@/components/Pixi";
+// import Pixi from "@/components/Pixi";
 
 
 export default function App({ Component, pageProps, router }) {

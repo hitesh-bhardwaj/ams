@@ -62,16 +62,17 @@ export default function Hero() {
                 <PrimaryButton btnText={'Discover'} link={'/'}/>
                
               </div>
+              <div className="absolute w-[43%] right-0 bottom-0">
 
-              <div className="absolute w-[43%] right-0 bottom-0 hero-img-anim">
+              <div className=" w-[43vw] h-[40vw]  hero-img-anim relative">
                 <Image
                   className="hero-img"
                   src="/assets/home/hero-image.webp"
                   alt="Hero Image"
-                  width= {1000}
-                  height= {1000}
+                  fill
                   priority={true}
                 />
+              </div>
               </div>
               
             </div>

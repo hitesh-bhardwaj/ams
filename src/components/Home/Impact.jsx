@@ -1,29 +1,29 @@
 import PrimaryButton from "../Button/PrimaryButton";
 import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Impact() {
     paraAnim();
     const videoRef = useRef(null);
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
     useEffect(() => {
-
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         const video = videoRef.current;
-                        if (video) {
-                            video.play(); // Start playing the video when in view
+                        if (video && !videoLoaded) {
+                            video.play(); // Play the video when it enters the viewport
+                            setVideoLoaded(true); // Mark the video as loaded
                         }
-                        observer.unobserve(entry.target); // Stop observing once it's loaded
                     }
                 });
             },
-            { threshold: 0.5 } // Trigger when 50% of the video is visible
+            { threshold: 0.5 }
         );
 
         const videoElement = videoRef.current;
@@ -34,7 +34,7 @@ export default function Impact() {
         return () => {
             if (videoElement) observer.unobserve(videoElement);
         };
-    }, []);
+    }, [videoLoaded]);
 
     useEffect(() => {
         const tl = gsap.timeline({
@@ -56,16 +56,18 @@ export default function Impact() {
         <>
             <section className="p-y-sm mt-[5%]" id="impact">
                 <div className="container-lg relative px-[8%] h-full py-[8%] overflow-hidden rounded-[3vw]">
+                    {/* Use the poster attribute to show a placeholder image */}
                     <video
-                        loading="lazy"
                         ref={videoRef} // Attach ref to video for lazy loading
                         muted
                         playsInline
                         loop
                         className="h-full w-full object-cover left-0 top-0 absolute imageAnim"
-                        src="/assets/home/impact-video.mp4"
+                        poster="/assets/home/impact-video-poster.png" // Use poster image
+                        src="/assets/home/impact-video.mp4" // Set the video source
                     >
                     </video>
+
                     <div className="flex items-center">
                         <div className="w-1/2 relative z-10 space-y-[3.5vw]">
                             <h2 className="title-2 aeonik leading-[0] text-shadow">

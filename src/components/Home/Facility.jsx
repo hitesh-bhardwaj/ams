@@ -8,7 +8,8 @@ export default function Facility() {
     return (
         <>
             <section className="pt-[0] pb-[4%] " id="facility">
-                <div className="container-lg virtual bg-white/50 glassmorphism border border-gray-200">
+                <div className="group">
+                <div className="container-lg virtual bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300">
                     <div className="w-1/2 relative z-10 space-y-[3.5vw] duration-300">
                         <h2 data-para-anim className="title-2 aeonik">
                             
@@ -37,6 +38,8 @@ export default function Facility() {
                             className="absolute w-[15%] bottom-8 right-8"
                         />
                     </div>
+                </div>
+
                 </div>
             </section>
         </>

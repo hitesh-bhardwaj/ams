@@ -83,7 +83,7 @@
   return (
     <section id='product' className='relative  overflow-hidden py-[5%]'>
             
-    <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img z-[-1]'/>
+    <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img z-0'/>
   
           <div className="container-lg">
               <div className="product-top text-center flex flex-col items-center relative z-[2]">
