@@ -47,9 +47,9 @@ export default function Pixifinal() {
 
                         this.scale = 1;
                         this.fill = fill;
-                        this.radius = random(window.innerHeight / 5, window.innerHeight / 3);
-                        this.xOff = random(0, 100);
-                        this.yOff = random(0, 100);
+                        this.radius = random(window.innerHeight/2.5 , window.innerHeight/2.5 );
+                        this.xOff = random(0, 50);
+                        this.yOff = random(0, 50);
                         this.inc = 0.0009;
 
                         this.graphics = new PIXI.Graphics();
@@ -66,7 +66,7 @@ export default function Pixifinal() {
                     setBounds() {
                         const maxDist = window.innerWidth < 1400 ? window.innerWidth / 1 : window.innerWidth / 1.75;
                         const originX = window.innerWidth / 2;
-                        const originY = window.innerWidth < 1000 ? window.innerHeight : window.innerHeight / 1.75;
+                        const originY = window.innerWidth < 1000 ? window.innerHeight/5 : window.innerHeight / 4;
 
                         return {
                             x: { min: originX - maxDist, max: originX + maxDist },
