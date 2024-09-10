@@ -168,3 +168,16 @@
   }
 }
 /* Link Button END */
+
+@media screen  and (max-width:541px){
+  .link-btn{
+    font-size:5.1vw;
+  }
+  .link-btn .btn-images{
+    width: 5.1vw;
+    overflow: hidden;
+  }
+  .link-btn svg{
+    width: 4  vw;
+  } 
+}

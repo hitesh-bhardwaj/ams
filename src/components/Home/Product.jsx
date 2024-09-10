@@ -37,9 +37,10 @@ export default function Product() {
 
     return (
         <>
-            <section id='product' className='py-[5%] relative overflow-hidden'>
+            <section id='product' className='py-[5%] relative overflow-hidden mobile:py-[20vw]'>
             
-          <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%]'/>
+          <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%] mobile:hidden'/>
+          <Image src={"/assets/home/product-bg-mobile.png"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%] hidden mobile:block'/>
         
                 <div className="container-lg">
                     <div className="product-top text-center flex flex-col items-center">
@@ -48,7 +49,7 @@ export default function Product() {
                                 Empowering Healthcare Professionals
                             
                         </h2>
-                        <p data-para-anim className="content-p my-6 w-[55%]"> 
+                        <p data-para-anim className="content-p my-6 w-[55%] mobile:w-[90%] mobile:my-10"> 
                             
                                 Advanced MedTech Solutions empowers healthcare practitioners and caregivers to manage and treat a wide range of medical conditions, from chronic diseases to acute injuries, with the next generation of insight-driven medical device technology and innovation.
                             
@@ -57,13 +58,15 @@ export default function Product() {
                     <div className='fadeUp'>
                         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                             <SwiperSlide>
-                                <div className='product-card'>
+                                <div className='product-card relative'>
+                                    <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1'>01</span>
+                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
+                                            <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>01</span>
                                         </div>
-                                        <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-                                            <div className='w-2/3'>
+                                        <div className='flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]'>
+                                            <div className='w-2/3 mobile:w-[70%]'>
                                                 <Image 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVA-Glide.webp'
@@ -72,15 +75,15 @@ export default function Product() {
                                                     height={1000}
                                                 />
                                             </div>
-                                            <div className='flex flex-col w-full pr-[3vw]'>
-                                                <h3 className='title-2 aeonik mb-[1vw]'>
+                                            <div className='flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] mobile:w-[95%] mobile:text-center'>
+                                                <h3 className='title-2 aeonik mb-[1vw] mobile:mb-[5vw]'>
                                                     <span>
                                                         ADVA GLIDE
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p mb-[0.5vw]'>PTCA Balloon Catheter</h4>
-                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Gliding The Science of Flow Restoration</p>
-                                                <p className='content-p-md mb-[1.5vw] '>
+                                                <h4 className='content-p mb-[0.5vw] mobile:mb-[2.5vw]'>PTCA Balloon Catheter</h4>
+                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]'>Gliding The Science of Flow Restoration</p>
+                                                <p className='content-p-md mb-[1.5vw] mobile:mb-[6vw]'>
                                                     Revolutionalized for the most challenging environments
                                                     <br />
                                                     <br />
@@ -93,13 +96,15 @@ export default function Product() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className='product-card'>
+                                <div className='product-card relative'>
+                                    <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1'>02</span>
+                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
+                                            <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>02</span>
                                         </div>
-                                        <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-                                            <div className='w-2/3'>
+                                        <div className='flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]'>
+                                            <div className='w-2/3 mobile:w-[70%]'>
                                                 <Image 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVAGRIP.webp'
@@ -108,34 +113,36 @@ export default function Product() {
                                                     height={1000}
                                                 />
                                             </div>
-                                            <div className='flex flex-col w-full pr-[3vw]'>
-                                                <h3 className='title-2 aeonik mb-[1vw]'>
+                                            <div className='flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] mobile:w-[95%] mobile:text-center'>
+                                                <h3 className='title-2 aeonik mb-[1vw] mobile:mb-[5vw]'>
                                                     <span>
-                                                        ADVAGRIP 
+                                                    ADVAGRIP 
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p mb-[0.5vw] capitalize'>Knotless Tissue Control Device</h4>
-                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>A Grip like No Other</p>
-                                                <p className='content-p mb-[1.5vw]'>
-                                                    ADVAGRIP offers swift & secure tissue control without the hassle of tying knots. With AMS&apos; Tri-Cut Technology, ADVAGRIP ensures robust anchoring while maintaining suture strength. Its ultrasonically welded loop and angled tip provide added security and precision. Experience the efficiency and reliability of ADVAGRIP for superior wound closure.
+                                                <h4 className='content-p mb-[0.5vw] mobile:mb-[2.5vw]'>Knotless Tissue Control Device</h4>
+                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]'>A Grip like No Other</p>
+                                                <p className='content-p-md mb-[1.5vw] mobile:mb-[6vw]'>
+                                                ADVAGRIP offers swift & secure tissue control without the hassle of tying knots. With AMS&apos; Tri-Cut Technology, ADVAGRIP ensures robust anchoring while maintaining suture strength. Its ultrasonically welded loop and angled tip provide added security and precision. Experience the efficiency and reliability of ADVAGRIP for superior wound closure.
                                                     <br />
                                                     <br />
                                                     Changing the paradigm of Knotless Suture Technology with ADVAGRIP.
                                                 </p>
-                                                <LinkButton btnText={"Get A Grip"} link={"/"}/>
+                                                <LinkButton btnText={"Get a Grip"} link={"/"}/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className='product-card'>
+                                <div className='product-card relative'>
+                                    <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1'>03</span>
+                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
+                                            <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>03</span>
                                         </div>
-                                        <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-                                            <div className='w-2/3'>
+                                        <div className='flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]'>
+                                            <div className='w-2/3 mobile:w-[70%]'>
                                                 <Image 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVA-Pro.webp'
@@ -144,16 +151,16 @@ export default function Product() {
                                                     height={1000}
                                                 />
                                             </div>
-                                            <div className='flex flex-col w-full pr-[3vw]'>
-                                                <h3 className='title-2 aeonik mb-[1vw]'>
+                                            <div className='flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] mobile:w-[95%] mobile:text-center'>
+                                                <h3 className='title-2 aeonik mb-[1vw] mobile:mb-[5vw]'>
                                                     <span>
-                                                        ADVA PRO
+                                                    ADVA PRO
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p mb-[0.5vw] capitalize'>Sirolimus Eluting Coronary Stent System</h4>
-                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Precision. Perfection. Pro.</p>
-                                                <p className='content-p mb-[1.5vw]'>
-                                                    The Pinnacle of Precision in Complex PCI is not just designed to transform lives; it&apos;s poised to redefine the very future of interventional cardiology for complex anatomies. Prepare to witness a revolution in cardiac care that will set a new standard for excellence.
+                                                <h4 className='content-p mb-[0.5vw] mobile:mb-[2.5vw]'>Sirolimus Eluting Coronary Stent System</h4>
+                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]'>Precision. Perfection. Pro.</p>
+                                                <p className='content-p-md mb-[1.5vw] mobile:mb-[6vw]'>
+                                                The Pinnacle of Precision in Complex PCI is not just designed to transform lives; it&apos;s poised to redefine the very future of interventional cardiology for complex anatomies. Prepare to witness a revolution in cardiac care that will set a new standard for excellence.
                                                 </p>
                                                 <LinkButton btnText={"Know More"} link={"/"}/>
                                             </div>
@@ -162,13 +169,15 @@ export default function Product() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className='product-card'>
+                                <div className='product-card relative'>
+                                    <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1'>04</span>
+                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
+                                            <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>04</span>
                                         </div>
-                                        <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
-                                            <div className='w-2/3'>
+                                        <div className='flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]'>
+                                            <div className='w-2/3 mobile:w-[70%]'>
                                                 <Image 
                                                     className='fadeUp'
                                                     src='/assets/products/ADVACRYL.webp'
@@ -177,16 +186,16 @@ export default function Product() {
                                                     height={1000}
                                                 />
                                             </div>
-                                            <div className='flex flex-col w-full pr-[3vw]'>
-                                                <h3 className='title-2 aeonik mb-[1vw]'>
+                                            <div className='flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] mobile:w-[95%] mobile:text-center'>
+                                                <h3 className='title-2 aeonik mb-[1vw] mobile:mb-[5vw]'>
                                                     <span>
-                                                        ADVACRYL
+                                                    ADVACRYL
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p mb-[0.5vw] capitalize'>Polyglactin 910</h4>
-                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Seal of Confidence</p>
-                                                <p className='content-p mb-[1.5vw]'>
-                                                    ADVACRYL suture is braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. Braided ADVACRYL suture is coated with a mixture composed of Poly (Glycolide-co-lactide) (Glacomer 37) and calcium stearate. The suture is colored violet to increase visibility and is also available undyed.
+                                                <h4 className='content-p mb-[0.5vw] mobile:mb-[2.5vw]'>Polyglactin 910</h4>
+                                                <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]'>Seal of Confidence</p>
+                                                <p className='content-p-md mb-[1.5vw] mobile:mb-[6vw]'>
+                                                ADVACRYL suture is braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. Braided ADVACRYL suture is coated with a mixture composed of Poly (Glycolide-co-lactide) (Glacomer 37) and calcium stearate. The suture is colored violet to increase visibility and is also available undyed.
                                                 </p>
                                                 <LinkButton btnText={"Know More"} link={"/"}/>
                                             </div>

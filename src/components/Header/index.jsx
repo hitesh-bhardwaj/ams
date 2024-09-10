@@ -66,7 +66,7 @@ const Header = () => {
           <div className="flex justify-between items-center">
             <div className="w-[7vw] header-anim">
               <Link href="/">
-              <div className="relative h-[7vw] w-[7vw]">
+              <div className="relative h-[7vw] w-[7vw] mobile:h-[27vw] mobile:w-[27vw]">
                 <Image
                   src="/logo.svg"
                   fill
@@ -76,7 +76,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="flex justify-center w-fit items-center gap-8">
-              <button className="w-[1.5vw] header-anim">
+              <button className="w-[1.5vw] header-anim mobile:hidden">
                 <Image
                   src="/assets/icons/notification.svg"
                   width={25}

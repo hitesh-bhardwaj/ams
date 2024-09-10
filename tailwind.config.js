@@ -9,16 +9,17 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      'mobile':{'max':'540px'},
+      'tablet':{'min':'541px','max':'1024px'}
+    },
     container: {
       center: true,
       padding: "2rem",
       screens: {
         "2xl": "1400px",
       },
-      screens: {
-        'mobile':{'max':'540px'},
-        'tablet':{'min':'541px','max':'1024px'}
-      },
+     
     },
     extend: {
       colors: {

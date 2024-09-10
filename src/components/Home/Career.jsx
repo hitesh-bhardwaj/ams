@@ -43,7 +43,7 @@ export default function Career() {
     return (
         <>
             <section className="p-y-sm" id="career">
-                <div className="container-lg relative px-[8%] py-[8%] overflow-hidden rounded-[3vw]">
+                <div className="container-lg relative px-[8%] py-[8%] overflow-hidden rounded-[3vw] mobile:rounded-[7vw]">
                     <video
                         loading="lazy"
                         loop
@@ -55,8 +55,8 @@ export default function Career() {
                     >
                         {/* The video source will be added dynamically via the IntersectionObserver */}
                     </video>
-                    <div className="w-[60%] relative z-10 space-y-[3.5vw]">
-                        <h2 className="title-2 aeonik">
+                    <div className="w-[60%] relative z-10 space-y-[3.5vw] mobile:w-[100%] mobile:space-y-[5vw] mobile:text-center mobile:flex-col " >
+                        <h2 className="title-2 aeonik mobile:w-[95%]">
                             <span data-para-anim className="text-shadow1">
                                 Join Our Mission to
                             </span>
@@ -64,10 +64,13 @@ export default function Career() {
                                 Create a Healthier World
                             </span>
                         </h2>
-                        <p data-para-anim className="content-p w-[70%] text-shadow1">
+                        <p data-para-anim className="content-p w-[70%] text-shadow1 mobile:w-[100%]">
                             To achieve the extraordinary, we need an exceptional team. At AMS, diversity and inclusiveness are the foundation for our dynamic and thriving culture. Unleash your potential and achieve the extraordinary in your career. Our unwavering commitment to revolutionizing healthcare is fuelled by our desire to make a difference and a meaningful impact in people’s lives.
                         </p>
+                        <div className="w-full flex mobile:justify-center">
                         <PrimaryButton className={"fadeUp"} link={"/"} btnText={"Career"} />
+                        </div>
+                        
                     </div>
                 </div>
             </section>

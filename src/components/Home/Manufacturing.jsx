@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { useRef, useEffect } from "react";
 import PrimaryButton from "../Button/PrimaryButton";
 import { paraAnim } from "../gsapAnimations";
+import Image from "next/image";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Manufacturing() {
@@ -146,7 +147,7 @@ export default function Manufacturing() {
     <>
       <section className="pb-[12%]" ref={section} id="manufacturing">
         <div className="container-lg">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center ">
             <div className="w-1/3 h-full">
               <div className="h-screen w-full flex justify-center items-center relative">
                 <div className="absolute" ref={text1}>
@@ -179,7 +180,7 @@ export default function Manufacturing() {
               </div>
             </div>
             <div className="w-[65%] h-screen relative -mr-[6%] rounded-s-[3vw] overflow-hidden">
-              <div className="absolute overflow-hidden top-0 left-0 w-full h-full" ref={picture1}>
+              <div className="absolute overflow-hidden top-0 left-0 w-full h-full " ref={picture1} >
                 <video
                   muted
                   playsInline
@@ -190,22 +191,27 @@ export default function Manufacturing() {
                 />
               </div>
               <div className="absolute overflow-hidden top-0 left-0 w-full h-full translate-y-full" ref={picture2}>
-                <img
-                  ref={inner2}
-                  className="w-full h-full object-cover -translate-y-full scale-[1.4]"
-                  src="/assets/home/manufacturing-2.webp"
-                  alt="image"
-                  loading="lazy"
-                />
+                <div className="relative h-screen w-[60vw]">
+                  <Image
+                    ref={inner2}
+                    fill
+                    className="w-full h-full object-cover -translate-y-full scale-[1.4]"
+                    src="/assets/home/manufacturing-2.webp"
+                    alt="image"
+                  />
+
+                </div>
               </div>
               <div className="absolute overflow-hidden top-0 left-0 w-full h-full translate-y-full" ref={picture3}>
-                <img
-                  ref={inner3}
-                  className="w-full h-full object-cover -translate-y-full scale-[1.4]"
-                  src="/assets/home/manufacturing-3.webp"
-                  alt="image"
-                  loading="lazy"
-                />
+              <div className="relative h-screen w-[60vw]">
+                  <Image
+                    ref={inner3}
+                    fill
+                    className="w-full h-full object-cover -translate-y-full scale-[1.4]"
+                    src="/assets/home/manufacturing-3.webp"
+                    alt="image"
+                  />
+                </div>
               </div>
             </div>
           </div>

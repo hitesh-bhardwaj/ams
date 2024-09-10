@@ -7,23 +7,25 @@ export default function Facility() {
     imageAnim()
     return (
         <>
-            <section className="pt-[0] pb-[4%] " id="facility">
-                <div className="group">
-                <div className="container-lg virtual bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300">
-                    <div className="w-1/2 relative z-10 space-y-[3.5vw] duration-300">
+            <section className="pt-[0] pb-[4%] mobile:pb-[10%]" id="facility">
+                <div className="group ">
+                <div className="container-lg virtual rounded-[3vw] flex items-center justify-between px-[6%] py-[8%] bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300 mobile:flex-col-reverse">
+                    <div className="w-1/2 relative z-10 space-y-[3.5vw] duration-300 mobile:w-[89%] mobile:text-center mobile:py-[5vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:space-y-[10vw]">
                         <h2 data-para-anim className="title-2 aeonik">
                             
                                 Delve Deeper into the World of AMS
                             
                         </h2>
-                        <p data-para-anim className="content-p mr-[6vw]">
+                        <p data-para-anim className="content-p mr-[6vw] mobile:mr-[0vw] ">
                            
                                 Experience our facility virtually.
                             
                         </p>
+                        <div className="w-full flex mobile:justify-center">
                         <PrimaryButton className={"fadeUp"} link={"/"} btnText={"Virtual Tour"}/>
+                        </div>
                     </div>
-                    <div className="relative w-[55%] rounded-[3vw] overflow-hidden fadeUp">
+                    <div className="relative w-[55%] rounded-[3vw] overflow-hidden fadeUp mobile:w-[100%]">
                         <img
                             className="w-full object-cover imageanim"
                             src="/assets/home/virtual.webp" 
