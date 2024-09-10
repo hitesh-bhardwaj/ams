@@ -21,16 +21,8 @@ const Connecting = () => {
           <div className='fadeUp'>
           <PrimaryButton link="#" btnText="Contact Us"/>
           </div>
-        
-
             </div>
-
-
             </div>
-
-
-       
-
     </section>
   )
 }

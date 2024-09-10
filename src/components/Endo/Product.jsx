@@ -10,14 +10,14 @@ import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger, Flip);
 
-const ProductCard = ({ img, heading, rotate }) => {
+const ProductCard = ({ img, heading}) => {
   return (
-    <div className={`${rotate}`}>
+    <div className="group">
       <Link href={"#"}>
         <div
-          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border group border-gray-200`}
+          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-500`}
         >
-          <div className="h-[22vw] w-[30vw] absolute top-[-5vw]">
+          <div className="h-[22vw] w-[30vw] absolute top-[-5vw] ">
             <Image fill src={img} alt={heading} className="object-contain group-hover:scale-[1.2] transition-all duration-500" />
           </div>
           <div className="h-[50%] w-[100%] flex flex-col items-center justify-center">

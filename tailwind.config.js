@@ -15,6 +15,10 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+      screens: {
+        'mobile':{'max':'540px'},
+        'tablet':{'min':'541px','max':'1024px'}
+      },
     },
     extend: {
       colors: {

@@ -7,14 +7,12 @@ import Hero from "@/components/Home/Hero";
 import HeroCarousel from "@/components/Home/HeroCarousel";
 import Impact from "@/components/Home/Impact";
 import Manufacturing from "@/components/Home/Manufacturing";
-// import Product from "@/components/Home/Product";
+import Product from "@/components/Home/Product";
 import Transition from "@/components/Transition";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
-
-
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -78,8 +76,8 @@ export default function Home() {
       <main>
         <Hero />
         <Manufacturing />
-        <HeroCarousel/>
-        {/* <Product/> */}
+        {/* <HeroCarousel/> */}
+        <Product/>
         <Impact />
         <Career />
         <Blog />
