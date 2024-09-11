@@ -184,6 +184,7 @@ export default function Manufacturing() {
                 <video
                   muted
                   playsInline
+                  autoPlay
                   loop
                   loading="lazy"
                   ref={inner1}

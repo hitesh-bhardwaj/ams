@@ -38,9 +38,11 @@ export default function Product() {
     return (
         <>
             <section id='product' className='py-[5%] relative overflow-hidden mobile:py-[20vw]'>
+                <div className='h-full'>
             
           <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%] mobile:hidden'/>
           <Image src={"/assets/home/product-bg-mobile.png"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%] hidden mobile:block'/>
+          </div>
         
                 <div className="container-lg">
                     <div className="product-top text-center flex flex-col items-center">
@@ -58,7 +60,7 @@ export default function Product() {
                     <div className='fadeUp'>
                         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                             <SwiperSlide>
-                                <div className='product-card relative'>
+                                <div className='product-card relative h-full'>
                                     <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
                                     <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>

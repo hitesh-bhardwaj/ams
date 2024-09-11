@@ -26,7 +26,7 @@ export default function Facility() {
                         <PrimaryButton className={"fadeUp"} link={"/"} btnText={"Virtual Tour"}/>
                         </div>
                     </div>
-                    <div className="relative w-[55%] h-[30vw] rounded-[3vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[100%] tablet:w-[100%] tablet:h-[30vh]">
+                    <div className="relative w-[55%] h-[30vw] rounded-[3vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[90vw] tablet:w-[90vw] tablet:h-[30vh]">
                         <Image
                             className="w-full object-cover imageanim"
                             src="/assets/home/virtual.webp" 

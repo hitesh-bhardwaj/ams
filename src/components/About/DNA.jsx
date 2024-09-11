@@ -37,23 +37,22 @@ const DNA = () => {
             <span>Our DNA</span>
           </h2>
         </div>
-        <div className='dna-card-container flex justify-between items-center p-[3%] gap-[1.5vw] group tablet:flex-col'>
-         <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 tablet:w-[85vw] tablet:h-[30vh] tablet:rounded-[3vw] '>
-                <CardBody className=" relative group/card h-auto p-6">
-                <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative '> 
+        <div className='dna-card-container flex justify-between items-center p-[3%] gap-[1.5vw] group mobile:flex-col mobile:px-[3%] mobile:py-[0%] mobile:gap-[0.5vw] mobile:justify-center'>
+         <CardContainer className="inter-var mobile:pb-0">
+            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1  mobile:h-[90vw] mobile:w-[90vw]'>
+                <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:p-[5vw]">
+                <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl"
                   src="/assets/about/accessible.webp"
                   alt="Accessible Image"
                   fill
-                />
-                
+                />  
                 </CardItem>
                 <CardItem className='mt-[3vw] mb-[2vw]'  translateZ="60"> 
-                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111] tablet:text-[4vw]'>Accessible Care</h2>
+                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw]'>Accessible Care</h2>
                 </CardItem>
-                <CardItem className='content-p tracking-wide '  as="p"
+                <CardItem className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center'  as="p"
           translateZ="60">
                Breaking barriers to care. AMS designs affordable medical solutions that bring quality healthcare to everyone, everywhere.
                 </CardItem>
@@ -63,9 +62,9 @@ const DNA = () => {
 
 
             <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 '>
-                <CardBody className=" relative group/card h-auto p-6">
-                <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative '> 
+            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
+                <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
+                <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl"
                   src="/assets/about/globe.webp"
@@ -75,9 +74,9 @@ const DNA = () => {
                 
                 </CardItem>
                 <CardItem className='mt-[3vw] mb-[2vw]'  translateZ="60"> 
-                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111]'>Global Standards</h2>
+                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111] mobile:text-[8.2vw]'>Global Standards</h2>
                 </CardItem>
-                <CardItem className='content-p tracking-wide '  as="p"
+                <CardItem className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center '  as="p"
           translateZ="60">
               The AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications
                 </CardItem>
@@ -88,9 +87,9 @@ const DNA = () => {
 
 
             <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 '>
-                <CardBody className=" relative group/card h-auto p-6">
-                <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative '> 
+            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
+                <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
+                <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl"
                   src="/assets/about/accessible.webp"
@@ -100,9 +99,9 @@ const DNA = () => {
                 
                 </CardItem>
                 <CardItem className='mt-[3vw] mb-[2vw]'  translateZ="60"> 
-                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111]'>Ethics and Integrity</h2>
+                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111] mobile:text-[8.2vw]'>Ethics and Integrity</h2>
                 </CardItem>
-                <CardItem className='content-p tracking-wide '  as="p"
+                <CardItem className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center'  as="p"
           translateZ="60">
               We uphold ethical standards and integrity in all business practices, ensuring transparency & honesty in building lasting relationships..
                 </CardItem>

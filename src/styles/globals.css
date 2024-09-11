@@ -401,7 +401,7 @@ body{
 
 @media screen  and (max-width:541px){
   .title-1{
-      font-size: 14.3vw;
+      font-size: 13.3vw;
   }
   .title-2{
     font-size: 11vw;
@@ -430,18 +430,28 @@ body{
   .menu-btn .line-wrapper .line{
     height: 3px;
     width: 12vw;
-    right: 10vw;
+    right: 6vw;
   }
   .mySwiper .swiper-button-prev{
     position: relative;
-    left: 30%;
+    left: 25%;
     bottom: -24px;
   }
   .mySwiper .swiper-button-next{
     position: relative;
     left: 50%;
+    bottom: 30px;
   }
-  .p-y-sm{ 
+  .mySwiper .swiper-button-prev, .mySwiper .swiper-button-next{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10%;
+  }
+  .swiper-button-prev::after, .swiper-button-next::after{
+    width: 50px!important;
+    color: white;
+  } 
+  .p-y-sm{
     padding: 10% 0%;
   }
   .content-p-lg{

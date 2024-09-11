@@ -24,14 +24,8 @@
     outline: none;
     border: none;
   }
-  /* .swiper-button-disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }*/
-  /* .swiper-button-prev::after ,.swiper-button-next::after{
-    display: none;
-  } */
-  .swiper-button-prev::after, .swiper-button-next::after{
+
+.mySwiper  .swiper-button-prev::after, .mySwiper .swiper-button-next::after{
     width: 80px!important;
     color: white;
   } 

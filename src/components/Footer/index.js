@@ -5,9 +5,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <>
-            <footer className="main-gradient h-full mt-[4vw] pt-[3vw]">
-                
-
+            <footer className="main-gradient h-full mt-[4vw] pt-[3vw] mobile:py-[10vw]">
                 <div className="container-sm">
                     <div className="grid grid-cols-12 pt-[3.5vw] pb-[1.5vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center ">
                         <div className="col-span-6  mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
@@ -49,7 +47,7 @@ export default function Footer() {
                                 <div className="social-icons flex items-bottom gap-[3vw] fadeUp mobile:mb-[5vw] mobile:mt-[5vw] mobile:gap-[10vw]">
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
+                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/fb.svg"
                                             alt="Facebook Icon"
                                             height="30"
@@ -58,7 +56,7 @@ export default function Footer() {
                                     </Link>
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
+                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/linkedin.svg"
                                             alt="LinkedIn Icon"
                                             height="30"
@@ -67,7 +65,7 @@ export default function Footer() {
                                     </Link>
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
+                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/twitter.svg"
                                             alt="Twitter Icon"
                                             height="30"
@@ -76,7 +74,7 @@ export default function Footer() {
                                     </Link>
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
+                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/insta.svg"
                                             alt="Instagram Icon"
                                             height="30"
@@ -85,7 +83,7 @@ export default function Footer() {
                                     </Link>
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.6vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
+                                            className="w-[1.6vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/youtube.svg"
                                             alt="Youtube Icon"
                                             height="30"

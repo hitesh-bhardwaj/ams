@@ -19,8 +19,6 @@ export default function Blog() {
 
      }
      else{
-    if(globalThis.innerWidth<1024){
-
     useEffect(() => {
         const ctx = gsap.context(() => {
             ScrollTrigger.create({
@@ -38,9 +36,6 @@ export default function Blog() {
 
     }
 
-    
-
-    }
 
     
 
@@ -48,7 +43,7 @@ export default function Blog() {
         return (
             <>
                 <div className="flex items-start justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[100%] mobile:h-[100vw] tablet:h-[35vw] ">
+                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[100vw] tablet:h-[35vw] ">
                         <Image
                             className="h-full w-full object-cover imageanim"
                             src={img}

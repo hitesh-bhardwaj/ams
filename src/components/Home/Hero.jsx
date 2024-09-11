@@ -45,7 +45,7 @@ export default function Hero() {
           <div className="px-[10%] relative mobile:px-[5vw] mobile:w-[100vw] ">
             <div className="flex h-dvh w-full justify-start items-center mobile:h-[90vh] tablet:h-[50vh]">
               <div className="w-1/2 mobile:w-screen mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4">
-                <h1 data-para-anim className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden mobile:hidden">
+                <h1 data-para-anim className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden  mobile:hidden">
                   <span className="leading-[1.25] overflow-hidden">
                     Advancing the
                   </span>

@@ -43,7 +43,7 @@ export default function Career() {
     return (
         <>
             <section className="p-y-sm" id="career">
-                <div className="container-lg relative px-[8%] py-[8%] overflow-hidden rounded-[3vw] mobile:rounded-[7vw]">
+                <div className="container-lg relative px-[8%] py-[8%] overflow-hidden rounded-[3vw] mobile:rounded-[7vw] mobile:py-[15%]">
                     <video
                         loading="lazy"
                         loop
@@ -64,7 +64,7 @@ export default function Career() {
                                 Create a Healthier World
                             </span>
                         </h2>
-                        <p data-para-anim className="content-p w-[70%] text-shadow1 mobile:w-[100%] tablet:text-[1.8vw] tablet:w-full">
+                        <p data-para-anim className="content-p w-[70%] text-shadow1 mobile:w-[100%] tablet:text-[1.8vw] tablet:w-full mobile:py-[5vw]">
                             To achieve the extraordinary, we need an exceptional team. At AMS, diversity and inclusiveness are the foundation for our dynamic and thriving culture. Unleash your potential and achieve the extraordinary in your career. Our unwavering commitment to revolutionizing healthcare is fuelled by our desire to make a difference and a meaningful impact in people’s lives.
                         </p>
                         <div className="w-full flex mobile:justify-center">
