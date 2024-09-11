@@ -16,7 +16,7 @@ const PrimaryButton = ({link, btnText, className}) => {
                   <div className="h-full w-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 duration-300">
                     <span className="block h-full w-full bg-gradient-to-r from-[#9E7BDF] via-[#ac26b0] to-blue-700 button-animate"/>
                   </div>
-                    <span className="text-[1.15vw] aeonik text-center text-white block relative z-[1] mobile:text-[4.5vw] mobile:font-light">{btnText}</span>
+                    <span className="text-[1.15vw] aeonik text-center text-white block relative z-[1] tablet:text-[2vw] mobile:text-[4.5vw] mobile:font-light">{btnText}</span>
                 </Link>
         
         </>

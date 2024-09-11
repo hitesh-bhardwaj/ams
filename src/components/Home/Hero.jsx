@@ -41,10 +41,10 @@ export default function Hero() {
 
   
     return (
-        <section className="hero mb-[12%] mobile:mb-[0vw]" id="hero">
+        <section className="hero mb-[12%] tablet:mb-[15%] mobile:mb-[0vw]" id="hero">
           <div className="px-[10%] relative mobile:px-[5vw] mobile:w-[100vw] ">
-            <div className="flex h-dvh w-full justify-start items-center mobile:h-[90vh]">
-              <div className="w-1/2 mobile:w-screen mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
+            <div className="flex h-dvh w-full justify-start items-center mobile:h-[90vh] tablet:h-[50vh]">
+              <div className="w-1/2 mobile:w-screen mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4">
                 <h1 data-para-anim className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden mobile:hidden">
                   <span className="leading-[1.25] overflow-hidden">
                     Advancing the
@@ -54,16 +54,14 @@ export default function Hero() {
                      way we care
                   </span>
                 </h1>
-                <h1 data-para-anim className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden hidden mobile:flex mobile:w-[90vw] mobile:text-center">
-                  <span className="leading-[1.25] overflow-hidden">
-                    Advancing
-                  </span>
-                  <br />
-                  <span className="leading-[1.25] overflow-hidden">
-                  the way we care
+                <h1 className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden mobile:block hidden">
+                  <span data-para-anim className="leading-[1.25] overflow-hidden text-center">
+                    Advancing the
+                  
+                     way we care
                   </span>
                 </h1>
-                <p  className="font-light max-w-[30vw] text-[1.25vw] mt-[4vw] mb-[4vw] mobile:text-[4.2vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[10vw] mobile:mb-[15vw]">
+                <p  className="font-light max-w-[30vw] text-[1.25vw] mt-[4vw] mb-[4vw] mobile:text-[4.2vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[10vw] mobile:mb-[15vw]  tablet:text-[2vw] tablet:max-w-[40vw]">
                   <span data-para-anim>
                     AMS is dedicated to <strong>advancing</strong> the spectrum of healthcare by providing meaningful <strong>MedTech solutions</strong> for healthcare professionals, improving lives for <strong>patients</strong> around the <strong>world.</strong>
                   </span>
@@ -73,7 +71,7 @@ export default function Hero() {
               </div>
               <div className="absolute w-[43%] right-0 bottom-0 mobile:hidden">
 
-              <div className=" w-[43vw] h-[40vw]  hero-img-anim relative ">
+              <div className=" w-[43vw] h-[40vw]  hero-img-anim relative  tablet:w-[45vw] tablet:h-[42vw]">
                 <Image
                   className="hero-img"
                   src="/assets/home/hero-image.webp"

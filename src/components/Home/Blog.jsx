@@ -17,21 +17,28 @@ export default function Blog() {
     const blogContainer = useRef(null);
     if(globalThis.innerWidth<1024){
 
-    }else{
-        useEffect(() => {
-            const ctx = gsap.context(() => {
-                ScrollTrigger.create({
-                    trigger: blogLeft.current,
-                    start: "top 10%",
-                    endTrigger: blogContainer.current,
-                    end: "bottom 80%",
-                    invalidateOnRefresh: true,
-                    pin: blogLeft.current,
-                    // markers: true,
-                });
+     }
+     else{
+    if(globalThis.innerWidth<1024){
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            ScrollTrigger.create({
+                trigger: blogLeft.current,
+                start: "top 10%",
+                endTrigger: blogContainer.current,
+                end: "bottom 80%",
+                invalidateOnRefresh: true,
+                pin: blogLeft.current,
+                // markers: true,
             });
-            return () => ctx.revert();
         });
+        return () => ctx.revert();
+    });
+
+    }
+
+    
 
     }
 
@@ -41,7 +48,7 @@ export default function Blog() {
         return (
             <>
                 <div className="flex items-start justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[100%] mobile:h-[100vw]">
+                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[100%] mobile:h-[100vw] tablet:h-[35vw] ">
                         <Image
                             className="h-full w-full object-cover imageanim"
                             src={img}
@@ -50,13 +57,13 @@ export default function Blog() {
                         />
                     </div>
                     <div className="w-[60%] mt-[1vw] fadeUp mobile:w-[100%] mobile:text-center mobile:mt-[5vw] mobile:flex-col mobile:items-center mobile:justify-center">
-                        <span className="text-[0.9vw] font-light mb-[1vw] block mobile:text-[4.2vw] mobile:mb-[5vw]">
+                        <span className="text-[0.9vw] font-light mb-[1vw] block mobile:text-[4.2vw] mobile:mb-[5vw] tablet:text-[1.8vw]">
                             {date}
                         </span>
-                        <h5 data-para-anim className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.4vw] mobile:mb-[10vw]">
+                        <h5 data-para-anim className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.4vw] mobile:mb-[10vw] tablet:text-[3.5vw]">
                             {title}
                         </h5>
-                        <p data-para-anim className="text-[0.9vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw]">
+                        <p data-para-anim className="text-[0.9vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]">
                             {content}
                         </p>
                         <div className="w-full flex mobile:justify-center">
@@ -64,7 +71,7 @@ export default function Blog() {
                         </div>
                     </div>
                 </div>
-                <span className="block h-[1px] w-full my-[4vw] bg-[#d6d6d6] lineDraw"/>
+                <span className="block h-[1px] w-full my-[4vw] bg-[#d6d6d6] lineDraw tablet:my-[7vw]"/>
             </>
         )
     }
@@ -73,18 +80,18 @@ export default function Blog() {
         <>
             <section className="p-y-sm mobile:py-[15vw]" ref={blogContainer} id="blogs">
                 <div className="container-sm">
-                    <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:items-center">
-                        <div className="blog-left w-[45%] space-y-[2.5vw] mobile:w-[100%] mobile:space-y-[5vw] mobile:pl-[5vw]" ref={blogLeft}>
+                    <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:items-center tablet:flex-col">
+                        <div className="blog-left w-[45%] space-y-[2.5vw] mobile:w-[100%] mobile:space-y-[5vw] mobile:pl-[5vw] tablet:w-full" ref={blogLeft}>
                             <h2 data-para-anim className="title-2 aeonik ">
                                 <span>
                                     Latest Blogs
                                 </span>
                             </h2>
-                            <p data-para-anim className="content-p w-[78%] mobile:w-[90%] mobile:pb-[10vw]">
+                            <p data-para-anim className="content-p w-[78%] tablet:w-[70%] mobile:w-[90%] mobile:pb-[10vw]">
                                 Unlocking Tomorrow&apos;s Healthcare: Discover Cutting-Edge Insights and Innovations in Medical Equipment Manufacturing.
                             </p>
                         </div>
-                        <div className="blog-right w-[55%] mobile:w-[90%] mobile:space-y-[15vw]">
+                        <div className="blog-right w-[55%] mobile:w-[90%] mobile:space-y-[15vw] tablet:w-full tablet:mt-[7vw]">
                             <BlogCard 
                                 img={"/assets/home/blog-1.webp"}
                                 title={"National Interventional Cardiology Congress 2023!"}

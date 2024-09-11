@@ -62,11 +62,11 @@ const Header = () => {
           isHeaderVisible ? "transform-none" : "-translate-y-full"
         }`}
       >
-        <div className="header-container w-[90%] mx-auto lg:py-[2vw] py-[4vw]">
+        <div className="header-container w-[90%] mx-auto lg:py-[2vw] tablet:py-[1vw]">
           <div className="flex justify-between items-center">
             <div className="w-[7vw] header-anim">
               <Link href="/">
-              <div className="relative h-[7vw] w-[7vw] mobile:h-[27vw] mobile:w-[27vw]">
+              <div className="relative h-[7vw] w-[7vw] mobile:h-[27vw] mobile:w-[27vw] tablet:w-[15vw] tablet:h-[15vw]">
                 <Image
                   src="/logo.svg"
                   fill
@@ -77,12 +77,14 @@ const Header = () => {
             </div>
             <div className="flex justify-center w-fit items-center gap-8">
               <button className="w-[1.5vw] header-anim mobile:hidden">
+                <div className="w-[1.5vw] h-[1.5vw] relative tablet:w-[4vw] tablet:h-[4vw]">
+
                 <Image
                   src="/assets/icons/notification.svg"
-                  width={25}
-                  height={25}
+                 fill
                   alt="Notification Icon"
                 />
+                </div>
               </button>
               <div className="burger-wrapper other-wrapper header-anim">
                 <button

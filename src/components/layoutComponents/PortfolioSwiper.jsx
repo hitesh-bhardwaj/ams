@@ -26,7 +26,7 @@ const PortfolioSwiper = ({slidesData }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <section id="hernia-swiper">
+    <section id="hernia-swiper" className="overflow-x-hidden">
       <div className="w-full mb-[5%] ml-[10%] py-[10%] relative h-full">
         <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]">
           <p className="text-end">{slidesData[0].title}</p>

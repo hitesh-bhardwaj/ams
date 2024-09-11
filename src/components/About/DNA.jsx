@@ -31,15 +31,15 @@ const DNA = () => {
   return (
   <>
   <section className='dna' id='dna'>
-    <div className=' ml-auto mr-auto py-[7%]'>
+    <div className=' ml-auto mr-auto py-[7%] mobile:hidden'>
         <div>
         <h2 data-para-anim className="title-2 aeonik ml-[7%]">
             <span>Our DNA</span>
           </h2>
         </div>
-        <div className='dna-card-container flex justify-between items-center p-[3%] gap-[1.5vw] group'>
+        <div className='dna-card-container flex justify-between items-center p-[3%] gap-[1.5vw] group tablet:flex-col'>
          <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 '>
+            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 tablet:w-[85vw] tablet:h-[30vh] tablet:rounded-[3vw] '>
                 <CardBody className=" relative group/card h-auto p-6">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative '> 
                 <Image
@@ -51,7 +51,7 @@ const DNA = () => {
                 
                 </CardItem>
                 <CardItem className='mt-[3vw] mb-[2vw]'  translateZ="60"> 
-                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111]'>Accessible Care</h2>
+                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111] tablet:text-[4vw]'>Accessible Care</h2>
                 </CardItem>
                 <CardItem className='content-p tracking-wide '  as="p"
           translateZ="60">

@@ -13,17 +13,17 @@ const PortfolioCard =({img, txt , className})=>{
   return (
     <>
     <Link href={"#"}>
-    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group`}>
+    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group mobile:w-[85vw] mobile:h-[120vw]`}>
           <Image
             src={img}
            fill
             alt="portfolio-1" 
-            className="group-hover:scale-[1.2] duration-300"
+            className="group-hover:scale-[1.2] duration-300 object-cover"
           />
-          <div className="imgoverlay glassmorphism absolute w-[10vw] h-[11.5vw]  left-[-50%] duration-300 block top-0 group-hover:left-[0%]"></div>
-          <div className="flex justify-center items-center absolute ">
+          <div className="imgoverlay glassmorphism absolute w-[10vw] h-[11.5vw]  left-[-50%] duration-300 block top-0 group-hover:left-[0%] mobile:w-[85vw] mobile:h-[40vw] mobile:left-0 mobile:bottom-0 mobile:top-auto"></div>
+          <div className="flex justify-center items-center absolute  mobile:bottom-[5%]">
           <p
-            className=" font-light text-[1.2vw] text-shadow"
+            className=" font-light text-[1.2vw] text-shadow mobile:text-[8vw] mobile:leading-[1.2]"
           >
            {txt}
           </p>
@@ -55,13 +55,13 @@ const Portfolio = () => {
   })
   return (
     <section id="portfolio">
-      <div  className="container-lg flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%]">
+      <div  className="container-lg flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%]">
       <div>
-        <h2 data-para-anim className="title-2 aeonik ">
+        <h2 data-para-anim className="title-2 aeonik mobile:text-center ">
           Our Advanced Portfolio
         </h2>
       </div>
-      <div className="flex items-center justify-between gap-[3vw] mt-[7vw] portfolio-card-container">
+      <div className="flex items-center justify-between gap-[3vw] mt-[7vw] portfolio-card-container mobile:flex-col mobile:gap-[7vw] mobile:mt-[12vw]">
        
         <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"}/>

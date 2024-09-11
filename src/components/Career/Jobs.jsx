@@ -10,8 +10,8 @@ import { paraAnim } from "../gsapAnimations";
 const JobCard =({dept, designation, location})=>{
   return(
     <>   
-    <Link href={"#"} className="cursor-default w-[22vw] block">
-    <div className="pt-[5%] h-[23vw] px-[4%] w-[22vw] flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card cursor-pointer">
+    <Link href={"#"} className="cursor-default w-[23.5vw] block mobile:w-[70vw]">
+    <div className="pt-[5%] h-[23vw] px-[4%] w-[23.5vw] flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card cursor-pointer mobile:h-[70vw] mobile:w-[70vw] mobile:rounded-[7vw]">
             <div className="content-p">
               {dept}
             </div>
@@ -20,7 +20,7 @@ const JobCard =({dept, designation, location})=>{
                 {designation} 
               </h2>
             </div>
-            <div className="content-p border-t-[1px] w-[22vw] h-[4vw] items-center  py-[3%] bg-white/90 flex  justify-center location rounded-b-[40px]">
+            <div className="content-p border-t-[1px] w-[23.5vw] h-[4vw] items-center  py-[3%] bg-white/90 flex  justify-center location rounded-b-[40px]">
              {location}
             </div>
           </div>
@@ -44,12 +44,26 @@ const Jobs = () => {
         slidesPerView={3}
         spaceBetween={0}
         loop= {true}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           clickable: true,
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1, // 1 slide per view on mobile
+            spaceBetween: 40,
+          },
+          542: {
+            slidesPerView: 2, // 2 slides per view on tablets
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3, // 3 slides per view on larger screens
+            spaceBetween: 30,
+          },
         }}
         modules={[ Pagination, Autoplay]}
         className="MySwiper"

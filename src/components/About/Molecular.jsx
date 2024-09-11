@@ -57,7 +57,7 @@ useGSAP(() => {
 });
   return (
     <>
-      <section className='molecular h-[100vh] overflow-hidden' id='molecular' ref={molecularContainer}>
+      <section className='molecular h-[100vh] overflow-hidden tablet:h-[50vh]' id='molecular' ref={molecularContainer}>
         <div className='w-screen h-screen absolute z-[1] overflow-hidden'>
           <Image src={"/assets/about/molecular-bg.webp"} fill alt={'molecular-bg'} className='object-cover molecular-bg-img scale-[1.3] translate-y-[-30%]'/>
         </div>

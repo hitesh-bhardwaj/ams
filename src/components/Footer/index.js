@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -9,15 +10,15 @@ export default function Footer() {
 
                 <div className="container-sm">
                     <div className="grid grid-cols-12 pt-[3.5vw] pb-[1.5vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center ">
-                        <div className="col-span-4  mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
+                        <div className="col-span-6  mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
                             <div className="mobile:flex mobile:items-center mobile:justify-center mobile:flex-col">
                                 <p className="content-p text-anim-2">
                                     <span className="uppercase text-head">
                                         do you have any questions?
                                     </span>
                                 </p>
-                                <Link href="/#" className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp">
-                                    <span className="text-[5.3vw] text-head aeonik leading-[1] font-light mobile:text-[14vw]">
+                                <Link href="/#" className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp tablet:mb-[3.5vw]">
+                                    <span className="text-[5.3vw] text-head aeonik leading-[1] font-light mobile:text-[14vw] tablet:text-[7vw]">
                                         Contact
                                     </span>
                                     <img 
@@ -28,8 +29,8 @@ export default function Footer() {
                                         width="50px"
                                     />
                                 </Link>
-                                <div className="mb-[2.5vw] mobile:mb-[5vw] mobile:mt-[5vw] mobile:flex mobile:flex-col mobile:justify-center mobile:items-center ">
-                                    <p className="content-p mb-[1vw] fadeUp mobile:w-[80%] mobile:text-center">
+                                <div className="mb-[2.5vw]  mobile:mb-[5vw] mobile:mt-[5vw] mobile:flex mobile:flex-col mobile:justify-center mobile:items-center ">
+                                    <p className="content-p mb-[1vw] fadeUp mobile:w-[80%] mobile:text-center tablet:mb-[2vw]">
                                         <span className="text-head">
                                             P-21-22, 25-26 & 34-35, GIDC Manjusar, Ta. Savli, Vadodara, Gujarat, India
                                         </span>
@@ -48,7 +49,7 @@ export default function Footer() {
                                 <div className="social-icons flex items-bottom gap-[3vw] fadeUp mobile:mb-[5vw] mobile:mt-[5vw] mobile:gap-[10vw]">
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw]"
+                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/fb.svg"
                                             alt="Facebook Icon"
                                             height="30"
@@ -57,7 +58,7 @@ export default function Footer() {
                                     </Link>
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw]"
+                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/linkedin.svg"
                                             alt="LinkedIn Icon"
                                             height="30"
@@ -66,7 +67,7 @@ export default function Footer() {
                                     </Link>
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw]"
+                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/twitter.svg"
                                             alt="Twitter Icon"
                                             height="30"
@@ -75,7 +76,7 @@ export default function Footer() {
                                     </Link>
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw]"
+                                            className="w-[1.5vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/insta.svg"
                                             alt="Instagram Icon"
                                             height="30"
@@ -84,7 +85,7 @@ export default function Footer() {
                                     </Link>
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
-                                            className="w-[1.6vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw]"
+                                            className="w-[1.6vw] h-[1.5vw] mobile:w-[9vw] mobile:h-[9vw] tablet:w-[4vw] tablet:h-[4vw]"
                                             src="/assets/icons/youtube.svg"
                                             alt="Youtube Icon"
                                             height="30"
@@ -94,7 +95,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-5 col-start-9 flex justify-between mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:space-y-[5vw]">
+                        <div className="col-span-5 col-start-9 flex justify-between mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:space-y-[5vw] tablet:col-start-7 tablet:row-start-1 tablet:gap-[5vw]">
                             <div className="">
                                 <h6 className="text-head content-p-lg mb-[1vw] fadeUp  mobile:text-center">
                                     <span className="font-light">
@@ -139,7 +140,7 @@ export default function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="w-[35%] mobile:w-[60%] mobile:text-center">
+                            <div className="w-[35%] mobile:w-[60%] mobile:text-center tablet:w-full">
                             <h6 className="text-head content-p-lg mb-[1vw] fadeUp">
                                     <span className="font-light">
                                         Products
@@ -184,19 +185,22 @@ export default function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <img
-                            className="col-span-full my-[3vw]  drop-shadow-2xl mobile:hidden"
+                        <div className="relative col-span-full my-[3vw] h-[13vw] w-full tablet:my-[6vw] tablet:h-[15vw] fadeUp mobile:hidden">
+
+                        <Image
+                            className="drop-shadow-2xl"
                             src="/ams-logo-with-tag.png"
                             alt="Logo"
-                            height="248"
+                            fill
                         /> 
+                        </div>
                          <img
                             className="col-span-full my-[3vw]  drop-shadow-2xl hidden mobile:block mobile:w-[70%] mobile:my-[6vw]"
                             src="/ams-logo-with-tag-mobile.png"
                             alt="Logo"
                             height="200"
                         /> 
-                        <div className="col-span-full flex justify-between text-head text-[1vw] font-light mobile:text-[3.6vw] mobile:flex-col mobile:items-center mobile:justify-center">
+                        <div className="col-span-full flex justify-between text-head text-[1vw] font-light mobile:text-[3.6vw] mobile:flex-col mobile:items-center mobile:justify-center tablet:text-[1.8vw]">
                             <p>© {new Date().getFullYear()} Advanced MedTech Solutions Pvt. Ltd</p>
                             <a className="relative after:absolute after:block after:left-0 after:bg-current after:bottom-0 after:h-[1px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all" target='_blank' title='UI/UX, Strategy, Marketing Agency' href='https://weareenigma.com'>By: Enigma</a>
                         </div>

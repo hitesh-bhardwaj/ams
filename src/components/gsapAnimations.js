@@ -30,28 +30,34 @@ export function paraAnim() {
 }
 
 export function imageAnim() {
-  useGSAP(() => {
-    const images = document.querySelectorAll(".imageanim");
-    images.forEach((img) => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: img,
-          start: "top 70%",
-          end: "+=2000 top",
+  if(globalThis.innerWidth<1024){
 
-          scrub: true,
-        },
-      });
-      tl.to(img, {
-        scale: 1.1,
-        delay: -1,
-      });
-      tl.to(img, {
-        yPercent: 30,
-        delay: -1,
+  }
+  else{
+
+    useGSAP(() => {
+      const images = document.querySelectorAll(".imageanim");
+      images.forEach((img) => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: img,
+            start: "top 70%",
+            end: "+=2000 top",
+  
+            scrub: true,
+          },
+        });
+        tl.to(img, {
+          scale: 1.1,
+          delay: -1,
+        });
+        tl.to(img, {
+          yPercent: 30,
+          delay: -1,
+        });
       });
     });
-  });
+  }
 }
 
 export function imgAnim() {

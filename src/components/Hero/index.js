@@ -34,8 +34,8 @@ const Hero = ({ line1, line2, src, content,className , titleColor}) => {
   });
   return (
     <section className=" mb-[12%] hero-container" id="hero">
-      <div className="w-[100vw] h-[100vh] relative overflow-hidden">
-        <div className="w-screen h-screen absolute">
+      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
+        <div className="w-screen h-screen absolute tablet:h-[50vh]">
           <Image
             className="hero-img absolute object-cover"
             src={src}
@@ -45,12 +45,12 @@ const Hero = ({ line1, line2, src, content,className , titleColor}) => {
           />
         </div>
 
-        <div className="px-[12%] relative">
-          <div className="flex h-dvh w-full flex-col justify-center items-start">
+        <div className="px-[12%] relative mobile:px-[5%]">
+          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh] mobile:items-center">
             <div className="">
               <h1
                 data-para-anim
-                className="title-1 aeonik drop-shadow-lg  leading-[1]"
+                className="title-1 aeonik drop-shadow-lg  leading-[1] mobile:hidden"
               >
                 <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"} `}>
                   {line1}
@@ -60,13 +60,24 @@ const Hero = ({ line1, line2, src, content,className , titleColor}) => {
                   {line2}
                 </span>
               </h1>
-              <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p ">
-                <span data-para-anim className={`text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"}`}>
+              <h1
+                
+                className="title-1 aeonik drop-shadow-lg  leading-[1] hidden mobile:block"
+              >
+                <span data-para-anim className={`leading-[1.2] overflow-hidden text-[#FFFFFF] text-center ${titleColor?"text-black":"text-shadow"} `}>
+                  {line1}
+               
+                
+                  {line2}
+                </span>
+              </h1>
+              <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] ">
+                <span data-para-anim className={`text-[#FFFFFF] mobile:text-center ${titleColor?"text-black":"text-shadow"}`}>
                   {content}
                 </span>
               </p>
             </div>
-            <div className={`w-full fadeUp ${className}`}>
+            <div className={`w-full fadeUp ${className} mobile:hidden`}>
               <div className="h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2] ">
                 <img src="/assets/career/search.png" alt="search-icon" />
               </div>

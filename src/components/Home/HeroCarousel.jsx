@@ -9,6 +9,7 @@
 
     const HeroCarousel = () => {
     const swiperContainerRef = useRef(null);
+    
     useEffect(() => {
         const fashionSlider = new Swiper(swiperContainerRef.current, {
         speed: 1000,
@@ -81,7 +82,7 @@
     
 
   return (
-    <section id='product' className='relative  overflow-hidden py-[5%]'>
+    <section id='product' className='relative  overflow-hidden py-[5%] tablet:h-full'>
             
     <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img z-0'/>
   
@@ -92,7 +93,7 @@
                           Empowering Healthcare Professionals
                       
                   </h2>
-                  <p  className="content-p my-6 w-[55%]"> 
+                  <p  className="content-p my-6 w-[55%] tablet:w-[90%]"> 
                       
                           Advanced MedTech Solutions empowers healthcare practitioners and caregivers to manage and treat a wide range of medical conditions, from chronic diseases to acute injuries, with the next generation of insight-driven medical device technology and innovation.
                       
@@ -105,8 +106,8 @@
             <div class="swiper-slide">
             <div className='product-card'>
                                     <div className='main relative'>
-                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1 '>01</span>
+                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center tablet:w-[3vw] tablet:h-[3vw] tablet:right-[3%] tablet:top-0'>
+                                            <span className='text-[0.9vw] pt-1 tablet:text-[1.8vw] tablet:pt-0'>01</span>
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3 ml-[5%] '>
@@ -119,14 +120,14 @@
                                                 />
                                             </div>
                                             <div className='flex flex-col w-full pr-[3vw]'>
-                                                <h3 className='title-2 aeonik mb-[1vw]'>
+                                                <h3 className='title-2 aeonik mb-[1vw] tablet:text-[5vw]'>
                                                     <span>
                                                         ADVA GLIDE
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p mb-[0.5vw]'>PTCA Balloon Catheter</h4>
+                                                <h4 className='content-p mb-[0.5vw] tablet:text-[2vw]'>PTCA Balloon Catheter</h4>
                                                 <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Gliding The Science of Flow Restoration</p>
-                                                <p className='content-p-md mb-[1.5vw] '>
+                                                <p className='content-p-md mb-[1.5vw] tablet:text-[1.5vw] '>
                                                     Revolutionalized for the most challenging environments
                                                     <br />
                                                     <br />
@@ -141,8 +142,8 @@
             <div class="swiper-slide">
             <div className='product-card'>
                                     <div className='main relative'>
-                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1'>02</span>
+                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center tablet:w-[3vw] tablet:h-[3vw] tablet:right-[3%] tablet:top-0'>
+                                            <span className='text-[0.9vw] pt-1 tablet:text-[1.8vw] tablet:pt-0'>02</span>
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3 ml-[5%]'>
@@ -155,17 +156,17 @@
                                                 />
                                             </div>
                                             <div className='flex flex-col w-full pr-[3vw]'>
-                                                <h3 className='title-2 aeonik mb-[1vw]'>
+                                                <h3 className='title-2 aeonik mb-[1vw] tablet:text-[5vw]'>
                                                     <span>
                                                         ADVAGRIP 
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p mb-[0.5vw] capitalize'>Knotless Tissue Control Device</h4>
+                                                <h4 className='content-p mb-[0.5vw] capitalize tablet:text-[2vw]'>Knotless Tissue Control Device</h4>
                                                 <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>A Grip like No Other</p>
-                                                <p className='content-p mb-[1.5vw]'>
+                                                <p className='content-p mb-[1.5vw] tablet:text-[1.5vw]'>
                                                     ADVAGRIP offers swift & secure tissue control without the hassle of tying knots. With AMS&apos; Tri-Cut Technology, ADVAGRIP ensures robust anchoring while maintaining suture strength. Its ultrasonically welded loop and angled tip provide added security and precision. Experience the efficiency and reliability of ADVAGRIP for superior wound closure.
                                                     <br />
-                                                    <br />
+                                                    
                                                     Changing the paradigm of Knotless Suture Technology with ADVAGRIP.
                                                 </p>
                                                 <LinkButton btnText={"Get A Grip"} link={"/"}/>
@@ -177,8 +178,8 @@
             <div class="swiper-slide">
             <div className='product-card'>
                                     <div className='main relative'>
-                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1'>03</span>
+                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center tablet:w-[3vw] tablet:h-[3vw] tablet:right-[3%] tablet:top-0'>
+                                            <span className='text-[0.9vw] pt-1 tablet:text-[1.8vw] tablet:pt-0'>03</span>
                                     </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3 ml-[5%]'>
@@ -191,14 +192,14 @@
                                                 />
                                             </div>
                                             <div className='flex flex-col w-full pr-[3vw]'>
-                                                <h3 className='title-2 aeonik mb-[1vw]'>
+                                                <h3 className='title-2 aeonik mb-[1vw] tablet:text-[5vw]'>
                                                     <span>
                                                         ADVA PRO
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p mb-[0.5vw] capitalize'>Sirolimus Eluting Coronary Stent System</h4>
+                                                <h4 className='content-p mb-[0.5vw] capitalize tablet:text-[2vw]'>Sirolimus Eluting Coronary Stent System</h4>
                                                 <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Precision. Perfection. Pro.</p>
-                                                <p className='content-p mb-[1.5vw]'>
+                                                <p className='content-p mb-[1.5vw] tablet:text-[1.5vw]'>
                                                     The Pinnacle of Precision in Complex PCI is not just designed to transform lives; it&apos;s poised to redefine the very future of interventional cardiology for complex anatomies. Prepare to witness a revolution in cardiac care that will set a new standard for excellence.
                                                 </p>
                                                 <LinkButton btnText={"Know More"} link={"/"}/>
@@ -210,8 +211,8 @@
             <div class="swiper-slide">
             <div className='product-card'>
                                     <div className='main relative'>
-                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center'>
-                                            <span className='text-[0.9vw] pt-1'>04</span>
+                                        <div className='absolute right-[10%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center tablet:w-[3vw] tablet:h-[3vw] tablet:right-[3%] tablet:top-0'>
+                                            <span className='text-[0.9vw] pt-1 tablet:text-[1.8vw] tablet:pt-0'>04</span>
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw]'>
                                             <div className='w-2/3 ml-[5%]'>
@@ -224,14 +225,14 @@
                                                 />
                                             </div>
                                             <div className='flex flex-col w-full pr-[3vw]'>
-                                                <h3 className='title-2 aeonik mb-[1vw]'>
+                                                <h3 className='title-2 aeonik mb-[1vw] tablet:text-[5vw]'>
                                                     <span>
                                                         ADVACRYL
                                                     </span>
                                                 </h3>
-                                                <h4 className='content-p mb-[0.5vw] capitalize'>Polyglactin 910</h4>
+                                                <h4 className='content-p mb-[0.5vw] capitalize tablet:text-[2vw]'>Polyglactin 910</h4>
                                                 <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Seal of Confidence</p>
-                                                <p className='content-p mb-[1.5vw]'>
+                                                <p className='content-p mb-[1.5vw] tablet:text-[1.5vw]'>
                                                     ADVACRYL suture is braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. Braided ADVACRYL suture is coated with a mixture composed of Poly (Glycolide-co-lactide) (Glacomer 37) and calcium stearate. The suture is colored violet to increase visibility and is also available undyed.
                                                 </p>
                                                 <LinkButton btnText={"Know More"} link={"/"}/>
@@ -243,12 +244,12 @@
         </div>
 
             <div class="navigator">
-                <div class="swiper-button-prev ml-[5%]">
+                <div class="swiper-button-prev tablet:left-[50%] tablet:bottom-[10%] ml-[5%] tablet:ml-0">
                     <div className='hover:cursor-pointer '>
                         <img src='/assets/icons/arrow-left.svg' alt="arrow-left" height="50px" width="50px"/>
                         </div>
                         </div>
-                <div class="swiper-button-next mr-[5%]"><div className='hover:cursor-pointer'><img src='/assets/icons/arrow-right-white.svg' alt='arrow-right' height="50px" width="50px"/></div></div>
+                <div class="swiper-button-next mr-[5%] tablet:mr-[1%]"><div className='hover:cursor-pointer'><img src='/assets/icons/arrow-right-white.svg' alt='arrow-right' height="50px" width="50px"/></div></div>
             </div>
         </div>
     </div>
