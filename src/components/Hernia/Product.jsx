@@ -18,7 +18,7 @@ const ProductCard=({img, heading , className, rotate})=>{
       <>
       <div className={`${rotate}`}>
       <Link href={"#"}>
-      <div className={` w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] border border-gray-200 mobile:w-[85vw] mobile:h-[100vw] mobile:ml-[7vw] `}>
+      <div className={` w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] border border-gray-200 mobile:w-[85vw] mobile:h-[100vw] mobile:ml-[7vw] tablet:w-[40vw] tablet:h-[50vw]`}>
             <Image
               src={img}
              fill
@@ -27,11 +27,11 @@ const ProductCard=({img, heading , className, rotate})=>{
             />
             <div className={`flex justify-center flex-col gap-[1vw] items-center absolute z-[5] top-[70%] text-[#111111] ${className}  `}>
             <p
-              className=" font-light text-[2vw] aeonik mobile:text-[7vw]"
+              className=" font-light text-[2vw] aeonik mobile:text-[7vw] tablet:text-[3vw]"
             >
              {heading}
             </p>
-            <button className={`text-[#143CA3] text-[1.2vw] font-light flex items-center justify-center gap-[0.5vw] mobile:text-[5vw] mobile:gap-[2vw]`}>See more 
+            <button className={`text-[#143CA3] text-[1.2vw] font-light flex items-center justify-center gap-[0.5vw] mobile:text-[5vw] mobile:gap-[2vw] tablet:text-[2vw]`}>See more 
               <span className='w-[1.5vw] h-[1.5vw] overflow-hidden flex justify-center items-center pt-[4%] mobile:w-[5vw] mobile:h-[5vw]'>
               <span className='w-[4vw] h-[1.3vw] flex translate-x-[-30%] group-hover:translate-x-[24%] transition-all ease-in-out duration-300 gap-[0.3vw] mobile:w-[15vw] mobile:h-[7vw] '>
               <svg viewBox="0 0 22 16" fill="current-color" xmlns="http://www.w3.org/2000/svg" className="h-[1vw] w-[1.3vw] scale-[0.3] group-hover:scale-[1] transition-all mobile:scale-[1] mobile:w-[5vw] mobile:h-[5vw]">
@@ -220,9 +220,9 @@ const Product = () => {
     <section
     id="products"
       ref={sliderContainer}
-      className={`relative h-screen ${styles.sliderContainer} overflow-x-hidden mobile:h-full mobile:py-[10%]`}
+      className={`relative h-screen ${styles.sliderContainer} overflow-x-hidden mobile:h-full mobile:py-[10%] tablet:h-full`}
     >
-        <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden">
+        <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden tablet:hidden">
         <div className='w-full flex justify-center'>
         <h2 data-para-anim className="title-2 aeonik">
           <span>The Foundation of Durable Repair</span>
@@ -251,20 +251,21 @@ const Product = () => {
       </div>
 
         </div>
-        <div className="w-full flex flex-col gap-[12vw]">
+        <div className="hidden tablet:block mobile:block">
+        <div className="w-full flex flex-col gap-[12vw] tablet:gap-[7vw]">
         <div className='w-full flex justify-center'>
         <h2  className="title-2 aeonik text-center">
           <span data-para-anim>The Foundation of Durable Repair</span>
         </h2>
       </div>
-        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] fadeUp mobile:block hidden mobile:pr-[5%]">
+        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] fadeUp mobile:block hidden mobile:pr-[5%] tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0">
             <div
               
-              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit "
+              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
             >
                {productData.map((product, i) => (
             <div
-              className="w-[85vw] h-[100vw]"
+              className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw]"
               key={i}
               
             >
@@ -281,8 +282,10 @@ const Product = () => {
             </div>
           </div>
           <div className='w-full product-base-text flex justify-center'>
-        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center'>advamesh range</p>
+        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center tablet:text-[3vw]'>advamesh range</p>
       </div>
+
+        </div>
 
         </div>
 

@@ -43,7 +43,7 @@ export default function Blog() {
         return (
             <>
                 <div className="flex items-start justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[100vw] tablet:h-[35vw] mobile:fadeUp ">
+                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[100vw] tablet:h-[35vw] fadeUp ">
                         <Image
                             className="h-full w-full object-cover imageanim mobile:fadeUp "
                             src={img}

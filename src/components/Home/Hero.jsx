@@ -41,7 +41,7 @@ export default function Hero() {
 
   
     return (
-        <section className="hero mb-[12%] tablet:mb-[15%] mobile:mb-[0vw]" id="hero">
+        <section className="hero mb-[12%] tablet:mb-[15%] mobile:mb-[0vw] overflow-hidden" id="hero">
           <div className="px-[10%] relative mobile:px-[5vw] mobile:w-[100vw] ">
             <div className="flex h-dvh w-full justify-start items-center mobile:h-[90vh] tablet:h-[50vh]">
               <div className="w-1/2 mobile:w-screen mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4">
