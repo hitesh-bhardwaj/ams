@@ -100,7 +100,7 @@ const Product = () => {
     useEffect(() => {
       const ctx = gsap.context(() => {
         const wheel = wheelRef.current;
-        const images = gsap.utils.toArray(`.${styles.wheelCard}`); // Scoped class for wheelCard
+        const images = gsap.utils.toArray(`.${styles.wheelCard}`); 
   
         const setup = () => {
           const radius = wheel.offsetWidth / 1;
@@ -261,7 +261,7 @@ const Product = () => {
         <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] fadeUp mobile:block hidden mobile:pr-[5%] tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0">
             <div
               
-              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
+              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] mobile:pb-[10%]"
             >
                {productData.map((product, i) => (
             <div

@@ -80,7 +80,7 @@
         };
     }, []);
     
-
+  
   return (
     <section id='product' className='relative  overflow-hidden py-[5%] tablet:h-full'>
             
