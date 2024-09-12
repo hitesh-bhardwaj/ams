@@ -12,7 +12,7 @@ const Discover = () => {
          <h2 className="title-2 aeonik">
             <span data-para-anim  >Discover the profound impact our work is having on patients everywhere</span>
           </h2>
-          <PrimaryButton link='/' btnText="Let's Meet" />
+          <PrimaryButton link='/' btnText="Let's Meet" className={"fadeUp"}/>
           </div>
         <div className='w-[50%] flex flex-col items-end justify-center gap-[2vw] mobile:w-full mobile:items-center mobile:gap-[5vw]'>
           <div className='w-[25vw] h-[20vw] rounded-[40px] overflow-hidden relative fadeUp mobile:w-[80vw] mobile:h-[100vw] mobile:rounded-[6vw]'>

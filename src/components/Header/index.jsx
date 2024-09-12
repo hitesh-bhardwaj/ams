@@ -58,7 +58,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 w-screen h-fit z-[99] transition-transform duration-300 ${
+        className={`fixed top-0 left-0 right-0 w-screen h-fit z-[99] transition-transform duration-300 header-glass ${
           isHeaderVisible ? "transform-none" : "-translate-y-full"
         }`}
       >
@@ -66,7 +66,7 @@ const Header = () => {
           <div className="flex justify-between items-center">
             <div className="w-[7vw] header-anim">
               <Link href="/">
-              <div className="relative h-[7vw] w-[7vw] mobile:h-[27vw] mobile:w-[27vw] tablet:w-[15vw] tablet:h-[15vw]">
+              <div className="relative h-[7vw] w-[7vw] mobile:h-[22vw] mobile:w-[27vw] tablet:w-[15vw] tablet:h-[15vw]">
                 <Image
                   src="/logo.svg"
                   fill

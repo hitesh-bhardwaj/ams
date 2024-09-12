@@ -26,8 +26,8 @@ const Genesis = ({content}) => {
     <section className="genesis relative mobile:h-[110vh]" id="genesis">
       <div className="container-lg  ml-auto mr-auto flex items-center justify-center flex-col pb-[10%] mobile:py-[10%] mobile:h-full">
         <div className="genesis-card w-[85%] border-[1px] border-[#DADADA] z-[1] bg-white  rounded-[50px] py-[5%] glassmorphism mobile:py-[15%] mobile:w-[95%]">
-          <h2 data-para-anim className="title-2 aeonik  ml-[8%] mobile:text-center mobile:ml-0 mobile:px-[5vw] ">
-            <span>{content.heading}</span>
+          <h2 className="title-2 aeonik  ml-[8%] mobile:text-center mobile:ml-0 mobile:px-[5vw] ">
+            <span  data-para-anim >{content.heading}</span>
           </h2>
           <div className="genesis-text flex w-full justify-center gap-x-[7vw] mt-[4vw] mobile:flex-col mobile:px-[4vw] mobile:gap-[5vw] mobile:py-[4vw]">  
             <div className="w-[38%] content-p leading-[1.4] mobile:w-full mobile:text-center mobile:leading-[1.2] ">
@@ -48,7 +48,7 @@ const Genesis = ({content}) => {
         </div>
 
         <div className="genesis-image mobile:absolute mobile:left-0 mobile:bottom-0">
-            <div className="w-[90vw] h-[30vw] absolute bottom-[8%] left-[50%] translate-x-[-50%] overflow-hidden rounded-[50px] tablet:h-[50vw] mobile:h-[110vh] mobile:w-screen mobile:overflow-visible mobile:bottom-0 mobile:left-0 mobile:translate-x-0">
+            <div className="w-[90vw] h-[30vw] absolute bottom-[8%] left-[50%] translate-x-[-50%] overflow-hidden rounded-[50px] tablet:h-[50vw] mobile:h-[110vh] mobile:w-screen mobile:overflow-hidden mobile:rounded-none mobile:bottom-0 mobile:left-0 mobile:translate-x-0">
             <Image
                   className={!isMobile ? "imageanim" : "object-cover"}
                   src= {content.src}

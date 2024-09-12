@@ -9,6 +9,7 @@ import styles from "@/styles/endocard.module.css"; // Import the module CSS
 import Link from "next/link";
 import Image from "next/image";
 
+
 gsap.registerPlugin(ScrollTrigger, Flip);
 
 const ProductCard = ({ img, heading}) => {
@@ -215,8 +216,8 @@ const Product = () => {
     <section
     id="products"
       ref={sliderContainer}
-      className={`relative h-screen ${styles.sliderContainer} overflow-x-hidden`}
-    >
+      className={`relative h-screen ${styles.sliderContainer} overflow-x-hidden mobile:h-full`}
+    >   {/** for desktop */}
         <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden">
         <div className='w-full flex justify-center'>
         <h2 data-para-anim className="title-2 aeonik">
@@ -245,13 +246,16 @@ const Product = () => {
       </div>
 
         </div>
+
+        {/** for mobile */}
+        <div className="hidden mobile:block">
         <div className="w-full flex flex-col gap-[12vw]">
         <div className='w-full flex justify-center'>
-        <h2 data-para-anim className="title-2 aeonik text-center">
-          <span>The Foundation of Durable Repair</span>
+        <h2  className="title-2 aeonik text-center px-[2vw]">
+          <span data-para-anim >Our Advanced Endo Surgery Product Line</span>
         </h2>
       </div>
-        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%]">
+        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp">
             <div
               
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit "
@@ -275,8 +279,10 @@ const Product = () => {
             </div>
           </div>
           <div className='w-full product-base-text flex justify-center'>
-        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center'>advamesh range</p>
+        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center'>ADVASTAP Series</p>
       </div>
+
+        </div>
 
         </div>
     </section>

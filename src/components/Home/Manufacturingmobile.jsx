@@ -61,17 +61,17 @@ export default function Manufacturingmobile() {
                 />
               </div>
               <div className="w-full flex flex-col justify-center items-center text-center mobile:flex-col mobile:h-auto mb-[4vw] mobile:mb-[20vw] mobile:w-[90%] mobile:my-[5vw] mobile:gap-[5vw]">
-                <h2 className="title-2 aeonik">
+                <h2 data-para-anim className="title-2 aeonik">
                   Building World Class Capability
                 </h2>
-                <p className="content-p my-[4vw]">
+                <p data-para-anim className="content-p my-[4vw]">
                   Designed by renowned Spanish architect Ricardo Bofill, the AMS
                   facility meets the Gold standard on Green building principles
                   for sustainability and conforms to ISO 14001 safety and
                   environmental specifications. Approx. 150,000 sq. ft.
                   completed in Phase I and 180,000 sq.ft expansion in phase II.
                 </p>
-                <PrimaryButton btnText={"Manufacturing"} link={"/"} />
+                <PrimaryButton btnText={"Manufacturing"} link={"/"} className={"fadeUp"} />
               </div>
             </div>
 
@@ -86,17 +86,17 @@ export default function Manufacturingmobile() {
                 />
               </div>
               <div className="w-full flex flex-col justify-center items-center text-center mobile:flex-col mobile:h-auto mb-[4vw] mobile:w-[90%] mobile:my-[5vw] mobile:gap-[5vw]">
-                <h2 className="title-2 aeonik">
+                <h2 data-para-anim className="title-2 aeonik">
                   Robust Manufacturing Processes
                 </h2>
-                <p className="content-p my-[4vw]">
+                <p data-para-anim className="content-p my-[4vw]">
                   The AMS plant design is based on LEAN concepts, Schedule M
                   compliance, and Class C clean room principles. The Testing and
                   Microbiological Laboratories are outfitted with best-in-class
                   equipment. All under the supervision of experienced
                   Manufacturing and Quality teams.
                 </p>
-                <PrimaryButton btnText={"Manufacturing"} link={"/"} />
+                <PrimaryButton btnText={"Manufacturing"} link={"/"} className={"fadeUp"} />
               </div>
             </div>
           </div>

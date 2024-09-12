@@ -63,17 +63,17 @@ const Molecular = () => {
 
   return (
     <>
-      <section className='molecular h-[100vh] overflow-hidden tablet:h-[50vh] mobile:h-[100%]' id='molecular' ref={molecularContainer}>
-        <div className='w-screen h-screen absolute z-[1] overflow-hidden mobile:h-full'>
+      <section className='molecular h-[100vh] overflow-hidden tablet:h-[50vh] mobile:h-[120vh] mobile:py-[15%]' id='molecular' ref={molecularContainer}>
+        <div className='w-screen h-screen absolute z-[1] overflow-hidden mobile:h-[110vh] mobile:w-screen'>
           <Image src={"/assets/about/molecular-bg.webp"} fill alt={'molecular-bg'} className='object-cover molecular-bg-img scale-[1.3] translate-y-[-30%] mobile:translate-y-[0%]'/>
         </div>
         <div className='container-sm py-[10%] relative z-[2] '>
           <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:gap-[10vw]">
             <div className='molecular-left w-[50%] space-y-[2.5vw] mobile:w-[100%] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center' ref={molecularLeft}>
               <div className='w-[58%] mobile:w-[100%]'>
-                <h2 data-para-anim className="title-2 aeonik">
-                  <span>Molecular Foundations </span>
-                  <span> of AMS</span>
+                <h2  className="title-2 aeonik">
+                  <span data-para-anim>Molecular Foundations </span>
+                  <span data-para-anim> of AMS</span>
                 </h2>
               </div>
               <p className='content-p w-[75%] mobile:w-[100%]'>

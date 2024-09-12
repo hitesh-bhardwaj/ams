@@ -56,7 +56,7 @@ export default function Career() {
                         {/* The video source will be added dynamically via the IntersectionObserver */}
                     </video>
                     <div className="w-[60%] relative z-10 space-y-[3.5vw] tablet:w-[70%] mobile:w-[100%] mobile:space-y-[5vw] mobile:text-center mobile:flex-col " >
-                        <h2 className="title-2 aeonik mobile:w-[95%]">
+                        <h2 className="title-2 aeonik mobile:w-full">
                             <span data-para-anim className="text-shadow1">
                                 Join Our Mission to
                             </span>

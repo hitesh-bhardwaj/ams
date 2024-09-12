@@ -44,6 +44,10 @@
   background-color: #2A2A2A;
   transition: all 0.3s ease;
 }
+.header-glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.038);
+}
 .menu-btn {
   align-items: center;
   display: flex;
@@ -464,6 +468,13 @@ body{
     /* transform: rotate(-8.9deg); */
     border-radius: 40px;
   }
+  .imageanim{
+    transform: translateY(0);
+    scale: 1;
+  }
+  .para-animation .line{
+    overflow: hidden;
+  }
   }
 
 
@@ -532,6 +543,7 @@ body{
   background-color: #2A2A2A;
   transition: all 0.3s ease;
 }
+
 .menu-btn {
   align-items: center;
   display: flex;

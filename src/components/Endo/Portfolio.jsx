@@ -1,10 +1,10 @@
-import React,{useEffect} from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { paraAnim } from "../gsapAnimations";
+import { paraAnim , fadeUp } from "../gsapAnimations";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -13,12 +13,12 @@ const PortfolioCard =({img, txt , className})=>{
   return (
     <>
     <Link href={"#"}>
-    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group mobile:w-[85vw] mobile:h-[120vw]`}>
+    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group mobile:w-[85vw] mobile:h-[120vw] fadeup`}>
           <Image
             src={img}
            fill
             alt="portfolio-1" 
-            className="group-hover:scale-[1.2] duration-300 object-cover"
+            className="group-hover:scale-[1.2] duration-300 object-cover "
           />
           <div className="imgoverlay glassmorphism absolute w-[10vw] h-[11.5vw]  left-[-50%] duration-300 block top-0 group-hover:left-[0%] mobile:w-[85vw] mobile:h-[40vw] mobile:left-0 mobile:bottom-0 mobile:top-auto"></div>
           <div className="flex justify-center items-center absolute  mobile:bottom-[5%]">
@@ -37,22 +37,29 @@ const PortfolioCard =({img, txt , className})=>{
 
 const Portfolio = () => {
   paraAnim()
-  useGSAP(()=>{
-    gsap.from(".portfolio-card",{
-      yPercent:50,
-      opacity:0,
-      duration:0.7,
-      scrollTrigger:{
-        trigger:".portfolio-card-container",
-        start:"top 80%",
-        end:"bottom 40%",
-       
-      },
-      stagger:0.1
-      
+  fadeUp()
+  if(globalThis.innerWidth<1024){
+
+  }
+  else{
+    useGSAP(()=>{
+      gsap.from(".portfolio-card",{
+        yPercent:50,
+        opacity:0,
+        duration:0.7,
+        scrollTrigger:{
+          trigger:".portfolio-card-container",
+          start:"top 80%",
+          end:"bottom 40%",
+         
+        },
+        stagger:0.1
+        
+      })
+  
     })
 
-  })
+  }
   return (
     <section id="portfolio">
       <div  className="container-lg flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%]">

@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Image from 'next/image';
-import { fadeIn, imgAnim } from '../gsapAnimations';
+import { fadeIn, imgAnim, fadeUp , paraAnimation } from '../gsapAnimations';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -48,6 +48,8 @@ const stateSections = [
 const State = () => {
   fadeIn();
   imgAnim();
+  fadeUp();
+  paraAnimation();
   
 
     if (globalThis.innerWidth >= 1024) {
@@ -112,9 +114,9 @@ const State = () => {
         {stateSections.map((section, index) => (
           <div
             key={section.id}
-            className={`rounded-[45px] border-[1px] border-gray-200 h-[33vw] px-[4vw] py-[3vw] flex ${section.reverse ? 'flex-row-reverse' : 'flex-row'} bg-white/50 feature-container${index + 1} tablet:flex-col tablet:h-[55vh] tablet:py-[5vw] tablet:rounded-[3vw] tablet:gap-[4vw] mobile:flex-col mobile:h-full mobile:rounded-[6vw] mobile:py-[4vw] mobile:pb-[20vw]`}
+            className={`rounded-[45px] border-[1px] border-gray-200 h-[33vw] px-[4vw] py-[3vw] flex ${section.reverse ? 'flex-row-reverse' : 'flex-row'} bg-white/50 feature-container${index + 1} tablet:flex-col tablet:h-[55vh] tablet:py-[5vw] tablet:rounded-[3vw] tablet:gap-[4vw] mobile:flex-col mobile:h-full mobile:rounded-[6vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
-            <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden tablet:h-[45vw] tablet:w-[85vw] tablet:rounded-[3vw] mobile:w-[85vw] mobile:h-[85vw] mobile:rounded-[6vw]'>
+            <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden tablet:h-[45vw] tablet:w-[85vw] tablet:rounded-[3vw] mobile:w-[85vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup'>
               <Image
                 src={section.imageSrc}
                 fill
@@ -124,9 +126,9 @@ const State = () => {
             </div>
 
             <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-0 mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw]`}>
-              <h2 className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw]'>{section.title}</h2>
+              <h2 className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation'>{section.title}</h2>
               <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full'>
-                <span>{section.description}</span>
+                <span className='para-animation block'>{section.description}</span>
               </p>
             </div>
           </div>

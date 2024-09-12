@@ -28,9 +28,50 @@ export function paraAnim() {
     });
   });
 }
+export function paraAnimation(){
+  if(globalThis.innerWidth<1024){
+
+    useGSAP(() => {
+      const paraAnimations = document.querySelectorAll(".para-animation");
+      paraAnimations.forEach((paraAnimation) => {
+        SplitInLine(paraAnimation);
+        let paraLine = paraAnimation.querySelectorAll(".line-internal");
+        gsap.from(paraLine, {
+          scrollTrigger: {
+            trigger: paraAnimation,
+            start: "top 90%",
+          },
+          duration: 1.2,
+          yPercent: 100,
+          stagger: 0.07,
+          ease: primaryEase,
+        });
+      });
+    });
+  }
+
+}
 
 export function imageAnim() {
-  if(globalThis.innerWidth<1024){
+  if(globalThis.innerWidth<=1023){
+    useGSAP(() => {
+      const images = document.querySelectorAll(".imageanim");
+      images.forEach((img) => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: img,
+            start: "top bottom",
+            end: "bottom top",
+            
+            scrub: true,
+          },
+        });
+        tl.to(img, {
+          yPercent: 0,
+          delay: -1,
+        });
+      });
+    });
 
   }
   else{
@@ -100,24 +141,27 @@ export function fadeIn() {
   });
 }
 export function fadeUp() {
-  useGSAP(() => {
-    const content = document.querySelectorAll(".fadeup");
-    content.forEach((content) => {
-      gsap.from(content, {
-        scrollTrigger: {
-          trigger: content,
-          start: "top 90%",
-          end: "bottom 60%",
-        },
-        opacity: 0,
-        delay: 0.3,
-        y: 50,
-        ease: "power3.Out",
-        duration: 0.7,
-        stagger: 0.5,
+  if(globalThis.innerWidth<1024){
+    useGSAP(() => {
+      const content = document.querySelectorAll(".fadeup");
+      content.forEach((content) => {
+        gsap.from(content, {
+          scrollTrigger: {
+            trigger: content,
+            start: "top bottom",
+            end: "bottom 60%",
+          },
+          opacity: 0,
+         
+          y: 50,
+          ease: "power3.Out",
+          duration: 0.7,
+          stagger: 0.5,
+        });
       });
     });
-  });
+
+  }
 }
 
 export function paraAnimWordpress() {

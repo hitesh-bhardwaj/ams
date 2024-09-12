@@ -12,9 +12,9 @@ const Hero = () => {
   paraAnim()
   return (
    <>
-   <section className="hero h-[100vh] mb-[15%] tablet:h-full" id="hero">
+   <section className="hero h-[100vh] mb-[15%] tablet:h-full mobile:h-[100vh] overflow-hidden" id="hero">
           <div className="px-[10%] relative">
-            <div className="flex h-dvh w-full justify-start items-center tablet:h-[50vh] mobile:flex-col mobile:justify-center mobile:h-[100vh] mobile:mt-[20%]">
+            <div className="flex h-dvh w-full justify-start items-center tablet:h-[50vh] mobile:flex-col mobile:justify-center  mobile:mt-[20%]">
               <div className=" mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center">
                 <h1 data-para-anim  className="title-1 aeonik drop-shadow-md leading-[1] mobile:hidden">
                   <span className="leading-[1.2] overflow-hidden">
@@ -25,12 +25,9 @@ const Hero = () => {
                      for Generations to Come
                   </span > 
                 </h1>
-                <h1 data-para-anim  className="title-1 aeonik drop-shadow-md leading-[1] hidden mobile:flex mobile:w-[95vw] mobile:text-center">
-                  <span className="leading-[1.2] overflow-hidden">
+                <h1  className="title-1 aeonik drop-shadow-md leading-[1] hidden mobile:flex mobile:w-[110%] mobile:justify-center mobile:text-center">
+                  <span data-para-anim className="leading-[1.2] overflow-hidden">
                     Advancing Healthcare for
-                  </span>
-                  <br />
-                  <span className="leading-[1.2] overflow-hidden">
                       Generations to Come
                   </span > 
                 </h1>

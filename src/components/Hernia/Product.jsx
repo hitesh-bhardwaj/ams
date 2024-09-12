@@ -253,11 +253,11 @@ const Product = () => {
         </div>
         <div className="w-full flex flex-col gap-[12vw]">
         <div className='w-full flex justify-center'>
-        <h2 data-para-anim className="title-2 aeonik text-center">
-          <span>The Foundation of Durable Repair</span>
+        <h2  className="title-2 aeonik text-center">
+          <span data-para-anim>The Foundation of Durable Repair</span>
         </h2>
       </div>
-        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%]">
+        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] fadeUp mobile:block hidden mobile:pr-[5%]">
             <div
               
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit "
