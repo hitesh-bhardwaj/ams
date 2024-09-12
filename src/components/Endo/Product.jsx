@@ -255,7 +255,7 @@ const Product = () => {
           <span data-para-anim >Our Advanced Endo Surgery Product Line</span>
         </h2>
       </div>
-        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp">
+        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp mobile:pb-[10vw]">
             <div
               
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit "

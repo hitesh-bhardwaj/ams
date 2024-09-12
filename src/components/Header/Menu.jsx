@@ -92,49 +92,49 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                 <div className="border-r border-[#D8D8D8] py-[1.8vw] pr-[5vw] mobile:border-none mobile:border-b mobile:border-[#D8D8D8] mobile:py-0">
                                     <ul className="space-y-[0.8vw] tablet:space-y-[1vw]">
                                         <li className="footer-link">
-                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw] mobile:text-[7vw] mobile:text-[10vw]">
+                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]">
                                                 <span data-attr="Home">
                                                     Home
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/about" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw] mobile:text-[7vw] mobile:text-[10vw]">
+                                            <Link href="/about" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]">
                                                 <span data-attr="About">
                                                     About
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw] mobile:text-[7vw] mobile:text-[10vw]">
+                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]">
                                                 <span data-attr="Products">
                                                     Products
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/manufacturing" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw] mobile:text-[7vw] mobile:text-[10vw]">
+                                            <Link href="/manufacturing" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]">
                                                 <span data-attr="Manufacturing">
                                                     Manufacturing
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/career" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw] mobile:text-[7vw] mobile:text-[10vw]">
+                                            <Link href="/career" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]">
                                                 <span data-attr="Careers">
                                                     Careers
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw] mobile:text-[7vw] mobile:text-[10vw]">
+                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]">
                                                 <span data-attr="News">
                                                     News
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw] mobile:text-[7vw] mobile:text-[10vw]">
+                                            <Link href="/#" className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]">
                                                 <span data-attr="Contact">
                                                     Contact
                                                 </span>
@@ -142,39 +142,39 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="hidden mobile:block h-[1px] bg-[#D8D8D8] w-full my-[2vw]"></div>
+                                <div className="hidden mobile:block h-[1px] bg-[#D8D8D8] w-full my-[5vw] lineDraw"></div>
                                 <div className="py-[1.8vw] pl-[5vw] mobile:pl-[0vw]">
                                     <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw]">
                                         <li className="footer-link">
-                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw] mobile:text-[7vw] mobile:text-[6vw]">
+                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[6vw]">
                                                 <span data-attr="Wound Care">
                                                     Wound Care
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/endo" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw] mobile:text-[7vw] mobile:text-[6vw]">
+                                            <Link href="/endo" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[6vw]">
                                                 <span data-attr="Endo Surgery">
                                                     Endo Surgery
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/hernia" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw] mobile:text-[7vw] mobile:text-[6vw]">
+                                            <Link href="/hernia" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[6vw]">
                                                 <span data-attr="Hernia Solutions">
                                                     Hernia Solutions
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw] mobile:text-[7vw] mobile:text-[6vw]">
+                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[6vw]">
                                                 <span data-attr="Interventional Cardiology">
                                                     Interventional Cardiology
                                                 </span>
                                             </Link>
                                         </li>
                                         <li className="footer-link">
-                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw] mobile:text-[7vw] mobile:text-[6vw]">
+                                            <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[6vw]">
                                                 <span data-attr="Cardiovascular Solutions">
                                                     Cardiovascular Solutions
                                                 </span>
@@ -199,7 +199,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                         </span>
                                     </Link>
                                 </div>
-                                <div className="flex gap-[1vw] mobile:justify-center mobile:items-center mobile:gap-[7vw] mobile:mt-[-25vw]">
+                                <div className="flex gap-[1vw] mobile:justify-center mobile:items-center mobile:gap-[7vw] mobile:mt-[-5vw]">
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300">
                                     
                                         <img 

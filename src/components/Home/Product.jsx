@@ -16,7 +16,7 @@ export default function Product() {
           scrollTrigger: {
             trigger: "#product",
             start: "top bottom",
-            end:"bottom 20%",
+            end:"bottom 20%",  
             scrub:true
           },
     
@@ -46,7 +46,7 @@ export default function Product() {
         
                 <div className="container-lg">
                     <div className="product-top text-center flex flex-col items-center">
-                        <h2 data-para-anim className="title-2 aeonik leading-[1.3]">
+                         <h2 data-para-anim className="title-2 aeonik leading-[1.3]">
                             
                                 Empowering Healthcare Professionals
                             
@@ -58,11 +58,11 @@ export default function Product() {
                         </p>
                     </div>
                     <div className='fadeUp'>
-                        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                        <Swiper navigation={true} modules={[Navigation]} className="mySwiper homeCarousel">
                             <SwiperSlide>
                                 <div className='product-card relative h-full'>
-                                    <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
-                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame.png"} fill className='object-fill mobile:hidden' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-fill hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>
                                         <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
                                             <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>01</span>
@@ -99,8 +99,8 @@ export default function Product() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='product-card relative'>
-                                    <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
-                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame.png"} fill className='object-fill mobile:hidden' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-fill hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>
                                         <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
                                             <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>02</span>
@@ -137,8 +137,8 @@ export default function Product() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='product-card relative'>
-                                    <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
-                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame.png"} fill className='object-fill mobile:hidden' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-fill hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>
                                         <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
                                             <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>03</span>
@@ -172,8 +172,8 @@ export default function Product() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='product-card relative'>
-                                    <Image src={"/assets/products/product-frame.png"} fill className='object-cover mobile:hidden' alt="product-frame"/>
-                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-cover hidden mobile:block' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame.png"} fill className='object-fill mobile:hidden' alt="product-frame"/>
+                                    <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-fill hidden mobile:block' alt="product-frame"/>
                                     <div className='main relative'>
                                         <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
                                             <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>04</span>

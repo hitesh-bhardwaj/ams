@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-
 import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -8,6 +7,8 @@ import {  paraAnim } from '../gsapAnimations';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
+
 
 gsap.registerPlugin(ScrollTrigger,useGSAP);
 
@@ -130,9 +131,9 @@ const Molecular = () => {
         </div>
 
         <div className='molecular-right w-[47%]  flex-col gay-y-[2vw] hidden mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full '>
-        <Swiper navigation={true} modules={[Navigation]} spaceBetween=" 20" className="mySwiper mobile:h-[100%]">
+        <Swiper navigation={true} modules={[Navigation]} spaceBetween=" 20" className="molecularSwiper mySwiper mobile:h-[100%]">
                             <SwiperSlide>
-                            <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  mobile:px-[7vw] mobile:py-[7vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center'>
+                            <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  mobile:px-[7vw] mobile:py-[7vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-between mobile:text-center mobile:h-[53vh]'>
                 <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw]'>
                   <p className='text-[3.5vw] mobile:text-[14.2vw]'>Pa</p>
                   <p data-para-anim className='text-[0.75vw] mt-[-1vw] mobile:text-[3.2vw]'>Patient-centric</p>
@@ -144,7 +145,7 @@ const Molecular = () => {
               </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  mobile:px-[7vw] mobile:py-[7vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center'>
+                            <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  mobile:px-[7vw] mobile:py-[7vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-between mobile:text-center mobile:h-[53vh]'>
                 <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw]'>
                   <p className='text-[3.5vw] mobile:text-[14.2vw]'>Qu</p>
                   <p data-para-anim className='text-[0.75vw] mt-[-1vw] mobile:text-[3.2vw]'>Quality-First</p>
@@ -156,26 +157,26 @@ const Molecular = () => {
               </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  mobile:px-[7vw] mobile:py-[7vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center'>
+                            <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  mobile:px-[7vw] mobile:py-[7vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-between mobile:text-center mobile:h-[53vh]'>
                 <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw]'>
-                  <p className='text-[3.5vw] mobile:text-[14.2vw]'>Pa</p>
-                  <p data-para-anim className='text-[0.75vw] mt-[-1vw] mobile:text-[3.2vw]'>Quality-First</p>
+                  <p className='text-[3.5vw] mobile:text-[14.2vw]'>In</p>
+                  <p data-para-anim className='text-[0.75vw] mt-[-1vw] mobile:text-[3.2vw]'>Innovation</p>
                 </div>
-                <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light mobile:text-[8.4vw]'>Patients at the Heart</h2>
+                <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light mobile:text-[8.4vw]'>Innovative Solutions</h2>
                 <p data-para-anim className='content-p'>
-                  Patients are the heart of our purpose, igniting every decision and innovation with unwavering compassion and dedication to transforming healthcare for the better.
+                Pioneering the future of Healthcare. AMS remains at the forefront of cutting-edge medical technology.
                 </p>
               </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                            <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  mobile:px-[7vw] mobile:py-[7vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center'>
+                            <div className='molecular-card px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism  mobile:px-[7vw] mobile:py-[7vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-between mobile:text-center mobile:h-[53vh]'>
                 <div className='w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw]'>
-                  <p className='text-[3.5vw] mobile:text-[14.2vw]'>Pa</p>
-                  <p data-para-anim className='text-[0.75vw] mt-[-1vw] mobile:text-[3.2vw]'>Patient-centric</p>
+                  <p className='text-[3.5vw] mobile:text-[14.2vw]'>Cr</p>
+                  <p data-para-anim className='text-[0.75vw] mt-[-1vw] mobile:text-[3.2vw]'>Caring</p>
                 </div>
-                <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light mobile:text-[8.4vw]'>Patients at the Heart</h2>
+                <h2 data-para-anim className='text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light mobile:text-[8.4vw]'>Lorem Iplsum</h2>
                 <p data-para-anim className='content-p'>
-                  Patients are the heart of our purpose, igniting every decision and innovation with unwavering compassion and dedication to transforming healthcare for the better.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
                 </p>
               </div>
                             </SwiperSlide>

@@ -9,6 +9,7 @@
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
 @import url('./homecarousel.css');
+@import url('./molecularswiper.css');
 /* @import url('./tablet.css'); */
 /* @import url('./endocards.css'); */
 
@@ -417,7 +418,7 @@ body{
     height: 200vw;
     width:auto;
     padding: 1%;
-    margin: 4% 6%;
+    margin-right:10px;
     text-align: left;
     background-repeat: no-repeat;
     background-size: contain;
@@ -436,24 +437,26 @@ body{
     width: 12vw;
     right: 6vw;
   }
-  .mySwiper .swiper-button-prev{
+  .homeCarousel .swiper-button-prev{
     position: relative;
     left: 25%;
-    bottom: -24px;
+    bottom: -20px;
   }
-  .mySwiper .swiper-button-next{
+  .homeCarousel .swiper-button-next{
     position: relative;
     left: 50%;
-    bottom: 30px;
+    bottom: 25px;
   }
-  .mySwiper .swiper-button-prev, .mySwiper .swiper-button-next{
+  .homeCarousel .swiper-button-prev, .homeCarousel .swiper-button-next{
     border: 2px solid white;
     border-radius: 50%;
-    padding: 10%;
+    padding: 8%;
+   
   }
-  .swiper-button-prev::after, .swiper-button-next::after{
+  .homeCarousel .swiper-button-prev::after,.homeCarousel .swiper-button-next::after{
     width: 50px!important;
     color: white;
+    font-size: 30px;
   } 
   .p-y-sm{
     padding: 10% 0%;
@@ -468,13 +471,6 @@ body{
     /* transform: rotate(-8.9deg); */
     border-radius: 40px;
   }
-  .imageanim{
-    transform: translateY(0);
-    scale: 1;
-  }
-  .para-animation .line{
-    overflow: hidden;
-  }
   }
 
 
@@ -483,9 +479,7 @@ body{
       font-size: 7vw;
       font-weight: 300;
       color: var(--text-color);
-      line-height: 0;
-      
-      
+      line-height: 0; 
     }
     
     .title-2{

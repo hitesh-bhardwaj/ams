@@ -11,11 +11,11 @@ import Image from "next/image";
 const PortfolioCard = ({ src, heading, para }) => {
   return (
     <div className="">
-      <div className="w-[85vw] h-[50vw] relative rounded-[10px]">
+      <div className="w-[85vw] h-[50vw] relative rounded-[10px] mobile:w-[100vw] mobile:h-[80vh] ">
         <Image src={src} fill alt="Hernia Slider" className="rounded-[20px]" />
-        <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]">
-          <h2 className="text-[#ffffff] text-[2.8vw] font-light text-shadow">{heading}</h2>
-          <p className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow">{para}</p>
+        <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]  mobile:top-[15%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center">
+          <h2 className="text-[#ffffff] text-[2.8vw] font-light text-shadow mobile:text-[8.4vw]">{heading}</h2>
+          <p className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow mobile:text-[4.2vw]">{para}</p>
         </div>
       </div>
     </div>
@@ -27,19 +27,20 @@ const PortfolioSwiper = ({slidesData }) => {
 
   return (
     <section id="hernia-swiper" className="overflow-x-hidden">
-      <div className="w-full mb-[5%] ml-[10%] py-[10%] relative h-full">
-        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]">
+      <div className="w-full mb-[5%] ml-[10%] py-[10%] relative h-full mobile:ml-[0%]">
+        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%] mobile:hidden">
           <p className="text-end">{slidesData[0].title}</p>
         </div>
-        <div className="relative fadeUp rounded-bl-[10px] rounded-tl-[10px] overflow-hidden">
+        <div className="relative fadeUp rounded-bl-[10px] rounded-tl-[10px] overflow-hidden mobile:rounded-[10px]">
           <Swiper
             slidesPerView={1}
             spaceBetween={0}
+            navigation={true}
             loop={true}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{ 
+            //   delay: 1500,
+            //   disableOnInteraction: false,
+            // }}
             effect={'creative'}
             speed={1500}
             creativeEffect={{
@@ -52,7 +53,7 @@ const PortfolioSwiper = ({slidesData }) => {
               },
             }}
             modules={[FreeMode, Thumbs, Navigation, EffectCreative, Autoplay]}
-            className="mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden"
+            className="endoSwiper mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden mobile:h-[80vh] mobile:rounded-[20px]"
             thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
           >
             {slidesData.map((slide, index) => (
@@ -62,7 +63,8 @@ const PortfolioSwiper = ({slidesData }) => {
             ))}
           </Swiper>
 
-          <div className="absolute top-[80%] w-full left-[-3%]">
+
+          <div className="absolute top-[80%] w-full left-[-3%] endoSmallSwiperContainer mobile:hidden">
             <Swiper
               onSwiper={setThumbsSwiper}
               spaceBetween={10}
