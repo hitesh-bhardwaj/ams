@@ -29,7 +29,7 @@ const Genesis = ({content}) => {
           <h2 className="title-2 aeonik  ml-[8%] mobile:text-center mobile:ml-0 mobile:px-[5vw] tablet:ml-[6%] ">
             <span  data-para-anim >{content.heading}</span>
           </h2>
-          <div className="genesis-text flex w-full justify-center gap-x-[7vw] mt-[4vw] mobile:flex-col mobile:px-[4vw] mobile:gap-[5vw] mobile:py-[4vw] tablet:gap-x-[4vw]">  
+          <div className="genesis-text flex w-full justify-center gap-x-[7vw] mt-[4vw] mobile:flex-col mobile:px-[4vw] mobile:gap-[5vw] mobile:py-[4vw] tablet:gap-x-[4vw] tablet:flex tablet-flex-col">  
             <div className="w-[38%] content-p leading-[1.4] mobile:w-full mobile:text-center mobile:leading-[1.2] tablet:w-[42%] ">
                 <p data-para-anim>
                 {/* */}

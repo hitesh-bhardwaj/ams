@@ -403,6 +403,11 @@ body{
   background: rgba(255, 255, 255, 0.227);
   transition:  all 1s cubic-bezier(.19,1,.22,1);
 }
+.homeCarousel .swiper-button-prev::after,.homeCarousel .swiper-button-next::after{
+  width: 80px !important;
+  color: white;
+} 
+
 
 @media screen  and (max-width:541px){
   .title-1{
@@ -438,7 +443,7 @@ body{
     right: 6vw;
   }
   .homeCarousel .swiper-button-prev{
-    position: relative;
+    position: relative; 
     left: 25%;
     bottom: -20px;
   }
@@ -450,9 +455,9 @@ body{
   .homeCarousel .swiper-button-prev, .homeCarousel .swiper-button-next{
     border: 2px solid white;
     border-radius: 50%;
-    padding: 8%;
-   
+    padding: 8%;  
   }
+
   .homeCarousel .swiper-button-prev::after,.homeCarousel .swiper-button-next::after{
     width: 50px!important;
     color: white;
@@ -629,9 +634,10 @@ body{
 .product-card{
   background-image: url('/assets/products/product-frame.svg');
   height: 34vh;
-  width: 85vw;
+  width: 80vw;
   padding: 1%;
-  margin: 4% 6%;
+  margin-right: 5%;
+  /* margin: 4% 6%; */
   text-align: left;
   background-repeat: no-repeat;
   background-size: contain;
