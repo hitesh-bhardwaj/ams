@@ -165,34 +165,34 @@ body{
 }
 
 .main-gradient {
-  background: linear-gradient(106.7DEG, #EEDDEB 0, #b3bcff 100%);
+  background: linear-gradient(120.7deg, #e081cf 0%, #ad84f0 50%, #a8b1f8 100%);
   background-size: 300% 300%;
   opacity: 0.8;
-  -webkit-animation: gradient 10s ease infinite;
-  -moz-animation: gradient 10s ease infinite;
-  -o-animation: gradient 10s ease infinite;
   animation: gradient 10s ease infinite;
 }
 
 @-webkit-keyframes gradient {
-  0%{background-position:0% 33%}
-  50%{background-position:100% 68%}
-  100%{background-position:0% 33%}
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
 @-moz-keyframes gradient {
-  0%{background-position:0% 33%}
-  50%{background-position:100% 68%}
-  100%{background-position:0% 33%}
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
 @-o-keyframes gradient {
-  0%{background-position:0% 33%}
-  50%{background-position:100% 68%}
-  100%{background-position:0% 33%}
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
 @keyframes gradient {
-  0%{background-position:0% 100%}
-  50%{background-position:100% 68%}
-  100%{background-position:0% 33%}
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Titles */
@@ -402,6 +402,11 @@ body{
   background: rgba(255, 255, 255, 0.227);
   transition:  all 1s cubic-bezier(.19,1,.22,1);
 }
+.homeCarousel .swiper-button-prev::after,.homeCarousel .swiper-button-next::after{
+  width: 80px !important;
+  color: white;
+} 
+
 
 @media screen  and (max-width:541px){
   .title-1{
@@ -438,7 +443,7 @@ body{
     right: 6vw;
   }
   .homeCarousel .swiper-button-prev{
-    position: relative;
+    position: relative; 
     left: 25%;
     bottom: -20px;
   }
@@ -450,9 +455,9 @@ body{
   .homeCarousel .swiper-button-prev, .homeCarousel .swiper-button-next{
     border: 2px solid white;
     border-radius: 50%;
-    padding: 8%;
-   
+    padding: 8%;  
   }
+
   .homeCarousel .swiper-button-prev::after,.homeCarousel .swiper-button-next::after{
     width: 50px!important;
     color: white;
@@ -527,6 +532,9 @@ body{
       max-width: 85%;
       margin-left: auto;
       margin-right: auto;
+    }
+    .para-animation .line{
+      overflow: hidden;
     }
   
 
@@ -626,9 +634,10 @@ body{
 .product-card{
   background-image: url('/assets/products/product-frame.svg');
   height: 34vh;
-  width: 85vw;
+  width: 80vw;
   padding: 1%;
-  margin: 4% 6%;
+  margin-right: 5%;
+  /* margin: 4% 6%; */
   text-align: left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -641,8 +650,17 @@ body{
   padding: 4vw;
 }
 .imageanim{
-  transform: translateY(-10%);
-  scale: 1.2;
+  transform: translateY(0%);
+  scale: 1;
+}
+
+/* capability-cards */
+.capability-card-outer{
+  height: 40vw;
+  width: 40vw;
+  background-image: linear-gradient(#BDCFFD, #2280C6);
+  /* transform: rotate(-8.9deg); */
+  border-radius: 40px;
 }
   }
   

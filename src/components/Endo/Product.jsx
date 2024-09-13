@@ -17,16 +17,16 @@ const ProductCard = ({ img, heading}) => {
     <div className="group">
       <Link href={"#"}>
         <div
-          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] mobile:ml-[7vw]`}
+          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] mobile:ml-[7vw] tablet:w-[40vw] tablet:h-[50vw]`}
         >
-          <div className="h-[22vw] w-[30vw] absolute top-[-5vw] mobile:w-[80vw] mobile:h-[80vw] ">
+          <div className="h-[22vw] w-[30vw] absolute top-[-5vw] mobile:w-[80vw] mobile:h-[80vw] tablet:top-[10%]">
             <Image fill src={img} alt={heading} className="object-contain group-hover:scale-[1.2] transition-all duration-500" />
           </div>
           <div className="h-[50%] w-[100%] flex flex-col items-center justify-center mobile:h-full mobile:justify-end mobile:pb-[10%]">
-            <h2 className="text-center font-extralight text-[2.1vw] mobile:text-[7vw]">
+            <h2 className="text-center font-extralight text-[2.1vw] mobile:text-[7vw] tablet:text-[3vw]">
               {heading}
             </h2>
-            <button className={`text-[#143CA3] text-[1.2vw] font-light flex items-center justify-center gap-[0.5vw] mobile:text-[5vw] mobile:gap-[2vw]`}>See more 
+            <button className={`text-[#143CA3] text-[1.2vw] font-light flex items-center justify-center gap-[0.5vw] mobile:text-[5vw] mobile:gap-[2vw] tablet:text-[2vw]`}>See more 
               <span className='w-[1.5vw] h-[1.5vw] overflow-hidden flex justify-center items-center pt-[4%] mobile:w-[5vw] mobile:h-[7vw]'>
               <span className='w-[4vw] h-[1.3vw] flex translate-x-[-30%] group-hover:translate-x-[24%] transition-all ease-in-out duration-300 gap-[0.3vw] mobile:w-[15vw] mobile:h-[5vw] '>
               <svg viewBox="0 0 22 16" fill="current-color" xmlns="http://www.w3.org/2000/svg" className="h-[1vw] w-[1.3vw] scale-[0.3] group-hover:scale-[1] transition-all mobile:scale-[1] mobile:w-[5vw] mobile:h-[5vw]">
@@ -216,9 +216,9 @@ const Product = () => {
     <section
     id="products"
       ref={sliderContainer}
-      className={`relative h-screen ${styles.sliderContainer} overflow-x-hidden mobile:h-full`}
+      className={`relative h-screen ${styles.sliderContainer} overflow-x-hidden mobile:h-full tablet:h-full`}
     >   {/** for desktop */}
-        <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden">
+        <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden tablet:hidden">
         <div className='w-full flex justify-center'>
         <h2 data-para-anim className="title-2 aeonik">
           <span>Our Advanced Endo Surgery Product Line</span>
@@ -248,21 +248,21 @@ const Product = () => {
         </div>
 
         {/** for mobile */}
-        <div className="hidden mobile:block">
-        <div className="w-full flex flex-col gap-[12vw]">
+        <div className="hidden mobile:block tablet:block">
+        <div className="w-full flex flex-col gap-[12vw] tablet:gap-[5vw]">
         <div className='w-full flex justify-center'>
-        <h2  className="title-2 aeonik text-center px-[2vw]">
+        <h2  className="title-2 aeonik text-center px-[2vw] tablet:w-[80%]">
           <span data-para-anim >Our Advanced Endo Surgery Product Line</span>
         </h2>
       </div>
-        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp mobile:pb-[10vw]">
+        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 mobile:pb-[10vw]">
             <div
               
-              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit "
+              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
             >
                {productData.map((product, i) => (
             <div
-              className="w-[85vw] h-[100vw]"
+              className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw]"
               key={i}
               
             >
@@ -279,7 +279,7 @@ const Product = () => {
             </div>
           </div>
           <div className='w-full product-base-text flex justify-center'>
-        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center'>ADVASTAP Series</p>
+        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center tablet:text-[3vw]'>ADVASTAP Series</p>
       </div>
 
         </div>

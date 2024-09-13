@@ -55,7 +55,7 @@ export default function Impact() {
     return (
         <>
             <section className="p-y-sm mt-[5%] mobile:mt-[10%]" id="impact">
-                <div className="container-lg relative px-[8%] h-full py-[8%] overflow-hidden rounded-[3vw] mobile:py-[15vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:rounded-[7vw]">
+                <div className="container-lg relative px-[8%] h-full py-[8%] overflow-hidden rounded-[3vw] mobile:py-[15vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:rounded-[7vw] fadeUp">
                     {/* Use the poster attribute to show a placeholder image */}
                     <video
                         ref={videoRef} // Attach ref to video for lazy loading

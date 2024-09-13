@@ -8,7 +8,7 @@ export default function Facility() {
     imageAnim()
     return (
         <>
-            <section className="pt-[0] pb-[4%] mobile:pb-[10%]" id="facility">
+            <section className="pt-[0] pb-[4%] mobile:pb-[10%] tablet:pb-[8%]" id="facility">
                 <div className="group ">
                 <div className="container-lg virtual rounded-[3vw] flex items-center justify-between px-[6%] py-[8%] bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300 mobile:flex-col-reverse tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
                     <div className="w-1/2 relative z-10 space-y-[3.5vw] duration-300 tablet:order-1 tablet:w-full mobile:w-[89%] mobile:text-center mobile:py-[5vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:space-y-[10vw]">
@@ -26,7 +26,7 @@ export default function Facility() {
                         <PrimaryButton className={"fadeUp"} link={"/"} btnText={"Virtual Tour"}/>
                         </div>
                     </div>
-                    <div className="relative w-[55%] h-[30vw] rounded-[3vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] tablet:w-[90vw] tablet:h-[30vh]">
+                    <div className="relative w-[55%] h-[30vw] rounded-[3vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] tablet:w-[80vw] tablet:h-[30vh]">
                         <Image
                             className="w-full object-cover imageanim"
                             src="/assets/home/virtual.webp" 

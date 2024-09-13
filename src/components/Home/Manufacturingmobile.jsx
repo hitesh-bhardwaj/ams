@@ -3,7 +3,6 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { useRef, useEffect } from "react";
 import PrimaryButton from "../Button/PrimaryButton";
 import { paraAnim } from "../gsapAnimations";
 import Image from "next/image";
@@ -18,8 +17,9 @@ export default function Manufacturingmobile() {
           <div className="flex flex-col items-center justify-center mobile:flex-col mobile:gap-[10vw]">
             {/* Video and First Text */}
             <div className="w-full h-auto mb-[5%] mobile:mb-[10%] flex flex-col items-center justify-center">
-              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[80%] mobile:h-[80vw] mobile:rounded-[8vw]">
+              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[80%] mobile:h-[80vw] mobile:rounded-[8vw] fadeUp mobile:object-cover">
                 <video
+                autoPlay
                   muted
                   playsInline
                   loop
@@ -52,7 +52,7 @@ export default function Manufacturingmobile() {
 
             {/* Second Image and Text */}
             <div className="w-full h-auto mb-[5%] flex flex-col items-center justify-center">
-              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[70%] mobile:h-[80vw] mobile:mb-[20vw]">
+              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[70%] mobile:h-[80vw] mobile:mb-[20vw] fadeUp">
                 <Image
                   fill
                   className="w-full h-full object-cover scale-[1.4] mobile:rounded-[8vw]"
@@ -77,7 +77,7 @@ export default function Manufacturingmobile() {
 
             {/* Third Image and Text */}
             <div className="w-full h-auto flex flex-col items-center justify-center mobile:h-[100%]">
-              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[70%] mobile:h-[80vw] mobile:mb-[20vw]">
+              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[70%] mobile:h-[80vw] mobile:mb-[20vw] fadeUp">
                 <Image
                   fill
                   className="w-full h-full object-cover scale-[1.4] mobile:rounded-[8vw]"

@@ -12,16 +12,16 @@ const JobCard =({dept, designation, location})=>{
   return(
     <>   
     <Link href={"#"} className="cursor-default w-[23.5vw] block mobile:w-[70vw]">
-    <div className="pt-[5%] h-[23vw] px-[4%] w-[20vw] flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card cursor-pointer mobile:h-[90vw] mobile:w-[85vw] mobile:rounded-[7vw]">
-            <div className="content-p mobile:text-[5.7vw]">
+    <div className="pt-[5%] h-[23vw] px-[4%] w-[20vw] flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card cursor-pointer mobile:h-[90vw] mobile:w-[85vw] mobile:rounded-[7vw] tablet:w-[45vw] tablet:h-[50vw]">
+            <div className="content-p mobile:text-[5.7vw] tablet:text-[2.5vw]">
               {dept}
             </div>
             <div className="w-[70%]">
-              <h2 data-para-anim className="text-[2vw] aeonik leading-[1.3] font-light text-[#111111] mobile:text-[8.3vw]">
+              <h2 data-para-anim className="text-[2vw] aeonik leading-[1.3] font-light text-[#111111] mobile:text-[8.3vw] tablet:text-[4.5vw]">
                 {designation} 
               </h2>
             </div>
-            <div className="content-p border-t-[1px] w-[20vw] h-[4vw] items-center  py-[3%] bg-white/90 flex  justify-center location rounded-b-[40px] mobile:w-[85vw] mobile:h-[16vw] mobile:rounded-b-[7vw]">
+            <div className="content-p border-t-[1px] w-[20vw] h-[4vw] items-center  py-[3%] bg-white/90 flex  justify-center location rounded-b-[40px] mobile:w-[85vw] mobile:h-[16vw] mobile:rounded-b-[7vw] tablet:text-[2.5vw] tablet:w-[45vw] tablet:h-[7vw]">
              {location}
             </div>
           </div>
@@ -45,10 +45,10 @@ const Jobs = () => {
         slidesPerView={3}
         spaceBetween={0}
         loop= {true}
-        // autoplay={{
-        //   delay: 2000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2000, 
+          disableOnInteraction: false,
+        }}
         navigation={true}
         pagination={{
           clickable: true,
@@ -58,12 +58,12 @@ const Jobs = () => {
             slidesPerView: 1,
             spaceBetween: 40,
           },
-          542: {
-            slidesPerView: 2,
+          541: {
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 3, 
+            slidesPerView: 3,
             spaceBetween: 30,
           },
         }}
@@ -72,6 +72,9 @@ const Jobs = () => {
       >
         <SwiperSlide>
           <JobCard dept={"Sales"} designation={"Territory Sales Manager"} location={"Jaipur"}/></SwiperSlide>
+        <SwiperSlide><JobCard dept={"Marketing"} designation={"Product Manager"} location={"Delhi"}/></SwiperSlide>
+        <SwiperSlide><JobCard dept={"Engineering"} designation={"Senior Safety Manager"} location={"Vadodara"}/></SwiperSlide>
+        <SwiperSlide><JobCard dept={"Sales"} designation={"Territory Sales Manager"} location={"Jaipur"}/></SwiperSlide>
         <SwiperSlide><JobCard dept={"Marketing"} designation={"Product Manager"} location={"Delhi"}/></SwiperSlide>
         <SwiperSlide><JobCard dept={"Engineering"} designation={"Senior Safety Manager"} location={"Vadodara"}/></SwiperSlide>
         <SwiperSlide><JobCard dept={"Sales"} designation={"Territory Sales Manager"} location={"Jaipur"}/></SwiperSlide>

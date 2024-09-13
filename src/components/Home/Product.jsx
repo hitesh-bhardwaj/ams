@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import LinkButton from '../Button/LinkButton';
 import { paraAnim } from '../gsapAnimations';
@@ -37,7 +38,7 @@ export default function Product() {
 
     return (
         <>
-            <section id='product' className='py-[5%] relative overflow-hidden mobile:py-[20vw]'>
+            <section id='product' className='py-[5%] relative overflow-hidden mobile:py-[20vw] '>
                 <div className='h-full'>
 
                     <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%] mobile:hidden' />
@@ -58,13 +59,13 @@ export default function Product() {
                         </p>
                     </div>
                     <div className='fadeUp'>
-                        <Swiper spaceBetween={50} navigation={true} modules={[Navigation]} className="mySwiper homeCarousel">
+                        <Swiper spaceBetween={50} navigation={true} modules={[Navigation]} className="homeCarousel">
                             <SwiperSlide>
                                 <div className='product-card relative h-full'>
                                     <Image src={"/assets/products/product-frame.png"} fill className='object-fill mobile:hidden' alt="product-frame" />
                                     <Image src={"/assets/products/product-frame-mobile.png"} fill className='object-fill hidden mobile:block' alt="product-frame" />
                                     <div className='main relative'>
-                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]'>
+                                        <div className='absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] '>
                                             <span className='text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0'>01</span>
                                         </div>
                                         <div className='flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]'>

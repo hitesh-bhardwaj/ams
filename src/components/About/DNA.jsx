@@ -111,11 +111,11 @@ const DNA = () => {
             </CardContainer>
 
         </div>
-        <div className='mobile:block hidden tablet:block mobile:pt-[10%]'>
+        <div className='mobile:block hidden tablet:block mobile:pt-[10%] tablet:pt-[10%]'>
 
-        <div className='w-full flex flex-col justify-center items-center gap-[7vw]'>
+        <div className='w-full flex flex-col justify-center items-center gap-[7vw] tablet:flex-row tablet:flex-wrap tablet:gap-[2vw]'>
 
-        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[5vw] fadeUp'>
+        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
           <div className='w-[15vw] h-[15vw] relative'>
           <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl object-contain"
@@ -125,7 +125,7 @@ const DNA = () => {
                 />  
           </div>
           <div className='w-full text-center'>
-          <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Accessible Care</h2>
+          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Accessible Care</h2>
 
           </div>
           <div>
@@ -133,7 +133,7 @@ const DNA = () => {
           </div>
 
         </div>
-        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[5vw] fadeUp'>
+        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
           <div className='w-[15vw] h-[15vw] relative'>
           <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl object-contain"
@@ -143,7 +143,7 @@ const DNA = () => {
                 />  
           </div>
           <div className='w-full text-center'>
-          <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Global Standards</h2>
+          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Global Standards</h2>
 
           </div>
           <div>
@@ -151,7 +151,7 @@ const DNA = () => {
           </div>
 
         </div>
-        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[5vw] fadeUp'>
+        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
           <div className='w-[15vw] h-[15vw] relative'>
           <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl object-contain"
@@ -161,7 +161,7 @@ const DNA = () => {
                 />  
           </div>
           <div className='w-full text-center'>
-          <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Ethics and Integrity</h2>
+          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Ethics and Integrity</h2>
 
           </div>
           <div>

@@ -50,7 +50,97 @@ export default function Manufacturing() {
       }
     };
   }, []);
+if(globalThis.innerWidth>=542&& globalThis.innerWidth<=1023){
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section.current,
+        start: 'top top',
+        end: 'bottom -=2000',
+        scrub: true,
+        pin: true,
+        // markers: true,
+        onEnterBack: () => {
+          gsap.set([text1.current, text2.current, text3.current], { opacity: 0 });
+        }
+      }
+    });
 
+    // Picture 1 and Text 1 timeline
+    tl.to(inner1.current, {
+      y: 0,
+      scale: 1,
+      duration: 1,
+      onStart: () => {
+        gsap.set(text1.current, { opacity: 1 });
+      }
+    }, "-=2")
+      .to(text1.current, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        zIndex: 1,
+        immediateRender: false
+      }, "-=1")
+      .to(text1.current, {
+        opacity: 0,
+        duration: 1,
+        zIndex: 0,
+      }, "+=1");
+
+    // Picture 2 and Text 2 timeline
+    tl.to(picture2.current, {
+      y: 0,
+      duration: 2,
+      delay: -1,
+    })
+      .to(inner2.current, {
+        y: 0,
+        scale: 1,
+        duration: 2,
+        onStart: () => {
+          gsap.set(text2.current, { opacity: 0 });
+        }
+      }, "-=2")
+      .to(text2.current, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        zIndex: 1,
+        immediateRender: false
+      }, "-=1")
+      .to(text2.current, {
+        opacity: 0,
+        duration: 1,
+        zIndex: 0,
+      }, "+=1");
+
+    // Picture 3 and Text 3 timeline
+    tl.to(picture3.current, {
+      y: 0,
+      duration: 2,
+    })
+      .to(inner3.current, {
+        y: 0,
+        scale: 1,
+        duration: 2,
+        onStart: () => {
+          gsap.set(text3.current, { opacity: 0 });
+        }
+      }, "-=2")
+      .to(text3.current, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        zIndex: 1,
+        immediateRender: false
+      }, "-=1")
+    
+
+  });
+
+}
+else{
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -143,14 +233,15 @@ export default function Manufacturing() {
 
   });
 
+}
+
   return (
     <>
       <section className="pb-[12%]" ref={section} id="manufacturing">
         <div className="container-lg">
-          <div className="flex justify-between items-center tablet:flex-col tablet:h-screen tablet:justify-center tablet:pt-[15%]">
-
-            <div className="w-1/3 h-full tablet:w-full tablet:order-1 tablet:h-[50vh]">
-              <div className="h-screen w-full flex justify-center items-center relative tablet:h-full tablet:items-start tablet:pt-[10%]">
+          <div className="flex justify-between items-center tablet:flex-col tablet:h-full tablet:justify-center tablet:pt-[15%]">
+            <div className="w-1/3 h-full tablet:w-full tablet:order-1 tablet:h-[30vh]">
+              <div className="h-screen w-full flex justify-center items-center relative tablet:h-[30vh] tablet:items-start tablet:justify-start tablet:pt-[10%]">
                 <div className="absolute" ref={text1}>
                   <h2 data-para-anim className="title-2 aeonik">
                     Ushering in the Next Generation of Medical Technology
@@ -194,11 +285,11 @@ export default function Manufacturing() {
                 />
               </div>
               <div className="absolute overflow-hidden top-0 left-0 w-full h-full translate-y-full" ref={picture2}>
-                <div className="relative h-screen w-[60vw]">
+                <div className="relative h-screen w-[60vw] tablet:w-[90vw] tablet:h-[60vw]">
                   <Image
                     ref={inner2}
                     fill
-                    className="w-full h-full object-cover -translate-y-full scale-[1.4]"
+                    className="w-full h-full object-cover -translate-y-full scale-[1.4] tablet:scale-[1] "
                     src="/assets/home/manufacturing-2.webp"
                     alt="image"
                   />
@@ -206,11 +297,11 @@ export default function Manufacturing() {
                 </div>
               </div>
               <div className="absolute overflow-hidden top-0 left-0 w-full h-full translate-y-full" ref={picture3}>
-              <div className="relative h-screen w-[60vw]">
+              <div className="relative h-screen w-[60vw] tablet:w-[90vw] tablet:h-[60vw]">
                   <Image
                     ref={inner3}
                     fill
-                    className="w-full h-full object-cover -translate-y-full scale-[1.4]"
+                    className="w-full h-full object-cover -translate-y-full scale-[1.4] tablet:scale-[1]"
                     src="/assets/home/manufacturing-3.webp"
                     alt="image"
                   />

@@ -50,7 +50,7 @@ const Hero = ({ line1, line2, src, content,className , titleColor}) => {
             <div className="">
               <h1
                 data-para-anim
-                className="title-1 aeonik drop-shadow-lg  leading-[1] mobile:hidden"
+                className="title-1 aeonik drop-shadow-lg  leading-[1] mobile:hidden tablet:hidden"
               >
                 <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"} `}>
                   {line1}
@@ -62,33 +62,33 @@ const Hero = ({ line1, line2, src, content,className , titleColor}) => {
               </h1>
               <h1
                 
-                className="title-1 aeonik drop-shadow-lg  leading-[1] hidden mobile:block"
+                className="title-1 aeonik drop-shadow-lg  leading-[1] hidden mobile:block tablet:block"
               >
-                <span data-para-anim className={`leading-[1.2] overflow-hidden text-[#FFFFFF] text-center ${titleColor?"text-black":"text-shadow"} `}>
+                <span data-para-anim className={`leading-[1.2] overflow-hidden text-[#FFFFFF] text-center tablet:text-start ${titleColor?"text-black":"text-shadow"} `}>
                   {line1}
                
                 
                   {line2}
                 </span>
               </h1>
-              <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] ">
+              <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] ">
                 <span data-para-anim className={`text-[#FFFFFF] mobile:text-center ${titleColor?"text-black":"text-shadow"}`}>
                   {content}
                 </span>
               </p>
             </div>
             <div className={`w-full fadeUp ${className} mobile:hidden`}>
-              <div className="h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2] ">
+              <div className="h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2] tablet:w-[5vw] tablet:h-[5vw] tablet:top-[37%] ">
                 <img src="/assets/career/search.png" alt="search-icon" />
               </div>
               <input
                 type="text"
                 placeholder="Explore job openings"
-                className="w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] placeholder:opacity-75 text-[#143CA3] glassmorphism placeholder:text-shadow"
+                className="w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] placeholder:opacity-75 text-[#143CA3] glassmorphism placeholder:text-shadow tablet:h-[7vw] tablet:text-[2.5vw] tablet:px-[10%]"
               />
 
-              <div className="relative left-[90%] bottom-[35%]">
-                <div className="bg-[#143CA3] w-[3vw] h-[3vw] text-[#ffffff] rounded-[50%] flex items-center justify-center p-[0.8%] cursor-pointer ">
+              <div className="relative left-[90%] bottom-[35%] tablet:bottom-[35%] tablet:left-[87%]">
+                <div className="bg-[#143CA3] w-[3vw] h-[3vw] text-[#ffffff] rounded-[50%] flex items-center justify-center p-[0.8%] cursor-pointer tablet:w-[5vw] tablet:h-[5vw] ">
                   <svg
                     viewBox="0 0 22 16"
                     fill="#ffffff"
