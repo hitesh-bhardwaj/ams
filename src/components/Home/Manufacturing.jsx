@@ -148,6 +148,7 @@ export default function Manufacturing() {
       <section className="pb-[12%]" ref={section} id="manufacturing">
         <div className="container-lg">
           <div className="flex justify-between items-center tablet:flex-col tablet:h-screen tablet:justify-center tablet:pt-[15%]">
+
             <div className="w-1/3 h-full tablet:w-full tablet:order-1 tablet:h-[50vh]">
               <div className="h-screen w-full flex justify-center items-center relative tablet:h-full tablet:items-start tablet:pt-[10%]">
                 <div className="absolute" ref={text1}>
@@ -179,6 +180,7 @@ export default function Manufacturing() {
                 </div>
               </div>
             </div>
+            
             <div className="w-[65%] h-screen relative -mr-[6%] rounded-s-[3vw] overflow-hidden tablet:h-[40vh] tablet:order-0 tablet:w-[90vw] tablet:rounded-[3vw] tablet:mr-0">
               <div className="absolute overflow-hidden top-0 left-0 w-full h-full" ref={picture1}>
                 <video

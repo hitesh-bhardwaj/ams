@@ -13,6 +13,7 @@
 /* @import url('./tablet.css'); */
 /* @import url('./endocards.css'); */
 
+@import url('./manufactuing-carousel.css');
 
 :root {
   --text-color: #111111;
@@ -36,8 +37,6 @@
   left: 0;
   opacity: 0;
 }
-
-
 
 /* Hamburger Button Start */
 .header .burger-wrapper .menu-btn:hover .line-wrapper .line
@@ -417,8 +416,9 @@ body{
   .product-card{
     height: 200vw;
     width:auto;
-    padding: 1%;
-    margin-right:10px;
+    padding: 0;
+    margin: 0;
+    margin-right:0;
     text-align: left;
     background-repeat: no-repeat;
     background-size: contain;

@@ -6,6 +6,7 @@ import Facility from "@/components/Home/Facility";
 import Hero from "@/components/Home/Hero";
 import HeroCarousel from "@/components/Home/HeroCarousel";
 import Impact from "@/components/Home/Impact";
+import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
 import Manufacturing from "@/components/Home/Manufacturing";
 import Manufacturingmobile from "@/components/Home/Manufacturingmobile";
 import Product from "@/components/Home/Product";
@@ -92,8 +93,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        {isMobile ? <Manufacturingmobile /> : <Manufacturing />}
+        {/* {isMobile ? <Manufacturingmobile /> : <Manufacturing />} */}
         {/* <HeroCarousel/> */}
+        <ManufacturingCarousel />
         <Product />
         <Impact />
         <Career />

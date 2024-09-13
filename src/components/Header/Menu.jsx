@@ -63,9 +63,9 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                         <canvas id='gradient-canvas'/>
                     </div>
                     <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-12 tablet:grid-rows-4 tablet:h-[50vh]">
-                        <p className="aeonik font-light text-white text-[1.25vw] absolute bottom-0 pb-[2.7%] left-[5%]">Advancing the way we care</p>
+                        <p className="aeonik font-light text-white text-[1.25vw] tablet:text-[1.8vw] absolute bottom-[7%] left-[5%] tablet:left-[3.5vw]">Advancing the way we care</p>
                         <div className="flex h-1/2 justify-between items-center col-span-full mobile:h-[10vw]  mobile:mt-[5vw]">
-                            <Link href="/" className="w-[7vw] tablet:w-[15vw] tablet:h-[15vw] tablet:mt-[5vw] mobile:w-[27vw]">
+                            <Link href="/" className="w-[7vw] tablet:w-[15vw] mobile:w-[27vw]">
                                 <Image
                                     src="/logo.svg" 
                                     width={130} 
