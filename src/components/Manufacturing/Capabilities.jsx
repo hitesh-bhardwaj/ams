@@ -43,7 +43,7 @@ const Capabilities = () => {
                 <div className='capability-card-outer absolute rotate-[10deg] transition-all duration-300 ease-in-out group-hover:rotate-[0deg] mobile:hover:rotate-[10deg] tablet:hover:rotate-[10deg]'></div>
                 <div className='h-[20vw] w-[20vw] bg-white/50 absolute rounded-[40px] border border-gray-200 glassmorphism mobile:w-[80vw] mobile:h-[80vw] tablet:w-[40vw] tablet:h-[40vw]'></div>
                 <div className='h-[20vw] w-[20vw] flex flex-col items-center justify-center mobile:w-[80vw] mobile:h-[80vw] tablet:w-[40vw] tablet:h-[40vw]'>
-                  <div className={`h-[7vw] w-[7vw] relative top-[-10%] group-hover:scale-[1.5] transition-all duration-300 ease-in-out mobile:h-[15vw] mobile:w-[15vw] tablet:h-[15vw] tablet:w-[15vw]`}>
+                  <div className={`h-[7vw] w-[7vw] relative top-[-10%] group-hover:scale-[1.5] transition-all duration-300 ease-in-out mobile:h-[30vw] mobile:w-[30vw] tablet:h-[15vw] tablet:w-[15vw]`}>
                     <Image
                       src={capability.imageSrc}
                       fill

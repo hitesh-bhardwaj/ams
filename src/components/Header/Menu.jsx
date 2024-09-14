@@ -76,7 +76,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                             <div>
                                 <button onClick={toggleMenu} href="/" className="flex items-center gap-3">
                                     <span className="aeonik content-p text-head leading-tight">Close</span>
-                                    <span className="w-[2.2vw] h-[2.2vw] flex justify-center items-center p-2 border border-head rounded-full tablet:w-[4vw] tablet:h-[4vw] mobile:w-[10vw] mobile:h-[10vw]">
+                                    <span className="w-[2.2vw] h-[2.2vw] flex justify-center items-center p-2 border border-head rounded-full tablet:w-[4vw] tablet:h-[4vw] mobile:w-[10vw] mobile:h-[10vw] mobile:p-[2.8vw]">
                                         <Image 
                                             src="/assets/icons/close-icon.svg"
                                             alt="Close Menu"
@@ -144,7 +144,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                                 </div>
                                 <div className="hidden mobile:block h-[1px] bg-[#D8D8D8] w-full my-[5vw] lineDraw"></div>
                                 <div className="py-[1.8vw] pl-[5vw] mobile:pl-[0vw]">
-                                    <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw]">
+                                    <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw] mobile:space-y-[1.2vw]">
                                         <li className="footer-link">
                                             <Link href="/#" className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[6vw]">
                                                 <span data-attr="Wound Care">

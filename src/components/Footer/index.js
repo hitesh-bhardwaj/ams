@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
+import { paraAnim } from "../gsapAnimations";
 
 export default function Footer() {
+    paraAnim()
     return (
         <>
             <footer className="main-gradient h-full mt-[4vw] pt-[3vw] mobile:py-[10vw]">
@@ -11,12 +13,12 @@ export default function Footer() {
                         <div className="col-span-6  mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
                             <div className="mobile:flex mobile:items-center mobile:justify-center mobile:flex-col">
                                 <p className="content-p text-anim-2">
-                                    <span className="uppercase text-head">
+                                    <span data-para-anim className="uppercase text-head">
                                         do you have any questions?
                                     </span>
                                 </p>
                                 <Link href="/#" className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp tablet:mb-[3.5vw]">
-                                    <span className="text-[5.3vw] text-head aeonik leading-[1] font-light mobile:text-[14vw] tablet:text-[7vw]">
+                                    <span data-para-anim className="text-[5.3vw] text-head aeonik leading-[1] font-light mobile:text-[14vw] tablet:text-[7vw]">
                                         Contact
                                     </span>
                                     <img 
@@ -29,17 +31,17 @@ export default function Footer() {
                                 </Link>
                                 <div className="mb-[2.5vw]  mobile:mb-[5vw] mobile:mt-[5vw] mobile:flex mobile:flex-col mobile:justify-center mobile:items-center ">
                                     <p className="content-p mb-[1vw] fadeUp mobile:w-[80%] mobile:text-center tablet:mb-[2vw]">
-                                        <span className="text-head">
+                                        <span data-para-anim className="text-head">
                                             P-21-22, 25-26 & 34-35, GIDC Manjusar, Ta. Savli, Vadodara, Gujarat, India
                                         </span>
                                     </p>
                                     <a data-v="T: +91 2667671302" href="tel:+91 2667671302" className="content-p block text-head fadeUp">
-                                        <span className="font-[400]">
+                                        <span data-para-anim className="font-[400]">
                                             T: +91 2667671302
                                         </span>
                                     </a>
                                     <a href="mailto:info@amsltd.com" className="content-p block text-head fadeUp">
-                                        <span data-v="info@amsltd.com" className="font-[400]">
+                                        <span data-para-anim data-v="info@amsltd.com" className="font-[400]">
                                             info@amsltd.com
                                         </span>
                                     </a>
@@ -96,86 +98,86 @@ export default function Footer() {
                         <div className="col-span-5 col-start-9 flex justify-between mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:space-y-[5vw] tablet:col-start-7 tablet:row-start-1 tablet:gap-[5vw]">
                             <div className="">
                                 <h6 className="text-head content-p-lg mb-[1vw] fadeUp  mobile:text-center">
-                                    <span className="font-light">
+                                    <span data-para-anim className="font-light">
                                         About Us
                                     </span>
                                 </h6>
                                 <ul className="space-y-[0.8vw] leading-[135%] fadeUp mobile:text-center">
                                     <li className="footer-link">
                                         <Link  className="content-p text-head font-light" href="/#">
-                                            <span data-attr="Our Promise">
+                                            <span data-para-anim data-attr="Our Promise">
                                                 Our Promise
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/#">
-                                            <span data-attr="Leadership">
+                                            <span data-para-anim data-attr="Leadership">
                                                 Leadership
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/manufacturing">
-                                            <span data-attr="Manufacturing">
+                                            <span data-para-anim data-attr="Manufacturing">
                                                 Manufacturing
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/career">
-                                            <span data-attr="Careers">
+                                            <span data-para-anim data-attr="Careers">
                                             Careers
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/#">
-                                            <span data-attr="Contact Us">
+                                            <span data-para-anim data-attr="Contact Us">
                                             Contact Us
                                             </span>
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="w-[35%] mobile:w-[60%] mobile:text-center tablet:w-full">
+                            <div className="w-[35%] mobile:w-full mobile:text-center tablet:w-full">
                             <h6 className="text-head content-p-lg mb-[1vw] fadeUp">
-                                    <span className="font-light">
+                                    <span data-para-anim className="font-light">
                                         Products
                                     </span>
                                 </h6>
                                 <ul className="space-y-[0.8vw] leading-[135%] fadeUp">
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/#">
-                                            <span data-attr="Wound Closure">
+                                            <span data-para-anim data-attr="Wound Closure">
                                             Wound Closure
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/endo">
-                                            <span data-attr="Endo Surgery">
+                                            <span data-para-anim data-attr="Endo Surgery">
                                             Endo Surgery
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/hernia">
-                                            <span data-attr="Hernia Solutions">
+                                            <span data-para-anim data-attr="Hernia Solutions">
                                             Hernia Solutions
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/#">
-                                            <span data-attr="Interventional Cardiology">
+                                            <span data-para-anim data-attr="Interventional Cardiology">
                                             Interventional Cardiology
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
                                         <Link className="content-p text-head font-light" href="/#">
-                                            <span data-attr="Cardiovascular Solutions">
+                                            <span data-para-anim data-attr="Cardiovascular Solutions">
                                             Cardiovascular Solutions
                                             </span>
                                         </Link>
@@ -199,7 +201,7 @@ export default function Footer() {
                             height="200"
                         /> 
                         <div className="col-span-full flex justify-between text-head text-[1vw] font-light mobile:text-[3.6vw] mobile:flex-col mobile:items-center mobile:justify-center tablet:text-[1.8vw]">
-                            <p>© {new Date().getFullYear()} Advanced MedTech Solutions Pvt. Ltd</p>
+                            <p data-para-anim>© {new Date().getFullYear()} Advanced MedTech Solutions Pvt. Ltd</p>
                             <a className="relative after:absolute after:block after:left-0 after:bg-current after:bottom-0 after:h-[1px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all" target='_blank' title='UI/UX, Strategy, Marketing Agency' href='https://weareenigma.com'>By: Enigma</a>
                         </div>
                     </div>

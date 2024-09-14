@@ -71,7 +71,7 @@ const Hero = ({ line1, line2, src, content,className , titleColor}) => {
                   {line2}
                 </span>
               </h1>
-              <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] ">
+              <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw]">
                 <span data-para-anim className={`text-[#FFFFFF] mobile:text-center ${titleColor?"text-black":"text-shadow"}`}>
                   {content}
                 </span>

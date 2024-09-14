@@ -165,7 +165,7 @@ body{
 }
 
 .main-gradient {
-  background: linear-gradient(120.7deg, #e081cf 0%, #ad84f0 50%, #a8b1f8 100%);
+  background: linear-gradient(120.7deg, #e194d3 0%, #ad84f0 50%, #a8b1f8 100%);
   background-size: 300% 300%;
   opacity: 0.8;
   animation: gradient 10s ease infinite;
@@ -409,11 +409,19 @@ body{
 
 
 @media screen  and (max-width:541px){
+  ::-webkit-scrollbar {
+    height: 0;
+    width: 0; /* Hide the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    display: none; /* Hide the scrollbar thumb */
+}
   .title-1{
       font-size: 13.3vw;
   }
   .title-2{
-    font-size: 11vw;
+    font-size: 10vw;
   }
   .content-p{
     font-size: 4.5vw;
@@ -444,13 +452,13 @@ body{
   }
   .homeCarousel .swiper-button-prev{
     position: relative; 
-    left: 25%;
-    bottom: -20px;
+    left: 30%;
+    bottom: -38px;
   }
   .homeCarousel .swiper-button-next{
     position: relative;
-    left: 50%;
-    bottom: 25px;
+    left: 55%;
+    bottom: 0px;
   }
   .homeCarousel .swiper-button-prev, .homeCarousel .swiper-button-next{
     border: 2px solid white;
@@ -476,10 +484,25 @@ body{
     /* transform: rotate(-8.9deg); */
     border-radius: 40px;
   }
+  .imageanim{
+    transform: translateY(0%);
+    scale: 1;
+  }
+  .para-animation .line{
+    overflow: hidden;
+  }
   }
 
 
 @media screen and (min-width: 540px) and (max-width: 1023px){
+  ::-webkit-scrollbar {
+    height: 0; 
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none; 
+}
     .title-1{
       font-size: 7vw;
       font-weight: 300;
@@ -633,7 +656,7 @@ body{
 
 .product-card{
   background-image: url('/assets/products/product-frame.svg');
-  height: 34vh;
+  height: 40vh;
   width: 80vw;
   padding: 1%;
   margin-right: 5%;

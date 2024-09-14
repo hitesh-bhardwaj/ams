@@ -125,11 +125,11 @@ const HeroCarousel = () => {
                                                 </span>
                                             </h3>
                                             <h4 className='content-p mb-[0.5vw] tablet:text-[2vw]'>PTCA Balloon Catheter</h4>
-                                            <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4]'>Gliding The Science of Flow Restoration</p>
-                                            <p className='content-p-md mb-[1.5vw] tablet:text-[1.5vw] '>
+                                            <p className='text-[1.4vw] mb-[1.6vw] text-[#59C4D4] tablet:mb-[1vw]'>Gliding The Science of Flow Restoration</p>
+                                            <p className='content-p-md mb-[1.5vw] tablet:text-[1.5vw] tablet:mb-[1vw] '>
                                                 Revolutionalized for the most challenging environments
                                                 <br />
-                                                <br />
+                                               
                                                 ADVA GLIDE’s revolutionary technology is specially designed to succeed in the most challenging Coronary Anatomies. With the fastest delation time, superior controlled and enhanced performance properties of trackability, crossability and navigablity in a wide range of complex lesions.
                                             </p>
                                             <LinkButton btnText={"Know More"} link={"/"} />

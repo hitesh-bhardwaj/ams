@@ -17,7 +17,7 @@ export default function Manufacturingmobile() {
           <div className="flex flex-col items-center justify-center mobile:flex-col mobile:gap-[10vw]">
             {/* Video and First Text */}
             <div className="w-full h-auto mb-[5%] mobile:mb-[10%] flex flex-col items-center justify-center">
-              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[80%] mobile:h-[80vw] mobile:rounded-[8vw] fadeUp mobile:object-cover">
+              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[8vw] overflow-hidden fadeUp mobile:object-cover">
                 <video
                 autoPlay
                   muted

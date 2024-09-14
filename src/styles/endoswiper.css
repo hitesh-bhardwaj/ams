@@ -17,14 +17,29 @@
 .endoSwiper .swiper-button-prev , .endoSwiper .swiper-button-next{
     display: none;
 }
-
+/* Existing Swiper button styling */
+.endoSwiper .swiper-button-prev::after, .endoSwiper .swiper-button-next::after {
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 3vw 5vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add background color on click */
+  .endoSwiper .swiper-button-prev.clicked::after,
+  .endoSwiper .swiper-button-next.clicked::after {
+    background-color: rgba(0, 0, 0, 0.5); /* example color */
+    color: white; /* Change text color */
+  }
 
 @media screen  and (max-width:541px){
     .endoSwiper {
         width: 90vw;
     }
     .endoSwiper .swiper-slide{
-        width:75vw !important;      
+        width:90vw !important;      
     }
     .endoSwiper{
         padding-bottom: 20vw;
@@ -32,6 +47,7 @@
     .endoSwiper .swiper-button-prev , .endoSwiper .swiper-button-next{
         display: block;
         top: 90%;
+        
         /* position: relative; */
     }
     .endoSwiper{
@@ -42,14 +58,14 @@
        font-size: 30px;
        border-radius: 50%;
        border: 2px solid black;
-       padding: 50%;
+       padding: 3vw 5vw;
     }
     .endoSwiper .swiper-button-prev{
-        left:40%;
+        left:32%;
         bottom:-50px;
     }
     .endoSwiper .swiper-button-next{
-        left:60%;
+        left:52%;
         bottom: -30px;
     }
 }

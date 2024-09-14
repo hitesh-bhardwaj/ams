@@ -10,14 +10,14 @@
    font-size: 30px;
    border-radius: 50%;
    border: 2px solid black;
-   padding: 50%;
+   padding: 3vw 5vw;
 }
 .molecularSwiper .swiper-button-prev{
-    left:40%;
-    bottom:-50px;
+    left:37%;
+    bottom:-53px;
 }
 .molecularSwiper .swiper-button-next{
-    left:60%;
+    left:57%;
     bottom: -30px;
 }
 }
