@@ -48,7 +48,7 @@ const PortfolioSwiper = ({ slidesData }) => {
     if (swiperRef.current) {
       swiperRef.current.slideNext(); // Move to the next slide
       setActiveButton("next"); // Set next button as active
-      setTimeout(() => setActiveButton(""), 300); // Reset after 300ms
+       // Reset after 300ms
     }
   };
 
@@ -56,13 +56,13 @@ const PortfolioSwiper = ({ slidesData }) => {
     if (swiperRef.current) {
       swiperRef.current.slidePrev(); // Move to the previous slide
       setActiveButton("prev"); // Set previous button as active
-      setTimeout(() => setActiveButton(""), 300); // Reset after 300ms
+       // Reset after 300ms
     }
   };
 
   return (
     <section id="hernia-swiper" className="overflow-x-hidden mobile:pt-[10%]">
-      <div className="w-full mb-[5%] ml-[10%] py-[10%] relative h-full mobile:ml-[0%] mobile:mb-0">
+      <div className="w-full ml-[10%] py-[10%] relative h-full mobile:ml-[0%] mobile:mb-0">
         <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]  tablet:hidden">
           <p className="text-end">{slidesData[0].title}</p>
         </div>
@@ -141,11 +141,11 @@ const PortfolioSwiper = ({ slidesData }) => {
                 ${
                   activeButton === "next"
                     ? " text-white"
-                    : "bg-white text-black"
+                    : "bg-white text-[#111111]"
                 } transition-colors duration-300`} // Added background color transition
               onClick={handleNext} // Trigger next slide
             >
-              <span className={`bg-black w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  ${
+              <span className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  ${
                   activeButton === "next"
                     ?"scale-100 opacity-100"
                     : "scale-0 opacity-50"
@@ -175,11 +175,11 @@ const PortfolioSwiper = ({ slidesData }) => {
                 ${
                   activeButton === "prev"
                     ? " text-white"
-                    : "bg-white text-black"
+                    : "bg-white text-[#111111]"
                 } transition-colors duration-300`} // Added background color transition
               onClick={handlePrev} // Trigger previous slide
             >
-               <span className={`bg-black w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${
+               <span className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${
                   activeButton === "prev"
                     ?"scale-100 opacity-100"
                     : "scale-0 opacity-50"

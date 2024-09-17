@@ -93,9 +93,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        {/* {isMobile ? <Manufacturingmobile /> : <Manufacturing />} */}
+        {isMobile ? <Manufacturingmobile /> : <Manufacturing />}
         {/* <HeroCarousel/> */}
-        <ManufacturingCarousel />
+        {/* <ManufacturingCarousel /> */}
         <Product />
         <Impact />
         <Career />

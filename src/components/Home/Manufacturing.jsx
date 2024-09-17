@@ -243,7 +243,7 @@ else{
             <div className="w-1/3 h-full tablet:w-full tablet:order-1 tablet:h-[30vh]">
               <div className="h-screen w-full flex justify-center items-center relative tablet:h-[30vh] tablet:items-start tablet:justify-start tablet:pt-[10%]">
                 <div className="absolute" ref={text1}>
-                  <h2 data-para-anim className="title-2 aeonik">
+                  <h2 data-para-anim className="title-2 aeonik mobile:text-center">
                     Ushering in the Next Generation of Medical Technology
                   </h2>
                   <p data-para-anim className="content-p my-[4vw]">

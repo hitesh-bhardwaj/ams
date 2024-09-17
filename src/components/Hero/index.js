@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-const Hero = ({ line1, line2, src, content,className , titleColor}) => {
+const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , titleHidden}) => {
   paraAnim();
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -46,13 +46,13 @@ const Hero = ({ line1, line2, src, content,className , titleColor}) => {
         </div>
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh] mobile:items-center">
+          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh]">
             <div className="">
               <h1
                 data-para-anim
-                className="title-1 aeonik drop-shadow-lg  leading-[1] mobile:hidden tablet:hidden"
+                className={`title-1 aeonik drop-shadow-lg  leading-[1] mobile:hidden tablet:hidden ${titleHidden}`}
               >
-                <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"} `}>
+                <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"}`}>
                   {line1}
                 </span>
                 <br />
@@ -71,7 +71,7 @@ const Hero = ({ line1, line2, src, content,className , titleColor}) => {
                   {line2}
                 </span>
               </h1>
-              <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw]">
+              <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] ${paraWidth}`}>
                 <span data-para-anim className={`text-[#FFFFFF] mobile:text-center ${titleColor?"text-black":"text-shadow"}`}>
                   {content}
                 </span>

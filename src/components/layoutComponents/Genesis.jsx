@@ -30,13 +30,13 @@ const Genesis = ({content}) => {
             <span  data-para-anim >{content.heading}</span>
           </h2>
           <div className="genesis-text flex w-full justify-center gap-x-[7vw] mt-[4vw] mobile:flex-col mobile:px-[4vw] mobile:gap-[5vw] mobile:py-[4vw] tablet:gap-x-[4vw] tablet:flex tablet-flex-col">  
-            <div className="w-[38%] content-p leading-[1.4] mobile:w-full mobile:text-center mobile:leading-[1.2] tablet:w-[42%] ">
+            <div className="w-[35%] content-p leading-[1.4] mobile:w-full mobile:text-center mobile:leading-[1.2] tablet:w-[42%] ">
                 <p data-para-anim>
                 {/* */}
                 {content.smallpara}
                 </p>
             </div>
-            <div className="w-[36%] text-[2.5vw] leading-[1.25] font-light text-[#111111] mobile:w-full mobile:text-[6.5vw] mobile:text-center tablet:w-[40%] ">
+            <div className="w-[40%] text-[2.5vw] leading-[1.25] font-light text-[#111111] mobile:w-full mobile:text-[6.5vw] mobile:text-center tablet:w-[40%] ">
                 <p data-para-anim>
                   {/*  */}
                   {content.bigpara}

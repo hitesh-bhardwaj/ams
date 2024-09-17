@@ -17,7 +17,7 @@ export default function Manufacturingmobile() {
           <div className="flex flex-col items-center justify-center mobile:flex-col mobile:gap-[10vw]">
             {/* Video and First Text */}
             <div className="w-full h-auto mb-[5%] mobile:mb-[10%] flex flex-col items-center justify-center">
-              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[8vw] overflow-hidden fadeUp mobile:object-cover">
+              <div className="relative w-full h-[60vh] mb-[4vw] mobile:w-[90vw] mobile:h-[110vw] mobile:rounded-[8vw] overflow-hidden fadeUp mobile:object-cover">
                 <video
                 autoPlay
                   muted
@@ -29,11 +29,11 @@ export default function Manufacturingmobile() {
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div className="w-full flex flex-col justify-center items-center text-center mobile:flex-col mobile:h-auto mb-[4vw] mobile:mb-[20vw] mobile:w-[90%] mobile:my-[5vw] mobile:gap-[5vw] ">
-                <h2 data-para-anim className="title-2 aeonik">
+              <div className="w-full flex flex-col justify-center items-center text-center mobile:flex-col  mobile:h-auto mb-[4vw] mobile:mb-[20vw] mobile:w-[90%] mobile:my-[5vw] mobile:gap-[5vw] ">
+                <h2 data-para-anim className="title-2 aeonik text-center">
                   Ushering in the Next Generation of Medical Technology
                 </h2>
-                <p data-para-anim className="content-p my-[4vw]">
+                <p data-para-anim className="content-p my-[4vw] text-center">
                   AMS leverages strategic global partnerships to procure
                   state-of-the-art manufacturing technology, ensuring
                   uncompromising quality, innovation, and agility in our

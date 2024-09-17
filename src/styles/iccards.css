@@ -1,0 +1,7 @@
+.ic-card .swiper-slide{
+    width: 30vw !important;
+    height: 40vw !important;
+}
+.ic-card{
+    overflow: visible !important ;
+}
