@@ -54,7 +54,7 @@ export default function Hero() {
                      way we care
                   </span>
                 </h1>
-                <h1 className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden mobile:block hidden">
+                <h1 className="text-[15vw] font-light aeonik drop-shadow-md leading-[0] overflow-hidden mobile:block hidden">
                   <span data-para-anim className="leading-[1.25] overflow-hidden text-center">
                     Advancing the
                   

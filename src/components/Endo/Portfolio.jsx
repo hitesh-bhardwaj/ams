@@ -13,7 +13,7 @@ const PortfolioCard =({img, txt , className})=>{
   return (
     <>
     <Link href={"#"}>
-    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group mobile:w-[85vw] mobile:h-[120vw] tablet:w-[43vw] tablet:h-[40vw] tablet:rounded-[3vw] fadeup`}>
+    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group mobile:w-[85vw] mobile:h-[100vw] tablet:w-[43vw] tablet:h-[40vw] tablet:rounded-[3vw] fadeup`}>
           <Image
             src={img}
            fill
@@ -21,9 +21,9 @@ const PortfolioCard =({img, txt , className})=>{
             className="group-hover:scale-[1.2] duration-300 object-cover "
           />
           <div className="imgoverlay glassmorphism absolute w-[10vw] h-[11.5vw]  left-[-50%] duration-300 block top-0 group-hover:left-[0%] mobile:w-[85vw] mobile:h-[40vw] mobile:left-0 mobile:bottom-0 mobile:top-auto tablet:w-[43vw] tablet:h-[20vw] tablet:left-0 tablet:bottom-0 tablet:top-auto"></div>
-          <div className="flex justify-center items-center absolute  mobile:bottom-[5%] tablet:bottom-[10%] tablet:w-[80%]">
+          <div className="flex justify-center items-center absolute  mobile:bottom-[10%] tablet:bottom-[10%] tablet:w-[80%]">
           <p
-           data-para-anim className=" font-light text-[1.2vw] text-shadow mobile:text-[8vw] mobile:leading-[1.2] tablet:text-[3.5vw] tablet:leading-[1.2]"
+           data-para-anim className=" font-light text-[1.2vw] text-shadow mobile:text-[8vw] mobile:leading-[1] tablet:text-[3.5vw] tablet:leading-[1.2]"
           >
            {txt}
           </p>

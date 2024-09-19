@@ -5,7 +5,7 @@ import PrimaryButton from "../Button/PrimaryButton"
 const Connecting = () => {
   
   return (  
-    <section className='' id='connect'>
+    <section className='mobile:py-[10%]' id='connect'>
         <div className='container-lg my-[10%] fadeUp group'>
             <div className='px-[3%] py-[5%]  border-[1px]  flex justify-between flex-col items-center rounded-[60px] bg-white/50 group-hover:bg-white group-hover:shadow-xl duration-300 tablet:rounded-[3vw] mobile:justify-center mobile:text-center mobile:px-[8%] mobile:py-[15%] mobile:rounded-[7vw]'>
                 <div className='tablet:w-full tablet:flex tablet:justify-center mobile:w-[75vw]'>

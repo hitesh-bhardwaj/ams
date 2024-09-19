@@ -81,7 +81,7 @@ const HeroCarousel = () => {
 
 
     return (
-        <section id='product' className='relative  overflow-hidden py-[5%] tablet:h-full'>
+        <section id='product' className='relative  overflow-hidden py-[5%] tablet:h-full mobile:hidden'>
 
             <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img z-0' />
 

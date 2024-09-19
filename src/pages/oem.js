@@ -13,6 +13,8 @@ import { useEffect } from "react";
 import Hero from '@/components/Hero'
 import OemCard from '@/components/Oem/OemCard'
 import Offerings from '@/components/Oem/Offerings'
+import FormOem from '@/components/Oem/FormOem'
+import OfferingsMob from '@/components/Oem/OfferingsMob'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -70,6 +72,8 @@ export default function  oem () {
   <Genesis content = {content}/>
    <OemCard/>
   <Offerings/>
+  <OfferingsMob/>
+  <FormOem/>
    </main>
    <Footer/>
    <Transition/>

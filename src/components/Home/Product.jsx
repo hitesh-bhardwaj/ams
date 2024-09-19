@@ -7,6 +7,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import Image from 'next/image';
+import { useRef, useState } from 'react';
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Product() {
@@ -34,11 +35,30 @@ export default function Product() {
         })
 
     });
+    const swiperRef = useRef(null); // Create a ref for Swiper
 
+    // State to track which button was clicked
+    const [activeButton, setActiveButton] = useState("");
+  
+    const handleNext = () => {
+      if (swiperRef.current) {
+        swiperRef.current.slideNext(); // Move to the next slide
+        setActiveButton("next"); // Set next button as active
+        // Reset after 300ms
+      }
+    };
+  
+    const handlePrev = () => {
+      if (swiperRef.current) {
+        swiperRef.current.slidePrev(); // Move to the previous slide
+        setActiveButton("prev"); // Set previous button as active
+        // Reset after 300ms
+      }
+    };
 
     return (
         <>
-            <section id='product' className='py-[5%] relative overflow-hidden mobile:py-[20vw] '>
+            <section id='product' className='py-[5%] relative overflow-hidden mobile:pb-[30vw] mobile:pt-[15vw] mobile:block '>
                 <div className='h-full'>
 
                     <Image src={"/assets/home/product-bg.webp"} fill alt={'product-bg'} className='object-cover product-bg-img scale-[1.3] translate-y-[-30%] mobile:hidden' />
@@ -59,7 +79,7 @@ export default function Product() {
                         </p>
                     </div>
                     <div className='fadeUp'>
-                        <Swiper spaceBetween={50} navigation={true} modules={[Navigation]} className="homeCarousel">
+                        <Swiper spaceBetween={50} navigation={false} modules={[Navigation]} onSwiper={(swiper) => (swiperRef.current = swiper)} className="homeCarousel">
                             <SwiperSlide>
                                 <div className='product-card relative h-full'>
                                     <Image src={"/assets/products/product-frame.png"} fill className='object-fill mobile:hidden' alt="product-frame" />
@@ -207,6 +227,85 @@ export default function Product() {
                                 </div>
                             </SwiperSlide>
                         </Swiper>
+                        <div
+                className={`px-[1vw] py-[1vw] absolute z-[5] top-[50%] left-[5%] mobile:bottom-[-10%] mobile:left-[65%] translate-x-[-65%] border overflow-hidden border-black mobile:py-[5vw] mobile:px-[5vw] rounded-full next-button cursor-pointer hidden mobile:block 
+                ${
+                  activeButton === "next"
+                    ? " text-white"
+                    : "bg-transparent text-[#111111]"
+                } transition-colors duration-300`} // Added background color transition
+                onClick={handleNext} // Trigger next slide
+              >
+                <span
+                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  ${
+                    activeButton === "next"
+                      ? "scale-100 opacity-100"
+                      : "scale-0 opacity-50"
+                  } transition-all duration-300`}
+                ></span>
+
+                <div className="w-[7vw] h-[7vw] relative z-[1]">
+                  <svg
+                    fill="currentColor"
+                    height="30px"
+                    width="30px"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 330 330"
+                  >
+                    <path
+                      id="XMLID_27_"
+                      d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
+	s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
+	c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                className={`px-[0.1vw] py-[0.1vw] top-[50%] right-[5%] absolute z-[5] mobile:bottom-[-10%] mobile:left-[35%] translate-x-[-38%] border border-black overflow-hidden  mobile:py-[5vw] mobile:px-[5vw] rounded-full prev-button cursor-pointer hidden mobile:block 
+                ${
+                  activeButton === "prev"
+                    ? " text-white"
+                    : "bg-transparent text-[#111111]"
+                } transition-colors duration-300`} // Added background color transition
+                onClick={handlePrev} // Trigger previous slide
+              >
+                <span
+                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${
+                    activeButton === "prev"
+                      ? "scale-100 opacity-100"
+                      : "scale-0 opacity-50"
+                  } transition-all duration-300`}
+                ></span>
+                <div className="w-[7vw] h-[7vw] relative z-[2] ">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 800 800"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_381_369)">
+                      <path
+                        d="M763.636 436.364H124.153L243.896 556.107C258.097 570.305 258.097 593.331 243.896 607.532C236.795 614.63 227.488 618.182 218.182 618.182C208.875 618.182 199.568 614.63 192.47 607.53L10.6521 425.711C-3.54908 411.513 -3.54908 388.487 10.6521 374.286L192.47 192.468C206.669 178.269 229.695 178.269 243.896 192.468C258.097 206.667 258.097 229.692 243.896 243.893L124.153 363.636H763.636C783.719 363.636 800 379.918 800 400C800 420.082 783.719 436.364 763.636 436.364Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_381_369">
+                        <rect
+                          width="800"
+                          height="800"
+                          fill="white"
+                          transform="matrix(-1 0 0 1 800 0)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
                     </div>
                 </div>
             </section>

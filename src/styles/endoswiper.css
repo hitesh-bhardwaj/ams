@@ -71,6 +71,9 @@
 }
 
 @media screen and (min-width: 540px) and (max-width: 1023px){
+    .endoSwiper .swiper-slide{
+        height: 60vw;
+    }
     .endoSmallSwiper{
         width: 58vw;
     }

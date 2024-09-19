@@ -24,11 +24,11 @@ const PortfolioCard = ({ src, heading, para }) => {
           alt="Hernia Slider"
           className="rounded-[20px] mobile:object-cover"
         />
-        <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]  mobile:top-[15%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
-          <h2 className="text-[#ffffff] text-[2.8vw] font-light text-shadow mobile:text-[8.4vw] tablet:text-[5vw] mobile:leading-[1.25] mobile:mb-[5vw]">
+        <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
+          <h2 className="text-[#ffffff] text-[2.8vw] font-light text-shadow mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
             {heading}
           </h2>
-          <p className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow mobile:text-[4.2vw] mobile:w-[70%] tablet:text-[2.5vw] tablet:w-[70%]">
+          <p className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow mobile:text-[4.2vw] mobile:w-[70%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
             {para}
           </p>
         </div>
@@ -66,7 +66,7 @@ const PortfolioSwiper = ({ slidesData }) => {
         <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]  tablet:hidden">
           <p className="text-end">{slidesData[0].title}</p>
         </div>
-        <div className="mobile:block hidden w-full text-center font-light text-[8vw] mb-[12vw]">
+        <div className="mobile:block hidden w-full px-[5vw] text-center font-light text-[8vw] mb-[12vw]">
           <h2 data-para-anim>{slidesData[0].title}</h2>
         </div>
         <div className="relative fadeUp rounded-bl-[10px] rounded-tl-[10px] overflow-hidden ">
@@ -92,7 +92,7 @@ const PortfolioSwiper = ({ slidesData }) => {
                 },
               }}
               modules={[FreeMode, Thumbs, Navigation, EffectCreative, Autoplay]}
-              className="endoSwiper mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden mobile:h-[80vh] mobile:rounded-[20px]"
+              className="endoSwiper mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden"
               thumbs={{
                 swiper:
                   thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
@@ -141,7 +141,7 @@ const PortfolioSwiper = ({ slidesData }) => {
                 ${
                   activeButton === "next"
                     ? " text-white"
-                    : "bg-white text-[#111111]"
+                    : "bg-transparent text-[#111111]"
                 } transition-colors duration-300`} // Added background color transition
               onClick={handleNext} // Trigger next slide
             >
@@ -171,11 +171,11 @@ const PortfolioSwiper = ({ slidesData }) => {
               </div>
             </div>
             <div
-              className={`absolute z-[5] bottom-0 left-[38%] translate-x-[-38%] border border-black overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
+              className={`absolute z-[5] bottom-0 left-[35%] translate-x-[-38%] border border-black overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
                 ${
                   activeButton === "prev"
                     ? " text-white"
-                    : "bg-white text-[#111111]"
+                    : "bg-transparent text-[#111111]"
                 } transition-colors duration-300`} // Added background color transition
               onClick={handlePrev} // Trigger previous slide
             >

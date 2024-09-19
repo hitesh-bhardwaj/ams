@@ -23,21 +23,21 @@ const Genesis = ({content}) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <section className="genesis relative mobile:h-[110vh]" id="genesis">
+    <section className="genesis relative mobile:h-[110vh] " id="genesis">
       <div className="container-lg  ml-auto mr-auto flex items-center justify-center flex-col pb-[10%] mobile:py-[10%] mobile:h-full">
         <div className="genesis-card w-[85%] border-[1px] border-[#DADADA] z-[1] bg-white  rounded-[50px] py-[5%] glassmorphism mobile:py-[15%] mobile:w-[95%]">
           <h2 className="title-2 aeonik  ml-[8%] mobile:text-center mobile:ml-0 mobile:px-[5vw] tablet:ml-[6%] ">
             <span  data-para-anim >{content.heading}</span>
           </h2>
-          <div className="genesis-text flex w-full justify-center gap-x-[7vw] mt-[4vw] mobile:flex-col mobile:px-[4vw] mobile:gap-[5vw] mobile:py-[4vw] tablet:gap-x-[4vw] tablet:flex tablet-flex-col">  
-            <div className="w-[35%] content-p leading-[1.4] mobile:w-full mobile:text-center mobile:leading-[1.2] tablet:w-[42%] ">
-                <p data-para-anim>
+          <div className="genesis-text flex w-full justify-center gap-x-[7vw] mt-[4vw] mobile:flex-col mobile:px-[4vw] mobile:gap-[7vw] mobile:py-[4vw] tablet:gap-x-[4vw] tablet:flex tablet:flex-col tablet:px-[4vw] tablet:gap-[5vw]">  
+            <div className="w-[35%] content-p leading-[1.4] mobile:w-full mobile:text-center mobile:leading-[1.2] tablet:w-full tablet:text-[2.5vw] tablet:leading-[1.3]">
+                <p data-para-anim className=" ">
                 {/* */}
                 {content.smallpara}
                 </p>
             </div>
-            <div className="w-[40%] text-[2.5vw] leading-[1.25] font-light text-[#111111] mobile:w-full mobile:text-[6.5vw] mobile:text-center tablet:w-[40%] ">
-                <p data-para-anim>
+            <div className="w-[40%] text-[2.5vw] leading-[1.25] font-light text-[#111111] mobile:w-full mobile:text-[6.5vw] mobile:text-center tablet:w-full tablet:text-[3vw] ">
+                <p data-para-anim className="">
                   {/*  */}
                   {content.bigpara}
 

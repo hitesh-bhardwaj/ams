@@ -22,8 +22,8 @@
   --p-text-color:#2A2A2A;
   --color-primary: #000;
   --button-primary: #143CA3;
-  --orb-color-1: #d467d7;
-  --orb-color-2: #669fe5;
+  --orb-color-1: #d367d7cf;
+  --orb-color-2: #669fe5c1;
   --orb-color-3: #a9c4ee;
 
   --transition-1:  all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -688,5 +688,14 @@ body{
   border-radius: 40px;
 }
   }
+
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  
+  }
+  
+}
   
   

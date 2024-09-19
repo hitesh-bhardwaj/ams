@@ -87,7 +87,7 @@ export default function  rnd () {
   <Hero line1={hero.line1} line2={hero.line2} src={hero.src} content={hero.content} className="hidden" paraWidth={"max-w-[50vw]"}/>
   <Genesis content = {content}/>
   <PortfolioSwiper slidesData={slidesData}/>
-  <Innovation/>
+  {/* <Innovation/> */}
  
   <Portfolio/>
    </main>

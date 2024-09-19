@@ -17,6 +17,11 @@ const Hero = () => {
     tl.to(".hero-img", {
       yPercent: 60,
     });
+    tl.to(".hero-needle",{
+      yPercent:30,
+      delay:-1
+    })
+
     gsap.fromTo(
       ".hero-img",
       {
@@ -45,8 +50,12 @@ const Hero = () => {
           />
         </div>
         
-        <div className="w-[100vw] h-screen absolute top-0 left-0 z-[20]">
+        <div className="w-[100vw] h-screen absolute top-0 left-0 z-[20] tablet:h-[50vh] tablet:z-0 mobile:hidden hero-needle">
             <Image src="/assets/needle/hero-needles.webp" fill className="object-cover absolute" alt="hero-needles"/>
+
+        </div>
+        <div className="w-[100vw] h-screen top-0 left-0 absolute hidden mobile:block">
+          <Image src="/assets/needle/needle-hero-bg-mobile.webp" alt="needle-hero-mobile" className="object-cover" fill/>
 
         </div>
 
@@ -55,7 +64,7 @@ const Hero = () => {
             <div className="">
               <h1
                 data-para-anim
-                className="title-1 aeonik drop-shadow-lg  leading-[1.25] mobile:hidden tablet:hidden"
+                className="title-1 aeonik drop-shadow-lg  leading-[1.25] mobile:text-center"
               >
                 <span className={`leading-[1.25] overflow-hidden text-black `}>
                 The Next Generation 
@@ -74,7 +83,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p className={` max-w-[50vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] `}>
-                <span data-para-anim className={`text-black mobile:text-center text-shadow`}>
+                <span data-para-anim className={`text-black mobile:text-center`}>
                 At Advanced Needle Technologies, our commitment to excellence begins with the finest raw materials and culminates in the creation of world-class surgical needles. Our meticulous process ensures that every needle we produce meets the highest standards of quality and performance.
                 </span>
               </p>
