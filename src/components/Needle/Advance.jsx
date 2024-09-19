@@ -80,11 +80,11 @@ export default function Advance() {
                         </div>
                     </div>
                     <div className="w-[30vw] h-[30vw] absolute top-[10%] right-[-30%] suture-right mobile:w-[60vw] mobile:h-[60vw] mobile:right-[-60%] mobile:rotate-6">
-                        <Image src="/assets/needle/suture-left.webp" className="object-contain " fill alt="suture-left"/>
+                        <Image src="/assets/needle/Suture-left.webp" className="object-contain " fill alt="suture-left"/>
 
                     </div>
                     <div className="w-[50vw] h-[50vw] absolute top-0 left-[-35%] suture-left mobile:w-[80vw] mobile:h-[80vw] mobile:left-[-50%] rotate-6">
-                        <Image src="/assets/needle/suture-right.webp" className="object-contain " fill alt="suture-right"/>
+                        <Image src="/assets/needle/Suture-right.webp" className="object-contain " fill alt="suture-right"/>
 
                     </div>
                     
