@@ -11,17 +11,17 @@ import { paraAnim } from "../gsapAnimations";
 const JobCard =({dept, designation, location})=>{
   return(
     <>   
-    <Link href={"#"} className="cursor-default w-full block">
-    <div className="pt-[5%] h-[23vw] px-[4%] w-full flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card cursor-pointer mobile:h-[90vw] mobile:rounded-[7vw] tablet:h-[50vw]">
-            <div className="content-p mobile:text-[5.7vw] tablet:text-[2.5vw]">
+    <Link href={"#"} className="cursor-default w-fit block">
+    <div className="pt-[5%] h-[28vw] px-[4%] w-[22vw] flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card cursor-pointer mobile:w-[90vw] mobile:h-[90vw] mobile:rounded-[7vw] tablet:h-[50vw] glassmorphism">
+            <div className="content-p mobile:text-[5.7vw] tablet:text-[2.5vw] mt-[2vw]">
               {dept}
             </div>
-            <div className="w-[70%]">
-              <h2 data-para-anim className="text-[2vw] aeonik leading-[1.3] font-light text-[#111111] mobile:text-[8.3vw] tablet:text-[4.5vw]">
+            <div className="w-[80%]">
+              <h2 data-para-anim className="text-[2.2vw] leading-[1.3] font-light text-[#111111] mobile:text-[8.3vw] tablet:text-[4.5vw]">
                 {designation} 
               </h2>
             </div>
-            <div className="content-p border-t-[1px] w-[24vw] h-[4vw] items-center  py-[3%] bg-white/90 flex  justify-center location rounded-b-[40px] mobile:w-[90vw] mobile:h-[16vw] mobile:rounded-b-[7vw] tablet:text-[2.5vw] tablet:w-[40.5vw] tablet:h-[7vw]">
+            <div className="content-p border-t-[1px] w-[22vw] h-[4vw] items-center  py-[3%] bg-white/90 flex  justify-center location rounded-b-[40px] mobile:w-[90vw] mobile:h-[16vw] mobile:rounded-b-[7vw] tablet:text-[2.5vw] tablet:w-[40.5vw] tablet:h-[7vw]">
              {location}
             </div>
           </div>
@@ -54,22 +54,22 @@ const Jobs = () => {
   };
   return (
     <section id="jobs">
-      <div className="container-sm mb-[10%] mobile:my-[20%] ">
+      <div className="container-sm mb-[10%] mobile:my-[20%] mobile:flex mobile:flex-col mobile:gap-[7vw] ">
         <div className=" flex items-center justify-center ">
           <h2 data-para-anim className="title-2 aeonik ">
             Featured Jobs
           </h2>
         </div>
-       <div className="mt-[10%] careerSwiper fadeUp">
+       <div className="mt-[5%] careerSwiper fadeUp">
        <Swiper
        onSwiper={(swiper) => (swiperRef.current = swiper)}
         slidesPerView={1}
-        spaceBetween={10}
+        spaceBetween={150}
         loop= {true}
-        autoplay={{
-          delay: 2000, 
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2000, 
+        //   disableOnInteraction: false,
+        // }}
         // navigation={true}
         pagination={{
           clickable: true,
@@ -130,7 +130,7 @@ const Jobs = () => {
               </div>
             </div>
             <div
-              className={`absolute z-[5] bottom-0 left-[38%] translate-x-[-38%] border border-black overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer hidden mobile:block
+              className={`absolute z-[5] bottom-0 left-[35%] translate-x-[-38%] border border-black overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer hidden mobile:block
                 ${
                   activeButton === "prev"
                     ? " text-white"

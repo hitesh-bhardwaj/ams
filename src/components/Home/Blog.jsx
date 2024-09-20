@@ -43,7 +43,7 @@ export default function Blog() {
         return (
             <>
                 <div className="flex items-start justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[100vw] tablet:h-[35vw] fadeUp ">
+                    <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
                         <Image
                             className="h-full w-full object-cover imageanim mobile:fadeUp "
                             src={img}
@@ -55,7 +55,7 @@ export default function Blog() {
                         <span className="text-[0.9vw] font-light mb-[1vw] block mobile:text-[4.2vw] mobile:mb-[5vw] tablet:text-[1.8vw]">
                             {date}
                         </span>
-                        <h5 data-para-anim className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.4vw] mobile:mb-[10vw] tablet:text-[3.5vw]">
+                        <h5 data-para-anim className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.6vw] mobile:mb-[10vw] tablet:text-[3.5vw]">
                             {title}
                         </h5>
                         <p data-para-anim className="text-[0.9vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]">
@@ -76,13 +76,13 @@ export default function Blog() {
             <section className="p-y-sm mobile:py-[15vw]" ref={blogContainer} id="blogs">
                 <div className="container-sm">
                     <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:items-center tablet:flex-col">
-                        <div className="blog-left w-[45%] space-y-[2.5vw] mobile:w-[100%] mobile:space-y-[5vw] mobile:pl-[5vw] tablet:w-full" ref={blogLeft}>
-                            <h2 data-para-anim className="title-2 aeonik ">
+                        <div className="blog-left w-[45%] space-y-[2.5vw] mobile:w-[100%] mobile:space-y-[5vw] tablet:w-full" ref={blogLeft}>
+                            <h2 data-para-anim className="title-2 aeonik mobile:text-center">
                                 <span>
                                     Latest Blogs
                                 </span>
                             </h2>
-                            <p data-para-anim className="content-p w-[78%] tablet:w-[70%] mobile:w-[90%] mobile:pb-[10vw]">
+                            <p data-para-anim className="content-p w-[78%] tablet:w-[70%] mobile:w-full mobile:px-[3vw] mobile:pb-[10vw] mobile:text-center">
                                 Unlocking Tomorrow&apos;s Healthcare: Discover Cutting-Edge Insights and Innovations in Medical Equipment Manufacturing.
                             </p>
                         </div>

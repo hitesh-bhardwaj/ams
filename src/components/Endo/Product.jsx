@@ -137,67 +137,67 @@ const Product = () => {
           },
         });
   
-        let lastClickedCard = null;
+        // let lastClickedCard = null;
   
-        const flip = (e) => {
-          const card = e.currentTarget;
-          const image = card.querySelector("img");
+        // const flip = (e) => {
+        //   const card = e.currentTarget;
+        //   const image = card.querySelector("img");
   
-          if (!image) {
-            console.error("Image not found in the clicked card");
-            return;
-          }
+        //   if (!image) {
+        //     console.error("Image not found in the clicked card");
+        //     return;
+        //   }
   
-          const state = Flip.getState(image);
+        //   const state = Flip.getState(image);
   
-          if (headerRef.current) {
-            headerRef.current.appendChild(image);
+        //   if (headerRef.current) {
+        //     headerRef.current.appendChild(image);
   
-            Flip.from(state, {
-              duration: 0.4,
-              ease: "sine.out",
-              absolute: true,
-            });
+        //     Flip.from(state, {
+        //       duration: 0.4,
+        //       ease: "sine.out",
+        //       absolute: true,
+        //     });
   
-            lastClickedCard = card;
-          } else {
-            console.error("Header element is not available");
-          }
-        };
+        //     lastClickedCard = card;
+        //   } else {
+        //     console.error("Header element is not available");
+        //   }
+        // };
   
-        const putBack = (e) => {
-          const image = headerRef.current.querySelector("img");
+        // const putBack = (e) => {
+        //   const image = headerRef.current.querySelector("img");
   
-          if (!image || !lastClickedCard) {
-            console.error("No image to return or no last clicked card");
-            return;
-          }
+        //   if (!image || !lastClickedCard) {
+        //     console.error("No image to return or no last clicked card");
+        //     return;
+        //   }
   
-          const state = Flip.getState(image);
+        //   const state = Flip.getState(image);
   
-          lastClickedCard.appendChild(image);
-          Flip.from(state, {
-            duration: 0.4,
-            ease: "sine.out",
-            absolute: true,
-          });
+        //   lastClickedCard.appendChild(image);
+        //   Flip.from(state, {
+        //     duration: 0.4,
+        //     ease: "sine.out",
+        //     absolute: true,
+        //   });
   
-          lastClickedCard = null;
-        };
+        //   lastClickedCard = null;
+        // };
   
-        cardsRef.current.forEach((card) => {
-          card.addEventListener("click", (e) => {
-            if (lastClickedCard) {
-              putBack(e);
-            }
-            flip(e);
-          });
-        });
+        // cardsRef.current.forEach((card) => {
+        //   card.addEventListener("click", (e) => {
+        //     if (lastClickedCard) {
+        //       putBack(e);
+        //     }
+        //     flip(e);
+        //   });
+        // });
   
-        headerRef.current.addEventListener("click", (e) => {
-          if (!lastClickedCard) return;
-          putBack(e);
-        });
+        // headerRef.current.addEventListener("click", (e) => {
+        //   if (!lastClickedCard) return;
+        //   putBack(e);
+        // });
   
         return () => {
           window.removeEventListener("resize", setup);
@@ -249,7 +249,7 @@ const Product = () => {
 
         {/** for mobile */}
         <div className="hidden mobile:block tablet:block">
-        <div className="w-full flex flex-col gap-[12vw] tablet:gap-[5vw]">
+        <div className="w-full flex flex-col gap-[10vw] tablet:gap-[5vw]">
         <div className='w-full flex justify-center'>
         <h2  className="title-2 aeonik text-center px-[2vw] tablet:w-[80%] mobile:w-[95%]">
           <span data-para-anim >Our Advanced Endo Surgery Product Line</span>

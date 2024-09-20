@@ -81,7 +81,7 @@ export default function  needle () {
    <Header/>
    <main>
     <Hero/>
-  <Genesis content = {content}/>
+  <Genesis content = {content} sParaWidth={"w-[60%] ml-[5%]"} bParaWidth={"w-[40%]"}/>
   <PortfolioSwiper slidesData={slidesData}/>
   <FeatureCards/>
   <Advance/>

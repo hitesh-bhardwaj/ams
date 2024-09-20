@@ -11,9 +11,10 @@ export default function Offerings() {
         const tl = gsap.timeline({
             scrollTrigger:{
                 trigger:".offerings-container",
-                start:"28% top",
+                start:"+=250 top",
                 end:"=+2000 top",
                 pin:true,
+                markers:true,
                 scrub:1,
                 
             }

@@ -43,7 +43,7 @@ function FeatureCards() {
             {cardData.map((card, index) => (
               <div
                 key={index}
-                className="w-[20vw] h-[25vw] relative border border-gray-200 rounded-[2vw] overflow-hidden glassmorphism group hover:w-[20vw] hover:h-[28vw] transition-all duration-700 origin-center fadeUp"
+                className="w-[20vw] h-[25vw] relative border border-gray-200 rounded-[2vw] overflow-hidden glassmorphism group transition-all duration-700 origin-center fadeUp"
               >
                 <div className="w-full h-full relative px-[2.5vw] py-[2vw]">
                   <h4 data-para-anim className="text-[1.8vw] aeonik font-light group-hover:hidden">{card.title}</h4>

@@ -227,8 +227,9 @@ export default function Product() {
                                 </div>
                             </SwiperSlide>
                         </Swiper>
+                    </div>
                         <div
-                className={`px-[1vw] py-[1vw] absolute z-[5] top-[50%] left-[5%] mobile:bottom-[-10%] mobile:left-[65%] translate-x-[-65%] border overflow-hidden border-black mobile:py-[5vw] mobile:px-[5vw] rounded-full next-button cursor-pointer hidden mobile:block 
+                className={`px-[2vw] py-[2vw] absolute z-[5] top-[55%] right-[-1%] mobile:bottom-[2%] mobile:top-auto mobile:right-auto mobile:left-[65%] translate-x-[-65%] border overflow-hidden border-black mobile:p-[5vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white
                 ${
                   activeButton === "next"
                     ? " text-white"
@@ -237,14 +238,14 @@ export default function Product() {
                 onClick={handleNext} // Trigger next slide
               >
                 <span
-                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  ${
+                  className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
                     activeButton === "next"
-                      ? "scale-100 opacity-100"
+                      ? "scale-100 opacity-100 "
                       : "scale-0 opacity-50"
                   } transition-all duration-300`}
                 ></span>
 
-                <div className="w-[7vw] h-[7vw] relative z-[1]">
+                <div className="w-fit h-fit relative z-[1]">
                   <svg
                     fill="currentColor"
                     height="30px"
@@ -264,7 +265,7 @@ export default function Product() {
                 </div>
               </div>
               <div
-                className={`px-[0.1vw] py-[0.1vw] top-[50%] right-[5%] absolute z-[5] mobile:bottom-[-10%] mobile:left-[35%] translate-x-[-38%] border border-black overflow-hidden  mobile:py-[5vw] mobile:px-[5vw] rounded-full prev-button cursor-pointer hidden mobile:block 
+                className={`px-[2vw] py-[2vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[2%] mobile:top-auto mobile:left-[35%] translate-x-[-38%] border border-black overflow-hidden  mobile:py-[5vw] mobile:px-[5vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
                 ${
                   activeButton === "prev"
                     ? " text-white"
@@ -273,13 +274,13 @@ export default function Product() {
                 onClick={handlePrev} // Trigger previous slide
               >
                 <span
-                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${
+                  className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
                     activeButton === "prev"
                       ? "scale-100 opacity-100"
                       : "scale-0 opacity-50"
                   } transition-all duration-300`}
                 ></span>
-                <div className="w-[7vw] h-[7vw] relative z-[2] ">
+                <div className="w-fit h-fit relative z-[2] ">
                   <svg
                     width="30"
                     height="30"
@@ -306,7 +307,6 @@ export default function Product() {
                   </svg>
                 </div>
               </div>
-                    </div>
                 </div>
             </section>
         </>

@@ -85,7 +85,7 @@ export default function ic () {
    <Header/>
    <main>
   <Hero line1={hero.line1} line2={hero.line2} src={hero.src} content={hero.content} className="hidden"/>
-  <Genesis content = {content}/>
+  <Genesis content = {content} sParaWidth={"w-[40%] ml-[6%] mobile:ml-0 tablet:ml-0"} bParaWidth={"w-[40%]"}/>
   <PortfolioSwiper slidesData={slidesData}/>
   <IcCards/>
  

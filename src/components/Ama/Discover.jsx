@@ -10,7 +10,7 @@ export default function Discover() {
         <>
             <section className="pt-[0] pb-[4%] mobile:pb-[10%] tablet:pb-[8%]" id="facility">
                 <div className="group ">
-                <div className="container-lg virtual rounded-[3vw] flex items-center justify-between px-[6%] py-[8%] bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300 mobile:flex-col-reverse mobile:rounded-[6vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw] tablet:rounded-[6vw] tablet:py-[5%]">
+                <div className="container-lg virtual rounded-[3vw] flex items-center justify-between px-[6%] py-[5%] bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300 mobile:flex-col-reverse mobile:rounded-[6vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw] tablet:rounded-[6vw] tablet:py-[5%]">
                     <div className="w-1/2 relative z-10 space-y-[3.5vw] duration-300 tablet:order-1 tablet:w-full mobile:w-[89%] mobile:text-center mobile:py-[5vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:space-y-[10vw]">
                         <h2 data-para-anim className="title-2 aeonik">
                             

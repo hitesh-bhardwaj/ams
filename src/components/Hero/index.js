@@ -33,7 +33,7 @@ const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , 
     );
   });
   return (
-    <section className=" mb-[12%] hero-container mobile:mb-[15%]" id="hero">
+    <section className=" mb-[5%] hero-container mobile:mb-[15%]" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
           <Image

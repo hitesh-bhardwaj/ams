@@ -5,10 +5,10 @@ import { imgAnim } from '../gsapAnimations'
 
 const Discover = () => {
   imgAnim()
-  return (
-   <section id='discover' className='tablet:py-[7%]'>
+  return ( 
+   <section id='discover' className='tablet:py-[7%] pb-[5%]'>
     <div className='container-lg px-[5%] flex justify-between mobile:flex-col mobile:px-[4%] border border-gray-200 glassmorphism mobile:py-[15%] rounded-[3vw] mobile:rounded-[6vw] py-[5vw]'>
-        <div className='w-[45%] flex flex-col items-start justify-center gap-[4vw] mobile:order-1 mobile:w-full mobile:items-center mobile:text-center mobile:gap-[8vw] mobile:mt-[12vw] tablet:w-[47%]'>
+        <div className='w-[45%] flex flex-col items-start justify-center gap-[4vw] mobile:order-1 mobile:w-full mobile:items-center mobile:text-center mobile:gap-[12vw] mobile:mt-[12vw] tablet:w-[47%]'>
          <h2 className="title-2 aeonik">
             <span data-para-anim  >Discover the profound impact our work is having on patients everywhere</span>
           </h2>

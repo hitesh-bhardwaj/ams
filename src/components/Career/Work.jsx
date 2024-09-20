@@ -22,7 +22,7 @@ const WorkCard = ({ no, heading, src, para, btn ,className }) => {
           <div className="w-[35vw] h-[40vh] rounded-[40px] overflow-hidden relative mobile:w-[85vw] mobile:rounded-[7vw] fadeup tablet:w-[40vw] tablet:h-[30vw]">
             <Image src={src} fill alt="Career Work" className="object-cover"/>
           </div>
-          <div className="w-[50%] text-[2.5vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111] mobile:w-full mobile:text-[9vw] mobile:text-center mobile:leading-[1.25] mobile:items-center mobile:gap-[12vw] mobile:py-[10vw] tablet:text-[3.5vw]">
+          <div className="w-[50%] text-[2.5vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111] mobile:w-full mobile:text-[9vw] mobile:text-center mobile:leading-[1.4] mobile:items-center mobile:gap-[12vw] mobile:py-[10vw] tablet:text-[3.5vw]">
             <p className="overflow-hidden" ><span className="block para-animation">{para}
               </span></p>
             <PrimaryButton link="/" btnText={btn} className={"mobile:py-[4vw] mobile:px-[7vw] tablet:py-[1.5vw] tablet:px-[3vw] fadeup"} />

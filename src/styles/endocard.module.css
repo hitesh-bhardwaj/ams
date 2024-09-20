@@ -54,3 +54,12 @@
     max-height: 350px;
     max-width: 350px;
   }
+  @media screen and (max-width:1441px) {
+    .sliderSection {
+      height: 100vh;
+      top: 140%;
+      position: absolute;
+      width: 100%;
+    }
+   
+  }

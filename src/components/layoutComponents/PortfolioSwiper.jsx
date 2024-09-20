@@ -28,7 +28,7 @@ const PortfolioCard = ({ src, heading, para }) => {
           <h2 className="text-[#ffffff] text-[2.8vw] font-light text-shadow mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
             {heading}
           </h2>
-          <p className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow mobile:text-[4.2vw] mobile:w-[70%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
+          <p className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
             {para}
           </p>
         </div>

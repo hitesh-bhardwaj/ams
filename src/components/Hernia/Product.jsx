@@ -252,7 +252,7 @@ const Product = () => {
 
         </div>
         <div className="hidden tablet:block mobile:block">
-        <div className="w-full flex flex-col gap-[12vw] tablet:gap-[7vw]">
+        <div className="w-full flex flex-col gap-[10vw] tablet:gap-[7vw]">
         <div className='w-full flex justify-center'>
         <h2  className="title-2 aeonik text-center">
           <span data-para-anim>The Foundation of Durable Repair</span>

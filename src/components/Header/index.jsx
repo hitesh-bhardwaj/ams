@@ -73,10 +73,10 @@ const Header = () => {
           isHeaderVisible ? "transform-none" : "-translate-y-full"}`}
       >
         <div className={`${hasBackground ? "bg-white/20 backdrop-blur-md overflow-hidden" : ""}`}>
-          <div className="header-container w-[92%] mx-auto py-[1.5vw] mobile:py-[5vw]">
+          <div className="header-container w-[92%] mx-auto py-[2vw] mobile:py-[5vw]">
             <div className="flex justify-between items-center">
               <div className="header-anim">
-                <Link href="/" className="relative h-fit w-[7vw] mobile:w-[25vw] tablet:w-[15vw] block">
+                <Link href="/" className="relative h-fit w-[8vw] mobile:w-[25vw] tablet:w-[15vw] block">
                   <Image src="/logo.svg" width={100} height={100} className="h-auto w-auto" alt="AMS Logo" />
                 </Link>
               </div>

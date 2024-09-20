@@ -59,9 +59,10 @@ const State = () => {
             trigger: ".manufacturing-state-container",
             pin: true,
             start: "top top",
-            end: "+=3500 bottom",
+            end: "+=5500 bottom",
             scrub: true,
           },
+          ease:"none"
         });
 
         tl.to(".feature-container2", {
@@ -81,7 +82,7 @@ const State = () => {
           })
           .to(".feature-container2", {
             scale: 0.94,
-            delay: -0.55,
+            delay: -0.4,
             opacity: 0,
           })
           .to(".feature-container4", {
@@ -91,7 +92,7 @@ const State = () => {
           })
           .to(".feature-container3", {
             scale: 0.97,
-            delay: -0.55,
+            delay: -0.5,
             opacity: 0,
           })
           .to(".feature-container5", {
@@ -101,7 +102,7 @@ const State = () => {
           })
           .to(".feature-container4", {
             scale: 0.99,
-            delay: -0.55,
+            delay: -0.4,
             opacity: 0,
           });
       });
@@ -114,9 +115,9 @@ const State = () => {
         {stateSections.map((section, index) => (
           <div
             key={section.id}
-            className={`rounded-[45px] border-[1px] border-gray-200 h-[33vw] px-[4vw] py-[3vw] flex ${section.reverse ? 'flex-row-reverse' : 'flex-row'} bg-white/50 feature-container${index + 1} tablet:flex-col tablet:h-[55vh] tablet:py-[5vw] tablet:rounded-[3vw] tablet:gap-[4vw] mobile:flex-col mobile:h-full mobile:rounded-[6vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
+            className={`rounded-[45px] border-[1px] border-gray-200 h-[33vw] px-[4vw] py-[3vw] flex justify-between ${section.reverse ? 'flex-row-reverse' : 'flex-row'} bg-white/50 feature-container${index + 1} tablet:flex-col tablet:h-[55vh] tablet:py-[5vw] tablet:rounded-[3vw] tablet:gap-[4vw] mobile:flex-col mobile:h-full mobile:rounded-[6vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
-            <div className='h-[27vw] w-[60vw] relative rounded-[50px] overflow-hidden tablet:h-[45vw] tablet:w-[85vw] tablet:rounded-[3vw] mobile:w-[85vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup'>
+            <div className='h-[27vw] w-[50vw] relative rounded-[50px] overflow-hidden tablet:h-[45vw] tablet:w-[85vw] tablet:rounded-[3vw] mobile:w-[85vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup'>
               <Image
                 src={section.imageSrc}
                 fill
@@ -125,9 +126,9 @@ const State = () => {
               />
             </div>
 
-            <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-0 mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw]`}>
-              <h2 className='text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation'>{section.title}</h2>
-              <p className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full'>
+            <div className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-0 mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] ${index%2==0?"":"ml-0"}`}>
+              <h2 className={`text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation ${index%2==0?"":"w-[90%]"}`}>{section.title}</h2>
+              <p className={`leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full ${index%2==0?"":"w-[90%]"}`}>
                 <span className='para-animation block'>{section.description}</span>
               </p>
             </div>

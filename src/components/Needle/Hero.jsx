@@ -50,7 +50,7 @@ const Hero = () => {
           />
         </div>
         
-        <div className="w-[100vw] h-screen absolute top-0 left-0 z-[20] tablet:h-[50vh] tablet:z-0 mobile:hidden hero-needle">
+        <div className="w-[100vw] h-screen absolute top-0 right-[-10%] z-[20] tablet:h-[50vh] tablet:z-0 mobile:hidden hero-needle">
             <Image src="/assets/needle/hero-needles.webp" fill className="object-cover absolute" alt="hero-needles"/>
 
         </div>

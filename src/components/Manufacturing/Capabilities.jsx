@@ -32,11 +32,11 @@ const Capabilities = () => {
       <section id='capabilities'>
         <div className='container-lg flex flex-col items-center justify-center py-[7%] mobile:py-[15%]'>
           <div>
-            <h2 data-para-anim className="title-2 aeonik mobile:mb-[10vw] ">
+            <h2 data-para-anim className="text-[6vw] mobile:text-[12vw] font-light aeonik mobile:mb-[10vw] ">
               <span>Our Capabilities</span>
             </h2>
           </div>
-          <div className='mt-[10%] flex justify-between w-full px-[5%] mobile:flex-col mobile:gap-[25vw] tablet:flex-wrap tablet:px-[2%]'>
+          <div className='mt-[5%] flex justify-between w-full px-[5%] mobile:flex-col mobile:gap-[25vw] tablet:flex-wrap tablet:px-[2%]'>
             {/* Mapping through capabilitiesData */}
             {capabilitiesData.map((capability) => (
               <div key={capability.id} className={`capability-card group fadeUp ${capability.id==3?"tablet:w-full tablet:flex tablet:justify-center tablet:my-[10vw]":""}`}>

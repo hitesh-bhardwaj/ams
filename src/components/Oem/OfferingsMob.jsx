@@ -67,6 +67,27 @@ export default function OfferingsMob() {
                 ))}
               </div>
             </div>
+              <div className="w-full h-full bg-white rounded-[6vw] pt-[12vw] pb-[20vw] flex flex-col items-center gap-[9vw] tablet:pb-[10vw] tablet:pt-[2vw] tablet:gap-[5vw] ">
+                <h3 data-para-anim className="text-[9vw] aeonik text-center font-light">Features</h3>
+                <div className="w-[90vw] h-[50vw] rounded-[6vw] relative overflow-hidden">
+                  <Image src="/assets/oem/suture-card-needle.webp" alt="suture-needle" className="object-cover" fill/>
+
+                </div>
+                <div className="w-full h-full flex flex-col gap-[2vw] px-[7vw]">
+                  <h3 data-para-anim className="text-[10vw] aeonik font-light leading-[1.25] tablet:text-[7vw]">Surgical Suture Needles</h3>
+                  <h4 data-para-anim className="text-[7vw] aeonik font-light leading-[1.25] tablet:text-[4.5vw]">The Next Generation of Needle Technology</h4>
+                  <ul  className="list-disc space-y-[0.5vw] text-[4.5vw] font-light ml-[4vw] mt-[4vw] tablet:text-[2.5vw] tablet:mt-[2vw]">
+                            <li data-para-anim>Advanced US & German Technology</li>
+                            <li data-para-anim>Cutting-Edge Robotics and Automation</li>
+                            <li data-para-anim>Robust Capacity of 60 Million Needles Annually</li>
+                            <li data-para-anim>Precision Engineering & Quality Assurance</li>
+                            <li data-para-anim>Expedited Turnaround and Delivery</li>
+                            <li data-para-anim>60,000 sq. ft. Needle Production Facility</li>
+                            <li data-para-anim>Team with Over 2-3 Decades of Expertise</li>
+                        </ul>
+                </div>
+
+              </div>
           </div>
         </div>
       </section>

@@ -40,7 +40,7 @@ const DNA = () => {
         </div>
         <div className='dna-card-container flex justify-between items-center p-[3%] gap-[1.5vw] group mobile:flex-col mobile:px-[3%] mobile:py-[0%] mobile:gap-[0.5vw] mobile:justify-center mobile:hidden tablet:hidden'>
          <CardContainer className="inter-var mobile:pb-0">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1  mobile:h-[90vw] mobile:w-[90vw]'>
+            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1  mobile:h-[90vw] mobile:w-[90vw]'>
                 <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:p-[5vw]">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image
@@ -63,7 +63,7 @@ const DNA = () => {
 
 
             <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
+            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
                 <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image
@@ -88,7 +88,7 @@ const DNA = () => {
 
 
             <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[40px] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
+            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
                 <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image

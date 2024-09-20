@@ -29,8 +29,8 @@ export default function Manufacturingmobile() {
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div className="w-full flex flex-col justify-center items-center text-center mobile:flex-col  mobile:h-auto mb-[4vw] mobile:mb-[20vw] mobile:w-[90%] mobile:my-[5vw] mobile:gap-[5vw] ">
-                <h2 data-para-anim className="title-2 aeonik text-center">
+              <div className="w-full flex flex-col justify-center items-center mobile:flex-col  mobile:h-auto mb-[4vw] mobile:mb-[20vw] mobile:w-[90%] mobile:my-[5vw] mobile:gap-[5vw] ">
+                <h2 data-para-anim className="title-2 aeonik mobile:text-center">
                   Ushering in the Next Generation of Medical Technology
                 </h2>
                 <p data-para-anim className="content-p my-[4vw] text-center">

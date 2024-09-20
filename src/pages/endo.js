@@ -84,7 +84,7 @@ export default function  endo () {
    <Header/>
    <main>
   <Hero line1={hero.line1} line2={hero.line2} src={hero.src} content={hero.content} className="hidden"/>
-  <Genesis content = {content}/>
+  <Genesis content = {content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"} bParaWidth={"w-[30%]"}/>
   <PortfolioSwiper slidesData={slidesData}/>
   <Product/>
   <Portfolio/>

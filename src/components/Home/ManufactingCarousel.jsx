@@ -218,13 +218,16 @@ const ManufacturingCarousel = () => {
                         <div className="w-1/3 pt-[8vw] flex justify-between relative fadeUp tablet:w-[80%] tablet:ml-[10%] mobile:margin-0 mobile:w-full mobile:flex-wrap">
                             <div className="relative parentEntree">
                                 <div className="entree current space-y-[2vw] mobile:space-y-[5vw]">
-                                    <h2 data-para-anim className="title-2 aeonik ">
+                                    <h2 data-para-anim className="title-2 aeonik mobile:text-center ">
                                         Ushering in the Next Generation of Medical Technology
                                     </h2>
-                                    <p data-para-anim className="content-p my-[4vw]">
+                                    <p data-para-anim className="content-p my-[4vw] mobile:text-center">
                                         AMS leverages strategic global partnerships to procure state-of-the-art manufacturing technology, ensuring uncompromising quality, innovation, and agility in our processes. Our adherence to LEAN principles and implementation of a robust quality management system guarantees compliance with the most stringent global regulatory standards.
                                     </p>
+                                    <div className="mobile:w-full mobile:flex mobile:justify-center">
+
                                     <PrimaryButton btnText={'Manufacturing'} link={'/'} />
+                                    </div>
                                 </div>
                                 <div className="entree space-y-[2vw] mobile:space-y-[5vw]">
                                     <h2 data-para-anim className="title-2 aeonik">
