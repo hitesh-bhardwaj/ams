@@ -30,6 +30,7 @@ export default function  endo () {
       const hero = {
         line1:"Breaking New Ground",
         line2:"in Endo Surgery",
+        mobileTitle:"Breaking New Ground in Endo Surgery",
         src:"/assets/endo/endo-hero.png",
         content:"At AMS, we push the boundaries of endo surgery and set new benchmarks in surgical excellence with our innovative and reliable solutions."
       }
@@ -83,7 +84,7 @@ export default function  endo () {
     <>
    <Header/>
    <main>
-  <Hero line1={hero.line1} line2={hero.line2} src={hero.src} content={hero.content} className="hidden"/>
+  <Hero line1={hero.line1} line2={hero.line2} mobileTitle={hero.mobileTitle} src={hero.src} content={hero.content} className="hidden"/>
   <Genesis content = {content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"} bParaWidth={"w-[30%]"}/>
   <PortfolioSwiper slidesData={slidesData}/>
   <Product/>

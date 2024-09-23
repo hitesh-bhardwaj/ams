@@ -13,7 +13,7 @@ export default function Footer() {
 
                 </div>
                 <div className="container-sm mobile:pt-[10vw]">
-                    <div className="grid grid-cols-12 pt-[3.5vw] pb-[1.5vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center ">
+                    <div className="grid grid-cols-12 pt-[3.5vw] pb-[1.5vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:pt-[6.5vw] tablet:pt-[5vw] ">
                         <div className="col-span-6  mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
                             <div className="mobile:flex mobile:items-center mobile:justify-center mobile:flex-col">
                                 <p className="content-p text-anim-2">
@@ -99,7 +99,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-5 col-start-9 flex justify-between mobile:flex mobile:flex-col mobile:mt-[8vw] mobile:justify-center mobile:items-center mobile:space-y-[8vw] tablet:col-start-7 tablet:row-start-1 tablet:gap-[5vw]">
+                        <div className="col-span-5 col-start-9 flex justify-between mobile:flex mobile:flex-col mobile:mt-[8vw] mobile:justify-center mobile:items-center mobile:space-y-[8vw] tablet:col-start-8 tablet:row-start-1 tablet:gap-[5vw]">
                             <div className="">
                                 <h6 className="text-head content-p-lg mb-[1vw] fadeUp  mobile:text-center mobile:text-[7vw]">
                                     <span data-para-anim className="font-light">

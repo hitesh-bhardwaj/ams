@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Portfolio from "@/components/Endo/Portfolio";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -6,7 +7,11 @@ import Hero from "@/components/Hero";
 import Genesis from "@/components/layoutComponents/Genesis";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Transition from "@/components/Transition";
-import React from "react";
+import React, { useEffect } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function hernia() {
   const content = {
@@ -21,6 +26,7 @@ export default function hernia() {
     line1: "Advanced Hernia Repair",
     line2: "Solutions for Superior Outcomes",
     src: "/assets/hernia/hernia-hero.png",
+    mobileTitle:"Advanced Hernia Repair Solutions for Superior Outcomes",
     content:
       "At AMS, we are setting new standards in hernia repair with our cutting-edge hernia solutions.",
   };
@@ -42,6 +48,33 @@ export default function hernia() {
       para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision."
     }
   ];
+  useEffect(()=>{
+    const ctx = gsap.context(() => {
+  const fadeUps = document.querySelectorAll('.fadeUp');
+    fadeUps.forEach((fadeUp) => {
+      gsap.fromTo(
+        fadeUp,
+        {
+          opacity: 0,
+          y: 40,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          delay:0.3,
+          ease: 'Power3.out',
+          scrollTrigger: {
+            trigger: fadeUp,
+            start: 'top 85%',
+          },
+        }
+      );
+    });
+  });
+  return () => ctx.revert();
+  });
+  
 
   return (
     <>
@@ -52,6 +85,7 @@ export default function hernia() {
           line2={hero.line2}
           src={hero.src}
           content={hero.content}
+          mobileTitle={hero.mobileTitle}
           className="hidden"
         />
         <Genesis content={content} sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"} bParaWidth={"w-[30%]"} />

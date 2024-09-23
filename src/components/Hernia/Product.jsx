@@ -18,7 +18,7 @@ const ProductCard=({img, heading , className, rotate})=>{
       <>
       <div className={`${rotate}`}>
       <Link href={"#"}>
-      <div className={` w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] border border-gray-200 mobile:w-[85vw] mobile:h-[100vw] mobile:ml-[7vw] tablet:w-[40vw] tablet:h-[50vw]`}>
+      <div className={` w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] border border-gray-200 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}>
             <Image
               src={img}
              fill
@@ -258,14 +258,14 @@ const Product = () => {
           <span data-para-anim>The Foundation of Durable Repair</span>
         </h2>
       </div>
-        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] fadeUp mobile:block hidden mobile:pr-[5%] tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0">
+        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] fadeUp mobile:block hidden tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0">
             <div
               
-              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:ml-[-2vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw]"
+              className=" mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:gap-[12vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw]"
             >
                {productData.map((product, i) => (
             <div
-              className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw]"
+              className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] fadeUp"
               key={i}
               
             >

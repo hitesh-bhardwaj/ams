@@ -62,7 +62,7 @@ const Portfolio = () => {
   }
   return (
     <section id="portfolio">
-      <div  className=" flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] tablet:px-0 mobile:px-0 overflow-hidden">
+      <div  className=" flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] tablet:px-[4%] mobile:px-0 overflow-hidden">
       <div>
         <h2 data-para-anim className="title-2 aeonik mobile:text-center ">
           Our Advanced Portfolio
@@ -75,7 +75,7 @@ const Portfolio = () => {
         <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"}/>
       </div>
-      <div className="w-full mobile:overflow-scroll mobile:mt-[12vw] mobile:pl-[10%] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
+      <div className="w-full mobile:overflow-scroll mobile:mt-[12vw] mobile:pl-[7%] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll mobile:fadeup tablet:hidden tablet:pr-[5%] overflow-visible tablet:mt-0 ">
             <div
               
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw]  mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "

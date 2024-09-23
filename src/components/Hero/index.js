@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , titleHidden}) => {
+const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , titleHidden , mobileTitle}) => {
   paraAnim();
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -33,7 +33,7 @@ const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , 
     );
   });
   return (
-    <section className=" mb-[5%] hero-container mobile:mb-[15%]" id="hero">
+    <section className=" mb-[5%] hero-container mobile:mb-[15%] dark" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
           <Image
@@ -47,16 +47,16 @@ const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , 
 
         <div className="px-[12%] relative mobile:px-[5%]">
           <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh]">
-            <div className="">
+            <div className="w-full">
               <h1
                 data-para-anim
                 className={`title-1 aeonik drop-shadow-lg  leading-[1] mobile:hidden tablet:hidden ${titleHidden}`}
               >
-                <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"}`}>
+                <span className={`leading-[1.3] overflow-hidden text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"}`}>
                   {line1}
                 </span>
                 <br />
-                <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"} `}>
+                <span className={`leading-[1.3] overflow-hidden text-[#FFFFFF] ${titleColor?"text-black":"text-shadow"} `}>
                   {line2}
                 </span>
               </h1>
@@ -64,11 +64,8 @@ const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , 
                 
                 className="title-1 aeonik drop-shadow-lg  leading-[1] hidden mobile:block tablet:block"
               >
-                <span data-para-anim className={`leading-[1.2] overflow-hidden text-[#FFFFFF] text-center tablet:text-start ${titleColor?"text-black":"text-shadow"} `}>
-                  {line1}
-               
-                
-                  {line2}
+                <span data-para-anim className={`leading-[1.3] overflow-hidden text-[#FFFFFF] text-center tablet:text-start ${titleColor?"text-black":"text-shadow"} `}>
+                  {mobileTitle}
                 </span>
               </h1>
               <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] ${paraWidth}`}>
@@ -78,7 +75,7 @@ const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , 
               </p>
             </div>
             <div className={`w-full fadeUp ${className} mobile:hidden`}>
-              <div className="h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2] tablet:w-[5vw] tablet:h-[5vw] tablet:top-[37%] ">
+              <div className="h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2] tablet:w-[4.5vw] tablet:h-[4.5vw] tablet:top-[37%] ">
                 <img src="/assets/career/search.png" alt="search-icon" />
               </div>
               <input
@@ -88,7 +85,7 @@ const Hero = ({ line1, line2, src, content,className , titleColor , paraWidth , 
               />
 
               <div className="relative left-[90%] bottom-[35%] tablet:bottom-[35%] tablet:left-[87%]">
-                <div className="bg-[#143CA3] w-[3vw] h-[3vw] text-[#ffffff] rounded-[50%] flex items-center justify-center p-[0.8%] cursor-pointer tablet:w-[5vw] tablet:h-[5vw] ">
+                <div className="bg-[#143CA3] w-[3vw] h-[3vw] text-[#ffffff] rounded-[50%] flex items-center justify-center p-[0.8%] cursor-pointer tablet:w-[5vw] tablet:h-[5vw] tablet:p-[1.4%] ">
                   <svg
                     viewBox="0 0 22 16"
                     fill="#ffffff"

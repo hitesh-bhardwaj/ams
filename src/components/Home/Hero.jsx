@@ -42,7 +42,7 @@ export default function Hero() {
   
     return (
         <section className="hero mb-[12%] tablet:mb-[15%] mobile:mb-[0vw] overflow-hidden" id="hero">
-          <div className="px-[12%] relative mobile:px-[5vw] mobile:w-[100vw] ">
+          <div className="px-[12%] relative mobile:px-[5vw] mobile:w-[100vw] tablet:px-[10%] ">
             <div className="flex h-dvh w-full justify-start items-center mobile:h-[90vh] tablet:h-[50vh]">
               <div className="w-[60%] mobile:w-screen mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4">
                 <h1 data-para-anim className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden  mobile:hidden">

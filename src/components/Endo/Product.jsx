@@ -17,7 +17,7 @@ const ProductCard = ({ img, heading}) => {
     <div className="group">
       <Link href={"#"}>
         <div
-          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] mobile:ml-[7vw] tablet:w-[40vw] tablet:h-[50vw]`}
+          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}
         >
           <div className="h-[22vw] w-[30vw] absolute top-[-5vw] mobile:w-[80vw] mobile:h-[80vw] tablet:top-[10%]">
             <Image fill src={img} alt={heading} className="object-contain group-hover:scale-[1.2] transition-all duration-500" />
@@ -129,11 +129,11 @@ const Product = () => {
           scrollTrigger: {
             trigger: sliderContainer.current,
             start: "top top",
-            end: "bottom -=500",
+            end: "bottom top",
             pin: true,
-            scrub: 1,
+            scrub: 0.5,
             invalidateOnRefresh: true,
-            markers: false,
+            markers: true,
           },
         });
   
@@ -255,14 +255,14 @@ const Product = () => {
           <span data-para-anim >Our Advanced Endo Surgery Product Line</span>
         </h2>
       </div>
-        <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
+        <div className="w-full mobile:mt-[5vw] mobile:fadeup mobile:block hidden fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
             <div
               
-              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:ml-[-2vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
+              className=" mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:gap-[12vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
             >
                {productData.map((product, i) => (
             <div
-              className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw]"
+              className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] fadeUp"
               key={i}
               
             >
@@ -279,7 +279,7 @@ const Product = () => {
             </div>
           </div>
           <div className='w-full product-base-text flex justify-center'>
-        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center tablet:text-[3vw] mobile:mt-[-5vw]'>ADVASTAP Series</p>
+        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center tablet:text-[3vw]'>ADVASTAP Series</p>
       </div>
 
         </div>

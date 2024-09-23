@@ -17,6 +17,7 @@ export default function career() {
   const hero = {
     line1: "Join Our Mission to Create a ",
     line2: "Healthier World",
+    mobileTitle:"Join Our Mission to Create a Healthier World",
     src: "/assets/career/career-bg.png",
     content:
       "Be a part of a team making a meaningful difference in healthcare.",
@@ -56,6 +57,7 @@ export default function career() {
           line1={hero.line1}
           line2={hero.line2}
           src={hero.src}
+          mobileTitle={hero.mobileTitle}
           content={hero.content}
           className="block"
           titleColor = "text-black"

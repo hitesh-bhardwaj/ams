@@ -29,7 +29,7 @@ export default function  ama () {
       }
       const hero = {
         line1:"Advanced MedTech Academy (AMA)",
-        
+        mobileTitle:"Advanced MedTech Academy (AMA)",
         src:"/assets/ama/ama-hero-bg.webp",
         content:"At Advanced MedTech Academy, our commitment is to foster continuous learning and development for healthcare professionals who are at the forefront of patient care. Leveraging the broad expertise, resources, and dedication of the AMS family, we strive to enhance the skills and knowledge of those devoted to improving lives."
       }
@@ -83,7 +83,7 @@ export default function  ama () {
     <>
    <Header/>
    <main>
-  <Hero line1={hero.line1} src={hero.src} content={hero.content} className="hidden" paraWidth={"max-w-[90vw]"}/>
+  <Hero line1={hero.line1} src={hero.src} mobileTitle={hero.mobileTitle} content={hero.content} className="hidden" paraWidth={"max-w-[90vw]"}/>
   <Genesis content = {content}/>
   <PortfolioSwiper slidesData={slidesData}/>
   <CardsCarousel/>

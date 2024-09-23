@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 // Import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function IcCards() {
   const [activeIndex, setActiveIndex] = useState(1); // Default active slide index
@@ -66,10 +67,10 @@ export default function IcCards() {
           <div className="w-full flex flex-col gap-[8vw] tablet:gap-[5vw]">
           <h2 data-para-anim className='aeonik title-2 text-center'>Our Featured Programs</h2>
             
-            <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
+            <div className="w-full  mobile:mt-[5vw] mobile:fadeup mobile:block hidden fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
               
-              <div className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit ">
-                <div className="w-[80vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden ml-[7vw]">
+              <div className=" mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:gap-[10vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit ">
+                <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden">
                 
                   <div
                     className={`relative w-full h-full
@@ -88,8 +89,8 @@ export default function IcCards() {
                     </div>
                   </div>
                
-                </div>
-                <div className="w-[80vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden">
+                </Link>
+                <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden">
                 
                 <div
                   className={`relative w-full h-full
@@ -108,12 +109,12 @@ export default function IcCards() {
                   </div>
                 </div>
              
-              </div>
-              <div className="w-[80vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden">
+              </Link>
+              <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden">
                 
                 <div
                   className={`relative w-full h-full
-                  transition-all duration-500 overflow-hidden flex flex-col px-[3vw] py-[4vw] rounded-[6vw] items-center justify-between border border-gray-200 glassmorphism tablet:rounded-[4vw]`}
+                  transition-all duration-500 overflow-hidden flex flex-col px-[5vw] py-[5vw] rounded-[6vw] items-center justify-between border border-gray-200 glassmorphism tablet:rounded-[4vw]`}
                 >
                   <h4 className={`aeonik font-light text-[8vw] text-center relative z-[7] leading-[1.25] tablet:text-[4.5vw] `}>
                   Coronary Accessories
@@ -128,7 +129,7 @@ export default function IcCards() {
                   </div>
                 </div>
              
-              </div>
+              </Link>
                 
                
               </div>

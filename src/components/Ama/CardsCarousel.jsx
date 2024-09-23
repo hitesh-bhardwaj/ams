@@ -86,7 +86,7 @@ export default function CardsCarousel() {
               <div className="mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:ml-[5vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[3vw] tablet:h-fit tablet:ml-[5vw]">
                 {cards.map((card, index) => (
                   
-                   <div className="w-full h-full flex flex-col gap-[3vw] mobile:gap-[7vw]" key={index}>
+                   <div className="w-full h-full flex flex-col gap-[3vw] mobile:gap-[5vw]" key={index}>
                   <div
                     
                     className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative rounded-[6vw] tablet:rounded-[3vw] overflow-hidden"
@@ -101,7 +101,7 @@ export default function CardsCarousel() {
                   <div className="w-full product-base-text flex justify-center">
               <p
                 data-para-anim
-                className="aeonik font-light tracking-widest text-[6vw] text-center tablet:text-[2.5vw]"
+                className="aeonik font-light tracking-widest text-[5vw] text-center tablet:text-[2.5vw]"
               >
                 Nurturing Nursing Skills
               </p>

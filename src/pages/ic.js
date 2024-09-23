@@ -30,6 +30,7 @@ export default function ic () {
       const hero = {
         line1:"Advancing the science of ",
         line2:"flow restoration",
+        mobileTitle:"Advancing the science of flow restoration",
         
         src:"/assets/ic/ic-hero-bg.webp",
         content:"Advanced MedTech Solutions (AMS) is at the forefront of innovation in Interventional Cardiology. Our mission is to provide meaningful solutions through continuous research and development, ultimately delivering better care and significantly impacting patients' lives."
@@ -84,7 +85,7 @@ export default function ic () {
     <>
    <Header/>
    <main>
-  <Hero line1={hero.line1} line2={hero.line2} src={hero.src} content={hero.content} className="hidden"/>
+  <Hero line1={hero.line1} line2={hero.line2} mobileTitle={hero.mobileTitle} src={hero.src} content={hero.content} className="hidden"/>
   <Genesis content = {content} sParaWidth={"w-[40%] ml-[6%] mobile:ml-0 tablet:ml-0"} bParaWidth={"w-[40%]"}/>
   <PortfolioSwiper slidesData={slidesData}/>
   <IcCards/>

@@ -14,7 +14,7 @@ export default function Offerings() {
                 start:"+=250 top",
                 end:"=+2000 top",
                 pin:true,
-                markers:true,
+                // markers:true,
                 scrub:1,
                 
             }

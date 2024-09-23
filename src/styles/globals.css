@@ -252,6 +252,9 @@ body{
 /* Index Page CSS Start */
 
 /* Hero Section - 1920px */
+.homeCarousel{
+  width: 80vw !important;
+}
 .product-bg{
   background-image: url('/assets/home/product-bg.png');
   background-repeat: no-repeat;
@@ -264,7 +267,7 @@ body{
   height: 44vw;
   width: auto;
   padding: 1%;
-  margin: 4% 6%;
+  margin: 2% 2%;
   text-align: left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -387,7 +390,7 @@ body{
   transition: transform 1.2s cubic-bezier(.19,1,.22,1);
 }
 .glassmorphism {
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(30px);
   background: rgba(255, 255, 255, 0.45);
 }
 
@@ -504,7 +507,8 @@ body{
 
 ::-webkit-scrollbar-thumb {
     display: none; 
-}
+} 
+
     .title-1{
       font-size: 7vw;
       font-weight: 300;
@@ -655,16 +659,19 @@ body{
 }
 
 /* hero carousel */
+.homeCarousel{
+  width: 80vw !important;
+}
 
 .product-card{
-  background-image: url('/assets/products/product-frame.svg');
+  /* background-image: url('/assets/products/product-frame.svg'); */
   height: 40vh;
-  width: 80vw;
+  width: 75vw;
   padding: 1%;
-  margin-right: 5%;
+  
   /* margin: 4% 6%; */
   text-align: left;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: contain;
   background-position: center center;
 }

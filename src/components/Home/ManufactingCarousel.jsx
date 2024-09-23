@@ -10,6 +10,7 @@ import {
     splitLines,
 } from "./utils";
 import PrimaryButton from "../Button/PrimaryButton";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -17,6 +18,11 @@ const ManufacturingCarousel = () => {
     const carouselRef = useRef(null);
 
     // if (globalThis.innerWidth >= 540) {
+    if(globalThis.innerWidth<=541){
+
+    }
+    else{
+        
         useGSAP(() => {
             const carousel = carouselRef.current;
             let nbCartes = carousel.querySelectorAll('.leCarou .innerImg').length;
@@ -207,17 +213,18 @@ const ManufacturingCarousel = () => {
             });
 
         }, [carouselRef]);
+    }
     // }
 
     return (
         <>
             <section ref={carouselRef} className="parentCarou mb-[12%] w-full overflow-hidden" id="manufacturing">
-                <div className="pushCarousel pl-[6%] tablet:pt-[10%] tablet:pl-0 mobile:pl-0 mobile:pt-[15%] mobile:w-[90%] mobile:mx-auto overflow-hidden">
+                <div className="pushCarousel pl-[6%] tablet:pt-[10%] tablet:pl-0 mobile:pl-0 mobile:pt-[15%] mobile:w-[90%] mobile:mx-auto overflow-hidden mobile:hidden">
                     <div className="flex tablet:flex-col-reverse justify-between innerCarou mobile:flex-col-reverse">
 
                         <div className="w-1/3 pt-[8vw] flex justify-between relative fadeUp tablet:w-[80%] tablet:ml-[10%] mobile:margin-0 mobile:w-full mobile:flex-wrap">
                             <div className="relative parentEntree">
-                                <div className="entree current space-y-[2vw] mobile:space-y-[5vw]">
+                                <div className="entree current space-y-[2vw] mobile:space-y-[5vw] tablet:space-y-[3vw]">
                                     <h2 data-para-anim className="title-2 aeonik mobile:text-center ">
                                         Ushering in the Next Generation of Medical Technology
                                     </h2>
@@ -229,7 +236,7 @@ const ManufacturingCarousel = () => {
                                     <PrimaryButton btnText={'Manufacturing'} link={'/'} />
                                     </div>
                                 </div>
-                                <div className="entree space-y-[2vw] mobile:space-y-[5vw]">
+                                <div className="entree space-y-[2vw] mobile:space-y-[5vw] tablet:space-y-[3vw]">
                                     <h2 data-para-anim className="title-2 aeonik">
                                         Building World Class Capability
                                     </h2>
@@ -238,7 +245,7 @@ const ManufacturingCarousel = () => {
                                     </p>
                                     <PrimaryButton btnText={'Manufacturing'} link={'/'} />
                                 </div>
-                                <div className="entree space-y-[2vw] mobile:space-y-[5vw]">
+                                <div className="entree space-y-[2vw] mobile:space-y-[5vw] tablet:space-y-[3vw]">
                                     <h2 data-para-anim className="title-2 aeonik">
                                         Robust Manufacturing Processes
                                     </h2>
@@ -253,7 +260,7 @@ const ManufacturingCarousel = () => {
                         <div className="imgs w-[60%] h-full relative fadeUp tablet:w-[80%] tablet:ml-[10%] tablet:h-[45vh] mobile:w-full overflow-hidden">
                             <div className="leCarou">
                                 <div className="innerImg">
-                                    <div className="img">
+                                    <div className="img tablet:w-[90vw]">
                                         <video
                                             autoPlay
                                             muted
@@ -290,6 +297,77 @@ const ManufacturingCarousel = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="hidden mobile:block w-full px-[5vw] pb-[10vw]">
+                    <div className="w-full flex flex-col gap-[20vw]">
+                        <div className="w-full flex flex-col gap-[10vw] items-center">
+                            <div className="w-[85vw] h-[120vw] rounded-[3vw] overflow-hidden">
+                            <video
+                                            autoPlay
+                                            muted
+                                            loop
+                                            playsInline
+                                            poster="/assets/home/ams-manufactuing-facility-poster.webp"
+                                            className="object-cover h-full w-full imgMove"
+                                            src="/assets/home/ams-manufacturing-video.mp4"
+                                            alt="Service Image"
+                                            loading="lazy"
+                                        />
+                            </div>
+                            <h2 data-para-anim className="title-2 aeonik font-light text-center">Ushering in the Next Generation of Medical Technology
+ 
+                            </h2>
+                            <p data-para-anim className="content-p text-center">
+                            AMS leverages strategic global partnerships to procure state-of-the-art manufacturing technology, ensuring uncompromising quality, innovation, and agility in our processes. Our adherence to LEAN principles and implementation of a robust quality management system guarantees compliance with the most stringent global regulatory standards.
+                            </p>
+                            <PrimaryButton btnText={"Manufacturing"} link={"#"} className={"fadeUp"}/>
+                            
+                        </div>
+                        <div className="w-full flex flex-col gap-[7vw] items-center">
+                            <div className="w-[85vw] h-[120vw] rounded-[3vw] overflow-hidden relative">
+                            <Image
+                                            
+                                           
+                                            className="object-cover h-full w-full"
+                                            src="/assets/home/manufacturing-2.webp"
+                                            alt="manufacturing-image-2"
+                                            fill
+
+                                        />
+                            </div>
+                            <h2 data-para-anim className="title-2 aeonik font-light text-center">Building World Class Capability
+ 
+                            </h2>
+                            <p data-para-anim className="content-p text-center">
+                            Designed by renowned Spanish architect Ricardo Bofill, the AMS facility meets the Gold standard on Green building principles for sustainability and conforms to ISO 14001 safety and environmental specifications. Approx. 150,000 sq. ft. completed in Phase I and 180,000 sq.ft expansion in phase II.
+                            </p>
+                            <PrimaryButton btnText={"Manufacturing"} link={"#"} className={"fadeUp"}/>
+                            
+                        </div>
+                        <div className="w-full flex flex-col gap-[7vw] items-center">
+                            <div className="w-[85vw] h-[120vw] rounded-[3vw] overflow-hidden relative">
+                            <Image
+                                            
+                                           
+                                            className="object-cover h-full w-full"
+                                            src="/assets/home/manufacturing-3.webp"
+                                            alt="manufacturing-image-3"
+                                            fill
+
+                                        />
+                            </div>
+                            <h2 data-para-anim className="title-2 aeonik font-light text-center">Robust Manufacturing Processes
+ 
+                            </h2>
+                            <p data-para-anim className="content-p text-center">
+                            The AMS plant design is based on LEAN concepts, Schedule M compliance, and Class C clean room principles. The Testing and Microbiological Laboratories are outfitted with best-in-class equipment. All under the supervision of experienced Manufacturing and Quality teams.
+                            </p>
+                            <PrimaryButton btnText={"Manufacturing"} link={"#"} className={"fadeUp"}/>
+                            
+                        </div>
+
+                    </div>
+
                 </div>
             </section>
         </>
