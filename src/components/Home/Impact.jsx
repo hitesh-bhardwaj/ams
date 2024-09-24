@@ -18,7 +18,7 @@ export default function Impact() {
                         const video = videoRef.current;
                         if (video && !videoLoaded) {
                             // Set video source dynamically when it enters the viewport
-                            video.src = "/assets/home/impact-video.mp4";
+                            video.src = "/assets/home/impact.mp4";
                             video.load(); // Ensure the video is loaded
                             video.play(); // Play the video when it's visible
                             setVideoLoaded(true); // Set video as loaded
