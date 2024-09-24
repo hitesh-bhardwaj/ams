@@ -27,7 +27,7 @@ const ManufacturingCarousel = () => {
                         const video = manufacturingVideoRef.current;
                         if (video && !videoLoaded) {
                             // Set video source dynamically when it enters the viewport
-                            video.src = "/assets/home/ams-manufacturing.mp4";
+                            video.src = "/assets/home/ams-manufacturing-video.mp4";
                             video.load(); // Ensure the video is loaded
                             video.play(); // Play the video when it's visible
                             setVideoLoaded(true); // Set video as loaded
@@ -300,7 +300,7 @@ const ManufacturingCarousel = () => {
                                             playsInline
                                             poster="/assets/home/ams-manufactuing-facility-poster.webp"
                                             className="object-cover h-full w-full imgMove"
-                                            src="/assets/home/ams-manufacturing.mp4"
+                                            src="/assets/home/ams-manufacturing-video.mp4"
                                             alt="Service Image"
                                             loading="lazy"
                                             ref={manufacturingVideoRef}
@@ -342,7 +342,7 @@ const ManufacturingCarousel = () => {
                                             playsInline
                                             poster="/assets/home/ams-manufactuing-facility-poster.webp"
                                             className="object-cover h-full w-full imgMove"
-                                            src="/assets/home/ams-manufacturing.mp4"
+                                            src="/assets/home/ams-manufacturing-video.mp4"
                                             alt="Service Image"
                                             loading="lazy"
                                         />

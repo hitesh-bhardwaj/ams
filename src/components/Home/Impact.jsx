@@ -18,7 +18,7 @@ export default function Impact() {
                         const video = videoRef.current;
                         if (video && !videoLoaded) {
                             // Set video source dynamically when it enters the viewport
-                            video.src = "/assets/home/impact.mp4";
+                            video.src = "/assets/home/impact-video.mp4";
                             video.load(); // Ensure the video is loaded
                             video.play(); // Play the video when it's visible
                             setVideoLoaded(true); // Set video as loaded
@@ -68,7 +68,7 @@ export default function Impact() {
                         loop
                         className="h-full w-full object-cover left-0 top-0 absolute imageAnim"
                         poster="/assets/home/impact-video-poster.webp" // Use poster image
-                        src="/assets/home/impact.mp4" // Set the video source
+                        src="/assets/home/impact-video.mp4" // Set the video source
                     >
                     </video>
 
