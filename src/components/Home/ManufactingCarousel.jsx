@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -16,6 +16,38 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const ManufacturingCarousel = () => {
     const carouselRef = useRef(null);
+    const manufacturingVideoRef = useRef(null);
+    const [videoLoaded, setVideoLoaded] = useState(false); // Track if the video has been loaded
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const video = manufacturingVideoRef.current;
+                        if (video && !videoLoaded) {
+                            // Set video source dynamically when it enters the viewport
+                            video.src = "/assets/home/ams-manufacturing-video.mp4";
+                            video.load(); // Ensure the video is loaded
+                            video.play(); // Play the video when it's visible
+                            setVideoLoaded(true); // Set video as loaded
+                        }
+                        observer.unobserve(entry.target); // Stop observing once the video has loaded
+                    }
+                });
+            },
+            { threshold: 0.5 } // Trigger when 50% of the video is visible
+        );
+
+        const videoElement = manufacturingVideoRef.current;
+        if (videoElement) {
+            observer.observe(videoElement);
+        }
+
+        return () => {
+            if (videoElement) observer.unobserve(videoElement);
+        };
+    }, [videoLoaded]);
 
     // if (globalThis.innerWidth >= 540) {
     if(globalThis.innerWidth<=541){
@@ -271,6 +303,7 @@ const ManufacturingCarousel = () => {
                                             src="/assets/home/ams-manufacturing-video.mp4"
                                             alt="Service Image"
                                             loading="lazy"
+                                            ref={manufacturingVideoRef}
                                         />
                                     </div>
                                 </div>

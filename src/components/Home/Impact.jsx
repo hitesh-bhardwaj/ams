@@ -17,9 +17,13 @@ export default function Impact() {
                     if (entry.isIntersecting) {
                         const video = videoRef.current;
                         if (video && !videoLoaded) {
-                            video.play(); // Play the video when it enters the viewport
-                            setVideoLoaded(true); // Mark the video as loaded
+                            // Set video source dynamically when it enters the viewport
+                            video.src = "/assets/home/impact-video.mp4";
+                            video.load(); // Ensure the video is loaded
+                            video.play(); // Play the video when it's visible
+                            setVideoLoaded(true); // Set video as loaded
                         }
+                        observer.unobserve(entry.target); // Stop observing once the video has loaded
                     }
                 });
             },

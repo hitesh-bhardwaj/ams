@@ -23,10 +23,8 @@ export default function hernia() {
     src: "/assets/hernia/hernia-redefine.png",
   };
   const hero = {
-    line1: "Advanced Hernia Repair",
-    line2: "Solutions for Superior Outcomes",
-    src: "/assets/hernia/hernia-hero.png",
-    mobileTitle:"Advanced Hernia Repair Solutions for Superior Outcomes",
+   title:"Advanced Hernia Repair Solutions for Superior Outcomes",
+   src:"/assets/hernia/hernia-hero.webp",
     content:
       "At AMS, we are setting new standards in hernia repair with our cutting-edge hernia solutions.",
   };
@@ -81,11 +79,10 @@ export default function hernia() {
       <Header />
       <main>
         <Hero
-          line1={hero.line1}
-          line2={hero.line2}
+         title={hero.title}
           src={hero.src}
           content={hero.content}
-          mobileTitle={hero.mobileTitle}
+          
           className="hidden"
         />
         <Genesis content={content} sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"} bParaWidth={"w-[30%]"} />

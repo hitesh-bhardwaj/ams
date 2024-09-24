@@ -16,12 +16,12 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const MolecularCard = ({ symbol, title, description }) => (
   <div className="molecular-card w-[35vw] h-[25vw] px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[7vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
     <div className="w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw] tablet:w-[10vw] tablet:h-[10vw]">
-      <p data-para-anim className="text-[3.5vw] mobile:text-[12.2vw] tablet:text-[5vw]">
+      <p data-para-anim className="text-[3.3vw] mobile:text-[12.2vw] tablet:text-[5vw]">
         {symbol}
       </p>
       <p
         data-para-anim
-        className="text-[0.75vw] mt-[-1vw] mobile:text-[2.5vw] tablet:text-[1.2vw] mobile:mt-[-3vw] text-center"
+        className="text-[0.6vw] mt-[-1vw] mobile:text-[2.5vw] tablet:text-[1.2vw] mobile:mt-[-3vw] text-center"
       >
         {title}
       </p>

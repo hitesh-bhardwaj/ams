@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { useRef, useState } from "react";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Product() {
@@ -97,7 +98,7 @@ export default function Product() {
               className="homeCarousel"
             >
               <SwiperSlide>
-                <div className="product-card relative h-full">
+                <CardContainer className="product-card relative h-full">
                   <Image
                     src={"/assets/products/product-frame.png"}
                     fill
@@ -110,12 +111,12 @@ export default function Product() {
                     className="object-fill hidden mobile:block"
                     alt="product-frame"
                   />
-                  <div className="main relative">
-                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%] ">
+                  <CardBody className="main relative">
+                    <CardItem className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%] ">
                       <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0 tablet:text-[1.8vw] tablet:pt-0">
                         01
                       </span>
-                    </div>
+                    </CardItem>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
                       <div className="w-2/3 mobile:w-[70%]">
                         <Image
@@ -150,11 +151,11 @@ export default function Product() {
                         <LinkButton btnText={"Know More"} link={"/"} />
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </CardBody>
+                </CardContainer>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="product-card relative">
+                <CardContainer className="product-card relative">
                   <Image
                     src={"/assets/products/product-frame.png"}
                     fill
@@ -210,10 +211,10 @@ export default function Product() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </CardContainer>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="product-card relative">
+                <CardContainer className="product-card relative">
                   <Image
                     src={"/assets/products/product-frame.png"}
                     fill
@@ -264,10 +265,10 @@ export default function Product() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </CardContainer>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="product-card relative">
+                <CardContainer className="product-card relative">
                   <Image
                     src={"/assets/products/product-frame.png"}
                     fill
@@ -319,7 +320,7 @@ export default function Product() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </CardContainer>
               </SwiperSlide>
             </Swiper>
           </div>

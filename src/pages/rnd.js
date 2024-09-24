@@ -28,9 +28,7 @@ export default function  rnd () {
       
       }
       const hero = {
-        line1:"Pioneering Innovation in ",
-        line2:"Medical Research & Development",
-        mobileTitle:"Pioneering Innovation in Medical Research & Development",
+        title:"Pioneering Innovation in Medical Research & Development",
         src:"/assets/rnd/RND-hero-bg.webp",
         content:"At AMS, we’re setting new standards in medical research and development. Our advanced R&D facility, located in the heart of a thriving innovation hub, is where cutting-edge technology and groundbreaking research come together to address the most pressing health challenges of our time."
       }
@@ -84,7 +82,7 @@ export default function  rnd () {
     <>
    <Header/>
    <main>
-  <Hero line1={hero.line1} line2={hero.line2} mobileTitle={hero.mobileTitle} src={hero.src} content={hero.content} className="hidden" paraWidth={"max-w-[50vw]"}/>
+  <Hero title={hero.title} src={hero.src} content={hero.content} className="hidden" paraWidth={"max-w-[50vw]"}/>
   <Genesis content = {content}/>
   <PortfolioSwiper slidesData={slidesData}/>
   {/* <Innovation/> */}

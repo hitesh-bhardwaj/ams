@@ -133,73 +133,10 @@ const Product = () => {
             pin: true,
             scrub: 0.5,
             invalidateOnRefresh: true,
-            markers: true,
+          
           },
         });
-  
-        // let lastClickedCard = null;
-  
-        // const flip = (e) => {
-        //   const card = e.currentTarget;
-        //   const image = card.querySelector("img");
-  
-        //   if (!image) {
-        //     console.error("Image not found in the clicked card");
-        //     return;
-        //   }
-  
-        //   const state = Flip.getState(image);
-  
-        //   if (headerRef.current) {
-        //     headerRef.current.appendChild(image);
-  
-        //     Flip.from(state, {
-        //       duration: 0.4,
-        //       ease: "sine.out",
-        //       absolute: true,
-        //     });
-  
-        //     lastClickedCard = card;
-        //   } else {
-        //     console.error("Header element is not available");
-        //   }
-        // };
-  
-        // const putBack = (e) => {
-        //   const image = headerRef.current.querySelector("img");
-  
-        //   if (!image || !lastClickedCard) {
-        //     console.error("No image to return or no last clicked card");
-        //     return;
-        //   }
-  
-        //   const state = Flip.getState(image);
-  
-        //   lastClickedCard.appendChild(image);
-        //   Flip.from(state, {
-        //     duration: 0.4,
-        //     ease: "sine.out",
-        //     absolute: true,
-        //   });
-  
-        //   lastClickedCard = null;
-        // };
-  
-        // cardsRef.current.forEach((card) => {
-        //   card.addEventListener("click", (e) => {
-        //     if (lastClickedCard) {
-        //       putBack(e);
-        //     }
-        //     flip(e);
-        //   });
-        // });
-  
-        // headerRef.current.addEventListener("click", (e) => {
-        //   if (!lastClickedCard) return;
-        //   putBack(e);
-        // });
-  
-        return () => {
+       return () => {
           window.removeEventListener("resize", setup);
         };
       }, sliderContainer);

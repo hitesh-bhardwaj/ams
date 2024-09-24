@@ -10,19 +10,12 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Career/Hero";
+
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function career() {
-  const hero = {
-    line1: "Join Our Mission to Create a ",
-    line2: "Healthier World",
-    mobileTitle:"Join Our Mission to Create a Healthier World",
-    src: "/assets/career/career-bg.png",
-    content:
-      "Be a part of a team making a meaningful difference in healthcare.",
-  };
-
+  
   useEffect(() => {
     const ctx = gsap.context(() => {
       const fadeUps = document.querySelectorAll(".fadeUp");
@@ -53,15 +46,7 @@ export default function career() {
     <>
       <Header />
       <main>
-        <Hero
-          line1={hero.line1}
-          line2={hero.line2}
-          src={hero.src}
-          mobileTitle={hero.mobileTitle}
-          content={hero.content}
-          className="block"
-          titleColor = "text-black"
-        />
+        <Hero/>
         <Work />
         <Jobs />
         <Discover />

@@ -24,9 +24,7 @@ export default function manufacturing() {
     src: "/assets/manufacturing/manufacturing.png",
   };
   const hero = {
-    line1:"Commitment To",
-    line2:"Global Standards",
-    mobileTitle:"Commitment To Global Standards",
+   title:"Commitment To Global Standards",
     src:"/assets/manufacturing/manufacturing-hero.png",
     content:"The eco-friendly AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications."
   }
@@ -62,7 +60,7 @@ export default function manufacturing() {
     <>
       <Header />
       <main>
-        <Hero line1={hero.line1} line2={hero.line2} mobileTitle={hero.mobileTitle} src={hero.src} content={hero.content} className="hidden"/>
+        <Hero title={hero.title} src={hero.src} content={hero.content} className="hidden"/>
         <Genesis content={content} />
         <Capabilities />
         <State />

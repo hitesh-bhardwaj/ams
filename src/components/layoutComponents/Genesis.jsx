@@ -25,7 +25,7 @@ const Genesis = ({content,sParaWidth , bParaWidth}) => {
   return (
     <section className="genesis relative mobile:h-full overflow-hidden " id="genesis">
       <div className="container-lg  ml-auto mr-auto flex items-center justify-center flex-col pt-[5%] pb-[10%] mobile:py-[20%] mobile:h-full">
-        <div className="genesis-card w-[80%] border-[1px] border-[#DADADA] z-[1] bg-white  rounded-[50px] px-[1%] py-[5%] glassmorphism mobile:py-[15%] mobile:w-[95%]">
+        <div className="genesis-card w-[80%] border-[1px] border-[#DADADA] z-[1] bg-white  rounded-[50px] px-[1%] py-[5%] glassmorphism mobile:py-[15%] mobile:w-full">
           <h2 className="title-2 aeonik  ml-[5.5%] mobile:text-center mobile:ml-0 mobile:px-[5vw] tablet:ml-[6%] ">
             <span  data-para-anim >{content.heading}</span>
           </h2>

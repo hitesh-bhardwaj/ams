@@ -109,7 +109,7 @@ export default function Pixifinal() {
                     transparent: true
                 });
 
-                app.stage.filters = [new KawaseBlurFilter(30, 30)];
+                app.stage.filters = [new KawaseBlurFilter(40, 40)];
 
                 const orbs = [];
 

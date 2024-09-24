@@ -133,9 +133,9 @@ const Product = () => {
           scrollTrigger: {
             trigger: sliderContainer.current,
             start: "top top",
-            end: "bottom -=100",
+            end: "bottom top",
             pin: true,
-            scrub: 1,
+            scrub: 0.2,
             invalidateOnRefresh: true,
             markers: false,
           },

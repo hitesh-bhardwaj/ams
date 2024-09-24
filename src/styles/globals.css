@@ -166,12 +166,12 @@ body{
   
 }
 
-.main-gradient {
+/* .main-gradient {
   background: linear-gradient(120.7deg, #e194d3 0%, #ad84f0 50%, #a8b1f8 100%);
   background-size: 300% 300%;
   opacity: 0.8;
   animation: gradient 10s ease infinite;
-}
+} */
 
 @-webkit-keyframes gradient {
   0% { background-position: 0% 50%; }

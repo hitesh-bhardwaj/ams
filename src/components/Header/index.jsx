@@ -98,10 +98,12 @@ const Header = () => {
                   <Image src="/logo.svg" width={100} height={100} className={`h-auto w-auto ${isInverted?"hidden":"block"} cursor-pointer`} alt="AMS Logo" />
                 </Link>
                 <Link href="/" className="w-full h-full block   "/>
+                <Link href={"/"}>
                 <div className="absolute top-[50%] translate-y-[-50%] left-[4%] translate-x-[-4%] h-[4vw] w-[8vw] mobile:w-[25vw] mobile:h-[20vw] mobile:left-[5%] tablet:w-[15vw] cursor-pointer">
 
                 <Image src="/assets/header/ams-logo-white.webp" className={`object-contain h-full w-full ${isInverted?"block":"hidden"}`} alt="ams-logo-white" fill/>
                 </div>
+                </Link>
               </div>
               <div className="flex justify-center w-fit items-center gap-8">
                 <button className="w-[1.5vw] header-anim mobile:hidden">
