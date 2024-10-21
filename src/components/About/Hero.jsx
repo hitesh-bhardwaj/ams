@@ -7,8 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
 
-
-
   paraAnim()
   return (
    <>

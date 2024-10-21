@@ -1,0 +1,94 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import Image from "next/image";
+import Link from "next/link";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { paraAnim, fadeUp } from "../gsapAnimations";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+const UncoverCard = ({ img, txt, className }) => {
+  return (
+    <>
+      <Link href={"#"}>
+        <div
+          className={`w-[20.5vw] h-[11.5vw] relative flex justify-between items-center cursor-pointer rounded-[40px] overflow-hidden border uncover-card glassmorphism mobile:w-[73vw] mobile:h-[80vw] mobile:flex-col-reverse mobile:justify-center mobile:py-[10%]`}
+        >
+          <div className="flex flex-col justify-start items-start text-left w-full h-full pl-[2vw] pt-[2vw] mobile:items-center mobile:justify-center mobile:py-[4vw]">
+            <p
+              data-para-anim
+              className="font-light text-[1.1vw] uppercase whitespace-nowrap mobile:text-[7vw]"
+            >
+              {txt}
+            </p>
+          </div>
+          <div className="h-[6vw] w-[24vw] mobile:w-[55vw] mobile:h-[45vw]">
+            <div className="w-full h-full relative ">
+              <Image src={img} fill alt="uncover" className="object-contain" />
+            </div>
+          </div>
+        </div>
+      </Link>
+    </>
+  );
+};
+
+const Uncover = () => {
+  // paraAnim();
+  // fadeUp();
+  // if (globalThis.innerWidth < 1024) {
+  // } else {
+  //   useGSAP(() => {
+  //     gsap.from(".uncover-card", {
+  //       yPercent: 50,
+  //       opacity: 0,
+  //       duration: 0.7,
+  //       scrollTrigger: {
+  //         trigger: ".uncover-card-container",
+  //         start: "top 80%",
+  //         end: "bottom 40%",
+  //       },
+  //       stagger: 0.1,
+  //     });
+  //   });
+  // }
+  return (
+    <section id="uncover">
+      <div className=" flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] overflow-hidden">
+        <div>
+          <h2 data-para-anim className="title-2 aeonik  ">
+            Uncover More
+          </h2>
+        </div>
+        <div className="flex items-center justify-between gap-[3vw] mt-[7vw] uncover-card-container mobile:hidden ">
+          <UncoverCard img={"/assets/advacryl/advapd.png"} txt={"AdvaPD"} />
+          <UncoverCard
+            img={"/assets/advacryl/advacryl-rapid.png"}
+            txt={"Advacryl Rapid"}
+          />
+          <UncoverCard img={"/assets/advacryl/advamryl.png"} txt={"Advamryl"} />
+          <UncoverCard
+            img={"/assets/advacryl/advacryl-plus.png"}
+            txt={"Advacryl Plus"}
+          />
+        </div>
+        
+        <div className=" items-center justify-between gap-[3vw] mt-[7vw] hidden mobile:flex  mobile:w-full mobile:overflow-scroll ">
+          <UncoverCard img={"/assets/advacryl/advapd.png"} txt={"AdvaPD"} />
+          <UncoverCard
+            img={"/assets/advacryl/advacryl-rapid.png"}
+            txt={"Advacryl Rapid"}
+          />
+          <UncoverCard img={"/assets/advacryl/advamryl.png"} txt={"Advamryl"} />
+          <UncoverCard
+            img={"/assets/advacryl/advacryl-plus.png"}
+            txt={"Advacryl Plus"}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Uncover;

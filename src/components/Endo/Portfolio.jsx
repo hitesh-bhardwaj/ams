@@ -76,8 +76,7 @@ const Portfolio = () => {
         <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"}/>
       </div>
       <div className="w-full mobile:overflow-scroll mobile:mt-[12vw] mobile:pl-[7%] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll mobile:fadeup tablet:hidden tablet:pr-[5%] overflow-visible tablet:mt-0 ">
-            <div
-              
+            <div      
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw]  mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
             >
              <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"}/>
