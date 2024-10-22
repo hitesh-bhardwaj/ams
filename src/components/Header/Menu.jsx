@@ -69,6 +69,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
               <Image
                 src="/assets/header/ams-slogan.webp"
                 className="object-contain"
+                alt="ams-slogan"
                 fill
               />
             </div>

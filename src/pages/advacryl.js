@@ -7,6 +7,7 @@ import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
+import Transition from "@/components/Transition";
 import React from "react";
 
 const EdgeCard = {
@@ -19,6 +20,7 @@ const EdgeCard = {
     title: "- the confidence to suture with ease",
     src: "/assets/advacryl/advacryl-tray.png",
     para: "  patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    bgsrc:"/assets/advacryl/purple-rectangle.png"
   },
   card3: {
     title: "Knot Pull Tensile Strength",
@@ -88,6 +90,7 @@ const advacryl = () => {
           tagline={" BRAIDED COATED POLYGLACTIN 910 SURGICAL SUTURE"}
           para1={"  Consistent performance for confidence in a variety of soft tissue approximation"}
           src={"/assets/advacryl/advacryl-hero.png"}
+          bgimg={'/assets/advacryl/advacryl-hero-bg.png'}
           para2={"With great versatility comes the confidence to meet specific needs"}
         />
         <Edge
@@ -113,6 +116,7 @@ const advacryl = () => {
         <Uncover />
       </main>
       <Footer />
+      <Transition />
     </>
   );
 };

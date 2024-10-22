@@ -7,6 +7,7 @@ import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
+import Transition from "@/components/Transition";
 import React from "react";
 
 const EdgeCard = {
@@ -92,6 +93,7 @@ const advacrylplus = () => {
             "  Consistent performance for confidence in a variety of soft tissue approximation minimizing Surgical Site Infections (SSI)"
           }
           src={"/assets/advacryl/advacryl-hero.png"}
+          bgimg={'/assets/advacryl/advacryl-hero-bg.png'}
           para2={"Steady performance for superior confidence"}
         />
         <Edge
@@ -117,6 +119,7 @@ const advacrylplus = () => {
         <Uncover />
       </main>
       <Footer />
+      <Transition />
     </>
   );
 };

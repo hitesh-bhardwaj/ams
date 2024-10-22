@@ -13,17 +13,17 @@ const UncoverCard = ({ img, txt, className }) => {
     <>
       <Link href={"#"}>
         <div
-          className={`w-[20.5vw] h-[11.5vw] relative flex justify-between items-center cursor-pointer rounded-[40px] overflow-hidden border uncover-card glassmorphism mobile:w-[73vw] mobile:h-[80vw] mobile:flex-col-reverse mobile:justify-center mobile:py-[10%]`}
+          className={`w-[20.5vw] h-[11.5vw] relative flex justify-between items-center cursor-pointer rounded-[20px] overflow-hidden border uncover-card glassmorphism mobile:w-[73vw] mobile:h-[80vw] mobile:flex-col-reverse mobile:justify-center mobile:py-[10%] tablet:w-[40vw] tablet:h-[25vw]`}
         >
           <div className="flex flex-col justify-start items-start text-left w-full h-full pl-[2vw] pt-[2vw] mobile:items-center mobile:justify-center mobile:py-[4vw]">
             <p
               data-para-anim
-              className="font-light text-[1.1vw] uppercase whitespace-nowrap mobile:text-[7vw]"
+              className="font-light text-[1.1vw] uppercase whitespace-nowrap mobile:text-[7vw] tablet:text-[3vw]"
             >
               {txt}
             </p>
           </div>
-          <div className="h-[6vw] w-[24vw] mobile:w-[55vw] mobile:h-[45vw]">
+          <div className="h-[6vw] w-[24vw] mobile:w-[55vw] mobile:h-[45vw] tablet:w-[25vw] tablet:h-[25vw]">
             <div className="w-full h-full relative ">
               <Image src={img} fill alt="uncover" className="object-contain" />
             </div>
@@ -35,33 +35,33 @@ const UncoverCard = ({ img, txt, className }) => {
 };
 
 const Uncover = () => {
-  // paraAnim();
-  // fadeUp();
-  // if (globalThis.innerWidth < 1024) {
-  // } else {
-  //   useGSAP(() => {
-  //     gsap.from(".uncover-card", {
-  //       yPercent: 50,
-  //       opacity: 0,
-  //       duration: 0.7,
-  //       scrollTrigger: {
-  //         trigger: ".uncover-card-container",
-  //         start: "top 80%",
-  //         end: "bottom 40%",
-  //       },
-  //       stagger: 0.1,
-  //     });
-  //   });
-  // }
+  paraAnim();
+  fadeUp();
+  if (globalThis.innerWidth < 1024) {
+  } else {
+    useGSAP(() => {
+      gsap.from(".uncover-card", {
+        yPercent: 50,
+        opacity: 0,
+        duration: 0.7,
+        scrollTrigger: {
+          trigger: ".uncover-card-container",
+          start: "top 80%",
+          end: "bottom 40%",
+        },
+        stagger: 0.1,
+      });
+    });
+  }
   return (
     <section id="uncover">
-      <div className=" flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] overflow-hidden">
+      <div className=" flex flex-col items-center justify-center px-[4%]  pb-[4%] overflow-hidden">
         <div>
           <h2 data-para-anim className="title-2 aeonik  ">
             Uncover More
           </h2>
         </div>
-        <div className="flex items-center justify-between gap-[3vw] mt-[7vw] uncover-card-container mobile:hidden ">
+        <div className="flex items-center justify-between gap-[3vw] mt-[7vw] uncover-card-container mobile:hidden tablet:flex-wrap tablet:justify-center tablet:gap-[5vw]">
           <UncoverCard img={"/assets/advacryl/advapd.png"} txt={"AdvaPD"} />
           <UncoverCard
             img={"/assets/advacryl/advacryl-rapid.png"}

@@ -7,6 +7,7 @@ import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
+import Transition from "@/components/Transition";
 import React from "react";
 
 const EdgeCard = {
@@ -17,12 +18,13 @@ const EdgeCard = {
   },
   card2: {
     title: "- the confidence to suture with ease",
-    src: "/assets/advacryl/advacryl-tray.png",
-    para: "  patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    src: "/assets/advamryl/advamryl-tray.png",
+    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+       bgsrc:"/assets/advamryl/orange-rectangle.png"
   },
   card3: {
     title: "Knot Pull Tensile Strength",
-    src: "/assets/advacryl/advacryl-graph.png",
+    src: "/assets/advamryl/advamryl-graph.png",
     para: "Advanced Tipping",
   },
 };
@@ -90,6 +92,7 @@ const advamryl = () => {
             "  Supreme handling performance for confidence in subcuticular skin closure"
           }
           src={"/assets/advamryl/advamryl-hero.png"}
+          bgimg={'/assets/advamryl/advamryl-hero-bg.png'}
           para2={"Steady performance for superior confidence"}
         />
         <Edge
@@ -115,6 +118,7 @@ const advamryl = () => {
         <Uncover />
       </main>
       <Footer />
+      <Transition />
     </>
   );
 };
