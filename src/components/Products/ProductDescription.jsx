@@ -56,7 +56,7 @@ const ProductDescription = ({card1,card2,card3,card4,card5,card6}) => {
   return (
     <>
       <section>
-        <div className="w-screen h-screen container-lg mobile:h-[70%] mobile:px-[3vw] mobile:py-[3vw] mobile:container-sm tablet:h-[90vh]">
+        <div className="w-screen h-screen container-lg mobile:h-[70%] mobile:px-[3vw] mobile:py-[3vw]  tablet:h-[90vh]">
           <div className="flex flex-col items-center justify-center gap-[5vw] overflow-hidden">
             <div>
               <h2 className="title-2 aeonik mobile:text-center">Product Description</h2>
@@ -69,7 +69,7 @@ const ProductDescription = ({card1,card2,card3,card4,card5,card6}) => {
             <ProductCard img={card5.img} title={card5.title} para={card5.para}/>
             <ProductCard img={card6.img} title={card6.title} para={card6.para}/>
             </div>
-            <div className=" items-center justify-between gap-[3vw] hidden mobile:flex mobile:justify-between mobile:w-full mobile:overflow-scroll mobile:gap-[5vw]">
+            <div className=" items-center justify-between gap-[3vw] mobile:w-[100vw] hidden mobile:flex mobile:justify-between  mobile:overflow-scroll mobile:gap-[5vw]">
             <ProductCard img={card1.img} title={card1.title} para={card1.para}/>
             <ProductCard img={card2.img} title={card2.title} para={card2.para}/>
             <ProductCard img={card3.img} title={card3.title} para={card3.para}/>

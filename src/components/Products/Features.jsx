@@ -96,7 +96,7 @@ const Features = ({card1,card2,card3,card4}) => {
             </div>
 
 
-            <div className='h-screen w-screen container-lg glassmorphism hidden mobile:mt-[40%] mobile:block mobile:h-[75vh]'>
+            <div className='h-screen w-screen container-lg hidden mobile:mt-[40%] mobile:block mobile:h-[75vh]'>
             <div className='mb-[10%]'>
                 <h2 className='title-2 aeonik mobile:text-center'>Key Features</h2>
             </div>
