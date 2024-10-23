@@ -1,18 +1,52 @@
 import React from "react";
 import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 const Edge = ({ card1, card2, card3 }) => {
+  useGSAP(()=>{
+    if(globalThis.innerWidth>1024){
+      const tl = gsap.timeline({
+        scrollTrigger:{
+          trigger:"#edge",
+          start:"top bottom",
+          end:"top top",
+          scrub:true,
+          // markers: true,
+  
+        }
+      })
+      tl.from(".edge-card1",{
+        xPercent:-50,
+        opacity:0
+      })
+      tl.from(".edge-card2",{
+        yPercent:50,
+        opacity:0,
+        delay:-0.5
+      })
+      tl.from(".edge-card3",{
+        xPercent:50,
+        opacity:0,
+        delay:-0.5
+      })
+
+    }
+
+  })
   return (
     <>
-      <section className="">
-        <div className="w-screen h-screen container-lg mb-[10%] mobile:h-[200vh] tablet:h-[70%]">
+      <section className="overflow-hidden mobile:py-[10%]" id="edge">
+        <div className="w-screen h-full container-lg mb-[10%] mobile:h-full tablet:h-[70%]">
           <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw]">
-            <div>
-              <h2 className="title-2 aeonik">ADVACRYL Edge</h2>
+            <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
+              <h2 data-para-anim className="title-2 aeonik mobile:text-center">ADVACRYL Plus Edge</h2>
             </div>
 
             <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">
-              <div className="edge-card px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[40px] glassmorphism  mobile:w-[80vw] mobile:h-[145vw] mobile:order-1 mobile:text-center tablet:h-[50vw] tablet:w-[23vw]">
+              <div className="edge-card1 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] glassmorphism  mobile:w-[90vw] mobile:gap-[10vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:order-1 mobile:text-center tablet:h-[50vw] tablet:w-[23vw]">
                 <div>
                   <h3 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[8.2vw] tablet:text-[2.5vw]">
                     {card1.title}
@@ -35,8 +69,8 @@ const Edge = ({ card1, card2, card3 }) => {
                 </div>
               </div>
 
-              <div className="edge-card py-[3vw] px-[1vw] h-[43vw] w-[43vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[40px] glassmorphism mobile:w-[80vw] mobile:h-[145vw]  mobile:text-center tablet:h-[50vw] tablet:w-[50vw] ">
-                <div className="flex items-center justify-center mobile:flex-col">
+              <div className="edge-card2 py-[3vw] px-[1vw] h-[43vw] w-[43vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] glassmorphism mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw] ">
+                <div className="flex items-center justify-center mobile:flex-col mobile:gap-[5vw]">
                   <span className="block w-[10.7vw] h-[1.65vw] relative mr-[0.5vw] mobile:w-[36vw] mobile:h-[6vw] tablet:w-[20vw] tablet:h-[3vw]">
                     <Image
                       src="/assets/advacryl/advatray-blue.png"
@@ -49,7 +83,7 @@ const Edge = ({ card1, card2, card3 }) => {
                     {card2.title}
                   </p>
                 </div>
-                <div className="w-[28vw] h-[25vw] mobile:h-[50vw] mobile:w-[65vw]">
+                <div className="w-[28vw] h-[25vw] mobile:h-[50vw] mobile:w-[75vw] mobile:mt-[5vw]">
                   <div className="w-full h-full relative">
                     <Image
                       src={card2.src}
@@ -59,14 +93,16 @@ const Edge = ({ card1, card2, card3 }) => {
                     />
                   </div>
                 </div>
-                <div className="relative  px-[1vw] py-[2vw]">
-                  <img
+                <div className="relative  px-[1vw] py-[2vw] w-[37vw] h-[10vw] flex justify-center items-center mobile:h-[25vw] mobile:w-[85vw]">
+                  <Image
                     src={card2.bgsrc}
                     alt="background"
-                    className="absolute inset-0 w-[150%] h-full object-contain items-stretch "
+                    fill
+                    
+                    className="object-fill w-[50vw] h-full top-0 left-0 "
                   />
-                  <div className="relative flex flex-wrap items-center justify-center mobile:flex-col">
-                    <span className="block w-[5vw] h-[1vw] relative mr-[0.5vw]">
+                  <p className="relative flex mobile:flex-col text-white text-[1.1vw] font-light w-[90%] mobile:text-[3.3vw] mobile:font-extralight tablet:text-[1.4vw]">
+                    <span className="block w-[10vw] h-[2vw] relative mobile:h-[5vw] mobile:w-[20vw]">
                       <Image
                         src="/assets/advacryl/advatray-white.png"
                         fill
@@ -74,14 +110,14 @@ const Edge = ({ card1, card2, card3 }) => {
                         className="object-contain"
                       />
                     </span>
-                    <p className="text-white text-[1.1vw] font-light w-[80%] mobile:text-[3.3vw] mobile:font-extralight tablet:text-[1.4vw]">
+                   
                       {card2.para}
-                    </p>
-                  </div>
+                    
+                  </p>
                 </div>
               </div>
 
-              <div className="edge-card px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[40px] glassmorphism mobile:w-[80vw] mobile:h-[145vw] mobile:text-center mobile:order-2 tablet:h-[50vw] tablet:w-[23vw]">
+              <div className="edge-card3 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] glassmorphism mobile:w-[90vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:gap-[10vw] mobile:text-center mobile:order-2 tablet:h-[50vw] tablet:w-[23vw]">
                 <div>
                   <h3 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[8.2vw]  tablet:text-[2.5vw] ">
                     {card3.title}

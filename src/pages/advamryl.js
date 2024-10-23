@@ -9,6 +9,7 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import Transition from "@/components/Transition";
 import React from "react";
+import { fadeUp } from "@/components/gsapAnimations";
 
 const EdgeCard = {
   card1: {
@@ -80,6 +81,7 @@ const ProductCard = {
 };
 
 const advamryl = () => {
+  fadeUp()
   return (
     <>
       <Header />

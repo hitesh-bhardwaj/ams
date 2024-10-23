@@ -4,31 +4,14 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { paraAnim } from "../gsapAnimations";
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
-import Link from "next/link";
+
 
 
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 export default function Hero() {
   paraAnim()
-  // useEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //            gsap.to(".fadeUp",{
-  //             yPercent:-10,
-  //             opacity:1,
-  //             delay:0.2,
-  //             duration:1,
-  //             scrollTrigger:{
-  //               trigger:".fadeUp",
-  //               start:"top 34%",
-                
-  //             }
-  //            })
-  //         });
-  //         return () => ctx.revert();
-    
-    
-  // }, []); 
+ 
   useGSAP(()=>{
     const tl = gsap.timeline();
     tl.from(".hero-img-anim",{
@@ -71,7 +54,7 @@ export default function Hero() {
               </div>
               <div className="absolute w-[43%] right-0 bottom-0 mobile:hidden">
 
-              <div className=" w-[43vw] h-[38vw]  hero-img-anim relative  tablet:w-[45vw] tablet:h-[42vw]">
+              <div className=" w-[43vw] h-[38vw]  hero-img-anim relative  tablet:w-[45vw] tablet:h-[42vw] overflow-hidden">
                 <Image
                   className="hero-img"
                   src="/assets/home/hero-image.webp"

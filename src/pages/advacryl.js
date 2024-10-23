@@ -9,6 +9,7 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import Transition from "@/components/Transition";
 import React from "react";
+import { fadeUp } from "@/components/gsapAnimations";
 
 const EdgeCard = {
   card1: {
@@ -54,7 +55,7 @@ const ProductCard = {
   },
   card2: {
     img: "/assets/advacryl/color.png",
-    title: "Color",
+    title: "Colour",
     para: "Undyed and Violet",
   },
   card3: {
@@ -80,6 +81,7 @@ const ProductCard = {
 };
 
 const advacryl = () => {
+  fadeUp()
   return (
     <>
       <Header />

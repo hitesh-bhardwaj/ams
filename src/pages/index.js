@@ -7,34 +7,18 @@ import Hero from "@/components/Home/Hero";
 // import HeroCarousel from "@/components/Home/HeroCarousel";
 import Impact from "@/components/Home/Impact";
 import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
-
 import Product from "@/components/Home/Product";
 import Transition from "@/components/Transition";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Check window size and set the state accordingly
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 541); // Example breakpoint for mobile
-    };
-
     // Run on mount
-    handleResize();
-
-    // Listen for window resize events
-    window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener on unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+ 
 
   useEffect(() => {
     const ctx = gsap.context(() => {

@@ -13,9 +13,9 @@ const UncoverCard = ({ img, txt, className }) => {
     <>
       <Link href={"#"}>
         <div
-          className={`w-[20.5vw] h-[11.5vw] relative flex justify-between items-center cursor-pointer rounded-[20px] overflow-hidden border uncover-card glassmorphism mobile:w-[73vw] mobile:h-[80vw] mobile:flex-col-reverse mobile:justify-center mobile:py-[10%] tablet:w-[40vw] tablet:h-[25vw]`}
+          className={`w-[20.5vw] h-[11.5vw] relative flex justify-between items-center cursor-pointer rounded-[2vw] overflow-hidden border uncover-card glassmorphism mobile:w-[75vw] mobile:h-[90vw] mobile:rounded-[9vw] mobile:flex-col-reverse mobile:justify-center mobile:py-[10%] mobile:pt-[30%] tablet:w-[40vw] tablet:h-[25vw]`}
         >
-          <div className="flex flex-col justify-start items-start text-left w-full h-full pl-[2vw] pt-[2vw] mobile:items-center mobile:justify-center mobile:py-[4vw]">
+          <div className="flex flex-col justify-start items-start text-left w-full h-full pl-[2vw] pt-[2vw] mobile:items-center mobile:justify-end mobile:py-[4vw] mobile:pl-0">
             <p
               data-para-anim
               className="font-light text-[1.1vw] uppercase whitespace-nowrap mobile:text-[7vw] tablet:text-[3vw]"
@@ -23,7 +23,7 @@ const UncoverCard = ({ img, txt, className }) => {
               {txt}
             </p>
           </div>
-          <div className="h-[6vw] w-[24vw] mobile:w-[55vw] mobile:h-[45vw] tablet:w-[25vw] tablet:h-[25vw]">
+          <div className="h-[6vw] w-[24vw] mobile:w-[55vw] mobile:h-[60vw] tablet:w-[25vw] tablet:h-[25vw]">
             <div className="w-full h-full relative ">
               <Image src={img} fill alt="uncover" className="object-contain" />
             </div>
@@ -54,9 +54,9 @@ const Uncover = () => {
     });
   }
   return (
-    <section id="uncover">
-      <div className=" flex flex-col items-center justify-center px-[4%]  pb-[4%] overflow-hidden">
-        <div>
+    <section id="uncover" className="mobile:pb-[20%]">
+      <div className=" flex flex-col items-center justify-center px-[4%]  pb-[4%]">
+        <div className="mobile:mb-[7vw]">
           <h2 data-para-anim className="title-2 aeonik  ">
             Uncover More
           </h2>
@@ -74,7 +74,7 @@ const Uncover = () => {
           />
         </div>
         
-        <div className=" items-center justify-between gap-[3vw] mt-[7vw] hidden mobile:flex  mobile:w-full mobile:overflow-scroll ">
+        <div className=" items-center justify-between gap-[3vw] mt-[7vw] hidden mobile:flex  mobile:w-[100vw] mobile:px-[5vw] mobile:overflow-scroll ">
           <UncoverCard img={"/assets/advacryl/advapd.png"} txt={"AdvaPD"} />
           <UncoverCard
             img={"/assets/advacryl/advacryl-rapid.png"}

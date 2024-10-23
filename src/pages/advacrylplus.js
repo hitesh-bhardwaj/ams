@@ -9,6 +9,11 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import Transition from "@/components/Transition";
 import React from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useEffect } from "react";
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const EdgeCard = {
   card1: {
@@ -80,6 +85,32 @@ const ProductCard = {
 };
 
 const advacrylplus = () => {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const fadeUps = document.querySelectorAll(".fadeUp");
+      fadeUps.forEach((fadeUp) => {
+        gsap.fromTo(
+          fadeUp,
+          {
+            opacity: 0,
+            y: 40,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            delay:0.1,
+            duration: 0.6,
+            ease: "Power3.out",
+            scrollTrigger: {
+              trigger: fadeUp,
+              start: "top 85%",
+            },
+          }
+        );
+      });
+    });
+    return () => ctx.revert();
+  });
   return (
     <>
       <Header />

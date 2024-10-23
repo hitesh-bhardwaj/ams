@@ -141,7 +141,7 @@ export function fadeIn() {
   });
 }
 export function fadeUp() {
-  if(globalThis.innerWidth<1024){
+  if(globalThis.innerWidth>0){
     useGSAP(() => {
       const content = document.querySelectorAll(".fadeup");
       content.forEach((content) => {

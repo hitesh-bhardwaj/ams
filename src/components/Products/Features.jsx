@@ -15,7 +15,7 @@ const FeatureCard=({src,title})=>{
     return(
         <>
           <div className='flex flex-col items-center justify-center feature-card tablet:py-[5%]'>
-                    <div className='h-[15vw] w-[10vw] mobile:w-[60vw] mobile:h-[40vw] tablet:w-[40vw] tablet:h-[25vw]'>
+                    <div className='h-[15vw] w-[10vw] mobile:w-[60vw] mobile:h-[20vw] tablet:w-[20vw] tablet:h-[25vw]'>
                         <div className='w-full h-full relative'>
                         <Image
                         src={src}
@@ -26,7 +26,7 @@ const FeatureCard=({src,title})=>{
                         </div>
                     </div>
                     <div className='w-[80%] '>
-                        <p className='text-[1.65vw] font-light text-center  mobile:text-[5.5vw] tablet:text-[2.5vw]'>
+                        <p data-para-anim className='text-[1.65vw] font-light text-center  mobile:text-[6vw] tablet:text-[2.5vw]'>
                             {title}
                         </p>
                     </div>
@@ -80,11 +80,11 @@ const Features = ({card1,card2,card3,card4}) => {
   
   return (
    <>
-   <section>
-    <div className='h-screen w-screen container-lg mobile:hidden tablet:h-[80vh]'>
-        <div className='h-[80%] w-full border rounded-[40px] flex flex-col glassmorphism items-center justify-center gap-[6vw] tablet:py-[3vw] tablet:h-[80%]'>
+   <section className='mobile:py-[10%] tablet:py-[10%]' id='features'>
+    <div className='h-screen w-screen container-lg mobile:hidden tablet:h-full'>
+        <div className='h-[80%] w-full border rounded-[3vw] flex flex-col glassmorphism items-center justify-center gap-[4vw] tablet:py-[3vw] tablet:h-[60%]'>
             <div>
-                <h2 className='title-2 aeonik'>Key Features</h2>
+                <h2 data-para-anim className='title-2 aeonik'>Key Features</h2>
             </div>
             <div className='flex items-center justify-evenly w-full feature-card-container mobile:hidden tablet:flex-wrap tablet:justify-center tablet:items-start'>
                 <FeatureCard src={card1.src} title={card1.title}/>
@@ -96,11 +96,11 @@ const Features = ({card1,card2,card3,card4}) => {
             </div>
 
 
-            <div className='h-screen w-screen container-lg hidden mobile:mt-[40%] mobile:block mobile:h-[75vh]'>
-            <div className='mb-[10%]'>
+            <div className='h-screen w-screen container-lg hidden mobile:block mobile:h-full'>
+            <div className='mb-[10%] mobile:mb-[15vw]'>
                 <h2 className='title-2 aeonik mobile:text-center'>Key Features</h2>
             </div>
-        <div className='h-[90vw] w-full border rounded-[40px] flex flex-col glassmorphism items-center justify-center gap-[6vw] mobile:py-[5vw] mobile:h-[60%]'>        
+        <div className='h-[90vw] w-full border rounded-[9vw] flex flex-col glassmorphism items-center justify-center gap-[6vw] mobile:pt-[10vw] mobile:h-[50vh]'>        
             <div className='w-[47%] flex-col gap-y-[2vw]  mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full'>
               <Swiper
               navigation={false}
@@ -123,7 +123,7 @@ const Features = ({card1,card2,card3,card4}) => {
                 </SwiperSlide>
               </Swiper>
               <div
-                className={`absolute z-[5] bottom-5 left-[67%] translate-x-[-65%] overflow-hidden border glassmorphism  py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
+                className={`absolute z-[5] bottom-[10%] left-[65%] translate-x-[-65%] overflow-hidden border glassmorphism  py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
                 ${
                   activeButton === "next"
                     ? " text-white border-none"
@@ -153,7 +153,7 @@ const Features = ({card1,card2,card3,card4}) => {
             </div>
               </div>
               <div
-                className={`absolute z-[5] bottom-5 left-[37%] translate-x-[-38%] glassmorphism overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
+                className={`absolute z-[5] bottom-[10%] left-[37%] translate-x-[-38%] glassmorphism overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
                 ${
                   activeButton === "prev"
                     ? " text-white border-none"

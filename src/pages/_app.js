@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import { useEffect, useState } from "react";
 import ReactLenis from "@studio-freight/react-lenis";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
@@ -52,7 +51,7 @@ export default function App({ Component, pageProps, router }) {
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </ReactLenis>
-     <Pixifinal />
+     {/* <Pixifinal /> */}
      
     </>
   );
