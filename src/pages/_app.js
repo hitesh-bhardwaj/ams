@@ -1,9 +1,8 @@
 import "@/styles/globals.css";
-// import { useState, useEffect } from "react";
 import ReactLenis from "@studio-freight/react-lenis";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
-// import Pixifinal from "@/components/Pixifinal";
+import Pixifinal from "@/components/Pixifinal";
 
 export default function App({ Component, pageProps, router }) {
   // const [showPixi, setShowPixi] = useState(true);
@@ -17,7 +16,7 @@ export default function App({ Component, pageProps, router }) {
   //     }
   //   };
 
-  //   handleResize(); 
+  //   handleResize(); // Set the initial value based on current screen size
   //   window.addEventListener("resize", handleResize);
 
   //   return () => {
@@ -52,8 +51,8 @@ export default function App({ Component, pageProps, router }) {
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </ReactLenis>
-      
-       {/* <Pixifinal /> */}
+     <Pixifinal />
+     
     </>
   );
 }
