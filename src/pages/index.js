@@ -82,7 +82,7 @@ export default function Home() {
         {/* <Product /> */}
         <Impact />
         <Career />
-        <Blog />
+        {/* <Blog /> */}
         <Facility />
       </main>
       <Footer />
