@@ -4,13 +4,13 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Flip } from "gsap/dist/Flip";
+
 import styles from "@/styles/endocard.module.css"; // Import the module CSS
 import Link from "next/link";
 import Image from "next/image";
 
 
-gsap.registerPlugin(ScrollTrigger, Flip);
+gsap.registerPlugin(ScrollTrigger);
 
 const ProductCard = ({ img, heading}) => {
   return (

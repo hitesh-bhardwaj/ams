@@ -1,9 +1,0 @@
-/* .ama-card .swiper-slide{
-    width: 23vw !important;
-    height: 32vw !important;
-    border-radius: 2vw !important;
-    overflow: hidden !important;
-} */
-.ama-card{
-    overflow: visible !important;
-}

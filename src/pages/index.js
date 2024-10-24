@@ -5,7 +5,7 @@ import Facility from "@/components/Home/Facility";
 import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import Transition from "@/components/Transition";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
@@ -24,7 +24,7 @@ const Blog = dynamic(() => import("@/components/Home/Blog"), {
   loading: () => <p>Loading blog...</p>, // Optional loading component
 });
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
 

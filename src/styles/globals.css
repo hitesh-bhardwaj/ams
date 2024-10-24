@@ -8,12 +8,7 @@
 @import url('./swiper.css');
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
-@import url('./homecarousel.css');
-@import url('./molecularswiper.css');
-@import url('./amacard.css');
-@import url('./iccards.css');
-/* @import url('./tablet.css'); */
-/* @import url('./endocards.css'); */
+
 
 @import url('./manufactuing-carousel.css');
 
@@ -419,6 +414,20 @@ body{
   overflow: hidden; /* Ensures the rounded corners stay within the container */
 }
 
+/* ama card */
+.ama-card{
+  overflow: visible !important;
+}
+
+/* ic cards */
+.ic-card .swiper-slide{
+  width: 30vw !important;
+  height: 40vw !important;
+}
+.ic-card{
+  overflow: visible !important ;
+}
+
 
 
 @media screen  and (max-width:541px){
@@ -504,6 +513,29 @@ body{
   .para-animation .line{
     overflow: hidden;
   }
+
+  /* molecular swiper */
+  .molecularSwiper .swiper-button-prev , .molecularSwiper .swiper-button-next{
+    position: relative;
+}
+.molecularSwiper{
+    padding-bottom: 20vw;
+}
+.molecularSwiper .swiper-button-prev::after , .molecularSwiper .swiper-button-next::after{
+   color: black;
+   font-size: 30px;
+   border-radius: 50%;
+   border: 2px solid black;
+   padding: 3vw 5vw;
+}
+.molecularSwiper .swiper-button-prev{
+    left:37%;
+    bottom:-53px;
+}
+.molecularSwiper .swiper-button-next{
+    left:57%;
+    bottom: -30px;
+}
   }
 
 

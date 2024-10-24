@@ -4,12 +4,11 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Flip } from "gsap/dist/Flip";
 import styles from "@/styles/hernia.module.css"; // Import the module CSS
 import Link from "next/link";
 import Image from "next/image";
 
-gsap.registerPlugin(ScrollTrigger, Flip);
+gsap.registerPlugin(ScrollTrigger);
 
 const ProductCard=({img, heading , className, rotate})=>{
   
@@ -141,67 +140,6 @@ const Product = () => {
           },
         });
   
-        let lastClickedCard = null;
-  
-        const flip = (e) => {
-          const card = e.currentTarget;
-          const image = card.querySelector("img");
-  
-          if (!image) {
-            console.error("Image not found in the clicked card");
-            return;
-          }
-  
-          const state = Flip.getState(image);
-  
-          if (headerRef.current) {
-            headerRef.current.appendChild(image);
-  
-            Flip.from(state, {
-              duration: 0.4,
-              ease: "sine.out",
-              absolute: true,
-            });
-  
-            lastClickedCard = card;
-          } else {
-            console.error("Header element is not available");
-          }
-        };
-  
-        const putBack = (e) => {
-          const image = headerRef.current.querySelector("img");
-  
-          if (!image || !lastClickedCard) {
-            console.error("No image to return or no last clicked card");
-            return;
-          }
-  
-          const state = Flip.getState(image);
-  
-          lastClickedCard.appendChild(image);
-          Flip.from(state, {
-            duration: 0.4,
-            ease: "sine.out",
-            absolute: true,
-          });
-  
-          lastClickedCard = null;
-        };
-  
-        cardsRef.current.forEach((card) => {
-          card.addEventListener("click", (e) => {
-            if (lastClickedCard) {
-              putBack(e);
-            }
-            flip(e);
-          });
-        });
-  
-        headerRef.current.addEventListener("click", (e) => {
-          if (!lastClickedCard) return;
-          putBack(e);
-        });
   
         return () => {
           window.removeEventListener("resize", setup);

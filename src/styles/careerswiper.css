@@ -86,7 +86,7 @@ opacity:1;
     }
 }
 
-@media screen and (min-width: 540px) and (max-width: 1023px){
+/* @media screen and (min-width: 540px) and (max-width: 1023px){ */
     /* .careerSwiper .swiper .swiper-wrapper .swiper-slide{
         margin-right: 4%!important;
     } */
@@ -99,4 +99,3 @@ opacity:1;
         display: flex;
         justify-content: center;
     } */
-}
