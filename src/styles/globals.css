@@ -8,8 +8,6 @@
 @import url('./swiper.css');
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
-
-
 @import url('./manufactuing-carousel.css');
 
 :root {
@@ -197,7 +195,7 @@ body{
   font-size: 5.3vw;
   font-weight: 300;
   color: var(--text-color);
-  line-height: 0;
+  line-height: 130%;
 }
 
 .title-2{
@@ -553,7 +551,7 @@ body{
       font-size: 7vw;
       font-weight: 300;
       color: var(--text-color);
-      line-height: 0; 
+      line-height: 130%; 
     }
     
     .title-2{

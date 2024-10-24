@@ -13,22 +13,16 @@ const Hero = () => {
    <section className="hero h-[100vh] mb-[15%] tablet:h-[60vh] mobile:h-[100vh] overflow-hidden mobile:w-full" id="hero">
           <div className="px-[10%] relative">
             <div className="flex h-dvh w-full justify-start items-center tablet:h-[50vh] mobile:flex-col mobile:justify-center  mobile:mt-[20%]">
-              <div className=" mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center">
-                <h1 data-para-anim  className="title-1 aeonik drop-shadow-md leading-[1] mobile:hidden">
-                  <span className="leading-[1.2] overflow-hidden">
+              <div className=" w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center ">
+                <h1 data-para-anim  className="title-1 aeonik drop-shadow-md leading-[1.15] mobile:text-[12.5vw]">
+                  
                     Advancing Healthcare
-                  </span>
-                  <br />
-                  <span className="leading-[1.2] overflow-hidden">
+                
+                 
                      for Generations to Come
-                  </span > 
+                   
                 </h1>
-                <h1  className="title-1 aeonik drop-shadow-md leading-[1] hidden mobile:flex mobile:w-[110%] mobile:justify-center mobile:text-center">
-                  <span data-para-anim className="leading-[1.2] overflow-hidden">
-                    Advancing Healthcare for
-                      Generations to Come
-                  </span > 
-                </h1>
+                
                 <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p tablet:text-[2vw] tablet:max-w-[40vw] mobile:max-w-[90vw] mobile:text-center">
                   <span data-para-anim>
                   We are committed to transforming global patient care by enhancing outcomes through unparalleled quality, affordability, and accessibility.

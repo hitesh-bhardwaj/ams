@@ -27,22 +27,9 @@ export default function Hero() {
         <section className="hero mb-[12%] tablet:mb-[15%] mobile:mb-[0vw] overflow-hidden" id="hero">
           <div className="px-[12%] relative mobile:px-[5vw] mobile:w-[100vw] tablet:px-[10%] ">
             <div className="flex h-dvh w-full justify-start items-center mobile:h-[90vh] tablet:h-[50vh]">
-              <div className="w-[60%] mobile:w-screen mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4">
-                <h1 data-para-anim className="title-1 aeonik drop-shadow-md leading-[0] overflow-hidden  mobile:hidden">
-                  <span className="leading-[1.25] overflow-hidden">
-                    Advancing the
-                  </span>
-                  <br />
-                  <span className="leading-[1.25] overflow-hidden">
-                     way we care
-                  </span>
-                </h1>
-                <h1 className="text-[15vw] font-light aeonik drop-shadow-md leading-[0] overflow-hidden mobile:block hidden">
-                  <span data-para-anim className="leading-[1.25] overflow-hidden text-center">
-                    Advancing the
-                  
-                     way we care
-                  </span>
+              <div className="w-[55%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4">
+                <h1 data-para-anim className="title-1 aeonik drop-shadow-md overflow-hidden mobile:text-center mobile:text-[15vw]">
+                    Advancing the way we care
                 </h1>
                 <p  className="font-light max-w-[30vw] text-[1.25vw] mt-[4vw] mb-[4vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[5vw] mobile:mb-[15vw]  tablet:text-[2vw] tablet:max-w-[40vw]">
                   <span data-para-anim className="mobile:leading-[1.8]">

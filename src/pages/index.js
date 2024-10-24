@@ -6,10 +6,12 @@ import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import Transition from "@/components/Transition";
 // import { useGSAP } from "@gsap/react";
+// import { imageAnim } from "@/components/gsapAnimations";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import dynamic from 'next/dynamic'; // Import next/dynamic
+// import { imageAnim } from "@/components/gsapAnimations";
 
 // Dynamically load the components
 const ManufacturingCarousel = dynamic(() => import("@/components/Home/ManufactingCarousel"), {

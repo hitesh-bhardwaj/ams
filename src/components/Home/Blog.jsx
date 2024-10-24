@@ -11,8 +11,8 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 /* eslint-disable @next/next/no-img-element */
 export default function Blog() {
-    // paraAnim()
-    imageAnim()
+
+    imageAnim() 
     const blogLeft = useRef(null);
     const blogContainer = useRef(null);
     if(globalThis.innerWidth<1024){
@@ -45,7 +45,7 @@ export default function Blog() {
                 <div className="flex items-start justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
                     <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
                         <Image
-                            className="h-full w-full object-cover imageanim mobile:fadeUp "
+                            className="h-full w-full object-cover imageanim "
                             src={img}
                             alt="blog image"
                             fill

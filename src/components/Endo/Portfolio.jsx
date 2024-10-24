@@ -4,7 +4,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { paraAnim , fadeUp } from "../gsapAnimations";
+// import { paraAnim , fadeUp } from "../gsapAnimations";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -36,8 +36,8 @@ const PortfolioCard =({img, txt , className})=>{
 }
 
 const Portfolio = () => {
-  paraAnim()
-  fadeUp()
+  // paraAnim()
+  // fadeUp()
   if(globalThis.innerWidth<1024){
 
   }

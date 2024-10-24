@@ -5,8 +5,9 @@ import {  imageAnim} from "../gsapAnimations";
 
 export default function Facility() {
     // paraAnim()
-    imageAnim()
+    // imageAnim()
     return (
+
         <>
             <section className="pt-[0] pb-[4%] mobile:pb-[10%] tablet:pb-[8%]" id="facility">
                 <div className="group ">
