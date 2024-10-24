@@ -57,24 +57,20 @@ const Features = ({card1,card2,card3,card4}) => {
         })
       })
     }
-    const swiperRef = useRef(null); // Create a ref for Swiper
-
-    // State to track which button was clicked
+    const swiperRef = useRef(null);
     const [activeButton, setActiveButton] = useState("");
   
     const handleNext = () => {
       if (swiperRef.current) {
-        swiperRef.current.slideNext(); // Move to the next slide
-        setActiveButton("next"); // Set next button as active
-        // Reset after 300ms
+        swiperRef.current.slideNext(); 
+        setActiveButton("next"); 
       }
     };
   
     const handlePrev = () => {
       if (swiperRef.current) {
-        swiperRef.current.slidePrev(); // Move to the previous slide
-        setActiveButton("prev"); // Set previous button as active
-        // Reset after 300ms
+        swiperRef.current.slidePrev();
+        setActiveButton("prev"); 
       }
     }
   
@@ -128,8 +124,8 @@ const Features = ({card1,card2,card3,card4}) => {
                   activeButton === "next"
                     ? " text-white border-none"
                     : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
-                onClick={handleNext} // Trigger next slide
+                } transition-colors duration-300`} 
+                onClick={handleNext}
               >
                 <span
                   className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  ${

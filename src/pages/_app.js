@@ -1,28 +1,29 @@
 import "@/styles/globals.css";
+import { useState, useEffect } from "react";
 import ReactLenis from "@studio-freight/react-lenis";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
 import Pixifinal from "@/components/Pixifinal";
 
 export default function App({ Component, pageProps, router }) {
-  // const [showPixi, setShowPixi] = useState(true);
+  const [showPixi, setShowPixi] = useState(true);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 1024) {
-  //       setShowPixi(false);
-  //     } else {
-  //       setShowPixi(true);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setShowPixi(false);
+      } else {
+        setShowPixi(true);
+      }
+    };
 
-  //   handleResize(); // Set the initial value based on current screen size
-  //   window.addEventListener("resize", handleResize);
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
 
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -51,8 +52,8 @@ export default function App({ Component, pageProps, router }) {
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </ReactLenis>
-     <Pixifinal />
-     
+      
+      {showPixi && <Pixifinal />}
     </>
   );
 }
