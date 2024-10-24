@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import ReactLenis from "@studio-freight/react-lenis";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
-import Pixifinal from "@/components/Pixifinal";
+// import Pixifinal from "@/components/Pixifinal";
 
 export default function App({ Component, pageProps, router }) {
   // const [showPixi, setShowPixi] = useState(true);
@@ -53,7 +53,7 @@ export default function App({ Component, pageProps, router }) {
         </AnimatePresence>
       </ReactLenis>
       
-       <Pixifinal />
+       {/* <Pixifinal /> */}
     </>
   );
 }
