@@ -7,7 +7,7 @@ import Hero from "@/components/Home/Hero";
 // import HeroCarousel from "@/components/Home/HeroCarousel";
 import Impact from "@/components/Home/Impact";
 // import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
-import Product from "@/components/Home/Product";
+// import Product from "@/components/Home/Product";
 import Transition from "@/components/Transition";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -79,7 +79,7 @@ export default function Home() {
         
         {/* <ManufacturingCarousel /> */}
         
-        <Product />
+        {/* <Product /> */}
         <Impact />
         <Career />
         <Blog />
