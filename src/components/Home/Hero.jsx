@@ -54,7 +54,7 @@ export default function Hero() {
               </div>
               <div className="absolute w-[43%] right-0 bottom-0 mobile:hidden">
 
-              {/* <div className=" w-[43vw] h-[38vw]  hero-img-anim  tablet:w-[45vw] tablet:h-[42vw] overflow-hidden">
+              <div className=" w-[43vw] h-[38vw]  hero-img-anim  tablet:w-[45vw] tablet:h-[42vw] overflow-hidden">
                 <Image
                   className="hero-img"
                   src="/assets/home/hero-image.webp"
@@ -64,7 +64,7 @@ export default function Hero() {
                   
                   priority={true}
                 />
-              </div> */}
+              </div>
               </div>
               
             </div>
