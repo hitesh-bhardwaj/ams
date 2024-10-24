@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import PrimaryButton from "../Button/PrimaryButton";
-import { paraAnim , imageAnim} from "../gsapAnimations";
+import {  imageAnim} from "../gsapAnimations";
 
 export default function Facility() {
-    paraAnim()
+    // paraAnim()
     imageAnim()
     return (
         <>

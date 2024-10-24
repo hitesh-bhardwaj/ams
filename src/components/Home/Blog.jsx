@@ -4,14 +4,14 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { paraAnim,imageAnim } from "../gsapAnimations";
+import {imageAnim } from "../gsapAnimations";
 import Image from "next/image";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 /* eslint-disable @next/next/no-img-element */
 export default function Blog() {
-    paraAnim()
+    // paraAnim()
     imageAnim()
     const blogLeft = useRef(null);
     const blogContainer = useRef(null);

@@ -1,12 +1,12 @@
 import PrimaryButton from "../Button/PrimaryButton";
-import { paraAnim } from "../gsapAnimations";
+// import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Impact() {
-    paraAnim();
+    // paraAnim();
     const videoRef = useRef(null);
     const [videoLoaded, setVideoLoaded] = useState(false);
 

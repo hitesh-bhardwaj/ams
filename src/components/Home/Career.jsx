@@ -1,12 +1,12 @@
 import PrimaryButton from "../Button/PrimaryButton";
-import { paraAnim } from "../gsapAnimations";
+// import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Career() {
-    paraAnim();
+    // paraAnim();
     const careerVideoRef = useRef(null);
     const [videoLoaded, setVideoLoaded] = useState(false); // Track if the video has been loaded
 

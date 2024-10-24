@@ -346,7 +346,6 @@ const ManufacturingCarousel = () => {
                                             playsInline
                                             poster="/assets/home/ams-manufactuing-facility-poster.webp"
                                             className="object-cover h-full w-full imgMove"
-                                            src="/assets/home/ams-manufacturing-video.mp4"
                                             alt="Service Image"
                                             loading="lazy"
                                         />

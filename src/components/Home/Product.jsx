@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import LinkButton from "../Button/LinkButton";
-import { paraAnim } from "../gsapAnimations";
+// import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -12,7 +12,7 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Product() {
-  paraAnim();
+  // paraAnim();
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
