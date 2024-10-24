@@ -3,6 +3,7 @@ import ReactLenis from "@studio-freight/react-lenis";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
 import Pixifinal from "@/components/Pixifinal";
+import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps, router }) {
   const [showPixi, setShowPixi] = useState(true);
