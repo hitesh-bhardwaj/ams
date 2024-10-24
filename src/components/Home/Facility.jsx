@@ -33,10 +33,12 @@ export default function Facility() {
                             alt="facility"
                             fill
                         />
-                        <img
+                        <Image
                             src="/assets/icons/360.svg"
                             alt="360 icon"
                             className="absolute w-[15%] bottom-8 right-8"
+                            width={100}
+                            height={100}
                         />
                     </div>
                 </div>

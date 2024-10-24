@@ -54,12 +54,14 @@ export default function Hero() {
               </div>
               <div className="absolute w-[43%] right-0 bottom-0 mobile:hidden">
 
-              <div className=" w-[43vw] h-[38vw]  hero-img-anim relative  tablet:w-[45vw] tablet:h-[42vw] overflow-hidden">
+              <div className=" w-[43vw] h-[38vw]  hero-img-anim  tablet:w-[45vw] tablet:h-[42vw] overflow-hidden">
                 <Image
                   className="hero-img"
                   src="/assets/home/hero-image.webp"
                   alt="Hero Image"
-                  fill
+                  width={830}
+                  height={765}
+                  
                   priority={true}
                 />
               </div>

@@ -61,9 +61,10 @@ export default function Product() {
         <div className="h-full">
           <Image
             src={"/assets/home/product-bg.webp"}
-            fill
+            width={1960}
+            height={1180}
             alt={"product-bg"}
-            className="object-cover product-bg-img scale-[1.3] translate-y-[-30%] mobile:hidden"
+            className="object-cover product-bg-img absolute scale-[1.3] translate-y-[-30%] mobile:hidden"
           />
           <Image
             src={"/assets/home/product-bg-mobile.png"}
@@ -123,8 +124,8 @@ export default function Product() {
                           className="fadeUp"
                           src="/assets/products/ADVA-Glide.webp"
                           alt="Product Image"
-                          width={1000}
-                          height={1000}
+                          width={467}
+                          height={270}
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
@@ -180,8 +181,8 @@ export default function Product() {
                           className="fadeUp"
                           src="/assets/products/ADVAGRIP.webp"
                           alt="Product Image"
-                          width={1000}
-                          height={1000}
+                          width={467}
+                          height={405}
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
@@ -239,8 +240,8 @@ export default function Product() {
                           className="fadeUp"
                           src="/assets/products/ADVA-Pro.webp"
                           alt="Product Image"
-                          width={1000}
-                          height={1000}
+                          width={467}
+                          height={595}
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
@@ -293,8 +294,8 @@ export default function Product() {
                           className="fadeUp"
                           src="/assets/products/ADVACRYL.webp"
                           alt="Product Image"
-                          width={1000}
-                          height={1000}
+                          width={467}
+                          height={405}
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">

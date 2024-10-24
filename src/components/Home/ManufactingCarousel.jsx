@@ -309,21 +309,25 @@ const ManufacturingCarousel = () => {
                                 </div>
                                 <div className="innerImg">
                                     <div className="img">
-                                        <img
+                                        <Image
                                             className="object-cover imgMove"
                                             src="/assets/home/manufacturing-2.webp"
                                             alt="Service Image"
                                             loading="lazy"
+                                            width={1090}
+                                            height={1080}
                                         />
                                     </div>
                                 </div>
                                 <div className="innerImg">
                                     <div className="img">
-                                        <img
+                                        <Image
                                             loading="lazy"
                                             className="object-cover imgMove"
                                             src="/assets/home/manufacturing-3.webp"
                                             alt="Service Image"
+                                            width={1090}
+                                            height={1080}
                                         />
                                     </div>
                                 </div>
