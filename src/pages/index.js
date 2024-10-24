@@ -1,24 +1,32 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Blog from "@/components/Home/Blog";
 import Career from "@/components/Home/Career";
 import Facility from "@/components/Home/Facility";
 import Hero from "@/components/Home/Hero";
-// import HeroCarousel from "@/components/Home/HeroCarousel";
 import Impact from "@/components/Home/Impact";
-import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
-import Product from "@/components/Home/Product";
 import Transition from "@/components/Transition";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
+import dynamic from 'next/dynamic'; // Import next/dynamic
+
+// Dynamically load the components
+const ManufacturingCarousel = dynamic(() => import("@/components/Home/ManufactingCarousel"), {
+  loading: () => <p>Loading carousel...</p>, // Optional loading component
+});
+
+const Product = dynamic(() => import("@/components/Home/Product"), {
+  loading: () => <p>Loading products...</p>, // Optional loading component
+});
+
+const Blog = dynamic(() => import("@/components/Home/Blog"), {
+  loading: () => <p>Loading blog...</p>, // Optional loading component
+});
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Home() {
-    // Run on mount
- 
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -77,12 +85,12 @@ export default function Home() {
       <main>
         <Hero />
         
-        {/* <ManufacturingCarousel /> */}
-        
+        {/* Dynamically loaded components */}
+        <ManufacturingCarousel />
         <Product />
         <Impact />
         <Career />
-        {/* <Blog /> */}
+        <Blog />
         <Facility />
       </main>
       <Footer />
