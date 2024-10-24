@@ -76,6 +76,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
             <div className="flex h-1/2 justify-between items-center col-span-full mobile:h-[10vw]  mobile:mt-[5vw]">
               <Link
                 href="/"
+                aria-label=":to home page"
                 className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[15vw] mobile:w-[25vw] mobile:h-[20vw] relative"
               >
                 {/* Default image for tablet and larger screens */}
@@ -119,7 +120,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
                   <ul className="space-y-[0.8vw] tablet:space-y-[1vw]">
                     <li className="footer-link">
                       <Link
-                        href="/#"
+                        href="/"
                         className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]"
                       >
                         <span data-attr="Home">Home</span>
