@@ -6,7 +6,7 @@ import Facility from "@/components/Home/Facility";
 import Hero from "@/components/Home/Hero";
 // import HeroCarousel from "@/components/Home/HeroCarousel";
 import Impact from "@/components/Home/Impact";
-import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
+// import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
 import Product from "@/components/Home/Product";
 import Transition from "@/components/Transition";
 import { useGSAP } from "@gsap/react";
@@ -77,7 +77,7 @@ export default function Home() {
       <main>
         <Hero />
         
-        <ManufacturingCarousel />
+        {/* <ManufacturingCarousel /> */}
         
         <Product />
         <Impact />
