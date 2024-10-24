@@ -50,7 +50,7 @@ export default function Footer() {
                                         </span>
                                     </a>
                                 </div>
-                                <div className="social-icons flex items-bottom gap-[3vw] fadeUp mobile:mb-[5vw] mobile:mt-[5vw] mobile:gap-[10vw]">
+                                <div className="social-icons flex items-bottom gap-[3vw] fadeUp z-10 mobile:mb-[5vw] mobile:mt-[5vw] mobile:gap-[10vw]">
                                     <Link href="/#" className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100">
                                         <img 
                                             className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
@@ -198,12 +198,14 @@ export default function Footer() {
                             fill
                         /> 
                         </div>
-                         <img
-                            className="col-span-full my-[3vw]  drop-shadow-2xl hidden mobile:block mobile:w-[80%] mobile:my-[6vw]"
+                        <div className="relative col-span-full my-[3vw] h-[27vw] w-full tablet:my-[6vw] tablet:h-[15vw] fadeUp hidden mobile:block mobile:w-[80%] mobile:my-[6vw]">
+                         <Image
+                            className=" drop-shadow-2xl  "
                             src="/ams-logo-with-tag-mobile.png"
                             alt="Logo"
-                            height="200"
+                            fill
                         /> 
+                        </div>
                         <div className="col-span-full flex justify-between text-head text-[1vw] font-light mobile:text-[3.6vw] mobile:flex-col mobile:items-center mobile:justify-center tablet:text-[1.8vw] mobile:mt-[5vw]">
                             <p className="relative z-[6]">© {new Date().getFullYear()} Advanced MedTech Solutions Pvt. Ltd</p>
                             <a className="relative after:absolute after:block after:left-0 after:bg-current after:bottom-0 after:h-[1px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all" target='_blank' title='UI/UX, Strategy, Marketing Agency' href='https://weareenigma.com'>By: Enigma</a>

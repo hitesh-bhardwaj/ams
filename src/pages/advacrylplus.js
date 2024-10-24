@@ -129,6 +129,7 @@ const advacrylplus = () => {
           para2={"Steady performance for superior confidence"}
         />
         <Edge
+        sectionheading={"ADVACRYL PLUS Edge"}
           card1={EdgeCard.card1}
           card2={EdgeCard.card2}
           card3={EdgeCard.card3}

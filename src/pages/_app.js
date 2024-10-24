@@ -6,24 +6,24 @@ import { DefaultSeo } from 'next-seo';
 import Pixifinal from "@/components/Pixifinal";
 
 export default function App({ Component, pageProps, router }) {
-  const [showPixi, setShowPixi] = useState(true);
+  // const [showPixi, setShowPixi] = useState(true);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        setShowPixi(false);
-      } else {
-        setShowPixi(true);
-      }
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 1024) {
+  //       setShowPixi(false);
+  //     } else {
+  //       setShowPixi(true);
+  //     }
+  //   };
 
-    handleResize(); 
-    window.addEventListener("resize", handleResize);
+  //   handleResize(); 
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -53,7 +53,7 @@ export default function App({ Component, pageProps, router }) {
         </AnimatePresence>
       </ReactLenis>
       
-      {showPixi && <Pixifinal />}
+       <Pixifinal />
     </>
   );
 }

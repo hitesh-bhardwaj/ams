@@ -14,7 +14,6 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                   >
                     {heading}
                   </span>
-                  <br className="mobile:hidden" />
                 </h1>
                 <p data-para-anim className="uppercase text-[1.25vw] leading-[1] tracking-wide mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                   {tagline}
@@ -27,7 +26,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                 </p>
               </div>
             </div>
-            <div className="absolute right-0 top-[20%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-[5%] mobile:top-[30%] tablet:top-[30%]">
+            <div className="absolute right-0 top-[20%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%] tablet:top-[30%]">
               <div className="w-[55vw] h-[36vw] absolute bottom-[10%] mobile:w-[100vw] mobile:h-[80vw] tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
                 <Image
                   className="object-cover"
@@ -48,7 +47,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
               </div>
 
               <div className="mobile:mt-[20vw]">
-                <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-[75vw] mobile:py-[5%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw]">
+                <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-[75vw] mobile:py-[5%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
                   {para2}
                 </p>
               </div>

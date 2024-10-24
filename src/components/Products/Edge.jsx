@@ -5,7 +5,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP,ScrollTrigger)
 
-const Edge = ({ card1, card2, card3 }) => {
+const Edge = ({ sectionheading, card1, card2, card3 }) => {
   useGSAP(()=>{
     if(globalThis.innerWidth>1024){
       const tl = gsap.timeline({
@@ -42,7 +42,7 @@ const Edge = ({ card1, card2, card3 }) => {
         <div className="w-screen h-full container-lg mb-[10%] mobile:h-full tablet:h-[70%]">
           <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw]">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
-              <h2 data-para-anim className="title-2 aeonik mobile:text-center">ADVACRYL Plus Edge</h2>
+              <h2 data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectionheading}</h2>
             </div>
 
             <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">

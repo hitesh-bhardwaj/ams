@@ -96,6 +96,7 @@ const advacryl = () => {
           para2={"With great versatility comes the confidence to meet specific needs"}
         />
         <Edge
+        sectionheading={"ADVACRYL Edge"}
           card1={EdgeCard.card1}
           card2={EdgeCard.card2}
           card3={EdgeCard.card3}
