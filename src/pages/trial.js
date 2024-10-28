@@ -5,14 +5,11 @@ import Facility from "@/components/Home/Facility";
 import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import Transition from "@/components/Transition";
-// import { useGSAP } from "@gsap/react";
-// import { imageAnim } from "@/components/gsapAnimations";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import dynamic from 'next/dynamic'; // Import next/dynamic
-import Bg from "@/components/Bg";
-// import { imageAnim } from "@/components/gsapAnimations";
+
 
 // Dynamically load the components
 const ManufacturingCarousel = dynamic(() => import("@/components/Home/ManufactingCarousel"), {
@@ -26,6 +23,10 @@ const Product = dynamic(() => import("@/components/Home/Product"), {
 const Blog = dynamic(() => import("@/components/Home/Blog"), {
   loading: () => <p>Loading blog...</p>, // Optional loading component
 });
+const Bg = dynamic(() => import("@/components/Bg"), {
+    loading: () => <p>Loading bg...</p>, // Optional loading component
+  });
+
 
 gsap.registerPlugin(ScrollTrigger);
 
