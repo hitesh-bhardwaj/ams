@@ -53,7 +53,7 @@ export default function App({ Component, pageProps, router }) {
         </AnimatePresence>
       </ReactLenis>
      {showPixi?<Pixifinal />:""}
-     
+       
     </>
   );
 }

@@ -30,9 +30,7 @@ export default function  oem () {
       }
       const hero = {
         title:"Ams Oem",
-        
-        
-        src:"/assets/oem/oem-hero-bg.webp",
+         src:"/assets/oem/oem-hero-bg.webp",
         
       }
       
@@ -68,7 +66,7 @@ export default function  oem () {
     <>
    <Header/>
    <main>
-  <Hero title={hero.title} src={hero.src} className="hidden" paraWidth={"max-w-[50vw]"}/>
+  <Hero title={hero.title} src={hero.src} className="hidden" paraWidth={"max-w-[50vw]"} titleHidden={"hidden"}/>
   <Genesis content = {content}/>
    <OemCard/>
   <Offerings/>
