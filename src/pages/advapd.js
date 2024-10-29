@@ -19,54 +19,54 @@ const EdgeCard = {
   },
   card2: {
     title: "- the confidence to suture with ease",
-    src: "/assets/advamryl/advamryl-tray.png",
+    src: "/assets/advapd/advapdtray.png",
     para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-       bgsrc:"/assets/advamryl/orange-rectangle.png"
+       bgsrc:"/assets/advapd/advapd-rectangle.png"
   },
   card3: {
     title: "Knot Pull Tensile Strength",
-    src: "/assets/advamryl/advamryl-graph.png",
+    src: "/assets/advapd/advapd-graph.png",
     para: "Advanced Tipping",
   },
 };
 const FeatureCard = {
   card1: {
-    src: "/assets/advacryl/features1.png",
-    title: " Excellent handling",
+    src: "/assets/advapd/features1.png",
+    title: " Excellent in-vivo strength retention",
   },
   card2: {
-    src: "/assets/advacryl/features2.png",
-    title: " Excellent handling",
+    src: "/assets/advapd/features2.png",
+    title: " Minimal memory for handling ease",
   },
   card3: {
-    src: "/assets/advacryl/features3.png",
-    title: " Excellent handling",
+    src: "/assets/advacryl/features4.png",
+    title: " Excellent knot security",
   },
   card4: {
-    src: "/assets/advacryl/features4.png",
-    title: " Excellent handling",
+    src: "/assets/advacryl/features3.png",
+    title: "Excellent pliability & handling characteristics",
   },
 };
 
-const advamryl = () => {
+const advapd = () => {
   fadeUp()
   return (
     <>
       <Header />
       <main>
         <Hero
-          heading={"Advamryl"}
-           className="text-[#E58D72]"
-          tagline={" AMonofilament Poliglecaprone 25"}
+          heading={"AdvaPd"}
+           className="text-[#A49EA3]"
+          tagline={" Monofilament Polydioxanone"}
           para1={
-            "  Supreme handling performance for confidence in subcuticular skin closure"
+            "  Enduring performance for confidence in extended wound support"
           }
-          src={"/assets/advamryl/advamryl-hero.png"}
-          bgimg={'/assets/advamryl/advamryl-hero-bg.png'}
+          src={"/assets/advapd/advapd-hero.png"}
+          bgimg={'/assets/advapd/advapd-hero-bg.png'}
           para2={"Steady performance for superior confidence"}
         />
         <Edge
-        sectionheading={"ADVAMRYL Edge"}
+        sectionheading={"The ADVAPD Edge"}
           card1={EdgeCard.card1}
           card2={EdgeCard.card2}
           card3={EdgeCard.card3}
@@ -77,7 +77,7 @@ const advamryl = () => {
           card3={FeatureCard.card3}
           card4={FeatureCard.card4}
         />
-        <ProductDescription className={'text-[#E58D72]'}        />
+        <ProductDescription className={'text-[#A49EA3]'}/>
         <NextGeneration />
         <Uncover />
       </main>
@@ -87,4 +87,4 @@ const advamryl = () => {
   );
 };
 
-export default advamryl;
+export default advapd;

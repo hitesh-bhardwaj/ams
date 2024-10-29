@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Edge from "@/components/Products/Edge";
 import Features from "@/components/Products/Features";
 import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
@@ -10,6 +9,7 @@ import Uncover from "@/components/Products/Uncover";
 import Transition from "@/components/Transition";
 import React from "react";
 import { fadeUp } from "@/components/gsapAnimations";
+import Edge2 from "@/components/Products/Edge2";
 
 const EdgeCard = {
   card1: {
@@ -18,58 +18,59 @@ const EdgeCard = {
     para: "Advanced Tipping",
   },
   card2: {
-    title: "- the confidence to suture with ease",
-    src: "/assets/advamryl/advamryl-tray.png",
+    title: "Inert Polymer ",
+    src: "/assets/advalon/advalon-edge2.png",
     para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-       bgsrc:"/assets/advamryl/orange-rectangle.png"
+       bgsrc:"/assets/advalene/advalene-rectangle.png"
   },
   card3: {
     title: "Knot Pull Tensile Strength",
-    src: "/assets/advamryl/advamryl-graph.png",
-    para: "Advanced Tipping",
+    src: "/assets/advalon/advalon-graph.png",
+    para: "",
   },
 };
 const FeatureCard = {
   card1: {
-    src: "/assets/advacryl/features1.png",
-    title: " Excellent handling",
+    src: "/assets/advalon/features1.png",
+    title: "Uniform diameter",
   },
   card2: {
-    src: "/assets/advacryl/features2.png",
-    title: " Excellent handling",
+    src: "/assets/advalon/features2.png",
+    title: "Elasticity to ensure compact and safe knotting",
   },
   card3: {
-    src: "/assets/advacryl/features3.png",
-    title: " Excellent handling",
+    src: "/assets/advabond/features3.png",
+    title: "Inertness for minimal risk of infection",
   },
   card4: {
-    src: "/assets/advacryl/features4.png",
-    title: " Excellent handling",
+    src: "/assets/advalon/features4.png",
+    title: "Excellent and consistent knotting strength",
   },
 };
 
-const advamryl = () => {
+const advalon = () => {
   fadeUp()
   return (
     <>
       <Header />
       <main>
         <Hero
-          heading={"Advamryl"}
-           className="text-[#E58D72]"
-          tagline={" AMonofilament Poliglecaprone 25"}
+          heading={"Advalon"}
+           className="text-[#7FC18E]"
+          tagline={"Monofilament Polyamide Black"}
           para1={
-            "  Supreme handling performance for confidence in subcuticular skin closure"
+            "Appropriate choice for dermal closure and retention suturing"
           }
-          src={"/assets/advamryl/advamryl-hero.png"}
-          bgimg={'/assets/advamryl/advamryl-hero-bg.png'}
-          para2={"Steady performance for superior confidence"}
+          src={"/assets/advalon/advalon-hero.png"}
+          bgimg={'/assets/advalon/advalon-hero-bg.png'}
+          para2={"Enhancing confidence for everlasting support"}
         />
-        <Edge
-        sectionheading={"ADVAMRYL Edge"}
+        <Edge2
+        sectionheading={"The ADVALON Edge"}
           card1={EdgeCard.card1}
           card2={EdgeCard.card2}
           card3={EdgeCard.card3}
+          className={'hidden'}
         />
         <Features
           card1={FeatureCard.card1}
@@ -77,7 +78,7 @@ const advamryl = () => {
           card3={FeatureCard.card3}
           card4={FeatureCard.card4}
         />
-        <ProductDescription className={'text-[#E58D72]'}        />
+        <ProductDescription className={'text-[#7FC18E]'}/>
         <NextGeneration />
         <Uncover />
       </main>
@@ -87,4 +88,4 @@ const advamryl = () => {
   );
 };
 
-export default advamryl;
+export default advalon;

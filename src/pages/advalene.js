@@ -13,60 +13,60 @@ import { fadeUp } from "@/components/gsapAnimations";
 
 const EdgeCard = {
   card1: {
-    title: "Swage Point Integrity",
-    src: "/assets/advacryl/magnifying-glass.png",
-    para: "Advanced Tipping",
+    title: "Needle Penetration Study",
+    src: "/assets/advacat/advacat-edge1.png",
+    para: "",
   },
   card2: {
     title: "- the confidence to suture with ease",
-    src: "/assets/advamryl/advamryl-tray.png",
+    src: "/assets/advalene/advalene-tray.png",
     para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-       bgsrc:"/assets/advamryl/orange-rectangle.png"
+       bgsrc:"/assets/advalene/advalene-rectangle.png"
   },
   card3: {
     title: "Knot Pull Tensile Strength",
-    src: "/assets/advamryl/advamryl-graph.png",
-    para: "Advanced Tipping",
+    src: "/assets/advalene/advalene-graph.png",
+    para: "",
   },
 };
 const FeatureCard = {
   card1: {
-    src: "/assets/advacryl/features1.png",
-    title: " Excellent handling",
+    src: "/assets/advalene/features1.png",
+    title: " Uniform diameter",
   },
   card2: {
-    src: "/assets/advacryl/features2.png",
-    title: " Excellent handling",
+    src: "/assets/advalene/features2.png",
+    title: " Minimal memory and reduced “pig-tailing”",
   },
   card3: {
-    src: "/assets/advacryl/features3.png",
-    title: " Excellent handling",
+    src: "/assets/advalene/features3.png",
+    title: " Isotactic polymer maximum strength",
   },
   card4: {
-    src: "/assets/advacryl/features4.png",
-    title: " Excellent handling",
+    src: "/assets/advalene/features4.png",
+    title: "Seamless knot, without fraying",
   },
 };
 
-const advamryl = () => {
+const advalene = () => {
   fadeUp()
   return (
     <>
       <Header />
       <main>
         <Hero
-          heading={"Advamryl"}
-           className="text-[#E58D72]"
-          tagline={" AMonofilament Poliglecaprone 25"}
+          heading={"Advalene"}
+           className="text-[#1680B7]"
+          tagline={" Monofilament Polypropylene Blue"}
           para1={
-            "  Supreme handling performance for confidence in subcuticular skin closure"
+            "  Reliable performance for confidence in contaminated wound closure"
           }
-          src={"/assets/advamryl/advamryl-hero.png"}
-          bgimg={'/assets/advamryl/advamryl-hero-bg.png'}
+          src={"/assets/advalene/advalene-hero.png"}
+          bgimg={'/assets/advalene/advalene-hero-bg.png'}
           para2={"Steady performance for superior confidence"}
         />
         <Edge
-        sectionheading={"ADVAMRYL Edge"}
+        sectionheading={"The ADVALENE Edge"}
           card1={EdgeCard.card1}
           card2={EdgeCard.card2}
           card3={EdgeCard.card3}
@@ -77,7 +77,7 @@ const advamryl = () => {
           card3={FeatureCard.card3}
           card4={FeatureCard.card4}
         />
-        <ProductDescription className={'text-[#E58D72]'}        />
+        <ProductDescription className={'text-[#1480B8]'}  />
         <NextGeneration />
         <Uncover />
       </main>
@@ -87,4 +87,4 @@ const advamryl = () => {
   );
 };
 
-export default advamryl;
+export default advalene;

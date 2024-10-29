@@ -51,38 +51,6 @@ const FeatureCard = {
     title: " Excellent handling",
   },
 };
-const ProductCard = {
-  card1: {
-    img: "/assets/advacryl/composition.png",
-    title: "Composition",
-    para: "90% Glycolide, 10% L-lactide",
-  },
-  card2: {
-    img: "/assets/advacryl/color.png",
-    title: "Color",
-    para: "Undyed and Violet",
-  },
-  card3: {
-    img: "/assets/advacryl/sizes.png",
-    title: "Available Sizes",
-    para: "U.S.P. 2 to 6-0",
-  },
-  card4: {
-    img: "/assets/advacryl/coating.png",
-    title: "Coating",
-    para: "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
-  },
-  card5: {
-    img: "/assets/advacryl/tensile.png",
-    title: "Tensile Strength",
-    para: "~75%  |  14 Days~55%  |  21 Days",
-  },
-  card6: {
-    img: "/assets/advacryl/absorption.png",
-    title: "Absorption",
-    para: "Essentially complete upto 80 days",
-  },
-};
 
 const advacrylplus = () => {
   useEffect(() => {
@@ -140,13 +108,7 @@ const advacrylplus = () => {
           card3={FeatureCard.card3}
           card4={FeatureCard.card4}
         />
-        <ProductDescription
-          card1={ProductCard.card1}
-          card2={ProductCard.card2}
-          card3={ProductCard.card3}
-          card4={ProductCard.card4}
-          card5={ProductCard.card5}
-          card6={ProductCard.card6}
+        <ProductDescription className={'text-[#855EA6]'}
         />
         <NextGeneration />
         <Uncover />

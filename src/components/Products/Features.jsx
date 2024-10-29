@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const FeatureCard = ({ src, title }) => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center feature-card tablet:py-[5%]'>
+      <div className='flex flex-col items-center justify-center feature-card group opacity-[0.2] cursor-pointer duration-300 transition-all ease  hover:opacity-[1] tablet:py-[5%]'>
         <div className='h-[15vw] w-[10vw] mobile:w-[60vw] mobile:h-[20vw] tablet:w-[20vw] tablet:h-[25vw]'>
           <div className='w-full h-full relative'>
             <Image
@@ -24,8 +24,8 @@ const FeatureCard = ({ src, title }) => {
             />
           </div>
         </div>
-        <div className='w-[80%] '>
-          <p data-para-anim className='text-[1.65vw] font-light text-center  mobile:text-[6vw] tablet:text-[2.5vw]'>
+        <div className='w-full '>
+          <p data-para-anim className='text-[1.15vw] font-light text-center w-[15vw] mobile:text-[6vw] tablet:text-[2.5vw]'>
             {title}
           </p>
         </div>
@@ -38,21 +38,21 @@ const Features = ({ card1, card2, card3, card4 }) => {
   paraAnim();
   fadeUp();
 
-  useEffect(() => {
-    if (globalThis.innerWidth >= 1024) {
-      gsap.from(".feature-card", {
-        yPercent: 50,
-        opacity: 0,
-        duration: 0.7,
-        scrollTrigger: {
-          trigger: ".feature-card-container",
-          start: "top 80%",
-          end: "bottom 40%",
-        },
-        stagger: 0.1
-      });
-    }
-  }, []); // Run the GSAP animation once after component mounts
+  // useEffect(() => {
+  //   if (globalThis.innerWidth >= 1024) {
+  //     gsap.from(".feature-card", {
+  //       yPercent: 50,
+  //       opacity: 0,
+  //       duration: 0.7,
+  //       scrollTrigger: {
+  //         trigger: ".feature-card-container",
+  //         start: "top 80%",
+  //         end: "bottom 40%",
+  //       },
+  //       stagger: 0.1
+  //     });
+  //   }
+  // }, []); // Run the GSAP animation once after component mounts
 
   const swiperRef = useRef(null);
   const [activeButton, setActiveButton] = useState(" ");

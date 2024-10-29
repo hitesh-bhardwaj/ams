@@ -88,6 +88,48 @@ function useRouteColors() {
           color3: "#669FE5",
         });
         break;
+        case "/advapd":
+        setColors({
+          color1: "#A5BBCE",
+          color2: "#A5BBCE",
+          color3: "#CCCCCC",
+        });
+        break;
+        case "/advacat":
+          setColors({
+            color1: "#DDCB9F",
+            color2: "#DDCB9F",
+            color3: "#CCCCCC",
+          });
+          break;
+          case "/advalene":
+            setColors({
+              color1: "#D5D6F3",
+              color2: "#D5D6F3",
+              color3: "#307FB2",
+            });
+            break;
+            case "/advabond":
+              setColors({
+                color1: "#669DE5",
+                color2: "#669DE5",
+                color3: "#FFCDBC",
+              });
+              break;
+              case "/advalon":
+                setColors({
+                  color1: "#DFD6F3",
+                  color2: "#DFD6F3",
+                  color3: "#307FB2",
+                });
+                break;
+                case "/advasyl":
+                  setColors({
+                    color1: "#DFD6F3",
+                    color2: "#DFD6F3",
+                    color3: "#307FB2",
+                  });
+                  break;
       default:
         setColors({
           color1: "#D467D7",

@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Edge from "@/components/Products/Edge";
 import Features from "@/components/Products/Features";
 import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
@@ -10,41 +9,42 @@ import Uncover from "@/components/Products/Uncover";
 import Transition from "@/components/Transition";
 import React from "react";
 import { fadeUp } from "@/components/gsapAnimations";
+import Edge2 from "@/components/Products/Edge2";
 
 const EdgeCard = {
   card1: {
-    title: "Swage Point Integrity",
-    src: "/assets/advacryl/magnifying-glass.png",
-    para: "Advanced Tipping",
+    title: "Needle Penetration Study",
+    src: "/assets/advacat/advacat-edge1.png",
+    para: "",
   },
   card2: {
     title: "- the confidence to suture with ease",
-    src: "/assets/advacryl/advacryl-tray.png",
-    para: "  patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-    bgsrc:"/assets/advacryl/purple-rectangle.png"
+    src: "/assets/advacat/advacat-edge2.png",
+    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+       bgsrc:"/assets/advapd/advapd-rectangle.png"
   },
   card3: {
     title: "Knot Pull Tensile Strength",
-    src: "/assets/advacryl/advacryl-graph.png",
-    para: "Advanced Tipping",
+    src: "/assets/advacat/advacat-edge3.png",
+    para: "",
   },
 };
 const FeatureCard = {
   card1: {
-    src: "/assets/advacryl/features1.png",
-    title: " Excellent handling",
+    src: "/assets/advapd/features1.png",
+    title: " Excellent in-vivo strength retention",
   },
   card2: {
-    src: "/assets/advacryl/features2.png",
-    title: " Excellent handling",
+    src: "/assets/advapd/features2.png",
+    title: " Minimal memory for handling ease",
   },
   card3: {
-    src: "/assets/advacryl/features3.png",
-    title: " Excellent handling",
+    src: "/assets/advacryl/features4.png",
+    title: " Excellent knot security",
   },
   card4: {
-    src: "/assets/advacryl/features4.png",
-    title: " Excellent handling",
+    src: "/assets/advacryl/features3.png",
+    title: "Excellent pliability & handling characteristics",
   },
 };
 const ProductCard = {
@@ -55,7 +55,7 @@ const ProductCard = {
   },
   card2: {
     img: "/assets/advacryl/color.png",
-    title: "Colour",
+    title: "Color",
     para: "Undyed and Violet",
   },
   card3: {
@@ -80,23 +80,25 @@ const ProductCard = {
   },
 };
 
-const advacryl = () => {
+const advacat = () => {
   fadeUp()
   return (
     <>
       <Header />
       <main>
         <Hero
-          heading={"Advacryl"}
-          className="text-[#855EA6]"
-          tagline={" BRAIDED COATED POLYGLACTIN 910 SURGICAL SUTURE"}
-          para1={"  Consistent performance for confidence in a variety of soft tissue approximation"}
-          src={"/assets/advacryl/advacryl-hero.png"}
-          bgimg={'/assets/advacryl/advacryl-hero-bg.png'}
-          para2={"With great versatility comes the confidence to meet specific needs"}
+          heading={"AdvaCat"}
+           className="text-[#DDCB9F]"
+          tagline={" Purified Collagen (Chromic & Plain)"}
+          para1={
+            "  Consistent performance for confidence in episiotomy repair"
+          }
+          src={"/assets/advacat/advacat-hero.png"}
+          bgimg={'/assets/advacat/advacat-hero-bg.png'}
+          para2={"Steady performance for superior confidence"}
         />
-        <Edge
-        sectionheading={"ADVACRYL Edge"}
+        <Edge2
+        sectionheading={"The ADVACAT Edge"}
           card1={EdgeCard.card1}
           card2={EdgeCard.card2}
           card3={EdgeCard.card3}
@@ -107,7 +109,7 @@ const advacryl = () => {
           card3={FeatureCard.card3}
           card4={FeatureCard.card4}
         />
-        <ProductDescription className={'text-[#855EA6]'}/>
+        <ProductDescription className={'text-[#DDCB9F]'}/>
         <NextGeneration />
         <Uncover />
       </main>
@@ -117,4 +119,4 @@ const advacryl = () => {
   );
 };
 
-export default advacryl;
+export default advacat;

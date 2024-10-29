@@ -17,7 +17,7 @@ export default function App({ Component, pageProps, router }) {
       }
     };
 
-    handleResize(); // Set the initial value based on current screen size
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -52,7 +52,7 @@ export default function App({ Component, pageProps, router }) {
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </ReactLenis>
-     {showPixi?<Pixifinal />:""}
+     {/* {showPixi?<Pixifinal />:""} */}
        
     </>
   );

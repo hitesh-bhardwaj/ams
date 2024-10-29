@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Edge from "@/components/Products/Edge";
 import Features from "@/components/Products/Features";
 import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
@@ -10,6 +9,7 @@ import Uncover from "@/components/Products/Uncover";
 import Transition from "@/components/Transition";
 import React from "react";
 import { fadeUp } from "@/components/gsapAnimations";
+import Edge2 from "@/components/Products/Edge2";
 
 const EdgeCard = {
   card1: {
@@ -18,58 +18,59 @@ const EdgeCard = {
     para: "Advanced Tipping",
   },
   card2: {
-    title: "- the confidence to suture with ease",
-    src: "/assets/advamryl/advamryl-tray.png",
+    title: "Needle pull tensile strength ",
+    src: "/assets/advasyl/needle-pull.png",
     para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-       bgsrc:"/assets/advamryl/orange-rectangle.png"
+       bgsrc:"/assets/advalene/advalene-rectangle.png"
   },
   card3: {
     title: "Knot Pull Tensile Strength",
-    src: "/assets/advamryl/advamryl-graph.png",
-    para: "Advanced Tipping",
+    src: "/assets/advasyl/knot-pull.png",
+    para: "",
   },
 };
 const FeatureCard = {
   card1: {
-    src: "/assets/advacryl/features1.png",
-    title: " Excellent handling",
+    src: "/assets/advalon/features1.png",
+    title: "Smoother surface for minimal tissue drag & trauma",
   },
   card2: {
-    src: "/assets/advacryl/features2.png",
-    title: " Excellent handling",
+    src: "/assets/advalon/features2.png",
+    title: "Minimal memory for handling ease",
   },
   card3: {
-    src: "/assets/advacryl/features3.png",
-    title: " Excellent handling",
+    src: "/assets/advabond/features3.png",
+    title: "Excellent and consistent knotting strength",
   },
   card4: {
-    src: "/assets/advacryl/features4.png",
-    title: " Excellent handling",
+    src: "/assets/advalon/features4.png",
+    title: "Excellent handling characteristics",
   },
 };
 
-const advamryl = () => {
+const advasyl = () => {
   fadeUp()
   return (
     <>
       <Header />
       <main>
         <Hero
-          heading={"Advamryl"}
-           className="text-[#E58D72]"
-          tagline={" AMonofilament Poliglecaprone 25"}
+          heading={"Advasyl"}
+           className="text-[#5EC4DE]"
+          tagline={"Braided Silk"}
           para1={
-            "  Supreme handling performance for confidence in subcuticular skin closure"
+            "Exceptional control for confidence in gentle tissue approximation"
           }
-          src={"/assets/advamryl/advamryl-hero.png"}
-          bgimg={'/assets/advamryl/advamryl-hero-bg.png'}
+          src={"/assets/advasyl/advasyl-hero.png"}
+          bgimg={'/assets/advasyl/advasyl-hero-bg.png'}
           para2={"Steady performance for superior confidence"}
         />
-        <Edge
-        sectionheading={"ADVAMRYL Edge"}
+        <Edge2
+        sectionheading={"The ADVASYL Edge"}
           card1={EdgeCard.card1}
           card2={EdgeCard.card2}
           card3={EdgeCard.card3}
+          className={'hidden'}
         />
         <Features
           card1={FeatureCard.card1}
@@ -77,7 +78,7 @@ const advamryl = () => {
           card3={FeatureCard.card3}
           card4={FeatureCard.card4}
         />
-        <ProductDescription className={'text-[#E58D72]'}        />
+        <ProductDescription className={'text-[#5EC4DE]'} />
         <NextGeneration />
         <Uncover />
       </main>
@@ -87,4 +88,4 @@ const advamryl = () => {
   );
 };
 
-export default advamryl;
+export default advasyl;

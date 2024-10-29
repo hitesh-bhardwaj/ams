@@ -89,7 +89,6 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        
         {/* Dynamically loaded components */}
         <ManufacturingCarousel />
         <Product />
