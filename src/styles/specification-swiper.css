@@ -1,0 +1,16 @@
+.mySpecificationSwiper  .swiper-button-next{
+    position: absolute;
+    right: 18%;
+   color: white;
+}
+.mySpecificationSwiper  .swiper-button-prev{
+    color: white;
+    position: absolute;
+    left: 39%;
+ }
+.mySpecificationSwiper .swiper-scrollbar{
+    background-color: white;
+    width: 50% !important;
+    position: absolute;
+    left: 30% !important;
+}

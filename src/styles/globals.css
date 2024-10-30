@@ -9,6 +9,7 @@
 @import url('./careerswiper.css');
 @import url('./endoswiper.css');
 @import url('./manufactuing-carousel.css');
+@import url("./specification-swiper.css");
 
 :root {
   --text-color: #111111;
@@ -380,6 +381,11 @@ body{
   overflow: visible !important ;
 }
 
+.gradient-text{
+  background: -webkit-linear-gradient(right,#19516C, #BFF3FE, #9CE1F0 , #275F7B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 @media screen  and (max-width:541px){
