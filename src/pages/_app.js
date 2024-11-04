@@ -96,7 +96,7 @@ export default function App({ Component, pageProps, router }) {
         </div>
         </AnimatePresence>
      
-     {/* {showPixi?<Pixifinal />:""} */}
+     {showPixi?<Pixifinal />:""}
        
     </>
   );
