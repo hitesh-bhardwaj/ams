@@ -28,8 +28,8 @@ export default function Facility() {
                         </div>
                     </div>
                     <div className="relative w-[45%] h-[28vw] rounded-[4vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] mobile:rounded-[6vw] tablet:w-[80vw] tablet:h-[30vh]">
-                        <Image
-                            className="w-full object-cover imageanim"
+                        <Image data-speed="clamp(0.7)"
+                            className="w-full object-cover scale-[1.4]"
                             src="/assets/home/virtual.webp" 
                             alt="facility"
                             fill
