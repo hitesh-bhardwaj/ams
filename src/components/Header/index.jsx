@@ -31,7 +31,7 @@ const Header = () => {
   useEffect(() => {
     // Dynamically import ScrollSmoother on the client side
     if (typeof window !== "undefined") {
-      import("gsap-trial/ScrollSmoother").then((module) => {
+      import("@/components/ScrollSmoother.min.js").then((module) => {
         const ScrollSmoother = module.default;
         gsap.registerPlugin(ScrollSmoother);
 
