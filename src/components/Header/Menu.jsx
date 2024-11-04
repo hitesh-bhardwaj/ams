@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
-// import { Gradient } from "@/components/Gradient";
-import { useEffect, useRef, useState } from "react";
+import { Gradient } from "@/components/Gradient";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -11,45 +11,12 @@ gsap.registerPlugin(useGSAP);
 const Menu = ({ state, isMenuOpen, toggleMenu }) => {
   const mainMenu = useRef(null);
 
-  // useEffect(() => {
-  //   // Create your instance
-  //   const gradient = new Gradient();
-  //   // Call `initGradient` with the selector to your canvas
-  //   gradient.initGradient("#gradient-canvas");
-  // }, []);
-
-  const videoRef = useRef(null);
-  const [videoLoaded, setVideoLoaded] = useState(false);
-
   useEffect(() => {
-      const observer = new IntersectionObserver(
-          (entries) => {
-              entries.forEach((entry) => {
-                  if (entry.isIntersecting) {
-                      const video = videoRef.current;
-                      if (video && !videoLoaded) {
-                          // Set video source dynamically when it enters the viewport
-                          video.src = "/assets/header/ams-header-bg.mp4";
-                          video.load(); // Ensure the video is loaded
-                          video.play(); // Play the video when it's visible
-                          setVideoLoaded(true); // Set video as loaded
-                      }
-                      observer.unobserve(entry.target); // Stop observing once the video has loaded
-                  }
-              });
-          },
-          { threshold: 0 }
-      );
-
-      const videoElement = videoRef.current;
-      if (videoElement) {
-          observer.observe(videoElement);
-      }
-
-      return () => {
-          if (videoElement) observer.unobserve(videoElement);
-      };
-  }, [videoLoaded]);
+    // Create your instance
+    const gradient = new Gradient();
+    // Call `initGradient` with the selector to your canvas
+    gradient.initGradient("#gradient-canvas");
+  }, []);
 
   useGSAP(() => {
     const links = document.querySelectorAll(".nav .footer-link");
@@ -94,20 +61,8 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
         className={`w-screen h-screen fixed left-0 z-[100] top-[-100%] mobile:h-full mobile:w-full`}
       >
         <div className="bg-white h-2/3 w-full relative tablet:h-1/2 mobile:h-full">
-          {/* <div className="canvas-container absolute h-full w-[29%] tablet:h-[50vh] mobile:hidden">
+          <div className="canvas-container absolute h-full w-[29%] tablet:h-[50vh] mobile:hidden">
             <canvas id="gradient-canvas" />
-          </div> */}
-          <div className="w-[30%] h-full absolute ">
-          <video
-                         ref={videoRef}  // Attach ref to video for lazy loading
-                        muted
-                        playsInline
-                        loop
-                        className="h-full w-full object-cover"
-                        poster="/assets/header/ams-header-bg.webp" // Use poster image
-                      
-                    >
-                    </video>
           </div>
           <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-12 tablet:grid-rows-4 tablet:h-[50vh]">
             <div className="w-[15vw] h-[2vw] absolute bottom-[5%] left-[4%] fadeUp tablet:h-[5vw] tablet:w-[20vw]">

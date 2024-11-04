@@ -27,7 +27,7 @@ export default function Career() {
                     }
                 });
             },
-            { threshold: 0 } // Trigger when 50% of the video is visible
+            { threshold: 0.5 } // Trigger when 50% of the video is visible
         );
 
         const videoElement = careerVideoRef.current;
