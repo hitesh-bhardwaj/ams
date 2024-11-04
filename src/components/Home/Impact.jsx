@@ -27,7 +27,7 @@ export default function Impact() {
                     }
                 });
             },
-            { threshold: 0.5 }
+            { threshold: 0 }
         );
 
         const videoElement = videoRef.current;

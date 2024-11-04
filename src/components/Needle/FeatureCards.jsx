@@ -53,9 +53,9 @@ function FeatureCards() {
                   </div>
                   <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] translate-y-[100%] origin-bottom group-hover:translate-y-[0] transition-all duration-500 ease-out">
                     <div className="w-full h-full flex flex-col gap-[1vw] px-[3vw] py-[2vw]">
-                      <h4 data-para-anim className="text-[1.8vw] aeonik font-light">{card.title}</h4>
+                      <h4  className="text-[1.8vw] aeonik font-light">{card.title}</h4>
                       <div className="w-[3vw] h-[1.2px] bg-[#143CA3]"></div>
-                      <p data-para-anim className="text-[1vw] font-light">{card.detailedDescription}</p>
+                      <p className="text-[1vw] font-light">{card.detailedDescription}</p>
                     </div>
                   </div>
                 </div>
@@ -96,9 +96,9 @@ function FeatureCards() {
                   </div>
                   <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[6vw] translate-y-[100%] origin-bottom group-hover:translate-y-[0] transition-all duration-500 ease-out">
                     <div className="w-full h-full flex flex-col gap-[4vw] px-[7vw] py-[5vw] tablet:px-[4vw]">
-                      <h4 data-para-anim className="text-[8vw] aeonik font-light tablet:text-[5vw]">{card.title}</h4>
+                      <h4 className="text-[8vw] aeonik font-light tablet:text-[5vw]">{card.title}</h4>
                       <div className="w-[15vw] h-[1.2px] bg-[#143CA3] "></div>
-                      <p data-para-anim className="text-[4.2vw] font-light tablet:text-[2.5vw]">{card.detailedDescription}</p>
+                      <p className="text-[4.2vw] font-light tablet:text-[2.5vw]">{card.detailedDescription}</p>
                     </div>
                   </div>
                 </div>
