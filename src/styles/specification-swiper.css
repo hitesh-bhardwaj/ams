@@ -1,16 +1,70 @@
 .mySpecificationSwiper  .swiper-button-next{
     position: absolute;
-    right: 18%;
+    right: 29%;
+    top: 50%;
+    transform: translateX(50%);
    color: white;
 }
 .mySpecificationSwiper  .swiper-button-prev{
     color: white;
     position: absolute;
-    left: 39%;
+    top: 50%;
+  left: 29%;
+  transform: translateX(-50%);
+ }
+ .mySpecificationSwiper .swiper-wrapper{
+    padding-bottom: 5vw !important;
  }
 .mySpecificationSwiper .swiper-scrollbar{
     background-color: white;
     width: 50% !important;
     position: absolute;
-    left: 30% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
 }
+@media screen  and (max-width:541px){
+    .mySpecificationSwiper{
+        height: 95vh;
+    }
+.mySpecificationSwiper  .swiper-button-next{
+    top: 92%;
+    right: 35%;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 50%;
+}
+.mySpecificationSwiper  .swiper-button-prev{
+    top: 92%;
+    left: 35%;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 50%;
+}
+.mySpecificationSwiper .swiper-scrollbar{
+    display: none;
+}
+} 
+
+@media screen and (min-width: 540px) and (max-width: 1023px){
+    .mySpecificationSwiper{
+        height: 75vh;
+    }
+.mySpecificationSwiper  .swiper-button-next{
+    top: 90%;
+    right: 40%;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 50%;
+}
+.mySpecificationSwiper  .swiper-button-prev{
+    top: 90%;
+    left: 40%;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 50%;
+}
+.mySpecificationSwiper .swiper-scrollbar{
+    display: none;
+}
+}
+

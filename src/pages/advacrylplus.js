@@ -92,7 +92,7 @@ const advacrylplus = () => {
           para1={
             "  Consistent performance for confidence in a variety of soft tissue approximation minimizing Surgical Site Infections (SSI)"
           }
-          src={"/assets/advacryl/advacryl-hero.png"}
+          src={"/assets/advacryl/advacryl-plus-hero.png"}
           bgimg={'/assets/advacryl/advacryl-hero-bg.png'}
           para2={"Steady performance for superior confidence"}
         />

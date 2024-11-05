@@ -15,7 +15,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                     {heading}
                   </span>
                 </h1>
-                <p data-para-anim className="uppercase text-[1.25vw] leading-[1] tracking-wide mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-wide mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                   {tagline}
                 </p>
               </div>
@@ -27,7 +27,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
               </div>
             </div>
             <div className="absolute right-0 top-[20%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%] tablet:top-[30%]">
-              <div className="w-[55vw] h-[36vw] absolute bottom-[10%] mobile:w-[100vw] mobile:h-[80vw] tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
+              <div className="w-[55vw] h-[40vw] absolute bottom-[10%] mobile:w-[100vw] mobile:h-[80vw] tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
                 <Image
                   className="object-cover"
                   src={bgimg}
@@ -36,7 +36,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                 />
               </div>
 
-              <div className="w-[48vw] h-[36vw] relative bottom-[10%]  mobile:bottom-0 mobile:w-[90vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
+              <div className="w-[48vw] h-[40vw] relative bottom-[10%]  mobile:bottom-0 mobile:w-[90vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
                 <Image
                   className="object-contain"
                   src={src}

@@ -43,7 +43,7 @@ const ProductDescription = ({className}) => {
                 Product Description
               </h2>
             </div>
-            <div className="flex flex-wrap items-center gap-[3vw] product-description-card-container  tablet:justify-between">
+            <div className="flex flex-wrap items-center gap-[2vw] product-description-card-container  tablet:justify-between">
               <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] glassmorphism mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
                 <div className="absolute top-0 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:right-[35%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full p-[2vw] relative">

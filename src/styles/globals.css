@@ -382,12 +382,28 @@ body{
   overflow: visible !important ;
 }
 
-.gradient-text{
+/* .gradient-text{ */
+  /* background: linear-gradient(90deg, #19516C 0%, #B5F3FE 37%, #9CE1F0 67.5%, #275F7B 100%); */
+  /* background: -webkit-linear-gradient(right,#19516C, #BFF3FE, #9CE1F0 , #275F7B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.gradient-text {
   background: -webkit-linear-gradient(right,#19516C, #BFF3FE, #9CE1F0 , #275F7B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
+.gradient-line {
+  width: 2px;
+  margin: 5px; 
+  height: 9vw;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(bottom,#19516C, #BFF3FE, #9CE1F0 , #275F7B);
+}
 
 @media screen  and (max-width:541px){
   ::-webkit-scrollbar {
@@ -493,6 +509,9 @@ body{
 .molecularSwiper .swiper-button-next{
     left:57%;
     bottom: -30px;
+}
+.gradient-line{
+  height: 20vw;
 }
   }
 
@@ -692,6 +711,10 @@ body{
  
   border-radius: 40px;
 }
+
+.gradient-line{
+  height: 15vw;
+}
   }
 
 
@@ -700,6 +723,7 @@ body{
     --radius: 0.5rem;
   
   }
+
   
 }
   
