@@ -14,17 +14,17 @@ const Hero = () => {
         scrub: true,
       },
     });
-    tl.to(".hero-img", {
-      yPercent: 60,
-    });
+    // tl.to(".hero-img", {
+    //   yPercent: 60,
+    // });
     gsap.fromTo(
       ".hero-img",
       {
-        scale: 1.1,
-        yPercent: -30,
+        scale: 1.2,
+        yPercent: -10,
       },
       {
-        scale: 1,
+        scale: 1.1,
         yPercent: 0,
         duration: 1,
         delay: 0.1,
@@ -36,7 +36,7 @@ const Hero = () => {
     <section className=" mb-[5%] hero-container mobile:mb-[15%]" id="hero">
       <div className="w-[100vw] h-[110vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-[110vh] absolute tablet:h-[50vh]">
-          <Image
+          <Image data-speed="0.7"
             className="hero-img absolute object-cover"
             src="/assets/career/career-bg.png"
             alt="Hero Image"

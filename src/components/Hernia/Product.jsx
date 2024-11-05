@@ -158,7 +158,7 @@ const Product = () => {
     <section
     id="products"
       ref={sliderContainer}
-      className={`relative h-screen ${styles.sliderContainer} overflow-x-hidden mobile:h-full mobile:py-[10%] tablet:h-full`}
+      className={`relative h-screen ${styles.sliderContainer} overflow-hidden mobile:h-full mobile:py-[10%] tablet:h-full`}
     >
         <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden tablet:hidden">
         <div className='w-full flex justify-center'>

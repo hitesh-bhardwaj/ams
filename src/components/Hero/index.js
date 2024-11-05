@@ -14,17 +14,17 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => 
         scrub: true,
       },
     });
-    tl.to(".hero-img", {
-      yPercent: 60,
-    });
+    // tl.to(".hero-img", {
+    //   yPercent: 60,
+    // });
     gsap.fromTo(
       ".hero-img",
       {
-        scale: 1.1,
-        yPercent: -30,
+        scale: 1.2,
+        yPercent: -10,
       },
       {
-        scale: 1,
+        scale: 1.1,
         yPercent: 0,
         duration: 1,
         delay: 0.1,
@@ -36,8 +36,8 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => 
     <section className=" mb-[5%] hero-container mobile:mb-[15%] dark" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
-          <Image
-            className="hero-img absolute object-cover"
+          <Image data-speed="0.7"
+            className="hero-img absolute object-cover scale-[1.2]"
             src={src}
             alt="Hero Image"
             priority={true}

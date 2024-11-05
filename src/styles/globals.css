@@ -10,6 +10,7 @@
 @import url('./endoswiper.css');
 @import url('./manufactuing-carousel.css');
 @import url("./specification-swiper.css");
+@import url("./manufacturingcards.css");
 
 :root {
   --text-color: #111111;

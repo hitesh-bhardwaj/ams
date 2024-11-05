@@ -129,7 +129,7 @@ const Product = () => {
           scrollTrigger: {
             trigger: sliderContainer.current,
             start: "top top",
-            end: "bottom top",
+            end: "+=1000 top",
             pin: true,
             scrub: 0.5,
             invalidateOnRefresh: true,
@@ -153,7 +153,7 @@ const Product = () => {
     <section
     id="products"
       ref={sliderContainer}
-      className={`relative h-screen ${styles.sliderContainer} overflow-x-hidden mobile:h-full tablet:h-full mobile:py-[10%]`}
+      className={`relative h-screen ${styles.sliderContainer} overflow-hidden mobile:h-full tablet:h-full mobile:py-[10%]`}
     >   {/** for desktop */}
         <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden tablet:hidden">
         <div className='w-full flex justify-center'>

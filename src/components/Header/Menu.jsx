@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
-import { Gradient } from "@/components/Gradient";
+// import { Gradient } from "@/components/Gradient";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
-const Menu = ({ state, isMenuOpen, toggleMenu }) => {
+const Menu = ({  isMenuOpen, toggleMenu }) => {
   const mainMenu = useRef(null);
 
   const videoRef = useRef(null);
@@ -87,7 +87,7 @@ const Menu = ({ state, isMenuOpen, toggleMenu }) => {
         className={`w-screen h-screen fixed left-0 z-[100] top-[-100%] mobile:h-full mobile:w-full`}
       >
         <div className="bg-white h-2/3 w-full relative tablet:h-1/2 mobile:h-full">
-        <div className="w-[28%] h-full absolute ">
+        <div className="w-[28%] h-full absolute mobile:hidden ">
           <video
                          ref={videoRef}  // Attach ref to video for lazy loading
                         muted

@@ -12,6 +12,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import Hero from "@/components/Hero";
+import StickyCards from "@/components/Manufacturing/State";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function manufacturing() {
@@ -65,6 +66,7 @@ export default function manufacturing() {
         <Capabilities />
         <State />
         <Discover />
+        {/* <StickyCards/> */}
       </main>
       <Footer />
       <Transition />

@@ -14,9 +14,9 @@ const Hero = () => {
         scrub: true,
       },
     });
-    tl.to(".hero-img", {
-      yPercent: 60,
-    });
+    // tl.to(".hero-img", {
+    //   yPercent: 60,
+    // });
     tl.to(".hero-needle",{
       yPercent:30,
       delay:-1
@@ -25,11 +25,11 @@ const Hero = () => {
     gsap.fromTo(
       ".hero-img",
       {
-        scale: 1.1,
-        yPercent: -30,
+        scale: 1.2,
+        yPercent: -10,
       },
       {
-        scale: 1,
+        scale: 1.1,
         yPercent: 0,
         duration: 1,
         delay: 0.1,
@@ -41,7 +41,7 @@ const Hero = () => {
     <section className=" mb-[12%] hero-container" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
-          <Image
+          <Image data-speed="0.7"
             className="hero-img absolute object-cover"
             src="/assets/needle/needle-hero-bg.webp"
             alt="Hero Image"
