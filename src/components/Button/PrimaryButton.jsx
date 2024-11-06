@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 const PrimaryButton = ({link, btnText, className}) => {
     return(
         <>

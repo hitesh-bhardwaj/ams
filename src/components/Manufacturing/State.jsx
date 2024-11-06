@@ -8,27 +8,22 @@ gsap.registerPlugin(ScrollTrigger);
 export default function State() {
   useEffect(() => {
     if(globalThis.innerWidth>=1024){
-
       const totalContentElements = document.querySelectorAll(".content--card");
       totalContentElements.forEach((el) => {
-  
-        
-        
+
         gsap.timeline({
             scrollTrigger: {
                 trigger: el,
                 start: 'center center',
                 end: '+=100%',
                 scrub: true,
-                // markers:true
             }
         })
         .to(el, {
             ease: 'none',
             scale: 0.8,
             opacity: 0,
-            yPercent:140
-            // yPercent: isLast ? 0 : 125
+            yPercent:150 
         }, 0);
   
     });
@@ -37,10 +32,10 @@ export default function State() {
 
   return (
     <section id="state" className="main py-[7%] mobile:py-[15%]">
-      <div className="wrap flex flex-col gap-[10vw] mobile:gap-0 ">
-        <div className="content content--sticky content--card">
+      <div className="wrap flex flex-col gap-[10vw] mobile:gap-0 items-center w-full ">
+        <div className="content--card w-[90vw]">
           <div
-            className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
+            className={`rounded-[45px] border-[1px] border-gray-200  h-[38vw] px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
             <div className="h-[32vw] w-[60vw] relative rounded-[50px] overflow-hidden tablet:h-[50vw] tablet:w-[85vw] tablet:rounded-[3vw] mobile:w-[85vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
               <Image
@@ -74,7 +69,7 @@ export default function State() {
             </div>
           </div>
         </div>
-        <div className="content content--sticky content--card">
+        <div className="content--card w-[90vw]">
         <div
             className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex gap-[4vw] flex-row-reverse justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
@@ -105,7 +100,7 @@ export default function State() {
             </div>
           </div>
         </div>
-        <div className="content content--sticky content--card">
+        <div className="content--card w-[90vw]">
         <div
             className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
@@ -136,7 +131,7 @@ export default function State() {
             </div>
           </div>
         </div>
-        <div className="content content--sticky content--card">
+        <div className="content--card w-[90vw]">
         <div
             className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex flex-row-reverse gap-[4vw] justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
@@ -167,7 +162,7 @@ export default function State() {
             </div>
           </div>
         </div>
-        <div className="content content--sticky scale-[0.9] mobile:scale-[1]">
+        <div className="w-[90vw]">
         <div
             className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >

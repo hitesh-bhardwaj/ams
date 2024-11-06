@@ -1,12 +1,4 @@
-:root {
-    --leftMargin: 4.15vw;
-}
 
-@media (max-width: 768px) {
-    :root {
-        --leftMargin: 30px
-    }
-}
 .pushCarousel .h2>span {
     overflow: hidden;
     display: block

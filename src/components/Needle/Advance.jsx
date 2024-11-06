@@ -65,7 +65,7 @@ export default function Advance() {
     }
     return (
         <>
-            <section className=" py-[8%] mobile:pb-[10%] tablet:pb-[8%] overflow-x-hidden" id="facility">
+            <section className=" pb-[8%] pt-[5%] mobile:pb-[10%] tablet:pb-[8%] overflow-hidden" id="facility">
                 <div className="group suture-container ">
                 <div className="container-lg virtual rounded-[3vw] relative flex items-center justify-between px-[6%] py-[8%] bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300 mobile:pt-[60%] mobile:pb-[20%] mobile:flex-col-reverse mobile:rounded-[6vw] tablet:pt-[10%] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
                     <div className="w-full flex flex-col items-center justify-between gap-[5vw] mobile:gap-[12vw]">

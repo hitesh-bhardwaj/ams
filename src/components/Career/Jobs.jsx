@@ -3,10 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Autoplay, Navigation } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import Link from "next/link";
 import { paraAnim } from "../gsapAnimations";
 import Image from "next/image";
+import styles from "@/styles/careerSwiper.module.css"
 
 
 const JobCard =({dept, designation, location})=>{
@@ -55,13 +56,13 @@ const Jobs = () => {
   };
   return (
     <section id="jobs">
-      <div className="container-sm mb-[10%] mobile:my-[20%] mobile:flex mobile:flex-col mobile:gap-[7vw] ">
-        <div className=" flex items-center justify-center ">
+      <div className="container-sm mb-[10%] mobile:my-[20%] mobile:flex mobile:flex-col mobile:gap-[7vw] tablet:mt-[10%] tablet:mb-[5%] ">
+        <div className=" flex items-center justify-center tablet:mb-[8vw] ">
           <h2 data-para-anim className="title-2 aeonik ">
             Featured Jobs
           </h2>
         </div>
-       <div className="mt-[5%] careerSwiper fadeUp">
+       <div className={`mt-[5%] ${styles.careerSwiper} careerSwiper fadeUp`}>
        <Swiper
        onSwiper={(swiper) => (swiperRef.current = swiper)}
         slidesPerView={1}
@@ -80,13 +81,14 @@ const Jobs = () => {
           541: {
             slidesPerView: 2,
             spaceBetween:30,
+            
           },
           1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 2.8,
+            spaceBetween: 40,
           },
         }}
-        modules={[ Pagination, Autoplay,Navigation]}
+        modules={[ Pagination, Autoplay]}
         className="MySwiper "
       >
         <SwiperSlide>

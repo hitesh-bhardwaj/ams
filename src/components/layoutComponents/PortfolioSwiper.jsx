@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -13,6 +13,7 @@ import {
   Autoplay,
 } from "swiper/modules";
 import Image from "next/image";
+import styles from "@/styles/portfolioSwiper.module.css"
 
 const PortfolioCard = ({ src, heading, para }) => {
   return (
@@ -61,7 +62,7 @@ const PortfolioSwiper = ({ slidesData }) => {
   };
 
   return (
-    <section id="hernia-swiper" className="overflow-x-hidden mobile:pt-[10%]">
+    <section id="portfolio-swiper" className="overflow-x-hidden mobile:pt-[10%]">
       <div className="w-full ml-[10%] py-[10%] relative h-full mobile:ml-[0%] mobile:mb-0">
         <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]  tablet:hidden">
           <p className="text-end">{slidesData[0].title}</p>
@@ -74,7 +75,7 @@ const PortfolioSwiper = ({ slidesData }) => {
             <Swiper
               slidesPerView={1}
               spaceBetween={0}
-              navigation={true}
+              // navigation={true}
               loop={true}
               autoplay={{
                 delay: 1500,
@@ -91,8 +92,8 @@ const PortfolioSwiper = ({ slidesData }) => {
                   translate: ["100%", 0, 0],
                 },
               }}
-              modules={[FreeMode, Thumbs, Navigation, EffectCreative, Autoplay]}
-              className="endoSwiper mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden"
+              modules={[FreeMode, Thumbs, EffectCreative, Autoplay]}
+              className={`${styles.endoSwiper} mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden`}
               thumbs={{
                 swiper:
                   thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
@@ -118,7 +119,7 @@ const PortfolioSwiper = ({ slidesData }) => {
               loop={true}
               speed={1000}
               modules={[FreeMode, Thumbs, Autoplay]}
-              className="endoSwiper mySwiper overflow-hidden mobile:h-[70vh] mobile:rounded-[20px]"
+              className={`${styles.endoSwiper} mySwiper overflow-hidden mobile:h-[70vh] mobile:rounded-[20px]`}
               thumbs={{
                 swiper:
                   thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
@@ -197,11 +198,11 @@ const PortfolioSwiper = ({ slidesData }) => {
             <Swiper
               onSwiper={setThumbsSwiper}
               spaceBetween={10}
-              slidesPerView={4}
+              slidesPerView={3}
               freeMode={true}
               watchSlidesProgress={true}
               modules={[FreeMode, Navigation, Thumbs]}
-              className="endoSmallSwiper"
+              className={styles.endoSmallSwiper}
             >
               {slidesData.map((slide, index) => (
                 <SwiperSlide key={index}>
