@@ -35,37 +35,37 @@ const Hero = () => {
       scale:1,
       transformOrigin:"left",
       duration: 1,
-      delay: -0.1,
+      delay: -0.7,
       ease: "power3.out", 
     })
   });
 }
 
   return (
-    <section>
-      <div className="w-screen h-screen relative mobile:h-[90vh]">
+    <section className='dark'>
+      <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh]">
         <Image
           src="/assets/advastap/advastap-hero-bg.png"
           fill
           alt="advastap-hero"
           className="object-cover absolute"
         />
-        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center pl-[5vw] mobile:flex-col mobile:top-[25%] tablet:flex-col tablet:top-[22%]">
-          <div className="text-white w-[50%] mobile:w-[100%]">
-            <h1 className="title-1 aeonik drop-shadow-lg leading-[1]">
-              <span data-para-anim className="leading-[1] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center">
+        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[25%] tablet:flex-col tablet:top-[22%]">
+          <div className="text-white absolute left-[12%]  mobile:left-[0%] mobile:w-[100%] tablet:left-[15%]">
+            <h1 className=" text-[5.7vw] font-light leading-[1] aeonik drop-shadow-lg mobile:text-[12.2vw] mobile:text-center tablet:text-[10vw] tablet:text-center">
+              <span data-para-anim className="leading-[1] overflow-hidden text-[#FFFFFF]  mobile:w-full mobile:text-center">
                 ADVASTAP HD
               </span>
             </h1>
-            <p className="max-w-[30vw] mb-[4vw] content-p mobile:max-w-full tablet:max-w-[50vw] mobile:my-[7vw] flex items-center justify-start mobile:text-center mobile:justify-center tablet:justify-center ">
-              <span data-para-anim className="text-[#FFFFFF] mobile:text-center uppercase tracking-widest">
+            <div className='flex items-center mt-[2vw]'>
+            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.45em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[20%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full mobile:my-[7vw] flex items-center justify-start mobile:text-center mobile:justify-center tablet:justify-center ">
                 Hemorrhoid stapler
-              </span>
-              <span className="w-[6vw] h-[1px] bg-white ml-2 line mobile:hidden tablet:hidden "></span>
-            </p>
+                </p>
+              <span className="w-[5.2vw] h-[1px] bg-white line mobile:hidden tablet:hidden "></span>
+              </div>
           </div>
 
-          <div className="w-[80%] h-full relative flex justify-end right-0 hero-container mobile:rotate-90 mobile:w-[90%] mobile:h-[60%] tablet:rotate-90 tablet:w-[100%]">
+          <div className="w-[60%] h-full relative left-[40%] right-0 hero-container mobile:rotate-90 mobile:w-full mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[0%] mobile:top-[20%] tablet:top-[10%] tablet:left-0">
             <div className="w-full h-full">
               <Image
                 src="/assets/advastap/advastap-hero.png"

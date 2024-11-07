@@ -7,7 +7,7 @@ export default function Footer() {
     paraAnim()
     return (
         <>
-            <footer className=" h-full mt-[4vw] pt-[3vw] mobile:pb-[10vw] relative overflow-hidden ">
+            <footer className=" h-full mobile:pb-[10vw] relative overflow-hidden ">
                 <div className="absolute w-screen h-[120vh] mobile:h-full rounded-tl-[3vw] rounded-tr-[3vw] overflow-hidden mobile:rounded-tl-[9vw] mobile:rounded-tr-[9vw]">
                     <Image src="/assets/footer-bg-img.webp" alt="footer-bg" className="object-cover" fill/>
 

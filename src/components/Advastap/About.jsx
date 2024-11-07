@@ -12,15 +12,18 @@ const About = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".about-container",
+        scrub:true,
       },
     });
     tl.fromTo(
       ".about-img",
       {
-        yPercent:50
+        y:250,
+        x:250
       },
       {
-       yPercent:0,
+       y:0,
+       x:0,
         duration: 1.5,
         delay: 0.1,
         ease: "power3.out",
@@ -29,43 +32,45 @@ const About = () => {
   });
   return (
    <>
-   <section>
-    <div className='w-screen h-screen bg-[#020F20] mobile:h-[80vh] tablet:h-[90vh]'>
-        <div className='w-screen h-[80%] bg-white flex justify-between items-start pt-[4vw] mobile:flex-col-reverse mobile:pt-[10vw] tablet:flex-col-reverse tablet:justify-center'>
-            <div className='w-[80%] h-[100%] relative about-container mobile:w-full mobile:rotate-90 tablet:rotate-90'>
-            <Image 
-            src="/assets/advastap/advastap-about.png"
-            fill
-            alt='advastap-about'
-            className=' about-img mobile:object-contain tablet:object-contain'
-            />
-            </div>
-            <div className=" w-[50%] mobile:w-full mobile:text-center tablet:w-full">
-            <h2 className="text-[3vw]  aeonik drop-shadow-lg leading-[1] mobile:text-[10.2vw] tablet:text-[7vw]">
-              <span data-para-anim className="leading-[1.3] overflow-hidden  w-[80%] mobile:w-full mobile:text-center tablet:w-full tablet:text-center">
-                ADVASTAP HD III
-              </span>
-            </h2>
-            <p className=" mb-[4vw] content-p mobile:max-w-full tablet:max-w-full mobile:my-[7vw] flex items-center justify-start mobile:justify-center tablet:justify-center ">
-              <span data-para-anim className=" mobile:text-center uppercase tracking-widest mobile:tracking-normal">
-              3-Row Hemorrhoid Stapler
-              </span>      
-            </p>
-          </div>
-
-        </div>
-        <div className='w-screen h-[20%] flex items-center justify-center '>
-            <div className="text-white text-[3.35vw] uppercase gradient-text mobile:text-[5vw] tablet:text-[5vw]">
-           <p>Raised to the</p>
-           <span className="gradient-line"></span>
-           <span className="gradient-line"></span>
-           <p> power of three</p>
-            </div>
-
-        </div>
+  <section>
+  <div className="w-screen h-screen bg-[#020F20] overflow-hidden tablet:h-screen">
+    <div className="w-screen h-[80%] bg-white relative overflow-hidden pt-[4vw] mobile:pt-[10vw] tablet:justify-center">
+    
+      <div className="w-full h-full relative scale-[1.05]  about-container mobile:rotate-45 tablet:rotate-90 mobile:top-[10%] mobile:scale-[1.5] mobile:left-[15%] tablet:top-[15%] tablet:left-[10%]">
+        <Image 
+          src="/assets/advastap/advastap-about.png"
+          fill
+          alt="advastap-about"
+          className="absolute left-0 about-img object-contain"
+        />
+      </div>
+      
+      <div className="absolute top-[15%] right-[8%]  p-[2vw] mobile:w-full mobile:right-[0%] mobile:text-center tablet:w-full tablet:p-[4vw] tablet:top-[5%] tablet:text-center tablet:right-[0%]">
+        <h2 className="text-[4vw] aeonik drop-shadow-lg  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[9vw]">
+          <span data-para-anim className="leading-[1.3] overflow-hidden w-full mobile:w-full mobile:text-center tablet:w-full tablet:text-center">
+            ADVASTAP HD III
+          </span>
+        </h2>
+        <p className="mb-[4vw] text-[1.66vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:text-[4.75vw] mobile:my-[7vw] flex items-center justify-start mobile:justify-center tablet:justify-center tablet:text-[3.5vw] tablet:tracking-wider">
+          <span data-para-anim className="mobile:text-center uppercase tracking-widest mobile:tracking-normal">
+            3-Row Hemorrhoid Stapler
+          </span>
+        </p>
+      </div>
 
     </div>
-   </section>
+
+    <div className="w-screen h-[20%] flex items-center justify-center ">
+      <div className="text-white text-[2.5vw] tracking-wider font uppercase gradient-text mobile:text-[4.1vw] tablet:text-[4.5vw] ">
+      <p>Raised to the</p>
+        <span className="gradient-line"></span>
+        <span className="gradient-line"></span>
+        <p>power of three</p>
+      </div>
+    </div>
+  </div>
+</section>
+
    </>
   )
 }

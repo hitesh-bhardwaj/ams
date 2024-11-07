@@ -1,21 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useLenis } from "@studio-freight/react-lenis";
 import Image from "next/image";
 import gsap from "gsap";
 
-const Specifications = () => {
+const SpecificationsHd3 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const smootherRef = useRef(null);
 
   const openModal = () => {
-    if (smootherRef.current) {
-    smootherRef.current.paused(true);
     setIsModalOpen(true);
+    if (smootherRef.current) {
+      smootherRef.current.paused(true); // Stop scroll
     }
   };
   const closeModal = () => {
     setIsModalOpen(false);
     if (smootherRef.current) {
-      smootherRef.current.paused(false); 
+      smootherRef.current.paused(false); // Resume scroll
     }
   };
   useEffect(() => {
@@ -36,13 +37,13 @@ const Specifications = () => {
   return (
     <>
       <section>
-        <div className="w-screen h-[25vh] flex overflow-hidden items-center bg-[#020F20] pl-[10vw] tablet:h-[15vh] mobile:h-[15vh]">
+        <div className="w-screen h-[25vh] flex overflow-hidden items-center bg-[#020F20] pl-[10vw] tablet:h-[15vh]">
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
-              <div className="text-white aeonik text-[2.5vw] uppercase leading-[1.2] tracking-widest gradient-text mobile:text-[4.8vw] tablet:text-[5vw]">
+              <div className="text-white aeonik text-[2.5vw] uppercase leading-[1.2] tracking-widest gradient-text mobile:text-[7vw] tablet:text-[5vw]">
                 <p>Specifications</p>
               </div>
-              <div className="h-[1.5vw] w-[1.5vw] ml-[1vw] mobile:h-[6vw] mobile:w-[3vw] tablet:h-[3vw] tablet:w-[3vw]">
+              <div className="h-[1.5vw] w-[1.5vw] ml-[1vw] mobile:h-[6.5vw] mobile:w-[6.5vw] tablet:h-[4.5vw] tablet:w-[4.5vw]">
                 <img
                   src="/assets/icons/arrow-up-right-gradient.svg"
                   alt="arrow icon"
@@ -53,14 +54,15 @@ const Specifications = () => {
         </div>
 
         {/* Modal */}
+        
         {isModalOpen && (
-          <div className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[100] bg-opacity-10 bg-black">
-            <div className="bg-[#DADADA] glassmorphism border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar  mobile:max-h-[100vh] mobile:py-[20vw] mobile:w-[90vw]">
+          <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-50">
+            <div className="bg-[#DADADA] glassmorphism border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar relative mobile:max-h-[100vh] mobile:w-[90vw]">
               <div
                 onClick={closeModal}
-                className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3vw] w-[3vw] mobile:w-[15vw] mobile:h-[15vw] mobile:p-[4vw] mobile:top-[6vw] mobile:right-[10vw]"
+                className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3vw] w-[3vw] mobile:w-[7vw] mobile:h-[7vw] mobile:p-[1.5vw] mobile:top-[6vw] mobile:right-[10vw]"
               >
-                <div className="h-full w-full relative ">
+                <div className="h-full w-full relative">
                   <Image
                     src="/assets/icons/cross-icon.svg"
                     fill
@@ -69,7 +71,7 @@ const Specifications = () => {
                   />
                 </div>
               </div>
-              <p className="text-[2.5vw] text-[#2A2A2A] font-light  leading-[1] mobile:text-[9.2vw] mobile:text-center  ">
+              <p className="text-[2.5vw] text-[#2A2A2A] font-light  leading-[1] mobile:text-[8vw]">
                 Technical Specifications
               </p>
               <div className="w-full text-[1.25vw] font-light mt-[3vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] ">
@@ -184,9 +186,10 @@ const Specifications = () => {
             </div>
           </div>
         )}
+        
       </section>
     </>
   );
 };
 
-export default Specifications;
+export default SpecificationsHd3;

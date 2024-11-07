@@ -408,12 +408,6 @@ body{
   overflow: visible !important ;
 }
 
-/* .gradient-text{ */
-  /* background: linear-gradient(90deg, #19516C 0%, #B5F3FE 37%, #9CE1F0 67.5%, #275F7B 100%); */
-  /* background: -webkit-linear-gradient(right,#19516C, #BFF3FE, #9CE1F0 , #275F7B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 .gradient-text {
   background: -webkit-linear-gradient(right,#19516C, #BFF3FE, #9CE1F0 , #275F7B);
   -webkit-background-clip: text;
@@ -424,11 +418,19 @@ body{
 }
 
 .gradient-line {
-  width: 2px;
-  margin: 5px; 
-  height: 9vw;
-  border-radius: 50%;
+  width: 5px;
+  margin: 0.7vw; 
+  height: 11vw;
+  border-radius: 30%;
   background: -webkit-linear-gradient(bottom,#19516C, #BFF3FE, #9CE1F0 , #275F7B);
+}
+.modal-no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @media screen  and (max-width:541px){
@@ -555,7 +557,8 @@ body{
     bottom: -30px;
 }
 .gradient-line{
-  height: 20vw;
+  height: 15vh;
+  width:3px;
 }
   }
 
@@ -657,7 +660,8 @@ body{
 }
 
 .gradient-line{
-  height: 15vw;
+  height: 20vw;
+  width: 3px;
 }
   }
   

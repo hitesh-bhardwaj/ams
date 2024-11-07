@@ -21,8 +21,8 @@ export default function App({ Component, pageProps, router }) {
         const smootherInstance = ScrollSmoother.create({
           smooth: 1,
           effects: true,
-          wrapper: '#smooth-wrapper', // Optional: Use a wrapper if you need
-          content: '#smooth-content',  // Optional: Target main content area if necessary
+          wrapper: '#smooth-wrapper', 
+          content: '#smooth-content', 
         });
         setSmoother(smootherInstance);
       }
@@ -31,7 +31,7 @@ export default function App({ Component, pageProps, router }) {
     const handleResize = () => {
       if (window.innerWidth < 1024) {
         setShowPixi(false);
-        smoother && smoother.kill(); // Remove smoother instance
+        smoother && smoother.kill(); 
         setSmoother(null);
       } else {
         setShowPixi(true);
@@ -88,7 +88,7 @@ export default function App({ Component, pageProps, router }) {
         ]}
       />
      
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait"> 
         <div id="smooth-wrapper">
           <div id="smooth-content">
             <Component {...pageProps} key={router.route} />
@@ -96,7 +96,7 @@ export default function App({ Component, pageProps, router }) {
         </div>
         </AnimatePresence>
      
-     {showPixi?<Pixifinal />:""}
+     {/* {showPixi?<Pixifinal />:""} */}
        
     </>
   );

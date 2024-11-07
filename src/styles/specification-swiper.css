@@ -1,16 +1,14 @@
 .mySpecificationSwiper  .swiper-button-next{
     position: absolute;
-    right: 29%;
-    top: 50%;
-    transform: translateX(50%);
+    right: 10%;
+    top: 97%;
    color: white;
 }
 .mySpecificationSwiper  .swiper-button-prev{
     color: white;
     position: absolute;
-    top: 50%;
-  left: 29%;
-  transform: translateX(-50%);
+    top: 97%;
+  left: 85%;
  }
  .mySpecificationSwiper .swiper-wrapper{
     padding-bottom: 5vw !important;
@@ -28,17 +26,23 @@
     }
 .mySpecificationSwiper  .swiper-button-next{
     top: 92%;
-    right: 35%;
+    right: 30%;
     border: 2px solid white;
-    padding: 40px;
+    padding: 30px;
     border-radius: 50%;
+}
+.mySpecificationSwiper  .swiper-button-next::after{
+    font-size: 5vw;
 }
 .mySpecificationSwiper  .swiper-button-prev{
     top: 92%;
-    left: 35%;
+    left: 30%;
     border: 2px solid white;
-    padding: 40px;
+    padding: 30px;
     border-radius: 50%;
+}
+.mySpecificationSwiper  .swiper-button-prev::after{
+    font-size: 5vw;
 }
 .mySpecificationSwiper .swiper-scrollbar{
     display: none;
@@ -51,14 +55,17 @@
     }
 .mySpecificationSwiper  .swiper-button-next{
     top: 90%;
-    right: 40%;
+    right: 35%;
     border: 2px solid white;
     padding: 40px;
     border-radius: 50%;
 }
+.mySpecificationSwiper  .swiper-button-next::after, .mySpecificationSwiper  .swiper-button-prev::after{
+    font-size: 4vw;
+}
 .mySpecificationSwiper  .swiper-button-prev{
     top: 90%;
-    left: 40%;
+    left: 35%;
     border: 2px solid white;
     padding: 40px;
     border-radius: 50%;
