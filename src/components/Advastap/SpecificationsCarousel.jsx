@@ -33,8 +33,8 @@ const SpecificationsCarousel = () => {
     // })
   return (
     <>
-    <section> 
-        <div className='w-screen h-screen bg-[#020912] overflow-hidden text-white items-center flex justify-center swiper-container'>
+    <section id='specificationCarousel'>  
+        <div className='w-screen h-full py-[10vw] bg-[#020912]  overflow-hidden text-white items-center flex justify-center swiper-container'>
         <Swiper
         navigation={true}
         scrollbar={true}
