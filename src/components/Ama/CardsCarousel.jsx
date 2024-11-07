@@ -34,9 +34,10 @@ export default function CardsCarousel() {
               effect={"coverflow"}
               grabCursor={true}
               centeredSlides={true}
-              slidesPerView={3.5}
+              slidesPerView={3.3}
+              initialSlide={0}
               loop={true}
-              spaceBetween={0}
+              spaceBetween={20}
               speed={1500}
               coverflowEffect={{
                 rotate: 20,

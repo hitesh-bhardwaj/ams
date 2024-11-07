@@ -14,23 +14,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const SpecificationsCarousel = () => {
     paraAnim();
-      // useGSAP(()=>{
-    //     const tl = gsap.timeline({
-    //         scrollTrigger:{
-    //             trigger:'.swiper-container'
-    //         }
-    //     });
-    //     tl.fromTo(".mySpecificationSwiper",{
-    //         xPercent:80,
-    //         opacity:0.5
-    //     },{
-    //         xPercent:-80,
-    //         duration: 2,
-    //     delay: 0.1,
-    //     opacity:1,
-    //     ease: "power3.out",
-    //     })
-    // })
+     
   return (
     <>
     <section id='specificationCarousel'>  

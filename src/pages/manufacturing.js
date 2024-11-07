@@ -1,18 +1,17 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Genesis from "@/components/layoutComponents/Genesis";
 import Capabilities from "@/components/Manufacturing/Capabilities";
 import Discover from "@/components/Manufacturing/Discover";
 import State from "@/components/Manufacturing/State";
 import Transition from "@/components/Transition";
-import React from "react";
+import React, { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import Hero from "@/components/Hero";
-import StickyCards from "@/components/Manufacturing/State";
+import Layout from "@/components/Layout";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function manufacturing() {
@@ -25,11 +24,11 @@ export default function manufacturing() {
     src: "/assets/manufacturing/manufacturing.png",
   };
   const hero = {
-   title:"Commitment To Global Standards",
-    src:"/assets/manufacturing/manufacturing-hero.png",
-    content:"The eco-friendly AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications."
-  }
-
+    title: "Commitment To Global Standards",
+    src: "/assets/manufacturing/manufacturing-hero.png",
+    content:
+      "The eco-friendly AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications.",
+  };
   useEffect(() => {
     const ctx = gsap.context(() => {
       const fadeUps = document.querySelectorAll(".fadeUp");
@@ -59,17 +58,20 @@ export default function manufacturing() {
 
   return (
     <>
-      <Header />
-      <main>
-        <Hero title={hero.title} src={hero.src} content={hero.content} className="hidden"/>
-        <Genesis content={content} />
-        <Capabilities />
-        <State />
-        <Discover />
-        {/* <StickyCards/> */}
-      </main>
-      <Footer />
-      <Transition />
+      <Layout>
+        <main>
+          <Hero
+            title={hero.title}
+            src={hero.src}
+            content={hero.content}
+            className="hidden"
+          />
+          <Genesis content={content} />
+          <Capabilities />
+          <State />
+          <Discover />
+        </main>
+      </Layout>
     </>
   );
 }

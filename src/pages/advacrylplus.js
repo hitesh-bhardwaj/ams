@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Edge from "@/components/Products/Edge";
 import Features from "@/components/Products/Features";
@@ -8,11 +7,13 @@ import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import Transition from "@/components/Transition";
-import React from "react";
+import React, { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
+import { fadeUp } from "@/components/gsapAnimations";
+import Layout from "@/components/Layout";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const EdgeCard = {
@@ -25,7 +26,7 @@ const EdgeCard = {
     title: "- the confidence to suture with ease",
     src: "/assets/advacryl/advacryl-tray.png",
     para: "  patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-     bgsrc:"/assets/advacryl/purple-rectangle.png"
+    bgsrc: "/assets/advacryl/purple-rectangle.png",
   },
   card3: {
     title: "Knot Pull Tensile Strength",
@@ -53,67 +54,71 @@ const FeatureCard = {
 };
 
 const advacrylplus = () => {
+  fadeUp();
+  const [smoother, setSmoother] = useState(null);
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      const fadeUps = document.querySelectorAll(".fadeUp");
-      fadeUps.forEach((fadeUp) => {
-        gsap.fromTo(
-          fadeUp,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            delay:0.1,
-            duration: 0.6,
-            ease: "Power3.out",
-            scrollTrigger: {
-              trigger: fadeUp,
-              start: "top 85%",
-            },
-          }
+    const initializeScrollSmoother = async () => {
+      if (window.innerWidth >= 1024) {
+        const { default: ScrollSmoother } = await import(
+          "@/components/ScrollSmoother.min.js"
         );
-      });
-    });
-    return () => ctx.revert();
-  });
+        gsap.registerPlugin(ScrollSmoother);
+
+        const smootherInstance = ScrollSmoother.create({
+          smooth: 1,
+          effects: true,
+          wrapper: "#smooth-wrapper",
+          content: "#smooth-content",
+        });
+        setSmoother(smootherInstance);
+      }
+    };
+    initializeScrollSmoother();
+
+    return () => {
+      smoother && smoother.kill();
+    };
+  }, [smoother]);
+
   return (
     <>
       <Header />
-      <main>
-        <Hero
-          heading={"Advacryl Plus"}
-            className="text-[#855EA6]"
-          tagline={
-            " Antibacterial with Triclosan Braided Coated Polyglactin 910"
-          }
-          para1={
-            "  Consistent performance for confidence in a variety of soft tissue approximation minimizing Surgical Site Infections (SSI)"
-          }
-          src={"/assets/advacryl/advacryl-plus-hero.png"}
-          bgimg={'/assets/advacryl/advacryl-hero-bg.png'}
-          para2={"Steady performance for superior confidence"}
-        />
-        <Edge
-        sectionheading={"ADVACRYL PLUS Edge"}
-          card1={EdgeCard.card1}
-          card2={EdgeCard.card2}
-          card3={EdgeCard.card3}
-        />
-        <Features
-          card1={FeatureCard.card1}
-          card2={FeatureCard.card2}
-          card3={FeatureCard.card3}
-          card4={FeatureCard.card4}
-        />
-        <ProductDescription className={'text-[#855EA6]'}
-        />
-        <NextGeneration />
-        <Uncover />
-      </main>
-      <Footer />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <Layout>
+            <main>
+              <Hero
+                heading={"Advacryl Plus"}
+                className="text-[#855EA6]"
+                tagline={
+                  " Antibacterial with Triclosan Braided Coated Polyglactin 910"
+                }
+                para1={
+                  "  Consistent performance for confidence in a variety of soft tissue approximation minimizing Surgical Site Infections (SSI)"
+                }
+                src={"/assets/advacryl/advacryl-plus-hero.png"}
+                bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
+                para2={"Steady performance for superior confidence"}
+              />
+              <Edge
+                sectionheading={"ADVACRYL PLUS Edge"}
+                card1={EdgeCard.card1}
+                card2={EdgeCard.card2}
+                card3={EdgeCard.card3}
+              />
+              <Features
+                card1={FeatureCard.card1}
+                card2={FeatureCard.card2}
+                card3={FeatureCard.card3}
+                card4={FeatureCard.card4}
+              />
+              <ProductDescription className={"text-[#855EA6]"} />
+              <NextGeneration />
+              <Uncover />
+            </main>
+          </Layout>
+        </div>
+      </div>
       <Transition />
     </>
   );

@@ -3,15 +3,15 @@ import Connecting from '@/components/About/Connecting'
 import DNA from '@/components/About/DNA'
 import Hero from '@/components/About/Hero'
 import Molecular from '@/components/About/Molecular'
-import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Genesis from '@/components/layoutComponents/Genesis'
-import React from 'react'
+import React, { useState } from 'react'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import Transition from '@/components/Transition'
+import Layout from '@/components/Layout'
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 
@@ -24,6 +24,30 @@ const content ={
       src:"/assets/about/genesis.png"
 
 }
+// const [smoother,setSmoother] = useState(null)
+// useEffect(() => {
+//   const initializeScrollSmoother = async () => {
+//     if (window.innerWidth >= 1024) {
+//       const { default: ScrollSmoother } = await import(
+//         "@/components/ScrollSmoother.min.js"
+//       );
+//       gsap.registerPlugin(ScrollSmoother);
+
+//       const smootherInstance = ScrollSmoother.create({
+//         smooth: 1,
+//         effects: true,
+//         wrapper: "#smooth-wrapper",
+//         content: "#smooth-content",
+//       });
+//       setSmoother(smootherInstance);
+//     }
+//   };
+//   initializeScrollSmoother();
+
+//   return () => {
+//    smoother&&smoother.kill();
+//   };
+// }, [smoother]);
 
 useEffect(()=>{
   const ctx = gsap.context(() => {
@@ -55,6 +79,9 @@ return () => ctx.revert();
   return (
     <>
    <Header/>
+   <div id="smooth-wrapper">
+        <div id="smooth-content">
+   <Layout>
    <main>
    <Hero/>
    <Genesis content={content}/>
@@ -62,7 +89,9 @@ return () => ctx.revert();
    <Molecular/>
    <Connecting/>
    </main>
-   <Footer/>
+   </Layout>
+          
+          </div></div>
    <Transition/>
    </>
   )
