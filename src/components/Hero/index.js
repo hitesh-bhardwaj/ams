@@ -8,6 +8,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => {
   paraAnim();
   useGSAP(() => {
+    if(globalThis.innerWidth>1024){
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "hero-container",
@@ -31,6 +32,7 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => 
         ease: "power3.out",
       }
     );
+  }
   });
   return (
     <section className=" mb-[5%] hero-container mobile:mb-[15%] dark" id="hero">

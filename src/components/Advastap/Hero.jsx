@@ -10,13 +10,16 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
   paraAnim();
-  if(globalThis.innerWidth>1024){
+
+ 
   useGSAP(() => {
+    if(globalThis.innerWidth>1024){
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".hero-container",
       },
     });
+   
     tl.fromTo(
       ".hero-img",
       {
@@ -38,11 +41,12 @@ const Hero = () => {
       delay: -0.7,
       ease: "power3.out", 
     })
+  }
   });
-}
+
 
   return (
-    <section className='dark'>
+    <section className='dark' id='advastapHero'>
       <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh]">
         <Image
           src="/assets/advastap/advastap-hero-bg.png"
@@ -54,12 +58,12 @@ const Hero = () => {
           <div className="text-white absolute left-[12%]  mobile:left-[0%] mobile:w-[100%] tablet:left-[15%]">
             <h1 className=" text-[5.7vw] font-light leading-[1] aeonik drop-shadow-lg mobile:text-[12.2vw] mobile:text-center tablet:text-[10vw] tablet:text-center">
               <span data-para-anim className="leading-[1] overflow-hidden text-[#FFFFFF]  mobile:w-full mobile:text-center">
-                ADVASTAP HD
+              ADVASTAP HD
               </span>
             </h1>
             <div className='flex items-center mt-[2vw]'>
-            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.45em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[20%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full mobile:my-[7vw] flex items-center justify-start mobile:text-center mobile:justify-center tablet:justify-center ">
-                Hemorrhoid stapler
+            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.45em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[20%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full mobile:my-[7vw] flex items-center justify-start mobile:text-center mobile:justify-center tablet:justify-center tablet:ml-[20%]">
+            Hemorrhoid stapler
                 </p>
               <span className="w-[5.2vw] h-[1px] bg-white line mobile:hidden tablet:hidden "></span>
               </div>

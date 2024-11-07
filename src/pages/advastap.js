@@ -1,13 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import About from "@/components/Advastap/About";
-import HD2 from "@/components/Advastap/HD2";
+import AdvastapHD3 from "@/components/Advastap/AdvastapHD3";
+import AdvastapHD2 from "@/components/Advastap/AdvstapHD2";
+import Hd2Carousel from "@/components/Advastap/Hd2Carousel";
+import Hd3Carousel from "@/components/Advastap/Hd3Carousel";
 import Hero from "@/components/Advastap/Hero";
 import Specifications from "@/components/Advastap/Specifications";
-import SpecificationsCarousel from "@/components/Advastap/SpecificationsCarousel";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Layout from "@/components/Layout";
 import React, { useEffect, useState } from "react";
+import gsap from "gsap";
 
 const advastap = () => {
   const [smoother, setSmoother] = useState(null);
@@ -40,11 +40,11 @@ const advastap = () => {
           <Layout>
             <main>
               <Hero />
-              <About />
-              <SpecificationsCarousel />
+              <AdvastapHD2/>
+              <Hd2Carousel/>
               <Specifications />
-              <HD2 />
-              <SpecificationsCarousel />
+              <AdvastapHD3/>
+              <Hd3Carousel/>
               <Specifications />
             </main>
           </Layout>

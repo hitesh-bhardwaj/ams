@@ -2,47 +2,51 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 
+
 const Specifications = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const smootherRef = useRef(null);
+  const modalRef = useRef(null);
+  
 
   const openModal = () => {
-    if (smootherRef.current) {
-    smootherRef.current.paused(true);
     setIsModalOpen(true);
-    }
+    document.body.style.overflow = "hidden";
   };
-  const closeModal = () => {
-    setIsModalOpen(false);
-    if (smootherRef.current) {
-      smootherRef.current.paused(false); 
-    }
-  };
-  useEffect(() => {
-    // Dynamically import ScrollSmoother on the client side
-    if (typeof window !== "undefined") {
-      import("@/components/ScrollSmoother.min.js").then((module) => {
-        const ScrollSmoother = module.default;
-        gsap.registerPlugin(ScrollSmoother);
 
-        smootherRef.current = ScrollSmoother.create({
-          smooth: 1,
-          effects: true,
-        });
-      });
+  const closeModal = () => {
+    gsap.to(modalRef.current, {
+      opacity: 0,
+      duration: 1,
+      ease:"power2.out",
+      onComplete: () => {
+        setIsModalOpen(false);
+        document.body.style.overflow = ""; 
+      },
+    });
+  };
+
+  useEffect(() => {
+    if (isModalOpen) {
+     
+      gsap.fromTo(
+        modalRef.current,
+        { opacity: 0.5 },
+        { opacity: 1, duration: 1, ease:"power2.out" }
+      );
     }
-  }, []);
+  }, [isModalOpen]);
+ 
 
   return (
     <>
-      <section>
+      <section id="advastapSpecifications">
         <div className="w-screen h-[25vh] flex overflow-hidden items-center bg-[#020F20] pl-[10vw] tablet:h-[15vh] mobile:h-[15vh]">
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
               <div className="text-white aeonik text-[2.5vw] uppercase leading-[1.2] tracking-widest gradient-text mobile:text-[4.8vw] tablet:text-[5vw]">
                 <p>Specifications</p>
               </div>
-              <div className="h-[1.5vw] w-[1.5vw] ml-[1vw] mobile:h-[6vw] mobile:w-[3vw] tablet:h-[3vw] tablet:w-[3vw]">
+              <div className="h-[1.5vw] w-[1.5vw] ml-[1vw] mobile:h-[3vw] mobile:w-[3vw] tablet:h-[3vw] tablet:w-[3vw]">
                 <img
                   src="/assets/icons/arrow-up-right-gradient.svg"
                   alt="arrow icon"
@@ -54,11 +58,13 @@ const Specifications = () => {
 
         {/* Modal */}
         {isModalOpen && (
-          <div className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[100] bg-opacity-10 bg-black">
-            <div className="bg-[#DADADA] glassmorphism border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar  mobile:max-h-[100vh] mobile:py-[20vw] mobile:w-[90vw]">
+          <>
+          {/* <div className="fixed top-0 left-0 bg-black opacity-100 z-[99]" onClick={closeModal}></div> */}
+          <div className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[999] bg-opacity-50 bg-black"  ref={modalRef}>
+            <div className="bg-[#DADADA] glassmorphism border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar  mobile:max-h-[85vh] mobile:py-[20vw] mobile:w-[90vw]">
               <div
                 onClick={closeModal}
-                className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3vw] w-[3vw] mobile:w-[15vw] mobile:h-[15vw] mobile:p-[4vw] mobile:top-[6vw] mobile:right-[10vw]"
+                className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3vw] w-[3vw] mobile:w-[7vw] mobile:h-[7vw] mobile:p-[1.5vw] mobile:top-[6vw] mobile:right-[5vw]"
               >
                 <div className="h-full w-full relative ">
                   <Image
@@ -69,7 +75,7 @@ const Specifications = () => {
                   />
                 </div>
               </div>
-              <p className="text-[2.5vw] text-[#2A2A2A] font-light  leading-[1] mobile:text-[9.2vw] mobile:text-center  ">
+              <p className="text-[2.5vw] text-[#2A2A2A] font-light  leading-[1] mobile:text-[8vw] mobile:text-center  ">
                 Technical Specifications
               </p>
               <div className="w-full text-[1.25vw] font-light mt-[3vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] ">
@@ -183,7 +189,9 @@ const Specifications = () => {
               </div>
             </div>
           </div>
+          </>
         )}
+
       </section>
     </>
   );

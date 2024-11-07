@@ -52,7 +52,7 @@ const Jobs = () => {
       swiperRef.current.slidePrev(); // Move to the previous slide
       setActiveButton("prev"); // Set previous button as active
        // Reset after 300ms
-    }
+    } 
   };
   return (
     <section id="jobs">

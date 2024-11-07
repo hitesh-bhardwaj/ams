@@ -5,8 +5,8 @@
 /* Import Fonts */
 @import url('./fonts.css');
 @import url('./swiper.css');
-@import url("./specification-swiper.css");
 @import url("./manufactuing-carousel.css");
+@import url("./specificationSwiper.css");
 
 :root {
   --text-color: #111111;
@@ -418,7 +418,7 @@ body{
 }
 
 .gradient-line {
-  width: 5px;
+  width: 3px;
   margin: 0.7vw; 
   height: 11vw;
   border-radius: 30%;
@@ -429,18 +429,18 @@ body{
 }
 
 .modal-no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }
 
 @media screen  and (max-width:541px){
   ::-webkit-scrollbar {
     height: 0;
-    width: 0; /* Hide the scrollbar track */
+    width: 0; 
 }
 
 ::-webkit-scrollbar-thumb {
-    display: none; /* Hide the scrollbar thumb */
+    display: none; 
 }
 
   .title-1{

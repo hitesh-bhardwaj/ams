@@ -1,0 +1,84 @@
+.specificationSwiper{
+    overflow: visible !important;
+}
+.specificationSwiper  .swiper-button-next{
+    position: absolute;
+    right: 10%; 
+    top: 97%;
+   color: white;
+}
+.specificationSwiper  .swiper-button-prev{
+    color: white;
+    position: absolute;
+    top: 97%;
+  left: 85%;
+  
+ }
+ .specificationSwiper   .swiper-button-next::after, .specificationSwiper   .swiper-button-prev::after{
+    font-size: 2.5vw;
+ }
+ .specificationSwiper  .swiper-wrapper{
+    padding-bottom: 5vw !important;
+ }
+.specificationSwiper  .swiper-scrollbar{
+    background-color: white;
+    width: 50% !important;
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+@media screen  and (max-width:541px){
+    .specificationSwiper {
+        height: 95vh;
+    }
+.specificationSwiper  .swiper-button-next{
+    top: 92%;
+    right: 32%;
+    border: 2px solid white;
+    padding: 25px;
+    border-radius: 50%;
+}
+.specificationSwiper   .swiper-button-next::after{
+    font-size: 5vw;
+}
+.specificationSwiper  .swiper-button-prev{
+    top: 92%;
+    left: 32%;
+    border: 2px solid white;
+    padding: 25px;
+    border-radius: 50%;
+}
+.specificationSwiper  .swiper-button-prev::after{
+    font-size: 5vw;
+}
+.specificationSwiper   .swiper-scrollbar{
+    display: none;
+}
+} 
+
+@media screen and (min-width: 540px) and (max-width: 1023px){
+    .specificationSwiper{
+        height: 75vh;
+    }
+.specificationSwiper  .swiper-button-next{
+    top: 90%;
+    right: 35%;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 50%;
+}
+.specificationSwiper  .swiper-button-next::after, .specificationSwiper  .swiper-button-prev::after{
+    font-size: 4vw;
+}
+.specificationSwiper  .swiper-button-prev{
+    top: 90%;
+    left: 35%;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 50%;
+}
+.specificationSwiper .swiper-scrollbar{
+    display: none;
+}
+}
+

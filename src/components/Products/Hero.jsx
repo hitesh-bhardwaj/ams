@@ -13,7 +13,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] ${className} tablet:text-[7.5vw]`}
                   >
                     {heading}
-                  </span>
+                  </span> 
                 </h1>
                 <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-wide mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                   {tagline}
