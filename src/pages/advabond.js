@@ -78,9 +78,7 @@ const advabond = () => {
   }, [smoother]);
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+     
           <Layout>
             <main>
               <Hero
@@ -112,9 +110,7 @@ const advabond = () => {
               <Uncover />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+        
     </>
   );
 };

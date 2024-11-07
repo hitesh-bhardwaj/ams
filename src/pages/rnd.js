@@ -100,9 +100,7 @@ export default function rnd() {
 
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+      
           <Layout>
             <main>
               <Hero
@@ -117,9 +115,7 @@ export default function rnd() {
               <Portfolio />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+       
     </>
   );
 }

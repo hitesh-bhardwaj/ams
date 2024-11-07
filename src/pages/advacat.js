@@ -109,9 +109,7 @@ const advacat = () => {
   }, [smoother]);
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+      
           <Layout>
             <main>
               <Hero
@@ -142,10 +140,7 @@ const advacat = () => {
               <Uncover />
             </main>
           </Layout>
-        </div>
-      </div>
-
-      <Transition />
+        
     </>
   );
 };

@@ -107,9 +107,7 @@ const advacryl = () => {
   }, [smoother]);
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+    
           <Layout>
             <main>
               <Hero
@@ -142,9 +140,7 @@ const advacryl = () => {
               <Uncover />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+        
     </>
   );
 };

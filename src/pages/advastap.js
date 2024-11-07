@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import About from "@/components/Advastap/About";
 import HD2 from "@/components/Advastap/HD2";
 import Hero from "@/components/Advastap/Hero";
@@ -35,9 +36,7 @@ const advastap = () => {
   }, [smoother]);
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+      
           <Layout>
             <main>
               <Hero />
@@ -49,9 +48,7 @@ const advastap = () => {
               <Specifications />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Footer />
+       
     </>
   );
 };

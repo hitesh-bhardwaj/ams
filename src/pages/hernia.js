@@ -99,9 +99,7 @@ export default function hernia() {
 
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+      
           <Layout>
             <main>
               <Hero
@@ -121,9 +119,7 @@ export default function hernia() {
               <Portfolio />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+        
     </>
   );
 }

@@ -97,9 +97,7 @@ export default function needle() {
 
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+      
           <Layout>
             <main>
               <Hero />
@@ -113,9 +111,7 @@ export default function needle() {
               <Advance />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+        
     </>
   );
 }

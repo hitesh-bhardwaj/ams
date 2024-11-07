@@ -78,9 +78,7 @@ const advapd = () => {
 
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+     
           <Layout>
             <main>
               <Hero
@@ -111,9 +109,7 @@ const advapd = () => {
               <Uncover />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+        
     </>
   );
 };

@@ -103,9 +103,7 @@ export default function ic() {
 
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+  
           <Layout>
             <main>
               <Hero
@@ -125,9 +123,7 @@ export default function ic() {
               <Portfolio />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+        
     </>
   );
 }

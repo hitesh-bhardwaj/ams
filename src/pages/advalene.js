@@ -77,9 +77,7 @@ const advalene = () => {
 
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+      
           <Layout>
             <main>
               <Hero
@@ -110,9 +108,7 @@ const advalene = () => {
               <Uncover />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+       
     </>
   );
 };

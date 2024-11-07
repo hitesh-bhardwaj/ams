@@ -78,9 +78,7 @@ return () => ctx.revert();
 
   return (
     <>
-   <Header/>
-   <div id="smooth-wrapper">
-        <div id="smooth-content">
+ 
    <Layout>
    <main>
    <Hero/>
@@ -91,8 +89,6 @@ return () => ctx.revert();
    </main>
    </Layout>
           
-          </div></div>
-   <Transition/>
    </>
   )
 }

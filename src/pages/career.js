@@ -67,9 +67,7 @@ export default function career() {
   }, [smoother]);
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+     
           <Layout>
             <main>
               <Hero />
@@ -78,9 +76,7 @@ export default function career() {
               <Discover />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+        
     </>
   );
 }

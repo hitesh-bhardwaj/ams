@@ -82,9 +82,7 @@ export default function oem() {
 
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+     
           <Layout>
             <main>
               <Hero
@@ -101,9 +99,7 @@ export default function oem() {
               <FormOem />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+       
     </>
   );
 }

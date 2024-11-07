@@ -102,9 +102,7 @@ export default function endo() {
 
   return (
     <>
-      <Header />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
+    
           <Layout>
             <main>
               <Hero
@@ -123,9 +121,7 @@ export default function endo() {
               <Portfolio />
             </main>
           </Layout>
-        </div>
-      </div>
-      <Transition />
+       
     </>
   );
 }
