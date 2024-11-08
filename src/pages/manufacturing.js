@@ -1,18 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Header from "@/components/Header";
 import Genesis from "@/components/layoutComponents/Genesis";
 import Capabilities from "@/components/Manufacturing/Capabilities";
 import Discover from "@/components/Manufacturing/Discover";
 import State from "@/components/Manufacturing/State";
-import Transition from "@/components/Transition";
-import React, { useState } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
 import Hero from "@/components/Hero";
+import React from "react";
 import Layout from "@/components/Layout";
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+import { fadeup } from "@/components/gsapAnimations";
 
 export default function manufacturing() {
   const content = {
@@ -29,32 +23,7 @@ export default function manufacturing() {
     content:
       "The eco-friendly AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications.",
   };
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const fadeUps = document.querySelectorAll(".fadeUp");
-      fadeUps.forEach((fadeUp) => {
-        gsap.fromTo(
-          fadeUp,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            delay: 0.3,
-            ease: "Power3.out",
-            scrollTrigger: {
-              trigger: fadeUp,
-              start: "top 85%",
-            },
-          }
-        );
-      });
-    });
-    return () => ctx.revert();
-  });
+ fadeup()
 
   return (
     <>

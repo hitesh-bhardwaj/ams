@@ -4,11 +4,9 @@ import Product from "@/components/Hernia/Product";
 import Hero from "@/components/Hero";
 import Genesis from "@/components/layoutComponents/Genesis";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import React from "react";
 import Layout from "@/components/Layout";
-gsap.registerPlugin(ScrollTrigger);
+import { fadeup } from "@/components/gsapAnimations";
 
 export default function hernia() {
   const content = {
@@ -43,32 +41,7 @@ export default function hernia() {
       para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision.",
     },
   ];
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const fadeUps = document.querySelectorAll(".fadeUp");
-      fadeUps.forEach((fadeUp) => {
-        gsap.fromTo(
-          fadeUp,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            delay: 0.3,
-            ease: "Power3.out",
-            scrollTrigger: {
-              trigger: fadeUp,
-              start: "top 85%",
-            },
-          }
-        );
-      });
-    });
-    return () => ctx.revert();
-  });
+ fadeup()
 
   return (
     <>

@@ -4,13 +4,8 @@ import DNA from '@/components/About/DNA'
 import Hero from '@/components/About/Hero'
 import Molecular from '@/components/About/Molecular'
 import Genesis from '@/components/layoutComponents/Genesis'
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
 import Layout from '@/components/Layout'
-
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+import { fadeup } from '@/components/gsapAnimations'
 
 export default function about() {
   const content = {
@@ -20,34 +15,7 @@ export default function about() {
     src: "/assets/about/genesis.png"
 
   }
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const fadeUps = document.querySelectorAll('.fadeUp');
-      fadeUps.forEach((fadeUp) => {
-        gsap.fromTo(
-          fadeUp,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            delay: 0.3,
-            ease: 'Power3.out',
-            scrollTrigger: {
-              trigger: fadeUp,
-              start: 'top 85%',
-            },
-          }
-        );
-      });
-    });
-    return () => ctx.revert();
-  });
-
+  fadeup()
   return (
     <>
       <Layout>

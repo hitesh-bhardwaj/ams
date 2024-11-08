@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import PrimaryButton from "../Button/PrimaryButton";
-
 export default function Facility() {
 
     return (
@@ -22,7 +21,7 @@ export default function Facility() {
                     </div>
                     <div className="relative w-[45%] h-[28vw] rounded-[4vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] mobile:rounded-[6vw] tablet:w-[80vw] tablet:h-[30vh]">
                         <Image data-speed="0.7"
-                            className="w-full object-cover scale-[1.4]"
+                            className="w-full object-cover scale-[1.4] imageanim"
                             src="/assets/home/virtual.webp"
                             alt="facility"
                             fill

@@ -1,15 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Genesis from "@/components/layoutComponents/Genesis";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Hero from "@/components/Needle/Hero";
 import FeatureCards from "@/components/Needle/FeatureCards";
 import Advance from "@/components/Needle/Advance";
 import Layout from "@/components/Layout";
+import { fadeup } from "@/components/gsapAnimations";
 
-gsap.registerPlugin(ScrollTrigger);
 
 export default function needle() {
   const content = {
@@ -39,32 +36,7 @@ export default function needle() {
     },
   ];
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const fadeUps = document.querySelectorAll(".fadeUp");
-      fadeUps.forEach((fadeUp) => {
-        gsap.fromTo(
-          fadeUp,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            delay: 0.3,
-            ease: "Power3.out",
-            scrollTrigger: {
-              trigger: fadeUp,
-              start: "top 85%",
-            },
-          }
-        );
-      });
-    });
-    return () => ctx.revert();
-  });
+  fadeup()
 
   return (
     <>

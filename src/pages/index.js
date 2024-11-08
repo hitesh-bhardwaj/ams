@@ -8,7 +8,9 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import dynamic from "next/dynamic"; // Import next/dynamic
 import Layout from "@/components/Layout";
-import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
+// import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
+import GalleryComponent from "@/components/Home/SamplePin";
+import { fadeup, imageAnim } from "@/components/gsapAnimations";
 
 const Product = dynamic(() => import("@/components/Home/Product"), {
   loading: () => <p>Loading products...</p>, // Optional loading component
@@ -46,38 +48,16 @@ export default function Home() {
     return () => ctx.revert();
   });
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const fadeUps = document.querySelectorAll(".fadeUp");
-      fadeUps.forEach((fadeUp) => {
-        gsap.fromTo(
-          fadeUp,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            ease: "Power3.out",
-            scrollTrigger: {
-              trigger: fadeUp,
-              start: "top 85%",
-            },
-          }
-        );
-      });
-    });
-    return () => ctx.revert();
-  });
+  fadeup()
+  imageAnim()
 
   return (
     <>
       <Layout>
         <main>
           <Hero />
-          <ManufacturingCarousel />
+          {/* <ManufacturingCarousel /> */}
+          <GalleryComponent/>
           <Product />
           <Impact />
           <Career />

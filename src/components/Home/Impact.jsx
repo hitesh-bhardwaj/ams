@@ -1,5 +1,4 @@
 import PrimaryButton from "../Button/PrimaryButton";
-// import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";

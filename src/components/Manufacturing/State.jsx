@@ -23,7 +23,7 @@ export default function State() {
             ease: 'none',
             scale: 0.8,
             opacity: 0,
-            yPercent:150 
+            yPercent:140 
         }, 0);
   
     });

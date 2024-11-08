@@ -1,14 +1,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Genesis from "@/components/layoutComponents/Genesis";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
+import { fadeup } from "@/components/gsapAnimations";
 
-gsap.registerPlugin(ScrollTrigger);
 
 export default function rnd() {
   const content = {
@@ -43,32 +40,7 @@ export default function rnd() {
       para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision.",
     },
   ];
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const fadeUps = document.querySelectorAll(".fadeUp");
-      fadeUps.forEach((fadeUp) => {
-        gsap.fromTo(
-          fadeUp,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            delay: 0.3,
-            ease: "Power3.out",
-            scrollTrigger: {
-              trigger: fadeUp,
-              start: "top 85%",
-            },
-          }
-        );
-      });
-    });
-    return () => ctx.revert();
-  });
+ fadeup()
 
   return (
     <>

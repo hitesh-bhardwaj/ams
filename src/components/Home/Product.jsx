@@ -4,33 +4,37 @@ import { Navigation } from "swiper/modules";
 import LinkButton from "../Button/LinkButton";
 // import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Product() {
-  // paraAnim();
-  useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#product",
-        start: "top bottom",
-        end: "bottom 20%",
-        scrub: true,
-      },
+  useEffect(() => {
+    // Set up GSAP context
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#product",
+          start: "top bottom",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      });
+
+      tl.to(".product-bg-img", {
+        scale: 1.2,
+        delay: -1,
+      }).to(".product-bg-img", {
+        yPercent: 30,
+        delay: -1,
+      });
     });
-    tl.to(".product-bg-img", {
-      scale: 1.2,
-      delay: -1,
-    });
-    tl.to(".product-bg-img", {
-      yPercent: 30,
-      delay: -1,
-    });
-  });
+
+    // Cleanup context on component unmount
+    return () => ctx.revert();
+  }, []);
   const swiperRef = useRef(null); // Create a ref for Swiper
 
   // State to track which button was clicked

@@ -1,26 +1,27 @@
 import Image from "next/image";
 import PrimaryButton from "../Button/PrimaryButton";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-// import { paraAnim } from "../gsapAnimations";
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
+import { useEffect } from "react";
 
+gsap.registerPlugin(ScrollTrigger);
 
+export default function Hero() { 
+  useEffect(() => {
+    // Create a GSAP context
+    const ctx = gsap.context(() => {
+      // Define your animations here within the context
+      const tl = gsap.timeline();
+      tl.from(".hero-img-anim", {
+        yPercent: 10,
+        opacity: 0,
+        delay: 0.5,
+      });
+    });
 
-gsap.registerPlugin(useGSAP,ScrollTrigger);
-
-export default function Hero() {
-  // paraAnim()
- 
-  useGSAP(()=>{
-    const tl = gsap.timeline();
-    tl.from(".hero-img-anim",{
-      yPercent:10,
-      opacity:0,
-      delay:0.5
-    })
-
-  })
+    // Clean up the context on component unmount
+    return () => ctx.revert();
+  }, []);
 
   
     return (

@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { paraAnim } from "../gsapAnimations";
 import Image from "next/image";
@@ -10,7 +9,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 
 // Register GSAP plugin
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 // Reusable Card Component
 const MolecularCard = ({ symbol, title, description }) => (
@@ -47,59 +46,59 @@ const Molecular = () => {
   const molecularLeft = useRef(null);
   const molecularContainer = useRef(null);
 
-  if (globalThis.innerWidth > 1024) {
-    useGSAP(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".molecular",
-          pin: true,
-          start: "top top",
-          end: "+=2500 bottom",
-          scrub: true,
-        },
-      });
-      tl.to(".molecular-right", { yPercent: -67, duration: 3 , ease:"none"});
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      if (globalThis.innerWidth > 1024) {
+        // For screens wider than 1024px
+        const tlRight = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".molecular",
+            pin: true,
+            start: "top top",
+            end: "+=2500 bottom",
+            scrub: true,
+          },
+        });
+        tlRight.to(".molecular-right", { yPercent: -67, duration: 3, ease: "none" });
+
+        const tlBg = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".molecular",
+            start: "top bottom",
+            end: "bottom 20%",
+            scrub: true,
+          },
+        });
+        tlBg.to(".molecular-bg-img", { scale: 1.2, delay: -1 });
+        tlBg.to(".molecular-bg-img", { yPercent: 30, delay: -1 });
+      } else if (globalThis.innerWidth > 541) {
+        // For screens between 541px and 1024px
+        const tlRight = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".molecular",
+            pin: true,
+            start: "top top",
+            end: "+=2000 bottom",
+            scrub: true,
+          },
+        });
+        tlRight.to(".molecular-right", { yPercent: -40, duration: 3, ease: "none" });
+
+        const tlBg = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".molecular",
+            start: "top bottom",
+            end: "bottom 20%",
+            scrub: true,
+          },
+        });
+        tlBg.to(".molecular-bg-img", { scale: 1.2, delay: -1 });
+        tlBg.to(".molecular-bg-img", { yPercent: 30, delay: -1 });
+      }
     });
 
-    useGSAP(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".molecular",
-          start: "top bottom",
-          end: "bottom 20%",
-          scrub: true,
-        },
-      });
-      tl.to(".molecular-bg-img", { scale: 1.2, delay: -1 });
-      tl.to(".molecular-bg-img", { yPercent: 30, delay: -1 });
-    });
-  } else if (globalThis.innerWidth > 541) {
-    useGSAP(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".molecular",
-          pin: true,
-          start: "top top",
-          end: "+=2000 bottom",
-          scrub: true,
-        },
-      });
-      tl.to(".molecular-right", { yPercent: -40, duration: 3, ease:"none" });
-    });
-
-    useGSAP(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".molecular",
-          start: "top bottom",
-          end: "bottom 20%",
-          scrub: true,
-        },
-      });
-      tl.to(".molecular-bg-img", { scale: 1.2, delay: -1 });
-      tl.to(".molecular-bg-img", { yPercent: 30, delay: -1 });
-    });
-  }
+    return () => ctx.revert(); // Clean up on unmount
+  }, []);
 
   // Molecular card data
   const cardData = [

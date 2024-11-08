@@ -61,7 +61,7 @@ const Portfolio = () => {
 
   }
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="pb-[5%]">
       <div  className=" flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] tablet:px-[4%] mobile:px-0 overflow-hidden">
       <div>
         <h2 data-para-anim className="title-2 aeonik mobile:text-center ">

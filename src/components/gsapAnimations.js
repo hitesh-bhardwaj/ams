@@ -1,41 +1,21 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { CustomEase } from "gsap/dist/CustomEase";
 import { SplitInLine } from "./splitTextUtils";
+import { useEffect } from "react";
 
-gsap.registerPlugin(ScrollTrigger, CustomEase, useGSAP);
+gsap.registerPlugin(ScrollTrigger, CustomEase);
 
 const primaryEase = CustomEase.create("cus-1", "0.62, 0.05, 0.01, 0.99");
 
 export function paraAnim() {
-  useGSAP(() => {
-    const paraAnimations = document.querySelectorAll("[data-para-anim]");
-    paraAnimations.forEach((paraAnimation) => {
-      SplitInLine(paraAnimation);
-      let paraLine = paraAnimation.querySelectorAll(".line-internal");
-      gsap.from(paraLine, {
-        scrollTrigger: {
-          trigger: paraAnimation,
-          start: "top 90%",
-        },
-        duration: 1.2,
-        yPercent: 100,
-        stagger: 0.07,
-        ease: primaryEase,
-      });
-    });
-  });
-}
-export function paraAnimation(){
-  if(globalThis.innerWidth<1024){
-
-    useGSAP(() => {
-      const paraAnimations = document.querySelectorAll(".para-animation");
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const paraAnimations = document.querySelectorAll("[data-para-anim]");
       paraAnimations.forEach((paraAnimation) => {
         SplitInLine(paraAnimation);
-        let paraLine = paraAnimation.querySelectorAll(".line-internal");
+        const paraLine = paraAnimation.querySelectorAll(".line-internal");
         gsap.from(paraLine, {
           scrollTrigger: {
             trigger: paraAnimation,
@@ -44,142 +24,192 @@ export function paraAnimation(){
           duration: 1.2,
           yPercent: 100,
           stagger: 0.07,
-          ease: primaryEase,
+          ease: primaryEase, // Assuming `primaryEase` is `power3.Out`
         });
       });
     });
-  }
+    return () => ctx.revert();
+  }, []);
+}
 
+export function paraAnimation() {
+  useEffect(() => {
+    if (globalThis.innerWidth < 1024) {
+      const ctx = gsap.context(() => {
+        const paraAnimations = document.querySelectorAll(".para-animation");
+        paraAnimations.forEach((paraAnimation) => {
+          SplitInLine(paraAnimation);
+          const paraLine = paraAnimation.querySelectorAll(".line-internal");
+          gsap.from(paraLine, {
+            scrollTrigger: {
+              trigger: paraAnimation,
+              start: "top 90%",
+            },
+            duration: 1.2,
+            yPercent: 100,
+            stagger: 0.07,
+            ease: primaryEase,
+          });
+        });
+      });
+      return () => ctx.revert();
+    }
+  }, []);
 }
 
 export function imageAnim() {
-  if(globalThis.innerWidth<=1023){
-    useGSAP(() => {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
       const images = document.querySelectorAll(".imageanim");
       images.forEach((img) => {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: img,
-            start: "top bottom",
-            end: "bottom top",
-            
+            start: globalThis.innerWidth <= 1023 ? "top bottom" : "top 70%",
+            end: globalThis.innerWidth <= 1023 ? "bottom top" : "+=2000 top",
             scrub: true,
           },
         });
-        tl.to(img, {
-          yPercent: 0,
-          delay: -1,
-        });
+        if (globalThis.innerWidth <= 1023) {
+          tl.to(img, {
+            yPercent: 0,
+            scale:1,
+            delay: -1,
+          });
+        } else {
+          tl.to(img, {
+            scale: 1.1,
+            delay: -1,
+          }).to(img, {
+            yPercent: 30,
+            delay: -1,
+          });
+        }
       });
     });
+    return () => ctx.revert();
+  }, []);
+}
 
-  }
-  else{
-
-    useGSAP(() => {
-      const images = document.querySelectorAll(".imageanim");
+export function imgAnim() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const images = document.querySelectorAll(".imageAnim");
       images.forEach((img) => {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: img,
             start: "top 70%",
             end: "+=2000 top",
-  
             scrub: true,
           },
         });
-        tl.to(img, {
-          scale: 1.1,
-          delay: -1,
-        });
-        tl.to(img, {
-          yPercent: 30,
+        tl.from(img, {
+          scale: 1.2,
           delay: -1,
         });
       });
     });
-  }
+    return () => ctx.revert();
+  }, []);
 }
 
-export function imgAnim() {
-  useGSAP(() => {
-    const images = document.querySelectorAll(".imageAnim");
-    images.forEach((img) => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: img,
-          start: "top 70%",
-          end: "+=2000 top",
-          // markers:true,
-
-          scrub: true,
-        },
-      });
-      tl.from(img, {
-        scale: 1.2,
-        delay: -1,
-      });
-    });
-  });
-}
 export function fadeIn() {
-  useGSAP(() => {
-    const content = document.querySelectorAll(".fadein");
-    content.forEach((content) => {
-      gsap.from(content, {
-        scrollTrigger: {
-          trigger: content,
-          start: "top 90%",
-          end: "bottom 60%",
-        },
-        opacity: 0,
-        ease: "power3.Out",
-        duration: 1,
-        stagger: 0.5,
-      });
-    });
-  });
-}
-export function fadeUp() {
-  if(globalThis.innerWidth>0){
-    useGSAP(() => {
-      const content = document.querySelectorAll(".fadeup");
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const content = document.querySelectorAll(".fadein");
       content.forEach((content) => {
         gsap.from(content, {
           scrollTrigger: {
             trigger: content,
-            start: "top bottom",
+            start: "top 90%",
             end: "bottom 60%",
           },
           opacity: 0,
-         
-          y: 50,
-          ease: "power3.Out",
-          duration: 0.7,
+          ease: primaryEase,
+          duration: 1,
           stagger: 0.5,
         });
       });
     });
+    return () => ctx.revert();
+  }, []);
+}
 
-  }
+export function fadeUp() {
+  useEffect(() => {
+    if (globalThis.innerWidth > 0) {
+      const ctx = gsap.context(() => {
+        const content = document.querySelectorAll(".fadeup");
+        content.forEach((content) => {
+          gsap.from(content, {
+            scrollTrigger: {
+              trigger: content,
+              start: "top bottom",
+              end: "bottom 60%",
+            },
+            opacity: 0,
+            y: 50,
+            ease: primaryEase,
+            duration: 0.7,
+            stagger: 0.5,
+          });
+        });
+      });
+      return () => ctx.revert();
+    }
+  }, []);
+}
+export function fadeup(){
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const fadeUps = document.querySelectorAll('.fadeUp');
+      fadeUps.forEach((fadeUp) => {
+        gsap.fromTo(
+          fadeUp,
+          {
+            opacity: 0,
+            y: 40,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            delay: 0.3,
+            ease: 'Power3.out',
+            scrollTrigger: {
+              trigger: fadeUp,
+              start: 'top 85%',
+            },
+          }
+        );
+      });
+    });
+    return () => ctx.revert();
+  });
 }
 
 export function paraAnimWordpress() {
-  useGSAP(() => {
-    const paraAnimations = document.querySelectorAll(".para-anim");
-    paraAnimations.forEach((paraAnimation) => {
-      SplitInLine(paraAnimation);
-      let paraLine = paraAnimation.querySelectorAll(".line-internal");
-      gsap.from(paraLine, {
-        scrollTrigger: {
-          trigger: paraAnimation,
-          start: "top 90%",
-        },
-        duration: 1.47,
-        yPercent: 100,
-        stagger: 0.07,
-        ease: primaryEase,
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const paraAnimations = document.querySelectorAll(".para-anim");
+      paraAnimations.forEach((paraAnimation) => {
+        SplitInLine(paraAnimation); // Implement or import your SplitInLine function
+        const paraLine = paraAnimation.querySelectorAll(".line-internal");
+        
+        gsap.from(paraLine, {
+          scrollTrigger: {
+            trigger: paraAnimation,
+            start: "top 90%",
+          },
+          duration: 1.47,
+          yPercent: 100,
+          stagger: 0.07,
+          ease: "power3.Out", // Assuming `primaryEase` is "power3.Out"
+        });
       });
     });
-  });
+
+    return () => ctx.revert(); // Clean up animations on component unmount
+  }, []);
 }

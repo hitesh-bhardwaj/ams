@@ -35,7 +35,8 @@ export default function App({ Component, pageProps, router }) {
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </ReactLenis>
-      {/* {showPixi ? <Pixifinal /> : ""} */}
+       <Pixifinal />
+       
     </>
   );
 }

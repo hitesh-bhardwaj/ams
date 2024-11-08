@@ -1,7 +1,6 @@
 /* eslint-disable no-inner-declarations */
 // src/utils/splitText.js
-import { gsap } from 'gsap/dist/gsap';
-import { Expo } from 'gsap';
+
 import SplitType from 'split-type';
 
 

@@ -8,6 +8,7 @@ import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import IcCards from "@/components/IC/IcCards";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
+import { fadeup } from "@/components/gsapAnimations";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,34 +46,8 @@ export default function ic() {
       para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision.",
     },
   ];
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const fadeUps = document.querySelectorAll(".fadeUp");
-      fadeUps.forEach((fadeUp) => {
-        gsap.fromTo(
-          fadeUp,
-          {
-            opacity: 0,
-            y: 40,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.6,
-            delay: 0.3,
-            ease: "Power3.out",
-            scrollTrigger: {
-              trigger: fadeUp,
-              start: "top 85%",
-            },
-          }
-        );
-      });
-    });
-    return () => ctx.revert();
-  });
-
+  fadeup()
+  
   return (
     <>
   

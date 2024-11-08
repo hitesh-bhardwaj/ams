@@ -521,7 +521,7 @@ body{
   }
   .imageanim{
     transform: translateY(0%);
-    scale: 1;
+    scale: 1.5;
   }
   .para-animation .line{
     overflow: hidden;

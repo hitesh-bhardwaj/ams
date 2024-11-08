@@ -1,34 +1,30 @@
 import Image from 'next/image'
-import React from 'react'
+import { useEffect } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
-import { useGSAP } from '@gsap/react'
-import { paraAnim , paraAnimation } from '../gsapAnimations'
+import { paraAnim  } from '../gsapAnimations'
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-gsap.registerPlugin(useGSAP,ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
 
 const DNA = () => {
   paraAnim()
-  paraAnimation()
-  useGSAP(()=>{
-    
-    gsap.from(".dna-card",{
-      yPercent:50,
-      opacity:0,
-     
-      duration:1,
-      scrollTrigger:{
-        trigger:".dna-card-container",
-      
-        start:"top 80%",
-        end:"bottom 40%",
-       
-      },
-      stagger:0.2
-      
-    })
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".dna-card", {
+        yPercent: 50,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".dna-card-container",
+          start: "top 80%",
+          end: "bottom 40%",
+        },
+        stagger: 0.2,
+      });
+    });
 
-  })
+    return () => ctx.revert(); // Clean up on unmount
+  }, []);
   return (
   <>
   <section className='dna' id='dna'>
@@ -125,11 +121,11 @@ const DNA = () => {
                 />  
           </div>
           <div className='w-full text-center'>
-          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Accessible Care</h2>
+          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] '>Accessible Care</h2>
 
           </div>
           <div>
-            <p className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center para-animation'>Breaking barriers to care. AMS designs affordable medical solutions that bring quality healthcare to everyone, everywhere.</p>
+            <p className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center '>Breaking barriers to care. AMS designs affordable medical solutions that bring quality healthcare to everyone, everywhere.</p>
           </div>
 
         </div>
@@ -143,11 +139,11 @@ const DNA = () => {
                 />  
           </div>
           <div className='w-full text-center'>
-          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Global Standards</h2>
+          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] '>Global Standards</h2>
 
           </div>
           <div>
-            <p className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center para-animation'>The AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications.</p>
+            <p className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center '>The AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications.</p>
           </div>
 
         </div>
@@ -161,11 +157,11 @@ const DNA = () => {
                 />  
           </div>
           <div className='w-full text-center'>
-          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] para-animation'>Ethics and Integrity</h2>
+          <h2 className='text-[2.5vw] aeonik leading-[1.2] font-light text-[#111111] tablet:text-[4vw] mobile:text-[8.2vw] '>Ethics and Integrity</h2>
 
           </div>
           <div>
-            <p className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center para-animation'>We uphold ethical standards and integrity in all business practices, ensuring transparency & honesty in building lasting relationships..</p>
+            <p className='content-p tracking-wide mobile:w-[100%] mobile:p-[5vw] mobile:text-center '>We uphold ethical standards and integrity in all business practices, ensuring transparency & honesty in building lasting relationships..</p>
           </div>
 
         </div>
