@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Menu from "./Menu";
 import { useRouter } from "next/router";
-import gsap from "gsap";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,37 +10,17 @@ const Header = () => {
   const [hasBackground, setHasBackground] = useState(false);
   const [isInverted, setIsInverted] = useState(false);
   const observerRef = useRef(null);
-  const smootherRef = useRef(null); // Store the ScrollSmoother instance
   const router = useRouter();
 
   const openMenu = () => {
     setIsMenuOpen(true);
-    if (smootherRef.current) {
-      smootherRef.current.paused(true); // Stop scroll
-    }
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-    if (smootherRef.current) {
-      smootherRef.current.paused(false); // Resume scroll
-    }
   };
 
   useEffect(() => {
-    // Dynamically import ScrollSmoother on the client side
-    if (typeof window !== "undefined") {
-      import("@/components/ScrollSmoother.min.js").then((module) => {
-        const ScrollSmoother = module.default;
-        gsap.registerPlugin(ScrollSmoother);
-
-        smootherRef.current = ScrollSmoother.create({
-          smooth: 1,
-          effects: true,
-        });
-      });
-    }
-
     observerRef.current = new IntersectionObserver(
       (entries) => {
         const darkSectionInView = entries.some((entry) => entry.isIntersecting);
@@ -57,20 +36,6 @@ const Header = () => {
       observerRef.current.disconnect();
     };
   }, []);
-
-  useEffect(() => {
-    const handleRouteChange = () => {
-      if (smootherRef.current) {
-        smootherRef.current.paused(false); // Ensure scrolling is enabled on route change
-      }
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router]);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;

@@ -8,8 +8,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import dynamic from "next/dynamic"; // Import next/dynamic
 import Layout from "@/components/Layout";
-
-
+import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
 
 const Product = dynamic(() => import("@/components/Home/Product"), {
   loading: () => <p>Loading products...</p>, // Optional loading component
@@ -21,7 +20,7 @@ const Blog = dynamic(() => import("@/components/Home/Blog"), {
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       const lineDraws = document.querySelectorAll(".lineDraw");
@@ -76,14 +75,15 @@ export default function Home() {
   return (
     <>
       <Layout>
-            <main>
-              <Hero />
-              <Product />
-              <Impact />
-              <Career />
-              <Blog />
-              <Facility />
-            </main>
+        <main>
+          <Hero />
+          <ManufacturingCarousel />
+          <Product />
+          <Impact />
+          <Career />
+          <Blog />
+          <Facility />
+        </main>
       </Layout>
     </>
   );

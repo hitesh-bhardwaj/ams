@@ -2,27 +2,10 @@ import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
 import Pixifinal from "@/components/Pixifinal";
-import { useEffect, useState } from "react";
+import { ReactLenis } from "lenis/react";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function App({ Component, pageProps, router }) {
-  const [showPixi, setShowPixi] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        setShowPixi(false);
-      } else {
-        setShowPixi(true);
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <>
@@ -46,15 +29,13 @@ export default function App({ Component, pageProps, router }) {
           },
         ]}
       />
-     
-        <AnimatePresence mode="wait"> 
-        
-            <Component {...pageProps} key={router.route} />
-         
+      <ReactLenis root options={{lerp: 0.05}}>
+        <ScrollToTop key={router.route}/>
+        <AnimatePresence mode="wait">
+          <Component {...pageProps} key={router.route} />
         </AnimatePresence>
-     
-     {showPixi?<Pixifinal />:""}
-       
+      </ReactLenis>
+      {/* {showPixi ? <Pixifinal /> : ""} */}
     </>
   );
 }

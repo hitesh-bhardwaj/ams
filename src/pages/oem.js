@@ -1,9 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Header from "@/components/Header";
 import Genesis from "@/components/layoutComponents/Genesis";
-import Transition from "@/components/Transition";
-import React, { useState } from "react";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
@@ -14,7 +10,7 @@ import FormOem from "@/components/Oem/FormOem";
 import OfferingsMob from "@/components/Oem/OfferingsMob";
 import Layout from "@/components/Layout";
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function oem() {
   const content = {
@@ -55,30 +51,6 @@ export default function oem() {
     });
     return () => ctx.revert();
   });
-  const [smoother, setSmoother] = useState(null);
-  useEffect(() => {
-    const initializeScrollSmoother = async () => {
-      if (window.innerWidth >= 1024) {
-        const { default: ScrollSmoother } = await import(
-          "@/components/ScrollSmoother.min.js"
-        );
-        gsap.registerPlugin(ScrollSmoother);
-
-        const smootherInstance = ScrollSmoother.create({
-          smooth: 1,
-          effects: true,
-          wrapper: "#smooth-wrapper",
-          content: "#smooth-content",
-        });
-        setSmoother(smootherInstance);
-      }
-    };
-    initializeScrollSmoother();
-
-    return () => {
-      smoother && smoother.kill();
-    };
-  }, [smoother]);
 
   return (
     <>

@@ -1,16 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Header from "@/components/Header";
 import Features from "@/components/Products/Features";
 import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
-import Transition from "@/components/Transition";
-import React, { useEffect, useState } from "react";
 import { fadeUp } from "@/components/gsapAnimations";
 import Edge2 from "@/components/Products/Edge2";
 import Layout from "@/components/Layout";
-import gsap from "gsap";
 
 const EdgeCard = {
   card1: {
@@ -52,30 +48,6 @@ const FeatureCard = {
 const advabond = () => {
   fadeUp();
 
-  const [smoother, setSmoother] = useState(null);
-  useEffect(() => {
-    const initializeScrollSmoother = async () => {
-      if (window.innerWidth >= 1024) {
-        const { default: ScrollSmoother } = await import(
-          "@/components/ScrollSmoother.min.js"
-        );
-        gsap.registerPlugin(ScrollSmoother);
-
-        const smootherInstance = ScrollSmoother.create({
-          smooth: 1,
-          effects: true,
-          wrapper: "#smooth-wrapper",
-          content: "#smooth-content",
-        });
-        setSmoother(smootherInstance);
-      }
-    };
-    initializeScrollSmoother();
-
-    return () => {
-      smoother && smoother.kill();
-    };
-  }, [smoother]);
   return (
     <>
      

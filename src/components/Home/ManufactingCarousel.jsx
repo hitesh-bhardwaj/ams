@@ -250,7 +250,7 @@ const ManufacturingCarousel = () => {
 
     return (
         <>
-            <section ref={carouselRef} className="parentCarou mb-[12%] w-full overflow-hidden" id="manufacturing">
+            <section ref={carouselRef} className="will-change-scroll parentCarou mb-[12%] w-full overflow-hidden" id="manufacturing">
                 <div className="pushCarousel pl-[6%] tablet:pt-[10%] tablet:pl-0 mobile:pl-0 mobile:pt-[15%] mobile:w-[90%] mobile:mx-auto overflow-hidden mobile:hidden">
                     <div className="flex tablet:flex-col-reverse justify-between innerCarou mobile:flex-col-reverse">
 

@@ -6,15 +6,8 @@ import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
-import Transition from "@/components/Transition";
-import React, { useState } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
-gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const EdgeCard = {
   card1: {
@@ -55,30 +48,6 @@ const FeatureCard = {
 
 const advacrylplus = () => {
   fadeUp();
-  const [smoother, setSmoother] = useState(null);
-  useEffect(() => {
-    const initializeScrollSmoother = async () => {
-      if (window.innerWidth >= 1024) {
-        const { default: ScrollSmoother } = await import(
-          "@/components/ScrollSmoother.min.js"
-        );
-        gsap.registerPlugin(ScrollSmoother);
-
-        const smootherInstance = ScrollSmoother.create({
-          smooth: 1,
-          effects: true,
-          wrapper: "#smooth-wrapper",
-          content: "#smooth-content",
-        });
-        setSmoother(smootherInstance);
-      }
-    };
-    initializeScrollSmoother();
-
-    return () => {
-      smoother && smoother.kill();
-    };
-  }, [smoother]);
 
   return (
     <>

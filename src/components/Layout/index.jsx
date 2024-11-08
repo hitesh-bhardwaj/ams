@@ -1,48 +1,22 @@
-import { useDevice } from "../useDevice";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import React, { useEffect, useRef } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import Transition from "../Transition";
-import gsap from "gsap";
+// import gsap from "gsap";
+// import ScrollSmoother from "@/components/ScrollSmoother.min.js";
+
+// gsap.registerPlugin(ScrollSmoother);
 
 const Layout = ({ children }) => {
-  const { isDesktop } = useDevice();
-  const router = useRouter();
-  const [smoother, setSmoother] = useState(null);
 
-  useEffect(() => {
-    const initializeScrollSmoother = async () => {
-      if (window.innerWidth >= 1024) {
-        const { default: ScrollSmoother } = await import(
-          "@/components/ScrollSmoother.min.js"
-        );
-        gsap.registerPlugin(ScrollSmoother);
+  // const smoother = useRef();
 
-        const smootherInstance = ScrollSmoother.create({
-          smooth: 1,
-          effects: true,
-          wrapper: "#smooth-wrapper",
-          content: "#smooth-content",
-        });
-        setSmoother(smootherInstance);
-      }
-    };
-
-    initializeScrollSmoother();
-
-    // Kill smoother on route change
-    const handleRouteChange = () => {
-      smoother && smoother.kill();
-    };
-
-    router.events.on("routeChangeStart", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeStart", handleRouteChange);
-      smoother && smoother.kill();
-    };
-  }, [smoother, router.events]);
+  // useEffect(() => {
+  //   smoother.current = ScrollSmoother.create({
+  //     smooth: 2,
+  //     effects: true,
+  //   });
+  // }, []);
 
   return (
     <>

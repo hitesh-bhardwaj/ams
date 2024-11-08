@@ -357,7 +357,7 @@ body{
   transition: transform 1.2s cubic-bezier(.19,1,.22,1);
 }
 .glassmorphism {
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.45);
 }
 

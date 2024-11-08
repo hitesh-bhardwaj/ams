@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useLenis } from "@studio-freight/react-lenis";
 import Image from "next/image";
-import gsap from "gsap";
 
 const SpecificationsHd3 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -9,30 +7,16 @@ const SpecificationsHd3 = () => {
 
   const openModal = () => {
     setIsModalOpen(true);
-    if (smootherRef.current) {
-      smootherRef.current.paused(true); // Stop scroll
-    }
+    // if (smootherRef.current) {
+    //   smootherRef.current.paused(true); // Stop scroll
+    // }
   };
   const closeModal = () => {
     setIsModalOpen(false);
-    if (smootherRef.current) {
-      smootherRef.current.paused(false); // Resume scroll
-    }
+    // if (smootherRef.current) {
+    //   smootherRef.current.paused(false); // Resume scroll
+    // }
   };
-  useEffect(() => {
-    // Dynamically import ScrollSmoother on the client side
-    if (typeof window !== "undefined") {
-      import("@/components/ScrollSmoother.min.js").then((module) => {
-        const ScrollSmoother = module.default;
-        gsap.registerPlugin(ScrollSmoother);
-
-        smootherRef.current = ScrollSmoother.create({
-          smooth: 1,
-          effects: true,
-        });
-      });
-    }
-  }, []);
 
   return (
     <>

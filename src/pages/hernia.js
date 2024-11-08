@@ -1,17 +1,14 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Portfolio from "@/components/Endo/Portfolio";
-import Header from "@/components/Header";
 import Product from "@/components/Hernia/Product";
 import Hero from "@/components/Hero";
 import Genesis from "@/components/layoutComponents/Genesis";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
-import Transition from "@/components/Transition";
-import React, { useEffect, useState } from "react";
-import { useGSAP } from "@gsap/react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Layout from "@/components/Layout";
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function hernia() {
   const content = {
@@ -72,30 +69,6 @@ export default function hernia() {
     });
     return () => ctx.revert();
   });
-  const [smoother, setSmoother] = useState(null);
-  useEffect(() => {
-    const initializeScrollSmoother = async () => {
-      if (window.innerWidth >= 1024) {
-        const { default: ScrollSmoother } = await import(
-          "@/components/ScrollSmoother.min.js"
-        );
-        gsap.registerPlugin(ScrollSmoother);
-
-        const smootherInstance = ScrollSmoother.create({
-          smooth: 1,
-          effects: true,
-          wrapper: "#smooth-wrapper",
-          content: "#smooth-content",
-        });
-        setSmoother(smootherInstance);
-      }
-    };
-    initializeScrollSmoother();
-
-    return () => {
-      smoother && smoother.kill();
-    };
-  }, [smoother]);
 
   return (
     <>
