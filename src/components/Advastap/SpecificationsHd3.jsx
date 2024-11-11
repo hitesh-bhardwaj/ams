@@ -41,7 +41,7 @@ const SpecificationsHd3 = () => {
         
         {isModalOpen && (
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-50">
-            <div className="bg-[#DADADA] glassmorphism border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar relative mobile:max-h-[100vh] mobile:w-[90vw]">
+            <div className="bg-[#DADADA] bg-white/80 border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar relative mobile:max-h-[100vh] mobile:w-[90vw]">
               <div
                 onClick={closeModal}
                 className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3vw] w-[3vw] mobile:w-[7vw] mobile:h-[7vw] mobile:p-[1.5vw] mobile:top-[6vw] mobile:right-[10vw]"

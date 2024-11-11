@@ -56,7 +56,6 @@ export default function Home() {
       <Layout>
         <main>
           <Hero />
-          {/* <ManufacturingCarousel /> */}
           <GalleryComponent/>
           <Product />
           <Impact />

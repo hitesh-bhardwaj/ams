@@ -6,6 +6,9 @@
     left: -20%;
     top: 50%;
 }
+.endoSmallSwiper .swiper-wrapper{
+    height: 5vw;
+}
 
 .endoSmallSwiper .swiper-wrapper {
     display: flex;

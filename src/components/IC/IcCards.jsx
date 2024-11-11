@@ -44,7 +44,7 @@ export default function IcCards() {
                   <div
                     className={`relative w-[30vw] ${
                       activeIndex === index ? 'h-[38vw]' : 'h-[38vw]'
-                    } transition-all duration-500 rounded-[2vw] overflow-hidden flex flex-col px-[3vw] py-[4vw] items-center justify-between border border-gray-200 glassmorphism`}
+                    } transition-all duration-500 rounded-[2vw] overflow-hidden flex flex-col px-[3vw] py-[4vw] items-center justify-between border border-gray-200 bg-white/50`}
                   >
                     <h4 className={`aeonik uppercase font-light text-[3vw] text-center relative z-[7] ${slide==3?"text-[2.3vw] normal-case":""}`}>
                       {slide === 1 ? 'ADVA PRO' : slide === 2 ? 'ADVA GLIDE' : 'Coronary Accessories'}
@@ -74,7 +74,7 @@ export default function IcCards() {
                 
                   <div
                     className={`relative w-full h-full
-                    transition-all duration-500 overflow-hidden flex flex-col px-[3vw] py-[4vw] rounded-[6vw] items-center justify-between border border-gray-200 glassmorphism tablet:rounded-[4vw]`}
+                    transition-all duration-500 overflow-hidden flex flex-col px-[3vw] py-[4vw] rounded-[6vw] items-center justify-between border border-gray-200 bg-white/50 tablet:rounded-[4vw]`}
                   >
                     <h4 className={`aeonik font-light text-[8vw] text-center relative z-[7] tablet:text-[4.5vw] `}>
                     Adva Pro
@@ -94,7 +94,7 @@ export default function IcCards() {
                 
                 <div
                   className={`relative w-full h-full
-                  transition-all duration-500 overflow-hidden flex flex-col px-[3vw] py-[4vw] rounded-[6vw] items-center justify-between border border-gray-200 glassmorphism  tablet:rounded-[4vw]`}
+                  transition-all duration-500 overflow-hidden flex flex-col px-[3vw] py-[4vw] rounded-[6vw] items-center justify-between border border-gray-200 bg-white/50  tablet:rounded-[4vw]`}
                 >
                   <h4 className={`aeonik font-light text-[8vw] text-center relative z-[7] tablet:text-[4.5vw] `}>
                   Adva Glide
@@ -114,7 +114,7 @@ export default function IcCards() {
                 
                 <div
                   className={`relative w-full h-full
-                  transition-all duration-500 overflow-hidden flex flex-col px-[5vw] py-[5vw] rounded-[6vw] items-center justify-between border border-gray-200 glassmorphism tablet:rounded-[4vw]`}
+                  transition-all duration-500 overflow-hidden flex flex-col px-[5vw] py-[5vw] rounded-[6vw] items-center justify-between border border-gray-200 bg-white/50 tablet:rounded-[4vw]`}
                 >
                   <h4 className={`aeonik font-light text-[8vw] text-center relative z-[7] leading-[1.25] tablet:text-[4.5vw] `}>
                   Coronary Accessories

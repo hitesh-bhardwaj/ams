@@ -75,7 +75,7 @@ const Features = ({ card1, card2, card3, card4 }) => {
     <>
       <section className='mobile:py-[10%] tablet:py-[10%]' id='features'>
         <div className='h-screen w-screen container-lg mobile:hidden tablet:h-full'>
-          <div className='h-[80%] w-full border rounded-[3vw] flex flex-col glassmorphism items-center justify-center gap-[4vw] tablet:py-[3vw] tablet:h-[60%]'>
+          <div className='h-[80%] w-full border rounded-[3vw] flex flex-col bg-white/50 items-center justify-center gap-[4vw] tablet:py-[3vw] tablet:h-[60%]'>
             <div>
               <h2 data-para-anim className='title-2 aeonik'>Key Features</h2>
             </div>
@@ -92,7 +92,7 @@ const Features = ({ card1, card2, card3, card4 }) => {
           <div className='mb-[10%] mobile:mb-[15vw]'>
             <h2 className='title-2 aeonik mobile:text-center'>Key Features</h2>
           </div>
-          <div className='h-[90vw] w-full border rounded-[9vw] flex flex-col glassmorphism items-center justify-center gap-[6vw] mobile:pt-[10vw] mobile:h-[50vh]'>
+          <div className='h-[90vw] w-full border rounded-[9vw] flex flex-col bg-white/50 items-center justify-center gap-[6vw] mobile:pt-[10vw] mobile:h-[50vh]'>
             <div className='w-[47%] flex-col gap-y-[2vw]  mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full'>
               <Swiper
                 navigation={false}
@@ -115,7 +115,7 @@ const Features = ({ card1, card2, card3, card4 }) => {
                 </SwiperSlide>
               </Swiper>
               <div
-                className={`absolute z-[5] bottom-[10%] left-[65%] translate-x-[-65%] overflow-hidden border glassmorphism py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
+                className={`absolute z-[5] bottom-[10%] left-[65%] translate-x-[-65%] overflow-hidden border bg-white/50 py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
                 ${activeButton === "next" ? "text-white border-none" : "bg-transparent text-[#111111]"} transition-colors duration-300`}
                 onClick={handleNext}
               >
@@ -134,7 +134,7 @@ const Features = ({ card1, card2, card3, card4 }) => {
                 </div>
               </div>
               <div
-                className={`absolute z-[5] bottom-[10%] left-[37%] translate-x-[-38%] glassmorphism overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
+                className={`absolute z-[5] bottom-[10%] left-[37%] translate-x-[-38%] bg-white/50 overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
                 ${activeButton === "prev" ? "text-white border-none" : "bg-transparent text-[#111111]"} transition-colors duration-300`}
                 onClick={handlePrev}
               >

@@ -17,7 +17,7 @@ const ProductCard = ({ img, heading}) => {
     <div className="group">
       <Link href={"#"}>
         <div
-          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}
+          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative bg-white/70 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}
         >
           <div className="h-[22vw] w-[30vw] absolute top-[-5vw] mobile:w-[80vw] mobile:h-[80vw] tablet:top-[10%]">
             <Image fill src={img} alt={heading} className="object-contain group-hover:scale-[1.2] transition-all duration-500" />
@@ -153,7 +153,7 @@ const Product = () => {
     <section
     id="products"
       ref={sliderContainer}
-      className={`relative h-screen ${styles.sliderContainer} overflow-hidden mobile:h-full tablet:h-full mobile:py-[10%]`}
+      className={`relative h-[110vh] ${styles.sliderContainer} overflow-x-hidden mobile:h-full tablet:h-full pb-[5%] mobile:py-[15%]`}
     >   {/** for desktop */}
         <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden tablet:hidden">
         <div className='w-full flex justify-center'>

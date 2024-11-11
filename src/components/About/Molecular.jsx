@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Reusable Card Component
 const MolecularCard = ({ symbol, title, description }) => (
-  <div className="molecular-card w-[35vw] h-[25vw] px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[7vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
+  <div className="molecular-card w-[35vw] h-[25vw] px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
     <div className="w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw] tablet:w-[10vw] tablet:h-[10vw]">
       <p data-para-anim className="text-[3.3vw] mobile:text-[12.2vw] tablet:text-[5vw]">
         {symbol}
@@ -27,7 +27,7 @@ const MolecularCard = ({ symbol, title, description }) => (
     </div>
     <h2
       data-para-anim
-      className="text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light mobile:text-[7.4vw] tablet:mt-[3vw] tablet:text-[4vw] mobile:mt-[3vw] mobile:text-center"
+      className="text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light mobile:text-[7.4vw] tablet:mt-[3vw] tablet:text-[4vw] mobile:mt-[6vw] mobile:text-center"
     >
       {title}
     </h2>
@@ -163,10 +163,10 @@ const Molecular = () => {
             className="object-cover molecular-bg-img scale-[1.3] translate-y-[-30%] mobile:translate-y-[0%]"
           />
         </div>
-        <div className="container-sm py-[10%] relative z-[2] w-full h-full px-[4vw] mobile:px-0 tablet:px-0">
-          <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:gap-[10vw]">
+        <div className="container-sm py-[15%] relative z-[2] w-full h-full px-[4vw] mobile:px-0 tablet:px-0">
+          <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:gap-[20vw]">
             <div
-              className="molecular-left w-[50%] space-y-[2.5vw] mobile:w-[100%] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center tablet:w-[50%]"
+              className="molecular-left w-[50%] space-y-[2.5vw] mobile:w-[100%] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:gap-[5vw] mobile:text-center tablet:w-[50%]"
               ref={molecularLeft}
             >
               <div className="w-[58%] mobile:w-[100%] tablet:w-full">
@@ -216,7 +216,7 @@ const Molecular = () => {
                 ))}
               </Swiper>
               <div
-                className={`absolute z-[5] bottom-0 left-[67%] translate-x-[-65%] overflow-hidden border glassmorphism  py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
+                className={`absolute z-[5] bottom-[-3%] left-[67%] translate-x-[-65%] overflow-hidden border bg-white/50  py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
                 ${
                   activeButton === "next"
                     ? " text-white border-none"
@@ -246,7 +246,7 @@ const Molecular = () => {
             </div>
               </div>
               <div
-                className={`absolute z-[5] bottom-0 left-[37%] translate-x-[-38%] glassmorphism overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
+                className={`absolute z-[5] bottom-[-3%] left-[37%] translate-x-[-38%] bg-white/50 overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
                 ${
                   activeButton === "prev"
                     ? " text-white border-none"

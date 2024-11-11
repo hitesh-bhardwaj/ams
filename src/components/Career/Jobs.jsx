@@ -14,7 +14,7 @@ const JobCard =({dept, designation, location})=>{
   return(
     <>   
     <Link href={"#"} className="cursor-default w-fit block">
-    <div className="pt-[5%] h-[28vw] px-[4%] w-[22vw] flex flex-col items-center justify-between gap-[3vw] bg-white/80 border-[1px]  rounded-[40px] text-center career-card cursor-pointer mobile:w-[90vw] mobile:h-[90vw] mobile:rounded-[7vw] tablet:w-[40.5vw] tablet:h-[50vw] glassmorphism">
+    <div className="pt-[5%] h-[28vw] px-[4%] w-[22vw] flex flex-col items-center justify-between gap-[3vw] bg-white/50 border-[1px]  rounded-[40px] text-center career-card cursor-pointer mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[7vw] tablet:w-[40.5vw] tablet:h-[50vw] ">
             <div className="content-p mobile:text-[5.7vw] tablet:text-[2.5vw] mt-[2vw]">
               {dept}
             </div>
@@ -56,7 +56,7 @@ const Jobs = () => {
   };
   return (
     <section id="jobs">
-      <div className="container-sm mb-[10%] mobile:my-[20%] mobile:flex mobile:flex-col mobile:gap-[7vw] tablet:mt-[10%] tablet:mb-[5%] ">
+      <div className="container-sm mb-[10%] mobile:py-[10%] mobile:pb-[15%] mobile:flex mobile:flex-col mobile:gap-[7vw] tablet:mt-[10%] tablet:mb-[5%] ">
         <div className=" flex items-center justify-center tablet:mb-[8vw] ">
           <h2 data-para-anim className="title-2 aeonik ">
             Featured Jobs
@@ -99,11 +99,11 @@ const Jobs = () => {
       
       </Swiper>
       <div
-              className={`absolute z-[5] bottom-0 left-[65%] translate-x-[-65%] border overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer hidden mobile:block 
+              className={`absolute z-[5] bottom-[-5%] left-[65%] translate-x-[-65%] border overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer hidden mobile:block 
                 ${
                   activeButton === "next"
-                    ? " text-white"
-                    : "bg-white text-black"
+                    ? " text-white border-none"
+                    : "bg-white/50 text-black"
                 } transition-colors duration-300`} // Added background color transition
               onClick={handleNext} // Trigger next slide
             >
@@ -127,11 +127,11 @@ const Jobs = () => {
             </div>
             </div>
             <div
-              className={`absolute z-[5] bottom-0 left-[35%] translate-x-[-38%] border overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer hidden mobile:block
+              className={`absolute z-[5] bottom-[-5%] left-[35%] translate-x-[-38%] border overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer hidden mobile:block
                 ${
                   activeButton === "prev"
-                    ? " text-white"
-                    : "bg-white text-black"
+                    ? " text-white border-none"
+                    : "bg-white/50 text-black"
                 } transition-colors duration-300`} // Added background color transition
               onClick={handlePrev} // Trigger previous slide
             >

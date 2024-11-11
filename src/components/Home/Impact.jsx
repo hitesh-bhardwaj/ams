@@ -58,7 +58,7 @@ export default function Impact() {
     return (
         <>
             <section className="p-y-sm mt-[5%] mobile:mt-[10%]" id="impact">
-                <div className="container-lg relative px-[8%] h-full py-[8%] overflow-hidden rounded-[3vw] mobile:py-[15vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:rounded-[7vw] fadeUp">
+                <div className="container-lg relative px-[8%] h-full py-[6%] overflow-hidden rounded-[3vw] mobile:py-[15vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:rounded-[7vw] fadeUp">
                     {/* Use the poster attribute to show a placeholder image */}
                     <video
                         ref={videoRef} // Attach ref to video for lazy loading
@@ -76,12 +76,11 @@ export default function Impact() {
                             <h2 className="title-2 aeonik leading-[0] text-shadow">
                                 <span data-para-anim className="text-white leading-[1.3]">
                                     Making an Impact:
-                                </span>
-                                <span data-para-anim className="text-white leading-[1.3]">
+                               
                                     Our Global Reach
                                 </span>
                             </h2>
-                            <p data-para-anim className="text-[1.15vw] font-light leading-[1.7] text-white text-shadow mobile:text-[4.2vw] tablet:text-[1.8vw]">
+                            <p data-para-anim className="text-[1.15vw] font-light leading-[1.7] text-white text-shadow mobile:text-[4.5vw] tablet:text-[1.8vw]">
                                 Our commitment to advancing healthcare globally is unwavering, and we are constantly pushing boundaries of MedTech, improving outcomes for people in every corner of the globe. With our geographical presence expanding over 180 countries, we have a unique opportunity to collaborate with partners around the world and leverage our collective expertise to develop and deliver transformative solutions that make a difference in patients’ lives.
                             </p>
                             <div className="w-full flex mobile:justify-center">

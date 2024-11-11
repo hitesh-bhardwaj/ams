@@ -41,7 +41,7 @@ export default function Career() {
     return (
         <>
             <section className="p-y-sm" id="career">
-                <div className="container-lg relative px-[8%] py-[8%] overflow-hidden rounded-[3vw] mobile:rounded-[7vw] mobile:py-[15%] fadeUp">
+                <div className="container-lg relative px-[8%] py-[6%] overflow-hidden rounded-[3vw] mobile:rounded-[7vw] mobile:py-[15%] fadeUp">
                     <video
                         loading="lazy"
                         loop

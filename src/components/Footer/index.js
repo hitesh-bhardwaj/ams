@@ -22,7 +22,7 @@ export default function Footer() {
                                     </span>
                                 </p>
                                 <Link href="/#" className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp tablet:mb-[3.5vw] ml-[-0.5vw]">
-                                    <span data-para-anim className="text-[5.3vw] text-head aeonik leading-[1] font-light mobile:text-[14vw] tablet:text-[7vw]">
+                                    <span data-para-anim className="text-[5.3vw] text-head aeonik leading-[1] font-light mobile:text-[16vw] tablet:text-[7vw]">
                                         Contact
                                     </span>
                                     <img 

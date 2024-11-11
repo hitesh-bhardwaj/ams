@@ -34,9 +34,9 @@ const DNA = () => {
             <span>Our DNA</span>
           </h2>
         </div>
-        <div className='dna-card-container flex justify-between items-center p-[3%] gap-[1.5vw] group mobile:flex-col mobile:px-[3%] mobile:py-[0%] mobile:gap-[0.5vw] mobile:justify-center mobile:hidden tablet:hidden'>
+        <div className='dna-card-container flex justify-between items-center p-[3%] px-[5vw] gap-[1.5vw] group mobile:flex-col mobile:px-[3%] mobile:py-[0%] mobile:gap-[0.5vw] mobile:justify-center mobile:hidden tablet:hidden'>
          <CardContainer className="inter-var mobile:pb-0">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1  mobile:h-[90vw] mobile:w-[90vw]'>
+            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1  mobile:h-[90vw] mobile:w-[90vw]'>
                 <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:p-[5vw]">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image
@@ -59,7 +59,7 @@ const DNA = () => {
 
 
             <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
+            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
                 <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image
@@ -84,7 +84,7 @@ const DNA = () => {
 
 
             <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[30vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
+            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1 mobile:h-[90vw] mobile:w-[90vw] mobile:py-0 mobile:pb-0'>
                 <CardBody className=" relative group/card h-auto p-6 mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative mobile:h-[15vw] mobile:w-[15vw] mobile:mb-[5vw] mobile:ml-0'> 
                 <Image
@@ -111,7 +111,7 @@ const DNA = () => {
 
         <div className='w-full flex flex-col justify-center items-center gap-[7vw] tablet:flex-row tablet:flex-wrap tablet:gap-[2vw]'>
 
-        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
+        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center bg-white/50 items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
           <div className='w-[15vw] h-[15vw] relative'>
           <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl object-contain"
@@ -129,7 +129,7 @@ const DNA = () => {
           </div>
 
         </div>
-        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
+        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center bg-white/50 items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
           <div className='w-[15vw] h-[15vw] relative'>
           <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl object-contain"
@@ -147,7 +147,7 @@ const DNA = () => {
           </div>
 
         </div>
-        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
+        <div className='w-[85vw] h-[100vw] border border-gray-200 py-[6vw] rounded-[7vw] flex flex-col gap-[5vw] justify-center bg-white/50 items-center px-[2vw] fadeUp tablet:w-[45vw] tablet:h-[55vw] tablet:rounded-[3vw]'>
           <div className='w-[15vw] h-[15vw] relative'>
           <Image
                   className="rounded-[20px] group-hover/card:drop-shadow-xl object-contain"

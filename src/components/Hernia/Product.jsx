@@ -17,12 +17,12 @@ const ProductCard=({img, heading , className, rotate})=>{
       <>
       <div className={`${rotate}`}>
       <Link href={"#"}>
-      <div className={` w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] border border-gray-200 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}>
+      <div className={` w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}>
             <Image
               src={img}
              fill
               alt="portfolio-1"
-              className=" scale-[1.3] group-hover:scale-[1] z-[0] transition-all duration-500 mobile:scale-[1.1]"
+              className=" scale-[1.3] group-hover:scale-[1.1] z-[0] transition-all duration-500 mobile:scale-[1.1]"
             />
             <div className={`flex justify-center flex-col gap-[1vw] items-center absolute z-[5] top-[70%] text-[#111111] ${className}  `}>
             <p
@@ -158,7 +158,7 @@ const Product = () => {
     <section
     id="products"
       ref={sliderContainer}
-      className={`relative h-screen ${styles.sliderContainer} overflow-hidden mobile:h-full mobile:py-[10%] tablet:h-full`}
+      className={`relative h-[110vh] ${styles.sliderContainer} overflow-x-hidden mobile:h-full pb-[5%] mobile:py-[10%] tablet:h-full`}
     >
         <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden tablet:hidden">
         <div className='w-full flex justify-center'>

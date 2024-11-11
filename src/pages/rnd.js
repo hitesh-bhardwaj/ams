@@ -5,6 +5,7 @@ import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
+import Innovation from "@/components/Rnd/Innovation";
 
 
 export default function rnd() {
@@ -56,6 +57,7 @@ export default function rnd() {
               />
               <Genesis content={content} />
               <PortfolioSwiper slidesData={slidesData} />
+              <Innovation/>
               <Portfolio />
             </main>
           </Layout>

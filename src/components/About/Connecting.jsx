@@ -1,5 +1,6 @@
 import React from 'react'
 import PrimaryButton from "../Button/PrimaryButton"
+import Image from 'next/image'
 
 
 const Connecting = () => {
@@ -7,7 +8,7 @@ const Connecting = () => {
   return (  
     <section className='mobile:py-[10%]' id='connect'>
         <div className='container-lg my-[10%] fadeUp group'>
-            <div className='px-[3%] py-[5%]  border-[1px]  flex justify-between flex-col items-center rounded-[60px] bg-white/50 group-hover:bg-white group-hover:shadow-xl duration-300 tablet:rounded-[3vw] mobile:justify-center mobile:text-center mobile:px-[8%] mobile:py-[15%] mobile:rounded-[7vw]'>
+            <div className='px-[3%] py-[5%]  border-[1px]  flex justify-between flex-col items-center rounded-[60px] bg-white/50 hover:bg-white hover:shadow-xl duration-300 ease-in group relative tablet:rounded-[3vw] mobile:justify-center mobile:text-center mobile:px-[8%] mobile:py-[15%] mobile:rounded-[7vw]'>
                 <div className='tablet:w-full tablet:flex tablet:justify-center mobile:w-[75vw]'>
             <h2 data-para-anim className="title-2 aeonik tablet:text-center ">
             Connecting for a Healthier Tomorrow.
@@ -21,6 +22,7 @@ const Connecting = () => {
           <div className='fadeUp'>
           <PrimaryButton link="#" btnText="Contact Us"/>
           </div>
+          
             </div>
             </div>
     </section>

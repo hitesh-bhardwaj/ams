@@ -156,11 +156,11 @@ const GalleryComponent = () => {
 // });
 
   return (
-    <section className="pb-[7%] overflow-hidden w-screen h-full" id="manufacturing-slideshow">
+    <section className="pb-[7%] pt-[10%] mobile:pt-[15%] overflow-hidden w-screen h-full bg-white/50" id="manufacturing-slideshow">
         <div className="gallery flex mobile:hidden tablet:hidden w-full overflow-hidden">
-          <div className="left w-1/2">
-            <div className="detailsWrapper w-[80%] mx-auto">
-              <div className="space-y-[2vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
+          <div className="left w-1/2 ml-[5vw]">
+            <div className="detailsWrapper w-[70%]">
+              <div className="space-y-[3vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
                 <h2
                   data-para-anim
                   className="title-2 aeonik mobile:text-center"
@@ -169,7 +169,7 @@ const GalleryComponent = () => {
                 </h2>
                 <p
                   data-para-anim
-                  className="content-p my-[4vw] mobile:text-center"
+                  className="content-p mb-[5vw] mobile:text-center"
                 >
                   AMS leverages strategic global partnerships to procure
                   state-of-the-art manufacturing technology, ensuring
@@ -182,11 +182,11 @@ const GalleryComponent = () => {
                   <PrimaryButton btnText={"Manufacturing"} link={"/"} />
                 </div>
               </div>
-              <div className="space-y-[2vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
+              <div className="space-y-[3vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
                 <h2 data-para-anim className="title-2 aeonik">
                   Building World Class Capability
                 </h2>
-                <p data-para-anim className="content-p my-[4vw]">
+                <p data-para-anim className="content-p">
                   Designed by renowned Spanish architect Ricardo Bofill, the AMS
                   facility meets the Gold standard on Green building principles
                   for sustainability and conforms to ISO 14001 safety and
@@ -195,7 +195,7 @@ const GalleryComponent = () => {
                 </p>
                 <PrimaryButton btnText={"Manufacturing"} link={"/"} />
               </div>
-              <div className="space-y-[2vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
+              <div className="space-y-[3vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
                 <h2 data-para-anim className="title-2 aeonik">
                   Robust Manufacturing Processes
                 </h2>

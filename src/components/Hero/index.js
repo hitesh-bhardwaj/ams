@@ -8,16 +8,19 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => {
   paraAnim();
   useGSAP(() => {
-    if(globalThis.innerWidth>1024){
+   
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "hero-container",
+        start: "top top",
+        end: "bottom top",
         scrub: true,
+        // markers:true
       },
     });
-    // tl.to(".hero-img", {
-    //   yPercent: 60,
-    // });
+    tl.to(".hero-img", {
+      yPercent: 60,
+    });
     gsap.fromTo(
       ".hero-img",
       {
@@ -32,10 +35,10 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => 
         ease: "power3.out",
       }
     );
-  }
+  
   });
   return (
-    <section className=" mb-[5%] hero-container mobile:mb-[15%] dark" id="hero">
+    <section className=" hero-container mobile:mb-[15%] dark" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
           <Image data-speed="0.7"

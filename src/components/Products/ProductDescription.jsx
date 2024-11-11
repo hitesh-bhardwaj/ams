@@ -44,7 +44,7 @@ const ProductDescription = ({className}) => {
               </h2>
             </div>
             <div className="flex flex-wrap items-center gap-[2vw] product-description-card-container  tablet:justify-between">
-              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] glassmorphism mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
+              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
                 <div className="absolute top-0 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:right-[35%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full p-[2vw] relative">
                     <div className={`w-[5vw] h-[5vw] ${className} mobile:h-[30vw] mobile:w-[30vw]`}>
@@ -80,7 +80,7 @@ const ProductDescription = ({className}) => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] glassmorphism mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
+              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
                 <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:right-[35%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full relative">
                     <div className={`w-[5vw] h-[5vw] ${className} mobile:h-[30vw] mobile:w-[30vw]`}>
@@ -121,7 +121,7 @@ const ProductDescription = ({className}) => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] glassmorphism mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
+              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
                 <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:right-[35%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full relative">
                     <div className={`w-[5vw] h-[5vw] ${className} mobile:h-[30vw] mobile:w-[30vw]`}>
@@ -167,7 +167,7 @@ const ProductDescription = ({className}) => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] glassmorphism mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
+              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
                 <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:right-[35%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full relative">
                     <div className={`w-[5vw] h-[5vw] ${className} mobile:h-[30vw] mobile:w-[30vw]`}>
@@ -234,7 +234,7 @@ const ProductDescription = ({className}) => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] glassmorphism mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
+              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
                 <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:right-[35%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full relative">
                     <div className={`w-[5vw] h-[5vw] ${className} mobile:h-[30vw] mobile:w-[30vw]`}>
@@ -285,7 +285,7 @@ const ProductDescription = ({className}) => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] glassmorphism mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
+              <div className="flex flex-col justify-between items-center w-[28vw] h-[16vw] product-description-card  border relative rounded-[2vw] bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0 mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw]">
                 <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:right-[35%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full relative">
                     <div className={`w-[5vw] h-[5vw] ${className} mobile:h-[30vw] mobile:w-[30vw]`}>

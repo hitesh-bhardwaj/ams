@@ -117,13 +117,13 @@ export default function Product() {
                     alt="product-frame"
                   />
                   <CardBody className="main relative">
-                    <CardItem className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%] ">
+                    <CardItem className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] mobile:right-[10%] mobile:top-[2%] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%] ">
                       <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0 tablet:text-[1.8vw] tablet:pt-0">
                         01
                       </span>
                     </CardItem>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
-                      <div className="w-2/3 mobile:w-[70%]">
+                      <div className="w-[75%] mobile:w-[70%]">
                         <Image
                           className="fadeUp"
                           src="/assets/products/ADVA-Glide.webp"
@@ -133,25 +133,25 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[1vw] mobile:mb-[5vw]">
+                        <h3 className="title-2 aeonik mb-[1vw] mobile:mb-[2vw]">
                           <span>ADVA GLIDE</span>
                         </h3>
-                        <h4 className="content-p mb-[0.5vw] mobile:mb-[2.5vw]">
+                        <h4 className="content-p mb-[1.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
                           PTCA Balloon Catheter
                         </h4>
-                        <p className="text-[1.4vw] mb-[1.6vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
+                        <p className="text-[1.4vw] font-light mb-[1vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
                           Gliding The Science of Flow Restoration
                         </p>
-                        <p className="content-p-md mb-[1.5vw] mobile:mb-[6vw]">
-                          Revolutionalized for the most challenging environments
-                          <br />
-                          <br />
-                          ADVA GLIDE’s revolutionary technology is specially
+                        <p className="content-p mb-[2vw] mobile:mb-[6vw] flex flex-col gap-[0.8vw] mobile:text-[4vw]">
+                          <span className="mb-[1.2vw]">Revolutionalized for the most challenging environments</span>
+                          
+                          {/* <br /> */}
+                          <span>ADVA GLIDE’s revolutionary technology is specially
                           designed to succeed in the most challenging Coronary
                           Anatomies. With the fastest delation time, superior
                           controlled and enhanced performance properties of
                           trackability, crossability and navigablity in a wide
-                          range of complex lesions.
+                          range of complex lesions.</span>
                         </p>
                         <LinkButton btnText={"Know More"} link={"/"} />
                       </div>
@@ -174,13 +174,13 @@ export default function Product() {
                     alt="product-frame"
                   />
                   <div className="main relative">
-                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]">
+                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] mobile:right-[10%] mobile:top-[2%] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%]">
                       <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0">
                         02
                       </span>
                     </div>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
-                      <div className="w-2/3 mobile:w-[70%]">
+                      <div className="w-[75%] mobile:w-[70%]">
                         <Image
                           className="fadeUp"
                           src="/assets/products/ADVAGRIP.webp"
@@ -190,16 +190,16 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[1vw] mobile:mb-[5vw]">
+                        <h3 className="title-2 aeonik mb-[1vw] mobile:mb-[2vw]">
                           <span>ADVAGRIP</span>
                         </h3>
-                        <h4 className="content-p mb-[0.5vw] mobile:mb-[2.5vw]">
+                        <h4 className="content-p mb-[1.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
                           Knotless Tissue Control Device
                         </h4>
-                        <p className="text-[1.4vw] mb-[1.6vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
+                        <p className="text-[1.4vw] mb-[1vw] font-light text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw] ">
                           A Grip like No Other
                         </p>
-                        <p className="content-p-md mb-[1.5vw] mobile:mb-[6vw]">
+                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw]">
                           ADVAGRIP offers swift & secure tissue control without
                           the hassle of tying knots. With AMS&apos; Tri-Cut
                           Technology, ADVAGRIP ensures robust anchoring while
@@ -233,13 +233,13 @@ export default function Product() {
                     alt="product-frame"
                   />
                   <div className="main relative">
-                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]">
+                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] mobile:right-[10%] mobile:top-[2%] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%]">
                       <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0">
                         03
                       </span>
                     </div>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
-                      <div className="w-2/3 mobile:w-[70%]">
+                      <div className="w-[75%] mobile:w-[70%]">
                         <Image
                           className="fadeUp"
                           src="/assets/products/ADVA-Pro.webp"
@@ -249,16 +249,16 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[1vw] mobile:mb-[5vw]">
+                        <h3 className="title-2 aeonik mb-[1vw] mobile:mb-[2vw]">
                           <span>ADVA PRO</span>
                         </h3>
-                        <h4 className="content-p mb-[0.5vw] mobile:mb-[2.5vw]">
+                        <h4 className="content-p mb-[1.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
                           Sirolimus Eluting Coronary Stent System
                         </h4>
-                        <p className="text-[1.4vw] mb-[1.6vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
+                        <p className="text-[1.4vw] mb-[1vw] font-light text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
                           Precision. Perfection. Pro.
                         </p>
-                        <p className="content-p-md mb-[1.5vw] mobile:mb-[6vw]">
+                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw] ">
                           The Pinnacle of Precision in Complex PCI is not just
                           designed to transform lives; it&apos;s poised to
                           redefine the very future of interventional cardiology
@@ -293,7 +293,7 @@ export default function Product() {
                       </span>
                     </div>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
-                      <div className="w-2/3 mobile:w-[70%]">
+                      <div className="w-[75%] mobile:w-[70%]">
                         <Image
                           className="fadeUp"
                           src="/assets/products/ADVACRYL.webp"
@@ -303,16 +303,16 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[1vw] mobile:mb-[5vw]">
+                        <h3 className="title-2 aeonik mb-[1vw] mobile:mb-[2vw]">
                           <span>ADVACRYL</span>
                         </h3>
-                        <h4 className="content-p mb-[0.5vw] mobile:mb-[2.5vw]">
+                        <h4 className="content-p mb-[1.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
                           Polyglactin 910
                         </h4>
-                        <p className="text-[1.4vw] mb-[1.6vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
+                        <p className="text-[1.4vw] mb-[1vw] font-light text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
                           Seal of Confidence
                         </p>
-                        <p className="content-p-md mb-[1.5vw] mobile:mb-[6vw]">
+                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw]">
                           ADVACRYL suture is braided synthetic absorbable
                           sterile surgical suture composed of a copolymer made
                           from 90% Glycolide and 10% L-lactide.
@@ -330,7 +330,7 @@ export default function Product() {
             </Swiper>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[2%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white glassmorphism
+            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[6%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
                 ${
                   activeButton === "next"
                     ? " text-white"
@@ -359,7 +359,7 @@ export default function Product() {
             </div>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[2%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] glassmorphism overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
+            className={`px-[1.6vw] py-[1.6vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[6%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
                 ${
                   activeButton === "prev"
                     ? " text-white"

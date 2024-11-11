@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
 import Pixifinal from "@/components/Pixifinal";
-import { ReactLenis } from "lenis/react";
+import { ReactLenis, useLenis } from "lenis/react";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export default function App({ Component, pageProps, router }) {

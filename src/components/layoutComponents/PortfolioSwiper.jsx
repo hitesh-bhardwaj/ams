@@ -138,10 +138,10 @@ const PortfolioSwiper = ({ slidesData }) => {
 
             {/* Custom Next and Previous Buttons */}
             <div
-              className={`absolute z-[5] bottom-0 left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer border glassmorphism
+              className={`absolute z-[5] bottom-0 left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer  bg-white/50
                 ${
                   activeButton === "next"
-                    ? " text-white"
+                    ? " text-white border-none"
                     : "bg-transparent text-[#111111]"
                 } transition-colors duration-300`} // Added background color transition
               onClick={handleNext} // Trigger next slide
@@ -166,10 +166,10 @@ const PortfolioSwiper = ({ slidesData }) => {
             </div>
             </div>
             <div
-              className={`absolute z-[5] bottom-0 left-[39%] translate-x-[-38%] border glassmorphism overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
+              className={`absolute z-[5] bottom-0 left-[39%] translate-x-[-38%] bg-white/50 overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
                 ${
                   activeButton === "prev"
-                    ? " text-white"
+                    ? " text-white border-none"
                     : "bg-transparent text-[#111111]"
                 } transition-colors duration-300`} // Added background color transition
               onClick={handlePrev} // Trigger previous slide
@@ -194,7 +194,7 @@ const PortfolioSwiper = ({ slidesData }) => {
             </div>
           </div>
 
-          <div className="absolute top-[80%] w-full left-[-3%] endoSmallSwiperContainer mobile:hidden tablet:left-0">
+          <div className="absolute top-[75%] w-full left-[-3%] endoSmallSwiperContainer mobile:hidden tablet:left-0">
             <Swiper
               onSwiper={setThumbsSwiper}
               spaceBetween={10}
@@ -202,15 +202,15 @@ const PortfolioSwiper = ({ slidesData }) => {
               freeMode={true}
               watchSlidesProgress={true}
               modules={[FreeMode, Navigation, Thumbs]}
-              className={styles.endoSmallSwiper}
+              className={`${styles.endoSmallSwiper} endosmallSwiper `}
             >
               {slidesData.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <Image
                     src={slide.src}
                     className="rounded-[20px] cursor-pointer"
-                    width={500}
-                    height={500}
+                    width={290}
+                    height={300}
                     alt="small swiper"
                   />
                 </SwiperSlide>

@@ -6,8 +6,8 @@ export default function Facility() {
     return (
 
         <>
-            <section className="pt-[0] pb-[4%] mobile:pb-[10%] tablet:pb-[8%]" id="facility">
-                <div className="container-lg virtual rounded-[4vw] flex items-center justify-between px-[6%] py-[5%] bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300 mobile:flex-col-reverse mobile:rounded-[9vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
+            <section className="pt-[0] pb-[10%] mobile:pb-[20%] tablet:pb-[8%]" id="facility">
+                <div className="container-lg relative virtual rounded-[4vw] flex items-center justify-between px-[6%] py-[5%] bg-white/50 border group ease-in border-gray-200 hover:bg-white hover:shadow-xl duration-300 mobile:flex-col-reverse mobile:rounded-[9vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
                     <div className="w-[45%] relative z-10 space-y-[2.5vw] duration-300 tablet:order-1 tablet:w-full mobile:w-[89%] mobile:text-center mobile:py-[5vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:space-y-[10vw]">
                         <h2 data-para-anim className="title-2 aeonik">
                             Delve Deeper into the World of AMS
@@ -34,6 +34,7 @@ export default function Facility() {
                             height={100}
                         />
                     </div>
+                    
                 </div>
             </section>
         </>

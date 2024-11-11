@@ -57,7 +57,7 @@ imageAnim()
             </div>
             <div className="blog-right w-[55%] mobile:w-[90%] mobile:space-y-[15vw] tablet:w-full tablet:mt-[7vw]">
               <div className="flex items-start justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
+                <div className="blog-img h-[27vw] w-[40%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
                     className="h-full w-full object-cover scale-[1.4] imageanim"
@@ -93,7 +93,7 @@ imageAnim()
               </div>
               <span className="block h-[1px] w-full my-[4vw] bg-[#d6d6d6] lineDraw tablet:my-[7vw]" />
               <div className="flex items-start justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
+                <div className="blog-img h-[27vw] w-[40%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
                     className="h-full w-full object-cover scale-[1.4] imageanim"
@@ -114,7 +114,7 @@ imageAnim()
                   </h5>
                   <p
                     data-para-anim
-                    className="text-[0.9vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]"
+                    className="text-[0.9vw] font-light w-[90%] mb-[2.5vw] text-anim-2 mobile:w-full tablet:w-full mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]"
                   >
                     Cardiovascular Care Redefined with the pre-launch of ADVALVE: AMS at the Forefront of IACTSCON 2024.
                   </p>
@@ -129,7 +129,7 @@ imageAnim()
               </div>
               <span className="block h-[1px] w-full my-[4vw] bg-[#d6d6d6] lineDraw tablet:my-[7vw]" />
               <div className="flex items-start justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[25vw] w-[45%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
+                <div className="blog-img h-[27vw] w-[40%] overflow-hidden rounded-3xl relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
                     className="h-full w-full object-cover scale-[1.4] imageanim"
@@ -150,7 +150,7 @@ imageAnim()
                   </h5>
                   <p
                     data-para-anim
-                    className="text-[0.9vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]"
+                    className="text-[0.9vw] font-light mb-[3vw] w-[90%] mobile:w-full tablet:w-full text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]"
                   >
                     AMS Takes Center Stage at Arab Health in Dubai: Leading the Charge in Global MedTech with Industry leaders and partners Transforming Healthcare Worldwide.
                   </p>
