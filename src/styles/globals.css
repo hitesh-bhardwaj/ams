@@ -357,8 +357,8 @@ body{
   transition: transform 1.2s cubic-bezier(.19,1,.22,1);
 }
 .glassmorphism {
-  backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .imageanim{

@@ -4,7 +4,6 @@ import PrimaryButton from "../Button/PrimaryButton";
 export default function Facility() {
 
     return (
-
         <>
             <section className="pt-[0] pb-[4%] mobile:pb-[10%] tablet:pb-[8%]" id="facility">
                 <div className="container-lg virtual rounded-[4vw] flex items-center justify-between px-[6%] py-[5%] bg-white/50 glassmorphism border border-gray-200 group-hover:bg-white group-hover:shadow-xl duration-300 mobile:flex-col-reverse mobile:rounded-[9vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">

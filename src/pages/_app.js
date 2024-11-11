@@ -1,9 +1,6 @@
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
-import Pixifinal from "@/components/Pixifinal";
-import { ReactLenis } from "lenis/react";
-import ScrollToTop from "@/components/ScrollToTop";
 
 export default function App({ Component, pageProps, router }) {
 
@@ -29,14 +26,9 @@ export default function App({ Component, pageProps, router }) {
           },
         ]}
       />
-      <ReactLenis root options={{lerp: 0.05}}>
-        <ScrollToTop key={router.route}/>
-        <AnimatePresence mode="wait">
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </ReactLenis>
-       <Pixifinal />
-       
+      <AnimatePresence mode="wait">
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
     </>
   );
 }
