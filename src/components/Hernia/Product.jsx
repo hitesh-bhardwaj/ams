@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "@/styles/hernia.module.css"; // Import the module CSS
 import Link from "next/link";
 import Image from "next/image";
+import { Media } from "../media";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -160,7 +161,8 @@ const Product = () => {
       ref={sliderContainer}
       className={`relative h-[110vh] ${styles.sliderContainer} overflow-x-hidden mobile:h-full pb-[5%] mobile:py-[10%] tablet:h-full`}
     >
-        <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden tablet:hidden">
+      <Media greaterThan="tablet">
+        <div className="flex flex-col w-full h-screen justify-between pb-[1%]">
         <div className='w-full flex justify-center'>
         <h2 data-para-anim className="title-2 aeonik">
           <span>The Foundation of Durable Repair</span>
@@ -189,7 +191,11 @@ const Product = () => {
       </div>
 
         </div>
-        <div className="hidden tablet:block mobile:block">
+
+      </Media>
+      <Media lessThan="desktop">
+
+        <div className="">
         <div className="w-full flex flex-col gap-[10vw] tablet:gap-[7vw]">
         <div className='w-full flex justify-center'>
         <h2  className="title-2 aeonik text-center">
@@ -226,6 +232,7 @@ const Product = () => {
         </div>
 
         </div>
+      </Media>
 
     </section>
   );

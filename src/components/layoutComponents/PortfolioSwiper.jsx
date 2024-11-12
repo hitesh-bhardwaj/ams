@@ -14,6 +14,7 @@ import {
 } from "swiper/modules";
 import Image from "next/image";
 import styles from "@/styles/portfolioSwiper.module.css"
+import { Media } from "../media";
 
 const PortfolioCard = ({ src, heading, para }) => {
   return (
@@ -71,7 +72,9 @@ const PortfolioSwiper = ({ slidesData }) => {
           <h2 data-para-anim>{slidesData[0].title}</h2>
         </div>
         <div className="relative fadeUp rounded-bl-[10px] rounded-tl-[10px] overflow-hidden ">
-          <div className="mobile:hidden">
+          <Media greaterThan="mobile">
+
+          <div className="">
             <Swiper
               slidesPerView={1}
               spaceBetween={0}
@@ -110,7 +113,10 @@ const PortfolioSwiper = ({ slidesData }) => {
               ))}
             </Swiper>
           </div>
-          <div className="hidden mobile:block relative">
+          </Media>
+          <Media lessThan="tablet">
+
+          <div className=" relative">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)} // Save Swiper instance to ref
               slidesPerView={1}
@@ -193,8 +199,10 @@ const PortfolioSwiper = ({ slidesData }) => {
             </div>
             </div>
           </div>
+          </Media>
+          <Media greaterThan="mobile">
 
-          <div className="absolute top-[75%] w-full left-[-3%] endoSmallSwiperContainer mobile:hidden tablet:left-0">
+          <div className="absolute top-[75%] w-full left-[-3%] endoSmallSwiperContainer tablet:left-0">
             <Swiper
               onSwiper={setThumbsSwiper}
               spaceBetween={10}
@@ -217,6 +225,7 @@ const PortfolioSwiper = ({ slidesData }) => {
               ))}
             </Swiper>
           </div>
+          </Media>
         </div>
       </div>
     </section>

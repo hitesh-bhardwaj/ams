@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Media } from '../media';
 
 export default function IcCards() {
   const [activeIndex, setActiveIndex] = useState(1); // Default active slide index
@@ -18,7 +19,8 @@ export default function IcCards() {
   return (
     <>
       <section className='' id='cards-carousel'>
-        <div className='w-full h-full flex flex-col gap-[4vw] mobile:hidden tablet:hidden'>
+        <Media greaterThan='tablet'>
+        <div className='w-full h-full flex flex-col gap-[4vw] '>
           <h2 data-para-anim className='aeonik title-2 text-center'>Our Featured Programs</h2>
           <div className='mt-[2vw] fadeUp'>
             <Swiper
@@ -63,14 +65,18 @@ export default function IcCards() {
             </Swiper>
           </div>
         </div>
-        <div className="hidden mobile:block tablet:block py-[5%]">
+
+        </Media>
+        <Media lessThan='desktop'>
+
+        <div className=" py-[5%]">
           <div className="w-full flex flex-col gap-[8vw] tablet:gap-[5vw]">
           <h2 data-para-anim className='aeonik title-2 text-center'>Our Featured Programs</h2>
             
-            <div className="w-full  mobile:mt-[5vw] mobile:fadeup mobile:block hidden fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
+            <div className="w-full  mobile:mt-[5vw] mobile:fadeup mobile:block hidden fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:px-[5%] overflow-visible tablet:mt-0 ">
               
               <div className=" mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:gap-[10vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit ">
-                <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden">
+                <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[45vw] tablet:h-[50vw] relative  overflow-hidden">
                 
                   <div
                     className={`relative w-full h-full
@@ -90,7 +96,7 @@ export default function IcCards() {
                   </div>
                
                 </Link>
-                <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden">
+                <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[45vw] tablet:h-[50vw] relative  overflow-hidden">
                 
                 <div
                   className={`relative w-full h-full
@@ -110,7 +116,7 @@ export default function IcCards() {
                 </div>
              
               </Link>
-              <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative  overflow-hidden">
+              <Link href={"#"} className="w-[85vw] h-[100vw] tablet:w-[45vw] tablet:h-[50vw] relative  overflow-hidden">
                 
                 <div
                   className={`relative w-full h-full
@@ -137,6 +143,7 @@ export default function IcCards() {
            
           </div>
         </div>
+        </Media>
       </section>
     </>
   );

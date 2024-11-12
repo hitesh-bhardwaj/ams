@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
+import { MediaContextProvider , mediaStyles } from "@/components/media";
 import Pixifinal from "@/components/Pixifinal";
 import { ReactLenis, useLenis } from "lenis/react";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -29,12 +30,16 @@ export default function App({ Component, pageProps, router }) {
           },
         ]}
       />
+      <style>{mediaStyles}</style>
+      <MediaContextProvider>
+
       <ReactLenis root options={{lerp: 0.05}}>
         <ScrollToTop key={router.route}/>
         <AnimatePresence mode="wait">
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </ReactLenis>
+      </MediaContextProvider>
        <Pixifinal />
        
     </>

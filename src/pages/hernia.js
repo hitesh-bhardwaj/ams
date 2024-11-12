@@ -54,11 +54,11 @@ export default function hernia() {
                 content={hero.content}
                 className="hidden"
               />
-              <Genesis
+              {/* <Genesis
                 content={content}
                 sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[30%]"}
-              />
+              /> */}
               <PortfolioSwiper slidesData={slidesData} />
               <Product />
 

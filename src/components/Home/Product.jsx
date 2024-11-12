@@ -8,6 +8,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+import { Media } from "../media";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Product() {
@@ -60,22 +61,29 @@ export default function Product() {
     <>
       <section
         id="product"
-        className="py-[5%] relative overflow-hidden mobile:pb-[30vw] mobile:pt-[15vw] mobile:block "
+        className="py-[5%] relative overflow-hidden mobile:pb-[30%] mobile:pt-[15vw] "
       >
         <div className="h-full">
-          <Image
+          
+            <Media greaterThanOrEqual="tablet">
+
+            <Image
             src={"/assets/home/product-bg.webp"}
             width={1960}
             height={1180}
             alt={"product-bg"}
-            className="object-cover product-bg-img absolute scale-[1.3] translate-y-[-30%] mobile:hidden"
+            className="object-cover w-full h-full product-bg-img absolute scale-[1.3] translate-y-[-30%]"
           />
+            </Media>
+            <Media lessThan="tablet">
+
           <Image
             src={"/assets/home/product-bg-mobile.png"}
             fill
             alt={"product-bg"}
-            className="object-cover product-bg-img scale-[1.3] translate-y-[-30%] hidden mobile:block"
+            className="object-cover product-bg-img scale-[1.3] translate-y-[-30%] "
           />
+            </Media>
         </div>
 
         <div className="container-lg">
@@ -142,7 +150,7 @@ export default function Product() {
                         <p className="text-[1.4vw] font-light mb-[1vw] text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
                           Gliding The Science of Flow Restoration
                         </p>
-                        <p className="content-p mb-[2vw] mobile:mb-[6vw] flex flex-col gap-[0.8vw] mobile:text-[4vw]">
+                        <p className="content-p mb-[2vw] mobile:mb-[6vw] flex flex-col gap-[0.8vw] mobile:text-[4vw] tablet:text-[1.5vw]">
                           <span className="mb-[1.2vw]">Revolutionalized for the most challenging environments</span>
                           
                           {/* <br /> */}
@@ -153,7 +161,7 @@ export default function Product() {
                           trackability, crossability and navigablity in a wide
                           range of complex lesions.</span>
                         </p>
-                        <LinkButton btnText={"Know More"} link={"/"} />
+                        <LinkButton btnText={"Know More"} link={"/"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
                       </div>
                     </div>
                   </CardBody>
@@ -175,7 +183,7 @@ export default function Product() {
                   />
                   <div className="main relative">
                     <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] mobile:right-[10%] mobile:top-[2%] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%]">
-                      <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0">
+                      <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0 tablet:text-[1.8vw] tablet:pt-0">
                         02
                       </span>
                     </div>
@@ -196,10 +204,10 @@ export default function Product() {
                         <h4 className="content-p mb-[1.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
                           Knotless Tissue Control Device
                         </h4>
-                        <p className="text-[1.4vw] mb-[1vw] font-light text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw] ">
+                        <p className="text-[1.4vw] mb-[1vw] font-light text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]  ">
                           A Grip like No Other
                         </p>
-                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw]">
+                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">
                           ADVAGRIP offers swift & secure tissue control without
                           the hassle of tying knots. With AMS&apos; Tri-Cut
                           Technology, ADVAGRIP ensures robust anchoring while
@@ -212,7 +220,7 @@ export default function Product() {
                           Changing the paradigm of Knotless Suture Technology
                           with ADVAGRIP.
                         </p>
-                        <LinkButton btnText={"Get a Grip"} link={"/"} />
+                        <LinkButton btnText={"Get a Grip"} link={"/"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
                       </div>
                     </div>
                   </div>
@@ -234,7 +242,7 @@ export default function Product() {
                   />
                   <div className="main relative">
                     <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] mobile:right-[10%] mobile:top-[2%] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%]">
-                      <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0">
+                      <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0 tablet:text-[1.8vw] tablet:pt-0">
                         03
                       </span>
                     </div>
@@ -258,7 +266,7 @@ export default function Product() {
                         <p className="text-[1.4vw] mb-[1vw] font-light text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
                           Precision. Perfection. Pro.
                         </p>
-                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw] ">
+                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">
                           The Pinnacle of Precision in Complex PCI is not just
                           designed to transform lives; it&apos;s poised to
                           redefine the very future of interventional cardiology
@@ -266,7 +274,7 @@ export default function Product() {
                           in cardiac care that will set a new standard for
                           excellence.
                         </p>
-                        <LinkButton btnText={"Know More"} link={"/"} />
+                        <LinkButton btnText={"Know More"} link={"/"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}  />
                       </div>
                     </div>
                   </div>
@@ -288,7 +296,7 @@ export default function Product() {
                   />
                   <div className="main relative">
                     <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]">
-                      <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0">
+                      <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0 tablet:text-[1.8vw] tablet:pt-0">
                         04
                       </span>
                     </div>
@@ -312,7 +320,7 @@ export default function Product() {
                         <p className="text-[1.4vw] mb-[1vw] font-light text-[#59C4D4] mobile:text-[4.65vw] mobile:mb-[6vw]">
                           Seal of Confidence
                         </p>
-                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw]">
+                        <p className="content-p mb-[1.5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">
                           ADVACRYL suture is braided synthetic absorbable
                           sterile surgical suture composed of a copolymer made
                           from 90% Glycolide and 10% L-lactide.
@@ -321,7 +329,7 @@ export default function Product() {
                           and calcium stearate. The suture is colored violet to
                           increase visibility and is also available undyed.
                         </p>
-                        <LinkButton btnText={"Know More"} link={"/"} />
+                        <LinkButton btnText={"Know More"} link={"/"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
                       </div>
                     </div>
                   </div>
@@ -330,7 +338,7 @@ export default function Product() {
             </Swiper>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[6%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
+            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
                 ${
                   activeButton === "next"
                     ? " text-white"
@@ -359,7 +367,7 @@ export default function Product() {
             </div>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[6%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
+            className={`px-[1.6vw] py-[1.6vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
                 ${
                   activeButton === "prev"
                     ? " text-white"

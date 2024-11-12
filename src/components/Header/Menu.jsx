@@ -5,43 +5,45 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useRouter } from "next/router";
+import { Media } from "../media";
 
 gsap.registerPlugin(useGSAP);
 
-const Menu = ({  isMenuOpen, toggleMenu }) => {
+const Menu = ({ isMenuOpen, toggleMenu }) => {
   const mainMenu = useRef(null);
-
+  const router = useRouter();
   const videoRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
-      const observer = new IntersectionObserver(
-          (entries) => {
-              entries.forEach((entry) => {
-                  if (entry.isIntersecting) {
-                      const video = videoRef.current;
-                      if (video && !videoLoaded) {
-                          // Set video source dynamically when it enters the viewport
-                          video.src = "/assets/header/ams-header-bg.mp4";
-                          video.load(); // Ensure the video is loaded
-                          video.play(); // Play the video when it's visible
-                          setVideoLoaded(true); // Set video as loaded
-                      }
-                      observer.unobserve(entry.target); // Stop observing once the video has loaded
-                  }
-              });
-          },
-          { threshold: 0 }
-      );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const video = videoRef.current;
+            if (video && !videoLoaded) {
+              // Set video source dynamically when it enters the viewport
+              video.src = "/assets/header/ams-header-bg.mp4";
+              video.load(); // Ensure the video is loaded
+              video.play(); // Play the video when it's visible
+              setVideoLoaded(true); // Set video as loaded
+            }
+            observer.unobserve(entry.target); // Stop observing once the video has loaded
+          }
+        });
+      },
+      { threshold: 0 }
+    );
 
-      const videoElement = videoRef.current;
-      if (videoElement) {
-          observer.observe(videoElement);
-      }
+    const videoElement = videoRef.current;
+    if (videoElement) {
+      observer.observe(videoElement);
+    }
 
-      return () => {
-          if (videoElement) observer.unobserve(videoElement);
-      };
+    return () => {
+      if (videoElement) observer.unobserve(videoElement);
+    };
   }, [videoLoaded]);
 
   useGSAP(() => {
@@ -80,6 +82,12 @@ const Menu = ({  isMenuOpen, toggleMenu }) => {
     }
   }, [isMenuOpen]);
 
+  const handleLinkClick = (href) => {
+    router.push(href).then(() => {
+      window.location.reload();
+    });
+  };
+
   return (
     <>
       <div
@@ -87,18 +95,19 @@ const Menu = ({  isMenuOpen, toggleMenu }) => {
         className={`w-screen h-screen fixed left-0 z-[100] top-[-100%] mobile:h-full mobile:w-full`}
       >
         <div className="bg-white h-2/3 w-full relative tablet:h-1/2 mobile:h-full">
-        <div className="w-[28%] h-full absolute mobile:hidden ">
-          <video
-                         ref={videoRef}  // Attach ref to video for lazy loading
-                        muted
-                        playsInline
-                        loop
-                        className="h-full w-full object-cover"
-                        poster="/assets/header/ams-header-bg.webp" // Use poster image
-                      
-                    >
-                    </video>
+        <Media greaterThan="mobile">
+
+          <div className="w-[28%] h-full absolute">
+            <video
+              ref={videoRef} // Attach ref to video for lazy loading
+              muted
+              playsInline
+              loop
+              className="h-full w-full object-cover"
+              poster="/assets/header/ams-header-bg.webp" // Use poster image
+            ></video>
           </div>
+        </Media>
           <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-12 tablet:grid-rows-4 tablet:h-[50vh]">
             <div className="w-[15vw] h-[2vw] absolute bottom-[5%] left-[4%] fadeUp tablet:h-[5vw] tablet:w-[20vw]">
               <Image
@@ -109,10 +118,15 @@ const Menu = ({  isMenuOpen, toggleMenu }) => {
               />
             </div>
             <div className="flex h-1/2 justify-between items-center col-span-full mobile:h-[10vw]  mobile:mt-[5vw]">
-              <Link
+              {/* <Link
                 href="/"
                 aria-label=":to home page"
                 className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[15vw] mobile:w-[25vw] mobile:h-[20vw] relative"
+              > */}
+              <span
+                onClick={() => handleLinkClick("/")}
+                data-attr="home"
+                className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[15vw] mobile:w-[25vw] mobile:h-[20vw] relative cursor-pointer"
               >
                 {/* Default image for tablet and larger screens */}
                 <Image
@@ -128,7 +142,8 @@ const Menu = ({  isMenuOpen, toggleMenu }) => {
                   fill
                   alt="AMS Logo Mobile"
                 />
-              </Link>
+              </span>
+
               <div>
                 <button
                   onClick={toggleMenu}
@@ -154,59 +169,80 @@ const Menu = ({  isMenuOpen, toggleMenu }) => {
                 <div className="border-r border-[#D8D8D8] py-[1.8vw] pr-[5vw] mobile:border-none mobile:border-b mobile:border-[#D8D8D8] mobile:py-0">
                   <ul className="space-y-[0.8vw] tablet:space-y-[1vw]">
                     <li className="footer-link">
-                      <Link
-                        href="/"
-                        className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]"
-                      >
-                        <span data-attr="Home">Home</span>
+                    <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/")}
+                          data-attr="Home"
+                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                        >
+                          Home
+                        </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link
-                        href="/about"
-                        className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]"
-                      >
-                        <span data-attr="About">About</span>
+                      <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/about")}
+                          data-attr="About"
+                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                        >
+                          About
+                        </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link
-                        href="/#"
-                        className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]"
-                      >
-                        <span data-attr="Products">Products</span>
+                      <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/product")}
+                          data-attr="Product"
+                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                        >
+                          Product
+                        </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link
-                        href="/manufacturing"
-                        className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]"
-                      >
-                        <span data-attr="Manufacturing">Manufacturing</span>
+                      <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/manufacturing")}
+                          data-attr="Manufacturing"
+                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                        >
+                          Manufacturing
+                        </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link
-                        href="/career"
-                        className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]"
-                      >
-                        <span data-attr="Careers">Careers</span>
+                    <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/career")}
+                          data-attr="Career"
+                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                        >
+                          Career
+                        </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link
-                        href="/#"
-                        className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]"
-                      >
-                        <span data-attr="News">News</span>
+                    <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/news")}
+                          data-attr="News"
+                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                        >
+                          News
+                        </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link
-                        href="/#"
-                        className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw]"
-                      >
-                        <span data-attr="Contact">Contact</span>
+                    <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/contact")}
+                          data-attr="Contact"
+                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                        >
+                          Contact
+                        </span>
                       </Link>
                     </li>
                   </ul>
@@ -216,26 +252,36 @@ const Menu = ({  isMenuOpen, toggleMenu }) => {
                   <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw] mobile:space-y-[1.2vw]">
                     <li className="footer-link">
                       <Link
-                        href="/#"
+                        href="/"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
-                        <span data-attr="Wound Care">Wound Care</span>
+                        <span
+                          onClick={() => handleLinkClick("/#")}
+                          data-attr="Wound Care"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
+                          Wound Care
+                        </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link
-                        href="/endo"
-                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
-                      >
-                        <span data-attr="Endo Surgery">Endo Surgery</span>
+                      <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/endo")}
+                          data-attr="Endo Surgery"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
+                          Endo Surgery
+                        </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link
-                        href="/hernia"
-                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
-                      >
-                        <span data-attr="Hernia Solutions">
+                      <Link href={"/#"}>
+                        <span
+                          onClick={() => handleLinkClick("/hernia")}
+                          data-attr="Hernia Solutions"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
                           Hernia Solutions
                         </span>
                       </Link>

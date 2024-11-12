@@ -7,6 +7,7 @@ import FormOem from "@/components/Oem/FormOem";
 import OfferingsMob from "@/components/Oem/OfferingsMob";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
+import { Media } from "@/components/media";
 
 
 export default function oem() {
@@ -38,8 +39,13 @@ export default function oem() {
               />
               <Genesis content={content} />
               <OemCard />
+              <Media greaterThanOrEqual="desktop" >
+
               <Offerings />
+              </Media>
+              <Media lessThan="desktop">
               <OfferingsMob />
+              </Media>
               <FormOem />
             </main>
           </Layout>

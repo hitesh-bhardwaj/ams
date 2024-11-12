@@ -6,6 +6,7 @@ import { paraAnim } from "../gsapAnimations";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Media } from "../media";
 import "swiper/css/navigation";
 
 // Register GSAP plugin
@@ -59,7 +60,7 @@ const Molecular = () => {
             scrub: true,
           },
         });
-        tlRight.to(".molecular-right", { yPercent: -67, duration: 3, ease: "none" });
+        tlRight.to(".molecular-right", { yPercent: -75, duration: 3, ease: "none" });
 
         const tlBg = gsap.timeline({
           scrollTrigger: {
@@ -82,7 +83,7 @@ const Molecular = () => {
             scrub: true,
           },
         });
-        tlRight.to(".molecular-right", { yPercent: -40, duration: 3, ease: "none" });
+        tlRight.to(".molecular-right", { yPercent: -50, duration: 3, ease: "none" });
 
         const tlBg = gsap.timeline({
           scrollTrigger: {
@@ -185,7 +186,9 @@ const Molecular = () => {
             </div>
 
             {/* Cards for larger screens */}
-            <div className="molecular-right w-[47%] flex flex-col gap-y-[2vw] mobile:hidden tablet:w-[60%]">
+           <Media greaterThan="mobile">
+
+             <div className="molecular-right w-[47%] flex flex-col gap-y-[2vw] tablet:w-[60%]">
               {cardData.map((card, index) => (
                 <MolecularCard
                   key={index}
@@ -195,8 +198,11 @@ const Molecular = () => {
                 />
               ))}
             </div>
+            </Media>
 
             {/* Swiper for mobile view */}
+            <Media lessThan="tablet">
+
             <div className="molecular-right w-[47%] flex-col gap-y-[2vw] hidden mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full">
               <Swiper
                 navigation={false}
@@ -275,6 +281,7 @@ const Molecular = () => {
             </div>
               </div>
             </div>
+            </Media>
           </div>
         </div>
       </section>

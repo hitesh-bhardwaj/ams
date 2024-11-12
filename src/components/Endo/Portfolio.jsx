@@ -4,6 +4,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Media } from "../media";
 // import { paraAnim , fadeUp } from "../gsapAnimations";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -62,20 +63,24 @@ const Portfolio = () => {
   }
   return (
     <section id="portfolio" className="pb-[5%]">
-      <div  className=" flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] tablet:px-[4%] mobile:px-0 overflow-hidden">
+      <div  className=" flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] mobile:pt-[5%] tablet:px-[4%] mobile:px-0 overflow-hidden">
       <div>
         <h2 data-para-anim className="title-2 aeonik mobile:text-center ">
           Our Advanced Portfolio
         </h2>
       </div>
-      <div className="flex items-center justify-between gap-[3vw] mt-[7vw] portfolio-card-container mobile:gap-[7vw] mobile:mt-[12vw] tablet:flex-wrap mobile:hidden">
+      <Media greaterThan="mobile">
+      <div className="flex items-center justify-between gap-[3vw] mt-[7vw] portfolio-card-container tablet:flex-wrap mobile:hidden">
        
         <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"}/>
       </div>
-      <div className="w-full mobile:overflow-scroll mobile:mt-[12vw] mobile:pl-[7%] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll mobile:fadeup tablet:hidden tablet:pr-[5%] overflow-visible tablet:mt-0 ">
+
+      </Media>
+      
+      <div className="w-full mobile:overflow-scroll mobile:mt-[12vw] mobile:pl-[7%] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp mobile:fadeup tablet:hidden overflow-visible ">
             <div      
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw]  mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
             >

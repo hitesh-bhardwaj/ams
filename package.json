@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@artsy/fresnel": "^8.0.1",
     "@gsap/react": "^2.1.1",
     "@hookform/resolvers": "^3.9.0",
     "@pixi/filter-kawase-blur": "^3.2.0",

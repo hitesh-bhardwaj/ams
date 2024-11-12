@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { paraAnim } from "../gsapAnimations";
+import { Media } from "../media";
 
 export default function Footer() {
     paraAnim()
@@ -189,6 +190,7 @@ export default function Footer() {
                                 </ul>
                             </div>
                         </div>
+                        
                         <div className="relative col-span-full my-[3vw] h-[15vw] w-full tablet:my-[6vw] tablet:h-[15vw] fadeUp mobile:hidden">
 
                         <Image
@@ -198,6 +200,8 @@ export default function Footer() {
                             fill
                         /> 
                         </div>
+                        
+
                         <div className="relative col-span-full my-[3vw] h-[27vw] w-full tablet:my-[6vw] tablet:h-[15vw] fadeUp hidden mobile:block mobile:w-[80%] mobile:my-[6vw]">
                          <Image
                             className=" drop-shadow-2xl  "
@@ -206,6 +210,7 @@ export default function Footer() {
                             fill
                         /> 
                         </div>
+                       
                         <div className="col-span-full flex justify-between text-head text-[1vw] font-light mobile:text-[3.6vw] mobile:flex-col mobile:items-center mobile:justify-center tablet:text-[1.8vw] mobile:mt-[5vw]">
                             <p className="relative z-[6]">© {new Date().getFullYear()} Advanced MedTech Solutions Pvt. Ltd</p>
                             <a className="relative after:absolute after:block after:left-0 after:bg-current after:bottom-0 after:h-[1px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all" target='_blank' title='UI/UX, Strategy, Marketing Agency' href='https://weareenigma.com'>By: Enigma</a>

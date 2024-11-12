@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-// import required modules
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
+import { Media } from "../media";
 
 export default function CardsCarousel() {
   const [activeIndex, setActiveIndex] = useState(0); // Track active slide index
@@ -25,7 +21,9 @@ export default function CardsCarousel() {
   return (
     <>
       <section className="pb-[10%]" id="cards-carousel">
-        <div className="w-full h-full flex flex-col gap-[4vw] mobile:hidden tablet:hidden">
+        <Media greaterThan="tablet">
+
+        <div className="w-full h-full flex flex-col gap-[4vw] ">
           <h2 data-para-anim className="aeonik title-2 text-center">
             Our Featured Programs
           </h2>
@@ -76,7 +74,10 @@ export default function CardsCarousel() {
             </Swiper>
           </div>
         </div>
-        <div className="hidden mobile:block tablet:block py-[10%] tablet:py-[5%]">
+        </Media>
+        <Media lessThan="desktop">
+
+        <div className="py-[10%] tablet:py-[5%]">
           <div className="w-full flex flex-col gap-[8vw] tablet:gap-[8vw]">
             <div className="w-full flex justify-center">
               <h2 className="title-2 aeonik text-center px-[2vw] tablet:w-[80%] mobile:w-[95%]">
@@ -115,14 +116,8 @@ export default function CardsCarousel() {
             
           </div>
         </div>
+        </Media>
       </section>
-
-      {/* <style jsx>{`
-        .card-title {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-      `}</style> */}
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { Media } from '../media';
 
 const cardData = [
   {
@@ -37,7 +38,9 @@ function FeatureCards() {
   return (
     <>
       <section id="feature-cards" className="pb-[7%] tablet:pb-0">
-        <div className="container-lg flex flex-col h-full w-full items-center gap-[5vw] justify-between mobile:hidden tablet:hidden">
+        <Media greaterThanOrEqual='desktop'>
+
+        <div className="container-lg flex flex-col h-full w-full items-center gap-[5vw] justify-between">
           <h2 data-para-anim className="aeonik title-2">Unmatched Precision with AMS Needles</h2>
           <div className="w-full flex justify-between">
             {cardData.map((card, index) => (
@@ -63,7 +66,9 @@ function FeatureCards() {
             ))}
           </div>
         </div>
-        <div className="hidden mobile:block tablet:block py-[10%]">
+        </Media>
+        <Media lessThan='desktop'>
+        <div className=" py-[10%]">
         <div className="w-full flex flex-col gap-[12vw] tablet:gap-[8vw]">
         <div className='w-full flex justify-center'>
         <h2  className="title-2 aeonik text-center px-[2vw] tablet:w-[80%] mobile:w-[95%]">
@@ -117,6 +122,8 @@ function FeatureCards() {
         </div>
 
         </div>
+
+        </Media>
       </section>
     </>
   );

@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "@/styles/endocard.module.css"; // Import the module CSS
 import Link from "next/link";
 import Image from "next/image";
+import { Media } from "../media";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -155,7 +156,9 @@ const Product = () => {
       ref={sliderContainer}
       className={`relative h-[110vh] ${styles.sliderContainer} overflow-x-hidden mobile:h-full tablet:h-full pb-[5%] mobile:py-[15%]`}
     >   {/** for desktop */}
-        <div className="flex flex-col w-full h-full justify-between pb-[1%] mobile:hidden tablet:hidden">
+    <Media greaterThan="tablet">
+
+        <div className="flex flex-col w-full h-screen justify-between pb-[1%]">
         <div className='w-full flex justify-center'>
         <h2 data-para-anim className="title-2 aeonik">
           <span>Our Advanced Endo Surgery Product Line</span>
@@ -183,8 +186,11 @@ const Product = () => {
       </div>
 
         </div>
+    </Media>
 
         {/** for mobile */}
+        <Media lessThan="desktop">
+
         <div className="hidden mobile:block tablet:block">
         <div className="w-full flex flex-col gap-[10vw] tablet:gap-[5vw]">
         <div className='w-full flex justify-center'>
@@ -222,6 +228,7 @@ const Product = () => {
         </div>
 
         </div>
+        </Media>
     </section>
   );
 };

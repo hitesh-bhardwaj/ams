@@ -2,11 +2,16 @@ import Image from "next/image";
 import PrimaryButton from "../Button/PrimaryButton";
 import gsap from "gsap";
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
-import { useEffect } from "react";
+import { Media } from "../media";
+import { useEffect, useState } from "react";
+import { useDevice } from "../useDevice";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() { 
+  const {isDesktop} = useDevice()
+  const [isClient , setIsClient]= useState(null)
+  
   useEffect(() => {
     // Create a GSAP context
     const ctx = gsap.context(() => {
@@ -22,7 +27,7 @@ export default function Hero() {
     // Clean up the context on component unmount
     return () => ctx.revert();
   }, []);
-
+// if(!isClient) return null;
   
     return (
         <section className="hero mobile:mb-[0vw] overflow-hidden" id="hero">
@@ -40,7 +45,8 @@ export default function Hero() {
                 <PrimaryButton btnText={'Discover'} link={'/'} className={"fadeUp"} />
                
               </div>
-              <div className="absolute w-[43%] right-0 bottom-0 mobile:hidden">
+             <Media greaterThan="mobile">
+              <div className="absolute w-[43%] right-0 bottom-0">
 
               <div className=" w-[43vw] h-[38vw]  hero-img-anim  tablet:w-[45vw] tablet:h-[42vw] overflow-hidden">
                 <Image
@@ -54,6 +60,7 @@ export default function Hero() {
                 />
               </div>
               </div>
+             </Media>
               
             </div>
           </div>

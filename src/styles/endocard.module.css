@@ -57,7 +57,7 @@
   @media screen and (max-width:1536px) {
     .sliderSection {
       height: 100vh;
-      top: 140%;
+      top: 130%;
       position: absolute;
       width: 100%;
     }

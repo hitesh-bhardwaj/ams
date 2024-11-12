@@ -8,9 +8,6 @@ import "swiper/css/thumbs";
 import "swiper/css/pagination";
 import {
   FreeMode,
-  Thumbs,
-  Navigation,
-  EffectCreative,
   Autoplay,
 } from "swiper/modules";
 
@@ -64,29 +61,13 @@ export default function OfferingsMob() {
     }
   };
 
-  // // State to track the active layout
-  // const [activeLayout, setActiveLayout] = useState(1);
-
-  // // Refs for the layout divs
-  // const layoutRefs = useRef([]);
-
-  // // Handle card click
-  // const handleCardClick = (id, index) => {
-  //   setActiveLayout(id);
-
-  //   // Scroll to the next layout div
-  //   if (layoutRefs.current[index]) {
-  //     layoutRefs.current[index].scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // };
-
   return (
     <>
-      <section className="pb-[20%] pt-[10%] hidden mobile:block tablet:block relative" id="offering">
-        <div className="hidden mobile:block tablet:block">
+      <section className="pb-[20%] pt-[10%] relative" id="offering">
+       
           <div className="w-full flex flex-col px-[5vw]">
           
-            <div className="hidden mobile:block ">
+            <div className="">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)} // Save Swiper instance to ref
               slidesPerView={1}
@@ -106,14 +87,14 @@ export default function OfferingsMob() {
                   className={`w-full h-full bg-white rounded-[9vw] pt-[5vw] pb-[5vw] flex flex-col border items-center gap-[3vw] tablet:pb-[10vw] tablet:pt-[2vw] tablet:gap-[5vw] layout${card.id} transition-opacity duration-300 opacity-100`}
                 >
                   <h3 data-para-anim className="text-[9vw] aeonik text-center font-light tablet:text-[5vw]">Features</h3>
-                  <div className="w-[80vw] h-[90vw] rounded-[6vw] relative overflow-hidden">
+                  <div className="w-[80vw] h-[90vw] rounded-[6vw] relative overflow-hidden tablet:h-[50vw] tablet:w-[85vw]">
                     <Image src={card.imgSrc} alt={card.alt} className="object-cover" fill />
                   </div>
-                  <div className="w-full h-full flex flex-col gap-[3vw] mt-[5vw] px-[7vw]">
+                  <div className="w-full h-full flex flex-col gap-[3vw] mt-[5vw] px-[7vw] tablet:px-[5vw] tablet:mt-[2vw] tablet:gap-[1vw]">
                     <h3 data-para-anim className="text-[8vw] aeonik font-light leading-[1.25] tablet:text-[5vw]">
                       {card.title}
                     </h3>
-                    <h4 data-para-anim className="text-[5vw] aeonik font-light leading-[1.25] tablet:text-[3.5vw] mb-[5vw]">
+                    <h4 data-para-anim className="text-[5vw] aeonik font-light leading-[1.25] tablet:text-[3.5vw] mb-[5vw] tablet:mb-[0vw]">
                       The Next Generation of Needle Technology
                     </h4>
                     <ul className="list-disc space-y-[0.5vw] text-[4vw] font-light ml-[4vw] tablet:text-[2.2vw] tablet:mt-[2vw]">
@@ -133,7 +114,7 @@ export default function OfferingsMob() {
 
             {/* Custom Next and Previous Buttons */}
             <div
-              className={`absolute z-[5] bottom-0 left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer  bg-white/50
+              className={`absolute z-[5] bottom-0 left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer  bg-white/50 tablet:p-[3vw] tablet:bottom-[3%] tablet:left-[60%]
                 ${
                   activeButton === "next"
                     ? " text-white"
@@ -147,7 +128,7 @@ export default function OfferingsMob() {
                     : "scale-0 opacity-50"
                 } transition-all duration-300`}></span>
               
-              <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+              <div className=" relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
               <Image
                 src="/assets/home/arrow-right.png"
                 alt="arrow-right"
@@ -161,7 +142,7 @@ export default function OfferingsMob() {
             </div>
             </div>
             <div
-              className={`absolute z-[5] bottom-0 left-[39%] translate-x-[-38%] bg-white/50 overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
+              className={`absolute z-[5] bottom-0 left-[39%] translate-x-[-38%] bg-white/50 overflow-hidden  py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer tablet:p-[3vw] tablet:bottom-[3%] tablet:left-[43%]
                 ${
                   activeButton === "prev"
                     ? " text-white"
@@ -174,7 +155,7 @@ export default function OfferingsMob() {
                     ?"scale-100 opacity-100"
                     : "scale-0 opacity-50"
                 } transition-all duration-300`}></span>
-              <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw]">
+              <div className=" relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
               <Image
                 src="/assets/home/arrow-left.png"
                 alt="arrow-left"
@@ -189,7 +170,7 @@ export default function OfferingsMob() {
             </div>
           </div>
           </div>
-        </div>
+        
       </section>
     </>
   );

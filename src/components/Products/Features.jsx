@@ -7,14 +7,15 @@ import { paraAnim, fadeUp } from "../gsapAnimations";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
+import { Media } from '../media';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const FeatureCard = ({ src, title }) => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center feature-card group opacity-[0.2] cursor-pointer duration-300 transition-all ease  hover:opacity-[1] tablet:py-[5%]'>
-        <div className='h-[15vw] w-[10vw] mobile:w-[60vw] mobile:h-[20vw] tablet:w-[20vw] tablet:h-[25vw]'>
+      <div className='w-full tablet:w-fit flex flex-col items-center justify-center feature-card group opacity-[0.2] cursor-pointer duration-300 transition-all ease  hover:opacity-[1] tablet:py-[5%] mobile:opacity-[1]'>
+        <div className='h-[15vw] w-[10vw] mobile:w-[60vw] mobile:h-[40vw] tablet:w-[20vw] tablet:h-[25vw]'>
           <div className='w-full h-full relative'>
             <Image
               src={src}
@@ -24,8 +25,8 @@ const FeatureCard = ({ src, title }) => {
             />
           </div>
         </div>
-        <div className='w-full '>
-          <p data-para-anim className='text-[1.15vw] font-light text-center w-[15vw] mobile:text-[6vw] tablet:text-[2.5vw]'>
+        <div className='w-full flex justify-center items-center '>
+          <p data-para-anim className='text-[1.15vw] font-light text-center w-[50%] mobile:text-[6vw] tablet:text-[2.5vw] mt-[5vw]'>
             {title}
           </p>
         </div>
@@ -37,22 +38,6 @@ const FeatureCard = ({ src, title }) => {
 const Features = ({ card1, card2, card3, card4 }) => {
   paraAnim();
   fadeUp();
-
-  // useEffect(() => {
-  //   if (globalThis.innerWidth >= 1024) {
-  //     gsap.from(".feature-card", {
-  //       yPercent: 50,
-  //       opacity: 0,
-  //       duration: 0.7,
-  //       scrollTrigger: {
-  //         trigger: ".feature-card-container",
-  //         start: "top 80%",
-  //         end: "bottom 40%",
-  //       },
-  //       stagger: 0.1
-  //     });
-  //   }
-  // }, []); // Run the GSAP animation once after component mounts
 
   const swiperRef = useRef(null);
   const [activeButton, setActiveButton] = useState(" ");
@@ -74,7 +59,9 @@ const Features = ({ card1, card2, card3, card4 }) => {
   return (
     <>
       <section className='mobile:py-[10%] tablet:py-[10%]' id='features'>
-        <div className='h-screen w-screen container-lg mobile:hidden tablet:h-full'>
+        <Media greaterThan='mobile'>
+
+        <div className='h-screen w-screen container-lg tablet:h-full'>
           <div className='h-[80%] w-full border rounded-[3vw] flex flex-col bg-white/50 items-center justify-center gap-[4vw] tablet:py-[3vw] tablet:h-[60%]'>
             <div>
               <h2 data-para-anim className='title-2 aeonik'>Key Features</h2>
@@ -87,8 +74,9 @@ const Features = ({ card1, card2, card3, card4 }) => {
             </div>
           </div>
         </div>
-
-        <div className='h-screen w-screen container-lg hidden mobile:block mobile:h-full'>
+        </Media>
+        <Media at='mobile'>
+        <div className='h-screen w-screen container-lg mobile:h-full relative'>
           <div className='mb-[10%] mobile:mb-[15vw]'>
             <h2 className='title-2 aeonik mobile:text-center'>Key Features</h2>
           </div>
@@ -155,6 +143,8 @@ const Features = ({ card1, card2, card3, card4 }) => {
             </div>
           </div>
         </div>
+
+        </Media>
       </section>
     </>
   )

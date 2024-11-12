@@ -3,13 +3,12 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import PrimaryButton from "../Button/PrimaryButton";
-import { useDevice } from "../useDevice";
+import { Media } from "../media";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const GalleryComponent = () => {
-  const { isDesktop } = useDevice();
-  const [isClient, setIsClient] = useState();
+ 
   const manufacturingVideoRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false); // Track if the video has been loaded
 
@@ -86,78 +85,12 @@ const GalleryComponent = () => {
     return () => ctx.revert(); // Clean up on unmount
   }, []);
 
-//   useEffect(() => {
-//     const ctx = gsap.context(() => {
-//     setIsClient(true);
-//     // Set initial state of photos
-//     const tl = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: ".right", 
-//         pin: true,
-//         start: "top top",
-//         end: "+=3000 bottom",
-//         scrub: true,
-//         // markers:true
-//       },
-//     });
-//     gsap.fromTo(
-//       ".left",
-//       { yPercent: 0 },
-//       {
-//         yPercent: -200,
-//         ease: "none",
-//         duration:5,
-//         scrollTrigger: {
-//           trigger: ".gallery",
-//           start: "top top",
-//           end: "+=3000 bottom",
-//           scrub: true,
-//           markers:true,
-//         },
-//       }
-//     );
-//     tl.fromTo(
-//       ".photo2",
-//       {
-//         scale: 1.5,
-//       },
-//       {
-//         yPercent: -200,
-//         scale: 1,
-//         duration: 5,
-//         delay: -8,
-//       }
-//     ).to(".photo1", {
-//       yPercent: -20,
-//       delay: -5.3,
-//       duration: 1.5,
-//       ease: "none",
-//     });
-//     tl.fromTo(
-//       ".photo3",
-//       {
-//         scale: 1.5,
-//       },
-//       {
-//         yPercent: -200,
-//         scale: 1,
-//         duration: 5,
-//         delay: -4.5,
-//         ease: "none",
-//       }
-//     ).to(".photo2", {
-//       yPercent: -220,
-//       delay: -1.32,
-//       duration: 1.5,
-//       ease: "none",
-//     });
-// });
-// return () => ctx.revert();
-// });
 
   return (
     <section className="pb-[7%] pt-[10%] mobile:pt-[15%] overflow-hidden w-screen h-full bg-white/50" id="manufacturing-slideshow">
-        <div className="gallery flex mobile:hidden tablet:hidden w-full overflow-hidden">
+        <Media greaterThan="tablet">
+
+        <div className="gallery flex w-full overflow-hidden">
           <div className="left w-1/2 ml-[5vw]">
             <div className="detailsWrapper w-[70%]">
               <div className="space-y-[3vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
@@ -249,7 +182,10 @@ const GalleryComponent = () => {
             </div>
           </div>
         </div>
-        <div className="hidden mobile:block tablet:block w-full px-[5vw] pb-[10vw] tablet:pb-[5vw]">
+        </Media>
+        <Media at="tablet">
+
+        <div className=" w-full px-[5vw] pb-[10vw] tablet:pb-[5vw]">
           <div className="w-full flex flex-col gap-[20vw] tablet:gap-[10vw]">
             <div className="w-full flex flex-col gap-[10vw] items-center tablet:gap-[3.5vw]">
               <div className="w-[85vw] h-[120vw] rounded-[3vw] overflow-hidden tablet:h-[60vw]">
@@ -343,6 +279,104 @@ const GalleryComponent = () => {
             </div>
           </div>
         </div>
+        </Media>
+        <Media lessThan="tablet">
+
+        <div className=" w-full px-[5vw] pb-[10vw] tablet:pb-[5vw]">
+          <div className="w-full flex flex-col gap-[20vw] tablet:gap-[10vw]">
+            <div className="w-full flex flex-col gap-[10vw] items-center tablet:gap-[3.5vw]">
+              <div className="w-[85vw] h-[120vw] rounded-[3vw] overflow-hidden tablet:h-[60vw] fadeUp">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  ref={manufacturingVideoRef}
+                  poster="/assets/home/ams-manufactuing-facility-poster.webp"
+                  className="object-cover h-full w-full imgMove"
+                  alt="Service Image"
+                  loading="lazy"
+                />
+              </div>
+              <h2
+                data-para-anim
+                className="title-2 aeonik font-light text-center"
+              >
+                Ushering in the Next Generation of Medical Technology
+              </h2>
+              <p data-para-anim className="content-p text-center">
+                AMS leverages strategic global partnerships to procure
+                state-of-the-art manufacturing technology, ensuring
+                uncompromising quality, innovation, and agility in our
+                processes. Our adherence to LEAN principles and implementation
+                of a robust quality management system guarantees compliance with
+                the most stringent global regulatory standards.
+              </p>
+              <PrimaryButton
+                btnText={"Manufacturing"}
+                link={"#"}
+                className={"fadeUp tablet:px-[4vw] tablet:py-[1.5vw]"}
+              />
+            </div>
+            <div className="w-full flex flex-col gap-[7vw] items-center tablet:gap-[3.5vw]">
+              <div className="w-[85vw] h-[120vw] rounded-[3vw] overflow-hidden relative tablet:h-[60vw] fadeUp">
+                <Image
+                  className="object-cover h-full w-full"
+                  src="/assets/home/manufacturing-2.webp"
+                  alt="manufacturing-image-2"
+                  fill
+                />
+              </div>
+              <h2
+                data-para-anim
+                className="title-2 aeonik font-light text-center"
+              >
+                Building World Class Capability
+              </h2>
+              <p data-para-anim className="content-p text-center">
+                Designed by renowned Spanish architect Ricardo Bofill, the AMS
+                facility meets the Gold standard on Green building principles
+                for sustainability and conforms to ISO 14001 safety and
+                environmental specifications. Approx. 150,000 sq. ft. completed
+                in Phase I and 180,000 sq.ft expansion in phase II.
+              </p>
+              <PrimaryButton
+                btnText={"Manufacturing"}
+                link={"#"}
+                className={"fadeUp tablet:px-[4vw] tablet:py-[1.5vw]"}
+              />
+            </div>
+            <div className="w-full flex flex-col gap-[7vw] items-center tablet:gap-[3.5vw]">
+              <div className="w-[85vw] h-[120vw] rounded-[3vw] overflow-hidden relative tablet:h-[60vw] fadeUp">
+                <Image
+                  className="object-cover h-full w-full"
+                  src="/assets/home/manufacturing-3.webp"
+                  alt="manufacturing-image-3"
+                  fill
+                />
+              </div>
+              <h2
+                data-para-anim
+                className="title-2 aeonik font-light text-center"
+              >
+                Robust Manufacturing Processes
+              </h2>
+              <p data-para-anim className="content-p text-center">
+                The AMS plant design is based on LEAN concepts, Schedule M
+                compliance, and Class C clean room principles. The Testing and
+                Microbiological Laboratories are outfitted with best-in-class
+                equipment. All under the supervision of experienced
+                Manufacturing and Quality teams.
+              </p>
+              <PrimaryButton
+                btnText={"Manufacturing"}
+                link={"#"}
+                className={"fadeUp tablet:px-[4vw] tablet:py-[1.5vw]"}
+              />
+            </div>
+          </div>
+        </div>
+        </Media>
     </section>
   );
 };

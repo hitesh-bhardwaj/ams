@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { paraAnim, fadeUp } from "../gsapAnimations";
+import { Media } from "../media";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -61,7 +62,9 @@ const Uncover = () => {
             Uncover More
           </h2>
         </div>
-        <div className="flex items-center justify-between gap-[3vw] mt-[7vw] uncover-card-container mobile:hidden tablet:flex-wrap tablet:justify-center tablet:gap-[5vw]">
+        <Media greaterThan="mobile">
+
+        <div className="flex items-center justify-between gap-[3vw] mt-[7vw] uncover-card-container tablet:flex-wrap tablet:justify-center tablet:gap-[5vw]">
           <UncoverCard img={"/assets/advacryl/advapd.png"} txt={"AdvaPD"} />
           <UncoverCard
             img={"/assets/advacryl/advacryl-rapid.png"}
@@ -73,8 +76,10 @@ const Uncover = () => {
             txt={"Advacryl Plus"}
           />
         </div>
-        
-        <div className=" items-center justify-between gap-[3vw] mt-[7vw] hidden mobile:flex  mobile:w-[100vw] mobile:px-[5vw] mobile:overflow-scroll ">
+        </Media>
+        <Media at="mobile">
+
+        <div className=" items-center justify-between gap-[3vw] mt-[7vw] mobile:flex  mobile:w-[100vw] mobile:px-[5vw] mobile:overflow-scroll ">
           <UncoverCard img={"/assets/advacryl/advapd.png"} txt={"AdvaPD"} />
           <UncoverCard
             img={"/assets/advacryl/advacryl-rapid.png"}
@@ -86,6 +91,7 @@ const Uncover = () => {
             txt={"Advacryl Plus"}
           />
         </div>
+        </Media>
       </div>
     </section>
   );

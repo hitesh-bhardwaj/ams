@@ -14,9 +14,9 @@ const Hero = () => {
         scrub: true,
       },
     });
-    // tl.to(".hero-img", {
-    //   yPercent: 60,
-    // });
+    tl.to(".hero-img", {
+      yPercent: 60,
+    });
     gsap.fromTo(
       ".hero-img",
       {

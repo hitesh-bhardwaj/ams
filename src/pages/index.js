@@ -8,7 +8,6 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import dynamic from "next/dynamic"; // Import next/dynamic
 import Layout from "@/components/Layout";
-// import ManufacturingCarousel from "@/components/Home/ManufactingCarousel";
 import GalleryComponent from "@/components/Home/SamplePin";
 import { fadeup, imageAnim } from "@/components/gsapAnimations";
 

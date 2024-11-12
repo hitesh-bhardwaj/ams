@@ -520,8 +520,8 @@ body{
     border-radius: 40px;
   }
   .imageanim{
-    transform: translateY(0%);
-    scale: 1.5;
+    transform: translateY(-20%);
+    scale: 1.2;
   }
   .para-animation .line{
     overflow: hidden;
@@ -649,8 +649,8 @@ body{
   padding: 4vw;
 }
 .imageanim{
-  transform: translateY(0%);
-  scale: 1;
+  transform: translateY(-10%);
+  scale: 1.2;
 }
   /* career jobs swiper*/
   .careerSwiper .swiper-slide{

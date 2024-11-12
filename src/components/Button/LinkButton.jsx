@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-const LinkButton = ( { link, btnText } ) => {
+const LinkButton = ( { link, btnText,className } ) => {
     return (
         <Link href={link} className="link-btn">
-            <span className="btn-text">{btnText}</span>
+            <span className={`btn-text ${className}`}>{btnText}</span>
             {/* <span className="screen-reader-text">About This</span> */}
             <span className="btn-images">
                 <div>
