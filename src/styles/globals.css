@@ -433,6 +433,18 @@ body{
   scrollbar-width: none;
 }
 
+/* Advastap endo lc*/
+.advastap-text {
+  background: -webkit-linear-gradient(right,#476CBF, #A883D7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 300;
+  line-height: 130%;
+}
+
 @media screen  and (max-width:541px){
   ::-webkit-scrollbar {
     height: 0;
