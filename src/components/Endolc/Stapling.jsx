@@ -15,9 +15,9 @@ const Stapling = () => {
 
             <div className=" h-full w-full flex flex-col items-center justify-center mobile:flex-col mobile:gap-[10vw]">
                 <div className="w-full h-[70%]  items-center justify-between  flex ">
-                    <p className="text-[2vw] font-light">
+                    <p className="font-light text-[3.35vw] text-[#2A2A2A]">
                     Surgeon-Modulated Articulation
-                    <span className="content-p block">
+                    <span className="block text-[1.4vw] font-light leading-[1.2]">
                     Flexible reach for precise and accurate positioning in challenging surgical procedures.   </span>
                     </p>
                     <div className="flex flex-col h-[100%] w-[40%] items-center justify-center">
@@ -27,9 +27,9 @@ const Stapling = () => {
                     </div> 
                 </div>
                 <div className="w-full h-[70%]  items-center justify-between   flex ">
-                    <p className="text-[2vw] font-light">
+                    <p className="font-light text-[3.35vw] text-[#2A2A2A]">
                     Smart Locking Mechanism
-                    <span className="content-p block">
+                    <span className="block text-[1.4vw] font-light leading-[1.2]">
                     with audible click. </span>
                     </p>
                     <div className="flex flex-col h-[100%] w-[40%] items-center justify-center">
@@ -39,10 +39,10 @@ const Stapling = () => {
                     </div>   
                 </div>
 
-                <div className="w-full h-[7vw]  items-end justify-between   flex ">
-                    <p className="text-[2vw] font-light">
+                <div className="w-full h-[15vw]  items-end justify-between   flex ">
+                    <p className="font-light text-[3.35vw] text-[#2A2A2A]">
                    Dedicated Reloads for Every Procedures
-                    <span className="content-p block">
+                    <span className="block text-[1.4vw] font-light leading-[1.2]">
                     Experience seamless peformance with our specialized reloads, designed to enhance efficiency without the need to change cartridges. </span>
                     </p>   
                 </div>

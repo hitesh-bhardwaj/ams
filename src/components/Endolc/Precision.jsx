@@ -14,15 +14,15 @@ const Precision = () => {
             </div>
 
             <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">
-             <div className="h-[40vw] w-[80%] relative">
+             <div className="h-[40vw] w-[80%] relative left-[-15%]">
                 <Image src="/assets/endolc/precision-product.png" fill alt="Precision Product"/>
-                <div className="absolute top-[35%] right-[-10%]">
-                    <p className="font-light text-[2vw]">Sequential Firing Mechanism
-                    <span className="content-p block">simplifies operation.</span></p>
+                <div className="absolute top-[30%] right-[-35%]">
+                    <p className="font-light text-[3.35vw] text-[#2A2A2A]">Sequential Firing Mechanism
+                    <span className="block text-[1.4vw] font-light leading-[1.2] ">simplifies operation.</span></p>
                 </div>
-                <div className="absolute bottom-[20%] right-[5%]">
-                    <p className=" text-[2vw] font-light">Enhanced Control
-                    <span className="content-p block">with compact reach.</span></p>
+                <div className="absolute bottom-[20%] right-[-10%]">
+                    <p className="font-light text-[3.35vw] text-[#2A2A2A]">Enhanced Control
+                    <span className="block text-[1.4vw] font-light leading-[1.2] ">with compact reach.</span></p>
                 </div>
 
              </div>
