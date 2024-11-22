@@ -4,7 +4,7 @@ import gsap from "gsap";
 // import { useLenis } from "@studio-freight/react-lenis"; // Import the useLenis hook
 import { useLenis } from "lenis/react";
 
-const Specifications = () => {
+const SpecificationsInflation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
   const lenis = useLenis(); // Use the Lenis hook to get the Lenis instance
@@ -155,4 +155,4 @@ const Specifications = () => {
   );
 };
 
-export default Specifications;
+export default SpecificationsInflation;

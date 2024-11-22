@@ -448,7 +448,14 @@ body{
 /*Advastap Powered LC */
 .surgical-card-image{
   background: linear-gradient(136.42deg, #FFFFFF 6.4%, #E5E1EC 98.58%);
+}
+/*Advastap Skin stapler*/
 
+.skinstaplerSwiper .swiper-button-next , .skinstaplerSwiper .swiper-button-prev{
+  color:#2A2A2A !important;
+}
+.skinstaplerSwiper .swiper-scrollbar{
+  background-color: #DADADA !important;
 }
 
 @media screen  and (max-width:541px){

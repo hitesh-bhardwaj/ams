@@ -17,7 +17,7 @@ const Carousel = () => {
   return (
     <>
     <section id='specificationCarousel' className='overflow-hidden'>  
-        <div className={`w-screen h-full py-[10vw] text-[#2A2A2A] items-center flex justify-center swiper-container`}>
+        <div className={`w-screen h-full py-[10vw] text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab`}>
         <Swiper
         navigation={true}
         scrollbar={true}
@@ -38,83 +38,97 @@ const Carousel = () => {
               spaceBetween: 50,
             },
           }}
-        className={`w-screen flex items-center justify-center specificationSwiper`}
+        className={`w-screen flex items-center justify-center specificationSwiper skinstaplerSwiper`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
             <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[60vh]'>
                 <p className='text-[2.3vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Revolutionary Feed System</span></p>
-                <div className=' rounded-[20px]  h-[32vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
-                    <div className='w-[55vw] h-[20vw]  relative top-0 left-[-40%] mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-20%] mobile:top-[-15%] mobile:scale-[1.2] tablet:scale-[1.5] tablet:h-[40vw]'>
+                <div className=' rounded-[20px]  h-[32vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
+                    <div className='w-[45vw] h-[20vw]  relative top-[10%] left-[-20%] scale-[2.5] mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-20%] mobile:top-[-15%] mobile:scale-[1.2] tablet:scale-[1.5] tablet:h-[40vw]'>
                         <Image
-                        src="/assets/advastap/spec1.png"
+                        src="/assets/skinstapler/carousel-card1.png"
                         fill
                         alt='specification 1'
-                        className='object-cover '
+                        className='object-contain '
                         />
-
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[25%]'><span data-para-anim>Extensive closure with effective coverage.</span></p>
+                    <p className='text-center text-[1.25vw] absolute top-[15%] right-[10%] aeonik font-extralight w-[15vw] mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[25%]'><span data-para-anim>Smooth and effortless stapling performance</span></p>
+                    <div className='absolute h-[100%] w-[100%]'>
+                    <Image src="/assets/skinstapler/carousel-card1-bg.png" fill alt='carousel-card-1-bg' className='object-coer z-[-1]'/> 
                 </div>
+                </div>
+               
             </div>
         </div>
             </SwiperSlide>
-        <SwiperSlide>
+            <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-between gap-[2vw] mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw]  tablet:h-[60vh]'>
-                <p className='text-[2.3vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Pinpoint Placement Technology</span></p>
-                <div className=' rounded-[20px]  h-[32vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
-                    <div className='w-[60vw] h-[20vw]  relative top-0 left-[-20%] mobile:h-[60vh] mobile:-rotate-90 mobile:left-[15%] mobile:top-[10%] mobile:scale-[3] mobile:overflow-hidden tablet:h-[40vw] tablet:left-[-10%] tablet:scale-[1.2]' >
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[60vh]'>
+                <p className='text-[2.3vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Revolutionary Feed System</span></p>
+                <div className=' rounded-[20px]  h-[32vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
+                    <div className='w-[45vw] h-[20vw]  relative top-[25%] left-[-20%] scale-[1.5] mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-20%] mobile:top-[-15%] mobile:scale-[1.2] tablet:scale-[1.5] tablet:h-[40vw]'>
                         <Image
-                        src="/assets/advastap/spec2.png"
+                        src="/assets/skinstapler/carousel-card2.png"
                         fill
                         alt='specification 1'
-                        className='object-contain'
+                        className='object-contain '
                         />
-               </div>
-                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%] font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[20%]'><span data-para-anim>Designed for secure purse-string suture placement.</span></p>
-                </div>
-            </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-between gap-[2vw] mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw]  tablet:h-[60vh]'>
-                <p className='text-[2.3vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Advanced Inventory System</span></p>
-                <div className=' rounded-[20px] w-[48vw] h-[32vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
-                    <div className='w-[90vw] h-[15vw]  relative top-0  mobile:h-[50vh] mobile:-rotate-90 mobile:scale-[1.2] mobile:top-[-15%] mobile:left-[15%] tablet:h-[40vw] tablet:top-[5%] tablet:left-[10%]'>
-                        <Image
-                        src="/assets/advastap/spec3.png"
-                        fill
-                        alt='specification 1'
-                        className='object-cover mobile:object-contain'
-                        />
-
                     </div>
-                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw] font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[25%]'><span data-para-anim>Faster Recovery & better postoperative results</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik font-extralight w-[20vw] mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[25%]'><span data-para-anim>Innovative design for precise positioning accuracy</span></p>
+                    <div className='absolute h-[100%] w-[100%]'>
+                    <Image src="/assets/skinstapler/carousel-card2-bg.png" fill alt='carousel-card-1-bg' className='object-coer z-[-1]'/> 
                 </div>
+                </div>
+               
             </div>
         </div>
-        </SwiperSlide>
-        <SwiperSlide>
+            </SwiperSlide>
+            <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-between gap-[2vw] mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw]  tablet:h-[60vh]'>
-                <p className='text-[2.3vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Advanced Inventory System</span></p>
-                <div className=' rounded-[20px] w-[48vw] h-[32vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
-                    <div className='w-[90vw] h-[15vw]  relative top-0  mobile:h-[50vh] mobile:-rotate-90 mobile:scale-[1.2] mobile:top-[-15%] mobile:left-[15%] tablet:h-[40vw] tablet:top-[5%] tablet:left-[10%]'>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[60vh]'>
+                <p className='text-[2.3vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Revolutionary Feed System</span></p>
+                <div className=' rounded-[20px]  h-[32vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
+                    <div className='w-[45vw] h-[20vw]  relative top-[35%] left-[-10%] scale-[2.5] mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-20%] mobile:top-[-15%] mobile:scale-[1.2] tablet:scale-[1.5] tablet:h-[40vw]'>
                         <Image
-                        src="/assets/advastap/spec3.png"
+                        src="/assets/skinstapler/carousel-card3.png"
                         fill
                         alt='specification 1'
-                        className='object-cover mobile:object-contain'
+                        className='object-contain '
                         />
-
                     </div>
-                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw] font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[25%]'><span data-para-anim>Faster Recovery & better postoperative results</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[25%]'><span data-para-anim>Enhanced staple count visibility</span></p>
+                    <div className='absolute h-[100%] w-[100%]'>
+                    <Image src="/assets/skinstapler/carousel-card3-bg.png" fill alt='carousel-card-1-bg' className='object-coer z-[-1]'/> 
                 </div>
+                </div>
+               
             </div>
         </div>
-        </SwiperSlide>
+            </SwiperSlide>
+            <SwiperSlide>
+        <div className="py-[2vw] flex justify-center">
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[60vh]'>
+                <p className='text-[2.3vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Revolutionary Feed System</span></p>
+                <div className=' rounded-[20px]  h-[32vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
+                    <div className='w-[45vw] h-[20vw]  relative top-[12%] scale-[1.4] right-[-15%]  mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-20%] mobile:top-[-15%] mobile:scale-[1.2] tablet:scale-[1.5] tablet:h-[40vw]'>
+                        <Image
+                        src="/assets/skinstapler/carousel-card4.png"
+                        fill
+                        alt='specification 1'
+                        className='object-contain '
+                        />
+                    </div>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-extralight w-[20vw] mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[25%]'><span data-para-anim>Effortless removal with sleek and elegant design</span></p>
+                    <div className='absolute h-[100%] w-[100%]'>
+                    <Image src="/assets/skinstapler/carousel-card4-bg.png" fill alt='carousel-card-1-bg' className='object-coer z-[-1]'/> 
+                </div>
+                </div>
+               
+            </div>
+        </div>
+            </SwiperSlide>
+       
       
       </Swiper>
         </div>

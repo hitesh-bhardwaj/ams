@@ -6,7 +6,7 @@ import Image from "next/image";
 const SurgicalCard = ({ img, para }) => {
   return (
     <>
-      <div className="h-[30vw] w-[25vw] p-[1vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw]">
+      <div className="h-[25vw] w-[20vw] p-[1vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw]">
         <div className="h-[70%] w-[95%] rounded-[1vw] flex items-center justify-center surgical-card-image">
           <div className="h-[50%] w-[50%] relative">
             <Image
@@ -17,7 +17,7 @@ const SurgicalCard = ({ img, para }) => {
             />
           </div>
         </div>
-        <div className=" aeonik font-light text-[1.675vw] text-center">
+        <div className=" aeonik font-light text-[1.31vw] text-center">
           <p>{para}</p>
         </div>
       </div>
@@ -40,7 +40,7 @@ const SurgicalOutcomes = () => {
           </div>
 
           <div className="w-full h-full mt-[5vw] cursor-grab">
-            <Swiper className="mySwiper w-full h-full" slidesPerView={3}>
+            <Swiper className="mySwiper w-full h-full" slidesPerView={4} spaceBetween={20}>
               <SwiperSlide>
                 <SurgicalCard
                   img={"/assets/poweredlc/surgical-card1.png"}

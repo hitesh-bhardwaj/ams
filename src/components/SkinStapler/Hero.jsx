@@ -16,7 +16,7 @@ const Hero = () => {
                   </span>
                 </h1>
                 <p data-para-anim className="text-[1.675vw] leading-[1] tracking-wide font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
-                skin stapler
+                Skin Stapler
                 </p>
               </div>
               

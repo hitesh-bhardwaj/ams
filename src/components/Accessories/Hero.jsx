@@ -6,7 +6,7 @@ import { paraAnim } from "../gsapAnimations";
 const Hero = () => {
   paraAnim();
   return (
-    <section id='accessoriesHero'>
+    <section id='accessoriesHero' className='dark'>
       <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh]">
         <Image
           src="/assets/accessories/accessories-hero-bg.png"

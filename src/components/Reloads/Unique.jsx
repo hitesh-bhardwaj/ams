@@ -6,12 +6,11 @@ const UniqueCard=({src,title,para})=>{
         <>
         <div className='rounded-[1.5vw] glassmorphism border border-[#DADADA]flex flex-col  items-center justify-center p-[2vw] w-[35vw]'>
             <div className='w-full h-full relative flex justify-end'>
-                <Image src={src} height={80} width={80} alt='uniwue card'/>
+                <Image src={src} height={80} width={80} alt='unique card'/>
             </div>
-            <p className='text-[2.2vw] font-medium'>{title}</p>
-            <p className='text-[1.5vw] font-light'>{para}</p>
-
-        </div>
+            <p className='text-[2vw] font-medium w-[50%] h-[6vw]'>{title}</p>
+            <p className='text-[1.675vw] font-light'>{para}</p>
+            </div>
         </>
     )
 }
@@ -32,7 +31,7 @@ const Unique = () => {
 
         <div className="w-full h-full mt-[5vw] flex items-center justify-between gap-[2vw]">
             <UniqueCard src={"/assets/reloads/unique-card1.png"} title={"Less Stress:"} para={"Graduated compression for reduced tissue trauma"}/>
-            <UniqueCard src={"/assets/reloads/unique-card2.png"} title={"Superior Performance"} para={"Reliable results across all tissue types"}/>
+            <UniqueCard src={"/assets/reloads/unique-card2.png"} title={"Superior Performance:"} para={"Reliable results across all tissue types"}/>
             <UniqueCard src={"/assets/reloads/unique-card3.png"} title={"Greater Perfusion:"} para={"Enhanced staple line integration."}/>
          
         </div>

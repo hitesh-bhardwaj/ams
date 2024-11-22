@@ -67,7 +67,7 @@ const Specifications = () => {
           <>
           {/* <div className="fixed top-0 left-0 bg-black opacity-100 z-[99]" onClick={closeModal}></div> */}
           <div data-scroll-prevent className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[999] bg-opacity-50 bg-black"  ref={modalRef}>
-            <div className="bg-[#DADADA]  border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar  mobile:max-h-[85vh] mobile:py-[20vw] mobile:w-[90vw]">
+            <div className="bg-[#DADADA]  border border-white rounded-[40px] p-[5vw] py-[3vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar  mobile:max-h-[85vh] mobile:py-[20vw] mobile:w-[90vw]">
               <div
                 onClick={closeModal}
                 className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3vw] w-[3vw] mobile:w-[7vw] mobile:h-[7vw] mobile:p-[1.5vw] mobile:top-[6vw] mobile:right-[5vw]"
@@ -87,28 +87,28 @@ const Specifications = () => {
               <div className="w-full text-[1.25vw] font-light mt-[3vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] ">
                 <div className="flex w-full border-b border-gray-200  mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
                   <div className="flex-[0.5] p-[1vw] font-light">
-                    Specification
+                  Product Code
                   </div>
                   <div className="flex-1 flex justify-between ">
                     <div className="p-[1vw] font-light  border-gray-200">
-                      ADVAPPH-33R3
+                    ADVACS-29R3
                     </div>
                     <div className="p-[1vw] font-light  border-gray-200">
-                      ADVAPPH-34R3
+                    ADVACS-32R3
                     </div>
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Reorder code</div>
+                  <div className="flex-[0.5] p-[1vw]">Product Description</div>
                   <div className="flex-1 flex justify-between  ">
-                    <div className="p-[1vw]  border-gray-200">ADVAPPH-33R3</div>
-                    <div className="p-[1vw]  border-gray-200">ADVAPPH-34R3</div>
+                    <div className="p-[1vw]  border-gray-200">Circular Stapler 3-Row 29mm</div>
+                    <div className="p-[1vw]  border-gray-200">Circular Stapler 3-Row 32mm</div>
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Pin row construction</div>
+                  <div className="flex-[0.5] p-[1vw]">Pin Row Construction</div>
                   <div className="flex-1 flex justify-between ">
                     <div className="p-[1vw]  border-gray-200">3 Row</div>
                     <div className="p-[1vw]  border-gray-200">3 Row</div>
@@ -116,32 +116,57 @@ const Specifications = () => {
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Pin material</div>
+                  <div className="flex-[0.5] p-[1vw]">Pins Per Cartridge</div>
                   <div className="flex-1 flex justify-between ">
                     <div className="p-[1vw]  border-gray-200">
-                      Titanium Grade 1
+                      36
                     </div>
                     <div className="p-[1vw]  border-gray-200">
-                      Titanium Grade 1
+                     45
                     </div>
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Pin per cartridge</div>
+                  <div className="flex-[0.5] p-[1vw]">Stapler Height</div>
                   <div className="flex-1 flex  justify-between ">
-                    <div className="p-[1vw]  border-gray-200">48</div>
-                    <div className="p-[1vw]  border-gray-200">48</div>
+                    <div className="p-[1vw]  border-gray-200">4.8mm</div>
+                    <div className="p-[1vw]  border-gray-200">5.0mm
+                    </div>
                   </div>
                 </div>
 
                 
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Usability</div>
+                  <div className="flex-[0.5] p-[1vw]">Closed Stapler Height</div>
                   <div className="flex-1 flex justify-between  ">
-                    <div className="p-[1vw]  border-gray-200">Single-use</div>
-                    <div className="p-[1vw]  border-gray-200">Single-use</div>
+                    <div className="p-[1vw]  border-gray-200">2.15÷0.2mm</div>
+                    <div className="p-[1vw]  border-gray-200">2.25£0.2mm</div>
+                  </div>
+                </div>
+
+
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]"> Housing Capacity</div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">15 CC</div>
+                    <div className="p-[1vw]  border-gray-200">19 CC</div>
+                  </div>
+                </div>
+
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Inner Lumen Diameter</div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">20mm</div>
+                    <div className="p-[1vw]  border-gray-200">22mm</div>
+                  </div>
+                </div>
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Quantity/Box</div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">1</div>
+                    <div className="p-[1vw]  border-gray-200">1</div>
                   </div>
                 </div>
               </div>

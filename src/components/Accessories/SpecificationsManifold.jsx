@@ -4,7 +4,8 @@ import gsap from "gsap";
 // import { useLenis } from "@studio-freight/react-lenis"; // Import the useLenis hook
 import { useLenis } from "lenis/react";
 
-const Specifications = () => {
+const SpecificationsManifold
+ = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
   const lenis = useLenis(); // Use the Lenis hook to get the Lenis instance
@@ -57,7 +58,7 @@ const Specifications = () => {
             </button>
           </div>
           <div className="w-[100%] h-[100%] absolute z-[-1]">
-            <Image src="/assets/endolc/specifications-bg.png" fill alt="specifications-bg"/>
+            <Image src="/assets/accessories/specifications-bg.png" fill alt="specifications-bg"/>
 
           </div>
         </div>
@@ -67,7 +68,7 @@ const Specifications = () => {
           <>
           {/* <div className="fixed top-0 left-0 bg-black opacity-100 z-[99]" onClick={closeModal}></div> */}
           <div data-scroll-prevent className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[999] bg-opacity-50 bg-black"  ref={modalRef}>
-            <div className="bg-[#DADADA]  border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar  mobile:max-h-[85vh] mobile:py-[20vw] mobile:w-[90vw]">
+            <div className="bg-[#DADADA]  border border-white rounded-[40px] p-[5vw] py-[3vw] w-[50vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar  mobile:max-h-[85vh] mobile:py-[20vw] mobile:w-[90vw]">
               <div
                 onClick={closeModal}
                 className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3vw] w-[3vw] mobile:w-[7vw] mobile:h-[7vw] mobile:p-[1.5vw] mobile:top-[6vw] mobile:right-[5vw]"
@@ -82,48 +83,77 @@ const Specifications = () => {
                 </div>
               </div>
               <p className="text-[2.5vw] text-[#2A2A2A] font-light  leading-[1] mobile:text-[8vw] mobile:text-center  ">
-               Specification
+                Technical Specifications
               </p>
               <div className="w-full text-[1.25vw] font-light mt-[3vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] ">
                 <div className="flex w-full border-b border-gray-200  mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
                   <div className="flex-[0.5] p-[1vw] font-light">
-                   RERDER CODE
+                  Package robustness
                   </div>
                   <div className="flex-1 flex justify-between ">
-                    <div className="p-[1vw] font-light  border-gray-200 w-[25vw]">
-                     DESCRIPTION
-                    </div>
                     <div className="p-[1vw] font-light  border-gray-200">
-                      SHAFT LENGTH
-                    </div>
-                    <div className="p-[1vw] font-light  border-gray-200">
-                      UNIT/BOX
+                      Qualified
                     </div>
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">ADVAPELC-M</div>
-                  <div className="flex-1 flex justify-between ">
-                    <div className="p-[1vw]  border-gray-200">Endoscopic Powered Stapler - Medium</div>
-                    <div className="p-[1vw]  border-gray-200">16cm</div>
-                    <div className="p-[1vw]  border-gray-200">1</div>
-
+                  <div className="flex-[0.5] p-[1vw]">Package leakage
+                  </div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">Qualified</div>
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">ADVAPELC-L</div>
+                  <div className="flex-[0.5] p-[1vw]">Parts</div>
+                  <div className="flex-1 flex justify-between ">
+                    <div className="p-[1vw]  border-gray-200">Main body, Handles, Rotating connector</div>
+                  </div>
+                </div>
+
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Body material</div>
                   <div className="flex-1 flex justify-between ">
                     <div className="p-[1vw]  border-gray-200">
-                    Endoscopic Powered Stapler - Large
+                    ABS & PC
                     </div>
-                    <div className="p-[1vw]  border-gray-200">
-                    26cm
+                  </div>
+                </div>
+
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Side ports</div>
+                  <div className="flex-1 flex  justify-between ">
+                    <div className="p-[1vw]  border-gray-200">Three</div>
+                  </div>
+                </div>
+
+                
+
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Pressure</div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">500 PSI </div>
+                  </div>
+                </div>
+
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Valve type</div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">Right OFF
                     </div>
-                    <div className="p-[1vw]  border-gray-200">
-                    1
-                    </div>
+                  </div>
+                </div>
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Sterilization</div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">ETO </div>
+                  </div>
+                </div>
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Shelf life</div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">3 Years </div>
                   </div>
                 </div>
               </div>
@@ -137,4 +167,5 @@ const Specifications = () => {
   );
 };
 
-export default Specifications;
+export default SpecificationsManifold
+;

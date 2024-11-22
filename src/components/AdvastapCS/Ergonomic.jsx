@@ -12,7 +12,7 @@ const Ergonomic = () => {
                 data-para-anim
                 className="title-2 aeonik text-center w-[60%] mobile:text-center"
               >
-                Ergonomic Design for comfortable single-hand use
+                Ergonomic Design For Comfortable Single-Hand Use
               </h2>
             </div>
             <div className="relative w-full h-full flex flex-col items-center justify-center">

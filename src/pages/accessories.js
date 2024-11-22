@@ -2,7 +2,10 @@ import Hemostasis from '@/components/Accessories/Hemostasis'
 import Hero from '@/components/Accessories/Hero'
 import Inflation from '@/components/Accessories/Inflation'
 import Manifold from '@/components/Accessories/Manifold'
-import Specifications from '@/components/Accessories/Specifications'
+import SpecificationsHemostasis from '@/components/Accessories/SpecificationsHemostasis'
+import SpecificationsInflation from '@/components/Accessories/SpecificationsInflation'
+import Specifications from '@/components/Accessories/SpecificationsInflation'
+import SpecificationsManifold from '@/components/Accessories/SpecificationsManifold'
 import Layout from '@/components/Layout'
 import React from 'react'
 
@@ -12,11 +15,11 @@ const reloads = () => {
     <main>
         <Hero/>
         <Inflation/>
-        <Specifications/>
+        <SpecificationsInflation/>
         <Hemostasis/>
-        <Specifications/>
+        <SpecificationsHemostasis/>
         <Manifold/>
-        <Specifications/>
+        <SpecificationsManifold/>
     </main>
   </Layout>
   )

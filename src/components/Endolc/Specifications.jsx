@@ -82,66 +82,59 @@ const Specifications = () => {
                 </div>
               </div>
               <p className="text-[2.5vw] text-[#2A2A2A] font-light  leading-[1] mobile:text-[8vw] mobile:text-center  ">
-                Technical Specifications
+               Specification
               </p>
               <div className="w-full text-[1.25vw] font-light mt-[3vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] ">
                 <div className="flex w-full border-b border-gray-200  mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
                   <div className="flex-[0.5] p-[1vw] font-light">
-                    Specification
+                   RERDER CODE
                   </div>
                   <div className="flex-1 flex justify-between ">
-                    <div className="p-[1vw] font-light  border-gray-200">
-                      ADVAPPH-33R3
+                    <div className="p-[1vw] font-light  border-gray-200 w-[25vw]">
+                     DESCRIPTION
                     </div>
                     <div className="p-[1vw] font-light  border-gray-200">
-                      ADVAPPH-34R3
+                      SHAFT LENGTH
+                    </div>
+                    <div className="p-[1vw] font-light  border-gray-200">
+                      UNIT/BOX
                     </div>
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Reorder code</div>
+                  <div className="flex-[0.5] p-[1vw]">ADVAELC-S</div>
                   <div className="flex-1 flex justify-between  ">
-                    <div className="p-[1vw]  border-gray-200">ADVAPPH-33R3</div>
-                    <div className="p-[1vw]  border-gray-200">ADVAPPH-34R3</div>
+                    <div className="p-[1vw]  border-gray-200">Endoscopic Linear Cutter - Short
+                    </div>
+                    <div className="p-[1vw]  border-gray-200">6cm</div>
+                    <div className="p-[1vw]  border-gray-200">1</div>
+
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Pin row construction</div>
+                  <div className="flex-[0.5] p-[1vw]">ADVAELC-M</div>
                   <div className="flex-1 flex justify-between ">
-                    <div className="p-[1vw]  border-gray-200">3 Row</div>
-                    <div className="p-[1vw]  border-gray-200">3 Row</div>
+                    <div className="p-[1vw]  border-gray-200">Endoscopic Linear Cutter - Medium</div>
+                    <div className="p-[1vw]  border-gray-200">16cm</div>
+                    <div className="p-[1vw]  border-gray-200">1</div>
+
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Pin material</div>
+                  <div className="flex-[0.5] p-[1vw]">ADVAELC-L</div>
                   <div className="flex-1 flex justify-between ">
                     <div className="p-[1vw]  border-gray-200">
-                      Titanium Grade 1
+                    Endoscopic Linear Cutter - Large
                     </div>
                     <div className="p-[1vw]  border-gray-200">
-                      Titanium Grade 1
+                    26cm
                     </div>
-                  </div>
-                </div>
-
-                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Pin per cartridge</div>
-                  <div className="flex-1 flex  justify-between ">
-                    <div className="p-[1vw]  border-gray-200">48</div>
-                    <div className="p-[1vw]  border-gray-200">48</div>
-                  </div>
-                </div>
-
-                
-
-                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">Usability</div>
-                  <div className="flex-1 flex justify-between  ">
-                    <div className="p-[1vw]  border-gray-200">Single-use</div>
-                    <div className="p-[1vw]  border-gray-200">Single-use</div>
+                    <div className="p-[1vw]  border-gray-200">
+                    1
+                    </div>
                   </div>
                 </div>
               </div>

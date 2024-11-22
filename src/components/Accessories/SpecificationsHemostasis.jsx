@@ -4,7 +4,7 @@ import gsap from "gsap";
 // import { useLenis } from "@studio-freight/react-lenis"; // Import the useLenis hook
 import { useLenis } from "lenis/react";
 
-const Specifications = () => {
+const SpecificationsHemostasis = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
   const lenis = useLenis(); // Use the Lenis hook to get the Lenis instance
@@ -57,7 +57,7 @@ const Specifications = () => {
             </button>
           </div>
           <div className="w-[100%] h-[100%] absolute z-[-1]">
-            <Image src="/assets/endolc/specifications-bg.png" fill alt="specifications-bg"/>
+            <Image src="/assets/accessories/specifications-bg.png" fill alt="specifications-bg"/>
 
           </div>
         </div>
@@ -82,48 +82,58 @@ const Specifications = () => {
                 </div>
               </div>
               <p className="text-[2.5vw] text-[#2A2A2A] font-light  leading-[1] mobile:text-[8vw] mobile:text-center  ">
-               Specification
+                Technical Specifications
               </p>
               <div className="w-full text-[1.25vw] font-light mt-[3vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] ">
                 <div className="flex w-full border-b border-gray-200  mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
                   <div className="flex-[0.5] p-[1vw] font-light">
-                   RERDER CODE
+                    Code
                   </div>
                   <div className="flex-1 flex justify-between ">
-                    <div className="p-[1vw] font-light  border-gray-200 w-[25vw]">
-                     DESCRIPTION
+                    <div className="p-[1vw] font-light  border-gray-200">
+                    AHVS3000
                     </div>
                     <div className="p-[1vw] font-light  border-gray-200">
-                      SHAFT LENGTH
-                    </div>
-                    <div className="p-[1vw] font-light  border-gray-200">
-                      UNIT/BOX
+                    AHVS3001
                     </div>
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">ADVAPELC-M</div>
-                  <div className="flex-1 flex justify-between ">
-                    <div className="p-[1vw]  border-gray-200">Endoscopic Powered Stapler - Medium</div>
-                    <div className="p-[1vw]  border-gray-200">16cm</div>
-                    <div className="p-[1vw]  border-gray-200">1</div>
-
+                  <div className="flex-[0.5] p-[1vw]">Connector type</div>
+                  <div className="flex-1 flex justify-between  ">
+                    <div className="p-[1vw]  border-gray-200">Push-pull</div>
+                    <div className="p-[1vw]  border-gray-200">Push-click</div>
                   </div>
                 </div>
 
                 <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
-                  <div className="flex-[0.5] p-[1vw]">ADVAPELC-L</div>
+                  <div className="flex-[0.5] p-[1vw]">Quantity per pack</div>
+                  <div className="flex-1 flex justify-between ">
+                    <div className="p-[1vw]  border-gray-200">5</div>
+                    <div className="p-[1vw]  border-gray-200">5</div>
+                  </div>
+                </div>
+
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Max pressure</div>
                   <div className="flex-1 flex justify-between ">
                     <div className="p-[1vw]  border-gray-200">
-                    Endoscopic Powered Stapler - Large
+                      500 PSI
+
                     </div>
                     <div className="p-[1vw]  border-gray-200">
-                    26cm
+                      500 PSI
+
                     </div>
-                    <div className="p-[1vw]  border-gray-200">
-                    1
-                    </div>
+                  </div>
+                </div>
+
+                <div className="flex w-full border-b border-gray-200 mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw] mobile:pt-[6vw]">
+                  <div className="flex-[0.5] p-[1vw]">Shelf life</div>
+                  <div className="flex-1 flex  justify-between ">
+                    <div className="p-[1vw]  border-gray-200">3 Years</div>
+                    <div className="p-[1vw]  border-gray-200">3 Years</div>
                   </div>
                 </div>
               </div>
@@ -137,4 +147,4 @@ const Specifications = () => {
   );
 };
 
-export default Specifications;
+export default SpecificationsHemostasis;
