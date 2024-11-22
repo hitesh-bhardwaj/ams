@@ -40,7 +40,7 @@ export default function App({ Component, pageProps, router }) {
         </AnimatePresence>
       </ReactLenis>
       </MediaContextProvider>
-       {/* <Pixifinal /> */}
+       <Pixifinal />
        
     </>
   );
