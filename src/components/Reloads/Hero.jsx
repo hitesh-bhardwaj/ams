@@ -16,15 +16,22 @@ const Hero = () => {
         delay:0.5,
         ease: "power3.out",
       });
+      gsap.from('.hero-text',{
+        y:10,
+        opacity:0,
+        duration:1,
+        ease:'power3.out',
+        delay:0.5
+      })
   });
   return (
     <>
       <section className="hero relative tablet:pr-[3%]" id="advastap-hero">
         <div className="px-[10%] hero-container overflow-hidden  mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className=" flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+          <div className="relative flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className="relative top-[20%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
-                <h1  className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] w-[60%]">
+                <h1  className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] w-[60%] hero-text">
                   <span
                     className={` leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw] `}
                   >

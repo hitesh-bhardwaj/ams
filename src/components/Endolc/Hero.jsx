@@ -33,6 +33,13 @@ const Hero = () => {
       ease: "power3.out",
 
     })
+    gsap.from('.hero-text',{
+      y:10,
+      opacity:0,
+      duration:1,
+      ease:'power3.out',
+      delay:0.5
+    })
   
   });
   return (
@@ -42,7 +49,7 @@ const Hero = () => {
           <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className=" mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
-                <h1 className="advastap-text text-white text-[5.7vw] aeonik drop-shadow-md leading-[1] fadeup">
+                <h1 className="advastap-text text-white text-[5.7vw] aeonik drop-shadow-md leading-[1] hero-text">
                   <span 
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw] `}
                   >
@@ -59,8 +66,9 @@ const Hero = () => {
             </div>
             <div className="flex flex-col items-center justify-end z-[5] mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%] tablet:top-[30%]">
 
-              <div className="w-[80vw] h-[20vw]  scale-[3] relative right-0 left-[10%] pointer-events-none mobile:bottom-0 mobile:w-[90vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
+              <div className="w-[80vw] h-[20vw]  scale-[3] relative right-0 left-[15%] pointer-events-none mobile:bottom-0 mobile:w-[90vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
                 <Image
+                quality={100}
                   className=" hero-img object-contain drop-shadow-xl shadow-xl"
                   src="/assets/endolc/advastap-endo-lc.png"
                   alt="Hero Image"

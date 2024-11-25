@@ -40,7 +40,7 @@ const Stapling = () => {
                 </div>  
                 </div>
 
-                <div className="w-full h-[15vw]  items-end justify-between   flex ">
+                <div className="w-full h-[15vw]  items-end justify-between flex ">
                     <p  data-para-anim className="font-light text-[2.5vw] text-[#2A2A2A]">
                    Dedicated Reloads for Every Procedures
                     <span  data-para-anim className="block text-[1.25vw] font-light leading-[1.2]">

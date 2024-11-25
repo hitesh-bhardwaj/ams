@@ -13,8 +13,14 @@ const Hero = () => {
         duration: 1.5,
         delay:0.5,
         ease: "power3.out",
-      }
-    );
+      });
+      gsap.from('.hero-text',{
+        y:10,
+        opacity:0,
+        duration:1,
+        ease:'power3.out',
+        delay:0.5
+      })
   });
   return (
     <>
@@ -23,14 +29,14 @@ const Hero = () => {
           <div className="  flex flex-col h-screen w-screen justify-center items-start  mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className=" absolute top-[30%] left-[10%] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className=" flex-col mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
-                <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1]">
+                <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text">
                   <span 
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw]`}
                   >
                    ADVASTAP 
                   </span>
                 </h1>
-                <p data-para-anim className="text-[2vw] leading-[1.5] tracking-wide font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+                <p data-para-anim className="text-[2.1vw] leading-[1.5] tracking-wide font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 Skin Stapler
                 </p>
               </div>

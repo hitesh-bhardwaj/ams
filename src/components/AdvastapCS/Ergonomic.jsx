@@ -1,9 +1,34 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Image from "next/image";
 import { fadeIn } from "../gsapAnimations";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Ergonomic = () => {
   fadeIn();
+  useEffect(() => {
+    if (globalThis.innerWidth > 0) {
+      const ctx = gsap.context(() => {
+        const content = document.querySelectorAll(".ecard-up");
+        content.forEach((content) => {
+          gsap.from(content, {
+            scrollTrigger: {
+              trigger:"#ergonomic",
+              start: "top top",
+              end: "bottom bottom",
+            },
+            opacity: 0,
+            y: 50,
+            ease: 'power3.out',
+            duration: 0.7,
+            stagger: 0.5,
+          });
+        });
+      });
+      return () => ctx.revert();
+    }
+  }, []);
   return (
     <>
       <section className="overflow-hidden relative mobile:py-[10%]" id="ergonomic">
@@ -27,24 +52,24 @@ const Ergonomic = () => {
                 />
               </div>
 
-              <div className="absolute w-[15%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[10%] top-[5%]">
-                <p data-para-anim className="text-[1.67vw] font-light">Removable Anvil Design</p>     
+              <div className="absolute w-[15%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[10%] top-[5%] ecard-up">
+                <p  className="text-[1.67vw] font-light">Removable Anvil Design</p>     
               </div>
-              <div className="absolute w-[18%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] top-[7%]">
-                <p data-para-anim className="text-[1.67vw] font-light">Deeper Housing Capacity</p>
+              <div className="absolute w-[18%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] top-[7%] ecard-up">
+                <p  className="text-[1.67vw] font-light">Deeper Housing Capacity</p>
                 
               </div>
-              <div className="absolute w-[18%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-0 bottom-[20%]">
-                <p data-para-anim className="text-[1.67vw] font-light">Superior Hemostatic Effect</p>
+              <div className="absolute w-[18%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-0 bottom-[20%] ecard-up">
+                <p  className="text-[1.67vw] font-light">Superior Hemostatic Effect</p>
               </div>
-              <div className="absolute w-[15%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[37%] top-[29%]">
-                <p data-para-anim className="text-[1.67vw] font-light">High Staples per Firing</p>
+              <div className="absolute w-[15%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[37%] top-[29%] ecard-up">
+                <p  className="text-[1.67vw] font-light">High Staples per Firing</p>
               </div>
-              <div className="absolute w-[20%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[7%] top-[42%]">
-                <p data-para-anim className="text-[1.67vw] font-light">Adjustable Staple Height Control</p>
+              <div className="absolute w-[20%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[7%] top-[42%] ecard-up">
+                <p  className="text-[1.67vw] font-light">Adjustable Staple Height Control</p>
               </div>
-              <div className="absolute w-[16%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[30%] bottom-[5%]">
-                <p data-para-anim className="text-[1.67vw] font-light">Precise Staple Line Formation</p>
+              <div className="absolute w-[16%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[30%] bottom-[5%] ecard-up">
+                <p  className="text-[1.67vw] font-light">Precise Staple Line Formation</p>
               </div>
             </div>
 

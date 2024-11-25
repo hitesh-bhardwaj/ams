@@ -16,7 +16,7 @@ const SurgicalCard = ({title, img, para }) => {
     <>
     <div className="">
       <p  data-para-anim className="text-[1.67vw] font-light w-[55%] ml-[2vw]">{title}</p>
-      <div className="h-[30vw] w-[25vw] p-[1vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw]">
+      <div className="h-[30vw] w-[25vw] p-[1vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw] hover:shadow-xl hover:drop-shadow-xl transition-all duration-300 ease">
         <div className="h-[70%] w-[95%] rounded-[1vw] flex items-center justify-center surgical-card-image">
           <div className="h-[50%] w-[50%] relative">
             <Image
@@ -70,8 +70,8 @@ const SurgicalOutcomes = () => {
             </h2>
           </div>
 
-          <div className="w-full h-full mt-[5vw] cursor-grab swiper-container">
-            <Swiper className="surgicalSwiper w-full h-full" slidesPerView={3} freeMode={true}  modules={[FreeMode]}>
+          <div className="w-full h-[38vw] mt-[5vw] cursor-grab swiper-container ">
+            <Swiper className="surgicalSwiper w-full h-full overflow-visible" slidesPerView={3} freeMode={true}  modules={[FreeMode]}>
               <SwiperSlide>
                 <SurgicalCard
                 title={"Consistent Perfusion Across Staple Lines"}

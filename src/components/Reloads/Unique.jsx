@@ -4,12 +4,14 @@ import Image from 'next/image'
 const UniqueCard=({src,title,para})=>{
     return(
         <>
-        <div className='rounded-[1.5vw] glassmorphism border border-[#DADADA]flex flex-col  items-center justify-center p-[2vw] w-[35vw]  hover:bg-white hover:shadow-xl hover:drop-shadow-xl'>
-            <div className='w-full h-full relative flex justify-end'>
+        <div className='rounded-[1.5vw] glassmorphism border border-[#DADADA]flex flex-col  items-center justify-center p-[2vw] w-[28vw] h-[18vw]  hover:bg-white hover:shadow-xl hover:drop-shadow-xl duration-300 transition-all ease'>
+            <div className='w-full h-[5vw] left-[-10%] absolute flex justify-end items-center'>
                 <Image src={src} height={80} width={80} alt='unique card'/>
             </div>
-            <p data-para-anim className='text-[2vw] font-medium w-[50%] h-[6vw]'>{title}</p>
-            <p data-para-anim className='text-[1.675vw] font-light'>{para}</p>
+            <div className='flex flex-col items-start justify-between pt-[4vw] gap-[1vw] relative'>
+            <p data-para-anim className='text-[1.67vw]  font-medium w-[50%]  text-[#4A4A4A] flex justify-end'>{title}</p>
+            <p data-para-anim className='text-[1.67vw] font-light w-full text-justify text-[#4A4A4A] '>{para}</p>
+            </div>
             </div>
         </>
     )

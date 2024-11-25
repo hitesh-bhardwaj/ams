@@ -1,9 +1,35 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Image from 'next/image'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hemostasis = () => {
+  useEffect(() => {
+    if (globalThis.innerWidth > 0) {
+      const ctx = gsap.context(() => {
+        const content = document.querySelectorAll(".hcard-up");
+        content.forEach((content) => {
+          gsap.from(content, {
+            scrollTrigger: {
+              trigger:".hemostasis-container",
+              start: "top top",
+              end: "bottom bottom",
+            },
+            opacity: 0,
+            y: 50,
+            ease: 'power3.out',
+            duration: 0.7,
+            stagger: 0.5,
+          });
+        });
+      });
+      return () => ctx.revert();
+    }
+  }, []);
   return (
-    <section className="overflow-hidden relative  mobile:py-[10%]" id="hemostasis">
+    <section className="overflow-hidden relative hemostasis-container  mobile:py-[10%]" id="hemostasis">
     <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] ">
       <div className="w-full h-full flex flex-col items-center justify-center relative gap-[5vw] py-[5vw]">
         <div className="w-full h-full flex flex-col items-center justify-center pt-[5vw] mobile:mb-[10vw] mobile:flex mobile:justify-center">
@@ -24,19 +50,19 @@ const Hemostasis = () => {
             />
           </div>
 
-          <div className="absolute h-fit w-[28%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-0 top-[20%]">
-            <p data-para-anim className="text-[1.67vw] font-light">Maintains hemostasis during complex interventions</p>
+          <div className="absolute h-fit w-[28%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-0 top-[20%] hcard-up">
+            <p  className="text-[1.67vw] font-light">Maintains hemostasis during complex interventions</p>
             
           </div>
-          <div className="absolute h-fit w-[20%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-0 top-[7%]">
-            <p data-para-anim className="text-[1.67vw] font-light">New generation of seal technology</p>
+          <div className="absolute h-fit w-[20%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-0 top-[7%] hcard-up">
+            <p  className="text-[1.67vw] font-light">New generation of seal technology</p>
             
           </div>
-          <div className="absolute  h-fit w-[25%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-0 bottom-[20%]">
-            <p data-para-anim className="text-[1.67vw] font-light">Promotes easy and single handed operation</p>
+          <div className="absolute  h-fit w-[25%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-0 bottom-[20%] hcard-up">
+            <p  className="text-[1.67vw] font-light">Promotes easy and single handed operation</p>
           </div>
-          <div className="absolute  h-fit w-[20%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[10%] bottom-[15%]">
-            <p data-para-anim className="text-[1.67vw] font-light">New generation of seal technology</p>
+          <div className="absolute  h-fit w-[20%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[10%] bottom-[15%] hcard-up">
+            <p  className="text-[1.67vw] font-light">New generation of seal technology</p>
           </div>
         </div>
 

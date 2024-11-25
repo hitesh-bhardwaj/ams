@@ -14,7 +14,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const SurgicalCard = ({ img, para }) => {
   return (
     <>
-      <div className="h-[25vw] w-[20vw] py-[1vw] px-[0.5vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw] hover:bg-white  hover:drop-shadow-xl hover:shadow-rounded">
+      <div className="h-[25vw] w-[20vw] py-[1vw] px-[0.5vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw] hover:bg-white  hover:drop-shadow-xl hover:shadow-xl">
         <div className="h-[70%] w-[95%] rounded-[1vw] flex items-center justify-center surgical-card-image">
           <div className="h-[50%] w-[50%] relative">
             <Image
@@ -67,8 +67,8 @@ const SurgicalOutcomes = () => {
             </h2>
           </div>
 
-          <div className="w-full h-full mt-[5vw] cursor-grab swiper-container">
-            <Swiper className="surgicalSwiper w-full h-full" slidesPerView={4} spaceBetween={20}  freeMode={true}  modules={[FreeMode]}>
+          <div className="w-full h-[28vw] mt-[5vw] cursor-grab swiper-container overflow-visible">
+            <Swiper className="surgicalSwiper w-full h-full overflow-visible" slidesPerView={4} spaceBetween={20}  freeMode={true}  modules={[FreeMode]}>
               <SwiperSlide>
                 <SurgicalCard
                   img={"/assets/poweredlc/surgical-card1.png"}

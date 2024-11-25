@@ -48,22 +48,22 @@ const Think = () => {
           </div>
 
           <div className="absolute left-[5%] flex flex-col items-start justify-center gap-[3vw]">
-          <div className="px-[3vw]  flex items-center justify-center gap-[2vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease">
+          <div className="flex items-center justify-center gap-[2vw] hover:px-[1vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease">
                 <Image src="/assets/skinstapler/point.png" height={50} width={50} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease">User Centric Intuitive Design</p>
 
             </div>
-            <div className="px-[3vw]  flex items-center justify-center gap-[2vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease">
+            <div className="flex items-center justify-center gap-[2vw] hover:px-[1vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease">
                 <Image src="/assets/skinstapler/point.png" height={50} width={50} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease">Versatile Flexibility</p>
 
             </div>
-            <div className="px-[3vw]  flex items-center justify-center gap-[2vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease">
+            <div className="flex items-center justify-center gap-[2vw] hover:px-[1vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease">
                 <Image src="/assets/skinstapler/point.png" height={50} width={50} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease">High Quality Construction</p>
 
             </div>
-            <div className="px-[3vw]  flex items-center justify-center gap-[2vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease">
+            <div className="flex items-center justify-center gap-[2vw] hover:px-[1vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease">
                 <Image src="/assets/skinstapler/point.png" height={50} width={50} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease">Optimized Cosmesis</p>
             </div>
