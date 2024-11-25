@@ -10,7 +10,7 @@ const endolc = () => {
    <>
       <Layout>
             <main>
-              <Hero heading={"advastap ENDO LC"} tagline={"Endoscopic Linear Cutter 3-row"} src={"/assets/endolc/advastap-endo-lc.png"}/>
+              <Hero/>
               <Precision/>
               <Stapling/>
               <Specifications/>

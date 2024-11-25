@@ -41,7 +41,7 @@ const Specifications = () => {
 
   return (
     <>
-      <section id="advastapSpecifications">
+      <section id="advastapSpecifications" className="relative">
         <div className="w-screen h-[30vh] mb-[-3vw] flex overflow-hidden items-center relative pl-[10vw]  tablet:h-[15vh] mobile:h-[20vh] mobile:mb-[-5vh]">
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
@@ -50,16 +50,13 @@ const Specifications = () => {
               </div>
               <div className="h-[1.5vw] w-[1.5vw] ml-[1vw] mobile:h-[3vw] mt-[-3vw] mobile:w-[3vw] tablet:h-[3vw] tablet:w-[3vw] mobile:mt-[-5vh]">
                 <img
-                  src="/assets/icons/arrow-up-right-gradient.svg"
+                  src="/assets/icons/arrow-up-right-purple.svg"
                   alt="arrow icon"
                 />
               </div>
             </button>
           </div>
-          <div className="w-[100%] h-[100%] absolute z-[-1]">
-            <Image src="/assets/endolc/specifications-bg.png" fill alt="specifications-bg"/>
-
-          </div>
+        
         </div>
 
         {/* Modal */}
@@ -131,7 +128,9 @@ const Specifications = () => {
           </div>
           </>
         )}
-
+  <div className="w-[100%] h-[100%] top-0 left-0 absolute z-[-1]">
+            <Image src="/assets/endolc/specifications-bg.png" fill alt="specifications-bg"/>
+          </div>
       </section>
     </>
   );

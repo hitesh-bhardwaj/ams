@@ -1,17 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-// import { useLenis } from "@studio-freight/react-lenis"; // Import the useLenis hook
 import { useLenis } from "lenis/react";
 
 const Specifications = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
-  const lenis = useLenis(); // Use the Lenis hook to get the Lenis instance
+  const lenis = useLenis();
 
   const openModal = () => {
     setIsModalOpen(true);
-    lenis && lenis.stop(); // Stop Lenis on modal open
+    lenis && lenis.stop(); 
     document.body.style.overflow = "hidden";
   };
 
@@ -22,7 +21,7 @@ const Specifications = () => {
       ease: "power2.out",
       onComplete: () => {
         setIsModalOpen(false);
-        lenis && lenis.start(); // Start Lenis on modal close
+        lenis && lenis.start();
         document.body.style.overflow = "";
       },
     });
@@ -41,8 +40,8 @@ const Specifications = () => {
 
   return (
     <>
-      <section id="advastapSpecifications">
-        <div className="w-screen h-[30vh] mb-[-3vw] flex overflow-hidden items-center relative pl-[10vw]  tablet:h-[15vh] mobile:h-[20vh] mobile:mb-[-5vh]">
+      <section id="advastapSpecifications" className="relative">
+        <div className="w-screen h-[30vh] mb-[-3vw] flex overflow-hidden items-center pl-[10vw]  tablet:h-[15vh] mobile:h-[20vh] mobile:mb-[-5vh]">
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
               <div className="text-white aeonik text-[2.5vw] uppercase mt-[-3vw] leading-[1.2] tracking-widest advastap-text mobile:text-[4.8vw] tablet:text-[5vw] mobile:mt-[-5vh]">
@@ -50,16 +49,13 @@ const Specifications = () => {
               </div>
               <div className="h-[1.5vw] w-[1.5vw] ml-[1vw] mobile:h-[3vw] mt-[-3vw] mobile:w-[3vw] tablet:h-[3vw] tablet:w-[3vw] mobile:mt-[-5vh]">
                 <img
-                  src="/assets/icons/arrow-up-right-gradient.svg"
+                  src="/assets/icons/arrow-up-right-purple.svg"
                   alt="arrow icon"
                 />
               </div>
             </button>
           </div>
-          <div className="w-[100%] h-[100%] absolute z-[-1]">
-            <Image src="/assets/endolc/specifications-bg.png" fill alt="specifications-bg"/>
-
-          </div>
+         
         </div>
 
         {/* Modal */}
@@ -175,6 +171,10 @@ const Specifications = () => {
           </>
         )}
 
+<div className="w-[100%] h-[100%] absolute z-[-1] top-0 left-0">
+            <Image src="/assets/endolc/specifications-bg.png" fill alt="specifications-bg"/>
+
+          </div>
       </section>
     </>
   );

@@ -2,23 +2,31 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
+import { fadeIn } from "../gsapAnimations";
+import 'swiper/css/free-mode';
+import { FreeMode } from 'swiper/modules';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const SurgicalCard = ({ img, para }) => {
   return (
     <>
-      <div className="h-[25vw] w-[20vw] p-[1vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw]">
+      <div className="h-[25vw] w-[20vw] py-[1vw] px-[0.5vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw] hover:bg-white  hover:drop-shadow-xl hover:shadow-rounded">
         <div className="h-[70%] w-[95%] rounded-[1vw] flex items-center justify-center surgical-card-image">
           <div className="h-[50%] w-[50%] relative">
             <Image
               src={img}
               fill
               alt="surgical card"
-              className="object-contain"
+              className="object-contain fadein "
             />
           </div>
         </div>
-        <div className=" aeonik font-light text-[1.31vw] text-center">
-          <p>{para}</p>
+        <div className=" aeonik text-center font-light text-[1.25vw] w-[95%] ">
+          <p data-para-anim>{para}</p>
         </div>
       </div>
     </>
@@ -26,10 +34,30 @@ const SurgicalCard = ({ img, para }) => {
 };
 
 const SurgicalOutcomes = () => {
+  fadeIn();
+  useGSAP(()=>{
+    if(globalThis.innerWidth>1024){
+    const tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.swiper-container'
+        }
+    });
+    tl.fromTo(".surgicalSwiper",{
+        xPercent:70,
+        opacity:0.5
+    },{
+        xPercent:0,
+        duration: 2,
+    delay: 0.3,
+    opacity:1,
+    ease: "power3.out",
+    })
+};
+});
   return (
-    <section id="surgical-outcomes">
+    <section id="surgical-outcomes" className="relative">
       <div className="w-screen h-full container-lg">
-        <div className="w-full h-full flex flex-col items-center justify-center py-[5vw] relative">
+        <div className="w-full h-full flex flex-col items-center justify-center py-[5vw] ">
           <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
             <h2
               data-para-anim
@@ -39,8 +67,8 @@ const SurgicalOutcomes = () => {
             </h2>
           </div>
 
-          <div className="w-full h-full mt-[5vw] cursor-grab">
-            <Swiper className="mySwiper w-full h-full" slidesPerView={4} spaceBetween={20}>
+          <div className="w-full h-full mt-[5vw] cursor-grab swiper-container">
+            <Swiper className="surgicalSwiper w-full h-full" slidesPerView={4} spaceBetween={20}  freeMode={true}  modules={[FreeMode]}>
               <SwiperSlide>
                 <SurgicalCard
                   img={"/assets/poweredlc/surgical-card1.png"}
@@ -82,16 +110,17 @@ const SurgicalOutcomes = () => {
             </Swiper>
           </div>
 
-          <div className="absolute h-[100%] w-[100vw]">
+         
+        </div>
+      </div>
+      <div className="absolute h-[100%] w-[100vw] top-0 left-0  z-[-1]">
             <Image
               src="/assets/poweredlc/surgical-bg.png"
               fill
               alt="surgical bg"
-              className="object-cover z-[-1]"
+              className="object-cover"
             />
           </div>
-        </div>
-      </div>
     </section>
   );
 };

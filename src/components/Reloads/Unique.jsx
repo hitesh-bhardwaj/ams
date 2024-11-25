@@ -4,12 +4,12 @@ import Image from 'next/image'
 const UniqueCard=({src,title,para})=>{
     return(
         <>
-        <div className='rounded-[1.5vw] glassmorphism border border-[#DADADA]flex flex-col  items-center justify-center p-[2vw] w-[35vw]'>
+        <div className='rounded-[1.5vw] glassmorphism border border-[#DADADA]flex flex-col  items-center justify-center p-[2vw] w-[35vw]  hover:bg-white hover:shadow-xl hover:drop-shadow-xl'>
             <div className='w-full h-full relative flex justify-end'>
                 <Image src={src} height={80} width={80} alt='unique card'/>
             </div>
-            <p className='text-[2vw] font-medium w-[50%] h-[6vw]'>{title}</p>
-            <p className='text-[1.675vw] font-light'>{para}</p>
+            <p data-para-anim className='text-[2vw] font-medium w-[50%] h-[6vw]'>{title}</p>
+            <p data-para-anim className='text-[1.675vw] font-light'>{para}</p>
             </div>
         </>
     )
@@ -17,7 +17,7 @@ const UniqueCard=({src,title,para})=>{
 
 const Unique = () => {
   return (
-    <section id="unique">
+    <section id="unique" className='relative'>
     <div className="w-screen h-full container-lg">
       <div className="w-full h-full flex flex-col items-center justify-center py-[5vw] relative">
         <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
@@ -36,16 +36,17 @@ const Unique = () => {
          
         </div>
 
-        <div className="absolute h-[100%] w-[100vw]">
+      
+      </div>
+    </div>
+    <div className="absolute h-[100%] w-[100vw] top-0 left-0 z-[-1]">
           <Image
             src="/assets/poweredlc/surgical-bg.png"
             fill
             alt="surgical bg"
-            className="object-cover z-[-1]"
+            className="object-cover"
           />
         </div>
-      </div>
-    </div>
   </section>
   )
 }

@@ -7,8 +7,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => {
   paraAnim();
-  useGSAP(() => {
-   
+  useGSAP(() => { 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "hero-container",
