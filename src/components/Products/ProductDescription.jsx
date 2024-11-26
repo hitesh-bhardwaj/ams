@@ -13,19 +13,19 @@ const ProductDescription = ({className}) => {
   fadeUp();
   if (globalThis.innerWidth < 1024) {
   } else {
-    useGSAP(() => {
-      gsap.from(".product-description-card", {
-        yPercent: 50,
-        opacity: 0,
-        duration: 0.7,
-        scrollTrigger: {
-          trigger: ".product-description-card-container",
-          start: "top 80%",
-          end: "bottom 40%",
-        },
-        stagger: 0.1,
-      });
-    });
+    // useGSAP(() => {
+    //   gsap.from(".product-description-card", {
+    //     yPercent: 50,
+    //     opacity: 0,
+    //     duration: 0.7,
+    //     scrollTrigger: {
+    //       trigger: ".product-description-card-container",
+    //       start: "top 80%",
+    //       end: "bottom 40%",
+    //     },
+    //     stagger: 0.1,
+    //   });
+    // });
   }
   return (
     <>
