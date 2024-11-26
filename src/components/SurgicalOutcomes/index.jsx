@@ -13,8 +13,8 @@ const SurgicalCard = ({ img, para,title,tclass }) => {
   return (
     <>
      <div className="">
-        <p  data-para-anim className={`text-[1.67vw] font-light w-[85%] ml-[2vw] mobile:hidden ${tclass}`}>{title}</p>
-        <div className="h-[25vw] w-[20vw] p-[1vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw] mobile:w-[90vw] mobile:h-[110vw] mobile:rounded-[9vw]">
+        <p  data-para-anim className={`text-[1.67vw] font-light w-[85%] ml-[2vw] ${tclass} mobile:text-[8vw] mobile:w-full`}>{title}</p>
+        <div className="h-[25vw] w-[20vw] p-[1vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw] mobile:w-[85vw] mobile:h-[110vw] mobile:rounded-[9vw]">
           <div className="h-[70%] w-[95%] rounded-[1vw] flex items-center justify-center surgical-card-image mobile:rounded-[6vw] mobile:h-[60%]">
             <div className="h-[50%] w-[50%] relative">
               <Image
@@ -120,7 +120,7 @@ const SurgicalOutcomes = ({data, tclass}) => {
           {/* Navigation buttons */}
           <div className="w-full hidden mobile:block">
             <div
-              className={`absolute z-[5] bottom-[7%] left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer bg-white/50 ${
+              className={`absolute z-[5] bottom-[2%] left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer bg-white/50 ${
                 activeButton === "next"
                   ? "text-white border-none"
                   : "bg-transparent text-[#111111]"
@@ -147,7 +147,7 @@ const SurgicalOutcomes = ({data, tclass}) => {
             </div>
 
             <div
-              className={`absolute z-[5] bottom-[7%] left-[39%] translate-x-[-38%] bg-white/50 overflow-hidden py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer ${
+              className={`absolute z-[5] bottom-[2%] left-[39%] translate-x-[-38%] bg-white/50 overflow-hidden py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer ${
                 activeButton === "prev"
                   ? "text-white border-none"
                   : "bg-transparent text-[#111111]"

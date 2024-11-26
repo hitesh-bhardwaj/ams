@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import Ergonomic from '@/components/PoweredLC/Ergonomic'
 import Hero from '@/components/PoweredLC/Hero'
-import Specifications from '@/components/PoweredLC/Specifications'
+import PoweredlcSpecifications from '@/components/PoweredLC/PoweredlcSpecifications'
 import SurgicalOutcomes from '@/components/SurgicalOutcomes'
 import React from 'react'
 
@@ -43,9 +43,8 @@ const poweredlc = () => {
     <main>
      <Hero/>
      <Ergonomic/>
-     {/* <SurgicalOutcomes/> */}
      <SurgicalOutcomes data={surgicalData} tclass={"hidden"}/>
-     <Specifications/>
+   <PoweredlcSpecifications/>
     </main>
   </Layout>
   )

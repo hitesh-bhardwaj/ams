@@ -1,41 +1,32 @@
 import Ergonomic from '@/components/AdvastapCS/Ergonomic'
 import Hero from '@/components/AdvastapCS/Hero'
-import Specifications from '@/components/AdvastapCS/Specifications'
+import Specifications from '@/components/AdvastapCS/AdvastapSpecifications'
 import Layout from '@/components/Layout'
 import SurgicalOutcomes from '@/components/SurgicalOutcomes'
 import React from 'react'
 
 const surgicalData = [
   {
-    img: "/assets/poweredlc/surgical-card1.png",
-    para: "Uniform Pressure ensures consistent staple line formation.",
-    title:"Versatile Performance"
+    img: "/assets/advastapcs/surgical-card1.png",
+    para: "Promotes effective blood flow & tissue healing.",
+    title:"Consistent Perfusion Across Staple Lines"
   },
   {
-    img: "/assets/poweredlc/surgical-card2.png",
-    para: "Fewer leaks and enhanced staple formation.",
+    img: "/assets/advastapcs/surgical-card2.png",
+    para: "Adapts to a broad range of tissue thicknesses.",
+     title:"Versatile Performance"
+  },
+  {
+    img: "/assets/advastapcs/surgical-card3.png",
+    para: "Ensures secure closures & reduces post-surgical complications.",
     title:"Minimal Anastomotic Leakage"
   },
   {
-    img: "/assets/poweredlc/surgical-card3.png",
-    para: "Consistent results in challenging tissues.",
+    img: "/assets/advastapcs/surgical-card4.png",
+    para: "Ensures long-term surgical success.",
     title:"Decreased Recurrence Rates"
   },
-  {
-    img: "/assets/poweredlc/surgical-card4.png",
-    para: "Reduced slippage during firing.",
-    title:"Decreased Recurrence Rates"
-  },
-  {
-    img: "/assets/poweredlc/surgical-card5.png",
-    para: "Wider tapered pockets for improved capture.",
-    title:"Decreased Recurrence Rates"
-  },
-  {
-    img: "/assets/poweredlc/surgical-card6.png",
-    para: "B-form stapling for greater efficiency.",
-    title:"Decreased Recurrence Rates"
-  },
+  
 ];
 const advastapcs = () => {
   return (

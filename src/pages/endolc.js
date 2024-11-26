@@ -1,8 +1,8 @@
+import EndolcSpecifications from '@/components/Endolc/EndolcSpecifications'
 import Hero from '@/components/Endolc/Hero'
 import Precision from '@/components/Endolc/Precision'
 import Stapling from '@/components/Endolc/Stapling'
 import Layout from '@/components/Layout'
-import Specifications from '@/components/Specifications'
 import React from 'react'
 
 const endolc = () => {
@@ -13,7 +13,7 @@ const endolc = () => {
               <Hero/>
               <Precision/>
               <Stapling/>
-              <Specifications/>
+              <EndolcSpecifications/>
             </main>
           </Layout>
        

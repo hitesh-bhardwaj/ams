@@ -8,8 +8,8 @@ const UniqueCard=({src,title,para})=>{
             <div className='w-full h-[5vw] absolute top-[15%] right-[-30%] mobile:left-0 mobile:h-[28vw]  mobile:top-[10%]'>
                 <Image src={src} height={80} width={80} alt='unique card' className='object-contain w-full h-full'/>
             </div>
-            <div className='flex flex-col w-full h-full justify-end items-center'>
-            <p data-para-anim className='text-[1.67vw] font-medium w-[45%] py-[1vw] mobile:text-[8vw] mobile:w-[95%] mobile:text-center mobile:leading-[1]'>{title}</p>
+            <div className='flex flex-col w-full h-full justify-end items-start'>
+            <p data-para-anim className='text-[1.67vw] font-medium w-[50%] py-[1vw] mobile:text-[8vw] mobile:w-[95%] mobile:text-center mobile:leading-[1]'>{title}</p>
             <p data-para-anim className='text-[1.67vw] font-light text-justify mobile:text-[5.5vw] mobile:leading-[1.2]  mobile:text-center mobile:mt-[7vw]'>{para}</p>
 
             </div>
