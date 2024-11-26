@@ -57,7 +57,7 @@ const Hero = () => {
                   </span>
                 </h1>
                 <div className="hidden mobile:block w-[50%] h-[4px] bg-black/30"></div>
-                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-widest font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-widest font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-[60%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 Endoscopic Linear Cutter 3-row
                 </p>
               </div>
@@ -67,7 +67,7 @@ const Hero = () => {
             </div>
             <div className="flex flex-col items-center justify-end z-[5] mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%] tablet:top-[30%]">
 
-              <div className="w-[80vw] h-[20vw]  scale-[3] relative right-0 left-[15%] pointer-events-none mobile:bottom-0 mobile:left-auto mobile:right-[-50%] mobile:top-[70%] mobile:w-[50vw] mobile:h-[30vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
+              <div className="w-[80vw] h-[20vw]  scale-[4] relative top-[30%] left-[25%] pointer-events-none mobile:top-[110%] mobile:left-auto mobile:right-[-60%] mobile:w-[50vw] mobile:h-[30vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
                 <Image
                 quality={100}
                   className=" hero-img object-contain drop-shadow-xl shadow-xl mobile:shadow-none mobile:drop-shadow-none mobile:rotate-[30deg]"

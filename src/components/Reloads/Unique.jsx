@@ -4,13 +4,13 @@ import Image from 'next/image'
 const UniqueCard=({src,title,para})=>{
     return(
         <>
-        <div className='rounded-[1.5vw] glassmorphism border border-[#DADADA] flex flex-col  items-center justify-center p-[2vw] w-[28vw] h-[18vw] mobile:w-[75vw] mobile:h-[105vw] mobile:rounded-[9vw] mobile:gap-[5vw]  hover:bg-white hover:shadow-xl hover:drop-shadow-xl duration-300 transition-all ease'>
-            <div className='w-full h-[5vw] left-[-10%] absolute flex justify-end mobile:justify-start mobile:h-[30vw] mobile:w-[30vw] items-center'>
+        <div className='rounded-[1.5vw] glassmorphism border border-[#DADADA] flex flex-col  items-start justify-end p-[2vw] w-[25vw] h-[18vw] mobile:w-[80vw] mobile:h-[95vw] mobile:rounded-[7vw]   hover:bg-white hover:shadow-xl hover:drop-shadow-xl duration-300 transition-all ease mobile:pb-[10vw] mobile:px-[6vw] '>
+            <div className='w-full h-[5vw] absolute top-[15%] right-[-30%] mobile:left-0 mobile:h-[28vw]  mobile:top-[10%]'>
                 <Image src={src} height={80} width={80} alt='unique card' className='object-contain w-full h-full'/>
             </div>
-            <div className='flex flex-col items-start justify-between pt-[4vw] gap-[1vw] relative'>
-            <p data-para-anim className='text-[1.67vw] font-medium w-[50%] h-[6vw] mobile:text-[8vw] mobile:w-full mobile:text-center mobile:leading-[1]'>{title}</p>
-            <p data-para-anim className='text-[1.67vw] font-light mobile:text-[5.5vw] mobile:leading-[1.2] mobile:w-[90%] mobile:text-center mobile:mt-[7vw]'>{para}</p>
+            <div className='flex flex-col w-full h-full justify-end items-center'>
+            <p data-para-anim className='text-[1.67vw] font-medium w-[45%] py-[1vw] mobile:text-[8vw] mobile:w-[95%] mobile:text-center mobile:leading-[1]'>{title}</p>
+            <p data-para-anim className='text-[1.67vw] font-light text-justify mobile:text-[5.5vw] mobile:leading-[1.2]  mobile:text-center mobile:mt-[7vw]'>{para}</p>
 
             </div>
             </div>
@@ -32,8 +32,7 @@ const Unique = () => {
           </h2>
         </div>
        <div className='mobile:w-screen  mobile:overflow-scroll mobile:px-[5%]'>
-
-        <div className="w-full h-full mt-[5vw] flex items-center justify-between gap-[2vw] mobile:w-[230vw] mobile:gap-[5vw]">
+        <div className="w-full h-full mt-[5vw] flex items-center justify-between gap-[4vw] mobile:w-[230vw] mobile:gap-[5vw] mobile:pb-[5vw]">
             <UniqueCard src={"/assets/reloads/unique-card1.png"} title={"Less Stress:"} para={"Graduated compression for reduced tissue trauma"}/>
             <UniqueCard src={"/assets/reloads/unique-card2.png"} title={"Superior Performance:"} para={"Reliable results across all tissue types"}/>
             <UniqueCard src={"/assets/reloads/unique-card3.png"} title={"Greater Perfusion:"} para={"Enhanced staple line integration."}/>

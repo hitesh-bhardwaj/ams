@@ -62,7 +62,7 @@ const Hero = () => {
                   </span>
                 </h1>
                 <div className="w-[70vw] h-[4px] bg-black/50 hidden mobile:block"></div>
-                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-widest font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-widest font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-[60%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 Powered Linear Cutter 3-row
                 </p>
               </div>
@@ -71,7 +71,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse mobile:right-0 mobile:top-[20%] tablet:top-[30%]">
-              <div className="w-[80vw] h-[25vw]  scale-[1.8] relative left-[45%] top-[20%] mobile:top-[80%] mobile:left-[60%] mobile:w-[60vw] mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] pointer-evente-none">
+              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-45%] top-[-5%] mobile:top-[80%] mobile:left-[60%] mobile:w-[60vw] mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] pointer-evente-none">
                 <Image
                   className="object-contain hero-img-1"
                   src="/assets/poweredlc/lc-1.png"
@@ -81,7 +81,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="w-[80vw] h-[20vw]  scale-[1.7] left-[-35%] bottom-[5%] absolute  mobile:top-[35%] mobile:left-[20%] mobile:w-[60vw] mobile:h-[50vw] tablet:w-[55vw] tablet:h-[60vw] z-[0] fadeUp ">
+            <div className="w-[80vw] h-[20vw]  scale-[1.3] left-[-20%] bottom-[5%] absolute  mobile:top-[35%] mobile:left-[5%] mobile:w-[60vw] mobile:h-[50vw] tablet:w-[55vw] tablet:h-[60vw] z-[0] fadeUp ">
                 <Image
                   className="object-contain hero-img-2"
                   src="/assets/poweredlc/lc-2.png"
