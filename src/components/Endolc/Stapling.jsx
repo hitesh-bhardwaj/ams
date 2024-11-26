@@ -9,7 +9,7 @@ const Stapling = () => {
   return (
     <>
       <section className="overflow-hidden relative mobile:py-[10%]" id="stapling">
-        <div className="w-screen overflow-hidden h-full pl-[10vw] mobile:h-[150vh] tablet:h-[70%] mobile:pl-0">
+        <div className="w-screen overflow-hidden h-full pl-[10vw] mobile:h-[155vh] tablet:h-[70%] mobile:pl-0">
           <div className=" flex flex-col items-center justify-center  py-[5vw] ">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
               <h2 data-para-anim className="title-2 aeonik mobile:text-center">Smart Stapling</h2>

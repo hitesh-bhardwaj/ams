@@ -55,6 +55,8 @@ const Precision = () => {
                 alt="Precision bg"
                 className="object-cover"/>
             </div>
+            <span className="w-[26vw] h-[2px] bg-black/50 absolute top-[60%] left-[28%] rotate-[-25deg] lineDraw mobile:w-[60vw] mobile:rotate-[80deg] mobile:top-[48%] mobile:left-[30%] "></span>
+            <span className="w-[28vw] h-[2px] bg-black/50 absolute top-[80%] left-[24%] lineDraw mobile:rotate-[110deg] mobile:top-[75%] mobile:left-[28%]"></span>
       </section>
     </>
   );

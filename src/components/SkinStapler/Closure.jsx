@@ -6,12 +6,12 @@ const Closure = () => {
     <section className="overflow-hidden relative mobile:py-[10%]" id="think">
       <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] ">
         <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] py-[5vw]">
-          <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
+          <div className="w-full h-full flex flex-col items-center justify-center mobile:flex mobile:justify-center">
             <h2
               data-para-anim
-              className="title-2 aeonik text-center mobile:text-center"
+              className="title-2 aeonik text-center mobile:text-center mobile:w-[80%]"
             >
-             Closure Than You Think
+             Closure than you think
             </h2>
           </div>
          

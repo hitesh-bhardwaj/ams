@@ -47,6 +47,9 @@ const Versatility = () => {
             className="object-cover z-[-1]"
           />
         </div>
+        <span className='absolute top-[57%] left-[39.5%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[15%] mobile:left-auto'><span className='w-[1vw] h-[1vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw]'></span></span>
+        <span className="w-[18vw] h-[2px] bg-black/50 absolute top-[70%] left-[38%] rotate-[45deg] lineDraw mobile:w-[75vw] mobile:rotate-[122deg] mobile:top-[70%] mobile:left-[22%] "></span>
+
   </section>
   )
 }
