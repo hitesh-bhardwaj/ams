@@ -49,7 +49,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero mb-[10%] tablet:pr-[3%] relative w-screen overflow-hidden" id="advastap-hero">
+      <section className="hero tablet:pr-[3%] relative w-screen overflow-hidden" id="advastap-hero">
         <div className="px-[10%] hero-container overflow-hidden  mobile:pt-[30%] tablet:px-[5%] mobile:px-[8%]">
           <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className=" relative top-[10%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">

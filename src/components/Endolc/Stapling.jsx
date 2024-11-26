@@ -43,8 +43,8 @@ const Stapling = () => {
                 </div>  
                 </div>
 
-                <div className="w-full h-fit mt-[5vw] items-start justify-between  flex  mobile:h-full mobile:mt-[15vw] mobile:px-[5vw] flex-col mobile:gap-[3vw]">
-                    <p  data-para-anim className="font-light text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:leading-[1.2] mobile:text-center">
+                <div className="w-full h-fit mt-[5vw] items-start justify-between  flex  mobile:h-full mobile:mt-[15vw] mobile:px-[5vw] flex-col mobile:items-center mobile:gap-[3vw] ">
+                    <p  data-para-anim className="font-light text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:leading-[1.2] text-center">
                    Dedicated Reloads for Every Procedures</p>
                     <p  data-para-anim className="block text-[1.25vw] font-light leading-[1.2] mobile:text-[4vw] mobile:text-center">
                     Experience seamless peformance with our specialized reloads, designed to enhance efficiency without the need to change cartridges. </p>

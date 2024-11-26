@@ -33,8 +33,8 @@ const Ergonomic = () => {
         className="overflow-hidden  mobile:py-[10%] relative"
         id="ergonomic"
       >
-        <div className="w-screen h-full container-lg z-[5] mobile:h-[120vh] tablet:h-[70%] ">
-          <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] py-[5vw]">
+        <div className="w-screen h-full container-lg z-[5] mobile:h-[170vh] tablet:h-[70%] ">
+          <div className="w-full h-full flex flex-col items-center justify-center py-[5vw] ">
             <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit">
               <h2
                 data-para-anim
@@ -43,10 +43,10 @@ const Ergonomic = () => {
                 Ergonomic Design For Comfortable Single-Hand Use
               </h2>
             </div>
-            <div className="  w-full h-full flex flex-col items-center justify-center">
-              <div className="h-[50vw] w-[80vw]  ">
+            <div className=" h-[50vw] w-[80vw] mobile:h-full flex flex-col items-center justify-end mobile:pb-[10%]">
+             
                 <div className=" w-full h-full flex flex-col items-center justify-center mobile:h-fit">
-                  <div className="h-[50vw] w-[80vw] relative mobile:w-[150vw] mobile:h-[120vw] mobile:left-[-10%] mobile:absolute mobile:top-[10%] ">
+                  <div className="h-[50vw] w-[80vw] relative mobile:w-[200vw] mobile:h-[100vw] mobile:left-[-25%] mobile:absolute mobile:top-[15%] ">
                     <Image
                       src="/assets/poweredlc/ergonomic-lc2.png"
                       fill
@@ -108,8 +108,6 @@ const Ergonomic = () => {
                       and fire functions.
                     </p>
                   </div>
-                  </div>
-                  
                     <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[65%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
                       <p className="text-[1.67vw] font-light mobile:text-[6vw]">
                         Actuated Motor:
@@ -128,13 +126,15 @@ const Ergonomic = () => {
                           for delicate tissue management.
                         </p>
                       </div>
+                  </div>
+                  
                      
                     </div>
                   </div>
                 </div>
                
               </div>
-            </div>
+           
           
 
         
