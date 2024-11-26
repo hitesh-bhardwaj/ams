@@ -49,18 +49,19 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero relative tablet:pr-[3%]" id="advastap-hero">
-        <div className="px-[10%]  hero-container overflow-hidden  mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className=" flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
-            <div className=" relative top-[20%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
-              <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
-                <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text">
-                  <span
+      <section className="hero mb-[10%] tablet:pr-[3%] relative w-screen overflow-hidden" id="advastap-hero">
+        <div className="px-[10%] hero-container overflow-hidden  mobile:pt-[30%] tablet:px-[5%] mobile:px-[8%]">
+          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+            <div className=" relative top-[10%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
+              <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center relative z-[1]">
+                <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] ">
+                  <span 
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw]`}
                   >
                    ADVASTAP POWERED LC
                   </span>
                 </h1>
+                <div className="w-[70vw] h-[4px] bg-black/50 hidden mobile:block"></div>
                 <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-widest font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 Powered Linear Cutter 3-row
                 </p>
@@ -69,8 +70,8 @@ const Hero = () => {
                 <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[8vw] lineSpan"></span>
               </div>
             </div>
-            <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%] tablet:top-[30%]">
-              <div className="w-[80vw] h-[25vw]  scale-[1.8] relative left-[45%] top-[20%] mobile:bottom-0 mobile:w-[90vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] pointer-evente-none">
+            <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse mobile:right-0 mobile:top-[20%] tablet:top-[30%]">
+              <div className="w-[80vw] h-[25vw]  scale-[1.8] relative left-[45%] top-[20%] mobile:top-[80%] mobile:left-[60%] mobile:w-[60vw] mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] pointer-evente-none">
                 <Image
                   className="object-contain hero-img-1"
                   src="/assets/poweredlc/lc-1.png"
@@ -80,7 +81,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="w-[80vw] h-[20vw] scale-[1.7] left-[-35%] bottom-[5%] relative  mobile:bottom-0 mobile:w-[90vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] pointer-events-none ">
+            <div className="w-[80vw] h-[20vw]  scale-[1.7] left-[-35%] bottom-[5%] absolute  mobile:top-[35%] mobile:left-[20%] mobile:w-[60vw] mobile:h-[50vw] tablet:w-[55vw] tablet:h-[60vw] z-[0] fadeUp ">
                 <Image
                   className="object-contain hero-img-2"
                   src="/assets/poweredlc/lc-2.png"

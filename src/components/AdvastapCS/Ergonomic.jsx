@@ -31,26 +31,27 @@ const Ergonomic = () => {
   }, []);
   return (
     <>
-      <section className="overflow-hidden relative mobile:py-[10%]" id="ergonomic">
-        <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] ">
+      <section className="overflow-hidden  mobile:py-[10%] relative" id="ergonomic">
+        <div className="w-screen h-[70vw] container-lg  mobile:h-full tablet:h-[70%] ">
           <div className="w-full h-full flex flex-col items-center justify-center relative gap-[5vw] py-[5vw]">
-            <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
+            <div className="w-full h-full flex flex-col items-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
               <h2
                 data-para-anim
-                className="title-2 aeonik text-center w-[60%] mobile:text-center"
+                className="title-2 aeonik text-center w-[60%] mobile:text-center mobile:w-full"
               >
                 Ergonomic Design For Comfortable Single-Hand Use
               </h2>
             </div>
-            <div className="relative w-full h-full flex flex-col items-center justify-center">
-              <div className="h-[50vw] w-[80vw] relative scale-[1] left-[10%] pointer-events-none">
+            <div className="absolute w-full h-full flex flex-col items-center justify-center">
+              <div className="h-[50vw] w-[80vw] relative scale-[1] left-[10%] mobile:w-[150vw] mobile:top-[10%] mobile:left-[-30%] mobile:absolute  pointer-events-none">
                 <Image
                   src="/assets/advastapcs/circular-stapler2.png"
                   fill
                   alt="Ergonomic Product"
-                  className="object-cover fadein"
+                  className="object-cover mobile:rotate-[40deg] fadein"
                 />
               </div>
+              <div className="mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:mt-[100%]">
 
               <div className="absolute w-[15%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[10%] top-[5%] ecard-up">
                 <p  className="text-[1.67vw] font-light">Removable Anvil Design</p>     
@@ -68,15 +69,16 @@ const Ergonomic = () => {
               <div className="absolute w-[20%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[7%] top-[42%] ecard-up">
                 <p  className="text-[1.67vw] font-light">Adjustable Staple Height Control</p>
               </div>
-              <div className="absolute w-[16%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[30%] bottom-[5%] ecard-up">
+              <div className="absolute w-[16%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[35%] bottom-[15%] ecard-up">
                 <p  className="text-[1.67vw] font-light">Precise Staple Line Formation</p>
               </div>
+           
             </div>
 
-          
           </div>
         </div>
-        <div className="absolute h-[100%] w-[100vw] top-0 left-0 z-[-1]">
+        </div>
+            <div className="absolute h-[100%] w-[100vw] z-[-1] top-0 left-0">
               <Image
                 src="/assets/advastapcs/ergonomic-bg.png"
                 fill
