@@ -9,7 +9,7 @@ const TricCut = () => {
             <div className='w-full flex h-full items-center justify-start pl-[10vw] gap-[8vw] mobile:pl-0 mobile:flex-col mobile:gap-[15vw]'>
               <div className='w-fit h-fit rounded-full'>
                 <div className='w-[20vw] h-[20vw] rounded-full overflow-hidden relative mobile:w-[70vw] mobile:h-[70vw]'>
-                  <Image src={"/assets/advagrip/tricut-circle.png"} alt='tricut-circle' fill/>
+                  <Image src={"/assets/advagrip/tricut-Circle.png"} alt='tricut-circle' fill/>
                 </div>
               </div>
               <div className='w-[45%] h-fit px-[2vw] py-[2.5vw] glassmorphism border rounded-[2.5vw] mobile:w-[95%] mobile:px-[5vw] mobile:py-[7vw] mobile:rounded-[7vw]'>
