@@ -92,6 +92,11 @@ const Redefining = () => {
                 </div>
                
               </div>
+              <div className="w-[100vw] h-[100%] absolute top-0 left-0 z-[-1]">
+                <Image src="/assets/advaspong/redefining-bg.png"
+                fill
+                alt="redefining-bg"/>
+                </div>
       </section>
     </>
   );

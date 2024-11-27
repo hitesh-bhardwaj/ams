@@ -130,6 +130,35 @@ function useRouteColors() {
                     color3: "#307FB2",
                   });
                   break;
+                  case "/bondtape":
+                  setColors({
+                    color1: "#669DE5",
+                    color2: "#669DE5",
+                    color3: "#FFCDBC",
+                  });
+                  break;
+                  case "/cardiovascular":
+                    setColors({
+                      color1: "#669DE5",
+                      color2: "#669DE5",
+                      color3: "#F74141",
+                    });
+                    break;
+                    case "/advagrip":
+                    setColors({
+                      color1: "#D7B3E1",
+                      color2: "#669DE5",
+                      color3: "#669DE5",
+                    });
+                    break;
+                    case "/advastaplc":
+                      setColors({
+                        color1: "#669DE5",
+                        color2: "#669DE5",
+                        color3: "#ACBCFA",
+                      });
+                      break;
+
       default:
         setColors({
           color1: "#D467D7",
