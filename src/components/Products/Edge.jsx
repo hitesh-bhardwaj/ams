@@ -5,7 +5,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP,ScrollTrigger)
 
-const Edge = ({ sectionheading, card1, card2, card3 }) => {
+const Edge = ({ sectionheading, card1, card2, card3,visibility }) => {
   useGSAP(()=>{
     if(globalThis.innerWidth>1024){
       const tl = gsap.timeline({
@@ -48,7 +48,7 @@ const Edge = ({ sectionheading, card1, card2, card3 }) => {
             <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">
               <div className="edge-card1 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50  mobile:w-[90vw] mobile:gap-[10vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:order-1 mobile:text-center tablet:h-[50vw] tablet:w-[23vw]">
                 <div>
-                  <h3 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[8.2vw] tablet:text-[2.5vw]">
+                  <h3 className="text-[2.5vw] font-extralight text-center leading-[1.2] mobile:text-[8.2vw] tablet:text-[2.5vw]">
                     {card1.title}
                   </h3>
                 </div>
@@ -71,7 +71,7 @@ const Edge = ({ sectionheading, card1, card2, card3 }) => {
 
               <div className="edge-card2 py-[3vw] px-[1vw] h-[43vw] w-[43vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw] ">
                 <div className="flex items-center justify-center mobile:flex-col mobile:gap-[5vw]">
-                  <span className="block w-[10.7vw] h-[1.65vw] relative mr-[0.5vw] mobile:w-[36vw] mobile:h-[6vw] tablet:w-[20vw] tablet:h-[3vw]">
+                  <span className={`block w-[10.7vw] h-[1.65vw] relative mr-[0.5vw] mobile:w-[36vw] mobile:h-[6vw] tablet:w-[20vw] tablet:h-[3vw] ${visibility} `}>
                     <Image
                       src="/assets/advacryl/advatray-blue.png"
                       fill
@@ -93,7 +93,7 @@ const Edge = ({ sectionheading, card1, card2, card3 }) => {
                     />
                   </div>
                 </div>
-                <div className="relative  px-[1vw] py-[2vw] w-[37vw] h-[10vw] flex justify-center items-center mobile:h-[25vw] mobile:w-[85vw]">
+                <div className={`relative  px-[1vw] py-[2vw] w-[37vw] h-[10vw] flex justify-center items-center mobile:h-[25vw] mobile:w-[85vw] ${visibility}`}>
                   <Image
                     src={card2.bgsrc}
                     alt="background"
@@ -119,7 +119,7 @@ const Edge = ({ sectionheading, card1, card2, card3 }) => {
 
               <div className="edge-card3 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:gap-[10vw] mobile:text-center mobile:order-2 tablet:h-[50vw] tablet:w-[23vw]">
                 <div>
-                  <h3 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[8.2vw]  tablet:text-[2.5vw] ">
+                  <h3 className="text-[2.5vw] font-extralight text-center leading-[1.2] mobile:text-[8.2vw]  tablet:text-[2.5vw] ">
                     {card3.title}
                   </h3>
                 </div>
