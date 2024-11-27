@@ -16,7 +16,7 @@ const TricCut = () => {
                 <p className='text-[1.8vw] w-full font-light mobile:text-[4.8vw] mobile:text-center'>Produces barbs that delivers a robust anchoring force whilst maintaining the integrity of the strand’s strength.</p>
 
               </div>
-              
+     
 
             </div>
 
