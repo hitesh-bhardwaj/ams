@@ -44,6 +44,33 @@ const FeatureCard = {
     title: " Excellent handling",
   },
 };
+const cardData = [
+  {
+    title: "Composition",
+    description: "90% Glycolide, 10% L-lactide",
+  },
+  {
+    title: "Colour",
+    description: "Undyed and Violet",
+  },
+  {
+    title: "Available Sizes",
+    description: "U.S.P. 2 to 6-0",
+  },
+  {
+    title: "Coating",
+    description:
+      "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
+  },
+  {
+    title: "Tensile Strength",
+    description: "~75% | 14 Days ~55% | 21 Days",
+  },
+  {
+    title: "Absorption Profile",
+    description: "Essentially complete up to 80 days",
+  },
+];
 
 const advamryl = () => {
   fadeUp();
@@ -76,7 +103,7 @@ const advamryl = () => {
                 card3={FeatureCard.card3}
                 card4={FeatureCard.card4}
               />
-              <ProductDescription className={"text-[#E58D72]"} />
+              <ProductDescription className={"text-[#E58D72]"} data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

@@ -44,38 +44,33 @@ const FeatureCard = {
     title: " Excellent handling",
   },
 };
-const ProductCard = {
-  card1: {
-    img: "/assets/advacryl/composition.png",
+const cardData = [
+  {
     title: "Composition",
-    para: "90% Glycolide, 10% L-lactide",
+    description: "90% Glycolide, 10% L-lactide",
   },
-  card2: {
-    img: "/assets/advacryl/color.png",
+  {
     title: "Colour",
-    para: "Undyed and Violet",
+    description: "Undyed and Violet",
   },
-  card3: {
-    img: "/assets/advacryl/sizes.png",
+  {
     title: "Available Sizes",
-    para: "U.S.P. 2 to 6-0",
+    description: "U.S.P. 2 to 6-0",
   },
-  card4: {
-    img: "/assets/advacryl/coating.png",
+  {
     title: "Coating",
-    para: "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
+    description:
+      "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
   },
-  card5: {
-    img: "/assets/advacryl/tensile.png",
+  {
     title: "Tensile Strength",
-    para: "~75%  |  14 Days~55%  |  21 Days",
+    description: "~75% | 14 Days ~55% | 21 Days",
   },
-  card6: {
-    img: "/assets/advacryl/absorption.png",
-    title: "Absorption",
-    para: "Essentially complete upto 80 days",
+  {
+    title: "Absorption Profile",
+    description: "Essentially complete up to 80 days",
   },
-};
+];
 const advacryl = () => {
   fadeUp();
 
@@ -109,7 +104,7 @@ const advacryl = () => {
                 card3={FeatureCard.card3}
                 card4={FeatureCard.card4}
               />
-              <ProductDescription className={"text-[#855EA6]"} />
+              <ProductDescription className={"text-[#855EA6]"} data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

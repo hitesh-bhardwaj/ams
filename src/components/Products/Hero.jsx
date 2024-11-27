@@ -47,7 +47,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
               </div>
 
               <div className="mobile:mt-[20vw]">
-                <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-[75vw] mobile:py-[5%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
+                <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
                   {para2}
                 </p>
               </div>

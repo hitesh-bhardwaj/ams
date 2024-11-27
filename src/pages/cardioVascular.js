@@ -6,10 +6,11 @@ import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Portfolio from "@/components/Endo/Portfolio";
+import ProductCarousel from "@/components/CardioVascular/ProductCarousel";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function cardioVascular() {
+export default function cardiovascular() {
   const content = {
     heading: "Transforming Cardiac Health",
     smallpara:
@@ -41,6 +42,7 @@ fadeup()
               />
               <Genesis content={content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[30%]"} />
+                <ProductCarousel/>
               <Portfolio/>
             </main>
           </Layout>

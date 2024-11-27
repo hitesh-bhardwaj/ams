@@ -19,13 +19,13 @@ const UmbilicalTape = () => {
             Comfort meets confidence
             </p>
           </div>
-          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mobile:text-center mobile:ml-0 ">
+          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mt-[5vw] mobile:text-center mobile:ml-0 ">
             <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:hidden tablet:w-[8vw]"></span>
             <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-full tablet:text-[2.5vw] tablet:max-w-[55%]">
               <span data-para-anim>High-quality, soft and expertly woven cotton, ensures unmatched comfort.</span>
             </p>
           </div>
-          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mobile:text-center mobile:ml-0 ">
+          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mobile:text-center mobile:ml-0  ">
             <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:hidden tablet:w-[8vw]"></span>
             <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-full tablet:text-[2.5vw] tablet:max-w-[55%]">
               <span data-para-anim>Preserves tissue integrity, facilitates easy application and removal.</span>
