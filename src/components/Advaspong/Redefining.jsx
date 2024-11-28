@@ -33,7 +33,7 @@ const Redefining = () => {
         className="overflow-hidden  mobile:py-[10%] relative py-[7%]"
         id="ergonomic"
       >
-        <div className="w-screen h-full container-lg z-[5] mobile:h-[120vh] tablet:h-[70%] ">
+        <div className="w-screen h-full container-lg z-[5] mobile:h-[130vh] tablet:h-[70%] ">
           <div className="w-full h-full flex flex-col items-center justify-center pb-[5vw] ">
             <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit">
               <h2
@@ -56,30 +56,30 @@ const Redefining = () => {
                   </div>
                   <div className="mobile:flex mobile:flex-col mobile:gap-[5vw]">
 
-                  <div className="absolute w-[33%] h-fit rounded-[1vw] px-[2vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[10%] top-[25%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+                  <div className="absolute w-[33%] h-fit rounded-[1vw] px-[2vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[10%] top-[25%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
                     <p
                       data-para-anim
-                      className="text-[1.45vw] font-light mobile:text-[4vw] tracking-wide"
+                      className="text-[1.45vw] font-light mobile:text-[4.5vw] tracking-wide mobile:text-center"
                     >
                      Rapid platelet adhesion & aggregation,
                      achieve haemostasis within 2-3 minutes
                     </p>
                   </div>
-                  <div className="absolute w-[30%] h-fit rounded-[1vw] px-[2vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] top-[30%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
-                    <p className="text-[1.45vw] font-light mobile:text-[4vw]">
+                  <div className="absolute w-[30%] h-fit rounded-[1vw] px-[2vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] top-[30%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
+                    <p className="text-[1.45vw] font-light mobile:text-[4.5vw] tracking-wide mobile:text-center">
                     Extraordinary blood absorption,
                     50-60 times its molecular weight
                     </p>
                   </div>
-                    <div className="absolute w-[30%] h-fit rounded-[1vw] px-[2vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[62%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
-                      <p className="text-[1.45vw] font-light mobile:text-[4vw]">
+                    <div className="absolute w-[30%] h-fit rounded-[1vw] px-[2vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[62%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
+                      <p className="text-[1.45vw] font-light mobile:text-[4.5vw] tracking-wide mobile:text-center">
                       A biodegradable marvel, complete
                       absorption within 3-4 weeks
                       </p>
                     </div>
                    
-                      <div className="absolute w-[30%] h-fit rounded-[1vw] px-[2vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] bottom-[28%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
-                        <p className="text-[1.45vw] font-light mobile:text-[4vw] ">
+                      <div className="absolute w-[30%] h-fit rounded-[1vw] px-[2vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] bottom-[28%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
+                        <p className="text-[1.45vw] font-light mobile:text-[4.5vw] tracking-wide mobile:text-center ">
                         Maximizing delicate tissue protection,
                         minimizing sponge swelling effect
                         </p>

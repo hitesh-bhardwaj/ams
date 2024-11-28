@@ -40,7 +40,7 @@ const Hero = () => {
       >
         <div className="px-[10%] hero-container overflow-hidden  mobile:pt-[30%] tablet:px-[5%] mobile:px-[8%]">
           <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
-            <div className=" relative top-[10%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
+            <div className=" relative top-[10%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 ">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center relative z-[1] mobile:top-[-30%]">
                 <h1 className="text-[#CF181E] text-[5.3vw]  font-light aeonik drop-shadow-md leading-[1] ">
                   <span
@@ -56,7 +56,7 @@ const Hero = () => {
                   Absorbable Gelatin Sponge
                 </p>
               </div>
-              <div className="absolute rounded-[1.5vw] p-[1.5vw] glassmorphism w-[45vw] top-[20vw] left-[5%] mobile:w-[80vw] mobile:left-0 mobile:p-[3vw] mobile:rounded-[3vw] mobile:top-[35vw]">
+              <div className="absolute rounded-[1.5vw] p-[1.5vw] glassmorphism w-[45vw] top-[20vw] left-[5%] mobile:w-[80vw] mobile:left-[3%] mobile:p-[3vw] mobile:rounded-[3vw] mobile:top-[150%]">
                 <p className="text-[1.67vw] font-light mobile:text-[4vw]">
                   Ultra-refined gelatin-based foam <br/> Precise bleed management,
                   unhindered tissue healing Unmatched proficiency, supreme
@@ -73,7 +73,7 @@ const Hero = () => {
                   priority={true}
                   fill
                 />
-                <p className="text-[1.25vw] font-light absolute w-[25%] top-[-20%] left-[35%] mobile:text-[4vw] mobile:w-full mobile:left-[-10%] mobile:text-center mobile:top-[-30%]">
+                <p className="text-[1.25vw] font-light absolute w-[25%] top-[-20%] left-[35%] mobile:text-[4vw] mobile:w-full mobile:left-[-7%] mobile:text-center mobile:top-[-100%]">
                 Empowering haemostasis with
                 confidence and precision
                 </p>

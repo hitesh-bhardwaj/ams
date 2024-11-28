@@ -189,11 +189,11 @@ const ProductDescription = ({ className, data }) => {
   }, []);
   return (
     <section
-      className="mobile:py-[10%] tablet:pb-[10%] pt-[5%] "
+      className="mobile:py-[10%] tablet:pb-[10%] pt-[5%] mobile:overflow-hidden "
       id="product-description"
       ref={sectionRef}
     >
-      <div className="w-screen h-screen container-lg mobile:h-[70%] mobile:px-[3vw] mobile:py-[3vw]  tablet:h-full mobile:overflow-hidden">
+      <div className="w-screen h-screen container-lg mobile:h-[70%] mobile:px-[3vw] mobile:py-[3vw]  tablet:h-full">
         <div className="flex flex-col items-center justify-center gap-[5vw]">
           <div className="mobile:mb-[8vw] tablet:mb-[5vw]">
             <h2
@@ -203,7 +203,7 @@ const ProductDescription = ({ className, data }) => {
               Product Description
             </h2>
           </div>
-          <div className="flex flex-wrap items-center gap-[2vw] product-description-card-container tablet:justify-between mobile:overflow-scroll mobile:flex-nowrap mobile:w-[100vw] mobile:mx-[-10%] mobile:gap-[7vw] mobile:py-[5vw]">
+          <div className="flex flex-wrap items-center gap-[2vw] product-description-card-container tablet:justify-between mobile:overflow-scroll mobile:flex-nowrap mobile:w-[100vw] mobile:gap-[5vw] mobile:p-[5vw]">
             {data.map((card, index) => (
               <div
                 key={index}

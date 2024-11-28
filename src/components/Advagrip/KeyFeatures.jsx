@@ -25,8 +25,8 @@ const FeatureCard = ({ src, title }) => {
             />
           </div>
         </div>
-        <div className='w-full flex justify-center items-center '>
-          <p data-para-anim className='text-[1.7vw] font-light text-center w-[80%] mobile:text-[6vw] tablet:text-[2.5vw] mt-[2vw]'>
+        <div className='w-full flex justify-center items-center mobile:mt-[5vw]'>
+          <p data-para-anim className='text-[1.7vw] font-light text-center w-[80%] mobile:text-[6.5vw] tablet:text-[2.5vw] mt-[2vw] mobile:w-full aeonik'>
             {title}
           </p>
         </div>
@@ -59,14 +59,14 @@ const KeyFeatures = ({ card1, card2, card3, card4 }) => {
   return (
     <>
       <section className='mobile:py-[10%] tablet:py-[10%]' id='features'>
-        <Media greaterThan='mobile'>
+ 
 
-        <div className='h-screen w-screen tablet:h-full'>
-          <div className='h-[90%] w-full border flex flex-col bg-white/50 items-center justify-center gap-[7vw] tablet:py-[3vw] tablet:h-[60%]'>
-            <div>
-              <h2 data-para-anim className='title-2 aeonik'>Not All Barbed Sutures are Created Equal</h2>
+        <div className='h-screen w-screen tablet:h-full mobile:h-full '>
+          <div className='h-[90%] w-full border flex flex-col bg-white/50 items-center justify-center gap-[7vw] tablet:py-[3vw] tablet:h-[60%] mobile:h-full mobile:py-[20%]'>
+            <div className='mobile:w-[90%]'>
+              <h2 data-para-anim className='title-2 aeonik mobile:text-center'>Not All Barbed Sutures are Created Equal</h2>
             </div>
-            <div className='flex items-center justify-evenly px-[5vw] w-full feature-card-container mobile:hidden tablet:flex-wrap tablet:justify-center tablet:items-start'>
+            <div className='flex items-center justify-evenly px-[5vw] w-full feature-card-container mobile:flex-col tablet:flex-wrap tablet:justify-center tablet:items-start mobile:gap-[20vw] mobile:mt-[15vw]'>
               <FeatureCard src={card1.src} title={card1.title} />
               <FeatureCard src={card2.src} title={card2.title} />
               <FeatureCard src={card3.src} title={card3.title} />
@@ -74,75 +74,8 @@ const KeyFeatures = ({ card1, card2, card3, card4 }) => {
             </div>
           </div>
         </div>
-        </Media>
-        <Media at='mobile'>
-        <div className='h-screen w-screen container-lg mobile:h-full relative'>
-          <div className='mb-[10%] mobile:mb-[15vw]'>
-            <h2 className='title-2 aeonik mobile:text-center'>Key Features</h2>
-          </div>
-          <div className='h-[90vw] w-full border rounded-[9vw] flex flex-col bg-white/50 items-center justify-center gap-[6vw] mobile:pt-[10vw] mobile:h-[50vh]'>
-            <div className='w-[47%] flex-col gap-y-[2vw]  mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full'>
-              <Swiper
-                navigation={false}
-                modules={[Navigation]}
-                onSwiper={(swiper) => (swiperRef.current = swiper)}
-                spaceBetween={40}
-                className="molecularSwiper mySwiper mobile:h-[100%] tablet:h-[100%]"
-              >
-                <SwiperSlide>
-                  <FeatureCard src={card1.src} title={card1.title} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FeatureCard src={card2.src} title={card2.title} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <FeatureCard src={card3.src} title={card3.title} />
-                </SwiperSlide>
-              
-              </Swiper>
-              <div
-                className={`absolute z-[5] bottom-[6%] left-[65%] translate-x-[-65%] overflow-hidden border bg-white/50 py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
-                ${activeButton === "next" ? "text-white border-none" : "bg-transparent text-[#111111]"} transition-colors duration-300`}
-                onClick={handleNext}
-              >
-                <span
-                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full 
-                  ${activeButton === "next" ? "scale-100 opacity-100" : "scale-0 opacity-50"} transition-all duration-300`}
-                ></span>
-                <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
-                  <Image
-                    src="/assets/home/arrow-right.png"
-                    alt="arrow-right"
-                    className={`object-cover group-hover:invert transition-all duration-300 
-                    ${activeButton === "next" ? "invert" : "invert-0"}`}
-                    fill
-                  />
-                </div>
-              </div>
-              <div
-                className={`absolute z-[5] bottom-[6%] left-[37%] translate-x-[-38%] bg-white/50 overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
-                ${activeButton === "prev" ? "text-white border-none" : "bg-transparent text-[#111111]"} transition-colors duration-300`}
-                onClick={handlePrev}
-              >
-                <span
-                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full 
-                  ${activeButton === "prev" ? "scale-100 opacity-100" : "scale-0 opacity-50"} transition-all duration-300`}
-                ></span>
-                <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw]">
-                  <Image
-                    src="/assets/home/arrow-left.png"
-                    alt="arrow-left"
-                    className={`object-cover group-hover:invert transition-all duration-300 
-                    ${activeButton === "prev" ? "invert" : "invert-0"}`}
-                    fill
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        </Media>
+      
+        
       </section>
     </>
   )

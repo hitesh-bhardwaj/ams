@@ -117,7 +117,7 @@ const ProductCarousel = () => {
 
 
   return (
-    <section id="productCarousel" className="relative w-screen h-screen overflow-hidden mobile:h-[130vh] mobile:py-[10vw] bg-white py-[5vw] mt-[7%]">
+    <section id="productCarousel" className="relative w-screen h-screen overflow-hidden mobile:h-[130vh] mobile:py-[10vw] bg-white py-[5vw] mt-[7%] mobile:mb-[15%]">
       <div className="w-full h-full flex items-center justify-between pl-[5vw] mobile:flex-col-reverse">
         <div className="w-[50%] mobile:w-full mobile:h-[50vh]">
           <div className="mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
