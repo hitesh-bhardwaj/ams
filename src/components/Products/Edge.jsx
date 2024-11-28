@@ -38,9 +38,9 @@ const Edge = ({ sectionheading, card1, card2, card3,visibility }) => {
   })
   return (
     <>
-      <section className="overflow-hidden mobile:py-[10%]" id="edge">
-        <div className="w-screen h-full container-lg mb-[10%] mobile:h-full tablet:h-[70%]">
-          <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw]">
+      <section className="overflow-hidden mobile:py-[10%] tablet:pt-[10%] py-[5%]" id="edge">
+        <div className="w-screen h-full container-lg mb-[10%] mobile:h-full tablet:h-[70%] tablet:mb-0">
+          <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] tablet:justify-between">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
               <h2 data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectionheading}</h2>
             </div>

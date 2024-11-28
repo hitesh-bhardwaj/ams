@@ -4,10 +4,7 @@ import Image from 'next/image'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { paraAnim, fadeUp } from "../gsapAnimations";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
-import { Media } from '../media';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,9 +59,9 @@ const KeyFeatures = ({ card1, card2, card3, card4 }) => {
  
 
         <div className='h-screen w-screen tablet:h-full mobile:h-full '>
-          <div className='h-[90%] w-full border flex flex-col bg-white/50 items-center justify-center gap-[7vw] tablet:py-[3vw] tablet:h-[60%] mobile:h-full mobile:py-[20%]'>
-            <div className='mobile:w-[90%]'>
-              <h2 data-para-anim className='title-2 aeonik mobile:text-center'>Not All Barbed Sutures are Created Equal</h2>
+          <div className='h-[90%] w-full border flex flex-col bg-white/50 items-center justify-center gap-[7vw] tablet:py-[5vw] tablet:h-[60%] mobile:h-full mobile:py-[20%]'>
+            <div className='mobile:w-[90%] tablet:w-[70%]'>
+              <h2 data-para-anim className='title-2 aeonik mobile:text-center tablet:text-center'>Not All Barbed Sutures are Created Equal</h2>
             </div>
             <div className='flex items-center justify-evenly px-[5vw] w-full feature-card-container mobile:flex-col tablet:flex-wrap tablet:justify-center tablet:items-start mobile:gap-[20vw] mobile:mt-[15vw]'>
               <FeatureCard src={card1.src} title={card1.title} />

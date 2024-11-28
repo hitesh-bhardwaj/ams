@@ -42,11 +42,11 @@ const AdvastapLC3 = () => {
             src="/assets/advastaplc/advastaplc2-element.png"
             fill
             alt='advastap-about'
-            className=' object-contain hd-img rotate-[-122deg] scale-[3] mobile:object-contain mobile:scale-[2] mobile:rotate-[110deg]
+            className=' object-contain hd-img rotate-[-122deg] scale-[3] mobile:object-contain mobile:scale-[2] mobile:rotate-[110deg] tablet:rotate-0 tablet:scale-[1.5]
             tablet:object-contain'
             />
             </div>
-            <div className=" absolute top-[15%] left-[8%] p-[2vw] mobile:w-full mobile:pl-0 tablet:w-full tablet:pl-0 mobile:left-0 mobile:top-[3%] tablet:left-0">
+            <div className=" absolute top-[15%] left-[8%] p-[2vw] mobile:w-full mobile:pl-0 tablet:w-full tablet:pl-0 mobile:left-0 mobile:top-[3%] tablet:left-0 tablet:top-0">
             <h2 className="text-[4vw] aeonik drop-shadow-lg  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[9vw]">
           <span data-para-anim className="leading-[1.3] overflow-hidden w-full mobile:w-full mobile:text-center tablet:w-full tablet:text-center font-light">
           ADVASTAP LC II

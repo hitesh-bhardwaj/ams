@@ -5,7 +5,7 @@ const NextGeneration = () => {
 
   return (
     <section className='mobile:py-[10%]' id='next-generation'>
-      <div className='container-lg my-[10%] fadeUp group relative tablet:mb-[20%] '>
+      <div className='container-lg my-[10%] fadeUp group relative tablet:mb-[10%] '>
         <img 
           src="/assets/advacryl/needle-bg.png" 
           alt="Background" 

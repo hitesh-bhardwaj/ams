@@ -49,9 +49,9 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero tablet:pr-[3%] relative w-screen overflow-hidden" id="advastap-hero">
+      <section className="hero relative w-screen overflow-hidden" id="advastap-hero">
         <div className="px-[10%] hero-container overflow-hidden  mobile:pt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[70vh] tablet:justify-start tablet:pt-[15vw]">
             <div className=" relative top-[10%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center relative z-[1]">
                 <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] ">
@@ -67,11 +67,11 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex items-center justify-end w-[57%]  mt-[-0.5vw]  mobile:justify-center mobile:text-center mobile:ml-0 ">
-                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[8vw] lineSpan"></span>
+                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineSpan tablet:absolute tablet:top-[80%] tablet:left-[50%]"></span>
               </div>
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse mobile:right-0 mobile:top-[20%] tablet:top-[30%]">
-              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-45%] top-[-5%] mobile:top-[80%] mobile:left-[60%] mobile:w-[60vw] mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] pointer-evente-none">
+              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-45%] top-[-5%] mobile:top-[80%] mobile:left-[60%] mobile:w-[60vw] mobile:h-[60vw] tablet:w-[45vw] tablet:h-[45vw] pointer-evente-none tablet:right-[-110%] tablet:top-[10%]">
                 <Image
                   className="object-contain hero-img-1"
                   src="/assets/poweredlc/lc-1.png"

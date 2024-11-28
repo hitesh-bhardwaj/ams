@@ -6,7 +6,7 @@ const Versatility = () => {
   fadeIn();
   return (
     <section className="overflow-hidden py-[2%] mobile:py-[10%] relative" id="versatility">
-    <div className="w-screen h-[55vw] container-lg  mobile:h-[120vh] tablet:h-[70%] ">
+    <div className="w-screen h-[55vw] container-lg  mobile:h-[120vh] tablet:h-[70vh] ">
       <div className="w-full h-full flex flex-col items-center justify-center relative gap-[5vw] py-[5vw] mobile:h-fit mobile:static">
         <div className="w-full h-full flex flex-col items-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
           <h2
@@ -17,7 +17,7 @@ const Versatility = () => {
           </h2>
         </div>
         <div className=" w-full h-full flex flex-col items-center justify-center">
-          <div className="h-[40vw] w-[70vw] absolute scale-[1] left-[-10%] bottom-[-5%] mobile:order-1 mobile:w-[180vw] mobile:h-[120vw] mobile:right-[-80%] mobile:left-auto mobile:top-[45%] mobile:absolute">
+          <div className="h-[40vw] w-[70vw] absolute scale-[1] left-[-10%] bottom-[-5%] mobile:order-1 mobile:w-[180vw] mobile:h-[120vw] mobile:right-[-80%] mobile:left-auto mobile:top-[45%] mobile:absolute tablet:w-[100vw] tablet:h-[60vw] ">
             <Image
               src="/assets/reloads/reloads2.png"
               fill
@@ -26,14 +26,14 @@ const Versatility = () => {
             />
           </div>
           <div className='absolute bottom-[10%] left-[40%] mobile:bottom-[10%] mobile:left-[10%]'>
-            <p className='text-[1.67vw] font-light mobile:text-[6vw] mobile:w-[50%] mobile:text-center mobile:leading-[1.2]'>Three rows of varied height staples</p>
+            <p className='text-[1.67vw] font-light mobile:text-[6vw] mobile:w-[50%] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]'>Three rows of varied height staples</p>
           </div>
-          <div className='absolute top-[35%] left-[5%] mobile:top-[55%]  '>
-            <p   className='text-[1.67vw] font-light mobile:text-[6vw] mobile:w-[60%] mobile:text-center'><span>Drop shaped anvil pockets</span></p>
+          <div className='absolute top-[35%] left-[5%] mobile:top-[55%] tablet:top-[45%]  '>
+            <p   className='text-[1.67vw] font-light mobile:text-[6vw] mobile:w-[60%] mobile:text-center tablet:text-[3vw]'><span>Drop shaped anvil pockets</span></p>
           </div>
-          <div className='absolute right-[10%] top-[45%] mobile:static mobile:w-[80vw] mobile:h-[30vw] mobile:flex mobile:flex-col mobile:gap-[4vw] '>
+          <div className='absolute right-[10%] top-[45%] mobile:static mobile:w-[80vw] mobile:h-[30vw] mobile:flex mobile:flex-col mobile:gap-[4vw] tablet:w-[35vw] tablet:top-[30%]'>
             <Image src="/assets/reloads/stepped.png" height={200} width={200} alt="stepped" className='object-contain w-full h-full'/>
-            <p data-para-anim className='text-[1.67vw] font-light mobile:text-[7vw] mobile:text-center'>Stepped cartridge face</p>
+            <p data-para-anim className='text-[1.67vw] font-light mobile:text-[7vw] mobile:text-center tablet:text-[3vw] tablet:text-center'>Stepped cartridge face</p>
           </div>
         </div>
 
@@ -47,8 +47,8 @@ const Versatility = () => {
             className="object-cover z-[-1]"
           />
         </div>
-        <span className='absolute top-[57%] left-[39.5%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[15%] mobile:left-auto'><span className='w-[1vw] h-[1vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw]'></span></span>
-        <span className="w-[18vw] h-[2px] bg-black/50 absolute top-[70%] left-[38%] rotate-[45deg] lineDraw mobile:w-[75vw] mobile:rotate-[122deg] mobile:top-[70%] mobile:left-[22%] "></span>
+        <span className='absolute top-[57%] left-[39.5%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[15%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[71%] tablet:left-[50%] z-[5]'><span className='w-[1vw] h-[1vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw] tablet:w-[2vw] tablet:h-[2vw]'></span></span>
+        <span className="w-[18vw] h-[2px] bg-black/50 absolute top-[70%] left-[38%] rotate-[45deg] lineDraw mobile:w-[75vw] mobile:rotate-[122deg] mobile:top-[70%] mobile:left-[22%] tablet:w-[15vw] tablet:top-[78%] tablet:left-[50%] "></span>
 
   </section>
   )

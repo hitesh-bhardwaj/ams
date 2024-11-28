@@ -3,17 +3,17 @@ import React from 'react'
 
 const TricCut = () => {
   return (
-    <section id='tricut' className='w-screen h-[65vw] overflow-hidden py-[5%] mobile:py-[15%] relative bg-white/20 mobile:h-[135vh]'>
+    <section id='tricut' className='w-screen h-[65vw] overflow-hidden py-[5%] mobile:py-[15%] relative bg-white/20 mobile:h-[135vh] tablet:py-[10%] tablet:h-[60vh]'>
       <div className='container-lg flex items-center flex-col gap-[4vw] mobile:gap-[18vw]'>
         <h2 data-para-anim className='title-2 aeonik mobile:text-center'>Tri-Cut Technology</h2>
-        <div className='w-full flex h-full items-center justify-start pl-[10vw] gap-[8vw] mobile:pl-0 mobile:flex-col mobile:gap-[15vw]'>
+        <div className='w-full flex h-full items-center justify-start pl-[10vw] gap-[8vw] mobile:pl-0 mobile:flex-col mobile:gap-[15vw] tablet:mt-[5vw] tablet:pl-[5vw]'>
           <div className='w-fit h-fit rounded-full'>
-            <div className='w-[20vw] h-[20vw] rounded-full overflow-hidden relative mobile:w-[70vw] mobile:h-[70vw]'>
+            <div className='w-[20vw] h-[20vw] rounded-full overflow-hidden relative mobile:w-[70vw] mobile:h-[70vw] tablet:w-[30vw] tablet:h-[30vw]'>
               <Image src={"/assets/advagrip/Tricut-Circle.png"} alt='tricut-circle' fill />
             </div>
           </div>
-          <div className='w-[45%] h-fit px-[2vw] py-[2.5vw] glassmorphism border rounded-[2.5vw] mobile:w-[95%] mobile:px-[5vw] mobile:py-[7vw] mobile:rounded-[7vw]'>
-            <p className='text-[1.8vw] w-full font-light mobile:text-[4.8vw] mobile:text-center'>Produces barbs that delivers a robust anchoring force whilst maintaining the integrity of the strand’s strength.</p>
+          <div className='w-[45%] h-fit px-[2vw] py-[2.5vw] glassmorphism border rounded-[2.5vw] mobile:w-[95%] mobile:px-[5vw] mobile:py-[7vw] mobile:rounded-[7vw] tablet:w-[70%]'>
+            <p className='text-[1.8vw] w-full font-light mobile:text-[4.8vw] mobile:text-center tablet:text-[2.5vw]'>Produces barbs that delivers a robust anchoring force whilst maintaining the integrity of the strand’s strength.</p>
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ const Hero = () => {
     <>
       <section className="hero mb-[10%]  tablet:pr-[3%] relative" id="advastap-hero">
         <div className="px-[10%]  hero-container overflow-hidden w-screen  mobile:pt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[75vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh] mobile:static">
+          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[75vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[70vh] mobile:static tablet:justify-start tablet:pt-[25vw]">
             <div className=" mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
                 <h1 className="advastap-text text-white text-[5.7vw] aeonik drop-shadow-md leading-[1] hero-text">
@@ -61,16 +61,16 @@ const Hero = () => {
                 Endoscopic Linear Cutter 3-row
                 </p>
               </div>
-              <div className="flex items-center justify-end mt-[-0.5vw] w-[75%] ">
-                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[8vw] lineSpan"></span>
+              <div className="flex items-center justify-end mt-[-0.5vw] w-[75%] mobile:w-full tablet:absolute tablet:left-[-40%] tablet:top-[40%]">
+                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[20vw] lineSpan"></span>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-end z-[5] mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%] tablet:top-[30%]">
+            <div className="flex flex-col items-center justify-end z-[5] mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%]">
 
-              <div className="w-[80vw] h-[20vw]  scale-[4] relative top-[30%] left-[25%] pointer-events-none mobile:top-[110%] mobile:left-auto mobile:right-[-60%] mobile:w-[50vw] mobile:h-[30vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
+              <div className="w-[80vw] h-[20vw]  scale-[4] relative top-[30%] left-[25%] pointer-events-none mobile:top-[110%] mobile:left-auto mobile:right-[-60%] mobile:w-[50vw] mobile:h-[30vw] tablet:w-[25vw] tablet:h-[25vw] tablet:top-[60%] tablet:left-[60%]  z-10 fadeUp tablet:absolute ">
                 <Image
                 quality={100}
-                  className=" hero-img object-contain drop-shadow-xl shadow-xl mobile:shadow-none mobile:drop-shadow-none mobile:rotate-[30deg]"
+                  className=" hero-img object-contain drop-shadow-xl shadow-xl mobile:shadow-none mobile:drop-shadow-none mobile:rotate-[30deg] tablet:shadow-none tablet:drop-shadow-none"
                   src="/assets/endolc/advastap-endo-lc.png"
                   alt="Hero Image"
                   priority={true}

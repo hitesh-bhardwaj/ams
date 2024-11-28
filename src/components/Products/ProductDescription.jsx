@@ -212,7 +212,7 @@ const ProductDescription = ({ className, data }) => {
                 <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:right-[35%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full relative">
                     <div
-                      className={`w-[5vw] h-[5vw] ${className} mobile:h-[30vw] mobile:w-[30vw]`}
+                      className={`w-[5vw] h-[5vw] ${className} mobile:h-[30vw] mobile:w-[30vw] tablet:w-[10vw] tablet:h-[10vw]`}
                     >
                       {svgIcons[index%svgIcons.length]}
                     </div>

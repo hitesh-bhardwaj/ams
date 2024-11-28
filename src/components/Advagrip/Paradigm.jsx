@@ -6,31 +6,31 @@ const Paradigm = () => {
     <>
       <section id="paradigm" className="mobile:py-[15%]">
         <div className="container-lg flex flex-col gap-[6vw] justify-center items-center mobile:gap-[15vw]">
-          <h2 data-para-anim className="title-2 aeonik w-[60%] text-center mobile:w-[90%]">
+          <h2 data-para-anim className="title-2 aeonik w-[60%] text-center mobile:w-[90%] tablet:w-[70%]">
             Changing The Paradigm of Knotless Suture Technology
           </h2>
           <div className="w-full h-full flex gap-[2vw] mobile:flex-col mobile:gap-[7vw] ">
             <div className="w-[50%] h-[40vw] glassmorphism rounded-[2.5vw] px-[5vw] py-[3vw] pb-[10vw] relative flex flex-col gap-[3vw] border font-light mobile:w-[90vw] mobile:h-[150vw] mobile:rounded-[9vw] mobile:justify-end overflow-hidden">
-              <h4 className="aeonik text-[2.5vw] mobile:text-[8vw] mobile:text-center mobile:leading-[1.2] ">
+              <h4 className="aeonik text-[2.5vw] mobile:text-[8vw] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw] ">
                 Unmatched Precision With ADVALLOY Needles
               </h4>
-              <div className="pl-[1.5vw] flex flex-col gap-[1.5vw] mobile:gap-[4vw] mobile:mt-[5vw] ">
+              <div className="pl-[1.5vw] flex flex-col gap-[1.5vw] mobile:gap-[4vw] mobile:mt-[5vw] tablet:text-[2.2vw] text-[1.7vw]  ">
                 <div className="">
-                  <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full ">SECURITY
+                  <p className=" aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full ">SECURITY
                   </p>
-                  <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full">Swage Integrity.</p>
+                  <p className=" aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full">Swage Integrity.</p>
                 </div>
                 <div className="">
-                  <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full">STRENGTH
+                  <p className=" aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full">STRENGTH
 
                  </p>
-                 <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full"> Supreme Durability.</p>
+                 <p className="aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full"> Supreme Durability.</p>
                 </div>
                 <div className="">
-                  <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full">SHARPNESS
+                  <p className=" aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full">SHARPNESS
                     
                   </p>
-                  <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full">Exceptional Penetration.</p>
+                  <p className=" aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full">Exceptional Penetration.</p>
                 </div>
               </div>
               <div className="w-[15vw] h-[34vw] absolute right-[10%] top-0 mobile:w-[60vw] mobile:h-[80vw] mobile:right-[5%] mobile:top-[-15%]">
@@ -39,7 +39,7 @@ const Paradigm = () => {
               </div>
             </div>
             <div className="w-[50%] h-[40vw] glassmorphism rounded-[2.5vw] px-[5vw] py-[3vw] pb-[10vw] relative flex flex-col gap-[3vw] border font-light mobile:w-[90vw] mobile:h-[150vw] mobile:rounded-[9vw] mobile:justify-end overflow-hidden">
-              <h4 className="aeonik text-[2.5vw] mobile:text-[8vw] mobile:text-center mobile:leading-[1.2]">
+              <h4 className="aeonik text-[2.5vw] mobile:text-[8vw] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]">
               ADVAGRIP: Advanced Packaging with ADVATRAY
               </h4>
               

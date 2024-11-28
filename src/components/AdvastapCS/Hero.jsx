@@ -36,7 +36,7 @@ const Hero = () => {
     <>
       <section className="hero  tablet:pr-[3%] relative" id="advastap-hero">
         <div className="px-[10%] hero-container overflow-hidden  mobile:pt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[70vh] tablet:justify-start tablet:pt-[20vw]">
             <div className=" relative top-[5%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
                 <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text">
@@ -52,10 +52,10 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex items-center justify-end w-[85%]  mt-[-0.5vw]  mobile:justify-center mobile:text-center mobile:ml-0 ">
-                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[8vw] lineSpan"></span>
+                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineSpan tablet:absolute tablet:left-[20%] tablet:top-[87%]"></span>
               </div>
             </div>
-              <div className="w-[80vw] h-[20vw]  scale-[2.5] relative left-[-14%] bottom-0 pointer-events-none mobile:bottom-[-25%] mobile:w-[70vw]  mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
+              <div className="w-[80vw] h-[20vw]  scale-[2.5] relative left-[-14%] bottom-0 pointer-events-none mobile:bottom-[-25%] mobile:w-[70vw]  mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] tablet:bottom-[10%] z-10 fadeUp ">
                 <Image
                   className="object-contain mobile:rotate-[-45deg] hero-img"
                   src="/assets/advastapcs/circular-stapler.png"

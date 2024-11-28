@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
     <section className='' id='advastapHero'>
-      <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh]">
+      <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh] tablet:h-[70vh]">
         <Image
           src="/assets/advastaplc/advastaplc-hero-bg.png"
           fill
@@ -65,15 +65,15 @@ const Hero = () => {
                 </h1>
                 <div className='w-[70%] h-[1px] bg-black/50 my-[3vw] hidden mobile:block'></div>
             <div className='flex items-center mt-[2vw]'>
-            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.45em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[12%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  flex items-center justify-start mobile:text-center mobile:justify-center tablet:justify-center tablet:ml-[20%]">
+            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.45em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[12%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  flex items-center justify-start mobile:text-center mobile:justify-center">
           Linear Cutter 
                 </p>
               <span className="w-[5.2vw] h-[1px] bg-black line mobile:hidden tablet:hidden "></span>
               </div>
           </div>
 
-          <div className="w-[70%] h-full relative left-[30%] right-0 hero-container   tablet:rotate-90 tablet:w-[100%]  mobile:top-[10%] tablet:top-[10%] tablet:left-0">
-            <div className="w-[70vw] h-[70vw]  mobile:w-[100vw] mobile:h-[150vw] mobile:left-[-50%] relative">
+          <div className="w-[70%] h-full relative left-[30%] right-0 hero-container   tablet:w-[100%]  mobile:top-[10%] tablet:top-[10%] tablet:left-[20%]">
+            <div className="w-[70vw] h-[70vw]  mobile:w-[100vw] mobile:h-[150vw] mobile:left-[-50%] relative tablet:w-[100vw] tablet:h-[100vw]">
               <Image
                 src="/assets/advastaplc/advastaplc-hero-element.png"
                 alt="side-image"

@@ -117,44 +117,37 @@ const ProductCarousel = () => {
 
 
   return (
-    <section id="productCarousel" className="relative w-screen h-screen overflow-hidden mobile:h-[130vh] mobile:py-[10vw] bg-white py-[5vw] mt-[7%] mobile:mb-[15%]">
-      <div className="w-full h-full flex items-center justify-between pl-[5vw] mobile:flex-col-reverse">
-        <div className="w-[50%] mobile:w-full mobile:h-[50vh]">
+    <section id="productCarousel" className="relative w-screen h-screen overflow-hidden mobile:h-[130vh] mobile:py-[10vw] bg-white/30 py-[5vw] mt-[7%] mobile:mb-[15%] tablet:h-[70vh] ">
+      <div className="w-full h-full flex items-center justify-between pl-[5vw] mobile:flex-col-reverse tablet:flex-col-reverse">
+        <div className="w-[50%] mobile:w-full mobile:h-[50vh] tablet:w-full tablet:h-[50vh]">
           <div className="mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
-            <h2 className="title-2 aeonik mobile:text-center mobile:ml-0 mobile:px-[5vw] tablet:ml-[6%]">
+            <h2 className="title-2 aeonik mobile:text-center mobile:ml-0 mobile:px-[5vw] ">
               <span data-para-anim>{slidesData[activeSlide]?.title}</span>
             </h2>
-            <p className="text-[2.2vw] font-light mobile:text-[7vw] mobile:text-center mobile:w-[90%]">
+            <p className="text-[2.2vw] font-light mobile:text-[7vw] mobile:text-center mobile:w-[90%] tablet:text-[3.5vw]">
               {slidesData[activeSlide]?.para}
             </p>
           </div>
           <div className="pt-[2vw]">
-            {/* <span>
-              <Image
-                src="/assets/advacryl/advatray-blue.png"
-                height={50}
-                width={50}
-                alt="Advatray"
-              />
-            </span> */}
-            <p className="content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw]">
+            
+            <p className="content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[activeSlide].description1}
             </p>
-            <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw]">
+            <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[activeSlide].description2}
             </p>
-            <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw]">
+            <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[activeSlide].description3}
             </p>
           </div>
         </div>
-        <div className="w-[50vw] h-[110%] overflow-hidden mobile:w-full mobile:h-[30%] mobile:mt-[30%]">
+        <div className="w-[50vw] h-[110%] overflow-hidden mobile:w-full mobile:h-[30%] mobile:mt-[30%] tablet:mt-[10%] tablet:w-full">
           <Swiper
             ref={swiperRef}
             direction={"vertical"}
             spaceBetween={20}
             centeredSlides={true}
-            className={`cardiovascularSwiper w-full h-full absolute left-[30%] top-[3%] rounded-[30px] mobile:left-0 mobile:h-[100%]`}
+            className={`cardiovascularSwiper w-full h-full absolute left-[30%] top-[3%] rounded-[30px] mobile:left-0 mobile:h-[100%] tablet:left-0 tablet:h-full`}
             onSlideChange={handleSlideChange}
             // onSwiper={handleSlideChange}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -164,7 +157,7 @@ const ProductCarousel = () => {
                 spaceBetween:30,
               },
               640:{
-                  slidesPerView:2,
+                  slidesPerView:1,
                   spaceBetween:30
               },
               1024: {
@@ -175,14 +168,14 @@ const ProductCarousel = () => {
           >
             {slidesData.map((slide, index) => (
               <SwiperSlide key={index}>
-                <div className="absolute w-[40vw] h-[12vw] z-[10] mobile:h-[80vw] mobile:w-[120vw]">
+                <div className="absolute w-[40vw] h-[12vw] z-[10] mobile:h-[80vw] mobile:w-[120vw] tablet:w-[90vw] tablet:h-[45vw]">
                   <Image src={slide.imageSrc} alt={slide.title} fill />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
           <div
-            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-[20%] right-[30%] mobile:top-[50%] mobile:right-auto mobile:left-[62%] translate-x-[-65%] mobile:bottom-auto tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
+            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-[20%] right-[30%] mobile:top-[50%] mobile:right-auto mobile:left-[62%] translate-x-[-65%] mobile:bottom-auto tablet:top-[10%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50 tablet:right-0 tablet:bottom-auto
                 ${
                   activeButton === "next"
                     ? " text-white"
@@ -209,7 +202,7 @@ const ProductCarousel = () => {
             </div>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] top-[20%] right-[32%] absolute z-[5] mobile:bottom-auto mobile:right-auto mobile:top-[50%] mobile:left-[39%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
+            className={`px-[1.6vw] py-[1.6vw] top-[20%] right-[32%] absolute z-[5] mobile:bottom-auto mobile:right-auto mobile:top-[50%] mobile:left-[39%] translate-x-[-38%]  tablet:top-[10%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white tablet:right-[10%]
                 ${
                   activeButton === "prev"
                     ? " text-white"
@@ -237,7 +230,7 @@ const ProductCarousel = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-[45vw] h-full top-0 right-0 z-[-1] mobile:h-[50vh] mobile:w-[90vw] mobile:top-[10%]">
+      <div className="absolute w-[45vw] h-full top-0 right-0 z-[-1] mobile:h-[50vh] mobile:w-[90vw] mobile:top-[10%] tablet:hidden">
         <Image
           src="/assets/cardioVascular/product-bg.png"
           fill
