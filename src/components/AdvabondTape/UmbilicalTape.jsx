@@ -5,7 +5,7 @@ const UmbilicalTape = () => {
   return (
     <section className="hero py-[5%] pt-[8%]  tablet:pr-[3%]" id="hero">
     <div className="px-[10%] relative hero-container mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
-      <div className="flex h-screen w-full justify-start items-start mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+      <div className="flex h-screen w-full justify-start items-start mobile:h-[95vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
         <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
           <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
             <h1 className="title-1 aeonik drop-shadow-md leading-[1]">
@@ -33,7 +33,7 @@ const UmbilicalTape = () => {
           </div>
         </div>
         <div className="absolute right-0 top-[20%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%] tablet:top-[30%]">
-          <div className="w-[55vw] h-[40vw] absolute bottom-[10%] mobile:w-[100vw] mobile:h-[80vw] tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
+          <div className="w-[55vw] h-[40vw] absolute bottom-[10%] mobile:w-[100vw] mobile:h-[80vw]  tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
             <Image
               className="object-cover"
               src="/assets/advabondtape/umbilical-hero-bg.png"
@@ -42,7 +42,7 @@ const UmbilicalTape = () => {
             />
           </div>
 
-          <div className="w-[48vw] h-[40vw] relative bottom-[10%]  mobile:bottom-0 mobile:w-[90vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
+          <div className="w-[48vw] h-[40vw] relative bottom-[10%]  mobile:top-[30%] mobile:w-[90vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
             <Image
               className="object-contain"
               src="/assets/advabondtape/umbilical-cotton-tape.png"

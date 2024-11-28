@@ -60,7 +60,7 @@ const Specifications = ({children,heading,textclass,bgimg}) => {
         {isModalOpen && (
           <>
           <div className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[999] bg-opacity-50 bg-black/50 "  ref={modalRef}>
-            <div  data-scroll-prevent className="bg-[#efefef]  border  border-white rounded-[1.5vw] p-[3vw] w-[80vw] max-h-[95vh]  modal-no-scrollbar  mobile:max-h-[95vh] mobile:py-[7vw] mobile:w-[95vw] mobile:rounded-[9vw]">
+            <div   className="bg-[#efefef]  border  border-white rounded-[1.5vw] p-[3vw] w-[80vw] max-h-[95vh]  modal-no-scrollbar   mobile:max-h-[95vh] mobile:py-[7vw] mobile:w-[95vw] mobile:rounded-[9vw]">
               <div
                 onClick={closeModal}
                 className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3vw] w-[3vw] mobile:w-[7vw] mobile:h-[7vw] mobile:p-[1.5vw] mobile:top-[6vw] mobile:right-[5vw]"

@@ -49,22 +49,22 @@ const Think = () => {
           <div className="w-full h-full">
 
           <div className="absolute left-[5%] top-[35%] flex flex-col items-start justify-center gap-[3vw] mobile:static mobile:gap-[10vw]">
-          <div className="flex items-center justify-center gap-[2vw] hover:px-[1vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
+            <div className="flex items-center justify-center gap-[2vw] border-[2px] border-transparent px-[1vw] pr-[3vw] rounded-[1vw] hover:border-[#3A87C8]  group transition-all duration-300 ease hover:scale-[1.2]  cursor-pointer mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
                 <Image src="/assets/skinstapler/point.png" height={50} width={50} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease mobile:text-[7.5vw] mobile:text-center mobile:group-hover:text-[7.5vw] mobile:w-[70%]  tablet:text-[3vw] tablet:group-hover:text-[3vw]">User Centric Intuitive Design</p>
 
             </div>
-            <div className="flex items-center justify-center gap-[2vw] hover:px-[1vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
+            <div className="flex items-center justify-center gap-[2vw] border-[2px] border-transparent px-[1vw] pr-[3vw] rounded-[1vw] hover:border-[#3A87C8]  group transition-all duration-300 ease hover:scale-[1.2]  cursor-pointer mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
                 <Image src="/assets/skinstapler/point.png" height={50} width={50} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease  mobile:text-[7.5vw] mobile:text-center mobile:group-hover:text-[7.5vw] tablet:text-[3vw] tablet:group-hover:text-[3vw]">Versatile Flexibility</p>
 
             </div>
-            <div className="flex items-center justify-center gap-[2vw] hover:px-[1vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
+            <div className="flex items-center justify-center gap-[2vw] border-[2px] border-transparent px-[1vw] pr-[3vw] rounded-[1vw] hover:border-[#3A87C8]  group transition-all duration-300 ease hover:scale-[1.2]  cursor-pointer mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
                 <Image src="/assets/skinstapler/point.png" height={50} width={50} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease  mobile:text-[7.5vw] mobile:text-center mobile:group-hover:text-[7.5vw] mobile:w-[70%] tablet:text-[3vw] tablet:group-hover:text-[3vw]">High Quality Construction</p>
 
             </div>
-            <div className="flex items-center justify-center gap-[2vw] hover:px-[1vw] hover:border-[2px] hover:border-[#3A87C8] hover:rounded-[1vw] hover:py-[1vw] group transition-all duration-300 ease mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
+            <div className="flex items-center justify-center gap-[2vw] border-[2px] border-transparent px-[1vw] pr-[3vw] rounded-[1vw] hover:border-[#3A87C8]  group transition-all duration-300 ease hover:scale-[1.2]  cursor-pointer mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
                 <Image src="/assets/skinstapler/point.png" height={50} width={50} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease mobile:text-[7.5vw] mobile:text-center mobile:group-hover:text-[7.5vw] tablet:text-[3vw] tablet:group-hover:text-[3vw]">Optimized Cosmesis</p>
             </div>

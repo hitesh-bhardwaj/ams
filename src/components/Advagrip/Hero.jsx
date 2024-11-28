@@ -68,7 +68,7 @@ const Hero = () => {
                 data-para-anim
                 className="title-1 aeonik drop-shadow-lg  leading-[1.25] mobile:text-center"
               >
-                <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] `}>
+                <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] grip-gradient`}>
                   ADVAGRIP
                 </span>
               </h1>

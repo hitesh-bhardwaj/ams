@@ -5,7 +5,9 @@ import Closure from "@/components/Advastaplc/Closure";
 import Closure2 from "@/components/Advastaplc/Closure2";
 import Hero from "@/components/Advastaplc/Hero";
 import LC2Carousel from "@/components/Advastaplc/LC2carousel";
+import LC2Specifications from "@/components/Advastaplc/LC2Specifications";
 import LC3Carousel from "@/components/Advastaplc/LC3carousel";
+import LC3Specifications from "@/components/Advastaplc/LC3Specifications";
 import Layout from "@/components/Layout";
 
 const advastaplc = () => {
@@ -17,9 +19,11 @@ const advastaplc = () => {
           <AdvastapLC2/>
           <Closure/>
           <LC3Carousel/>
+          <LC3Specifications/>
           <AdvastapLC3/>
           <Closure2/>
           <LC2Carousel/>
+          <LC2Specifications/>
         </main>
       </Layout>
     </>

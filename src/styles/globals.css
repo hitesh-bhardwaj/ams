@@ -456,6 +456,11 @@ body{
 .skinstaplerSwiper .swiper-scrollbar{
   background-color: #DADADA !important;
 }
+.grip-gradient {
+  background: -webkit-linear-gradient(left,#CE71F4, #EE7891);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media screen  and (max-width:541px){
   ::-webkit-scrollbar {
