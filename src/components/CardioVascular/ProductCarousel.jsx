@@ -117,7 +117,7 @@ const ProductCarousel = () => {
 
 
   return (
-    <section id="productCarousel" className="relative w-screen h-screen overflow-hidden mobile:h-[130vh] mobile:py-[10vw]">
+    <section id="productCarousel" className="relative w-screen h-screen overflow-hidden mobile:h-[130vh] mobile:py-[10vw] bg-white py-[5vw] mt-[7%]">
       <div className="w-full h-full flex items-center justify-between pl-[5vw] mobile:flex-col-reverse">
         <div className="w-[50%] mobile:w-full mobile:h-[50vh]">
           <div className="mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
@@ -148,7 +148,7 @@ const ProductCarousel = () => {
             </p>
           </div>
         </div>
-        <div className="w-[50vw] h-[98%]  overflow-hidden mobile:w-full mobile:h-[30%] mobile:mt-[30%]">
+        <div className="w-[50vw] h-[110%] overflow-hidden mobile:w-full mobile:h-[30%] mobile:mt-[30%]">
           <Swiper
             ref={swiperRef}
             direction={"vertical"}
@@ -175,7 +175,7 @@ const ProductCarousel = () => {
           >
             {slidesData.map((slide, index) => (
               <SwiperSlide key={index}>
-                <div className="absolute w-[40vw] h-[15vw] z-[10] mobile:h-[80vw] mobile:w-[120vw]">
+                <div className="absolute w-[40vw] h-[12vw] z-[10] mobile:h-[80vw] mobile:w-[120vw]">
                   <Image src={slide.imageSrc} alt={slide.title} fill />
                 </div>
               </SwiperSlide>

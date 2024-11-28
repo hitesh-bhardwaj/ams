@@ -38,7 +38,7 @@ const Hero = () => {
     );
   });
   return (
-    <section className=" hero-container" id="hero">
+    <section className=" hero-container dark" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh] mobile:h-[85vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
           <Image
@@ -84,8 +84,8 @@ const Hero = () => {
                 </span>
               </p>
               <div className="w-screen h-full text-white aeonik relative mobile:static mobile:w-full">
-                <p className="uppercase text-[12vw] tracking-wider opacity-10 font-light top-0 absolute left-[-12%] mobile:hidden">advagrip</p>
-                <p className="text-[2.5vw] font-light absolute top-[55%] left-0 mobile:static mobile:text-[5vw] mobile:text-center">A Grip Like No Other</p>
+                <p className="uppercase text-[14vw] tracking-wider opacity-10 font-light top-[-20%] absolute left-[-12%] mobile:hidden">advagrip</p>
+                <p className="text-[2.5vw] font-light absolute top-[45%] left-0 mobile:static mobile:text-[5vw] mobile:text-center">A Grip Like No Other.</p>
 
               </div>
             </div>

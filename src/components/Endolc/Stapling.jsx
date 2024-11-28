@@ -19,7 +19,7 @@ const Stapling = () => {
                 <div className="w-full h-[70%] flex items-center justify-between  mobile:flex-col ">
                     <p data-para-anim className="font-light text-[2.5vw] text-[#2A2A2A] mobile:order-1 mobile:text-[9vw] mobile:text-center mobile:leading-[1.2]">
                     Surgeon-Modulated Articulation
-                    <span  data-para-anim className="block text-[1.25vw] font-light leading-[1.2] mobile:text-[4vw] mobile:text-center mobile:mt-[2vw]">
+                    <span  data-para-anim className="block text-[1.25vw] font-light leading-[1.2] mobile:text-[4vw] mobile:text-center mobile:mt-[2vw] mobile:w-[80%]">
                     Flexible reach for precise and accurate positioning in challenging surgical procedures.   </span>
                     </p>
                     <div className="flex flex-col h-[100%] w-[40%] items-center justify-center">

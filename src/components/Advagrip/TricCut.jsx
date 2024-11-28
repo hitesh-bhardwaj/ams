@@ -3,7 +3,7 @@ import React from 'react'
 
 const TricCut = () => {
   return (
-    <section id='tricut' className='w-screen h-[65vw] overflow-hidden py-[5%] mobile:py-[15%] relative bg-white/20 mobile:h-[135vh]'>
+    <section id='tricut' className='w-screen h-[65vw] overflow-hidden py-[7%] mobile:py-[15%] relative bg-white/20 mobile:h-[135vh] mb-[7%]'>
         <div className='container-lg flex items-center flex-col gap-[4vw] mobile:gap-[18vw]'>
             <h2 data-para-anim className='title-2 aeonik mobile:text-center'>Tri-Cut Technology</h2>
             <div className='w-full flex h-full items-center justify-start pl-[10vw] gap-[8vw] mobile:pl-0 mobile:flex-col mobile:gap-[15vw]'>
@@ -22,7 +22,7 @@ const TricCut = () => {
 
 
         </div>
-        <div className='absolute bottom-[10%] w-[100vw] h-[50vw] z-[-1] mobile:h-[100vw] mobile:z-[-1] mobile:w-[180vw] mobile:bottom-[20%] mobile:left-[-50%]'>
+        <div className='absolute bottom-[10%] w-[100vw] h-[50vw] z-[0] mobile:h-[100vw] mobile:z-[-1] mobile:w-[180vw] mobile:bottom-[20%] mobile:left-[-50%]'>
             <Image src={"/assets/advagrip/tricut-bg.png"} alt='tricut-bg' fill className='mobile:rotate-[-40deg] mobile:object-contain mobile:w-full mobile:h-full'/>
         </div>
       

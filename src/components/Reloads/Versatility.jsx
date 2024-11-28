@@ -33,7 +33,7 @@ const Versatility = () => {
           </div>
           <div className='absolute right-[10%] top-[45%] mobile:static mobile:w-[80vw] mobile:h-[30vw] mobile:flex mobile:flex-col mobile:gap-[4vw] '>
             <Image src="/assets/reloads/stepped.png" height={200} width={200} alt="stepped" className='object-contain w-full h-full'/>
-            <p data-para-anim className='text-[1.67vw] font-light mobile:text-[7vw]'>Stepped cartridge face</p>
+            <p data-para-anim className='text-[1.67vw] font-light mobile:text-[7vw] mobile:text-center'>Stepped cartridge face</p>
           </div>
         </div>
 

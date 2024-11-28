@@ -15,7 +15,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                     {heading}
                   </span> 
                 </h1>
-                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-wide mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1.2] tracking-wide mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                   {tagline}
                 </p>
               </div>
@@ -47,7 +47,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
               </div>
 
               <div className="mobile:mt-[20vw]">
-                <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
+                <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.2vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
                   {para2}
                 </p>
               </div>

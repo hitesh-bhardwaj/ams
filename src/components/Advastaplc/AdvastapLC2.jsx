@@ -33,8 +33,8 @@ const AdvastapLC2 = () => {
   return (
    <>
   <section id='advastapAbout' className='relative overflow-hidden w-screen'>
-  <div className="w-screen h-screen overflow-hidden mobile:h-screen tablet:h-screen">
-    <div className="w-screen h-[90%] bg-white relative overflow-hidden pt-[4vw] mobile:pt-[10vw] tablet:justify-center">
+  <div className="w-screen h-[50vw] overflow-hidden mobile:h-screen tablet:h-screen">
+    <div className="w-screen h-[90%] relative overflow-hidden pt-[4vw] mobile:pt-[10vw] tablet:justify-center">
     
       <div className="w-[80vw] h-[80vw] relative scale-[1.05] rotate-[60deg] top-[-40%]  about-container mobile:w-[120vw] mobile:h-[120vw] mobile:rotate-0 tablet:rotate-90 mobile:top-[25%] mobile:scale-[1.5] mobile:left-[-10%] tablet:top-[15%] tablet:left-[10%] left-[-10%]">
         <Image 

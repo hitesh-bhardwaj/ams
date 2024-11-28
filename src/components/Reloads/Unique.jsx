@@ -4,13 +4,13 @@ import Image from 'next/image'
 const UniqueCard=({src,title,para})=>{
     return(
         <>
-        <div className='rounded-[1.5vw] glassmorphism border border-[#DADADA] flex flex-col  items-start justify-end p-[2vw] w-[25vw] h-[18vw] mobile:w-[80vw] mobile:h-[95vw] mobile:rounded-[7vw]   hover:bg-white hover:shadow-xl hover:drop-shadow-xl duration-300 transition-all ease mobile:pb-[10vw] mobile:px-[6vw] '>
-            <div className='w-full h-[5vw] absolute top-[15%] right-[-30%] mobile:left-0 mobile:h-[28vw]  mobile:top-[10%]'>
+        <div className='rounded-[2.5vw] glassmorphism border border-[#DADADA] flex flex-col  items-start justify-end pt-[1vw] pb-[3vw] px-[2vw] w-[25vw] h-[18vw] mobile:w-[80vw] mobile:h-[95vw] mobile:rounded-[7vw]   hover:bg-white hover:shadow-xl hover:drop-shadow-xl duration-300 transition-all ease mobile:pb-[10vw] mobile:px-[6vw] '>
+            <div className='w-[7vw] h-[7vw] absolute top-[8%] right-[8%] mobile:left-[30%] mobile:h-[28vw] mobile:w-[28vw]  mobile:top-[10%]'>
                 <Image src={src} height={80} width={80} alt='unique card' className='object-contain w-full h-full'/>
             </div>
-            <div className='flex flex-col w-full h-full justify-end items-start'>
-            <p data-para-anim className='text-[1.67vw] font-medium w-[50%] py-[1vw] mobile:text-[8vw] mobile:w-[95%] mobile:text-center mobile:leading-[1]'>{title}</p>
-            <p data-para-anim className='text-[1.67vw] font-light text-justify mobile:text-[5.5vw] mobile:leading-[1.2]  mobile:text-center mobile:mt-[7vw]'>{para}</p>
+            <div className='flex flex-col w-full h-full justify-end items-start mobile:items-center'>
+            <p data-para-anim className='text-[1.67vw] leading-[1.2] font-medium w-[50%] py-[1vw] mobile:text-[8vw] mobile:w-[95%] mobile:text-center mobile:leading-[1]'>{title}</p>
+            <p data-para-anim className='text-[1.67vw] leading-[1.2] font-light text-justify mobile:text-[5.5vw] mobile:leading-[1.2]  mobile:text-center mobile:mt-[7vw]'>{para}</p>
 
             </div>
             </div>
@@ -20,10 +20,10 @@ const UniqueCard=({src,title,para})=>{
 
 const Unique = () => {
   return (
-    <section id="unique" className='w-screen overflow-hidden relative'>
+    <section id="unique" className='w-screen overflow-hidden relative py-[3vw]'>
     <div className="w-screen h-full container-lg">
       <div className="w-full h-full flex flex-col items-center justify-center py-[5vw] relative">
-        <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
+        <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:w-[90%]">
           <h2
             data-para-anim
             className="title-2 aeonik text-center mobile:text-center"

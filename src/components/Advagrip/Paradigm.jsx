@@ -17,17 +17,20 @@ const Paradigm = () => {
               <div className="pl-[1.5vw] flex flex-col gap-[1.5vw] mobile:gap-[4vw] mobile:mt-[5vw] ">
                 <div className="">
                   <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full ">SECURITY
-                  Swage Integrity.</p>
+                  </p>
+                  <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full">Swage Integrity.</p>
                 </div>
                 <div className="">
                   <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full">STRENGTH
-                  Supreme Durability.</p>
+
+                 </p>
+                 <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full"> Supreme Durability.</p>
                 </div>
                 <div className="">
                   <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-[40%] mobile:w-full">SHARPNESS
-                  
-                    Exceptional Penetration.
+                    
                   </p>
+                  <p className="text-[1.7vw]  aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full">Exceptional Penetration.</p>
                 </div>
               </div>
               <div className="w-[15vw] h-[34vw] absolute right-[10%] top-0 mobile:w-[60vw] mobile:h-[80vw] mobile:right-[5%] mobile:top-[-15%]">

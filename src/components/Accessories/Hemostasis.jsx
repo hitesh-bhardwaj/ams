@@ -31,7 +31,7 @@ const Hemostasis = () => {
   return (
     <section className="overflow-hidden relative hemostasis-container  mobile:py-[15%]" id="hemostasis">
     <div className="w-screen h-full container-lg  mobile:h-[140vh] tablet:h-[70%] ">
-      <div className="w-full h-full flex flex-col items-center justify-center relative py-[5vw] gap-[5vw]">
+      <div className="w-full h-full flex flex-col items-center justify-center relative py-[2vw] gap-[5vw]">
         <div className="w-full h-full flex flex-col items-center justify-center pt-[5vw] mobile:mb-0 mobile:flex mobile:justify-center">
           <h2
             data-para-anim

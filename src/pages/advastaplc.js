@@ -14,10 +14,10 @@ const advastaplc = () => {
       <Layout>
         <main>
           <Hero />
-          <AdvastapLC3/>
+          <AdvastapLC2/>
           <Closure/>
           <LC3Carousel/>
-          <AdvastapLC2/>
+          <AdvastapLC3/>
           <Closure2/>
           <LC2Carousel/>
         </main>

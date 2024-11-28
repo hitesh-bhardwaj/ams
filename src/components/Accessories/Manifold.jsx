@@ -30,7 +30,7 @@ const Manifold = () => {
   return (
     <section className="overflow-hidden relative manifold-container mobile:py-[15%]" id="manifold">
     <div className="w-screen h-full container-lg  mobile:h-[140vh] tablet:h-[70%] ">
-      <div className="w-full h-full flex flex-col items-center justify-center  py-[5vw] gap-[2vw]">
+      <div className="w-full h-full flex flex-col items-center justify-center  py-[2vw] gap-[2vw]">
         <div className="w-full h-full flex flex-col items-center justify-center pt-[5vw] mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit">
           <h2
             data-para-anim
@@ -39,8 +39,8 @@ const Manifold = () => {
           Manifold
           </h2>
         </div>
-        <div className=" w-full h-full flex flex-col items-center justify-center mobile:justify-start">
-          <div className="h-[35vw] w-[50vw] relative mobile:w-[150vw] mobile:h-[120vw]">
+        <div className=" w-full h-full  mobile:justify-start">
+          <div className="h-[35vw] w-[50vw] relative left-[20%] mobile:w-[150vw] mobile:h-[120vw]">
             <Image
               src="/assets/accessories/manifold.png"
               fill
@@ -54,18 +54,18 @@ const Manifold = () => {
       </div>
       <div className='w-full h-full mobile:flex mobile:flex-col mobile:justify-end mobile:gap-[5vw]'>
 
-          <div className="absolute h-fit w-[25%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[39%] mcard-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute h-fit w-[25%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[32%] mcard-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
             <p  className="text-[1.67vw] font-light mobile:text-[6vw] mobile:text-center">Can connect multiple medical devices together</p>
             
           </div>
-          <div className="absolute h-fit w-[25%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] top-[35%] mcard-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute h-fit w-[25%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] top-[29%] mcard-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
             <p   className="text-[1.67vw] font-light mobile:text-[6vw] mobile:text-center">Clear handle sign indicates fluid control</p>
             
           </div>
-          <div className="absolute  h-fit w-[25%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] bottom-[20%] mcard-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute  h-fit w-[25%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] bottom-[25%] mcard-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
             <p  className="text-[1.67vw] font-light mobile:text-[6vw] mobile:text-center">Standard luer connector</p>
           </div>
-          <div className="absolute  h-fit w-[35%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] bottom-[10%] mcard-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute  h-fit w-[35%] rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] bottom-[15%] mcard-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
             <p  className="text-[1.67vw] font-light mobile:text-[6vw] mobile:text-center">Flexible luer provides better sealing performance under 500 PSI pressure</p>
           </div>
       </div>

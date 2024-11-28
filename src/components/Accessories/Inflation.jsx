@@ -51,23 +51,23 @@ const Inflation = () => {
           </div> 
 
         </div>
-        <div className='w-full h-full mobile:flex mobile:flex-col mobile:gap-[5vw] mobile:items-center mobile:justify-end'>
+        <div className='w-full h-full mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center mobile:justify-end'>
 
-          <div className="absolute h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[20%] top-[40%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[20%] top-[40%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[8vw] mobile:rounded-[4vw]">
             <p  className="text-[1.67vw] font-light mobile:text-[6vw]">Ergonomic design</p>
             
           </div>
-          <div className="absolute h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[12%] top-[32%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[12%] top-[32%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[8vw] mobile:rounded-[4vw]">
             <p   className="text-[1.67vw] font-light mobile:text-[6vw]">Intuitive versatility</p>
             
           </div>
-          <div className="absolute  h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[12%] bottom-[20%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute  h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[12%] bottom-[20%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[8vw] mobile:rounded-[4vw]">
             <p   className="text-[1.67vw] font-light mobile:text-[6vw]">Enhanced usability</p>
           </div>
-          <div className="absolute  h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[12%] bottom-[22%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute  h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[12%] bottom-[22%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[8vw] mobile:rounded-[4vw]">
             <p   className="text-[1.67vw] font-light mobile:text-[6vw]">Intelligent adaptability</p>
           </div>
-          <div className="absolute  h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[45%] bottom-[12%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+          <div className="absolute  h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[45%] bottom-[12%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[8vw] mobile:rounded-[4vw]">
             <p   className="text-[1.67vw] font-light mobile:text-[6vw]">Superior accessibility</p>
           </div>
         </div>

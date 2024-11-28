@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const UmbilicalTape = () => {
   return (
-    <section className="hero mb-[10%]  tablet:pr-[3%]" id="hero">
+    <section className="hero py-[5%] pt-[8%]  tablet:pr-[3%]" id="hero">
     <div className="px-[10%] relative hero-container mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
       <div className="flex h-screen w-full justify-start items-start mobile:h-[85vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
         <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
@@ -15,19 +15,19 @@ const UmbilicalTape = () => {
                UMBILICAL COTTON TAPE
               </span> 
             </h1>
-            <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-wide mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+            <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-widest font-light mt-[1vw] mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
             Comfort meets confidence
             </p>
           </div>
-          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mt-[5vw] mobile:text-center mobile:ml-0 ">
+          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mt-[13vw] mobile:text-center mobile:ml-0 ">
             <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:hidden tablet:w-[8vw]"></span>
-            <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-full tablet:text-[2.5vw] tablet:max-w-[55%]">
+            <p className="max-w-[35vw] ml-[-1vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.2vw] mobile:max-w-full tablet:text-[2.5vw] tablet:max-w-[55%]">
               <span data-para-anim>High-quality, soft and expertly woven cotton, ensures unmatched comfort.</span>
             </p>
           </div>
-          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mobile:text-center mobile:ml-0  ">
+          <div className="flex items-center justify-start ml-[-2vw] mt-[3vw] mobile:justify-center mobile:text-center mobile:ml-0  ">
             <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:hidden tablet:w-[8vw]"></span>
-            <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-full tablet:text-[2.5vw] tablet:max-w-[55%]">
+            <p className="max-w-[35vw] ml-[-1vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.2vw] mobile:max-w-full tablet:text-[2.5vw] tablet:max-w-[55%]">
               <span data-para-anim>Preserves tissue integrity, facilitates easy application and removal.</span>
             </p>
           </div>

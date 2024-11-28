@@ -38,7 +38,7 @@ const Ergonomic = () => {
             <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit">
               <h2
                 data-para-anim
-                className="title-2 aeonik text-center w-[60%] mobile:text-center mobile:w-full"
+                className="title-2 aeonik text-center w-[60%] mobile:text-center mobile:w-[95%]"
               >
                 Ergonomic Design For Comfortable Single-Hand Use
               </h2>
@@ -46,7 +46,7 @@ const Ergonomic = () => {
             <div className=" h-[50vw] w-[80vw] mobile:h-full flex flex-col items-center justify-end mobile:pb-[10%]">
              
                 <div className=" w-full h-full flex flex-col items-center justify-center mobile:h-fit">
-                  <div className="h-[50vw] w-[80vw] relative mobile:w-[200vw] mobile:h-[100vw] mobile:left-[-25%] mobile:absolute mobile:top-[15%] ">
+                  <div className="h-[50vw] w-[80vw] relative mobile:w-[200vw] mobile:h-[100vw] mobile:left-[-25%] mobile:absolute mobile:top-[20%] ">
                     <Image
                       src="/assets/poweredlc/ergonomic-lc2.png"
                       fill
@@ -56,7 +56,7 @@ const Ergonomic = () => {
                   </div>
                   <div className="mobile:flex mobile:flex-col mobile:gap-[5vw]">
 
-                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[12%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[12%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
                     <p
                       data-para-anim
                       className="text-[1.67vw] font-light mobile:text-[6vw]"
@@ -65,12 +65,12 @@ const Ergonomic = () => {
                     </p>
                     <p
                       data-para-anim
-                      className="text-[1.25vw] font-light mobile:text-[4vw]"
+                      className="text-[1.25vw] font-light mobile:text-[4vw] "
                     >
                       Effortless reload angulation adjustment.
                     </p>
                   </div>
-                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[20%] top-[30%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[20%] top-[30%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
                     <p className="text-[1.67vw] font-light mobile:text-[6vw]">
                       Smart Reload:
                     </p>
@@ -78,7 +78,7 @@ const Ergonomic = () => {
                       Convenient reload unload switch.
                     </p>
                   </div>
-                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[25%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[25%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
                     <p
                       data-para-anim
                       className="text-[1.67vw] font-light mobile:text-[6vw]"
@@ -93,7 +93,7 @@ const Ergonomic = () => {
                       Efficient for up to multiple firings.
                     </p>
                   </div>
-                  <div className="absolute w-[30%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] bottom-[10%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+                  <div className="absolute w-[30%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] right-[10%] bottom-[10%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
                     <p
                       data-para-anim
                       className="text-[1.67vw] font-light mobile:text-[6vw]"
@@ -108,16 +108,16 @@ const Ergonomic = () => {
                       and fire functions.
                     </p>
                   </div>
-                    <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[65%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+                    <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[65%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
                       <p className="text-[1.67vw] font-light mobile:text-[6vw]">
                         Actuated Motor:
                       </p>
-                      <p className="text-[1.25vw] font-light mobile:text-[4vw]">
+                      <p className="text-[1.25vw] font-light mobile:text-[4vw] mobile:text-center">
                         Ensures precise firing across all tissue thickness.
                       </p>
                     </div>
                    
-                      <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[20%] bottom-[10%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw]">
+                      <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism flex flex-col items-start justify-center text-[#2A2A2A] left-[20%] bottom-[10%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
                         <p className="text-[1.67vw] font-light mobile:text-[6vw]">
                           Atraumatic Tapered Tip:
                         </p>

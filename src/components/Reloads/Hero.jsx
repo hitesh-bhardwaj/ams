@@ -44,7 +44,7 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-              <div className=" w-[90vw] h-[20vw]  scale-[1.7] absolute right-[-24%] top-[30%] mobile:bottom-0 mobile:right-0 mobile:w-[60vw] mobile:h-[80vw] tablet:w-[55vw] tablet:h-[60vw] pointer-events-none">
+              <div className=" w-[90vw] h-[20vw]  scale-[1.7] absolute right-[-24%] top-[30%] mobile:top-[40%] mobile:right-[5%] mobile:w-[60vw] mobile:h-[90vw] tablet:w-[55vw] tablet:h-[60vw] pointer-events-none">
                 <Image
                   className="object-contain hero-img"
                   src="/assets/reloads/reloads-hero.png"
@@ -53,7 +53,7 @@ const Hero = () => {
                   fill
                 />
               </div>
-              <div className="text-[#F2EEF9] text-[10vw] -rotate-90 absolute right-[-15%] top-[40%] z-[10] mobile:text-[25vw] mobile:leading-[1] mobile:right-[-52%] mobile:top-[60%] mobile:tracking-widest">
+              <div className="text-[#F2EEF9] text-[10vw] font-light -rotate-90 absolute right-[-15%] top-[40%] z-[10] mobile:text-[25vw] mobile:leading-[1] mobile:right-[-52%] mobile:top-[60%] mobile:tracking-widest">
                 <p data-para-anim>TRI SURE</p>
               </div>
             
