@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
 import "swiper/css/free-mode";
+import { Scrollbar } from "swiper/modules";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -14,8 +15,8 @@ const SurgicalCard = ({ img, para,title,tclass }) => {
     <>
      <div className="">
         <p  data-para-anim className={`text-[1.67vw] font-light w-[85%] ml-[2vw] h-[6vw] ${tclass} mobile:text-[8vw] mobile:w-[90%] mobile:h-[25vw] mobile:text-center tablet:text-[3vw] tablet:leading-[1.2] tablet:h-[10vw]`}>{title}</p>
-        <div className="h-[25vw] w-[20vw] p-[1vw] rounded-[1.5vw] bg-white flex flex-col items-center justify-center gap-[2vw] mobile:w-[90vw] mobile:h-[110vw] mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[55vw] tablet:rounded-[4vw]">
-          <div className="h-[77%] w-[100%] rounded-[1vw] flex items-center justify-center surgical-card-image mobile:rounded-[6vw] mobile:h-[67%] tablet:rounded-[3vw]">
+        <div className="h-[24vw] w-[20vw] p-[1vw] rounded-[2.5vw] bg-white flex flex-col items-center justify-center gap-[1vw] mobile:w-[90vw] mobile:h-[110vw] mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[55vw] tablet:rounded-[4vw]">
+          <div className="h-[80%] w-[100%] rounded-[2vw] flex items-center justify-center surgical-card-image mobile:rounded-[6vw] mobile:h-[67%] mobile:w-[95%] tablet:rounded-[3vw]">
             <div className="h-[50%] w-[50%] relative">
               <Image
                 src={img}
@@ -25,7 +26,7 @@ const SurgicalCard = ({ img, para,title,tclass }) => {
               />
             </div>
           </div>
-          <div className=" aeonik font-light text-[1.25vw] text-center h-[30%] mobile:text-[6vw] mobile:leading-[1.3] mobile:mt-[3vw] mobile:w-[90%] mobile:text-center mobile:h-[25%] tablet:text-[2.8vw]">
+          <div className=" aeonik font-light text-[1.25vw] text-center h-[20%] mobile:text-[6vw] mobile:leading-[1.3] mobile:mt-[3vw] mobile:w-[90%] mobile:text-center mobile:h-[25%] tablet:text-[2.8vw]">
             <p data-para-anim >{para}</p>
           </div>
         </div>
@@ -77,10 +78,10 @@ const SurgicalOutcomes = ({data, tclass}) => {
   };
 
   return (
-    <section id="surgical-outcomes" className="relative mobile:h-full mobile:py-[15%] mobile:pb-[25%] tablet:py-[10%]">
+    <section id="surgical-outcomes" className="relative mobile:h-full mobile:py-[15%] mobile:pb-[35%] py-[8%] tablet:py-[10%]">
       <div className="w-screen h-full container-lg">
-        <div className="w-full h-full flex flex-col items-center justify-center py-[5vw] mobile:h-fit tablet:py-0 tablet:gap-[5vw]">
-          <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
+        <div className="w-full h-full flex flex-col items-center justify-center pb-[2vw] mobile:h-fit tablet:py-0 tablet:gap-[5vw]">
+          <div className="w-full h-full flex flex-col items-center justify-center mb-[3vw] mobile:mb-[10vw] mobile:flex mobile:justify-center">
             <h2
               data-para-anim
               className="title-2 aeonik text-center mobile:text-center"
@@ -92,8 +93,10 @@ const SurgicalOutcomes = ({data, tclass}) => {
           <div className="w-full h-full mt-[5vw] cursor-grab">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              className="mySwiper w-full h-full"
+              className="mySwiper w-full h-full "
               spaceBetween={20}
+            scrollbar={true}
+              modules={[Scrollbar]}
               breakpoints={{
                 541: {
                   slidesPerView: 1,
@@ -103,7 +106,7 @@ const SurgicalOutcomes = ({data, tclass}) => {
                   slidesPerView: 2,
                   spaceBetween: 30,
                 },
-                1024: {
+                1025: {
                   slidesPerView: 4,
                   spaceBetween: 50,
                 },

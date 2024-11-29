@@ -226,3 +226,51 @@ export function paraAnimWordpress() {
     return () => ctx.revert(); // Clean up animations on component unmount
   }, []);
 }
+export function lineAnim() {
+  if (globalThis.innerWidth <= 1023 && globalThis.innerWidth > 541) {
+    useEffect(() => {
+      const ctx = gsap.context(()=>{
+
+        const lineDraws = document.querySelectorAll(".lineDraw");
+        lineDraws.forEach((lineDraw) => {
+          gsap.from(lineDraw, {
+            scrollTrigger: {
+              trigger: lineDraw,
+              start: "top 80%",
+            },
+            scaleX: 0,
+            transformOrigin: "left",
+            duration: 1,
+            yPercent: 100,
+            stagger: 0.07,
+            ease: "power3.out",
+          });
+        });
+      })
+      return()=>ctx.revert()
+    },[]);
+  } else {
+    useEffect(() => {
+      const ctx = gsap.context(()=>{
+
+        const lineDraws = document.querySelectorAll(".lineDraw");
+        lineDraws.forEach((lineDraw) => {
+          gsap.from(lineDraw, {
+            scrollTrigger: {
+              trigger: lineDraw,
+              start: "top 95%",
+            
+            },
+            scaleX: 0,
+            transformOrigin: "left",
+            duration: 1.47,
+            
+            stagger: 0.07,
+            ease: "power3.out",
+          });
+        });
+      })
+      return()=>ctx.revert()
+    },[]);
+  }
+}

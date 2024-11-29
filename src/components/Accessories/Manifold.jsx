@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Manifold = () => {
-  useEffect(() => {
+ useEffect(() => {
     if (globalThis.innerWidth > 0) {
       const ctx = gsap.context(() => {
         const content = document.querySelectorAll(".mcard-up");
@@ -26,7 +26,7 @@ const Manifold = () => {
       });
       return () => ctx.revert();
     }
-  }, []);
+  }, []); 
   return (
     <section className="overflow-hidden relative manifold-container mobile:py-[15%] tablet:py-[5%]" id="manifold">
     <div className="w-screen h-full container-lg  mobile:h-[140vh] tablet:h-[60vh] ">

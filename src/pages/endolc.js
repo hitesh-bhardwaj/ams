@@ -2,10 +2,12 @@ import EndolcSpecifications from '@/components/Endolc/EndolcSpecifications'
 import Hero from '@/components/Endolc/Hero'
 import Precision from '@/components/Endolc/Precision'
 import Stapling from '@/components/Endolc/Stapling'
+import { lineAnim } from '@/components/gsapAnimations'
 import Layout from '@/components/Layout'
 import React from 'react'
 
 const endolc = () => {
+  lineAnim()
   return (
    <>
       <Layout>
