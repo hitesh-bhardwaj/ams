@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const UmbilicalTape = () => {
   return (
-    <section className="hero py-[5%] pt-[8%]  tablet:pr-[3%]" id="hero">
-    <div className="px-[10%] relative hero-container mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
-      <div className="flex h-screen w-full justify-start items-start mobile:h-[95vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+    <section className="hero py-[5%] pt-[8%] tablet:pb-0 tablet:pr-[3%]" id="hero">
+    <div className="px-[10%] relative hero-container  tablet:px-[5%] mobile:px-[8%]">
+      <div className="flex h-screen w-full justify-start items-start mobile:h-[80vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
         <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
           <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
             <h1 className="title-1 aeonik drop-shadow-md leading-[1]">
@@ -19,7 +19,7 @@ const UmbilicalTape = () => {
             Comfort meets confidence
             </p>
           </div>
-          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mt-[13vw] mobile:text-center mobile:ml-0 ">
+          <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mt-[13vw] mobile:text-center mobile:ml-0 mobile:mt-0 ">
             <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:hidden tablet:w-[8vw]"></span>
             <p className="max-w-[35vw] ml-[-1vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.2vw] mobile:max-w-full tablet:text-[2.5vw] tablet:max-w-[55%]">
               <span data-para-anim>High-quality, soft and expertly woven cotton, ensures unmatched comfort.</span>
@@ -52,7 +52,7 @@ const UmbilicalTape = () => {
             />
           </div>
 
-          <div className="mobile:mt-[20vw]">
+          <div className="mobile:mt-[40vw]">
             <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.2vw] mobile:max-w-[75vw] mobile:py-[5%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
             Non-Absorbable Bone Wax
             </p>

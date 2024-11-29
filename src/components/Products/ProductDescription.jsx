@@ -189,7 +189,7 @@ const ProductDescription = ({ className, data }) => {
   }, []);
   return (
     <section
-      className="mobile:py-[10%] tablet:pb-[10%] pt-[5%] mobile:overflow-hidden "
+      className="mobile:pt-[10%] tablet:pb-[5%] pt-[5%] mobile:overflow-hidden "
       id="product-description"
       ref={sectionRef}
     >
