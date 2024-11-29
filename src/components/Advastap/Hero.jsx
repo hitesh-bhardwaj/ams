@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
     <section className='dark' id='advastapHero'>
-      <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh]">
+      <div className="w-screen h-screen relative overflow-hidden mobile:h-screen">
         <Image
           src="/assets/advastap/advastap-hero-bg.png"
           fill
@@ -69,7 +69,7 @@ const Hero = () => {
               </div>
           </div>
 
-          <div className="w-[60%] h-full relative left-[40%] right-0 hero-container mobile:rotate-90 mobile:w-full mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[0%] mobile:top-[20%] tablet:top-[10%] tablet:left-0">
+          <div className="w-[60%] h-full relative left-[40%] right-0 hero-container mobile:rotate-90 mobile:w-full mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[0%] mobile:top-[25%] tablet:top-[10%] tablet:left-0">
             <div className="w-full h-full">
               <Image
                 src="/assets/advastap/advastap-hero.png"

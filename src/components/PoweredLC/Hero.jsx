@@ -47,7 +47,7 @@ const Hero = () => {
     const tl = gsap.timeline({
       scrollTrigger:{
         trigger:"#advastap-hero",
-        start:"top -10%",
+        start:"top top",
         end:"bottom top",
         scrub:true,
        

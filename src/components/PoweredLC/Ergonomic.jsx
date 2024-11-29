@@ -14,8 +14,8 @@ const Ergonomic = () => {
         content.forEach((content) => {
           gsap.from(content, {
             scrollTrigger: {
-              trigger:"#ergonomic",
-              start: "top top",
+              trigger:content,
+              start: "top 70%",
               end: "bottom bottom",
             },
             opacity: 0,

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const UniqueCard=({src,title,para})=>{
     return(
         <>
-        <div className='rounded-[2.5vw] glassmorphism border border-[#DADADA] flex flex-col  items-start justify-end pt-[1vw] pb-[3vw] px-[2vw] w-[25vw] h-[18vw] mobile:w-[80vw] mobile:h-[95vw] mobile:rounded-[7vw]   hover:bg-white hover:shadow-xl hover:drop-shadow-xl duration-300 transition-all ease mobile:pb-[10vw] mobile:px-[6vw] tablet:w-[43vw] tablet:h-[50vw] tablet:px-[3vw] tablet:pb-[7vw]'>
+        <div className='rounded-[2.5vw] glassmorphism-light border border-[#DADADA] flex flex-col  items-start justify-end pt-[1vw] pb-[3vw] px-[2vw] w-[27vw] h-[18vw] mobile:w-[80vw] mobile:h-[95vw] mobile:rounded-[7vw]   hover:bg-white hover:shadow-xl hover:drop-shadow-xl duration-300 transition-all ease mobile:pb-[10vw] mobile:px-[6vw] tablet:w-[43vw] tablet:h-[50vw] tablet:px-[3vw] tablet:pb-[7vw]'>
             <div className='w-[7vw] h-[7vw] absolute top-[8%] right-[8%] mobile:left-[30%] mobile:h-[28vw] mobile:w-[28vw]  mobile:top-[10%] tablet:w-[15vw] tablet:h-[15vw]'>
                 <Image src={src} height={80} width={80} alt='unique card' className='object-contain w-full h-full'/>
             </div>
@@ -20,9 +20,9 @@ const UniqueCard=({src,title,para})=>{
 
 const Unique = () => {
   return (
-    <section id="unique" className='w-screen overflow-hidden relative py-[3vw] tablet:py-[10%]'>
+    <section id="unique" className='w-screen overflow-hidden relative  py-[7%] tablet:py-[10%] mobile:py-[20%]'>
     <div className="w-screen h-full container-lg">
-      <div className="w-full h-full flex flex-col items-center justify-center py-[5vw] relative">
+      <div className="w-full h-full flex flex-col items-center justify-center relative">
         <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:w-[90%]">
           <h2
             data-para-anim

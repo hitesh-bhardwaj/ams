@@ -39,7 +39,7 @@ const Hero = () => {
   });
   return (
     <section id='accessoriesHero' className='dark'>
-      <div className="w-screen h-screen relative overflow-hidden hero-container mobile:h-[90vh] tablet:h-[60vh]">
+      <div className="w-screen h-screen relative overflow-hidden hero-container mobile:h-screen tablet:h-[60vh]">
         <Image
           src="/assets/accessories/accessories-hero-bg.png"
           fill

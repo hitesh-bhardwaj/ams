@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
@@ -13,17 +13,38 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hd2Carousel = () => {
     paraAnim();
+    const swiperRef = useRef(null); // Create a ref for Swiper
+
+    // State to track which button was clicked
+    const [activeButton, setActiveButton] = useState("");
+  
+    const handleNext = () => {
+      if (swiperRef.current) {
+        swiperRef.current.slideNext(); // Move to the next slide
+        setActiveButton("next"); // Set next button as active
+        // Reset after 300ms
+      }
+    };
+  
+    const handlePrev = () => {
+      if (swiperRef.current) {
+        swiperRef.current.slidePrev(); // Move to the previous slide
+        setActiveButton("prev"); // Set previous button as active
+        // Reset after 300ms
+      }
+    };
      
   return (
     <>
-    <section id='specificationCarousel' className='overflow-hidden'>  
+    <section id='specificationCarousel' className='overflow-hidden relative'>  
         <div className={`w-screen h-full py-[10vw] bg-[#020912]   text-white items-center flex justify-center swiper-container`}>
         <Swiper
-        navigation={true}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        
         scrollbar={true}
         centeredSlides={true}
         initialSlide={1}
-        modules={[Scrollbar,Navigation]}
+        modules={[Scrollbar]}
         breakpoints={{       
             541: {
               slidesPerView: 1,
@@ -99,6 +120,64 @@ const Hd2Carousel = () => {
       
       </Swiper>
         </div>
+        <div
+            className={`px-[1.6vw] py-[1.6vw] border absolute z-[5] bottom-[10%] right-0 mobile:bottom-[7%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[88%]  tablet:right-[30%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[4vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
+                ${
+                  activeButton === "next"
+                    ? " text-white "
+                    : "bg-transparent text-[#111111]"
+                } transition-colors duration-300`} // Added background color transition
+            onClick={handleNext} // Trigger next slide
+          >
+            <span
+              className={`bg-[#020912] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
+                activeButton === "next"
+                  ? "scale-100 opacity-100 "
+                  : "scale-0 opacity-50"
+              } transition-all duration-300`}
+            ></span>
+            <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[3.5vw] tablet:h-[3.5vw]">
+              <Image
+                src="/assets/home/arrow-right.png"
+                alt="arrow-right"
+                className={`object-cover group-hover:invert transition-all duration-300 ${
+                    activeButton === "next"
+                      ? "invert"
+                      : "invert-0"
+                  } `}
+                fill
+              />
+            </div>
+          </div>
+          <div
+            className={`px-[1.6vw] py-[1.6vw] bottom-[10%] border right-[7%] absolute z-[5] mobile:bottom-[7%] mobile:right-auto mobile:top-auto mobile:left-[39%] translate-x-[-38%]  tablet:top-[88%] tablet:bottom-auto tablet:right-[50%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[4vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
+                ${
+                  activeButton === "prev"
+                    ? " text-white "
+                    : "bg-transparent text-[#111111]"
+                } transition-colors duration-300`} // Added background color transition
+            onClick={handlePrev} // Trigger previous slide
+          >
+            <span
+              className={`bg-[#020912] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
+                activeButton === "prev"
+                  ? "scale-100 opacity-100"
+                  : "scale-0 opacity-50"
+              } transition-all duration-300`}
+            ></span>
+            <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[3.5vw] tablet:h-[3.5vw]">
+              <Image
+                src="/assets/home/arrow-left.png"
+                alt="arrow-left"
+                className={`object-cover group-hover:invert transition-all duration-300 ${
+                    activeButton === "prev"
+                      ? "invert"
+                      : "invert-0"
+                  } `}
+                fill
+              />
+            </div>
+          </div>
     </section>
     </>
   )
