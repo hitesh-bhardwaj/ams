@@ -9,7 +9,7 @@ const Closure = () => {
           <div className="w-full h-full flex flex-col items-center justify-center mobile:flex mobile:justify-center">
             <h2
               data-para-anim
-              className="title-2 aeonik text-center mobile:text-center mobile:w-[80%]"
+              className="title-2 aeonik text-center capitalize mobile:text-center mobile:w-[80%]"
             >
              Closure than you think
             </h2>
