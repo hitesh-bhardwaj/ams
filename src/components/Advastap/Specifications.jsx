@@ -62,7 +62,7 @@ const Specifications = () => {
         {isModalOpen && (
           <>
           {/* <div className="fixed top-0 left-0 bg-black opacity-100 z-[99]" onClick={closeModal}></div> */}
-          <div data-scroll-prevent className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[999] bg-opacity-50 bg-black"  ref={modalRef}>
+          <div data-lenis-prevent className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[999] bg-opacity-50 bg-black"  ref={modalRef}>
             <div className="bg-[#DADADA]  border border-white rounded-[40px] p-[5vw] w-[80vw] max-h-[90vh] overflow-y-auto modal-no-scrollbar  mobile:max-h-[85vh] mobile:py-[20vw] mobile:w-[90vw]">
               <div
                 onClick={closeModal}
