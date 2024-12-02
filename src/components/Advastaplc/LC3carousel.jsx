@@ -5,13 +5,14 @@ import 'swiper/css/scrollbar';
 import { Scrollbar } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css/navigation';
-import { paraAnim } from "../gsapAnimations";
+import { fadeup, paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const LC3Carousel = () => {
+  fadeup()
     paraAnim();
     // useGSAP(()=>{
     //         if(globalThis.innerWidth>1024){
@@ -56,8 +57,8 @@ const LC3Carousel = () => {
      
   return (
     <>
-    <section id='skinstapler-carousel' className='overflow-hidden'>  
-        <div className={`w-screen h-full py-[10vw] text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab relative`}>
+    <section id='skinstapler-carousel' className='overflow-hidden py-[5%] mobile:py-[15%] tablet:py-[10%]'>  
+        <div className={`w-screen h-full text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab relative fadeUp`}>
         <Swiper
          onSwiper={(swiper) => (swiperRef.current = swiper)}
         scrollbar={true}
@@ -194,7 +195,7 @@ const LC3Carousel = () => {
       
       </Swiper>
       <div
-            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-[10%] right-0 mobile:bottom-[7%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[88%] tablet:bottom-auto tablet:right-[30%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[4vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
+            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-0 right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[93%] tablet:bottom-auto tablet:right-[28%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[4vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
                 ${
                   activeButton === "next"
                     ? " text-white"
@@ -223,7 +224,7 @@ const LC3Carousel = () => {
             </div>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] bottom-[10%] right-[7%] absolute z-[5] mobile:bottom-[7%] mobile:right-auto mobile:top-auto mobile:left-[39%] translate-x-[-38%]  tablet:top-[88%] tablet:bottom-auto tablet:right-[50%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[4vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
+            className={`px-[1.6vw] py-[1.6vw] bottom-0 right-[7%] absolute z-[5] mobile:bottom-[3%] mobile:right-auto mobile:top-auto mobile:left-[39%] translate-x-[-38%]  tablet:top-[93%] tablet:bottom-auto tablet:right-[47%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[4vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
                 ${
                   activeButton === "prev"
                     ? " text-white"

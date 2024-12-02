@@ -47,38 +47,38 @@ const Hero = () => {
 
   return (
     <section className='' id='advastapHero'>
-      <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh] tablet:h-[70vh]">
+      <div className="w-screen h-screen relative overflow-hidden mobile:h-screen tablet:h-[70vh]">
         <Image
           src="/assets/advastaplc/advastaplc-hero-bg.png"
           fill
           alt="advastap-hero"
           className="object-cover absolute"
         />
-        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[25%] tablet:flex-col tablet:top-[22%]">
-          <div className=" absolute left-[12%] mobile:left-[17%] mobile:w-[100%] tablet:left-[15%]">
+        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[20%] tablet:flex-col tablet:top-[22%]">
+          <div className=" absolute left-[12%] mobile:left-[10%] mobile:w-[100%] tablet:left-[15%]">
           <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text">
                   <span 
-                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw]`}
+                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[7.5vw]`}
                   >
                   ADVASTAP LC
                   </span>
                 </h1>
-                <div className='w-[70%] h-[1px] bg-black/50 my-[3vw] hidden mobile:block'></div>
-            <div className='flex items-center mt-[2vw]'>
-            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.45em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[12%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  flex items-center justify-start mobile:text-center mobile:justify-center">
+                <div className='w-[80%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block'></div>
+            <div className='flex items-center mobile:w-[80%] mobile:justify-center '>
+            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-space font-light mobile:text-[4.6vw] mobile:tracking-widest  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  flex items-center justify-start mobile:text-center mobile:justify-center">
           Linear Cutter 
                 </p>
-              <span className="w-[5.2vw] h-[1px] bg-black line mobile:hidden tablet:hidden "></span>
+              <span className="w-[10vw] h-[1px] ml-[1vw] bg-black line mobile:hidden tablet:hidden "></span>
               </div>
           </div>
 
-          <div className="w-[70%] h-full relative left-[30%] right-0 hero-container   tablet:w-[100%]  mobile:top-[10%] tablet:top-[10%] tablet:left-[20%]">
-            <div className="w-[70vw] h-[70vw]  mobile:w-[100vw] mobile:h-[150vw] mobile:left-[-50%] relative tablet:w-[100vw] tablet:h-[100vw]">
+          <div className="w-[70%] h-full relative left-[43%] hero-container   tablet:w-[100%]  mobile:top-[15%] tablet:top-[10%] tablet:left-[20%]">
+            <div className="w-[80vw] h-[80vw]  mobile:w-[150vw] mobile:h-[150vw] mobile:left-[-90%] relative tablet:w-[100vw] tablet:h-[100vw]">
               <Image
                 src="/assets/advastaplc/advastaplc-hero-element.png"
                 alt="side-image"
                 fill
-                className=" hero-img object-contain"
+                className=" hero-img object-contain rotate-[-110deg] mobile:rotate-[-105deg]"
               />
             </div>
           </div>

@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 const Closure = () => {
   return (
-    <section className="overflow-hidden relative mobile:py-[10%]" id="think">
+    <section className="overflow-hidden relative mobile:py-[5%]" id="think">
       <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] ">
         <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] py-[5vw]">
           <div className="w-full h-full flex flex-col items-center justify-center mobile:flex mobile:justify-center">
-            <h2 className="advastap-text text-white text-[2.8vw] aeonik drop-shadow-md leading-[1] hero-text">
+            <h2 className="advastap-text text-white text-[2.8vw] aeonik drop-shadow-md leading-[1] hero-text mobile:text-center">
                   <span 
-                    className={`leading-[1.2] overflow-hidden uppercase text-[2.8vw] mobile:text-[9.2vw] tablet:text-[7.5vw]`}
+                    className={`leading-[1.2] overflow-hidden uppercase text-[2.8vw] mobile:text-[8.2vw]  tablet:text-[7vw]`}
                   >
                  Performance that Inspires Confidence
                   </span>

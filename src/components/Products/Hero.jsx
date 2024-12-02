@@ -5,9 +5,9 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
     <>
       <section className="hero mb-[10%] tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden" id="hero">
         <div className="px-[10%] relative hero-container mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="flex h-dvh w-full justify-start items-center mobile:h-[80vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+          <div className="flex h-dvh w-full justify-start items-center mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
-              <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
+              <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
                 <h1 className="title-1 aeonik drop-shadow-md leading-[1]">
                   <span data-para-anim
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] ${className} tablet:text-[7.5vw]`}
@@ -15,7 +15,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                     {heading}
                   </span> 
                 </h1>
-                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1.2] tracking-wide mobile:text-[5vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1.2] tracking-wide mobile:text-[5vw] mobile:leading-[1.2] mobile:w-[80%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                   {tagline}
                 </p>
               </div>
@@ -46,8 +46,8 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                 />
               </div>
 
-              <div className="mobile:mt-[30vw]">
-                <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.2vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
+              <div className="mobile:mt-[35vw]">
+                <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[5vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
                   {para2}
                 </p>
               </div>
