@@ -9,7 +9,7 @@ import Layout from '@/components/Layout'
 import React from 'react'
 import { fadeIn } from '@/components/gsapAnimations'
 
-const reloads = () => {
+const accessories = () => {
   fadeIn();
   return (
     <Layout>
@@ -26,4 +26,4 @@ const reloads = () => {
   )
 }
 
-export default reloads
+export default accessories
