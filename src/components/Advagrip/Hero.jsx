@@ -39,7 +39,7 @@ const Hero = () => {
   });
   return (
     <section className=" hero-container dark" id="hero">
-      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh] mobile:h-[85vh]">
+      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh] mobile:h-screen">
         <div className="w-screen h-screen absolute tablet:h-[70vh]">
           <Image
             data-speed="0.7"
@@ -50,8 +50,8 @@ const Hero = () => {
             fill
           />
         </div>
-
-        <div className="w-[100vw] h-screen absolute top-[10%] right-[-20%] z-[20] tablet:h-[70vh] tablet:z-0 hero-needle mobile:h-[150vw] mobile:w-[200vw] mobile:z-[0]">
+        
+        <div className="w-[100vw] h-screen absolute top-[20%] right-[-20%] z-[20] tablet:h-[70vh] tablet:z-0 hero-needle mobile:h-[200vw] mobile:w-[250vw] mobile:z-[0] mobile:right-[-50%] mobile:top-[10%]">
           <Image
             src="/assets/advagrip/advagrip-needle.png"
             fill
@@ -62,7 +62,7 @@ const Hero = () => {
         
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col  mt-[12vw] items-start tablet:h-[70vh] mobile:items-center mobile:mt-[30vw] tablet:mt-[25vw]">
+          <div className="flex h-dvh w-full flex-col  mt-[12vw] items-start tablet:h-[70vh] mobile:items-center mobile:mt-[35vw] tablet:mt-[25vw]">
             <div className=" mobile:flex mobile:flex-col mobile:items-center ">
               <h1
                 data-para-anim
@@ -78,14 +78,14 @@ const Hero = () => {
               >
                 <span
                   data-para-anim
-                  className={`text-[#FFFFFF] mobile:text-center tracking-widest text-[1.2vw] font-light mobile:text-[5vw] mobile:tracking-normal tablet:text-[2.5vw]`}
+                  className={`text-[#FFFFFF] mobile:text-center tracking-space text-[1.2vw] font-light mobile:text-[5vw] mobile:tracking-normal tablet:text-[2vw]`}
                 >
                 KNOTLESS TISSUE CONTROL DEVICE
                 </span>
               </p>
               <div className="w-screen h-full text-white aeonik relative mobile:static mobile:w-full">
-                <p className="uppercase text-[14vw] tracking-wider opacity-10 font-light top-[-20%] absolute left-[-12%] mobile:hidden tablet:top-[80%]">advagrip</p>
-                <p className="text-[2.5vw] font-light absolute top-[45%] left-0 mobile:static mobile:text-[5vw] mobile:text-center tablet:top-[130%]">A Grip Like No Other.</p>
+                <p data-para-anim className="uppercase text-[14vw] tracking-wider opacity-10 font-light top-[-20%] absolute left-[-12%] mobile:hidden tablet:top-[80%]">advagrip</p>
+                <p data-para-anim className="text-[2.5vw] font-light absolute top-[45%] left-0 mobile:static mobile:text-[5vw] mobile:text-center tablet:top-[130%]">A <span className="grip-gradient">Grip</span> Like No Other.</p>
 
               </div>
             </div>

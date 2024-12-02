@@ -2,7 +2,6 @@
 import Edge from "@/components/Products/Edge";
 import NextGeneration from "@/components/Products/NextGeneration";
 import Uncover from "@/components/Products/Uncover";
-import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Hero from "@/components/Advagrip/Hero";
 import TricCut from "@/components/Advagrip/TricCut";
@@ -43,7 +42,7 @@ const FeatureCard = {
 };
 
 const advaGrip = () => {
-  fadeUp();
+ 
 
   return (
     <>

@@ -10,39 +10,39 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const AdvastapLC3 = () => {
   paraAnim();
   
-//   useGSAP(() => {
-//     if(globalThis.innerWidth>1024){
-//     const tl = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: ".hd-container",
-//         scrub:true
-//       },
-//     });
-//     tl.fromTo(
-//       ".hd-img",
-//       {
-//         x:-250,
-//       },
-//       {
-//        x:0,
-//         duration: 1.5,
-//         delay: 0.1,
-//         ease: "power3.out",
-//       }
-//     );
-// }
-//   });
+  useGSAP(() => {
+    if(globalThis.innerWidth>1024){
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".hd-container",
+        
+      },
+    });
+    tl.fromTo(
+      ".hd-img",
+      {
+        x:250,
+      },
+      {
+       x:0,
+        duration: 1.5,
+        delay: 0.1,
+        ease: "power3.out",
+      }
+    );
+}
+  });
   return (
    <>
-   <section id='advastapHd'>
-    <div className='w-screen h-screen overflow-hidden mobile:h-[85vh] tablet:h-[85vh]'>
-        <div className='w-screen relative  flex h-[80%] flex-col-reverse justify-between items-start pt-[4vw] mobile:py-[10vw] mobile:h-[120vh] tablet:h-[70vh] mobile:overflow-hidden'>
-            <div className='w-[80vw] h-[100vw]  right-[-25%] relative hd-container  top-[20%] mobile:w-full mobile:-rotate-[110deg] mobile:left-0 mobile:scale-[1] mobile:top-[-40%] tablet:left-0 tablet:scale-[1]'>
+   <section id='advastapHd' className='mobile:py-[15%] tablet:py-[10%]'>
+    <div className='w-screen h-screen overflow-hidden mobile:h-full tablet:h-[85vh]'>
+        <div className='w-screen relative  flex h-[80%] flex-col-reverse justify-between items-start mobile:h-[90vh] tablet:h-[70vh] mobile:overflow-hidden'>
+            <div className='w-[80vw] h-[40vw] right-[-25%] relative hd-container  top-[20%] mobile:w-full mobile:-rotate-[110deg] mobile:left-0 mobile:scale-[1] tablet:w-[100vw] tablet:h-[70vw] tablet:top-0 tablet:rotate-[-20deg] mobile:top-[-30%] tablet:left-0 tablet:scale-[1]'>
             <Image 
             src="/assets/advastaplc/advastaplc2-element.png"
             fill
             alt='advastap-about'
-            className=' object-contain hd-img rotate-[-122deg] scale-[3] mobile:object-contain mobile:scale-[2] mobile:rotate-[110deg] tablet:rotate-0 tablet:scale-[1.5]
+            className=' object-contain hd-img scale-[2.1] rotate-[-152deg] mobile:object-contain mobile:scale-[3] mobile:rotate-[80deg] tablet:rotate-0 tablet:scale-[1.5]
             tablet:object-contain'
             />
             </div>

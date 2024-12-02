@@ -3,9 +3,12 @@ import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { fadeup } from "../gsapAnimations";
+
 gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 const Edge = ({ sectionheading, card1, card2, card3,visibility }) => {
+  fadeup()
   useGSAP(()=>{
     if(globalThis.innerWidth>1024){
       const tl = gsap.timeline({
@@ -38,15 +41,15 @@ const Edge = ({ sectionheading, card1, card2, card3,visibility }) => {
   })
   return (
     <>
-      <section className="overflow-hidden mobile:py-[10%] tablet:pt-[10%] py-[5%]" id="edge">
-        <div className="w-screen h-full container-lg mb-[10%] mobile:h-full tablet:h-[70%] tablet:mb-0">
+      <section className="overflow-hidden mobile:py-[10%] tablet:pt-[7%] tablet:pb-0 pt-[5%] pb-[10%]" id="edge">
+        <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] tablet:mb-0">
           <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] tablet:justify-between">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
               <h2 data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectionheading}</h2>
             </div>
 
             <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">
-              <div className="edge-card1 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50  mobile:w-[90vw] mobile:gap-[10vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:order-1 mobile:text-center tablet:h-[50vw] tablet:w-[23vw]">
+              <div className="edge-card1 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50  mobile:w-[90vw] mobile:gap-[10vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:order-1 mobile:text-center tablet:h-[50vw] tablet:w-[23vw] fadeUp">
                 <div>
                   <h3 className="text-[2.5vw] font-extralight text-center leading-[1.2] mobile:text-[8.2vw] tablet:text-[2.5vw]">
                     {card1.title}
@@ -69,7 +72,7 @@ const Edge = ({ sectionheading, card1, card2, card3,visibility }) => {
                 </div>
               </div>
 
-              <div className="edge-card2 py-[3vw] px-[1vw] h-[43vw] w-[43vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw] ">
+              <div className="edge-card2 py-[3vw] px-[1vw] h-[43vw] w-[43vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw] fadeUp ">
                 <div className="flex items-center justify-center mobile:flex-col mobile:gap-[5vw]">
                   <span className={`block w-[10.7vw] h-[1.65vw] relative mr-[0.5vw] mobile:w-[36vw] mobile:h-[6vw] tablet:w-[20vw] tablet:h-[3vw] ${visibility} `}>
                     <Image
@@ -117,7 +120,7 @@ const Edge = ({ sectionheading, card1, card2, card3,visibility }) => {
                 </div>
               </div>
 
-              <div className="edge-card3 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:gap-[10vw] mobile:text-center mobile:order-2 tablet:h-[50vw] tablet:w-[23vw]">
+              <div className="edge-card3 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:gap-[10vw] mobile:text-center mobile:order-2 tablet:h-[50vw] tablet:w-[23vw] fadeUp">
                 <div>
                   <h3 className="text-[2.5vw] font-extralight text-center leading-[1.2] mobile:text-[8.2vw]  tablet:text-[2.5vw] ">
                     {card3.title}
