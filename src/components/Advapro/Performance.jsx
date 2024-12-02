@@ -54,10 +54,10 @@ const Performance = () => {
                       className=" fadein"
                     />
                   </div>
-                  <div className="mobile:flex mobile:flex-col mobile:gap-[5vw]">
+                  <div className=" mobile:flex mobile:flex-col mobile:gap-[5vw]">
 
-                  <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[10%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 ">
+                  <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[10%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[40%]">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw]">
                         <Image src="/assets/advapro/coating.png" fill alt="coating"/>
                     </div>
                     <p
@@ -67,8 +67,8 @@ const Performance = () => {
                     Abluminal Drug Coating
                     </p>
                   </div>
-                  <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] right-[10%] top-[40%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 ">
+                  <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] right-[10%] top-[40%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[40%] tablet:right-[5%]">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] ">
                         <Image src="/assets/advapro/design.png" fill alt="coating"/>
                     </div>
                     <p
@@ -78,8 +78,8 @@ const Performance = () => {
                    Stent (Scaffold) Design
                     </p>
                   </div>
-                  <div className="absolute w-[22%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[15%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 ">
+                  <div className="absolute w-[22%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[15%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[30%] tablet:top-[49%] tablet:left-[10%]">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] ">
                         <Image src="/assets/advapro/drug.png" fill alt="coating"/>
                     </div>
                     <p
@@ -89,8 +89,8 @@ const Performance = () => {
                    Sirolimus Drug
                     </p>
                   </div>
-                  <div className="absolute w-[32%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[40%] bottom-[5%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 ">
+                  <div className="absolute w-[32%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[40%] bottom-[5%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[50%]">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw]">
                         <Image src="/assets/advapro/matrix.png" fill alt="coating"/>
                     </div>
                     <p
@@ -100,8 +100,8 @@ const Performance = () => {
                   Biodegradable Polymer Matrix
                     </p>
                   </div>
-                  <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] right-[5%] bottom-[20%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 ">
+                  <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] right-[5%] bottom-[20%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[40%]">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0  tablet:h-[5vw] tablet:w-[5vw]">
                         <Image src="/assets/advapro/stent.png" fill alt="coating"/>
                     </div>
                     <div className="absolute h-[7vw] w-[6vw]  bottom-[90%] ">

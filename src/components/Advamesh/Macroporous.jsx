@@ -5,10 +5,10 @@ const Macroporous = () => {
   return (
     <>
       <section
-        className="overflow-hidden   mobile:py-[10%] relative py-[10vw] tablet:py-[10%]"
+        className="overflow-hidden mobile:py-[10%] relative py-[10vw] tablet:py-[10%]"
         id="macroporous"
       >
-        <div className="w-screen h-screen container-lg z-[5] mobile:h-[130vh] tablet:h-[60vh] ">
+        <div className="w-screen h-screen container-lg z-[5] mobile:h-[130vh] tablet:h-[60vh]">
           <div className="w-full h-full flex flex-col items-center justify-center pb-[5vw] tablet:justify-start ">
             <div className="w-full h-full flex flex-col items-center justify-start mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit tablet:h-fit ">
               <h2
