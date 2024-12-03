@@ -34,7 +34,7 @@ export default function CardsCarousel() {
               centeredSlides={true}
               slidesPerView={3.3}
               initialSlide={0}
-              loop={true}
+              // loop={true}
               spaceBetween={20}
               speed={1500}
               coverflowEffect={{

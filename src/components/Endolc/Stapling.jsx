@@ -24,7 +24,7 @@ const Stapling = () => {
                     </p>
                     <div className="flex flex-col h-[100%] w-[30%] items-center justify-center pr-[30%] mobile:pr-0 tablet:pr-[10%]">
                 <div  className="relative h-[18vw] w-[14vw] fadein mobile:w-[55vw] mobile:h-[80vw] tablet:w-[35vw] tablet:h-[35vw]">
-                    <Image src="/assets/endolc/stapling-pro-1.png" fill alt="stapling" className="object-fill"/>
+                    <Image src="/assets/endolc/stapling-pro-1.png" fill alt="stapling" className="object-fill fade-in"/>
                 </div>
                     </div> 
                 </div>
@@ -38,8 +38,8 @@ const Stapling = () => {
                     </div>
                     
                    
-                <div className="relative h-[20vw] w-[50vw] scale-[2] fadein  bottom-[10%] fadein mobile:w-[80vw] mobile:h-[50vw] mobile:bottom-[35%] mobile:absolute mobile:right-[-5%] tablet:w-[30vw] tablet:h-[30vw]">
-                    <Image src="/assets/endolc/stapling-pro-2.png" fill alt="stapling" className="object-contain mobile:rotate-[60deg]"/>
+                <div className="relative h-[20vw] w-[50vw] scale-[2] bottom-[10%] fadein mobile:w-[80vw] mobile:h-[50vw] mobile:bottom-[35%] mobile:absolute mobile:right-[-5%] tablet:w-[30vw] tablet:h-[30vw]">
+                    <Image src="/assets/endolc/stapling-pro-2.png" fill alt="stapling" className="object-contain mobile:rotate-[60deg]  fadein  "/>
                 </div>  
                 </div>
 
