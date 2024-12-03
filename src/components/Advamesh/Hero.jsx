@@ -11,9 +11,9 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = () => {
   paraAnim();
   return (
-    <section className='' id='advameshHero'>
-      <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh] tablet:h-[70vh]">
-        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[25] tablet:flex-col tablet:top-[22%]">
+    <section className='dark ' id='advameshHero'>
+      <div className="w-screen h-screen relative overflow-hidden  mobile:h-[90vh] tablet:h-[70vh]">
+        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center  mobile:flex-col mobile:top-[25] tablet:flex-col tablet:top-[22%]">
           <div className=" absolute left-[12%] top-[28%] mobile:left-[17%] mobile:w-[100%] tablet:left-[15%]">
           <h1 className="text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text font-light ">
                   <span 
@@ -32,7 +32,7 @@ const Hero = () => {
 
         </div>
       </div>
-      <div className="absolute h-[100%] w-[100%] top-0 right-0 mobile:w-screen mobile:h-screen mobile:right-0 z-[-1]">
+      <div className="absolute h-[100%] w-[100%] top-0 right-0  mobile:w-screen mobile:h-screen mobile:right-0 z-[-1]">
                 <Image src="/assets/advamesh/advamesh-hero-bg.png"
               fill
                 alt="advamesh Hero bg"

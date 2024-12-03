@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[25] tablet:flex-col tablet:top-[22%]">
           <div className=" absolute left-[12%] mobile:left-[17%] mobile:w-[100%] tablet:left-[15%]">
           <h1 className="text-[#38C5FF]  aeonik drop-shadow-md leading-[1] hero-text font-light">
-                  <span 
+                  <span data-para-anim
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw]`}
                   >
                  ADVA PRO
@@ -51,7 +51,7 @@ const Hero = () => {
               </div>
           </div>
 
-          <div className="w-[60%] h-full absolute right-[5%] top-[10%] hero-container tablet:w-[100%]  mobile:top-[10%] tablet:top-[10%] tablet:left-[20%]">
+          <div className="w-[60%] h-[80%] absolute right-[5%] bottom-0 hero-container tablet:w-[100%]  mobile:top-[10%] tablet:top-[10%] tablet:left-[20%]">
             <div className="w-full h-[50vw]  mobile:w-[100vw] mobile:h-[150vw] mobile:left-[-50%] relative tablet:w-[100vw] tablet:h-[100vw]">
               <Image
                 src="/assets/advapro/advapro-hero.png"

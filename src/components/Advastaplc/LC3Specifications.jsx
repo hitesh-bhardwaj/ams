@@ -1,5 +1,6 @@
 import React from 'react'
 import Specifications from '../Specifications'
+import Image from 'next/image'
 
 const LC3Specifications = () => {
   return (
@@ -90,10 +91,15 @@ const LC3Specifications = () => {
         </div>
 
         <div className="flex w-full border-b border-[#DADADA]  tablet:w-[130vw] mobile:w-[180vw]">
-          <div className=" p-[1vw] text-[#4564AC] w-[25vw]  tablet:w-[40vw] mobile:w-[60vw]">Closed Staple Shape</div>
-          <div className=" flex justify-start gap-[10vw] ">
-            <div className="p-[1vw] w-[15vw] tablet:w-[40vw] mobile:w-[55vw]">X-Shaped Technology</div>
-            <div className="p-[1vw] w-[15vw] tablet:w-[40vw] mobile:w-[55vw]">X-Shaped Technology</div>
+          <div className=" p-[1vw] text-[#4564AC] w-[25vw]   tablet:w-[40vw] mobile:w-[60vw]">
+           Closed Staple Shape</div>
+          <div className=" flex justify-start gap-[6vw] ">
+            <div className="p-[1vw] w-[19vw] flex items-start justify-start gap-[1vw] tablet:w-[40vw] mobile:w-[55vw] "> <div className='relative h-[3vw] w-[3vw] '>
+              <Image src="/assets/advastaplc/x-shaped.png" fill alt="x-shaped" className='object-contain'/>
+              </div>X-Shaped Technology</div>
+              <div className="p-[1vw] w-[19vw] flex items-start justify-start gap-[1vw] tablet:w-[40vw] mobile:w-[55vw] "> <div className='relative h-[3vw] w-[3vw] '>
+              <Image src="/assets/advastaplc/x-shaped.png" fill alt="x-shaped" className='object-contain'/>
+              </div>X-Shaped Technology</div>
           </div>
         </div>
         <div className="flex w-full border-b border-[#DADADA]  tablet:w-[130vw] mobile:w-[180vw]">

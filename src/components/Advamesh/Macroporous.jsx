@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
+import { paraAnim } from "../gsapAnimations";
 
 const Macroporous = () => {
+  paraAnim();
   return (
     <>
       <section
