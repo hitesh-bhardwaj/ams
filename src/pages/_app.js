@@ -32,7 +32,6 @@ export default function App({ Component, pageProps, router }) {
       />
       <style>{mediaStyles}</style>
       <MediaContextProvider>
-
       <ReactLenis root options={{lerp: 0.05}}>
         <ScrollToTop key={router.route}/>
         <AnimatePresence mode="wait">
@@ -42,8 +41,6 @@ export default function App({ Component, pageProps, router }) {
       </MediaContextProvider>
        <Pixifinal />
        {/* <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/50 to-blue-500"></div> */}
-
-       
     </>
   );
 }
