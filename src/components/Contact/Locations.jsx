@@ -60,7 +60,7 @@ const Locations = () => {
                 <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%]">
                   <p data-para-anim>Regional Office</p>
                   <p data-para-anim>
-                    SM0132, 18 Floor, DLF Star Mall, Sector 30, NH-48, Opp: 32"
+                    SM0132, 18 Floor, DLF Star Mall, Sector 30, NH-48, Opp: 32&quot;
                     Avenue, Gurugram, 122001, Delhi - India
                   </p>
                 </div>
