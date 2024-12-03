@@ -14,8 +14,8 @@ const Ergonomic = () => {
         content.forEach((content) => {
           gsap.from(content, {
             scrollTrigger: {
-              trigger:"#ergonomic",
-              start: "top top",
+              trigger:content,
+              start: "top 80%",
               end: "bottom bottom",
             },
             opacity: 0,
@@ -31,9 +31,9 @@ const Ergonomic = () => {
   }, []);
   return (
     <>
-      <section className="overflow-hidden py-[5vw]  mobile:py-[15%] mobile:pb-[30%] relative" id="ergonomic">
-        <div className="w-screen h-[70vw] container-lg  mobile:h-[150vh] tablet:h-[95vh] ">
-          <div className="w-full h-full flex flex-col items-center justify-center relative py-[5vw] mobile:justify-between ">
+      <section className="overflow-hidden py-[7%]  mobile:py-[15%] mobile:pb-[30%] relative" id="ergonomic">
+        <div className="w-screen h-[60vw] container-lg  mobile:h-[150vh] tablet:h-[95vh] ">
+          <div className="w-full h-full flex flex-col items-center justify-center relative mobile:justify-between ">
             <div className="w-full h-full flex flex-col items-center mobile:mb-[10vw] mobile:flex mobile:justify-between mobile:h-fit">
               <h2
                 data-para-anim

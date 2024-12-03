@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import { paraAnim } from "../gsapAnimations";
+import { fadeup, paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = () => {
   paraAnim();
+  fadeup()
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -51,11 +52,11 @@ const Hero = () => {
           />
         </div>
         
-        <div className="w-[100vw] h-screen absolute top-[20%] right-[-20%] z-[20] tablet:h-[70vh] tablet:z-0 hero-needle mobile:h-[200vw] mobile:w-[250vw] mobile:z-[0] mobile:right-[-50%] mobile:top-[10%]">
+        <div className="w-[100vw] h-screen absolute top-[20%] right-[-20%] z-[20] tablet:h-[70vh] tablet:z-0 hero-needle mobile:h-[200vw] mobile:w-[250vw] mobile:z-[0] mobile:right-[-50%] mobile:top-[10%] ">
           <Image
             src="/assets/advagrip/advagrip-needle.png"
             fill
-            className="object-contain rotate-[20deg] absolute"
+            className="object-contain rotate-[20deg] absolute fadeUp"
             alt="hero-needles"
           />
         </div>

@@ -171,6 +171,7 @@ const Carousel = () => {
        
       
       </Swiper>
+      
       <div
             className={`px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-[10%] right-0 mobile:bottom-[7%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[88%] tablet:bottom-auto  tablet:right-[30%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[4vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
                 ${

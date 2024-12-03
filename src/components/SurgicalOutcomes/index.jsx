@@ -26,7 +26,7 @@ const SurgicalCard = ({ img, para,title,tclass }) => {
               />
             </div>
           </div>
-          <div className=" aeonik font-light text-[1.25vw] text-center h-[20%] mobile:text-[6vw] mobile:leading-[1.3] mobile:mt-[3vw] mobile:w-[90%] mobile:text-center mobile:h-[25%] tablet:text-[2.8vw]">
+          <div className=" aeonik font-light leading-[1.2] text-[1.25vw] text-center h-[20%] mobile:text-[6vw] mobile:leading-[1.3] mobile:mt-[3vw] mobile:w-[90%] mobile:text-center mobile:h-[25%] tablet:text-[2.8vw]">
             <p data-para-anim >{para}</p>
           </div>
         </div>
@@ -90,7 +90,7 @@ const SurgicalOutcomes = ({data, tclass}) => {
             </h2>
           </div>
 
-          <div className="w-full h-full mt-[5vw] cursor-grab">
+          <div className="w-full h-full mt-[5vw] cursor-grab fadeUp">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               className="mySwiper w-full h-full "

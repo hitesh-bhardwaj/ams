@@ -7,6 +7,7 @@ import Hero from "@/components/Advagrip/Hero";
 import TricCut from "@/components/Advagrip/TricCut";
 import KeyFeatures from "@/components/Advagrip/KeyFeatures";
 import Paradigm from "@/components/Advagrip/Paradigm";
+import { fadeup } from "@/components/gsapAnimations";
 
 const EdgeCard = {
   card1: {
@@ -42,6 +43,7 @@ const FeatureCard = {
 };
 
 const advaGrip = () => {
+  // fadeup()
  
 
   return (

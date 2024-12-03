@@ -59,7 +59,7 @@ const Hd2Carousel = () => {
               spaceBetween: 50,
             },
           }}
-        className={`w-screen flex items-center justify-center specificationSwiper`}
+        className={`w-screen flex items-center justify-center specificationSwiper fadeUp`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">

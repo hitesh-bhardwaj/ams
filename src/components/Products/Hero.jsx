@@ -20,7 +20,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                 </p>
               </div>
               <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mobile:text-center mobile:ml-0 ">
-                <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:rotate-0 mobile:w-[80vw] mobile:hidden mobile:absolute mobile:top-[22%] mobile:h-[1px] tablet:w-[8vw]"></span>
+                <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:rotate-0 mobile:w-[80vw] mobile:hidden mobile:absolute mobile:top-[22%] mobile:h-[1px] tablet:w-[8vw] fadeUp"></span>
                 <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.8vw] mobile:max-w-full mobile:leading-[1.2] tablet:text-[2.5vw] tablet:max-w-[55%]">
                   <span data-para-anim>{para1}</span>
                 </p>
@@ -46,7 +46,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
                 />
               </div>
 
-              <div className="mobile:mt-[35vw]">
+              <div className="mobile:mt-[35vw] mt-[-3vw]">
                 <p data-para-anim className="max-w-[30vw] mt-[-3vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[5vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
                   {para2}
                 </p>

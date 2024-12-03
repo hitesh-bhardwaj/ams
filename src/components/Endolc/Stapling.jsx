@@ -38,7 +38,7 @@ const Stapling = () => {
                     </div>
                     
                    
-                <div className="relative h-[20vw] w-[50vw] scale-[2]  bottom-[10%] fadein mobile:w-[80vw] mobile:h-[50vw] mobile:bottom-[35%] mobile:absolute mobile:right-[-5%] tablet:w-[30vw] tablet:h-[30vw]">
+                <div className="relative h-[20vw] w-[50vw] scale-[2] fadein  bottom-[10%] fadein mobile:w-[80vw] mobile:h-[50vw] mobile:bottom-[35%] mobile:absolute mobile:right-[-5%] tablet:w-[30vw] tablet:h-[30vw]">
                     <Image src="/assets/endolc/stapling-pro-2.png" fill alt="stapling" className="object-contain mobile:rotate-[60deg]"/>
                 </div>  
                 </div>

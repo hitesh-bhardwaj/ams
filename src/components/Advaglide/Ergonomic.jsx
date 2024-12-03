@@ -9,11 +9,11 @@ const Ergonomic = () => {
         id="advaglide-ergonomic"
       >
         <div className="w-full container-lg flex justify-center">
-          <h2 data-para-anim className="title-2 w-[60%] font-light aeonik text-center">
+          <h2 data-para-anim className="title-2 w-[60%] font-light aeonik text-center z-[10]">
             Revolutionised for the Most Challenging Environments
           </h2>
         </div>
-        <div className="relative w-[80vw] h-[35vw] scale-[2.2] left-[-15%] mt-[5vw]">
+        <div className="relative w-[80vw] h-[35vw] scale-[2.2] left-[-15%] mt-[5vw] fadeUp">
             <Image src={"/assets/advaglide/advaglide-features.png"} alt="advaglide-features" fill className="object-contain w-full h-full rotate-[10deg]"/>
 
         </div>
@@ -21,6 +21,9 @@ const Ergonomic = () => {
         <div className="absolute top-0 left-0 w-screen h-full z-[-1]">
           <Image src={"/assets/advaglide/advaglide-ergonomic-bg.png"} alt="" fill className="object-cover w-full h-full"/>
 
+        </div>
+        <div>
+          <p className="text-[1.4vw] font-light absolute top-[50%] right-[10%] text-gray-600">Precision Balloon Positioning</p>
         </div>
       </section>
     </>

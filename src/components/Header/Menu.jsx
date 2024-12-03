@@ -235,9 +235,9 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                    <Link href={"/#"}>
+                    <Link href={"/contact-us"}>
                         <span
-                          onClick={() => handleLinkClick("/contact")}
+                          onClick={() => handleLinkClick("/contact-us")}
                           data-attr="Contact"
                           className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
                         >

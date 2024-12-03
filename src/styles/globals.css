@@ -727,3 +727,8 @@ body{
     background-color: #000;
     border-radius: 20vw;
   }
+
+  /* ::-webkit-scrollbar-track{
+    width: 0.3vw !important;
+  } */
+ 

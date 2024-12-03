@@ -38,8 +38,8 @@ const Precision = () => {
              <div className="h-[43vw] w-[85%] relative left-[-10%] mobile:absolute mobile:top-[40%] mobile:left-0 mobile:w-[170vw] mobile:h-[50vh] tablet:w-full tablet:left-0 tablet:h-[60vw]">
                 <Image src="/assets/endolc/precision-product.png" fill alt="Precision Product" className="object-contain mobile:rotate-[-20deg] precision-img " />
                 <div className="absolute top-[30%] right-[-15%] mobile:top-[-25%] mobile:right-[48%] tablet:right-0">
-                    <p className="font-light text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:w-[80vw] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]">Sequential Firing Mechanism
-                    <span className="block text-[1.25vw] font-light leading-[1.2] mobile:text-[4vw] tablet:text-[2.2vw] ">simplifies operation.</span></p>
+                    <p data-para-anim className="font-light text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:w-[80vw] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]">Sequential Firing Mechanism
+                    <span data-para-anim className="block text-[1.25vw] font-light leading-[1.2] mobile:text-[4vw] tablet:text-[2.2vw] ">simplifies operation.</span></p>
                 </div>
                 <div   className="absolute bottom-[20%] right-[2%] mobile:right-[20%] mobile:bottom-[-35%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center">
                     <p data-para-anim  className="font-light text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:leading-[1.2] tablet:text-[3vw]">Enhanced Control</p>

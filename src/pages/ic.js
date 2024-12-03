@@ -23,7 +23,7 @@ export default function ic() {
   const hero = {
     title: "Advancing the science of flow restoration",
 
-    src: "/assets/ic/ic-hero-bg.webp",
+    src: "/assets/ic/ic-hero-bg.png",
     content:
       "Advanced MedTech Solutions (AMS) is at the forefront of innovation in Interventional Cardiology. Our mission is to provide meaningful solutions through continuous research and development, ultimately delivering better care and significantly impacting patients' lives.",
   };

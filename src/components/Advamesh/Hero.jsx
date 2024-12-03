@@ -10,6 +10,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
   paraAnim();
+  
   return (
     <section className='dark ' id='advameshHero'>
       <div className="w-screen h-screen relative overflow-hidden  mobile:h-[90vh] tablet:h-[70vh]">

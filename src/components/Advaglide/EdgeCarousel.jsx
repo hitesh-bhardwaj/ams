@@ -15,8 +15,10 @@ import {
 import Image from "next/image";
 import styles from "@/styles/portfolioSwiper.module.css";
 import { Media } from "../media";
+import { fadeup } from "../gsapAnimations";
 
 const EdgeCarousel = () => {
+  
   const slidesData = [
     {
       src: "/assets/advaglide/advaglide-carousel-1.png",
@@ -29,36 +31,18 @@ const EdgeCarousel = () => {
     },
   ];
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  //   const swiperRef = useRef(null); // Create a ref for Swiper
-
-  //   // State to track which button was clicked
-  //   const [activeButton, setActiveButton] = useState("");
-
-  //   const handleNext = () => {
-  //     if (swiperRef.current) {
-  //       swiperRef.current.slideNext(); // Move to the next slide
-  //       setActiveButton("next"); // Set next button as active
-  //       // Reset after 300ms
-  //     }
-  //   };
-
-  //   const handlePrev = () => {
-  //     if (swiperRef.current) {
-  //       swiperRef.current.slidePrev(); // Move to the previous slide
-  //       setActiveButton("prev"); // Set previous button as active
-  //       // Reset after 300ms
-  //     }
-  //   };
+ 
 
   return (
     <section
       id="portfolio-swiper"
-      className="overflow-x-hidden py-[10%] mobile:pt-[10%]"
+      className="overflow-x-hidden py-[7%] pb-[12%] mobile:pt-[10%]"
     >
-      <div className="w-full relative h-full flex justify-center">
+      <div className="w-full relative h-full flex items-center flex-col gap-[5vw]">
+        <h2 data-para-anim className="title-2 aeonik font-light">Adva Glide Edge</h2>
         <div className="relative fadeUp rounded-[2vw] ">
           <Media greaterThan="mobile">
-            <div className="">
+            <div className="fadeUp">
               <Swiper
                 slidesPerView={1}
                 spaceBetween={0}
@@ -98,7 +82,7 @@ const EdgeCarousel = () => {
                       />
                     </div>
                     <div className="absolute top-[50%] left-[8%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
-                      <h2 className="text-black text-[2.2vw] aeonik font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
+                      <h2 data-para-anim className="text-black text-[2.2vw] aeonik font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
                         Superior Navigability
                       </h2>
                       <p className="text-black text-[1.4vw] font-extralight w-[50%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
@@ -160,10 +144,10 @@ const EdgeCarousel = () => {
           </Media>
 
           <Media greaterThan="mobile">
-            <div className="absolute top-[90%] w-full left-[18%] endoSmallSwiperContainer tablet:left-0">
+            <div className="absolute top-[90%] w-full left-[18%] endoSmallSwiperContainer tablet:left-0 fadeUp">
               <Swiper
                 onSwiper={setThumbsSwiper}
-                spaceBetween={10}
+                spaceBetween={20}
                 slidesPerView={3}
                 freeMode={true}
                 watchSlidesProgress={true}
@@ -174,7 +158,7 @@ const EdgeCarousel = () => {
                   <SwiperSlide key={index}>
                     <Image
                       src={slide.src}
-                      className="rounded-[1vw] h-[8vw] cursor-pointer border border-gray-300 bg-gray-50"
+                      className="rounded-[1.5vw] h-[8vw] cursor-pointer border border-gray-300 bg-gray-50"
                       width={290}
                       height={300}
                       alt="small swiper"

@@ -1,15 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
-import { paraAnim } from "../gsapAnimations";
+import { fadeup, paraAnim } from "../gsapAnimations";
 import { Media } from "../media";
 
 export default function Footer() {
     paraAnim()
+    fadeup()
     return (
         <>
             <footer className=" h-full mobile:pb-[10vw] relative overflow-hidden ">
-                <div className="absolute w-screen h-[120vh] mobile:h-full rounded-tl-[3vw] rounded-tr-[3vw] overflow-hidden mobile:rounded-tl-[9vw] mobile:rounded-tr-[9vw]">
+                <div className="absolute w-screen h-[120vh] mobile:h-full  overflow-hidden">
                     <Image src="/assets/footer-bg-img.webp" alt="footer-bg" className="object-cover" fill/>
 
                 </div>
@@ -27,7 +28,7 @@ export default function Footer() {
                                         Contact
                                     </span>
                                     <img 
-                                        className="inline w-[6%] mobile:ml-[5%] mobile:w-[11%] relative z-[7]"
+                                        className="inline w-[6%] mobile:ml-[5%] mobile:w-[11%] relative z-[7] fadeUp"
                                         src="/assets/icons/arrow-up-right.svg"
                                         alt="arrow"
                                         height="50px"
