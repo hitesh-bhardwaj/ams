@@ -18,7 +18,6 @@ import { Media } from "../media";
 import { fadeup } from "../gsapAnimations";
 
 const EdgeCarousel = () => {
-  
   const slidesData = [
     {
       src: "/assets/advaglide/advaglide-carousel-1.png",
@@ -31,7 +30,6 @@ const EdgeCarousel = () => {
     },
   ];
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
- 
 
   return (
     <section
@@ -39,7 +37,9 @@ const EdgeCarousel = () => {
       className="overflow-x-hidden py-[7%] pb-[12%] mobile:pt-[10%]"
     >
       <div className="w-full relative h-full flex items-center flex-col gap-[5vw]">
-        <h2 data-para-anim className="title-2 aeonik font-light">Adva Glide Edge</h2>
+        <h2 data-para-anim className="title-2 aeonik font-light">
+          Adva Glide Edge
+        </h2>
         <div className="relative fadeUp rounded-[2vw] ">
           <Media greaterThan="mobile">
             <div className="fadeUp">
@@ -82,7 +82,10 @@ const EdgeCarousel = () => {
                       />
                     </div>
                     <div className="absolute top-[50%] left-[8%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
-                      <h2 data-para-anim className="text-black text-[2.2vw] aeonik font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
+                      <h2
+                        data-para-anim
+                        className="text-black text-[2.2vw] aeonik font-light tablet:text-[4vw]"
+                      >
                         Superior Navigability
                       </h2>
                       <p className="text-black text-[1.4vw] font-extralight w-[50%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
@@ -169,6 +172,49 @@ const EdgeCarousel = () => {
             </div>
           </Media>
         </div>
+        <Media at="mobile">
+          <div className="w-full flex flex-col gap-[7vw]">
+            <div className="w-[85vw] h-[160vw] flex flex-col relative justify-end items-center p-[8vw] pb-[12vw] gap-[5vw] aeonik bg-white/40 rounded-[9vw] overflow-hidden border fadeUp  ">
+              <div className="w-full h-full absolute top-[-25%]">
+                
+                <Image
+                src={"/assets/advaglide/advaglide-carousel-1.png"}
+                fill
+                alt="advaglide-slide"
+                className=" object-contain"
+              />
+                </div>
+              <h3 className="font-light text-[9.4vw] z-[10] text-center leading-[1.2]"> Superior Navigability</h3>
+              <p className="text-[6vw] font-light text-center z-[10] leading-[1.4]">Excellent force transmission during navigation is achieved by balanced pushability and trackability along with low profile balloon, kink resistant shaft and lubricious coating.</p>
+            </div>
+            <div className="w-[85vw] h-[160vw] flex flex-col relative justify-end items-center p-[8vw] pb-[12vw] gap-[5vw] aeonik bg-white/40 rounded-[9vw] overflow-hidden border fadeUp ">
+              <div className="w-full h-full absolute top-[-35%]">
+                
+                <Image
+                src={"/assets/advaglide/advaglide-carousel-2.png"}
+                fill
+                alt="advaglide-slide"
+                className=" object-contain"
+              />
+                </div>
+              <h3 className="font-light text-[9.4vw] z-[10] text-center leading-[1.2]"> Unsurpass Crossability</h3>
+              <p className="text-[6vw] font-light text-center z-[10] leading-[1.4]">Thinnest balloon wall (0.008 mm) results in excellent gliding and flexibility through tortuous coronary anatomies.</p>
+            </div>
+            <div className="w-[85vw] h-[160vw] flex flex-col relative justify-end items-center p-[5vw] pb-[12vw] gap-[5vw] aeonik bg-white/40 rounded-[9vw] overflow-hidden border fadeUp ">
+              <div className="w-full h-full absolute top-[-35%]">
+                
+                <Image
+                src={"/assets/advaglide/advaglide-carousel-3.png"}
+                fill
+                alt="advaglide-slide"
+                className=" object-contain"
+              />
+                </div>
+              <h3 className="font-light text-[9.4vw] z-[10] text-center leading-[1.2]"> Novel Inner Tube</h3>
+              <p className="text-[6vw] font-light text-center z-[10] leading-[1.4]">Patented design of inner tube at distal catheter segment provides absolute freedom of guide wire movement on occluded balloon at high inflation pressure (up to RBP) and minimizes the risk of guide wire collapse.</p>
+            </div>
+          </div>
+        </Media>
       </div>
     </section>
   );

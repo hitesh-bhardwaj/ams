@@ -44,7 +44,7 @@ const Hero = () => {
     );
   });
   return (
-    <section className=" hero-container mobile:mb-[15%] dark" id="hero">
+    <section className=" hero-container dark" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
           <Image
@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh]">
+          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh] mobile:justify-start mobile:h-fit mobile:pt-[40vw]">
             <div className="w-full">
               <h1 className={`title-1 aeonik drop-shadow-lg  leading-[1]`}>
                 <span
@@ -68,7 +68,7 @@ const Hero = () => {
                   CONTACT US
                 </span>
               </h1>
-              <Breadcrumb className="ml-[1vw]">
+              <Breadcrumb className="ml-[1vw] mobile:ml-[24%] mobile:mt-[4vw]">
                 <BreadcrumbList>
                   <BreadcrumbItem>
                     <BreadcrumbLink href="/">Home</BreadcrumbLink>

@@ -6,15 +6,15 @@ const Locations = () => {
   fadeup()
   return (
     <>
-      <section id="location" className="relative w-screen h-[45vw] pb-[5%]">
+      <section id="location" className="relative w-screen h-[45vw] pb-[5%] mobile:h-full mobile:py-[15%]">
         <div className="px-[10vw] w-full h-full flex justify-center items-center">
-          <div className="flex flex-col gap-[7vw]">
-            <h2 data-para-anim className="text-[4vw] text-white aeonik font-light ">
+          <div className="flex flex-col gap-[7vw] mobile:items-center mobile:gap-[15vw]">
+            <h2 data-para-anim className="text-[4vw] text-white aeonik font-light mobile:text-[11vw]  ">
               Other Offices
             </h2>
-            <div className="flex flex-wrap w-full text-white gap-y-[4vw]">
-              <div className="w-[50%] flex gap-[1.5vw] ">
-                <div className="w-[5vw] h-[5vw] relative fadeUp">
+            <div className="flex flex-wrap w-full text-white gap-y-[4vw] mobile:flex-col mobile:gap-y-[12vw]">
+              <div className="w-[50%] flex gap-[1.5vw] mobile:w-full mobile:flex-col mobile:items-center mobile:gap-[8vw] ">
+                <div className="w-[5vw] h-[5vw] relative fadeUp mobile:w-[22vw] mobile:h-[22vw]">
                   <Image
                     src={"/assets/contact/location.png"}
                     alt="location-icon"
@@ -22,7 +22,7 @@ const Locations = () => {
                     className="object-contain w-full h-full"
                   />
                 </div>
-                <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%]">
+                <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%] mobile:text-[5vw] mobile:w-full mobile:text-center">
                   <p data-para-anim>Corporate HQ</p>
                   <p data-para-anim>
                     Somerset Road, #07-08 Triple One Somerset, Singapore -
@@ -30,8 +30,8 @@ const Locations = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-[50%] flex gap-[1.5vw]">
-                <div className="w-[5vw] h-[5vw] relative fadeUp">
+              <div className="w-[50%] flex gap-[1.5vw] mobile:w-full mobile:flex-col mobile:items-center mobile:gap-[8vw]">
+                <div className="w-[5vw] h-[5vw] relative fadeUp mobile:w-[22vw] mobile:h-[22vw]">
                   <Image
                     src={"/assets/contact/location.png"}
                     alt="location-icon"
@@ -39,7 +39,7 @@ const Locations = () => {
                     className="object-contain w-full h-full"
                   />
                 </div>
-                <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%]">
+                <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%] mobile:text-[5vw] mobile:w-full mobile:text-center">
                   <p data-para-anim>Corporate Office</p>
                   <p data-para-anim>
                     305, Ceejay House, F-Block, Shiv Sagar Estate,Dr. Annie
@@ -48,8 +48,8 @@ const Locations = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-[50%] flex gap-[1.5vw]">
-                <div className="w-[5vw] h-[5vw] relative fadeUp">
+              <div className="w-[50%] flex gap-[1.5vw] mobile:w-full mobile:flex-col mobile:items-center mobile:gap-[8vw]">
+                <div className="w-[5vw] h-[5vw] relative fadeUp mobile:w-[22vw] mobile:h-[22vw]">
                   <Image
                     src={"/assets/contact/location.png"}
                     alt="location-icon"
@@ -57,7 +57,7 @@ const Locations = () => {
                     className="object-contain w-full h-full"
                   />
                 </div>
-                <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%]">
+                <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%] mobile:text-[5vw] mobile:w-full mobile:text-center">
                   <p data-para-anim>Regional Office</p>
                   <p data-para-anim>
                     SM0132, 18 Floor, DLF Star Mall, Sector 30, NH-48, Opp: 32&quot;
@@ -65,8 +65,8 @@ const Locations = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-[50%] flex gap-[1.5vw]">
-                <div className="w-[5vw] h-[5vw] relative fadeUp">
+              <div className="w-[50%] flex gap-[1.5vw] mobile:w-full mobile:flex-col mobile:items-center mobile:gap-[8vw]">
+                <div className="w-[5vw] h-[5vw] relative fadeUp mobile:w-[22vw] mobile:h-[22vw]">
                   <Image
                     src={"/assets/contact/location.png"}
                     alt="location-icon"
@@ -74,7 +74,7 @@ const Locations = () => {
                     className="object-contain w-full h-full"
                   />
                 </div>
-                <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%]">
+                <div className="flex flex-col gap-[0.4vw] text-[1.2vw] font-light w-[72%] mobile:text-[5vw] mobile:w-full mobile:text-center">
                   <p data-para-anim>Regional Office</p>
                   <p data-para-anim>
                     31, Ground Floor, 10th main, 5th Cross Rd, 2nd Block,

@@ -41,12 +41,12 @@ const Hero = () => {
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
                 <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text">
                   <span 
-                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw]`}
+                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[7.5vw]`}
                   >
                   ADVASTAP CS
                   </span>
                 </h1>
-                <div className="bg-black/50 w-[80%] h-[4px] hidden mobile:block"></div>
+                <div className="bg-black/50 w-[80%] h-[3px] mt-[3vw] hidden mobile:block"></div>
                 <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-space font-light mobile:text-[4.2vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 CIRCULAR STAPLER 3-row
                 </p>

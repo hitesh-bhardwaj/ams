@@ -63,15 +63,15 @@ export default function ContactForm() {
 
   return (
     <section className="py-[7%] pb-[10%] mobile:py-[15%]" id="formoem">
-        <div className="w-full h-full p-[4vw] rounded-[3vw] border border-gray-200 bg-white/50 group hover:bg-white hover:shadow-xl hover:drop-shadow-xl ease-in transition-all duration-300">
+        <div className="w-full h-full p-[4vw] rounded-[3vw] border border-gray-200 bg-white/50 group hover:bg-white hover:shadow-xl hover:drop-shadow-xl ease-in transition-all duration-300 mobile:border-none">
       
      
-          <div className="w-full flex flex-col gap-[2vw] mobile:w-[90%] mobile:bg-white mobile:rounded-[9vw] mobile:px-[10vw] mobile:py-[15vw] mobile:border mobile:items-center tablet:w-[40%]">
-            <h3 data-para-anim className="aeonik text-[2.8vw] mobile:text-[9vw] mobile:text-center tablet:text-[4.5vw] font-light">Send a Message</h3>
+          <div className="w-full flex flex-col gap-[2vw] mobile:w-full mobile:bg-white mobile:rounded-[6vw] mobile:px-[7vw] mobile:py-[12vw] mobile:border mobile:gap-[5vw] mobile:justify-center tablet:w-[40%]">
+            <h3 data-para-anim className="aeonik text-[2.8vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw] font-light">Send a Message</h3>
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-[2vw] mobile:space-y-[5vw] tablet:space-y-[3vw]"
+                className="space-y-[2vw] mobile:space-y-[7vw] tablet:space-y-[3vw] mobile:w-full"
               >
                 <FormField
                   control={form.control}
@@ -133,7 +133,7 @@ export default function ContactForm() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full fadeUp">
+                <Button type="submit" className="w-full fadeUp mobile:flex mobile:justify-center">
                 <div className={`min-w-[11vw] w-fit h-fit group text-center relative py-[0.9vw] px-[3vw] rounded-full group bg-[#9E7BDF] overflow-hidden block mobile:min-w-[40vw] mobile:py-[3vw] mobile:mt-[10vw]`}>
                   <div className="h-full w-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 duration-300">
                     <span className="block h-full w-full bg-gradient-to-r from-[#9E7BDF] via-[#ac26b0] to-blue-700 button-animate"/>
