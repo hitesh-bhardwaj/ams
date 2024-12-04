@@ -6,9 +6,10 @@ const LC3Specifications = () => {
   return (
     <>
     <Specifications
-      textclass={"advastap-text"}
+      textclass={"reloads-text"}
       bgimg={"/assets/advastaplc/closure-bg-1.png"}
       heading={"Technical Specification"}
+      color={"#FB4BCC"}
     >
     <div data-lenis-prevent className="w-full h-[70vh] text-[1.25vw] font-light mt-[3vw] text-[#4A4A4A]   overflow-y-scroll mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:overflow-x-scroll   tablet:overflow-x-scroll mobile:py-[5vw] tablet:py-[5vw]  mobile:mt-[7vw]">
         <div className="flex w-full border-b border-[#DADADA]  ">

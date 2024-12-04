@@ -6,9 +6,10 @@ const LC2Specifications = () => {
   return (
     <>
       <Specifications
-        textclass={"advastap-text"}
+        textclass={"reloads-text"}
         bgimg={"/assets/advastaplc/closure-bg-1.png"}
         heading={"Technical Specification"}
+        color={"#FB4BCC"}
       >
         <div
           data-lenis-prevent

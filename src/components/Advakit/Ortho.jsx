@@ -11,7 +11,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Ortho = () => {
   paraAnim();
   return (
-    <section className=' relative'>
+    <section className=' relative overflow-hidden'>
       <div className="w-screen h-screen overflow-hidden py-[10vw] mobile:h-[90vh] ">
         <div className=" absolute w-full h-full top-[10%] mobile:flex-col mobile:top-[25] tablet:flex-col tablet:justify-start">
           <div className=" w-full flex items-center flex-col mobile:left-[17%] mobile:w-[100%] tablet:left-[15%]">
@@ -22,7 +22,7 @@ const Ortho = () => {
                ADVAKIT Ortho
                   </span>
                 </h1>
-            <div className='flex items-center mt-[0.2vw] tablet:justify-center tablet:w-[65%]  tablet:py-[3vw] tablet:text-center'>
+            <div className='flex items-center mt-[0.2vw] tablet:justify-center tablet:w-[65%]  tablet:py-[3vw] tablet:text-center mobile:w-[95%] mobile:mt-[5vw]'>
             <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-wider z-[10] mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[12%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center">
             Supreme handling performance for complete ease and confidence in Caesarean surgeries
                 </p>
@@ -31,7 +31,7 @@ const Ortho = () => {
 
         </div>
       </div>
-      <div className="absolute h-[35vw] w-[80vw] bottom-0 left-[12%]">
+      <div className="absolute h-[35vw] w-[80vw] bottom-0 left-[12%] mobile:bottom-[10%] mobile:scale-[2.5] mobile:left-[60%]">
           <Image src="/assets/advakit/ortho-product.png" fill alt='Ortho Product'/>
 
         </div>
@@ -39,7 +39,7 @@ const Ortho = () => {
                 <Image src="/assets/advakit/ortho-bg.png"
               fill
                 alt="ortho bg"
-                className="object-cover "/>
+                className="object-cover mobile:object-fill"/>
             </div>
     </section>
   );

@@ -8,10 +8,11 @@ const SpecificationsHd2 = () => {
         textclass={"gradient-text"}
         bgimg={"/assets/advastap/specifications-bg.png"}
         heading={"Technical Specification"}
+        color={"#275F7B"}
       >
         <div
           data-lenis-prevent
-          className="w-full  h-[70vh] text-[1.25vw] font-light py-[2vw]  text-[#4A4A4A] overflow-y-scroll mobile:py-[5vw] mobile:text-[4.5vw] tablet:text-[2.5vw]  mobile:overflow-x-scroll  mobile:overflow-scroll mobile:mt-[7vw] "
+          className="w-full  h-[70vh] text-[1.25vw] font-light py-[2vw]  text-[#4A4A4A] overflow-y-scroll mobile:py-[5vw] mobile:text-[4.5vw] tablet:text-[2.5vw]  mobile:overflow-x-scroll  mobile:overflow-scroll mobile:mt-[7vw] mobile:h-[50vh] tablet:h-[50vh]"
         >
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw] ">
             <div className="flex-[0.5] p-[1vw] font-light tablet:w-[20vw]">

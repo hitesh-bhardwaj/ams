@@ -1,12 +1,12 @@
 import React from 'react'
 import Specifications from "../Specifications";
 
-const AdvaspongSpecifications = () => {
+const AdvaGlideSpecifications = () => {
   return (
     <>
         <Specifications
         textclass={"advastap-text"}
-        bgimg={"/assets/advaspong/specifications-bg.png"}
+        bgimg={"/assets/advapro/specifications-bg.png"}
         heading={"Specification"}
         color={"#A883D7"}
       >
@@ -78,4 +78,4 @@ const AdvaspongSpecifications = () => {
   )
 }
 
-export default AdvaspongSpecifications
+export default AdvaGlideSpecifications

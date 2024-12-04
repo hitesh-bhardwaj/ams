@@ -8,6 +8,7 @@ const PoweredlcSpecifications = () => {
         textclass={"advastap-text"}
         bgimg={"/assets/endolc/specifications-bg.png"}
         heading={"Specification"}
+        color={"#A883D7"}
       >
         <div data-lenis-prevent  className="w-full text-[1.25vw] font-light py-[3vw] text-[#4A4A4A] mobile:py-[5vw] mobile:text-[4.5vw] tablet:text-[2.5vw]  mobile:overflow-x-scroll mobile:mt-[7vw] tablet:py-[4.5vw] tablet:overflow-x-scroll">
           <div className="flex w-full pb-[1vw] mobile:w-[200vw] tablet:w-[150vw]">

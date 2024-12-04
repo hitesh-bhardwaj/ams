@@ -32,27 +32,27 @@ const Hero = () => {
 
 
   return (
-    <section className='' id='advaproHero'>
-      <div className="w-screen h-screen relative overflow-hidden mobile:h-[90vh] tablet:h-[70vh]">
-        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[25] tablet:flex-col tablet:top-[22%]">
-          <div className=" absolute left-[12%] mobile:left-[17%] mobile:w-[100%] tablet:left-[15%]">
-          <h1 className="text-[#38C5FF]  aeonik drop-shadow-md leading-[1] hero-text font-light">
+    <section className='w-screen h-screen relative overflow-hidden' id='advaproHero'>
+      <div className="w-full h-full mobile:h-[90vh] tablet:h-[70vh]">
+        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[25%] tablet:flex-col tablet:top-[22%]">
+          <div className=" absolute left-[12%] mobile:left-[13%] mobile:w-[100%] tablet:left-[15%]">
+          <h1 className="text-[#38C5FF]  aeonik drop-shadow-md leading-[1] hero-text font-light mobile:ml-[8%]">
                   <span data-para-anim
-                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw]`}
+                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] tablet:text-[7.5vw] `}
                   >
                  ADVA PRO
                   </span>
                 </h1>
                 <div className='w-[70%] h-[1px] bg-black/50 my-[3vw] hidden mobile:block'></div>
             <div className='flex items-center mt-[0.2vw] tablet:mt-[1vw]'>
-            <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-widest mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[12%]  tablet:text-[2.5vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center">
+            <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-widest mobile:text-[4.6vw] mobile:tracking-widest  mobile:w-[70%] tablet:text-[2.5vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center">
             Sirolimus Eluting Coronary Stent System
                 </p>
               </div>
           </div>
 
-          <div className="w-[60%] h-[80%] absolute right-[5%] bottom-0 hero-container tablet:w-[100%]  mobile:top-[10%] tablet:top-[10%] tablet:left-[20%]">
-            <div className="w-full h-[50vw]  mobile:w-[100vw] mobile:h-[150vw] mobile:left-[-50%] relative tablet:w-[100vw] tablet:h-[100vw]">
+          <div className="w-[60%] h-[80%] absolute right-[5%] bottom-0 hero-container tablet:w-[100%]  mobile:top-[45%] tablet:top-[10%] tablet:left-[20%]">
+            <div className="w-full h-[50vw]  mobile:w-[100vw] mobile:h-[100vw] mobile:left-[-50%] relative tablet:w-[100vw] tablet:h-[100vw]">
               <Image
                 src="/assets/advapro/advapro-hero.png"
                 alt="advapro-hero-image"

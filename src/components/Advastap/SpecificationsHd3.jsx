@@ -8,6 +8,7 @@ const SpecificationsHd3 = () => {
         textclass={"gradient-text"}
         bgimg={"/assets/advastap/specifications-bg.png"}
         heading={"Technical Specification"}
+        color={"#275F7B"}
       >
         <div
           data-lenis-prevent

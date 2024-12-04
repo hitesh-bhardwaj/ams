@@ -11,7 +11,7 @@ const Performance = () => {
   return (
     <>
       <section
-        className="overflow-hidden  mobile:py-[10%] relative py-[7vw]  tablet:py-[10%]"
+        className="overflow-hidden  mobile:py-[15%] relative py-[7vw]  tablet:py-[10%]"
         id="performance"
       >
         <div className="w-screen h-full container-lg z-[5] mobile:h-[130vh] tablet:h-[60vh] ">
@@ -19,7 +19,7 @@ const Performance = () => {
             <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit tablet:h-fit ">
               <h2
                 data-para-anim
-                className=" w-[70%] text-[3.95vw] font-light leading-[1.25] aeonik text-center text-white  mobile:text-center mobile:w-full"
+                className=" w-[70%] text-[3.95vw] font-light leading-[1.25] aeonik text-center text-white  mobile:text-center mobile:w-full mobile:text-[10.2vw]"
               >
               ADVA PRO, the Performance PRO for Complex Anatomies
               </h2>
@@ -27,18 +27,18 @@ const Performance = () => {
             <div className=" h-[50vw] w-[80vw] mobile:h-full flex flex-col items-center justify-end  pt-[10vw] mobile:pb-[10%]">
              
                 <div className=" w-full h-full flex flex-col items-center justify-center">
-                  <div className="h-[50vw] w-[65vw] relative mobile:w-[90vw] mobile:h-[90vw] mobile:left-[5%]  mobile:top-0 tablet:w-[70vw] tablet:h-[70vw] tablet:top-[30%]">
+                  <div className="h-[50vw] w-[65vw] relative mobile:w-[120vw] mobile:h-[60vw] mobile:left-[5%]  mobile:top-[-5%] tablet:w-[70vw] tablet:h-[70vw] tablet:top-[30%]">
                     <Image
                       src="/assets/advapro/advapro-tube.png"
                       fill
                       alt="advapro tube"
-                      className=" fadeup object-contain"
+                      className=" fadeup object-contain "
                     />
                   </div>
-                  <div className=" mobile:flex mobile:flex-col mobile:gap-[5vw]">
+                  <div className="mobile:mt-[15vw] mobile:flex mobile:flex-col mobile:gap-[10vw]">
 
                   <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[10%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[40%]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw]">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] mobile:top-[47%] mobile:left-[42%] mobile:h-[12vw] mobile:w-[12vw]">
                         <Image src="/assets/advapro/coating.png" fill alt="coating" className="fadeup"/>
                     </div>
                     <p
@@ -49,7 +49,7 @@ const Performance = () => {
                     </p>
                   </div>
                   <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] right-[10%] top-[40%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[40%] tablet:right-[5%]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] ">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] mobile:top-[56%] mobile:left-[42%] mobile:h-[12vw] mobile:w-[12vw] ">
                         <Image src="/assets/advapro/design.png" fill alt="coating" className="fadeup"/>
                     </div>
                     <p
@@ -60,7 +60,7 @@ const Performance = () => {
                     </p>
                   </div>
                   <div className="absolute w-[22%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[15%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[30%] tablet:top-[49%] tablet:left-[10%]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] ">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] mobile:top-[66%] mobile:left-[42%] mobile:h-[12vw] mobile:w-[12vw] ">
                         <Image src="/assets/advapro/drug.png" fill alt="coating" className="fadeup"/>
                     </div>
                     <p
@@ -71,7 +71,7 @@ const Performance = () => {
                     </p>
                   </div>
                   <div className="absolute w-[32%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[38%] bottom-[12%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[50%]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw]">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] mobile:top-[75%] mobile:left-[42%] mobile:h-[12vw] mobile:w-[12vw]">
                         <Image src="/assets/advapro/matrix.png" fill alt="coating" className="fadeup"/>
                     </div>
                     <p
@@ -82,10 +82,10 @@ const Performance = () => {
                     </p>
                   </div>
                   <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] right-[5%] bottom-[20%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:w-[40%]">
-                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0  tablet:h-[5vw] tablet:w-[5vw]">
+                    <div className="absolute h-[4vw] w-[4vw] left-0 top-0  tablet:h-[5vw] tablet:w-[5vw] mobile:top-[84%] mobile:left-[42%] mobile:h-[12vw] mobile:w-[12vw]">
                         <Image src="/assets/advapro/stent.png" fill alt="coating" className="fadeup"/>
                     </div>
-                    <div className="absolute h-[7vw] w-[6vw]  bottom-[90%] ">
+                    <div className="absolute h-[7vw] w-[6vw]  bottom-[90%] mobile:hidden">
                         <Image src="/assets/advapro/cobalt.png" fill alt="coating" className="fadeup"/>
                     </div>
                     <p
@@ -102,7 +102,7 @@ const Performance = () => {
                 </div>
                
               </div>
-              <div className="w-[15vw] h-[30%] absolute top-[35%] right-[42%] ">
+              <div className="w-[15vw] h-[30%] absolute top-[35%] right-[42%] mobile:hidden">
                 <Image src="/assets/advapro/water-drops.png"
                 fill
                 alt="performance-bg"/>

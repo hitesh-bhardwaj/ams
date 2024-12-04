@@ -11,7 +11,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hernia = () => {
   paraAnim();
   return (
-    <section className=' relative'>
+    <section className=' relative overflow-hidden'>
       <div className="w-screen h-screen overflow-hidden py-[10vw] mobile:h-[90vh] ">
         <div className="w-full h-full absolute top-[10%] mobile:flex-col mobile:top-[25] tablet:flex-col  tablet:justify-start">
           <div className=" w-full flex items-center flex-col mobile:left-[17%] mobile:w-[100%] tablet:left-[15%]">
@@ -22,8 +22,8 @@ const Hernia = () => {
                ADVAKIT Hernia
                   </span>
                 </h1>
-            <div className='flex items-center mt-[0.2vw]  tablet:text-center tablet:w-[68%] tablet:py-[3vw]' >
-            <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-wider z-[10] mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[12%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center">
+            <div className='flex items-center mt-[0.2vw]  tablet:text-center tablet:w-[68%] tablet:py-[3vw] mobile:mt-[5vw] mobile:w-[95%] mobile:ml-[17%]' >
+            <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-wider z-[10] mobile:text-[4.6vw] mobile:tracking-widest  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center  mobile:justify-center">
             Ultimate strength and confidence for repair of abdominal wall hernia and deficincies
                 </p>
               </div>
@@ -31,7 +31,7 @@ const Hernia = () => {
 
         </div>
       </div>
-      <div className="absolute h-[30vw] w-[75vw] bottom-0 left-[12%]">
+      <div className="absolute h-[30vw] w-[75vw] bottom-0 left-[12%] mobile:bottom-[20%] mobile:scale-[2.5] mobile:left-[60%]">
           <Image src="/assets/advakit/hernia-product.png" fill alt='Hernia Product'/>
 
         </div>
@@ -39,7 +39,7 @@ const Hernia = () => {
                 <Image src="/assets/advakit/hernia-bg.png"
               fill
                 alt="hernia bg"
-                className="object-cover "/>
+                className="object-cover mobile:object-fill"/>
             </div>
     </section>
   );

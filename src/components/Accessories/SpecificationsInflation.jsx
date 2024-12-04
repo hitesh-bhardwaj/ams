@@ -7,7 +7,8 @@ const SpecificationsInflation = () => {
     <Specifications
      textclass={"advastap-text"}
      bgimg={"/assets/accessories/specifications-bg.png"}
-     heading={"Technical Specification"}>
+     heading={"Technical Specification"}
+     color={"#A883D7"}>
       <div data-lenis-prevent className='w-full h-[70vh] overflow-y-scroll tablet:h-[53vh] tablet:overflow-y-hidden'>
        <div className="w-full  text-[1.25vw] font-light py-[3vw] text-[#4A4A4A]  mobile:py-[5vw] mobile:text-[4.5vw] tablet:text-[2.2vw]  mobile:mt-[4vw]  ">
           <div  className="flex w-full border-b border-[#DADADA]  mobile:flex-col mobile:gap-[3vw] mobile:py-[3vw]  ">

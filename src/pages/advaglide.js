@@ -1,3 +1,4 @@
+import AdvaGlideSpecifications from '@/components/Advaglide/AdvaGlideSpecifications'
 import EdgeCarousel from '@/components/Advaglide/EdgeCarousel'
 import Ergonomic from '@/components/Advaglide/Ergonomic'
 import Hero from '@/components/Advaglide/Hero'
@@ -15,6 +16,7 @@ const advaglide = () => {
            <Hero/>
            <Ergonomic/>
            <EdgeCarousel/>
+           <AdvaGlideSpecifications/>
            <Sirolimus/>
             
         </main>

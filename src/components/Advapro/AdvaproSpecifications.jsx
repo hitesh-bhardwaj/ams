@@ -8,6 +8,7 @@ const AdvaproSpecifications = () => {
         textclass={"advastap-text"}
         bgimg={"/assets/advapro/specifications-bg.png"}
         heading={"Specification"}
+        color={"#A883D7"}
       >
           <div data-lenis-prevent className="w-full text-[1.25vw] font-light py-[3vw] text-[#4A4A4A] overflow-y-auto mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] tablet:py-[5vw] mobile:overflow-x-scroll  mobile:overflow-scroll mobile:mt-[7vw] ">
           <div className="flex w-full border-b border-[#DADADA] mobile:overflow-x-scroll mobile:w-[160vw]">

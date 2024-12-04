@@ -8,6 +8,7 @@ const SpecificationsManifold = () => {
         textclass={"advastap-text"}
         bgimg={"/assets/accessories/specifications-bg.png"}
         heading={"Technical Specification"}
+        color={"#A883D7"}
       >
         <div className="w-full text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw]">
           <div className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw]">
