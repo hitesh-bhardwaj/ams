@@ -16,7 +16,7 @@ export function SplitInLine(element) {
  
    // Break the text into lines
    const splitInstance = new SplitType(element, {
-     types: 'lines',
+     types: 'lines, words',
    });
  
    // Add an additional div inside each line with the class name 'line-internal'

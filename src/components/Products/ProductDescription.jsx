@@ -189,11 +189,11 @@ const ProductDescription = ({ className, data }) => {
   }, []);
   return (
     <section
-      className="mobile:pt-[10%] tablet:pb-[5%] pt-[5%] mobile:overflow-hidden "
+      className="mobile:pt-[10%] tablet:pb-[5%] py-[5%] mobile:overflow-hidden "
       id="product-description"
       ref={sectionRef}
     >
-      <div className="w-screen h-screen container-lg mobile:h-[70%] mobile:px-[3vw] mobile:py-[3vw]  tablet:h-full">
+      <div className="w-screen h-full container-lg mobile:h-[70%] mobile:px-[3vw] mobile:py-[3vw]  tablet:h-full">
         <div className="flex flex-col items-center justify-center gap-[5vw]">
           <div className="mobile:mb-[8vw] tablet:mb-[5vw]">
             <h2
@@ -219,7 +219,7 @@ const ProductDescription = ({ className, data }) => {
                   </div>
                 </div>
 
-                <div className="absolute bottom-[18%] left-10 flex flex-col justify-start gap-[1vw] mobile:static mobile:w-full mobile:h-full mobile:justify-end mobile:pb-[15vw] mobile:px-[5vw] mobile:text-center">
+                <div className="absolute bottom-[18%] left-[4%] flex flex-col justify-start gap-[1vw] mobile:static mobile:w-full mobile:h-full mobile:justify-end mobile:pb-[15vw] mobile:px-[5vw] mobile:text-center">
                   <p
                     data-para-anim
                     className="text-[1.65vw] font-medium mobile:text-[7.5vw] tablet:text-[3vw]"

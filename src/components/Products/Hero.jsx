@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => {
   return (
     <>
-      <section className="hero mb-[10%] tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden" id="hero">
+      <section className="hero tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden" id="hero">
         <div className="px-[10%] relative hero-container mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
           <div className="flex h-dvh w-full justify-start items-center mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">

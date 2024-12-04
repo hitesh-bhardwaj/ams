@@ -58,7 +58,7 @@ const LC3Carousel = () => {
   return (
     <>
     <section id='skinstapler-carousel' className='overflow-hidden py-[5%] mobile:py-[15%] tablet:py-[10%]'>  
-        <div className={`w-screen h-full text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab relative fadeUp`}>
+        <div className={`w-screen h-full text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab relative `}>
         <Swiper
          onSwiper={(swiper) => (swiperRef.current = swiper)}
         scrollbar={true}
@@ -94,7 +94,7 @@ const LC3Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik font-extralight  text-[#2A2A2A] mobile:text-[7vw]  mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[5%] tablet:font-light tablet:w-[80%]'><span data-para-anim>Uniform compression ensures consistent perfusion across staple line.</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw]  mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[5%] tablet:font-light tablet:w-[80%]'><span data-para-anim>Uniform compression ensures consistent perfusion across staple line.</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc3-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -116,7 +116,7 @@ const LC3Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute top-[15%] right-[10%] aeonik font-extralight  text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:top-[65%] tablet:left-[10%] tablet:font-light'><span data-para-anim>Clean cuts, less contamination.</span></p>
+                    <p className='text-center text-[1.25vw] absolute top-[15%] right-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:top-[65%] tablet:left-[10%] tablet:font-light'><span data-para-anim>Clean cuts, less contamination.</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc3-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -138,7 +138,7 @@ const LC3Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute top-[30%] right-[5%] aeonik font-extralight text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:top-[65%] tablet:font-light'><span data-para-anim>Enhanced staple count visibility</span></p>
+                    <p className='text-center text-[1.25vw] absolute top-[30%] right-[5%] aeonik font-light text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:top-[65%] tablet:font-light'><span data-para-anim>Enhanced staple count visibility</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc3-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -160,7 +160,7 @@ const LC3Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-extralight w-[20vw] text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]'><span data-para-anim>Even pressure distribution from proximal to distal ends.</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light w-[20vw] text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]'><span data-para-anim>Even pressure distribution from proximal to distal ends.</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc3-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -182,7 +182,7 @@ const LC3Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-extralight text-[#2A2A2A] mobile:text-[7vw]  mobile:font-light mobile:w-[70%] mobile:bottom-[5%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]'><span data-para-anim>Avoids accidental misfiring before clamping.</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light text-[#2A2A2A] mobile:text-[7vw]  mobile:font-light mobile:w-[70%] mobile:bottom-[5%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]'><span data-para-anim>Avoids accidental misfiring before clamping.</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc3-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>

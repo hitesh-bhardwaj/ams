@@ -55,7 +55,7 @@ const Uncover = () => {
     });
   }
   return (
-    <section id="uncover" className="mobile:pb-[20%] pb-[7%]">
+    <section id="uncover" className="mobile:pb-[20%] py-[5%]">
       <div className=" flex flex-col items-center justify-center px-[4%]  pb-[4%]">
         <div className="mobile:mb-[7vw]">
           <h2 data-para-anim className="title-2 aeonik  ">
