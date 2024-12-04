@@ -49,10 +49,9 @@ const Think = () => {
           <div className="w-full h-full">
 
           <div className="absolute left-[10%] top-[35%] flex flex-col items-start justify-center gap-[3vw] mobile:static mobile:gap-[10vw]">
-            <div className="flex items-center justify-center gap-[2vw] border-[2px] border-transparent px-[1vw] pr-[3vw] rounded-[1vw] hover:border-[#3A87C8]  group transition-all duration-300 ease hover:scale-[1.05]  cursor-pointer mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
+            <div className="flex items-center justify-center gap-[2vw] border-[2px] border-transparent px-[1vw] pr-[3vw] rounded-[1vw] hover:border-[#3A87C8] group transition-all duration-300 ease hover:scale-[1.05]  cursor-pointer mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
                 <Image src="/assets/skinstapler/point.png" height={35} width={35} alt="point" className="fadeup"/>
                 <p data-para-anim className="text-[1.67vw]  font-light text-[#2A2A2A] group-hover:text-[2.5vw] transition-all duration-300 ease mobile:text-[7.5vw] mobile:text-center mobile:group-hover:text-[7.5vw] mobile:w-[70%]  tablet:text-[3vw] tablet:group-hover:text-[3vw]">User Centric Intuitive Design</p>
-
             </div>
             <div className="flex items-center justify-center gap-[2vw] border-[2px] border-transparent px-[1vw] pr-[3vw] rounded-[1vw] hover:border-[#3A87C8]  group transition-all duration-300 ease hover:scale-[1.05]  cursor-pointer mobile:flex-col mobile:items-center mobile:w-full mobile:hover:rounded-[4vw]">
                 <Image src="/assets/skinstapler/point.png" height={35} width={35} alt="point" className="fadeup"/>

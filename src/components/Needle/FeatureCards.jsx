@@ -54,7 +54,7 @@ function FeatureCards() {
                   <div className={`w-[20vw] h-[25vw] absolute  ${index>=1?"top-[30%] left-[5%]":"top-0 left-0"}`}>
                     <Image src={card.imageSrc} alt={`${card.title}-image`} className={`${index<=1?"object-cover":"object-contain"}`} fill />
                   </div>
-                  <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] translate-y-[100%] origin-bottom group-hover:translate-y-[0] transition-all duration-500 ease-out">
+                  <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] translate-y-[100%] origin-bottom group-hover:translate-y-[0] transition-all duration-300 ease-out">
                     <div className="w-full h-full flex flex-col gap-[1vw] px-[3vw] py-[2vw]">
                       <h4 data-para-anim className="text-[1.8vw] aeonik font-light">{card.title}</h4>
                       <div className="w-[3vw] h-[1.2px] bg-[#143CA3]"></div>
@@ -77,12 +77,8 @@ function FeatureCards() {
       </div>
         <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
             <div
-              
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:ml-[6vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
             >
-              
-            
-            
                {cardData.map((card, index) => (
               <div
                 key={index}
@@ -109,20 +105,10 @@ function FeatureCards() {
                 </div>
               </div>
             ))}
-            
-            
-         
-             
-             
-
             </div>
           </div>
-          
-
         </div>
-
         </div>
-
         </Media>
       </section>
     </>

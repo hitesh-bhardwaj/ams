@@ -1,10 +1,10 @@
 import React from "react";
 import Specifications from "../Specifications";
 
-const SpecificationsHd3 = () => {
+const SpecificationsHd2 = () => {
   return (
     <>
-        <Specifications
+      <Specifications
         textclass={"gradient-text"}
         bgimg={"/assets/advastap/specifications-bg.png"}
         heading={"Technical Specification"}
@@ -19,11 +19,10 @@ const SpecificationsHd3 = () => {
             </div>
             <div className="flex-1 flex justify-between mobile:w-[100vw]">
               <div className="p-[1vw] font-light  mobile:w-[100vw] tablet:w-[20vw]">
-              ADVAPPH-33
-
+                ADVAPPH-33R3
               </div>
               <div className="p-[1vw] font-light  w-[20vw] mobile:w-[100vw]  tablet:w-[20vw]">
-              ADVAPPH-34
+                ADVAPPH-34R3
               </div>
             </div>
           </div>
@@ -32,10 +31,10 @@ const SpecificationsHd3 = () => {
             <div className="flex-[0.5] p-[1vw] ">Pin row construction</div>
             <div className="flex-1 flex justify-between  mobile:w-[80vw] mobile:justify-center mobile:gap-[24vw]">
               <div className="p-[1vw]   mobile:w-[35vw] tablet:w-[20vw] mobile:pl-[2.5vw]">
-                2 Row
+                3 Row
               </div>
               <div className="p-[1vw]   w-[20vw] mobile:w-[37vw] tablet:w-[20vw] mobile:pl-[2.5vw]">
-                2 Row
+                3 Row
               </div>
             </div>
           </div>
@@ -53,17 +52,17 @@ const SpecificationsHd3 = () => {
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw]">
             <div className="flex-[0.5] p-[1vw]">Pins Per Cartridge</div>
             <div className="flex-1 flex justify-between mobile:w-[100vw]">
-              <div className="p-[1vw]   mobile:w-[80vw]">34</div>
-              <div className="p-[1vw]   w-[20vw] mobile:w-[80vw]">34</div>
+              <div className="p-[1vw]   mobile:w-[80vw]">48</div>
+              <div className="p-[1vw]   w-[20vw] mobile:w-[80vw]">48 </div>
             </div>
           </div>
 
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw]">
             <div className="flex-[0.5] p-[1vw]">Staple height</div>
             <div className="flex-1 flex  justify-between mobile:w-[100vw]">
-              <div className="p-[1vw]  mobile:w-[80vw]">3.8 mm</div>
+              <div className="p-[1vw]  mobile:w-[80vw]">3.8 ±0.3 mm</div>
               <div className="p-[1vw]  w-[20vw] mobile:w-[80vw]">
-                3.8 mm
+                3.8 ±0.3 mm
               </div>
             </div>
           </div>
@@ -75,29 +74,20 @@ const SpecificationsHd3 = () => {
               <div className="p-[1vw]   w-[20vw] mobile:w-[80vw]">B Form</div>
             </div>
           </div>
-          <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw]">
-            <div className="flex-[0.5] p-[1vw]">Closed staple height</div>
-            <div className="flex-1 flex justify-between mobile:w-[100vw] ">
-              <div className="p-[1vw]   mobile:w-[80vw]">0.75 mm-1.5 mm</div>
-              <div className="p-[1vw]   w-[20vw] mobile:w-[80vw]">0.75 mm-1.5 mm</div>
-            </div>
-          </div>
 
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw]">
             <div className="flex-[0.5] p-[1vw]"> Housing Capacity (cc)</div>
             <div className="flex-1 flex justify-between  mobile:w-[100vw]">
-              <div className="p-[1vw]   mobile:w-[80vw]">17.97
-              </div>
-              <div className="p-[1vw]   w-[20vw] mobile:w-[80vw]">21.86
-              </div>
+              <div className="p-[1vw]   mobile:w-[80vw]">15 </div>
+              <div className="p-[1vw]   w-[20vw] mobile:w-[80vw]">17</div>
             </div>
           </div>
 
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw]">
             <div className="flex-[0.5] p-[1vw]">Inner Lumen Diameter</div>
             <div className="flex-1 flex justify-between mobile:w-[100vw] ">
-              <div className="p-[1vw]  mobile:w-[80vw]">25.5 mm</div>
-              <div className="p-[1vw]  w-[20vw] mobile:w-[80vw]">26.5 mm</div>
+              <div className="p-[1vw]  mobile:w-[80vw]">22.3 mm</div>
+              <div className="p-[1vw]  w-[20vw] mobile:w-[80vw]">23.7 mm</div>
             </div>
           </div>
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw]">
@@ -129,4 +119,4 @@ const SpecificationsHd3 = () => {
   );
 };
 
-export default SpecificationsHd3;
+export default SpecificationsHd2;
