@@ -1,16 +1,22 @@
 import React from 'react';
 import PrimaryButton from "../Button/PrimaryButton";
+import Image from 'next/image';
 
 const NextGeneration = () => {
 
   return (
     <section className='mobile:pb-[10%] py-[5%]' id='next-generation'>
       <div className='container-lg fadeUp group relative tablet:mb-[10%] '>
-        <img 
+        <div className='absolute inset-0 w-full h-full z-0'>
+        <Image
+        fill
           src="/assets/advacryl/needle-bg.png" 
           alt="Background" 
-          className='absolute inset-0 w-full h-full object-cover rounded-[60px] tablet:rounded-[3vw] mobile:rounded-[7vw] z-0'
+          className='object-cover rounded-[60px] tablet:rounded-[3vw] mobile:rounded-[7vw]'
+          
         />
+        </div>
+        
         <div className='w-full h-full relative px-[3%] py-[10%] pb-[8%] flex justify-center gap-[4vw] flex-col  items-center  z-10 mobile:gap-[15vw] mobile:pb-[30%]'>
           <div className="tablet:w-full tablet:flex tablet:justify-center mobile:w-[75vw]">
             <h2 data-para-anim className="title-2 aeonik text-center z-10 ">

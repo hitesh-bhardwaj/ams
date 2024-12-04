@@ -12,7 +12,6 @@ const contact = () => {
     <Layout>
         <main>
           <Hero/>
-        
               <ContactDetail/>
               <Locations/>
 
