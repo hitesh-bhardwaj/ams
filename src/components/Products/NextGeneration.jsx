@@ -4,8 +4,8 @@ import PrimaryButton from "../Button/PrimaryButton";
 const NextGeneration = () => {
 
   return (
-    <section className='mobile:pb-[10%]' id='next-generation'>
-      <div className='container-lg my-[10%] fadeUp group relative tablet:mb-[10%] '>
+    <section className='mobile:pb-[10%] py-[5%]' id='next-generation'>
+      <div className='container-lg fadeUp group relative tablet:mb-[10%] '>
         <img 
           src="/assets/advacryl/needle-bg.png" 
           alt="Background" 

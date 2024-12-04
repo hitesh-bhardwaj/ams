@@ -41,7 +41,7 @@ const Edge = ({ sectionheading, card1, card2, card3,visibility }) => {
   })
   return (
     <>
-      <section className="overflow-hidden mobile:py-[10%] tablet:pt-[7%] tablet:pb-0 pt-[5%] pb-[10%]" id="edge1">
+      <section className="overflow-hidden mobile:py-[10%] tablet:pt-[7%] tablet:pb-0 pt-[5%] pb-[5%]" id="edge1">
         <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] tablet:mb-0">
           <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] tablet:justify-between">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
