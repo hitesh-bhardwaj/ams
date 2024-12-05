@@ -41,8 +41,8 @@ export default function App({ Component, pageProps, router }) {
       </MediaContextProvider>
       <Media greaterThan="tablet">
 
-       {/* <Pixifinal /> */}
-       <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/30 via-white/50 to-blue-500/30"></div>
+       <Pixifinal />
+       {/* <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/30 via-white/50 to-blue-500/30"></div> */}
       </Media>
       <Media lessThan="desktop">
 
