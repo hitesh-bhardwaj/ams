@@ -40,7 +40,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
   return (
     <>
       <section id="specifications" className="relative ">
-        <div className="w-screen h-[25vh]  flex overflow-hidden items-center pt-[3vw] pl-[10vw]  tablet:h-[15vh] mobile:h-[18vh] ">
+        <div className="w-screen h-[25vh]  flex overflow-hidden items-center pt-[3vw] mobile:pt-0 pl-[10vw]  tablet:h-[15vh] mobile:h-[18vh] ">
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
               <div
@@ -48,7 +48,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
               >
                 <p>Specifications</p>
               </div>
-              <div className="h-[1.5vw] w-[1.5vw] ml-[1vw] mobile:h-[3vw] mt-[-3vw] mobile:w-[5vw] tablet:h-[3vw] tablet:w-[3vw]">
+              <div className="h-[2vw] w-[2vw] scale-[1.4] ml-[1vw] mt-[-1.5vw] mobile:h-[3vw] mobile:w-[5vw] mobile:mt-[-1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1]">
                 <svg
                   width="20"
                   height="20"

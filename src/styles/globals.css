@@ -376,6 +376,10 @@ body{
   transform: translateY(-15%);
   scale: 1.3;
 }
+.genimageanim{
+  transform: translateY(-15%);
+  scale: 1.3;
+}
 .bgfilter img{
   filter: brightness(0.9);
 }

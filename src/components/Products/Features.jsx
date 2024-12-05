@@ -15,7 +15,7 @@ const FeatureCard = ({ src, title }) => {
   return (
     <>
       <div className='w-full tablet:w-fit flex flex-col items-center justify-center feature-card group opacity-[0.2] cursor-pointer duration-300 transition-all ease  hover:opacity-[1] tablet:py-[5%] mobile:opacity-[1] '>
-        <div className='h-[19vw] w-[18vw] mobile:w-[60vw] mobile:h-[40vw] tablet:w-[20vw] tablet:h-[25vw]'>
+        <div className='h-[19vw] w-[18vw] mobile:w-[60vw] mobile:h-[50vw] tablet:w-[20vw] tablet:h-[25vw]'>
           <div className='w-full h-full relative'>
             <Image
               src={src}
@@ -80,7 +80,7 @@ const Features = ({ card1, card2, card3, card4 }) => {
           <div className='mb-[10%] mobile:mb-[15vw]'>
             <h2 className='title-2 aeonik mobile:text-center'>Key Features</h2>
           </div>
-          <div className='h-[90vw] w-full border rounded-[9vw] flex flex-col bg-white/50 items-center justify-center gap-[6vw] mobile:pt-[10vw] mobile:h-[50vh]'>
+          <div className='h-[120vw] w-full border rounded-[9vw] flex flex-col bg-white/50 items-center justify-center gap-[6vw] mobile:pt-[10vw]'>
             <div className='w-[47%] flex-col gap-y-[2vw]  mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full'>
               <Swiper
                 navigation={false}
@@ -103,7 +103,7 @@ const Features = ({ card1, card2, card3, card4 }) => {
                 </SwiperSlide>
               </Swiper>
               <div
-                className={`absolute z-[5] bottom-[10%] left-[65%] translate-x-[-65%] overflow-hidden border bg-white/50 py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
+                className={`absolute z-[5] bottom-[10%] left-[63%] translate-x-[-65%] overflow-hidden border bg-white/50 py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
                 ${activeButton === "next" ? "text-white border-none" : "bg-transparent text-[#111111]"} transition-colors duration-300`}
                 onClick={handleNext}
               >

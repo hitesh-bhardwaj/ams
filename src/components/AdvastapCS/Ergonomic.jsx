@@ -31,8 +31,8 @@ const Ergonomic = () => {
   }, []);
   return (
     <>
-      <section className="overflow-hidden py-[7%]  mobile:py-[15%] mobile:pb-[30%] relative" id="ergonomic">
-        <div className="w-screen h-[60vw] container-lg  mobile:h-[150vh] tablet:h-[95vh] ">
+      <section className="overflow-hidden py-[7%]  mobile:pt-[15%] mobile:pb-[10%] relative" id="ergonomic">
+        <div className="w-screen h-[60vw] container-lg  mobile:h-[340vw] tablet:h-[95vh] ">
           <div className="w-full h-full flex flex-col items-center justify-center relative mobile:justify-between ">
             <div className="w-full h-full flex flex-col items-center mobile:mb-[10vw] mobile:flex mobile:justify-between mobile:h-fit">
               <h2

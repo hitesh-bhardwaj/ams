@@ -103,6 +103,56 @@ export function imageAnim() {
     return () => ctx.revert();
   }, []);
 }
+export function genImageAnim() {
+  useEffect(() => {
+    if(globalThis.innerWidth>542){
+
+      const ctx = gsap.context(() => {
+        const images = document.querySelectorAll(".genimageanim");
+        images.forEach((img) => {
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: img,
+              start: globalThis.innerWidth <= 541 ? "30% bottom" : "top 70%",
+              end: globalThis.innerWidth <= 1023 ? "bottom top" : "+=2000 top",
+              scrub: true,
+              // markers:true
+            },
+          });
+          if (globalThis.innerWidth <= 541) {
+            tl.to(img, {
+              yPercent: 40,
+              scale:1.2,
+              delay: 0,
+            });
+          } else if(globalThis.innerWidth<=1024){
+            tl.to(img, {
+              scale: 1.2,
+              delay: 0,
+            }).to(img, {
+              yPercent: 20,
+              delay: -0.5,
+            });
+  
+          } 
+            
+            
+            else{
+            tl.to(img, {
+              scale: 1.1,
+              delay: -1,
+            }).to(img, {
+              yPercent: 30,
+              delay: -1,
+            });
+          }
+        });
+      });
+      return () => ctx.revert();
+    }
+  }, []);
+}
+
 
 export function imgAnim() {
   useEffect(() => {

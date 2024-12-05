@@ -62,11 +62,11 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-[7%] pb-[10%] mobile:py-[15%]" id="formoem">
-        <div className="w-full h-full p-[4vw] rounded-[3vw] border border-gray-200 bg-white/50 group hover:bg-white hover:shadow-xl hover:drop-shadow-xl ease-in transition-all duration-300 mobile:border-none">
+    <section className="py-[7%] pb-[10%] mobile:pt-[15%] mobile:pb-[5%]" id="formoem">
+        <div className="w-full h-full p-[4vw] rounded-[3vw] border border-gray-200 bg-white/50 group hover:bg-white hover:shadow-xl mobile:bg-transparent mobile:hover:bg-transparent mobile:hover:shadow-none hover:drop-shadow-xl ease-in transition-all duration-300 mobile:border-none">
       
      
-          <div className="w-full flex flex-col gap-[2vw] mobile:w-full mobile:bg-white mobile:rounded-[6vw] mobile:px-[7vw] mobile:py-[12vw] mobile:border mobile:gap-[5vw] mobile:justify-center tablet:w-[40%]">
+          <div className="w-full flex flex-col gap-[2vw] mobile:w-full mobile:bg-white/50 mobile:rounded-[6vw] mobile:px-[7vw] mobile:py-[12vw] mobile:border mobile:gap-[5vw] mobile:justify-center tablet:w-[40%]">
             <h3 data-para-anim className="aeonik text-[2.8vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw] font-light">Send a Message</h3>
             <Form {...form}>
               <form

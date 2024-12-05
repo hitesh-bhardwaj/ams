@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Sirolimus = () => {
   return (
     <>
-      <section id='SiroLimus' className=' w-screen h-screen relative py-[8%] bg-white/50 overflow-hidden mobile:h-full mobile:pb-[20%]'>
+      <section id='SiroLimus' className=' w-screen h-screen relative py-[8%] bg-white/50 overflow-hidden mobile:h-full mobile:py-[20%]'>
       <div className='container-lg'>
 
         <div className='w-[45vw] h-[30vw] rounded-[4vw] p-[4vw] py-[6vw] flex flex-col glassmorphism-light justify-between border border-gray-400/60 fadeUp mobile:w-[90vw] mobile:h-[160vw] overflow-hidden mobile:justify-end mobile:items-center mobile:pb-[20vw] fadeUp'>
@@ -19,7 +19,7 @@ const Sirolimus = () => {
 
         </div>
       </div>
-        <div className=' absolute w-[45vw] h-full right-0 top-[-15%] mobile:w-[90vw] mobile:top-[-25.5%] mobile:left-[5%]'>
+        <div className=' absolute w-[45vw] h-full right-0 top-[-15%] mobile:w-[90vw] mobile:top-[-21%] mobile:left-[5%]'>
             <Image src={"/assets/advaglide/advaglide-visit.png"} alt='advaglide-visit-bg' fill className='object-contain w-full h-full' />
 
         </div>

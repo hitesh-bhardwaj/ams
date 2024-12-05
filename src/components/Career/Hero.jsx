@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-[120vh] w-full flex-col justify-center items-start tablet:h-[50vh] mobile:h-screen">
+          <div className="flex h-[120vh] w-full flex-col justify-center items-start tablet:h-[50vh] mobile:h-screen mobile:justify-start mobile:pt-[35vw]">
             <div className="w-full">
               <h1
                 

@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => {
+const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode}) => {
   paraAnim();
   useGSAP(() => { 
     const tl = gsap.timeline({
@@ -37,7 +37,7 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => 
   
   });
   return (
-    <section className=" hero-container mobile:mb-[15%] dark" id="hero">
+    <section className={` hero-container mobile:mb-[15%] ${mode}`} id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
           <Image data-speed="0.7"
@@ -50,7 +50,7 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden }) => 
         </div>
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh]">
+          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh] mobile:justify-start mobile:pt-[35vw]">
             <div className="w-full">
               <h1
                 

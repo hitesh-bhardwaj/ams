@@ -35,11 +35,11 @@ const CSection = () => {
 
         </div>
       </div>
-      <div className="absolute h-[100%] w-[100%] top-0 right-0 mobile:w-screen mobile:h-screen mobile:right-0 z-[-1]">
+      <div className="absolute h-[100%] w-[100%] top-0 right-0 mobile:w-[250vw] mobile:h-screen mobile:right-0 z-[-1]">
                 <Image src="/assets/advakit/c-section-bg.png"
               fill
                 alt="advakit Hero bg"
-                className="object-cover mobile:object-fill"/>
+                className="object-cover mobile:object-cover"/>
             </div>
     </section>
   );

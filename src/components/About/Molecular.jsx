@@ -152,11 +152,11 @@ const Molecular = () => {
   return (
     <>
       <section
-        className="molecular h-[100vh] overflow-hidden tablet:h-[100vh] mobile:h-[130vh] mobile:py-[15%]"
+        className="molecular h-[100vh] overflow-hidden tablet:h-[100vh] mobile:h-full mobile:py-[15%]"
         id="molecular"
         ref={molecularContainer}
       >
-        <div className="w-screen h-screen absolute z-[1] overflow-hidden mobile:h-[125vh] mobile:w-screen">
+        <div className="w-screen h-screen absolute z-[1] overflow-hidden mobile:h-[280vw] mobile:w-screen">
           <Image
             src="/assets/about/molecular-bg.webp"
             fill
@@ -201,15 +201,15 @@ const Molecular = () => {
             </Media>
 
             {/* Swiper for mobile view */}
-            <Media lessThan="tablet">
+           
 
-            <div className="molecular-right w-[47%] flex-col gap-y-[2vw] hidden mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full">
+            <div className=" w-[47%] flex-col gap-y-[2vw] hidden mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full">
               <Swiper
                 navigation={false}
                 modules={[Navigation]}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 spaceBetween={40}
-                className="molecularSwiper mySwiper mobile:h-[100%] tablet:h-[100%]"
+                className="molecularSwiper  mobile:h-[100%] tablet:h-[100%]"
               >
                 {cardData.map((card, index) => (
                   <SwiperSlide key={index}>
@@ -222,7 +222,7 @@ const Molecular = () => {
                 ))}
               </Swiper>
               <div
-                className={`absolute z-[5] bottom-[-3%] left-[67%] translate-x-[-65%] overflow-hidden border bg-white/50  py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
+                className={`absolute z-[5] bottom-[3%] left-[67%] translate-x-[-65%] overflow-hidden border bg-white/50  py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
                 ${
                   activeButton === "next"
                     ? " text-white border-none"
@@ -252,7 +252,7 @@ const Molecular = () => {
             </div>
               </div>
               <div
-                className={`absolute z-[5] bottom-[-3%] left-[37%] translate-x-[-38%] bg-white/50 overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
+                className={`absolute z-[5] bottom-[3%] left-[37%] translate-x-[-38%] bg-white/50 overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
                 ${
                   activeButton === "prev"
                     ? " text-white border-none"
@@ -281,7 +281,7 @@ const Molecular = () => {
             </div>
               </div>
             </div>
-            </Media>
+           
           </div>
         </div>
       </section>

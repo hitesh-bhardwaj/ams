@@ -23,7 +23,7 @@ export default function State() {
             ease: 'none',
             scale: 0.8,
             opacity: 0,
-            yPercent:140 
+            yPercent:130 
         }, 0);
   
     });
@@ -47,15 +47,15 @@ export default function State() {
             </div>
 
             <div
-              className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col w-[50%] ml-[5%] text-start items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
-                className={`text-[3vw] font-light aeonik text-start text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
+                className={`text-[3vw] font-light aeonik  text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 State Of The Art Excellence
               </h2>
               <p
-                className={`leading-[1.8] w-[99%] text-start text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span className="para-animation block">
                   Crafted by the visionary Spanish architect Ricardo Bofill, the
@@ -83,15 +83,15 @@ export default function State() {
             </div>
 
             <div
-              className={`flex flex-col w-[40%]  items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col w-[40%]  items-left  text-start  justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
-                className={`text-[3vw] text-start font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
+                className={`text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 Cultivating High Standards
               </h2>
               <p
-                className={`leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-start text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8] w-[99%] text-[#2A2A2A] font-light  text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span className="para-animation block">
                 AMS leverages global partnerships for cutting-edge technology, ensuring uncompromising quality and innovation. Our LEAN manufacturing and Class C clean room maintain precision and efficiency.
@@ -114,15 +114,15 @@ export default function State() {
             </div>
 
             <div
-              className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col  text-start  w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
-                className={`text-[3vw] text-left font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
+                className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 Commitment to Quality
               </h2>
               <p
-                className={`leading-[1.8] text-left w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span className="para-animation block">
                 Quality is our priority. We adhere to rigorous standards (Schedule M, L-1), backed by ISO 13485:2016 and CE certifications. Our advanced testing facilities ensure product safety and efficacy, reflecting our dedication to excellence.
@@ -145,15 +145,15 @@ export default function State() {
             </div>
 
             <div
-              className={`flex flex-col w-[50%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col w-[50%] items-left  text-start  justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
-                className={`text-[3vw] text-left font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
+                className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 AMS OEM Solutions
               </h2>
               <p
-                className={`leading-[1.8] text-left w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span className="para-animation block">
                 AMS offers comprehensive OEM solutions tailored to meet diverse client needs. With our state-of-the-art facility and expertise in manufacturing medical devices, we provide flexible and innovative OEM partnerships. From design to delivery, AMS ensures quality and compliance, empowering partners to bring their healthcare innovations to market with confidence.
@@ -176,15 +176,15 @@ export default function State() {
             </div>
 
             <div
-              className={`flex flex-col w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col w-[50%]  text-start  ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
-                className={`text-[3vw] text-left font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
+                className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 State Of The Art Excellence
               </h2>
               <p
-                className={`leading-[1.8] text-left w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span className="para-animation block">
                   Crafted by the visionary Spanish architect Ricardo Bofill, the

@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
-import { MediaContextProvider , mediaStyles } from "@/components/media";
+import { Media, MediaContextProvider , mediaStyles } from "@/components/media";
 import Pixifinal from "@/components/Pixifinal";
 import { ReactLenis } from "lenis/react";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -39,8 +39,15 @@ export default function App({ Component, pageProps, router }) {
         </AnimatePresence>
       </ReactLenis>
       </MediaContextProvider>
-       <Pixifinal />
-       {/* <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/50 to-blue-500"></div> */}
+      <Media greaterThan="tablet">
+
+       {/* <Pixifinal /> */}
+       <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/30 via-white/50 to-blue-500/30"></div>
+      </Media>
+      <Media lessThan="desktop">
+
+       <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/30 via-white/50 to-blue-500/30"></div>
+      </Media>
 
        
     </>

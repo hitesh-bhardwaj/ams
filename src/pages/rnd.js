@@ -53,6 +53,8 @@ export default function rnd() {
                 src={hero.src}
                 content={hero.content}
                 className="hidden"
+                titleColor={true}
+                mode={""}
                 paraWidth={"max-w-[50vw]"}
               />
               <Genesis content={content} />

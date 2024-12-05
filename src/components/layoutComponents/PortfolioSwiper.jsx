@@ -144,7 +144,7 @@ const PortfolioSwiper = ({ slidesData }) => {
 
             {/* Custom Next and Previous Buttons */}
             <div
-              className={`absolute z-[5] bottom-0 left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer  bg-white/50
+              className={`absolute z-[5] bottom-0 left-[63%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer  bg-white/50
                 ${
                   activeButton === "next"
                     ? " text-white border-none"

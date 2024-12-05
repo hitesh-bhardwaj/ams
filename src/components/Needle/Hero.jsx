@@ -38,7 +38,7 @@ const Hero = () => {
     );
   });
   return (
-    <section className=" hero-container" id="hero">
+    <section className=" hero-container mobile:mb-[15%]" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
         <div className="w-screen h-screen absolute tablet:h-[50vh]">
           <Image data-speed="0.7"
