@@ -39,8 +39,8 @@ const Hero = () => {
   });
   return (
     <section className=" hero-container mobile:mb-[15%]" id="hero">
-      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
-        <div className="w-screen h-screen absolute tablet:h-[50vh]">
+      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
+        <div className="w-screen h-screen absolute tablet:h-full">
           <Image data-speed="0.7"
             className="hero-img absolute object-cover"
             src="/assets/needle/needle-hero-bg.webp"
@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh] mobile:items-center">
+          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[70vh] mobile:items-center">
             <div className="">
               <h1
                 data-para-anim

@@ -45,8 +45,8 @@ const Hero = () => {
   });
   return (
     <section className=" hero-container dark" id="hero">
-      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[50vh]">
-        <div className="w-screen h-screen absolute tablet:h-[50vh]">
+      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
+        <div className="w-screen h-screen absolute tablet:h-full">
           <Image
             data-speed="0.7"
             className="hero-img absolute object-cover scale-[1.2]"
@@ -60,7 +60,7 @@ const Hero = () => {
         <div className="px-[12%] relative mobile:px-[5%]">
           <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[50vh] mobile:justify-start mobile:h-fit mobile:pt-[40vw]">
             <div className="w-full">
-              <h1 className={`title-1 aeonik drop-shadow-lg  leading-[1]`}>
+              <h1 className={`title-1 aeonik drop-shadow-lg  leading-[1] tablet:text-[9vw]`}>
                 <span
                   data-para-anim
                   className={`leading-[1.3] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center `}

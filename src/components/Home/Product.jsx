@@ -12,30 +12,7 @@ import { Media } from "../media";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Product() {
-  useEffect(() => {
-    // Set up GSAP context
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#product",
-          start: "top bottom",
-          end: "bottom 20%",
-          scrub: true,
-        },
-      });
-
-      tl.to(".product-bg-img", {
-        scale: 1.2,
-        delay: -1,
-      }).to(".product-bg-img", {
-        yPercent: 30,
-        delay: -1,
-      });
-    });
-
-    // Cleanup context on component unmount
-    return () => ctx.revert();
-  }, []);
+ 
   const swiperRef = useRef(null); // Create a ref for Swiper
 
   // State to track which button was clicked
@@ -72,7 +49,7 @@ export default function Product() {
             width={1960}
             height={1180}
             alt={"product-bg"}
-            className="object-cover w-full h-full product-bg-img absolute scale-[1.3] translate-y-[-30%]"
+            className="object-cover w-full h-full product-bg-img absolute scale-[1.3] "
           />
             </Media>
             <Media lessThan="tablet">
@@ -81,7 +58,7 @@ export default function Product() {
             src={"/assets/home/product-bg-mobile.png"}
             fill
             alt={"product-bg"}
-            className="object-cover product-bg-img scale-[1.3] translate-y-[-30%] "
+            className="object-cover product-bg-img scale-[1.3] "
           />
             </Media>
         </div>

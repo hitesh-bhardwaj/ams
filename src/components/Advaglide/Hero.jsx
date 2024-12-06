@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import Image from "next/image";
-import { paraAnim } from "../gsapAnimations";
+import { lineAnim, paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -9,6 +9,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
   paraAnim();
+  lineAnim()
   
 
   //   useGSAP(() => {
@@ -56,12 +57,12 @@ const Hero = () => {
           <div className=" absolute left-[12%] mobile:left-[13%] mobile:w-[100%] tablet:left-[15%] z-[10]">
             <h1 data-para-anim className="font-light text-blue-400 text-[5.3vw] aeonik drop-shadow-md leading-[1] relative mobile:left-[1%]">
               <span
-                className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[7.5vw] text-center`}
+                className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw] text-center`}
               >
                 ADVA GLIDE
               </span>
             </h1>
-            <div className="w-[75%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block"></div>
+            <div className="w-[75%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block lineDraw"></div>
             <div className="flex items-center mobile:w-[80%] mobile:relative mobile:left-[-3%] ">
               <p
                 data-para-anim
@@ -80,7 +81,7 @@ const Hero = () => {
               </div>
           </div>
 
-          <div className="w-full h-full relative left-[10%] hero-container   tablet:w-[100%]  mobile:top-[25%] tablet:top-[10%] tablet:left-[20%]">
+          <div className="w-full h-full relative left-[10%] hero-container   tablet:w-[100%]  mobile:top-[25%] tablet:top-[0%] tablet:left-[10%]">
             <div className="w-[100vw] h-[50vw]  mobile:w-[150vw] mobile:h-[150vw] mobile:left-[-40%] mobile:rotate-[110deg] relative tablet:w-[100vw] tablet:h-[100vw] fadeUp">
               <Image
                 src="/assets/advaglide/advaglide-hero-element.png"

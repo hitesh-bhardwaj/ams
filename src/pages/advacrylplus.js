@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Header from "@/components/Header";
+
 import Edge from "@/components/Products/Edge";
 import Features from "@/components/Products/Features";
 import Hero from "@/components/Products/Hero";
@@ -82,6 +82,7 @@ const advacrylplus = () => {
           <Layout>
             <main>
               <Hero
+              margin={"mobile:mt-[35vw]"}
                 heading={"Advacryl Plus"}
                 className="text-[#855EA6]"
                 tagline={

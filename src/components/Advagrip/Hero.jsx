@@ -67,7 +67,7 @@ const Hero = () => {
             <div className=" mobile:flex mobile:flex-col mobile:items-center ">
               <h1
                 data-para-anim
-                className="title-1 aeonik drop-shadow-lg  leading-[1.25] mobile:text-center"
+                className="title-1 aeonik drop-shadow-lg  leading-[1.25] mobile:text-center tablet:text-[9vw]"
               >
                 <span className={`leading-[1.2] overflow-hidden text-[#FFFFFF] grip-gradient`}>
                   ADVAGRIP

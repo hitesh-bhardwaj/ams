@@ -79,7 +79,8 @@ const advacryl = () => {
     
           <Layout>
             <main>
-              <Hero
+              <Hero 
+              
                 heading={"Advacryl"}
                 className="text-[#855EA6]"
                 tagline={" BRAIDED COATED POLYGLACTIN 910 SURGICAL SUTURE"}

@@ -36,6 +36,7 @@ export default function oem() {
                 className="hidden"
                 paraWidth={"max-w-[50vw]"}
                 titleHidden={"hidden"}
+                mode={"dark"}
               />
               <Genesis content={content} />
               <OemCard />

@@ -8,18 +8,36 @@ gsap.registerPlugin(useGSAP);
 const Think = () => {
   fadeUp();
   useGSAP(() => {
-    gsap.from(".think-img", {
-      scrollTrigger: {
-        trigger: "#think",
-        start: "top top",
-        end: "bottom bottom",
-      },
-      xPercent: 5,
-      opacity: 0,
-      duration: 1.5,
-      delay: 0.2,
-      ease: "power3.out",
-    });
+    if(globalThis.innerWidth<1025){
+      gsap.from(".think-img", {
+        scrollTrigger: {
+          trigger: "#think",
+          start: "top 60%",
+          end: "bottom bottom",
+        },
+        xPercent: 5,
+        opacity: 0,
+        duration: 1.5,
+        delay: 0.2,
+        ease: "power3.out",
+      });
+
+    }
+    else{
+
+      gsap.from(".think-img", {
+        scrollTrigger: {
+          trigger: "#think",
+          start: "top top",
+          end: "bottom bottom",
+        },
+        xPercent: 5,
+        opacity: 0,
+        duration: 1.5,
+        delay: 0.2,
+        ease: "power3.out",
+      });
+    }
   });
   return (
     <section
@@ -37,7 +55,7 @@ const Think = () => {
             </h2>
           </div>
           <div className="relative w-full h-full flex flex-col items-center justify-center mobile:justify-start">
-            <div className="h-[30vw] w-[50vw] scale-[1] relative left-[30%] -top-[5%] mobile:w-[250vw] mobile:h-[120vw] tablet:w-[60vw] tablet:h-[40vw]">
+            <div className="h-[30vw] w-[50vw] scale-[1] relative left-[30%] -top-[5%] mobile:w-[250vw] mobile:h-[120vw] tablet:w-[60vw] tablet:h-[60vw]">
               <Image
                 src="/assets/skinstapler/skin-stapler2.png"
                 fill
@@ -47,7 +65,7 @@ const Think = () => {
             </div>
           </div>
           <div className="w-full h-full">
-            <div className="absolute left-[10%] top-[35%] flex flex-col items-start justify-center gap-[1.5vw] mobile:static mobile:gap-[10vw]">
+            <div className="absolute left-[10%] top-[35%] flex flex-col items-start justify-center gap-[1.5vw] mobile:static mobile:gap-[10vw] tablet:gap-[4vw]">
               {[
                 "User Centric Intuitive Design",
                 "Versatile Flexibility",

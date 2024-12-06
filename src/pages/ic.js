@@ -57,6 +57,7 @@ export default function ic() {
                 src={hero.src}
                 content={hero.content}
                 className="hidden"
+                mode={"dark"}
               />
               <Genesis
                 content={content}

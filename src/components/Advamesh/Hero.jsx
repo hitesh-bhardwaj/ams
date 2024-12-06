@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import Image from 'next/image';
-import { paraAnim } from "../gsapAnimations";
+import { lineAnim, paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -10,6 +10,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
   paraAnim();
+  lineAnim()
   
   return (
     <section className='dark ' id='advameshHero'>
@@ -23,7 +24,7 @@ const Hero = () => {
                  ADVAMESH
                   </span>
                 </h1>
-                <div className='w-[70%] h-[1px] bg-black/50 my-[3vw] hidden '></div>
+                <div className='w-[70%] h-[1px] bg-black/50 my-[3vw] hidden lineDraw'></div>
             <div className='flex items-center mt-[0.2vw] mobile:items-start'>
             <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#FFFFFF] leading-[1.2] tracking-[0.2em] mobile:text-[4.6vw] mobile:tracking-widest mobile:w-[70%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center">
             Advancing the Science of Tissue Reinforcement

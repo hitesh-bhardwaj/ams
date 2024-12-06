@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { paraAnim ,fadeUp } from "../gsapAnimations";
+import { paraAnim ,fadeUp, lineAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
@@ -7,6 +7,7 @@ gsap.registerPlugin(useGSAP);
 const Hero = () => {
   paraAnim();
   fadeUp();
+  lineAnim()
   useGSAP(() => {
     gsap.fromTo(
       ".hero-img",
@@ -56,7 +57,7 @@ const Hero = () => {
                     advastap ENDO LC
                   </span>
                 </h1>
-                <div className="hidden mobile:block w-[60%] h-[3px] mt-[3vw] bg-black/30"></div>
+                <div className="hidden mobile:block w-[60%] h-[3px] mt-[3vw] bg-black/30 lineDraw"></div>
                 <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-space font-light mobile:text-[5vw] mobile:leading-[1.2] mobile:w-[70%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 Endoscopic Linear Cutter 3-row
                 </p>
