@@ -35,7 +35,7 @@ const UmbilicalTape = () => {
             </p>
           </div>
         </div>
-        <div className="absolute right-[30%] top-[90%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-[60%] mobile:top-[70%] tablet:top-[30%]">
+        <div className="absolute right-[30%] top-[90%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-[60%] mobile:top-[70%] tablet:top-[90%]">
           <div className="w-[55vw] h-[40vw] absolute bottom-[10%] mobile:w-[100vw] mobile:h-[80vw]  tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
             <Image
               className="object-cover"

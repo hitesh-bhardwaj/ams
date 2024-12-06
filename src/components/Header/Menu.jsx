@@ -104,7 +104,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               playsInline
               loop
               className="h-full w-full object-cover"
-              poster="/assets/header/ams-header-bg.webp" // Use poster image
+               // Use poster image
             ></video>
           </div>
         </Media>

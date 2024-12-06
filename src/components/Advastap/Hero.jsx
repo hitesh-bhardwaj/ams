@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
     <section className='dark' id='advastapHero'>
-      <div className="w-screen h-screen relative overflow-hidden mobile:h-screen">
+      <div className="w-screen h-screen relative overflow-hidden mobile:h-screen tablet:h-[70vh]">
         <Image
           src="/assets/advastap/advastap-hero-bg.png"
           fill
@@ -55,8 +55,8 @@ const Hero = () => {
           className="object-cover absolute"
         />
         <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[25%] tablet:flex-col tablet:top-[22%]">
-          <div className="text-white absolute left-[12%]  mobile:left-[0%] mobile:w-[100%] tablet:left-[15%]">
-            <h1 className=" text-[5.7vw] font-light leading-[1] aeonik drop-shadow-lg mobile:text-[12.2vw] mobile:text-center tablet:text-[10vw] tablet:text-center">
+          <div className="text-white absolute left-[12%]  mobile:left-[0%] mobile:w-[100%] tablet:left-[20%]">
+            <h1 className=" text-[5.7vw] font-light leading-[1] aeonik drop-shadow-lg mobile:text-[12.2vw] mobile:text-center tablet:text-[9vw] tablet:text-center">
               <span data-para-anim className="leading-[1] overflow-hidden text-[#FFFFFF]  mobile:w-full mobile:text-center">
               ADVASTAP HD
               </span>
@@ -69,7 +69,7 @@ const Hero = () => {
               </div>
           </div>
 
-          <div className="w-[60%] h-full relative left-[40%] right-0 hero-container mobile:rotate-90 mobile:w-full mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[0%] mobile:top-[25%] tablet:top-[10%] tablet:left-0">
+          <div className="w-[60%] h-full relative left-[40%] right-0 hero-container mobile:rotate-90 mobile:w-full mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[0%] mobile:top-[25%] tablet:top-[10%] tablet:left-[5%]">
             <div className="w-full h-full">
               <Image
                 src="/assets/advastap/advastap-hero.png"

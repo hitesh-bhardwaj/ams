@@ -37,7 +37,7 @@ const EdgeCarousel = () => {
       className="overflow-x-hidden py-[7%] pb-[12%] mobile:pt-[10%]"
     >
       <div className="w-full relative h-full flex items-center flex-col gap-[5vw]">
-        <h2 data-para-anim className="title-2 aeonik font-light">
+        <h2 data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
           Adva Glide Edge
         </h2>
         <div className="relative fadeUp rounded-[2vw] ">
@@ -72,7 +72,7 @@ const EdgeCarousel = () => {
                 }}
               >
                 <SwiperSlide>
-                  <div className="w-[85vw] h-[45vw] relative rounded-[2vw] mobile:w-[90vw] mobile:h-[60vh] tablet:h-[70vw] bg-gray-50 overflow-hidden">
+                  <div className="w-[85vw] h-[45vw] relative rounded-[2vw] mobile:w-[90vw] mobile:h-[60vh] tablet:h-[60vw] bg-gray-50 overflow-hidden">
                     <div className="relative w-full h-full left-[10%]">
                       <Image
                         src={"/assets/advaglide/advaglide-carousel-1.png"}
@@ -81,7 +81,7 @@ const EdgeCarousel = () => {
                         className=" mobile:object-cover object-contain"
                       />
                     </div>
-                    <div className="absolute top-[50%] left-[8%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
+                    <div className="absolute top-[50%] left-[8%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[50%]">
                       <h2
                         data-para-anim
                         className="text-black text-[2.2vw] aeonik font-light tablet:text-[4vw]"
@@ -98,8 +98,8 @@ const EdgeCarousel = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="w-[85vw] h-[45vw] relative rounded-[2vw] mobile:w-[90vw] mobile:h-[60vh] tablet:h-[70vw] bg-gray-50 overflow-hidden">
-                    <div className="left-[-25%] relative w-full h-full">
+                  <div className="w-[85vw] h-[45vw] relative rounded-[2vw] mobile:w-[90vw] mobile:h-[60vh] tablet:h-[60vw] bg-gray-50 overflow-hidden">
+                    <div className="left-[-25%] relative w-full h-full tablet:left-[-35%]">
                       <Image
                         src={"/assets/advaglide/advaglide-carousel-2.png"}
                         fill
@@ -107,11 +107,11 @@ const EdgeCarousel = () => {
                         className=" mobile:object-cover object-contain"
                       />
                     </div>
-                    <div className="absolute top-[50%] left-[55%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
+                    <div className="absolute top-[50%] left-[55%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[30%] tablet:left-[55%]">
                       <h2 className="text-black text-[2.2vw] aeonik font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
                         Unsurpass Crossability
                       </h2>
-                      <p className="text-black text-[1.4vw] font-extralight w-[80%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
+                      <p className="text-black text-[1.4vw] font-extralight w-[80%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[90%] tablet:leading-[1.3]">
                         Thinnest balloon wall (0.008 mm) results in excellent
                         gliding and flexibility through tortuous coronary
                         anatomies.
@@ -120,7 +120,7 @@ const EdgeCarousel = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="w-[85vw] h-[45vw] relative rounded-[2vw] mobile:w-[90vw] mobile:h-[60vh] tablet:h-[70vw] bg-gray-50 overflow-hidden">
+                  <div className="w-[85vw] h-[45vw] relative rounded-[2vw] mobile:w-[90vw] mobile:h-[60vh] tablet:h-[60vw] bg-gray-50 overflow-hidden">
                     <div className="relative w-full h-full left-[-20%]">
                       <Image
                         src={"/assets/advaglide/advaglide-carousel-3.png"}
@@ -129,7 +129,7 @@ const EdgeCarousel = () => {
                         className=" mobile:object-cover object-contain"
                       />
                     </div>
-                    <div className="absolute top-[50%] left-[45%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
+                    <div className="absolute top-[50%] left-[45%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[30%]">
                       <h2 className="text-black text-[2.2vw] aeonik font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
                         Novel Inner Tube
                       </h2>
@@ -147,7 +147,7 @@ const EdgeCarousel = () => {
           </Media>
 
           <Media greaterThan="mobile">
-            <div className="absolute top-[90%] w-full left-[18%] endoSmallSwiperContainer tablet:left-0 fadeUp">
+            <div className="absolute top-[90%] w-full left-[18%] endoSmallSwiperContainer fadeUp">
               <Swiper
                 onSwiper={setThumbsSwiper}
                 spaceBetween={20}
@@ -161,7 +161,7 @@ const EdgeCarousel = () => {
                   <SwiperSlide key={index}>
                     <Image
                       src={slide.src}
-                      className="rounded-[1.5vw] h-[8vw] cursor-pointer border border-gray-300 bg-gray-50"
+                      className="rounded-[1.5vw] h-[8vw] cursor-pointer border border-gray-300 bg-gray-50 tablet:h-[10vw] object-cover tablet:!rounded-[1.5vw]"
                       width={290}
                       height={300}
                       alt="small swiper"

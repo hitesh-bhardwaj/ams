@@ -46,12 +46,12 @@ const AdvastapHD2 = () => {
       </div>
       
       <div className="absolute top-[15%] right-[8%]  p-[2vw] mobile:w-full mobile:right-[0%] mobile:text-center tablet:w-full tablet:p-[4vw] tablet:top-[5%] tablet:text-center tablet:right-[0%]">
-        <h2 className="text-[4vw] aeonik drop-shadow-lg  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[9vw]">
+        <h2 className="text-[4vw] aeonik drop-shadow-lg  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[7.5vw]">
           <span data-para-anim className="leading-[1.3] overflow-hidden w-full mobile:w-full mobile:text-center tablet:w-full tablet:text-center">
           ADVASTAP HD III
           </span>
         </h2>
-        <p className="mb-[4vw] text-[1.66vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:text-[4.75vw] mobile:my-[7vw] flex items-center justify-start mobile:justify-center tablet:justify-center tablet:text-[3.5vw] tablet:tracking-wider">
+        <p className="mb-[4vw] text-[1.66vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:text-[4.75vw] mobile:my-[7vw] flex items-center justify-start mobile:justify-center tablet:justify-center tablet:text-[3vw] tablet:tracking-wider">
           <span data-para-anim className="mobile:text-center uppercase tracking-widest mobile:tracking-normal">
           3-Row Hemorrhoid Stapler
           </span>

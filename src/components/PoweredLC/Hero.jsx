@@ -1,11 +1,12 @@
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { fadeUp } from "../gsapAnimations";
+import { fadeUp, lineAnim } from "../gsapAnimations";
 gsap.registerPlugin(useGSAP);
 
 const Hero = () => {
   fadeUp();
+  lineAnim()
   useGSAP(() => {
     gsap.from(
       ".hero-img-1",
@@ -81,7 +82,7 @@ const Hero = () => {
                    ADVASTAP POWERED LC
                   </span>
                 </h1>
-                <div className="w-[80vw] h-[3px] mt-[3vw] bg-black/50 hidden mobile:block"></div>
+                <div className="w-[80vw] h-[3px] mt-[3vw] bg-black/50 hidden mobile:block lineDraw"></div>
                 <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-space font-light mobile:text-[5vw] mobile:leading-[1.2] mobile:w-[80%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 Powered Linear Cutter 3-row
                 </p>

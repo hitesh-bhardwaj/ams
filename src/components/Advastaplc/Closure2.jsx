@@ -7,9 +7,9 @@ const Closure2 = () => {
       <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] ">
         <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] py-[5vw]">
           <div className="w-full h-full flex flex-col items-center justify-center mobile:flex mobile:justify-center">
-            <h2 className="advastap-text text-white text-[2.8vw] aeonik drop-shadow-md leading-[1.2] hero-text mobile:text-center">
+            <h2 className="advastap-text text-white text-[2.8vw] aeonik drop-shadow-md leading-[1.2] hero-text mobile:text-center tablet:text-center">
                   <span 
-                    className={`leading-[1.2] overflow-hidden uppercase text-[2.8vw] mobile:text-[8.2vw] tablet:text-[7.5vw] mobile:text-center`}
+                    className={`leading-[1.2] overflow-hidden uppercase text-[2.8vw] mobile:text-[8.2vw] tablet:text-[6vw] `}
                   >
                  INNOVATION. SECURITY. CONSISTENCY.
                   </span>

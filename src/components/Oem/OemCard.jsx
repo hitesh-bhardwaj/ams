@@ -4,7 +4,7 @@ import PrimaryButton from "../Button/PrimaryButton";
 export default function OemCard() {
   return (
     <>
-       <section id='oemcard' className=' py-[5%] overflow-hidden tablet:h-full tablet:py-[10%] mobile:h-full mobile:py-[20%]'>
+       <section id='oemcard' className=' py-[5%] overflow-hidden tablet:h-full tablet:py-[10%] mobile:h-full mobile:pb-[15%]'>
       <div className='h-full flex flex-col items-center justify-center gap-[8vw] tablet:gap-[4vw]'>
         
           <div

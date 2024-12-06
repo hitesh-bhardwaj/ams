@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import Image from 'next/image';
-import { paraAnim } from "../gsapAnimations";
+import { lineAnim, paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -10,6 +10,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
   paraAnim();
+  lineAnim()
   useGSAP(() => {
     if(globalThis.innerWidth>1024){
     const tl = gsap.timeline({
@@ -43,7 +44,7 @@ const Hero = () => {
                  ADVA PRO
                   </span>
                 </h1>
-                <div className='w-[80%] h-[1px] bg-black/50 my-[5vw] hidden mobile:block'></div>
+                <div className='w-[80%] h-[1px] bg-black/50 my-[5vw] hidden mobile:block lineDraw'></div>
             <div className='flex items-center mt-[0.2vw] tablet:mt-[1vw]'>
             <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-widest mobile:text-[4.6vw] mobile:tracking-widest  mobile:w-[80%] tablet:text-[2.5vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center">
             Sirolimus Eluting Coronary Stent System
