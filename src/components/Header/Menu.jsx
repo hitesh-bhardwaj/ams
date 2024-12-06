@@ -180,7 +180,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/#"}>
+                      <Link href={"/about"}>
                         <span
                           onClick={() => handleLinkClick("/about")}
                           data-attr="About"
@@ -202,7 +202,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/#"}>
+                      <Link href={"/manufacturing"}>
                         <span
                           onClick={() => handleLinkClick("/manufacturing")}
                           data-attr="Manufacturing"
@@ -213,7 +213,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                    <Link href={"/#"}>
+                    <Link href={"/career"}>
                         <span
                           onClick={() => handleLinkClick("/career")}
                           data-attr="Career"
@@ -224,9 +224,9 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                    <Link href={"/#"}>
+                    <Link href={"/blogs"}>
                         <span
-                          onClick={() => handleLinkClick("/news")}
+                          onClick={() => handleLinkClick("/blogs")}
                           data-attr="News"
                           className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
                         >
@@ -265,7 +265,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/#"}>
+                      <Link href={"/endo"}>
                         <span
                           onClick={() => handleLinkClick("/endo")}
                           data-attr="Endo Surgery"
@@ -276,7 +276,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/#"}>
+                      <Link href={"/hernia"}>
                         <span
                           onClick={() => handleLinkClick("/hernia")}
                           data-attr="Hernia Solutions"
@@ -288,7 +288,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     </li>
                     <li className="footer-link">
                       <Link
-                        href="/#"
+                        href="/ic"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
                         <span data-attr="Interventional Cardiology">
@@ -298,7 +298,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     </li>
                     <li className="footer-link">
                       <Link
-                        href="/#"
+                        href="/cardiovascular"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
                         <span data-attr="Cardiovascular Solutions">

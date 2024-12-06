@@ -58,7 +58,7 @@ const Hero = () => {
           <div className=" absolute left-[12%] mobile:left-[10%] mobile:w-[100%] tablet:left-[15%] z-[10]">
           <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text">
                   <span 
-                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[7.5vw]`}
+                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw]`}
                   >
                   ADVASTAP LC
                   </span>

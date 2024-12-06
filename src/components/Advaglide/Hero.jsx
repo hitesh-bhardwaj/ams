@@ -56,7 +56,7 @@ const Hero = () => {
           <div className=" absolute left-[12%] mobile:left-[13%] mobile:w-[100%] tablet:left-[15%] z-[10]">
             <h1 data-para-anim className="font-light text-blue-400 text-[5.3vw] aeonik drop-shadow-md leading-[1] relative mobile:left-[1%]">
               <span
-                className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[7.5vw] text-center`}
+                className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw] text-center`}
               >
                 ADVA GLIDE
               </span>

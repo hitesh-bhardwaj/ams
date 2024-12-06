@@ -50,6 +50,7 @@ const BlogCard = ({ title, para, date, img, large }) => (
       large ? "col-span-9 row-span-2 h-[44vw]" : "col-span-3 h-[18vw]"
     } rounded-[1.5vw] relative mt-[1vw] fadeUp`}
   >
+     <div className="w-full h-full absolute top-0 left-0 z-[2] rounded-[2vw] bg-gradient-to-b from-transparent to-black/30"></div>
     <div className="w-full h-full relative">
       <Image
         src={img}
@@ -58,13 +59,13 @@ const BlogCard = ({ title, para, date, img, large }) => (
         className="rounded-[2vw] object-cover"
       />
     </div>
-    <div className="absolute bottom-[10%] px-[1vw]">
-      <p  className={`text-white ${large ? "text-[3.3vw]" : "text-[2.3vw]"} font-light`}>
+    <div className="absolute bottom-[6%] left-[5%] px-[0.5vw]  z-[10]">
+      <p  className={`text-white  ${large ? "text-[2.5vw]" : "text-[1.8vw] aeonik"} font-extralight`}>
         {title}
       </p>
       <p 
-        className={`text-white ${
-          large ? "text-[1.94vw] w-[70%]" : "text-[1.4vw] w-[80%]"
+        className={`text-white aeonik z-[10] ${
+          large ? "text-[1.8vw] w-[70%]" : "text-[1.4vw] w-[95%]"
         } font-light aeonik leading-[1.2]`}
       >
         {para}
@@ -72,8 +73,8 @@ const BlogCard = ({ title, para, date, img, large }) => (
     </div>
     <p 
       className={`${
-        large ? "text-[1.94vw]" : "text-[1.8vw]"
-      } text-[#111111] font-light ml-[2vw] py-[0.5vw]`}
+        large ? "text-[1.8vw]" : "text-[1.4vw]"
+      } text-[#111111] font-light ml-[2vw] py-[0.5vw] aeonik`}
     >
       {date}
     </p>
@@ -91,7 +92,7 @@ const More = () => {
         <div className="text-center flex flex-col items-center">
           <h2
             data-para-anim
-            className="text-[3.3vw] font-light leading-[1.2] aeonik"
+            className="text-[2.7vw] font-light leading-[1.2] aeonik capitalize"
           >
             More from ams
           </h2>
@@ -101,7 +102,7 @@ const More = () => {
           .map((_, i) => (
             <div
               key={i}
-              className="w-full h-full py-[5vw] grid grid-cols-12 gap-[1vw] space-x-[1.5vw] space-y-[1.5vw]"
+              className="w-full h-full py-[3vw] grid grid-cols-12 gap-[1vw] space-x-[1.5vw] space-y-[1.5vw]"
             >
               {blogCardData
                 .slice(i * 3, i * 3 + 3)

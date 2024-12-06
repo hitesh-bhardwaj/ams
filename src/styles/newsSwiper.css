@@ -1,0 +1,6 @@
+.newsSwiper  .swiper-scrollbar{
+    background-color: #dadada;
+    width: 50% !important;
+    position: absolute;
+    left: 25% !important;
+}

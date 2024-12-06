@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -5,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Precision = () => {
+  if(globalThis >=1024){
   useGSAP(() => { 
     gsap.from(
       ".precision-img",
@@ -54,6 +56,7 @@ const Precision = () => {
     );
   
   });
+}
  
   return (
     <>
@@ -85,8 +88,10 @@ const Precision = () => {
                 alt="Precision bg"
                 className="object-cover"/>
             </div>
-            <span className="w-[26vw] h-[1.5px] bg-[#DADADA] absolute  top-[63%] left-[32%] scale-0 line-draw mobile:w-[60vw] mobile:rotate-[80deg] mobile:top-[51%] mobile:left-[30%] tablet:left-[38%] tablet:w-[17vw] "></span>
-            <span className="w-[28vw] h-[1.5px] bg-[#DADADA] absolute lineDraw top-[75%] left-[28%]  mobile:rotate-[130deg] mobile:top-[78%] mobile:left-[28%] tablet:w-[35vw] tablet:left-[33%]"></span>
+            <span className="w-[26vw] h-[1.5px] bg-[#B3B3B3] absolute  top-[63%] left-[32%] scale-0 line-draw mobile:hidden tablet:hidden"></span>
+            <span className="w-[28vw] h-[1.5px] bg-[#B3B3B3] absolute lineDraw top-[75%] left-[28%]  mobile:hidden tablet:hidden"></span>
+            <span className="hidden h-[1.5px] bg-[#B3B3B3] absolute mobile:block tablet:block mobile:w-[70vw] mobile:-rotate-[105deg] mobile:top-[54%] mobile:left-[26%] tablet:left-[35%] tablet:w-[22vw] tablet:top-[60%] tablet:-rotate-45"></span>
+            <span className="hidden  h-[1.5px] bg-[#B3B3B3] absolute  mobile:block tablet:block mobile:w-[40vw] mobile:rotate-[130deg] mobile:top-[78%] mobile:left-[28%] tablet:w-[36vw] tablet:left-[30%] tablet:top-[75%]"></span>
       </section>
     </>
   );

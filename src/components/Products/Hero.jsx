@@ -10,7 +10,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2, className = "" }) => 
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
                 <h1 className="title-1 aeonik drop-shadow-md leading-[1]">
                   <span data-para-anim
-                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] ${className} tablet:text-[7.5vw]`}
+                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] ${className} tablet:text-[9vw]`}
                   >
                     {heading}
                   </span> 

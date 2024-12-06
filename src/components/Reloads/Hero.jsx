@@ -33,7 +33,7 @@ const Hero = () => {
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
                 <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md w-[60%] mobile:w-full fadeUp ">
                   <span 
-                    className={`leading-[1.1] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[7.5vw]`}
+                    className={`leading-[1.1] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw]`}
                   >
                   ADVASTAP RELOADS
                   </span>

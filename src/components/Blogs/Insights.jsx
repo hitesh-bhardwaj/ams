@@ -11,7 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 const NewsCard = ({title,date,img}) => {
   return (
     <>
-      <div className="h-[45vw] w-[50vw] rounded-[2vw] newsCard overflow-hidden transition-all duration-500 ease-in">
+      <div className="h-[40vw] w-[41vw] rounded-[2vw] newsCard relative overflow-hidden transition-all duration-500 ease-in">
+      <div className="w-full h-full absolute top-0 left-0 z-[2] rounded-[2vw] bg-gradient-to-b from-transparent to-black/30"></div>
         <div className="relative h-full w-full">
           <Image
             src={img}
@@ -20,11 +21,11 @@ const NewsCard = ({title,date,img}) => {
             className="rounded-[2.5vw] object-cover"
           />
         </div>
-        <div className="absolute text-white text-[3.3vw] font-light top-[70%] left-[5%]">
+        <div className="absolute text-white text-[2.5vw] font-light top-[80%] left-[5%] aeonik z-[5]">
           <p data-para-anim>{title}</p>
         </div>
       </div>
-      <p data-para-anim className="font-light text-[1.8vw] px-[2vw] py-[1vw]">
+      <p data-para-anim className="font-light text-[1.8vw] px-[2vw] py-[1vw] aeonik">
        {date}
       </p>
     </>
@@ -63,17 +64,17 @@ export default function Insights() {
             </h2>
             <p
               data-para-anim
-              className="content-p my-6 w-[55%] mobile:w-[90%] mobile:my-10 tablet:w-[70%]"
+              className="content-p my-6 w-[50%] mobile:w-[90%] mobile:my-10 tablet:w-[70%]"
             >
               Welcome to the AMS Blog, your go-to resource for cutting-edge
               advancements and expert insights in the medical and healthcare
               industry.
             </p>
-            <p  data-para-anim className="aeonik font-light text-[3.33vw] capitalize mt-[2vw]">
+            <p  data-para-anim className="aeonik font-light text-[2.5vw] capitalize mt-[2vw]">
               What’s Trending News
             </p>
           </div>
-          <div className="w-full h-full py-[10vw] cursor-grab">
+          <div className="w-full h-full pt-[3vw] pb-[2vw] cursor-grab">
             <Swiper
               scrollbar={{
                 hide: false,
@@ -90,8 +91,8 @@ export default function Insights() {
                   spaceBetween: 30,
                 },
                 1024: {
-                  slidesPerView: 2,
-                    spaceBetween: -20,
+                  slidesPerView: 2.7,
+                    spaceBetween: 20,
                 },
               }}
               onSlideChange={handleSlideChange}
@@ -99,13 +100,13 @@ export default function Insights() {
               modules={[Scrollbar]}
               className="h-full w-full newsSwiper flex items-start justify-start"
             >
-              <SwiperSlide className="pb-[5vw] ">
+              <SwiperSlide className="pb-[3vw] ">
                 <NewsCard title={"ADVASTAP HD3 Row Lauch "}  date={"November 29, 2024"} img={"/assets/blogs/news-img1.png"}/>
               </SwiperSlide>
-              <SwiperSlide className="pb-[5vw]">
+              <SwiperSlide className="pb-[3vw]">
                 <NewsCard title={"MEDICA 2024 Congress "} date={"November 28, 2024"} img={"/assets/blogs/news-img2.png"} />
               </SwiperSlide>
-              <SwiperSlide className="pb-[5vw]">
+              <SwiperSlide className="pb-[3vw]">
                 <NewsCard title={"Expert Perspectives"} date={"November 27, 2024"} img={"/assets/blogs/news-img3.png"}/>
               </SwiperSlide>
             </Swiper>

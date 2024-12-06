@@ -143,9 +143,14 @@ const Versatility = () => {
         <span className='absolute top-[57%] left-[39.5%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[15%]  mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[71%] tablet:left-[50%] z-[5]'><span className='w-[0.8vw] h-[0.8vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw] tablet:w-[2vw] tablet:h-[2vw]'></span></span>
         <span className='absolute top-[52%] left-[31%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[30%] mobile:top-[60%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[61%] tablet:left-[70%] z-[5]'><span className='w-[0.8vw] h-[0.8vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw] tablet:w-[2vw] tablet:h-[2vw]'></span></span>
         <span className='absolute top-[52%] left-[47%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[17%] mobile:top-[50%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[60%] tablet:left-[45%] z-[5]'><span className='w-[0.8vw] h-[0.8vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw] tablet:w-[2vw] tablet:h-[2vw]'></span></span>
-        <span className="w-[18vw] h-[1.5px] bg-[#000000] absolute top-[59%] left-[40.7%] scale-0 opacity-0 rline-draw1 mobile:w-[75vw] mobile:rotate-[122deg] mobile:top-[70%] mobile:left-[22%] tablet:w-[15vw] tablet:top-[78%] tablet:left-[50%] "></span>
-        <span className="w-[10vw] h-[1.5px] bg-[#000000] absolute top-[54%] left-[22.3%] scale-0 opacity-0 rline-draw3 mobile:w-[55vw] mobile:rotate-[80deg] mobile:top-[43%] mobile:left-[46%] tablet:w-[20vw] tablet:top-[53%] tablet:left-[60%] tablet:rotate-[80deg]"></span>
-        <span className="w-[18vw] h-[1.5px] bg-[#000000] absolute top-[53.7%] left-[48%] scale-0 opacity-0 rline-draw2 mobile:w-[20vw] mobile:rotate-[10deg] mobile:top-[60.5%] mobile:left-[44%] tablet:w-[12vw] tablet:top-[55%] tablet:left-[38%] tablet:rotate-[70deg]"></span>
+        <span className="w-[18vw] h-[1.5px] bg-[#000000] absolute top-[59%] left-[40.7%] scale-0 opacity-0 rline-draw1 mobile:hidden tablet:hidden"></span>
+        <span className="w-[10vw] h-[1.5px] bg-[#000000] absolute top-[54%] left-[22.3%] scale-0 opacity-0 rline-draw3 mobile:hidden tablet:hidden"></span>
+        <span className="w-[18vw] h-[1.5px] bg-[#000000] absolute top-[53.7%] left-[48%] scale-0 opacity-0 rline-draw2 mobile:hidden tablet:hidden"></span>
+
+
+        <span className=" hidden h-[1.5px] bg-[#000000] absolute mobile:block tablet:block mobile:w-[75vw] mobile:rotate-[122deg] mobile:top-[70%] mobile:left-[22%] tablet:w-[15vw] tablet:top-[78%] tablet:left-[50%] tablet:rotate-45"></span>
+        <span className=" hidden w-[10vw] h-[1.5px] bg-[#000000] absolute mobile:block tablet:block  mobile:w-[55vw] mobile:rotate-[80deg] mobile:top-[43%] mobile:left-[46%] tablet:w-[20vw] tablet:top-[53%] tablet:left-[60%] tablet:rotate-[80deg]"></span>
+        <span className=" hidden h-[1.5px] bg-[#000000] absolute mobile:block tablet:block   mobile:w-[20vw] mobile:rotate-[10deg] mobile:top-[60.5%] mobile:left-[44%] tablet:w-[12vw] tablet:top-[55%] tablet:left-[38%] tablet:rotate-[70deg]"></span>
 
   </section>
   )

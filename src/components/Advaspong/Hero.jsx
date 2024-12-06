@@ -44,7 +44,7 @@ const Hero = () => {
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center relative z-[1] mobile:top-[-30%]">
                 <h1 className="text-[#CF181E] text-[5.3vw]  font-light aeonik drop-shadow-md leading-[1] ">
                   <span data-para-anim
-                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[7.5vw]`}
+                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw]`}
                   >
                     ADVASPONG
                   </span>

@@ -301,7 +301,6 @@ export function lineAnim() {
   } else {
     useEffect(() => {
       const ctx = gsap.context(()=>{
-
         const lineDraws = document.querySelectorAll(".lineDraw");
         lineDraws.forEach((lineDraw) => {
           gsap.from(lineDraw, {

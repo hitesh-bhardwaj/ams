@@ -39,6 +39,7 @@ fadeup()
                 content={hero.content}
                 className="hidden"
                 paraWidth={"max-w-[90vw]"}
+                mode={"dark"}
               />
               <Genesis content={content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[30%]"} />

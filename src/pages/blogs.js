@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Hero from "@/components/Blogs/Hero";
 import Insights from "@/components/Blogs/Insights";
 import More from "@/components/Blogs/More";
+import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
 import Genesis from "@/components/layoutComponents/Genesis";
 
@@ -14,11 +14,25 @@ const blogs = () => {
           "With a global presence, we are committed to advancing healthcare, collaborating with professionals worldwide to set new benchmarks in medical solutions.",
         src: "/assets/blogs/blogs-genesis-bg.png",
       };
+      const hero = {
+        title: "Latest News",
+        src: "/assets/blogs/blogs-hero-bg.png",
+        content:
+          "Latest Updates from Advanced MedTech Solutions",
+      };
   return (
     <>
       <Layout>
         <main>
-        <Hero/>
+        <Hero
+                title={hero.title}
+                src={hero.src}
+                content={hero.content}
+                className="hidden"
+                titleColor={false}
+                mode={"dark"}
+                paraWidth={"max-w-[16vw]"}
+              />
         <Genesis content={content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[30%]"} />
                 <Insights/>
