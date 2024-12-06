@@ -14,11 +14,41 @@ const Precision = () => {
           start: "top top",
           end: "bottom top",
         },
-        scale: 1.1,
+       scale:1.1,
         yPercent:20,
         opacity:0,
         duration: 1.5,
+        transformOrigin: "left",
         delay:0.5,
+        ease: "power3.out",
+      }
+    );
+    gsap.to(
+      ".line-draw",
+      {
+        scrollTrigger: {
+          trigger: "precision-container",
+          start: "top top",
+          end: "bottom top",
+        },
+        rotate: -18,
+        delay:1,
+        ease: "power3.out",
+      }
+    );
+    gsap.to(
+      ".line-draw",
+      {
+        scrollTrigger: {
+          trigger: "precision-container",
+          start: "top top",
+          end: "bottom top",
+        },
+        scale:1,
+        opacity:1,
+        transformOrigin: "left",
+        duration: 1.5,
+        delay:1.2,
         ease: "power3.out",
       }
     );
@@ -38,11 +68,11 @@ const Precision = () => {
              <div className="h-[43vw] w-[85%] relative left-[-10%] mobile:absolute mobile:top-[40%] mobile:left-0 mobile:w-[170vw] mobile:h-[50vh] tablet:w-full tablet:left-0 tablet:h-[60vw]">
                 <Image src="/assets/endolc/precision-product.png" fill alt="Precision Product" className="object-contain mobile:rotate-[-20deg] precision-img " />
                 <div className="absolute top-[30%] right-[-15%] mobile:top-[-25%] mobile:right-[48%] tablet:right-0">
-                    <p data-para-anim className="font-light text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:w-[80vw] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]">Sequential Firing Mechanism
-                    <span data-para-anim className="block text-[1.25vw] font-light leading-[1.2] mobile:text-[4vw] tablet:text-[2.2vw] ">simplifies operation.</span></p>
+                    <p data-para-anim className="font-light leading-[1.2] text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:w-[80vw] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]">Sequential Firing Mechanism
+                    <span data-para-anim className="block text-[1.25vw] font-light mobile:text-[4vw] tablet:text-[2.2vw] ">simplifies operation.</span></p>
                 </div>
                 <div   className="absolute bottom-[20%] right-[2%] mobile:right-[20%] mobile:bottom-[-35%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center">
-                    <p data-para-anim  className="font-light text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:leading-[1.2] tablet:text-[3vw]">Enhanced Control</p>
+                    <p data-para-anim  className="font-light text-[2.5vw] leading-[1.2] text-[#2A2A2A] mobile:text-[9vw] mobile:leading-[1.2] tablet:text-[3vw]">Enhanced Control</p>
                     <p data-para-anim className="block text-[1.25vw] font-light mobile:text-[4vw] mobile:text-center tablet:text-[2.2vw]">with compact reach.</p>
                 </div>
             </div>         
@@ -55,8 +85,8 @@ const Precision = () => {
                 alt="Precision bg"
                 className="object-cover"/>
             </div>
-            <span className="w-[26vw] h-[1.5px] bg-gray-500/50 absolute top-[60%] left-[32%] rotate-[-25deg] lineDraw mobile:w-[60vw] mobile:rotate-[80deg] mobile:top-[51%] mobile:left-[30%] tablet:left-[38%] tablet:w-[17vw] "></span>
-            <span className="w-[28vw] h-[1.5px] bg-gray-500/50 absolute top-[75%] left-[28%] lineDraw mobile:rotate-[130deg] mobile:top-[78%] mobile:left-[28%] tablet:w-[35vw] tablet:left-[33%]"></span>
+            <span className="w-[26vw] h-[1.5px] bg-[#DADADA] absolute  top-[63%] left-[32%] scale-0 line-draw mobile:w-[60vw] mobile:rotate-[80deg] mobile:top-[51%] mobile:left-[30%] tablet:left-[38%] tablet:w-[17vw] "></span>
+            <span className="w-[28vw] h-[1.5px] bg-[#DADADA] absolute lineDraw top-[75%] left-[28%]  mobile:rotate-[130deg] mobile:top-[78%] mobile:left-[28%] tablet:w-[35vw] tablet:left-[33%]"></span>
       </section>
     </>
   );

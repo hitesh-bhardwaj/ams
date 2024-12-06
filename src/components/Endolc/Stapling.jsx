@@ -1,15 +1,50 @@
 import React from "react";
 import Image from "next/image";
+import gsap from "gsap";
 import { fadeIn } from "../gsapAnimations";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const Stapling = () => {
   fadeIn();
+  useGSAP(()=>{
+    gsap.to(
+      ".sline-draw",
+      {
+        scrollTrigger: {
+          trigger: "stapling-container",
+          start: "top top",
+          end: "bottom top",
+        },
+        rotate:-5,
+        delay:2.3,
+        ease: "power3.out",
+      }
+    );
+    gsap.to(
+      ".sline-draw",
+      {
+        scrollTrigger: {
+          trigger: "stapling-container",
+          start: "top top",
+          end: "bottom top",
+        },
+        scale:1,
+        opacity:1,
+        transformOrigin: "right",
+        duration: 1.5,
+        delay:2.6,
+        ease: "power3.out",
+      }
+    );
+  })
  
   return (
     <>
       <section className="overflow-hidden relative mobile:py-[20%] py-[7%] tablet:py-[10%] " id="stapling">
-        <div className="w-screen overflow-hidden h-full pl-[12vw] mobile:h-full tablet:h-[70%] mobile:pl-0 tablet:pl-[7vw]">
+        <div className="w-screen stapling-container overflow-hidden h-full pl-[12vw] mobile:h-full tablet:h-[70%] mobile:pl-0 tablet:pl-[7vw]">
           <div className=" flex flex-col items-center justify-center ">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center ">
               <h2 data-para-anim className="title-2 aeonik mobile:text-center">Smart Stapling</h2>
@@ -55,7 +90,7 @@ const Stapling = () => {
             
           </div>
         </div>
-        <span className="w-[45vw] h-[2px] bg-gray-500/50 absolute top-[55%] left-[45%] rotate-[-5deg]"></span>
+        <span className="w-[45vw] h-[1.5px] bg-[#b7b7b7] absolute top-[52%] scale-0 opacity-0  sline-draw left-[46%] "></span>
         <div className="absolute h-[100%] w-[100vw] bottom-0 z-[-1]">
                 <Image src="/assets/endolc/stapling-bg.png"
                fill

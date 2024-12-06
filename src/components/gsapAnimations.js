@@ -280,7 +280,6 @@ export function lineAnim() {
   if (globalThis.innerWidth <= 1023 && globalThis.innerWidth > 541) {
     useEffect(() => {
       const ctx = gsap.context(()=>{
-
         const lineDraws = document.querySelectorAll(".lineDraw");
         lineDraws.forEach((lineDraw) => {
           gsap.from(lineDraw, {
