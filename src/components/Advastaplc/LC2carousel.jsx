@@ -14,25 +14,25 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const LC2Carousel = () => {
   fadeup()
     paraAnim();
-    // useGSAP(()=>{
-    //         if(globalThis.innerWidth>1024){
-    //         const tl = gsap.timeline({
-    //             scrollTrigger:{
-    //                 trigger:'.swiper-container'
-    //             }
-    //         });
-    //         tl.fromTo(".specificationSwiper",{
-    //             xPercent:70,
-    //             opacity:0.5
-    //         },{
-    //             xPercent:0,
-    //             duration: 2,
-    //         delay: 0.3,
-    //         opacity:1,
-    //         ease: "power3.out",
-    //         })
-    //     };
-    //     });
+    useGSAP(()=>{
+            if(globalThis.innerWidth>1024){
+            const tl = gsap.timeline({
+                scrollTrigger:{
+                    trigger:'.lc2-swiper-container'
+                }
+            });
+            tl.fromTo(".lc2Swiper",{
+                xPercent:70,
+                opacity:0.5
+            },{
+                xPercent:0,
+                duration: 2,
+            delay: 0.3,
+            opacity:1,
+            ease: "power3.out",
+            })
+        };
+        });
 
         const swiperRef = useRef(null); // Create a ref for Swiper
 
@@ -57,8 +57,8 @@ const LC2Carousel = () => {
      
   return (
     <>
-    <section id='skinstapler-carousel' className='overflow-hidden py-[5%] mobile:py-[15%] tablet:py-[10%]'>  
-        <div className={`w-screen h-full text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab relative `}>
+    <section id='lc2-carousel' className='overflow-hidden py-[5%] mobile:py-[15%] tablet:h-[80vh] '>  
+        <div className={`w-screen h-full text-[#2A2A2A] items-center flex justify-center lc2-swiper-container cursor-grab relative `}>
         <Swiper
          onSwiper={(swiper) => (swiperRef.current = swiper)}
         scrollbar={true}
@@ -79,12 +79,12 @@ const LC2Carousel = () => {
               spaceBetween: 50,
             },
           }}
-        className={`w-screen flex items-center justify-center specificationSwiper skinstaplerSwiper`}
+        className={`w-screen flex items-center justify-center specificationSwiper lc2Swiper  tablet:h-[60vh]`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[60vh]'>
-                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Optimal and secure placement</span></p>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
+                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] tablet:h-[10vw]'><span data-para-anim>Optimal and secure placement</span></p>
                 <div className=' rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]'>
                     <div className='w-[80vw] h-[15vw]  relative top-[-5%] left-[15%] scale-[2.5] mobile:h-[100vw] mobile:-rotate-90 mobile:w-[100vw] mobile:left-[-10%] mobile:top-[-10%] mobile:scale-[1.3] tablet:scale-[1.3] tablet:h-[40vw] tablet:left-[20%]'>
                         <Image
@@ -94,7 +94,7 @@ const LC2Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[5%] tablet:font-light'><span data-para-anim>Atraumatic anvil tip.</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[10%] tablet:font-light'><span data-para-anim>Atraumatic anvil tip.</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc2-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -105,8 +105,8 @@ const LC2Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[60vh]'>
-                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Enhanced firing efficiency</span></p>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
+                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] tablet:h-[10vw]'><span data-para-anim>Enhanced firing efficiency</span></p>
                 <div className=' rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]'>
                     <div className='w-[45vw] h-[20vw]  relative top-[10%] left-[5%] scale-[1.2] mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-10%] mobile:top-[-5%] mobile:scale-[1.2] tablet:scale-[1.5] tablet:h-[40vw]'>
                         <Image
@@ -116,7 +116,7 @@ const LC2Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[10%] mobile:left-[10%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[5%] tablet:font-light'><span data-para-anim>Two sided equipoised firing knob</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[10%] mobile:left-[10%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light'><span data-para-anim>Two sided equipoised firing knob</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc2-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -127,8 +127,8 @@ const LC2Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[60vh]'>
-                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw]'><span data-para-anim>Innovative B-form staple technology 2</span></p>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
+                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] tablet:h-[10vw]'><span data-para-anim>Innovative B-form staple technology 2</span></p>
                 <div className=' rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]'>
                     <div className='w-[45vw] h-[20vw]  relative top-[10%]  right-[-15%]  mobile:h-[100vw]  mobile:w-[100vw] mobile:left-[-10%] mobile:top-[-5%] mobile:scale-[0.8] tablet:scale-[1] tablet:h-[40vw] tablet:left-[5%] tablet:top-[5%]'>
                         <Image
@@ -138,7 +138,7 @@ const LC2Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[10%] left-[10%] aeonik font-light w-[20vw] text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[5%] tablet:font-light tablet:w-[45vw] tablet:left-[5%]'><span data-para-anim>Consistent tissue compression
+                    <p className='text-center text-[1.25vw] absolute bottom-[10%] left-[10%] aeonik font-light w-[20vw] text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[5%] tablet:font-light tablet:w-[45vw] tablet:left-[5%]'><span data-para-anim>Consistent tissue compression
                     Minimised risk of leaks or bleeding</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc2-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
@@ -150,8 +150,8 @@ const LC2Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[60vh]'>
-                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw] tablet:h-[12vw]'><span data-para-anim>Safety Lock</span></p>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
+                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] tablet:h-[10vw]'><span data-para-anim>Safety Lock</span></p>
                 <div className=' rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]'>
                     <div className='w-[45vw] h-[20vw]  relative top-[12%] right-[-5%]  mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-10%] mobile:top-[-7%] mobile:scale-[1.2] tablet:scale-[1.2] tablet:h-[40vw] tablet:top-[5%]'>
                         <Image
@@ -161,7 +161,7 @@ const LC2Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[10%] left-[10%] aeonik font-light w-[27vw] text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[4vw] tablet:bottom-[5%] tablet:w-[45vw] tablet:font-light tablet:left-[5%] '><span data-para-anim>Enclose the blades pre and post firing 
+                    <p className='text-center text-[1.25vw] absolute bottom-[10%] left-[10%] aeonik font-light w-[27vw] text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[3%] tablet:w-[45vw] tablet:font-light tablet:left-[5%] '><span data-para-anim>Enclose the blades pre and post firing 
                     Avoids accidental operational misfiring before clamping</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc2-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
@@ -175,7 +175,7 @@ const LC2Carousel = () => {
       
       </Swiper>
       <div
-            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-0 right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[93%]  tablet:right-[28%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[4vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
+            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-0 right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[93%]  tablet:right-[33%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2.5vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
                 ${
                   activeButton === "next"
                     ? " text-white"
@@ -204,7 +204,7 @@ const LC2Carousel = () => {
             </div>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] bottom-0 right-[7%] absolute z-[5] mobile:bottom-[3%] mobile:right-auto mobile:top-auto mobile:left-[39%] translate-x-[-38%]  tablet:top-[93%] tablet:bottom-auto tablet:right-[47%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[4vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
+            className={`px-[1.6vw] py-[1.6vw] bottom-0 right-[7%] absolute z-[5] mobile:bottom-[3%] mobile:right-auto mobile:top-auto mobile:left-[39%] translate-x-[-38%]  tablet:top-[93%] tablet:bottom-auto tablet:right-[47%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2.5vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
                 ${
                   activeButton === "prev"
                     ? " text-white"
