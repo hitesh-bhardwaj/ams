@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 const FeatureCard = ({ src, title }) => {
   return (
     <>
-      <div className='w-full tablet:w-fit flex flex-col items-center justify-center feature-card group opacity-[0.2] cursor-pointer duration-300 transition-all ease  hover:opacity-[1] tablet:py-[5%] mobile:opacity-[1] '>
+      <div className='w-full tablet:w-fit flex flex-col items-center justify-center feature-card group opacity-[0.2] cursor-pointer duration-300 transition-all ease  hover:opacity-[1] tablet:py-[5%] mobile:opacity-[1] tablet:opacity-[1]'>
         <div className='h-[19vw] w-[18vw] mobile:w-[60vw] mobile:h-[50vw] tablet:w-[42vw] tablet:h-[25vw]'>
           <div className='w-full h-full relative'>
             <Image

@@ -53,7 +53,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex items-center justify-end w-[108%]  mt-[-0.55vw]  mobile:justify-center mobile:text-center mobile:ml-0 ">
-                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineSpan tablet:absolute tablet:left-[20%] tablet:top-[87%]"></span>
+                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineSpan tablet:absolute tablet:left-[60%] tablet:top-[87%]"></span>
               </div>
             </div>
               <div className="w-[80vw] h-[20vw]  scale-[2.5] relative left-[-14%] bottom-[7%] pointer-events-none mobile:bottom-[-25%] mobile:w-[70vw]  mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] tablet:bottom-[10%] z-10 fadeUp ">

@@ -62,7 +62,7 @@ const Hero = () => {
                 Endoscopic Linear Cutter 3-row
                 </p>
               </div>
-              <div className="flex items-center justify-end mt-[-0.5vw] w-full ml-[-2vw] mobile:w-full tablet:absolute tablet:left-[-64%] tablet:top-[40.5%]">
+              <div className="flex items-center justify-end mt-[-0.5vw] w-full ml-[-2vw] mobile:w-full tablet:absolute tablet:left-[-29%] tablet:top-[40.5%]">
                 <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[20vw] lineSpan mt-[-0.4vw]"></span>
               </div>
             </div>

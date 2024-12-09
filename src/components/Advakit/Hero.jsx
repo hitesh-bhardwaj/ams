@@ -5,11 +5,13 @@ import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { fadeup } from '../gsapAnimations';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const Hero = () => {
   paraAnim();
+  fadeup();
   return (
     <section className=' relative w-screen h-screen overflow-hidden mobile:h-[90vh] tablet:h-[70vh]' id='c-sectionHero'>
       <div className="w-full h-full  ">
@@ -31,7 +33,7 @@ const Hero = () => {
 
         </div>
         <div className="absolute h-[35vw] w-[80vw] bottom-[-10%] left-[12%] mobile:bottom-[10%] mobile:scale-[2.5] mobile:left-[60%] tablet:bottom-[10%] tablet:scale-[1.2]">
-          <Image src="/assets/advakit/c-section-product.png" fill alt='C Section Product'/>
+          <Image src="/assets/advakit/c-section-product.png" fill alt='C Section Product' className='fadeUp'/>
 
         </div>
       </div>

@@ -88,7 +88,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex items-center justify-end w-full ml-[-16vw]  mt-[-0.5vw]  mobile:justify-center mobile:text-center mobile:ml-0 ">
-                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineSpan tablet:absolute tablet:top-[80%] tablet:left-[50%]"></span>
+                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineSpan tablet:absolute tablet:top-[87%] tablet:left-[45%]"></span>
               </div>
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse mobile:right-0 mobile:top-[20%] tablet:top-[30%]">

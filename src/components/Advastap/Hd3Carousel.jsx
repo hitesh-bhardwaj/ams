@@ -60,7 +60,7 @@ const Hd3Carousel = () => {
               spaceBetween: 50,
             },
           }}
-        className={`w-screen flex items-center justify-center specificationSwiper fadeUp tablet:h-[50vh]`}
+        className={`w-screen flex items-center justify-center specificationSwiper fadeUp tablet:h-[50vh] cursor-grab`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
@@ -125,7 +125,7 @@ const Hd3Carousel = () => {
       </Swiper>
       <div>
       <div
-            className={`px-[1.6vw] py-[1.6vw] border absolute z-[5] bottom-[10%] right-0 mobile:bottom-[7%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[95%]  tablet:right-[33%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2.5vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
+            className={`px-[1.6vw] py-[1.6vw] border absolute z-[5] bottom-[10%] right-0 mobile:bottom-[2%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[95%]  tablet:right-[33%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2.5vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
                 ${
                   activeButton === "next"
                     ? " text-white "
@@ -154,7 +154,7 @@ const Hd3Carousel = () => {
             </div>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] bottom-[10%] border right-[7%] absolute z-[5] mobile:bottom-[7%] mobile:right-auto mobile:top-auto mobile:left-[39%] translate-x-[-38%]  tablet:top-[95%] tablet:bottom-auto tablet:right-[47%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2.5vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
+            className={`px-[1.6vw] py-[1.6vw] bottom-[10%] border right-[7%] absolute z-[5] mobile:bottom-[2%] mobile:right-auto mobile:top-auto mobile:left-[39%] translate-x-[-38%]  tablet:top-[95%] tablet:bottom-auto tablet:right-[47%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2.5vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
                 ${
                   activeButton === "prev"
                     ? " text-white "

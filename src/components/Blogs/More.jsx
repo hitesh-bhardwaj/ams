@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import LinkButton from "../Button/LinkButton";
-import { fadeup } from "../gsapAnimations";
+import Link from "next/link";
 
 const blogCardData = [
   {
@@ -45,11 +45,13 @@ const blogCardData = [
 ];
 
 const BlogCard = ({ title, para, date, img, large }) => (
+
   <div
     className={`${
       large ? "col-span-9 row-span-2 h-[44vw]" : "col-span-3 h-[18vw]"
     } rounded-[1.5vw] relative mt-[1vw] fadeUp`}
   >
+     <Link href={"#"} >
      <div className="w-full h-full absolute top-0 left-0 z-[2] rounded-[2vw] bg-gradient-to-b from-transparent to-black/30"></div>
     <div className="w-full h-full relative">
       <Image
@@ -78,11 +80,12 @@ const BlogCard = ({ title, para, date, img, large }) => (
     >
       {date}
     </p>
+    </Link>
   </div>
+
 );
 
 const More = () => {
-  fadeup();
   return (
     <section
       id="more"

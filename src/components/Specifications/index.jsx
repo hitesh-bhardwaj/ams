@@ -48,7 +48,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
               >
                 <p>Specifications</p>
               </div>
-              <div className="h-[2vw] w-[2vw] scale-[1.4] ml-[1vw] mt-[-1.5vw] mobile:h-[3vw] mobile:w-[5vw] mobile:mt-[-1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1]">
+              <div className="h-[2vw] w-[2vw]  ml-[1vw] mt-[-2.5vw] mobile:h-[3vw] mobile:w-[5vw] mobile:mt-[-1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1]">
                 <svg
                   width="20"
                   height="20"

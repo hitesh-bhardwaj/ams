@@ -12,7 +12,7 @@ const SpecificationsHd3 = () => {
       >
         <div
           data-lenis-prevent
-          className="w-full  h-[70vh] text-[1.25vw] font-light py-[2vw]  text-[#4A4A4A] overflow-y-scroll mobile:py-[5vw] mobile:text-[4.5vw] tablet:text-[2.5vw]  mobile:overflow-x-scroll  mobile:overflow-scroll mobile:mt-[7vw] "
+          className="w-full  h-[70vh] text-[1.25vw] font-light py-[2vw]  text-[#4A4A4A] overflow-y-scroll mobile:py-[5vw] mobile:text-[4.5vw] tablet:text-[2.5vw]  mobile:overflow-x-scroll  mobile:overflow-scroll mobile:mt-[7vw] tablet:h-[50vh] mobile:h-[55vh]"
         >
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw] ">
             <div className="flex-[0.5] p-[1vw] font-light tablet:w-[20vw]">

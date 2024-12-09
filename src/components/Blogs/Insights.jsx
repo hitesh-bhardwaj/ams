@@ -74,7 +74,7 @@ export default function Insights() {
               What’s Trending News
             </p>
           </div>
-          <div className="w-full h-full pt-[3vw] pb-[2vw] cursor-grab">
+          <div className="w-full h-full pt-[3vw] pb-[2vw] cursor-grab fadeUp">
             <Swiper
               scrollbar={{
                 hide: false,

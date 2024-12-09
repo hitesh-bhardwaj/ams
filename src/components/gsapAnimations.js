@@ -286,6 +286,7 @@ export function lineAnim() {
             scrollTrigger: {
               trigger: lineDraw,
               start: "top 80%",
+              
             },
             scaleX: 0,
             transformOrigin: "left",
@@ -307,6 +308,7 @@ export function lineAnim() {
             scrollTrigger: {
               trigger: lineDraw,
               start: "top 95%",
+              // markers:true
             
             },
             scaleX: 0,

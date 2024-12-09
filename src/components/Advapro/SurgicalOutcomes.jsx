@@ -43,7 +43,7 @@ const SurgicalOutcomes = () => {
               Elevate Your Surgical Outcomes
             </h2>
           </div>
-          <div className="w-[80vw] h-[70vw] absolute top-[-10%] left-[20%] z-[1] mobile:h-[70vw]  mobile:scale-[1.2] mobile:left-[20%] mobile:top-[18%]">
+          <div className="w-[80vw] h-[70vw] absolute top-[-10%] left-[20%] z-[1] mobile:h-[90vw]  mobile:scale-[1.2] mobile:left-[20%] mobile:top-[10%]">
                 <Image src="/assets/advapro/surgical.png"
                 fill
                 alt="surgical-bg"

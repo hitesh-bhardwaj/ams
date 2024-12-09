@@ -90,7 +90,8 @@ const Stapling = () => {
             
           </div>
         </div>
-        <span className="w-[45vw] h-[1.5px] bg-[#b7b7b7] absolute top-[52%] scale-0 opacity-0  sline-draw left-[46%] "></span>
+        <span className="w-[45vw] h-[1.5px] bg-[#b7b7b7] absolute top-[52%] scale-0 opacity-0  sline-draw left-[46%] mobile:hidden tablet:hidden"></span>
+        <span className=" hidden mobile:block tablet:block w-[45vw] h-[1.5px] bg-[#b7b7b7] absolute top-[67%] left-[54%] mobile:-rotate-12 tablet:top-[58%] tablet:w-[35vw] tablet:-rotate-12 tablet:left-[50%]"></span>
         <div className="absolute h-[100%] w-[100vw] bottom-0 z-[-1]">
                 <Image src="/assets/endolc/stapling-bg.png"
                fill

@@ -11,8 +11,8 @@ export default function App({ Component, pageProps, router }) {
   return (
     <>
       <DefaultSeo
-        title="AMS"
-        description="Advancing Healthcare"
+        title="Advanced Medtech Solutions"
+        description="Advanced Medtech Solutions"
         additionalLinkTags={[
           {
             rel: "preload",
@@ -29,6 +29,8 @@ export default function App({ Component, pageProps, router }) {
             crossOrigin: "",
           },
         ]}
+        dangerouslySetAllPagesToNoFollow={true}
+        dangerouslySetAllPagesToNoIndex={true}
       />
       <style>{mediaStyles}</style>
       <MediaContextProvider>
