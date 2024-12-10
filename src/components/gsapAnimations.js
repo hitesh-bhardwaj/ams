@@ -15,7 +15,7 @@ export function paraAnim() {
       const paraAnimations = document.querySelectorAll("[data-para-anim]");
       paraAnimations.forEach((paraAnimation) => {
         SplitInLine(paraAnimation);
-        const paraLine = paraAnimation.querySelectorAll(".line-internal");
+        const paraLine = paraAnimation.querySelectorAll(".word");
         gsap.from(paraLine, {
           scrollTrigger: {
             trigger: paraAnimation,
@@ -23,7 +23,7 @@ export function paraAnim() {
           },
           duration: 1.2,
           yPercent: 100,
-          stagger: 0.07,
+          stagger: 0.01,
           ease: primaryEase, // Assuming `primaryEase` is `power3.Out`
         });
       });

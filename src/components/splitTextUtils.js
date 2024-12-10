@@ -11,25 +11,48 @@ export function SplitInLineOnly(element) {
   });
 }
 
-export function SplitInLine(element) {
-   if (!element) return null;
+// export function SplitInLine(element) {
+//    if (!element) return null;
  
-   // Break the text into lines
-   const splitInstance = new SplitType(element, {
-     types: 'lines, words',
-   });
+//    // Break the text into lines
+//    const splitInstance = new SplitType(element, {
+//      types: 'lines, words',
+//    });
  
-   // Add an additional div inside each line with the class name 'line-internal'
-   splitInstance.lines.forEach(line => {
-     const internalDiv = document.createElement('div');
-     internalDiv.className = 'line-internal';
-     internalDiv.innerHTML = line.innerHTML;
-     line.innerHTML = '';
-     line.appendChild(internalDiv);
-   });
+//    // Add an additional div inside each line with the class name 'line-internal'
+//    splitInstance.lines.forEach(line => {
+//      const internalDiv = document.createElement('div');
+//      internalDiv.className = 'line-internal';
+//      internalDiv.innerHTML = line.innerHTML;
+//      line.innerHTML = '';
+//      line.appendChild(internalDiv);
+//    });
  
-   return splitInstance;
- }
+//    return splitInstance;
+//  }
+
+ export function SplitInLine(element) {
+  if (!element) return null;
+
+  // const splitInstance = new SplitType(element, {
+  //   types: 'lines, words',
+  // });
+
+  return new SplitType(element, {
+    types: 'lines, words',
+  });
+
+  // // Add an additional div inside each line with the class name 'line-internal'
+  // splitInstance.lines.forEach(line => {
+  //   const internalDiv = document.createElement('div');
+  //   internalDiv.className = 'line-internal';
+  //   internalDiv.innerHTML = line.innerHTML;
+  //   line.innerHTML = '';
+  //   line.appendChild(internalDiv);
+  // });
+
+  // return splitInstance;
+}
 
 export function SplitInLineWordChar(element) {
     if (!element) return null;
