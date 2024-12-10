@@ -95,19 +95,19 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
         className={`w-screen h-screen fixed left-0 z-[100] top-[-100%] mobile:h-full mobile:w-full`}
       >
         <div className="bg-white h-2/3 w-full relative tablet:h-1/2 mobile:h-full">
-        <Media greaterThan="mobile">
+          <Media greaterThan="mobile">
 
-          <div className="w-[28%] h-full absolute">
-            <video
-              ref={videoRef} // Attach ref to video for lazy loading
-              muted
-              playsInline
-              loop
-              className="h-full w-full object-cover"
-               // Use poster image
-            ></video>
-          </div>
-        </Media>
+            <div className="w-[28%] h-full absolute">
+              <video
+                ref={videoRef} // Attach ref to video for lazy loading
+                muted
+                playsInline
+                loop
+                className="h-full w-full object-cover"
+              // Use poster image
+              ></video>
+            </div>
+          </Media>
           <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-12 tablet:grid-rows-4 tablet:h-[50vh]">
             <div className="w-[15vw] h-[2vw] absolute bottom-[5%] left-[4%] fadeUp tablet:h-[5vw] tablet:w-[20vw]">
               <Image
@@ -147,7 +147,6 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               <div>
                 <button
                   onClick={toggleMenu}
-                  href="/"
                   className="flex items-center gap-3"
                 >
                   <span className="aeonik content-p text-head leading-tight">
@@ -169,7 +168,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                 <div className="border-r border-[#D8D8D8] py-[1.8vw] pr-[5vw] mobile:border-none mobile:border-b mobile:border-[#D8D8D8] mobile:py-0">
                   <ul className="space-y-[0.8vw] tablet:space-y-[1vw]">
                     <li className="footer-link">
-                    <Link href={"/#"}>
+                      <Link href="/" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/")}
                           data-attr="Home"
@@ -180,7 +179,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/about"}>
+                      <Link href="/about" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/about")}
                           data-attr="About"
@@ -191,7 +190,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/#"}>
+                      <Link href="#" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/product")}
                           data-attr="Product"
@@ -202,7 +201,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/manufacturing"}>
+                      <Link href="/manufacturing" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/manufacturing")}
                           data-attr="Manufacturing"
@@ -212,8 +211,8 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                         </span>
                       </Link>
                     </li>
-                    <li className="footer-link">
-                    <Link href={"/career"}>
+                    <li className="footer-link" >
+                      <Link href="/career" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/career")}
                           data-attr="Career"
@@ -224,7 +223,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                    <Link href={"/blogs"}>
+                      <Link href="/blogs" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/blogs")}
                           data-attr="News"
@@ -235,7 +234,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                    <Link href={"/contact-us"}>
+                      <Link href="/contact-us" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/contact-us")}
                           data-attr="Contact"
@@ -252,6 +251,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                   <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw] mobile:space-y-[1.2vw]">
                     <li className="footer-link">
                       <Link
+                        prefetch={false}
                         href="/"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
@@ -265,7 +265,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/endo"}>
+                      <Link href="/endo" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/endo")}
                           data-attr="Endo Surgery"
@@ -276,7 +276,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href={"/hernia"}>
+                      <Link href="/hernia" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/hernia")}
                           data-attr="Hernia Solutions"
@@ -288,6 +288,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     </li>
                     <li className="footer-link">
                       <Link
+                        prefetch={false}
                         href="/interventional-cardiology"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
@@ -298,6 +299,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     </li>
                     <li className="footer-link">
                       <Link
+                        prefetch={false}
                         href="/cardiovascular-solutions"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
@@ -311,17 +313,18 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               </div>
               <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center ">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">
-                  <Link href="/#">
+                  <Link prefetch={false} href="#">
                     <span>Privacy Policy</span>
                   </Link>
                   <span>|</span>
-                  <Link href="/#">
+                  <Link href="#" prefetch={false}>
                     <span>Terms & Conditions</span>
                   </Link>
                 </div>
                 <div className="flex gap-[1vw] mobile:justify-center mobile:items-center mobile:gap-[7vw] mobile:mt-[-5vw]">
                   <Link
-                    href="/#"
+                    target="_blank"
+                    href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <img
@@ -333,7 +336,8 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     />
                   </Link>
                   <Link
-                    href="/#"
+                    target="_blank"
+                    href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <img
@@ -345,7 +349,8 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     />
                   </Link>
                   <Link
-                    href="/#"
+                    target="_blank"
+                    href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <img
@@ -357,7 +362,8 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     />
                   </Link>
                   <Link
-                    href="/#"
+                    target="_blank"
+                    href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <img
@@ -369,7 +375,8 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     />
                   </Link>
                   <Link
-                    href="/#"
+                    target="_blank"
+                    href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <img

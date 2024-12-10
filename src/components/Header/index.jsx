@@ -67,10 +67,10 @@ const Header = () => {
           <div className="header-container w-[92%] mx-auto py-[2vw] mobile:py-[5vw]">
             <div className="flex justify-between items-center mobile:h-[10vw]">
               <div className="header-anim">
-                <Link href="/" className="relative h-fit w-[8vw] mobile:w-[25vw] tablet:w-[15vw] block">
+                <Link prefetch={false} href="/" className="relative h-fit w-[8vw] mobile:w-[25vw] tablet:w-[15vw] block">
                   <Image src="/logo.svg" width={100} height={100} className={`h-auto w-auto ${isInverted ? "hidden" : "block"} cursor-pointer`} alt="AMS Logo" />
                 </Link>
-                <Link href={"/"} aria-label=":to home page">  
+                <Link prefetch={false} href={"/"} aria-label=":to home page">  
                   <div className="absolute top-[50%] translate-y-[-50%] left-[4%] translate-x-[-4%] h-[4vw] w-[8vw] mobile:w-[25vw] mobile:h-[20vw] mobile:left-[5%] tablet:w-[15vw] cursor-pointer">
                     <Image src="/assets/header/ams-logo-white.webp" className={`object-contain h-full w-full ${isInverted ? "block" : "hidden"}`} alt="ams-logo-white" fill/>
                   </div>

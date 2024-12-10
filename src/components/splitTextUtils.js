@@ -3,7 +3,6 @@
 
 import SplitType from 'split-type';
 
-
 export function SplitInLineOnly(element) {
   if (!element) return null;
   return new SplitType(element, {
@@ -39,7 +38,7 @@ export function SplitInLineOnly(element) {
   // });
 
   return new SplitType(element, {
-    types: 'lines, words',
+    types: 'lines, words, chars',
   });
 
   // // Add an additional div inside each line with the class name 'line-internal'

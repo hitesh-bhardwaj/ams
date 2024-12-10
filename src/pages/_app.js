@@ -34,7 +34,7 @@ export default function App({ Component, pageProps, router }) {
       />
       <style>{mediaStyles}</style>
       <MediaContextProvider>
-      <ReactLenis root options={{lerp: 0.05}}>
+      <ReactLenis root>
         <ScrollToTop key={router.route}/>
         <AnimatePresence mode="wait">
           <Component {...pageProps} key={router.route} />
