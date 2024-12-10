@@ -24,7 +24,7 @@ const NextGeneration = () => {
             </h2>
           </div>
           <div className='fadeUp z-10'>
-            <PrimaryButton link="#" btnText="See More" />
+            <PrimaryButton link="/needle" btnText="See More" />
           </div>
         </div>
 

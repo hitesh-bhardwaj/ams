@@ -72,7 +72,7 @@ const Portfolio = () => {
       <Media greaterThan="mobile">
       <div className="flex items-center justify-between gap-[3vw] mt-[7vw] portfolio-card-container tablet:flex-wrap mobile:hidden">
        
-        <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"} src={"/interventional-cardiology"}/>
+        <PortfolioCard img={"/assets/ic/ic-hero-bg.png"} txt = {"Advanced Interventional Cardiology"} src={"/interventional-cardiology"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"} src={"/cardiovascular-solutions"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"} src={"/endo"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"} src={"/hernia"}/>
@@ -84,7 +84,7 @@ const Portfolio = () => {
             <div      
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw]  mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
             >
-             <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"} src={"/interventional-cardiology"}/>
+             <PortfolioCard img={"/assets/ic/ic-hero-bg.png"} txt = {"Advanced Interventional Cardiology"} src={"/interventional-cardiology"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"} src={"/cardiovascular-solutions"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"} src={"/endo"}/>
         <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"} src={"/hernia"}/>
