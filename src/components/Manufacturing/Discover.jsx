@@ -17,7 +17,7 @@ export default function Discover() {
               </span>
             </p>
             <div className="fadeUp mobile:w-full mobile:flex mobile:justify-center">
-              <PrimaryButton link={"/research-and-development"} btnText={"Let's Meet"} />
+              <PrimaryButton link={"/"} btnText={"Let's Meet"} />
             </div>
           </div>
           <div className="relative w-[32vw] h-[25vw] fadeUp mobile:w-[85vw] mobile:h-[85vw] mobile:-mr-[5%]">

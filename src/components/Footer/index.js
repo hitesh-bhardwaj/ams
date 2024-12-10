@@ -105,21 +105,21 @@ export default function Footer() {
                             <div className="">
                                 <h6 className="text-head content-p-lg mb-[1vw] fadeUp  mobile:text-center mobile:text-[7vw]">
                                     <span data-para-anim className="font-light">
-                                        Explore
+                                        About Us
                                     </span>
                                 </h6>
                                 <ul className="space-y-[0.5vw] leading-[135%] fadeUp mobile:text-center mobile:space-y-[2vw]  mobile:mt-[5vw]">
                                     <li className="footer-link">
-                                        <Link  className="content-p text-head font-light mobile:text-[5vw]" href="/">
+                                        <Link  className="content-p text-head font-light mobile:text-[5vw]" href="/#">
                                             <span data-para-anim data-attr="Our Promise">
-                                             Home
+                                                Our Promise
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light mobile:text-[5vw]" href="/about-us">
+                                        <Link className="content-p text-head font-light mobile:text-[5vw]" href="/#">
                                             <span data-para-anim data-attr="Leadership">
-                                                About us
+                                                Leadership
                                             </span>
                                         </Link>
                                     </li>
