@@ -10,10 +10,10 @@ import { Media } from "../media";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
-const PortfolioCard =({img, txt , className})=>{
+const PortfolioCard =({img, txt , className,src})=>{
   return (
     <>
-    <Link href={"#"}>
+    <Link href={src}>
     <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group mobile:w-[80vw] mobile:h-[80vw] mobile:rounded-[6vw] tablet:w-[43vw] tablet:h-[40vw] tablet:rounded-[3vw] fadeup`}>
           <Image
             src={img}
@@ -72,10 +72,10 @@ const Portfolio = () => {
       <Media greaterThan="mobile">
       <div className="flex items-center justify-between gap-[3vw] mt-[7vw] portfolio-card-container tablet:flex-wrap mobile:hidden">
        
-        <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"}/>
+        <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"} src={"/interventional-cardiology"}/>
+        <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"} src={"/cardiovascular-solutions"}/>
+        <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"} src={"/endo"}/>
+        <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"} src={"/hernia"}/>
       </div>
 
       </Media>
@@ -84,10 +84,10 @@ const Portfolio = () => {
             <div      
               className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw]  mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
             >
-             <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"}/>
+             <PortfolioCard img={"/assets/portfolio/portfolio-1.webp"} txt = {"Advanced Interventional Cardiology"} src={"/interventional-cardiology"}/>
+        <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"} src={"/cardiovascular-solutions"}/>
+        <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"} src={"/endo"}/>
+        <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"} src={"/hernia"}/>
              
              
 

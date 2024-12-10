@@ -138,7 +138,7 @@ export default function Product() {
                           trackability, crossability and navigablity in a wide
                           range of complex lesions.</span>
                         </p>
-                        <LinkButton btnText={"Know More"} link={"/"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
+                        <LinkButton btnText={"Know More"} link={"/advaglide"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
                       </div>
                     </div>
                   </CardBody>
@@ -197,7 +197,7 @@ export default function Product() {
                           Changing the paradigm of Knotless Suture Technology
                           with ADVAGRIP.
                         </p>
-                        <LinkButton btnText={"Get a Grip"} link={"/"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
+                        <LinkButton btnText={"Get a Grip"} link={"/advagrip"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
                       </div>
                     </div>
                   </div>
@@ -251,7 +251,7 @@ export default function Product() {
                           in cardiac care that will set a new standard for
                           excellence.
                         </p>
-                        <LinkButton btnText={"Know More"} link={"/"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}  />
+                        <LinkButton btnText={"Know More"} link={"/advapro"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}  />
                       </div>
                     </div>
                   </div>
@@ -306,7 +306,7 @@ export default function Product() {
                           and calcium stearate. The suture is colored violet to
                           increase visibility and is also available undyed.
                         </p>
-                        <LinkButton btnText={"Know More"} link={"/"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
+                        <LinkButton btnText={"Know More"} link={"/advacryl"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"} />
                       </div>
                     </div>
                   </div>

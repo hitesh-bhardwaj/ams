@@ -13,10 +13,10 @@ import { Media } from "../media";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ProductCard = ({ img, heading}) => {
+const ProductCard = ({ img, heading,src}) => {
   return (
     <div className="group">
-      <Link href={"#"}>
+      <Link href={src||""}>
         <div
           className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative bg-white/70 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}
         >
@@ -72,22 +72,27 @@ const Product = () => {
     {
       imgSrc: "/assets/endo/Product1.png",
       heading: "Powered Linear Cutter III",
+      src:"/poweredlc"
     },
     {
         imgSrc: "/assets/endo/Product2.png",
         heading: "Linear Cutter III",
+        src:"/advastaplc"
       },
       {
         imgSrc: "/assets/endo/Product3.png",
         heading: "Hemorrhoid Stapler III",
+        src:"/advastap"
       },
       {
         imgSrc: "/assets/endo/Product4.png",
         heading: "Circular Stapler III",
+        src:"/advastapcs"
       },
       {
         imgSrc: "/assets/endo/Product5.png",
         heading: "Endo Linear Cutter III",
+        src:"/endolc"
       },
   ];
   if(globalThis.innerWidth<1024){
@@ -176,6 +181,7 @@ const Product = () => {
               <ProductCard
                 img={product.imgSrc}
                 heading={product.heading}
+                src={product.src}
               />
             </div>
           ))}

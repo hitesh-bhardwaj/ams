@@ -112,7 +112,7 @@ const GalleryComponent = () => {
                   with the most stringent global regulatory standards.
                 </p>
                 <div className="mobile:w-full mobile:flex mobile:justify-center">
-                  <PrimaryButton btnText={"Manufacturing"} link={"/"} />
+                  <PrimaryButton btnText={"Manufacturing"} link={"/manufacturing"} />
                 </div>
               </div>
               <div className="space-y-[3vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
@@ -126,7 +126,7 @@ const GalleryComponent = () => {
                   environmental specifications. Approx. 150,000 sq. ft.
                   completed in Phase I and 180,000 sq.ft expansion in phase II.
                 </p>
-                <PrimaryButton btnText={"Manufacturing"} link={"/"} />
+                <PrimaryButton btnText={"Manufacturing"} link={"/manufacturing"} />
               </div>
               <div className="space-y-[3vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
                 <h2 data-para-anim className="title-2 aeonik">
@@ -139,7 +139,7 @@ const GalleryComponent = () => {
                   equipment. All under the supervision of experienced
                   Manufacturing and Quality teams.
                 </p>
-                <PrimaryButton btnText={"Manufacturing"} link={"/"} />
+                <PrimaryButton btnText={"Manufacturing"} link={"/manufacturing"} />
               </div>
             </div>
           </div>

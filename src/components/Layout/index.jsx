@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import Transition from "../Transition";
+import { Media } from "../media";
+import Pixifinal from "../Pixifinal";
 // import gsap from "gsap";
 // import ScrollSmoother from "@/components/ScrollSmoother.min.js";
 
@@ -28,6 +30,15 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <Transition />
+      <Media greaterThan="tablet">
+
+       <Pixifinal />
+       {/* <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/30 via-white/50 to-blue-500/30"></div> */}
+      </Media>
+      <Media lessThan="desktop">
+
+       <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/30 via-white/50 to-blue-500/30"></div>
+      </Media>
     </>
   );
 };

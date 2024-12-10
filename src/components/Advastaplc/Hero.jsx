@@ -21,18 +21,7 @@ const Hero = () => {
       },
     });
    
-    tl.fromTo(
-      ".hero-img",
-      {
-        xPercent:100
-      },
-      {
-       xPercent:10,
-        duration: 1,
-        delay: 0.1,
-        ease: "power3.out",
-      }
-    );
+   
     tl.fromTo(".line",{
       scale:0,
     },{

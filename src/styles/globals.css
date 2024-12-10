@@ -237,14 +237,14 @@ body{
   font-size: 5.3vw;
   font-weight: 300;
   color: var(--text-color);
-  line-height: 130%;
+  line-height: 121%;
 }
 
 .title-2{
   font-size: 3.96vw;
   font-weight: 300;
   color: var(--text-color);
-  line-height: 1.25;
+  line-height: 1.23;
 }
 .content-p-lg{
   color: var(--text-color);
@@ -474,7 +474,7 @@ body{
   background-color: #DADADA !important;
 }
 .grip-gradient {
-  background: -webkit-linear-gradient(left,#CE71F4, #EE7891);
+  background: -webkit-linear-gradient(left,#CE71F4,#CE71F4, #EE7891, #EE7891);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

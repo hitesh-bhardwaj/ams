@@ -221,13 +221,13 @@ const ProductDescription = ({ className, data }) => {
 
                 <div className="absolute bottom-[18%] left-[4%] flex flex-col justify-start gap-[1vw] mobile:static mobile:w-full mobile:h-full mobile:justify-end mobile:pb-[10vw] mobile:px-[5vw] mobile:text-center">
                   <p
-                    data-para-anim
+                    
                     className="text-[1.65vw] font-medium mobile:text-[6vw] tablet:text-[3vw]"
                   >
                     {card.title}
                   </p>
                   <p
-                    data-para-anim
+                   
                     className="text-[1.65vw] font-light mobile:text-[4vw] tablet:text-[2.5vw]"
                   >
                     {card.description}

@@ -288,7 +288,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     </li>
                     <li className="footer-link">
                       <Link
-                        href="/ic"
+                        href="/interventional-cardiology"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
                         <span data-attr="Interventional Cardiology">
@@ -298,7 +298,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     </li>
                     <li className="footer-link">
                       <Link
-                        href="/cardiovascular"
+                        href="/cardiovascular-solutions"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
                         <span data-attr="Cardiovascular Solutions">

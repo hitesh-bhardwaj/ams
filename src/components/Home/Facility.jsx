@@ -7,7 +7,7 @@ export default function Facility() {
 
         <>
             <section className="pt-[0] pb-[10%] mobile:pb-[20%] tablet:pb-[12%]" id="facility">
-                <div className="container-lg relative virtual rounded-[4vw] flex items-center justify-between px-[6%] py-[5%] bg-white/50 border group ease-in border-gray-200 hover:bg-white hover:shadow-xl duration-300 mobile:flex-col-reverse mobile:rounded-[9vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
+                <div className="container-lg relative virtual rounded-[4vw] flex items-center justify-between px-[6%] py-[5%] bg-white/50 border ease-in border-gray-200 mobile:flex-col-reverse mobile:rounded-[9vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
                     <div className="w-[45%] relative z-10 space-y-[2.5vw] duration-300 tablet:order-1 tablet:w-full mobile:w-[89%] mobile:text-center mobile:py-[5vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:space-y-[10vw]">
                         <h2 data-para-anim className="title-2 aeonik">
                             Delve Deeper into the World of AMS
@@ -16,7 +16,7 @@ export default function Facility() {
                             Experience our facility virtually.
                         </p>
                         <div className="w-full flex mobile:justify-center pt-[2vw]">
-                            <PrimaryButton className={"fadeUp"} link={"/"} btnText={"Virtual Tour"} />
+                            <PrimaryButton className={"fadeUp"} link={"/manufacturing"} btnText={"Virtual Tour"} />
                         </div>
                     </div>
                     <div className="relative w-[45%] h-[28vw] rounded-[4vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] mobile:rounded-[6vw] tablet:w-[80vw] tablet:h-[30vh]">

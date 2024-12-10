@@ -8,15 +8,7 @@ const Hero = () => {
   fadeUp();
   lineAnim()
   useGSAP(() => {
-    gsap.from(
-      ".hero-img",
-      {
-        xPercent:-5,
-        opacity:0,
-        duration: 1.5,
-        delay:0.5,
-        ease: "power3.out",
-      });
+    
     gsap.from('.lineSpan',{
       scale:0,
       duration:1,

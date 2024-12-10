@@ -6,7 +6,7 @@ const NextGeneration = () => {
 
   return (
     <section className='mobile:pb-[10%] py-[5%]' id='next-generation'>
-      <div className='container-lg fadeUp group relative '>
+      <div className='container-lg fadeUp relative '>
         <div className='absolute inset-0 w-full h-full z-0'>
         <Image
         fill

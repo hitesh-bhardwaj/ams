@@ -48,7 +48,7 @@ export default function Footer() {
                                     </a>
                                     <a href="mailto:info@amsltd.com" className="content-p block text-head fadeUp mobile:text-[5vw]">
                                         <span data-para-anim data-v="info@amsltd.com" className="font-[400]">
-                                            info@amsltd.com
+                                            M: info@amsltd.com
                                         </span>
                                     </a>
                                 </div>
@@ -138,7 +138,7 @@ export default function Footer() {
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light mobile:text-[5vw]" href="/#">
+                                        <Link className="content-p text-head font-light mobile:text-[5vw]" href="/contact-us">
                                             <span data-para-anim data-attr="Contact Us">
                                             Contact Us
                                             </span>
@@ -175,14 +175,14 @@ export default function Footer() {
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light mobile:text-[5vw]" href="/#">
+                                        <Link className="content-p text-head font-light mobile:text-[5vw]" href="/interventional-cardiology">
                                             <span data-para-anim data-attr="Interventional Cardiology">
                                             Interventional Cardiology
                                             </span>
                                         </Link>
                                     </li>
                                     <li className="footer-link">
-                                        <Link className="content-p text-head font-light mobile:text-[5vw]" href="/#">
+                                        <Link className="content-p text-head font-light mobile:text-[5vw]" href="/cardiovascular-solutions">
                                             <span data-para-anim data-attr="Cardiovascular Solutions">
                                             Cardiovascular Solutions
                                             </span>

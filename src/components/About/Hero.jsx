@@ -24,13 +24,14 @@ const Hero = () => {
               </p>
             </div>
             <div className="absolute right-0 top-[15%] fadeUp opacity-0 tablet:top-[45%] mobile:relative">
-              <div className="w-[58vw] h-[42vw] relative bottom-[10%] mobile:w-[100vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
+              <div className="w-fit h-fit relative bottom-[10%] mobile:w-[100vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
                 <Image
                   className="hero-img"
                   src="/assets/about/hero-image.webp"
                   alt="Hero Image"
                   priority={true}
-                  fill
+                  width={1000}
+                  height={1000}
                 />
               </div>
             </div>

@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/router";
+import { Textarea } from "@/components/ui/textarea"
+
 import {
   Form,
   FormControl,
@@ -115,7 +117,7 @@ export default function ContactForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Company Name*" {...field} />
+                        <Input placeholder="Company Name*" {...field} className={"pb-[1vw] mobile:pb-[2vw]"} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -127,7 +129,7 @@ export default function ContactForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Message" {...field} className={"pb-[4vw]"} />
+                      <Textarea placeholder="Message*" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

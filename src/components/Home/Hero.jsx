@@ -42,7 +42,7 @@ export default function Hero() {
                     AMS is dedicated to <strong>advancing</strong> the spectrum of healthcare by providing meaningful <strong>MedTech solutions</strong> for healthcare professionals, improving lives for <strong>patients</strong> around the <strong>world.</strong>
                   </span>
                 </p>
-                <PrimaryButton btnText={'Discover'} link={'/'} className={"fadeUp"} />
+                <PrimaryButton btnText={'Discover'} link={'/about'} className={"fadeUp"} />
                
               </div>
              <Media greaterThan="mobile">

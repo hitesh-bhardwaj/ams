@@ -17,7 +17,7 @@ const ProductCard=({img, heading , className, rotate})=>{
     return(
       <>
       <div className={`${rotate}`}>
-      <Link href={"#"}>
+      <Link href={`/advamesh?section=${heading.replace(/\s+/g, "-").toLowerCase()}`}>
       <div className={` w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}>
             <Image
               src={img}

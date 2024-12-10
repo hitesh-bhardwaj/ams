@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+
 import Image from "next/image";
 import { paraAnim } from "../gsapAnimations";
 
@@ -8,7 +8,7 @@ const Macroporous = () => {
     <>
       <section
         className="overflow-hidden mobile:py-[15%] relative py-[10vw] tablet:py-[10%] "
-        id="macroporous"
+        id="macroporous-mesh"
       >
         <div className="w-screen h-screen container-lg z-[5] mobile:h-full tablet:h-full">
           <div className="w-full h-full flex flex-col items-center justify-center pb-[5vw] tablet:justify-start mobile:justify-start mobile:h-fit ">

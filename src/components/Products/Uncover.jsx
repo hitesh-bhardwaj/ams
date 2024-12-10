@@ -9,10 +9,10 @@ import { Media } from "../media";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const UncoverCard = ({ img, txt, className }) => {
+const UncoverCard = ({ img, txt, className , src }) => {
   return (
     <>
-      <Link href={"#"}>
+      <Link href={src||""}>
         <div
           className={`w-[20.5vw] h-[11.5vw] relative flex justify-between items-center cursor-pointer rounded-[2vw] overflow-hidden border uncover-card bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:rounded-[9vw] mobile:flex-col-reverse mobile:justify-center mobile:py-[10%] mobile:pt-[30%] tablet:w-[40vw] tablet:h-[25vw]`}
         >
@@ -65,15 +65,17 @@ const Uncover = () => {
         <Media greaterThan="mobile">
 
         <div className="flex items-center justify-between gap-[3vw] mt-[7vw] uncover-card-container tablet:flex-wrap tablet:justify-center tablet:gap-[5vw]">
-          <UncoverCard img={"/assets/advacryl/advapd.png"} txt={"AdvaPD"} />
+          <UncoverCard img={"/assets/advacryl/advapd.png"} txt={"AdvaPD"} src={"/advapd"} />
           <UncoverCard
             img={"/assets/advacryl/advacryl-rapid.png"}
             txt={"Advacryl Rapid"}
+            src={"/advacryl-rapid"}
           />
-          <UncoverCard img={"/assets/advacryl/advamryl.png"} txt={"Advamryl"} />
+          <UncoverCard img={"/assets/advacryl/advamryl.png"} txt={"Advamryl"} src={"/advamryl"} />
           <UncoverCard
             img={"/assets/advacryl/advacryl-plus.png"}
             txt={"Advacryl Plus"}
+            src={"/advacrylplus"}
           />
         </div>
         </Media>

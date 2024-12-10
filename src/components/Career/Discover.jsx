@@ -7,12 +7,12 @@ const Discover = () => {
   imgAnim()
   return ( 
    <section id='discover' className='tablet:py-[10%] pb-[10%] mobile:pb-[20%]'>
-    <div className='container-lg px-[5%] flex justify-between mobile:flex-col mobile:px-[4%] border border-gray-200 bg-white/50 group hover:bg-white hover:shadow-xl hover:drop-shadow-md transition-all ease-in duration-300  mobile:py-[15%] rounded-[3vw] mobile:rounded-[6vw] py-[5vw]'>
+    <div className='container-lg px-[5%] flex justify-between mobile:flex-col mobile:px-[4%] border border-gray-200 bg-white/50 mobile:py-[15%] rounded-[3vw] mobile:rounded-[6vw] py-[5vw]'>
         <div className='w-[45%] flex flex-col items-start justify-center gap-[4vw] mobile:order-1 mobile:w-full mobile:items-center mobile:text-center mobile:gap-[12vw] mobile:mt-[12vw] tablet:w-[47%]'>
          <h2 className="title-2 aeonik">
             <span data-para-anim  >Discover the profound impact our work is having on patients everywhere</span>
           </h2>
-          <PrimaryButton link='/' btnText="Let's Meet" className={"fadeUp"}/>
+          <PrimaryButton link='/contact-us' btnText="Let's Meet" className={"fadeUp"}/>
           </div>
         <div className='w-[50%] flex flex-col items-end justify-center gap-[2vw] mobile:w-full mobile:items-center mobile:gap-[5vw]'>
           <div className='w-[25vw] h-[20vw] rounded-[40px] overflow-hidden relative fadeUp mobile:w-[80vw] mobile:h-[90vw] mobile:rounded-[6vw] tablet:rounded-[3vw] tablet:w-[30vw] tablet:h-[25vw]'>

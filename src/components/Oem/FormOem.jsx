@@ -63,7 +63,7 @@ export default function FormOem() {
 
   return (
     <section className="py-[7%] pb-[10%] mobile:py-[15%]" id="formoem">
-        <div className="w-full h-full py-[7vw] rounded-[3vw] border border-gray-200 bg-white/50 group hover:bg-white hover:shadow-xl hover:drop-shadow-xl ease-in transition-all duration-300">
+        <div className="w-full h-full py-[7vw] rounded-[3vw] border border-gray-200 bg-white/50">
       <div className="container-lg w-full h-full flex justify-center items-center  font-light">
         <div className="w-[75%] flex gap-[12vw] mobile:flex-col mobile:w-full mobile:items-center tablet:w-[85%]">
           <div className="w-[45%] flex flex-col gap-[2vw] mobile:w-full mobile:gap-[5vw] ">

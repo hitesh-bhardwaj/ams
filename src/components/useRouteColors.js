@@ -18,7 +18,7 @@ function useRouteColors() {
           color3: "#669FE5",
         });
         break;
-      case "/ic":
+      case "/interventional-cardiology":
         setColors({
           color1: "#F74141",
           color2: "#669FE5",
@@ -74,7 +74,7 @@ function useRouteColors() {
           color3: "#669FE5",
         });
         break;
-      case "/rnd":
+      case "/research-and-development":
         setColors({
           color1: "#637DA2",
           color2: "#669FE5",
@@ -137,7 +137,7 @@ function useRouteColors() {
                     color3: "#FFCDBC",
                   });
                   break;
-                  case "/cardiovascular":
+                  case "/cardiovascular-solutions":
                     setColors({
                       color1: "#669DE5",
                       color2: "#669DE5",

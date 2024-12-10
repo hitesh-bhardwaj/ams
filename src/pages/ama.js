@@ -59,6 +59,7 @@ fadeup()
                 content={hero.content}
                 className="hidden"
                 paraWidth={"max-w-[90vw]"}
+                mode={"dark"}
               />
               <Genesis content={content} />
               <PortfolioSwiper slidesData={slidesData} />
