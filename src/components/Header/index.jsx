@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Menu from "./Menu";
 import { useRouter } from "next/router";
+import {useLenis} from "lenis/react"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,13 +12,16 @@ const Header = () => {
   const [isInverted, setIsInverted] = useState(false);
   const observerRef = useRef(null);
   const router = useRouter();
+  const lenis = useLenis();
 
   const openMenu = () => {
     setIsMenuOpen(true);
+    lenis && lenis.stop();
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    lenis && lenis.start();
   };
 
   useEffect(() => {
