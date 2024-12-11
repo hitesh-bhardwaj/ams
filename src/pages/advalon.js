@@ -47,28 +47,28 @@ const FeatureCard = {
 const cardData = [
   {
     title: "Composition",
-    description: "90% Glycolide, 10% L-lactide",
+    description: "Polyamide",
   },
   {
     title: "Colour",
-    description: "Undyed and Violet",
+    description: "Black",
   },
   {
     title: "Available Sizes",
-    description: "U.S.P. 2 to 6-0",
+    description: "U.S.P. 1 to 10-0",
   },
   {
     title: "Coating",
     description:
-      "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
+      "None",
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days ~55% | 21 Days",
+    description: "Permanent",
   },
   {
     title: "Absorption Profile",
-    description: "Essentially complete up to 80 days",
+    description: "Non Absorbable",
   },
 ];
 
@@ -89,7 +89,7 @@ const advalon = () => {
                 }
                 src={"/assets/advalon/advalon-hero.png"}
                 bgimg={"/assets/advalon/advalon-hero-bg.png"}
-                para2={"Enhancing confidence for everlasting support"}
+                para2={"Ideal selection for confidence in skin closure"}
               />
               <Edge2
                 sectionheading={"The ADVALON Edge"}

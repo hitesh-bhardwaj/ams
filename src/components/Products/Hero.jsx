@@ -15,13 +15,13 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2,margin, className = ""
                     {heading}
                   </span> 
                 </h1>
-                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1.2] tracking-wide mobile:text-[5vw] mobile:leading-[1.2] mobile:w-[80%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1.25] tracking-wide mobile:text-[5vw] mobile:leading-[1.2] mobile:w-[80%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                   {tagline}
                 </p>
               </div>
               <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mobile:text-center mobile:ml-0 ">
                 <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:hidden tablet:w-[1.5px] tablet:rotate-0 tablet:h-[15vw] fadeUp"></span>
-                <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1] font-light mobile:text-[4.8vw] mobile:max-w-full mobile:leading-[1.2] tablet:text-[2.5vw] tablet:max-w-[60%] tablet:leading-[1.2] tablet:ml-[2vw]">
+                <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1.1] font-light mobile:text-[4.8vw] mobile:max-w-full mobile:leading-[1.2] tablet:text-[2.5vw] tablet:max-w-[60%] tablet:leading-[1.2] tablet:ml-[2vw]">
                   <span data-para-anim>{para1}</span>
                 </p>
               </div>

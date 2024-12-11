@@ -30,17 +30,17 @@ export default function ama() {
   const slidesData = [
     {
       title: "Advancing the way we learn",
-      src: "/assets/ama/ama-carousel-img-1.webp",
+      src: "/assets/ama/ama-carousel-img-1.png",
       heading: "Personalized & Insightful Training",
       para: "We provide tailored learning experiences that cater to the specific needs of healthcare practitioners. Our AMA programs deliver practical insights and advanced knowledge to keep you ahead in the ever-evolving medical field.",
     },
     {
-      src: "/assets/endo/endo-slider-2.png",
+      src: "/assets/ama/ama-carousel-img-2.png",
       heading: "Commitment to Excellence",
       para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability.",
     },
     {
-      src: "/assets/endo/endo-slider-3.png",
+      src: "/assets/ama/ama-carousel-img-3.png",
       heading: "Empowering Surgical Success",
       para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision.",
     },
@@ -62,7 +62,7 @@ fadeup()
                 mode={"dark"}
               />
               <Genesis content={content} />
-              <PortfolioSwiper slidesData={slidesData} />
+              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#2A2A2A]"}/>
               <CardsCarousel />
               <Discover />
             </main>

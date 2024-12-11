@@ -76,7 +76,7 @@ const Hd3Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Improved accessibility for precise placement of purse string suture</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Improved accessibility for precise placement of purse string suture</span></p>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@ const Hd3Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%] font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Mitigates risk of accidental detachment due to anvil rod leaning</span></p>
+                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%]  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Mitigates risk of accidental detachment due to anvil rod leaning</span></p>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@ const Hd3Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw] font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[15%]'><span data-para-anim>With dentate line marking</span></p>
+                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw]  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[15%]'><span data-para-anim>With dentate line marking</span></p>
                 </div>
             </div>
         </div>

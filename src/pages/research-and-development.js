@@ -58,7 +58,7 @@ export default function rnd() {
                 paraWidth={"max-w-[50vw]"}
               />
               <Genesis content={content} />
-              <PortfolioSwiper slidesData={slidesData} />
+              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"}/>
               <Innovation/>
               <Portfolio />
             </main>

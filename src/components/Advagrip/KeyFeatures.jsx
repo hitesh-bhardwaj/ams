@@ -23,7 +23,7 @@ const FeatureCard = ({ src, title }) => {
           </div>
         </div>
         <div className='w-full flex justify-center items-center mobile:mt-[5vw]'>
-          <p data-para-anim className='text-[1.7vw] font-light text-center w-[80%] mobile:text-[6.5vw] tablet:text-[2.5vw] mt-[2vw] mobile:w-full aeonik'>
+          <p data-para-anim className='text-[1.7vw] font-light text-center w-[60%] mobile:text-[6.5vw] tablet:text-[2.5vw] mt-[2vw] mobile:w-full aeonik'>
             {title}
           </p>
         </div>

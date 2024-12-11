@@ -15,7 +15,7 @@ const EdgeCard = {
     para: "",
   },
   card2: {
-    title: "- the confidence to suture with ease",
+    title: "Nucrel pack for superior pliability & knotting characteristics",
     src: "/assets/advacat/advacat-edge2.png",
     para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
     bgsrc: "/assets/advapd/advapd-rectangle.png",
@@ -26,49 +26,31 @@ const EdgeCard = {
     para: "",
   },
 };
-const FeatureCard = {
-  card1: {
-    src: "/assets/advapd/features1.png",
-    title: " Excellent in-vivo strength retention",
-  },
-  card2: {
-    src: "/assets/advapd/features2.png",
-    title: " Minimal memory for handling ease",
-  },
-  card3: {
-    src: "/assets/advacryl/features4.png",
-    title: " Excellent knot security",
-  },
-  card4: {
-    src: "/assets/advacryl/features3.png",
-    title: "Excellent pliability & handling characteristics",
-  },
-};
 const cardData = [
   {
     title: "Composition",
-    description: "90% Glycolide, 10% L-lactide",
+    description: "Purified Collagen",
   },
   {
     title: "Colour",
-    description: "Undyed and Violet",
+    description: "Yellow, Beige",
   },
   {
     title: "Available Sizes",
-    description: "U.S.P. 2 to 6-0",
+    description: "U.S.P. 2 to 3-0",
   },
   {
     title: "Coating",
     description:
-      "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
+      "None",
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days ~55% | 21 Days",
+    description: "Chromic Gut: 21-25 days Plain Gut: 10-12 days",
   },
   {
     title: "Absorption Profile",
-    description: "Essentially complete up to 80 days",
+    description: "90 - 100 days",
   },
 ];
 
@@ -97,12 +79,7 @@ const advacat = () => {
                 card2={EdgeCard.card2}
                 card3={EdgeCard.card3}
               />
-              <Features
-                card1={FeatureCard.card1}
-                card2={FeatureCard.card2}
-                card3={FeatureCard.card3}
-                card4={FeatureCard.card4}
-              />
+             
               <ProductDescription className={"text-[#DDCB9F]"} data={cardData}/>
               <NextGeneration />
               <Uncover />

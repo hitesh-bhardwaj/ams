@@ -70,7 +70,7 @@ export default function Insights() {
               advancements and expert insights in the medical and healthcare
               industry.
             </p>
-            <p  data-para-anim className="aeonik font-light text-[2.5vw] capitalize mt-[2vw]">
+            <p  data-para-anim className="aeonik font-light text-[2.5vw]  mt-[2vw]">
               What’s Trending News
             </p>
           </div>

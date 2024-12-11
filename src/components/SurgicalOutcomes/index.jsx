@@ -93,7 +93,7 @@ const SurgicalOutcomes = ({data, tclass}) => {
           <div className="w-full h-full mt-[5vw] cursor-grab fadeUp">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              className="mySwiper w-full h-full "
+              className="mySwiper w-full h-full surgicalSwiper"
               spaceBetween={20}
             scrollbar={true}
               modules={[Scrollbar]}

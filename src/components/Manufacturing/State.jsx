@@ -181,18 +181,13 @@ export default function State() {
               <h2 data-para-anim
                 className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
-                State Of The Art Excellence
+               Logistical Precision
               </h2>
               <p 
                 className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
-                  Crafted by the visionary Spanish architect Ricardo Bofill, the
-                  AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac
-                  sq. ft., with Phase II and III expanding by an additional 1
-                  Lac sq. ft. each. Embracing Gold standards in Green building
-                  principles, our facility embodies sustainability fused with
-                  operational brilliance.
+                AMS excels in optimizing our supply chain to deliver efficient solutions for both patients and healthcare organizations. Our state-of-the-art warehousing and logistics operations ensure intense dedication, precision, and safety through continuous improvement initiatives.
                 </span>
               </p>
             </div>

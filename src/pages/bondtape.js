@@ -7,7 +7,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import UmbilicalTape from "@/components/AdvabondTape/UmbilicalTape";
 
-const cardData = [
+const cardData1 = [
   {
     title: "Composition",
     description: "Polyester Fibre",
@@ -34,6 +34,33 @@ const cardData = [
     description: "Non Absorbable",
   },
 ];
+const cardData2 = [
+  {
+    title: "Composition",
+    description: "100% Cotton",
+  },
+  {
+    title: "Colour",
+    description: "White",
+  },
+  {
+    title: "Available Sizes",
+    description: "3 mm x 75 cm",
+  },
+  {
+    title: "Construction",
+    description:
+      "Flat Braided, Non-Woven",
+  },
+  {
+    title: "Foils/box",
+    description: "12",
+  },
+  {
+    title: "Shelf life",
+    description: "5 Years",
+  },
+];
 const bondtape= () => {
   fadeUp();
 
@@ -54,9 +81,9 @@ const bondtape= () => {
                 bgimg={"/assets/advabondtape/advabond-hero-bg.png"}
                 para2={"Sterilised Surgical Needled Suture"}
               />
-              <ProductDescription className={"text-[#F08144]"} data={cardData}/>
+              <ProductDescription className={"text-[#F08144]"} data={cardData1}/>
               <UmbilicalTape/>
-              <ProductDescription className={"text-[#79C0E4]"} data={cardData}/>
+              <ProductDescription className={"text-[#79C0E4]"} data={cardData2}/>
               <NextGeneration />
               <Uncover />
             </main>

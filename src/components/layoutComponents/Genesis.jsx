@@ -36,7 +36,7 @@ const Genesis = ({content,sParaWidth , bParaWidth}) => {
                 {content.smallpara}
                 </p>
             </div>
-            <div className={`w-[53%] text-[2.3vw] font-light text-[#111111] mobile:w-full mobile:text-[7vw] mobile:text-center tablet:w-full tablet:text-[3vw] ${bParaWidth} `}>
+            <div className={`w-[47%] text-[2.3vw] font-light text-[#111111] mobile:w-full mobile:text-[7vw] mobile:text-center tablet:w-full tablet:text-[3vw] ${bParaWidth} `}>
                 <p  data-para-anim className="leading-[1.4]">
                   {/*  */}
                   {content.bigpara}

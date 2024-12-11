@@ -23,7 +23,7 @@ const EdgeCard = {
   card3: {
     title: "Knot Pull Tensile Strength",
     src: "/assets/advamryl/advamryl-graph.png",
-    para: "Advanced Tipping",
+    para: " ",
   },
 };
 const FeatureCard = {
@@ -47,7 +47,7 @@ const FeatureCard = {
 const cardData = [
   {
     title: "Composition",
-    description: "90% Glycolide, 10% L-lactide",
+    description: "Glycolide and    -Caprolactone",
   },
   {
     title: "Colour",
@@ -55,12 +55,12 @@ const cardData = [
   },
   {
     title: "Available Sizes",
-    description: "U.S.P. 2 to 6-0",
+    description: "U.S.P. 1 to 5-0",
   },
   {
     title: "Coating",
     description:
-      "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
+      "None",
   },
   {
     title: "Tensile Strength",
@@ -68,7 +68,7 @@ const cardData = [
   },
   {
     title: "Absorption Profile",
-    description: "Essentially complete up to 80 days",
+    description: "Essentially complete up to 90 days",
   },
 ];
 
@@ -83,7 +83,7 @@ const advamryl = () => {
               <Hero
                 heading={"Advamryl"}
                 className="text-[#E58D72]"
-                tagline={" AMonofilament Poliglecaprone 25"}
+                tagline={" Monofilament Poliglecaprone 25"}
                 para1={
                   "  Supreme handling performance for confidence in subcuticular skin closure"
                 }
@@ -92,7 +92,7 @@ const advamryl = () => {
                 para2={"Steady performance for superior confidence"}
               />
               <Edge
-                sectionheading={"ADVAMRYL Edge"}
+                sectionheading={" The ADVAMRYL Edge"}
                 card1={EdgeCard.card1}
                 card2={EdgeCard.card2}
                 card3={EdgeCard.card3}

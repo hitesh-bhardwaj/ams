@@ -30,19 +30,19 @@ export default function ic() {
   const slidesData = [
     {
       title: "Discover How We Advance Cardiology",
-      src: "/assets/ic/ic-carousel-img.webp",
+      src: "/assets/ic/ic-carousel-img-1.png",
       heading: "A new Era in Healthcare",
       para: "AMS has forayed into the Interventional Cardiology space with the arrival of its PTCA Balloon Catheter Rx and forthcoming launch of its Drug Eluting Stent and related accessories. Our advanced technologies, decades rich experiences of our people and partners in healthcare brings synergy to enhance confidence of Interventional Cardiologists globally.",
     },
     {
-      src: "/assets/endo/endo-slider-2.png",
-      heading: "Commitment to Excellence",
-      para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability.",
+      src: "/assets/ic/ic-carousel-img-2.png",
+      heading: "Elevate Your Cardiac Care",
+      para: "At AMS, we are committed to propelling your cardiac care to new heights. As cath lab complexities increase, our focus on innovation and quality provides you with advanced solutions that drive better patient outcomes and optimize procedural efficiency.",
     },
     {
-      src: "/assets/endo/endo-slider-3.png",
-      heading: "Empowering Surgical Success",
-      para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision.",
+      src: "/assets/ic/ic-carousel-img-3.png",
+      heading: "Quality First’ Culture",
+      para: "AMS has forayed into the Interventional Cardiology space with the arrival of its PTCA Balloon Catheter Rx and forthcoming launch of its Drug Eluting Stent and related accessories. Our advanced technologies, decades rich experiences of our people and partners in healthcare brings synergy to enhance confidence of Interventional Cardiologists globally.",
     },
   ];
   fadeup()
@@ -64,7 +64,7 @@ export default function ic() {
                 sParaWidth={"w-[40%] ml-[6%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[40%]"}
               />
-              <PortfolioSwiper slidesData={slidesData} />
+              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"}/>
               <IcCards />
 
               <Portfolio />

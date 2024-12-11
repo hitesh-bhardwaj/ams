@@ -25,12 +25,12 @@ export default function needle() {
       para: "We start with premium-grade stainless steel and alloys, renowned for their superior strength, ductility, and resistance to corrosion—forming the core of our high-quality needles.",
     },
     {
-      src: "/assets/needle/needle-carousel-img-1.webp",
+      src: "/assets/needle/needle-carousel-img-3.webp",
       heading: "Cutting-Edge Engineering & Manufacturing",
       para: "Advanced robotics and automated processes shape and sharpen each needle with intelligent alloys, achieving immaculate point geometry and unmatched precision.",
     },
     {
-      src: "/assets/needle/needle-carousel-img-3.webp",
+      src: "/assets/needle/needle-carousel-img-1.webp",
       heading: "Unparalleled Quality Control",
       para: "Each needle undergoes rigorous testing for sharpness, strength, and swage integrity, ensuring flawless performance and reliability in every surgical procedure.",
     },
@@ -49,7 +49,7 @@ export default function needle() {
                 sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[40%]"}
               />
-              <PortfolioSwiper slidesData={slidesData} />
+              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"}/>
               <FeatureCards />
               <Advance />
             </main>

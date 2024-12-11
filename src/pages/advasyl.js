@@ -40,35 +40,35 @@ const FeatureCard = {
     title: "Excellent and consistent knotting strength",
   },
   card4: {
-    src: "/assets/advalon/features4.png",
+    src: "/assets/advabond/features4.png",
     title: "Excellent handling characteristics",
   },
 };
 const cardData = [
   {
     title: "Composition",
-    description: "90% Glycolide, 10% L-lactide",
+    description: "Proteinaceous silk fibres called fibroin",
   },
   {
     title: "Colour",
-    description: "Undyed and Violet",
+    description: "Black",
   },
   {
     title: "Available Sizes",
-    description: "U.S.P. 2 to 6-0",
+    description: "U.S.P. 4 to 6-0 & 8-0",
   },
   {
     title: "Coating",
     description:
-      "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
+      "Wax",
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days ~55% | 21 Days",
+    description: "Gradual loss in tensile strength over a period of time",
   },
   {
     title: "Absorption Profile",
-    description: "Essentially complete up to 80 days",
+    description: "Non Absorbable",
   },
 ];
 

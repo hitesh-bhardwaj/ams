@@ -33,12 +33,12 @@ export default function hernia() {
     {
       src: "/assets/hernia/portfolio-2.png",
       heading: "Commitment to Excellence",
-      para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability.",
+      para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability. We continuously strive to meet the evolving needs of hernia repair through ongoing research and collaboration with leading surgeons.",
     },
     {
       src: "/assets/hernia/portfolio-3.png",
       heading: "Empowering Surgical Success",
-      para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision.",
+      para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision. We provide the necessary tools and support to enhance surgical practice and improve patient care.",
     },
   ];
  fadeup()
@@ -60,7 +60,7 @@ export default function hernia() {
                 sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[30%]"}
               />
-              <PortfolioSwiper slidesData={slidesData} />
+              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"}/>
               <Product />
 
               <Portfolio />

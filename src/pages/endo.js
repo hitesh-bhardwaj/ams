@@ -28,18 +28,18 @@ export default function endo() {
     {
       title: "Your Partner in Surgical Excellence",
       src: "/assets/endo/endo-slider-1.png",
-      heading: "Advancing Patient Recovery",
-      para: "Our ADVAMESH products are designed to enhance patient recovery and comfort. By offering exceptional support and promoting natural tissue integration, our meshes minimize bioreactivity and reduce recurrence rates, ensuring a smoother recovery process.",
+      heading: "Cutting-Edge Technology for Superior Outcomes",
+      para: "AMS'S ADVASTAP staplers define new standards in surgical safety and efficiency with our advanced technology.",
     },
     {
       src: "/assets/endo/endo-slider-2.png",
-      heading: "Commitment to Excellence",
-      para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability.",
+      heading: "Elevating Surgical Standards",
+      para: "Crafted with cutting-edge technology and engineered by our expert R&D team, enhance patient outcomes through exceptional performance and reliability.",
     },
     {
       src: "/assets/endo/endo-slider-3.png",
-      heading: "Empowering Surgical Success",
-      para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision.",
+      heading: "Why Surgeons Trust AMS",
+      para: "Surgeons rely on AMS for our steadfast commitment to quality, innovation, and comprehensive support for optimal results.",
     },
   ];
   fadeup()
@@ -61,7 +61,7 @@ export default function endo() {
                 sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[30%]"}
               />
-              <PortfolioSwiper slidesData={slidesData} />
+              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"}/>
               <Product />
               <Portfolio />
             </main>

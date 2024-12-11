@@ -16,7 +16,7 @@ import Image from "next/image";
 import styles from "@/styles/portfolioSwiper.module.css"
 import { Media } from "../media";
 
-const PortfolioCard = ({ src, heading, para }) => {
+const PortfolioCard = ({ src, heading, para,textclass }) => {
   return (
     <div className="">
       <div className="w-[85vw] h-[50vw] relative rounded-[10px] mobile:w-[90vw] mobile:h-[60vh] tablet:h-[70vw]">
@@ -27,10 +27,10 @@ const PortfolioCard = ({ src, heading, para }) => {
           className="rounded-[20px] mobile:object-cover"
         />
         <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
-          <h2 className="text-[#ffffff] text-[2.8vw] font-light text-shadow mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
+          <h2 className={`${textclass} text-[2.8vw] font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]`}>
             {heading}
           </h2>
-          <p className="text-[#ffffff] text-[1.4vw] font-extralight w-[50%] text-shadow mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
+          <p className={`${textclass} text-[1.4vw] font-extralight w-[50%] text-shadow  mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]`}>
             {para}
           </p>
         </div>
@@ -39,7 +39,7 @@ const PortfolioCard = ({ src, heading, para }) => {
   );
 };
 
-const PortfolioSwiper = ({ slidesData }) => {
+const PortfolioSwiper = ({ slidesData, textclass }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const swiperRef = useRef(null); // Create a ref for Swiper
 
@@ -108,6 +108,7 @@ const PortfolioSwiper = ({ slidesData }) => {
                     src={slide.src}
                     heading={slide.heading}
                     para={slide.para}
+                    textclass={textclass}
                   />
                 </SwiperSlide>
               ))}

@@ -23,17 +23,17 @@ const EdgeCard = {
   card3: {
     title: "Knot Pull Tensile Strength",
     src: "/assets/advacryl/advacryl-graph.png",
-    para: "Advanced Tipping",
+    para: "",
   },
 };
 const FeatureCard = {
   card1: {
     src: "/assets/advacryl/features1.png",
-    title: " Excellent handling",
+    title: " Excellent strength over the critical wound healing period",
   },
   card2: {
     src: "/assets/advacryl/features2.png",
-    title: " Excellent handling",
+    title: " Tighter braided construction",
   },
   card3: {
     src: "/assets/advacryl/features3.png",
@@ -41,7 +41,7 @@ const FeatureCard = {
   },
   card4: {
     src: "/assets/advacryl/features4.png",
-    title: " Excellent handling",
+    title: "Excellent knot security",
   },
 };
 const cardData = [
@@ -64,7 +64,7 @@ const cardData = [
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days ~55% | 21 Days",
+    description: "~75% | 14 Days  ~55% | 21 Days",
   },
   {
     title: "Absorption Profile",
@@ -94,7 +94,7 @@ const advacryl = () => {
                 }
               />
               <Edge
-                sectionheading={"ADVACRYL Edge"}
+                sectionheading={" The ADVACRYL Edge"}
                 card1={EdgeCard.card1}
                 card2={EdgeCard.card2}
                 card3={EdgeCard.card3}

@@ -88,7 +88,7 @@ const Precision = () => {
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
               <h2
                 data-para-anim
-                className="title-2 aeonik text-center mobile:text-center capitalize"
+                className="title-2 aeonik text-center mobile:text-center "
               >
                 Unmatched precision for every procedure
               </h2>

@@ -67,7 +67,6 @@ const Jobs = () => {
        onSwiper={(swiper) => (swiperRef.current = swiper)}
         slidesPerView={1}
         spaceBetween={150}
-        loop= {true}
         autoplay={{
           delay: 2000, 
           disableOnInteraction: false,

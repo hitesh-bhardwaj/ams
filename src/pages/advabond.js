@@ -47,28 +47,28 @@ const FeatureCard = {
 const cardData = [
   {
     title: "Composition",
-    description: "90% Glycolide, 10% L-lactide",
+    description: "Polyethylene Terephthalate",
   },
   {
     title: "Colour",
-    description: "Undyed and Violet",
+    description: "White (Undyed) & Green",
   },
   {
     title: "Available Sizes",
-    description: "U.S.P. 2 to 6-0",
+    description: "U.S.P. 5 to 6-0",
   },
   {
     title: "Coating",
     description:
-      "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
+      "Silicone",
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days ~55% | 21 Days",
+    description: "Permanent",
   },
   {
     title: "Absorption Profile",
-    description: "Essentially complete up to 80 days",
+    description: "Non Absorbable",
   },
 ];
 

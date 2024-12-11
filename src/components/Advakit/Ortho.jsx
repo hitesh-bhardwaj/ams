@@ -26,7 +26,7 @@ const Ortho = () => {
                 </h1>
             <div className='flex items-center mt-[0.2vw] tablet:justify-center tablet:w-[65%]  tablet:py-[3vw] tablet:text-center mobile:w-full mobile:mt-[5vw]'>
             <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-wider z-[10] mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[10%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center tablet:text-center tablet:justify-center">
-            Supreme handling performance for complete ease and confidence in Caesarean surgeries
+            Supreme handling performance for complete ease and confidence in Orthopaedic surgeries
                 </p>
               </div>
           </div>

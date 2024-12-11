@@ -75,7 +75,7 @@ const Hd2Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[75%] tablet:left-[17%]'><span data-para-anim>Extensive closure with effective coverage.</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[75%] tablet:left-[17%]'><span data-para-anim>Extensive closure with effective coverage.</span></p>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@ const Hd2Carousel = () => {
                         className='object-contain'
                         />
                </div>
-                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%] font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[75%] tablet:left-[5%]'><span data-para-anim>Designed for secure purse-string suture placement.</span></p>
+                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%]  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[75%] tablet:left-[5%]'><span data-para-anim>Designed for secure purse-string suture placement.</span></p>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@ const Hd2Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw] font-extralight mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:left-[5%] tablet:text-[2.5vw] tablet:top-[75%]'><span data-para-anim>Faster Recovery & better postoperative results</span></p>
+                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw]  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:left-[5%] tablet:text-[2.5vw] tablet:top-[75%]'><span data-para-anim>Faster Recovery & better postoperative results</span></p>
                 </div>
             </div>
         </div>

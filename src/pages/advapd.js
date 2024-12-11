@@ -23,7 +23,7 @@ const EdgeCard = {
   card3: {
     title: "Knot Pull Tensile Strength",
     src: "/assets/advapd/advapd-graph.png",
-    para: "Advanced Tipping",
+    para: "",
   },
 };
 const FeatureCard = {
@@ -47,28 +47,28 @@ const FeatureCard = {
 const cardData = [
   {
     title: "Composition",
-    description: "90% Glycolide, 10% L-lactide",
+    description: "Polydioxanone",
   },
   {
     title: "Colour",
-    description: "Undyed and Violet",
+    description: "Violet",
   },
   {
     title: "Available Sizes",
-    description: "U.S.P. 2 to 6-0",
+    description: "U.S.P. 1 to 5-0",
   },
   {
     title: "Coating",
     description:
-      "Copolymer of Poly (glycolide-co-lactide) and Calcium Stearate",
+      "None",
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days ~55% | 21 Days",
+    description: "~80% | 14 Days ~70% | 28 Days",
   },
   {
     title: "Absorption Profile",
-    description: "Essentially complete up to 80 days",
+    description: "Essentially complete between 180 to 220 days",
   },
 ];
 
