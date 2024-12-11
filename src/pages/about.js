@@ -6,6 +6,7 @@ import Molecular from '@/components/About/Molecular'
 import Genesis from '@/components/layoutComponents/Genesis'
 import Layout from '@/components/Layout'
 import { fadeup } from '@/components/gsapAnimations'
+import Pixifinal from '@/components/Pixifinal'
 
 export default function about() {
   const content = {
@@ -26,6 +27,7 @@ export default function about() {
           <Connecting />
         </main>
       </Layout>
+      <Pixifinal/>
     </>
   )
 }

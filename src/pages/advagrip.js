@@ -8,6 +8,7 @@ import TricCut from "@/components/Advagrip/TricCut";
 import KeyFeatures from "@/components/Advagrip/KeyFeatures";
 import Paradigm from "@/components/Advagrip/Paradigm";
 import { fadeup } from "@/components/gsapAnimations";
+import Pixifinal from "@/components/Pixifinal";
 
 const EdgeCard = {
   card1: {
@@ -72,6 +73,7 @@ const advaGrip = () => {
               <Uncover />
             </main>
           </Layout>
+          <Pixifinal/>
        
     </>
   );

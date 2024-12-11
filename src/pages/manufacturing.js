@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import React from "react";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
+import Pixifinal from "@/components/Pixifinal";
 
 export default function manufacturing() {
   const content = {
@@ -42,6 +43,7 @@ export default function manufacturing() {
           <Discover />
         </main>
       </Layout>
+      <Pixifinal/>
     </>
   );
 }

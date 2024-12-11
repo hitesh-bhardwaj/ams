@@ -10,6 +10,7 @@ import dynamic from "next/dynamic"; // Import next/dynamic
 import Layout from "@/components/Layout";
 import GalleryComponent from "@/components/Home/SamplePin";
 import { fadeup, imageAnim } from "@/components/gsapAnimations";
+import Pixifinal from "@/components/Pixifinal";
 
 const Product = dynamic(() => import("@/components/Home/Product"), {
   loading: () => <p>Loading products...</p>, // Optional loading component
@@ -63,6 +64,7 @@ export default function Home() {
           <Facility />
         </main>
       </Layout>
+      <Pixifinal/>
     </>
   );
 }

@@ -7,6 +7,7 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
+import Pixifinal from "@/components/Pixifinal";
 
 const EdgeCard = {
   card1: {
@@ -26,24 +27,24 @@ const EdgeCard = {
     para: "",
   },
 };
-const FeatureCard = {
-  card1: {
-    src: "/assets/advapd/features1.png",
-    title: " Excellent in-vivo strength retention",
-  },
-  card2: {
-    src: "/assets/advapd/features2.png",
-    title: " Minimal memory for handling ease",
-  },
-  card3: {
-    src: "/assets/advacryl/features4.png",
-    title: " Excellent knot security",
-  },
-  card4: {
-    src: "/assets/advacryl/features3.png",
-    title: "Excellent pliability & handling characteristics",
-  },
-};
+const featureData = [
+  {
+   src: "/assets/advapd/feature-card1.png",
+   title: " Excellent in-vivo strength retention",
+ },
+ {
+   src: "/assets/advamryl/feature-card2.png",
+   title: "Minimal memory for handling ease",
+ },
+ {
+   src: "/assets/advamryl/feature-card3.png",
+   title: "Excellent knot security",
+ },
+{
+   src: "/assets/advamryl/feature-card4.png",
+   title: "Excellent pliability & handling characteristics",
+ },
+];
 const cardData = [
   {
     title: "Composition",
@@ -97,17 +98,14 @@ const advapd = () => {
                 card2={EdgeCard.card2}
                 card3={EdgeCard.card3}
               />
-              <Features
-                card1={FeatureCard.card1}
-                card2={FeatureCard.card2}
-                card3={FeatureCard.card3}
-                card4={FeatureCard.card4}
+              <Features features={featureData}
               />
               <ProductDescription className={"text-[#A49EA3]"} data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>
           </Layout>
+          <Pixifinal/>
         
     </>
   );

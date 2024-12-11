@@ -7,6 +7,7 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
+import Pixifinal from "@/components/Pixifinal";
 
 const EdgeCard = {
   card1: {
@@ -26,24 +27,25 @@ const EdgeCard = {
     para: "",
   },
 };
-const FeatureCard = {
-  card1: {
+
+const featureData = [
+   {
     src: "/assets/advacryl/features1.png",
     title: " Excellent strength over the critical wound healing period",
   },
-  card2: {
+  {
     src: "/assets/advacryl/features2.png",
     title: " Tighter braided construction",
   },
-  card3: {
+  {
     src: "/assets/advacryl/features3.png",
     title: " Excellent handling",
   },
-  card4: {
+ {
     src: "/assets/advacryl/features4.png",
     title: "Excellent knot security",
   },
-};
+];
 const cardData = [
   {
     title: "Composition",
@@ -80,7 +82,6 @@ const advacryl = () => {
           <Layout>
             <main>
               <Hero 
-              
                 heading={"Advacryl"}
                 className="text-[#855EA6]"
                 tagline={" BRAIDED COATED POLYGLACTIN 910 SURGICAL SUTURE"}
@@ -99,17 +100,14 @@ const advacryl = () => {
                 card2={EdgeCard.card2}
                 card3={EdgeCard.card3}
               />
-              <Features
-                card1={FeatureCard.card1}
-                card2={FeatureCard.card2}
-                card3={FeatureCard.card3}
-                card4={FeatureCard.card4}
+              <Features features={featureData}
               />
               <ProductDescription className={"text-[#855EA6]"} data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>
           </Layout>
+          <Pixifinal/>
         
     </>
   );

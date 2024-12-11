@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
+import Pixifinal from "@/components/Pixifinal";
 
 
 export default function endo() {
@@ -66,6 +67,7 @@ export default function endo() {
               <Portfolio />
             </main>
           </Layout>
+          <Pixifinal/>
        
     </>
   );

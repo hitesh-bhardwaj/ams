@@ -9,6 +9,7 @@ import Discover from "@/components/Ama/Discover";
 import CardsCarousel from "@/components/Ama/CardsCarousel";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
+import Pixifinal from "@/components/Pixifinal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,6 +68,7 @@ fadeup()
               <Discover />
             </main>
           </Layout>
+          <Pixifinal/>
        
     </>
   );

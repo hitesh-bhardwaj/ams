@@ -4,6 +4,7 @@ import More from "@/components/Blogs/More";
 import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
 import Genesis from "@/components/layoutComponents/Genesis";
+import Pixifinal from "@/components/Pixifinal";
 
 const blogs = () => {
     const content = {
@@ -39,6 +40,7 @@ const blogs = () => {
                 <More/>
         </main>
       </Layout>
+      <Pixifinal/>
     </>
   );
 };

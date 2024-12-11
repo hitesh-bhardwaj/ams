@@ -7,6 +7,7 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
+import Pixifinal from "@/components/Pixifinal";
 
 const EdgeCard = {
   card1: {
@@ -26,24 +27,24 @@ const EdgeCard = {
     para: "",
   },
 };
-const FeatureCard = {
-  card1: {
+const featureData = [
+  {
     src: "/assets/advalene/features1.png",
     title: " Uniform diameter",
   },
-  card2: {
+  {
     src: "/assets/advalene/features2.png",
     title: " Minimal memory and reduced “pig-tailing”",
   },
-  card3: {
+  {
     src: "/assets/advalene/features3.png",
     title: " Isotactic polymer maximum strength",
   },
-  card4: {
+  {
     src: "/assets/advalene/features4.png",
     title: "Seamless knot, without fraying",
   },
-};
+];
 const cardData = [
   {
     title: "Composition",
@@ -96,17 +97,14 @@ const advalene = () => {
                 card2={EdgeCard.card2}
                 card3={EdgeCard.card3}
               />
-              <Features
-                card1={FeatureCard.card1}
-                card2={FeatureCard.card2}
-                card3={FeatureCard.card3}
-                card4={FeatureCard.card4}
+              <Features features={featureData}
               />
               <ProductDescription className={"text-[#1480B8]"} data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>
           </Layout>
+          <Pixifinal/>
        
     </>
   );

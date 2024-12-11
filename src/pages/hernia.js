@@ -7,6 +7,7 @@ import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import React from "react";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
+import Pixifinal from "@/components/Pixifinal";
 
 export default function hernia() {
   const content = {
@@ -66,6 +67,7 @@ export default function hernia() {
               <Portfolio />
             </main>
           </Layout>
+          <Pixifinal/>
         
     </>
   );

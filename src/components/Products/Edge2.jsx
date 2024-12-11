@@ -46,7 +46,7 @@ const Edge2 = ({ sectionheading, card1, card2, card3,className }) => {
             </div>
 
             <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">
-              <div className="edge-card1 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50  mobile:w-[90vw] mobile:gap-[10vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:order-1 mobile:text-center tablet:h-[50vw] tablet:w-[23vw]">
+              <div className="edge-card1 px-[2vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50  mobile:w-[90vw] mobile:gap-[10vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:order-1 mobile:text-center tablet:h-[50vw] tablet:w-[23vw]">
                 <div>
                   <h3 className="text-[2.5vw] font-light text-center leading-[1.2] mobile:text-[8.2vw] tablet:text-[2.5vw]">
                     {card1.title}
@@ -86,10 +86,10 @@ const Edge2 = ({ sectionheading, card1, card2, card3,className }) => {
                   </div>
                 </div>
                 <div className={`mobile:w-[70%] ${className}`}>
-                        <ul className="list-disc text-[1.15vw] font-light mobile:text-[5.5vw] mobile:text-left tablet:text-[2vw]">
-                            <li>Minimal suture memory & coiling</li>
-                            <li>Excellent handling & flexibility</li>
-                            <li>Excellent knot security</li>
+                        <ul className="list-disc text-[1.15vw] font-light space-y-[0.5vw] mobile:text-[5.5vw] mobile:text-left tablet:text-[2vw]">
+                            <li>{card2.list1}</li>
+                            <li>{card2.list2}</li>
+                            <li>{card2.list3}</li>
                         </ul>
                     
                 </div>

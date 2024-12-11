@@ -27,7 +27,7 @@ const Hero = ({ heading, tagline, para1, src,bgimg, para2,margin, className = ""
               </div>
             </div>
             <div className="absolute right-0 top-[20%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-0 mobile:top-[25%] tablet:top-[30%]">
-              <div className="w-[55vw] h-[40vw] absolute bottom-[10%] mobile:w-[100vw] mobile:h-[80vw] mobile:right-[10%] mobile:bottom-0 tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
+              <div className="w-[55vw] h-[45vw] absolute bottom-[5%] mobile:w-[100vw] mobile:h-[80vw] mobile:right-[10%] mobile:bottom-0 tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
                 <Image
                   className="object-cover"
                   src={bgimg}

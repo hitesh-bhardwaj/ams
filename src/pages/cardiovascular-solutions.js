@@ -9,6 +9,7 @@ import Portfolio from "@/components/Endo/Portfolio";
 import ProductCarousel from "@/components/CardioVascular/ProductCarousel";
 import Products from "@/components/CardioVascular/Products";
 import { Media } from "@/components/media";
+import Pixifinal from "@/components/Pixifinal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,6 +58,7 @@ fadeup()
               <Portfolio/>
             </main>
           </Layout>
+          <Pixifinal/>
        
     </>
   );

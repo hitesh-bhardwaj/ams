@@ -6,6 +6,7 @@ import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Innovation from "@/components/Rnd/Innovation";
+import Pixifinal from "@/components/Pixifinal";
 
 
 export default function rnd() {
@@ -63,6 +64,7 @@ export default function rnd() {
               <Portfolio />
             </main>
           </Layout>
+          <Pixifinal/>
        
     </>
   );

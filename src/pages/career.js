@@ -5,6 +5,7 @@ import Work from "@/components/Career/Work";
 import Hero from "@/components/Career/Hero";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
+import Pixifinal from "@/components/Pixifinal";
 
 
 export default function career() {
@@ -21,6 +22,7 @@ export default function career() {
               <Discover />
             </main>
           </Layout>
+          <Pixifinal/>
         
     </>
   );

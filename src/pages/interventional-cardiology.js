@@ -8,6 +8,7 @@ import IcCards from "@/components/IC/IcCards";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
+import Pixifinal from "@/components/Pixifinal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,6 +71,7 @@ export default function ic() {
               <Portfolio />
             </main>
           </Layout>
+          <Pixifinal/>
         
     </>
   );

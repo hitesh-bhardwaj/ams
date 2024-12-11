@@ -6,6 +6,7 @@ import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import UmbilicalTape from "@/components/AdvabondTape/UmbilicalTape";
+import Pixifinal from "@/components/Pixifinal";
 
 const cardData1 = [
   {
@@ -88,6 +89,7 @@ const bondtape= () => {
               <Uncover />
             </main>
           </Layout>
+          <Pixifinal/>
         
     </>
   );

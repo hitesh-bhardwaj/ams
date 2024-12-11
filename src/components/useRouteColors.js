@@ -158,6 +158,41 @@ function useRouteColors() {
                         color3: "#ACBCFA",
                       });
                       break;
+                      case "/advabond-cv":
+                        setColors({
+                          color1: "#669DE5",
+                          color2: "#669DE5",
+                          color3: "#FFCDBC",
+                        });
+                        break;
+                        case "/advalene-cv":
+                          setColors({
+                            color1: "#DFD6F3",
+                            color2: "#DFD6F3",
+                            color3: "#307FB2",
+                          });
+                          break;
+                          case "/advasteel-cv":
+                          setColors({
+                            color1: "#669DE5",
+                            color2: "#669DE5",
+                            color3: "#FFCDBC",
+                          });
+                          break;
+                          case "/advapacer-and-wax":
+                            setColors({
+                              color1: "#669DE5",
+                              color2: "#669DE5",
+                              color3: "#EED681",
+                            });
+                            break;
+                            case "/advacryl-rapid":
+                              setColors({
+                                color1: "#A5BBCE",
+                                color2: "#A5BBCE",
+                                color3: "#E41F30",
+                              });
+                              break;
 
       default:
         setColors({

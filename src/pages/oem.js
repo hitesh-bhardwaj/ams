@@ -8,6 +8,7 @@ import OfferingsMob from "@/components/Oem/OfferingsMob";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
+import Pixifinal from "@/components/Pixifinal";
 
 
 export default function oem() {
@@ -50,6 +51,7 @@ export default function oem() {
               <FormOem />
             </main>
           </Layout>
+          <Pixifinal/>
        
     </>
   );

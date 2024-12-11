@@ -7,6 +7,7 @@ import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Edge2 from "@/components/Products/Edge2";
 import Layout from "@/components/Layout";
+import Pixifinal from "@/components/Pixifinal";
 
 const EdgeCard = {
   card1: {
@@ -17,8 +18,9 @@ const EdgeCard = {
   card2: {
     title: "Nucrel pack for superior pliability & knotting characteristics",
     src: "/assets/advacat/advacat-edge2.png",
-    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-    bgsrc: "/assets/advapd/advapd-rectangle.png",
+    list1:"Minimal suture memory & coiling",
+    list2:"Excellent handling & flexibility",
+    list3:"Excellent knot security"
   },
   card3: {
     title: "Knot Pull Tensile Strength",
@@ -85,6 +87,7 @@ const advacat = () => {
               <Uncover />
             </main>
           </Layout>
+          <Pixifinal/>
         
     </>
   );
