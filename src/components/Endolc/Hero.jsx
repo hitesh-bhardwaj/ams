@@ -71,7 +71,7 @@ const Hero = () => {
               <div className="w-[80vw] h-[20vw]  scale-[4] relative top-[30%] left-[25%] pointer-events-none mobile:top-[120%] mobile:left-auto mobile:right-[-65%] mobile:w-[50vw] mobile:h-[35vw] tablet:w-[25vw] tablet:h-[25vw] tablet:top-[60%] tablet:left-[60%]  z-10 fadeUp tablet:absolute ">
                 <Image
                 quality={100}
-                  className=" hero-img object-contain drop-shadow-xl shadow-xl mobile:shadow-none mobile:drop-shadow-none mobile:rotate-[30deg] tablet:shadow-none tablet:drop-shadow-none"
+                  className="fadeUp object-contain drop-shadow-xl shadow-xl mobile:shadow-none mobile:drop-shadow-none mobile:rotate-[30deg] tablet:shadow-none tablet:drop-shadow-none"
                   src="/assets/endolc/advastap-endo-lc.png"
                   alt="Hero Image"
                   priority={true}

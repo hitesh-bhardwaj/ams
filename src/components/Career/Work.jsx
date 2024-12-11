@@ -25,7 +25,7 @@ const WorkCard = ({ no, heading, src, para, btn ,className }) => {
           <div className="w-[50%] text-[2.5vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111] mobile:w-full mobile:text-[10vw] mobile:text-center mobile:leading-[1.2] mobile:items-center mobile:gap-[12vw] mobile:py-[10vw] tablet:text-[3.5vw]">
             <p className="overflow-hidden" ><span className="block para-animation">{para}
               </span></p>
-            <PrimaryButton link="/" btnText={btn} className={"mobile:py-[4vw] mobile:px-[7vw] tablet:py-[1.5vw] tablet:px-[3vw] fadeup"} />
+            <PrimaryButton link="/" text={btn} className={"mobile:py-[4vw] mobile:px-[7vw] tablet:py-[1.5vw] tablet:px-[3vw] fadeup"} />
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ const WorkCard = ({ no, heading, src, para, btn ,className }) => {
 const Work = () => {
   paraAnim()
   imgAnim()
-  paraAnimation()
+  
   fadeUp()
   if(globalThis.innerWidth<1024){
 

@@ -68,17 +68,7 @@ const Hero = () => {
                   CONTACT US
                 </span>
               </h1>
-              <Breadcrumb className="ml-[1vw] mobile:ml-[24%] mobile:mt-[4vw]">
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink href="/">Home</BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>Contact Us</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
+            
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { CustomEase } from "gsap/dist/CustomEase";
-import { SplitInLine } from "./splitTextUtils";
+import { SplitInLine, SplitInWord } from "./splitTextUtils";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
@@ -14,46 +14,45 @@ export function paraAnim() {
     const ctx = gsap.context(() => {
       const paraAnimations = document.querySelectorAll("[data-para-anim]");
       paraAnimations.forEach((paraAnimation) => {
-        SplitInLine(paraAnimation);
+        SplitInWord(paraAnimation);
         const paraLine = paraAnimation.querySelectorAll(".word");
         gsap.from(paraLine, {
           scrollTrigger: {
             trigger: paraAnimation,
-            start: "top 90%",
+            start: "top 80%",
           },
-          duration: 1.2,
+          opacity: 0,
           yPercent: 100,
-          stagger: 0.01,
-          ease: primaryEase, // Assuming `primaryEase` is `power3.Out`
+          duration: 1,
+          stagger: 0.02,
+          // ease: "power4.inOut", // Assuming `primaryEase` is `power3.Out`
         });
       });
     });
     return () => ctx.revert();
   }, []);
 }
-
-export function paraAnimation() {
+export function titleAnim() {
   useEffect(() => {
-    if (globalThis.innerWidth < 1024) {
-      const ctx = gsap.context(() => {
-        const paraAnimations = document.querySelectorAll(".para-animation");
-        paraAnimations.forEach((paraAnimation) => {
-          SplitInLine(paraAnimation);
-          const paraLine = paraAnimation.querySelectorAll(".line-internal");
-          gsap.from(paraLine, {
-            scrollTrigger: {
-              trigger: paraAnimation,
-              start: "top 90%",
-            },
-            duration: 1.2,
-            yPercent: 100,
-            stagger: 0.07,
-            ease: primaryEase,
-          });
+    const ctx = gsap.context(() => {
+      const paraAnimations = document.querySelectorAll("[data-title-anim]");
+      paraAnimations.forEach((paraAnimation) => {
+        SplitInLine(paraAnimation);
+        const paraLine = paraAnimation.querySelectorAll(".word");
+        gsap.from(paraLine, {
+          scrollTrigger: {
+            trigger: paraAnimation,
+            start: "top 80%",
+          },
+         
+          yPercent: 100,
+          duration: 0.8,
+          stagger: 0.05,
+          // ease: "power4.inOut", // Assuming `primaryEase` is `power3.Out`
         });
       });
-      return () => ctx.revert();
-    }
+    });
+    return () => ctx.revert();
   }, []);
 }
 

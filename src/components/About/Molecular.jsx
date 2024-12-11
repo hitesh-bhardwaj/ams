@@ -161,7 +161,7 @@ const Molecular = () => {
             src="/assets/about/molecular-bg.webp"
             fill
             alt="molecular-bg"
-            className="object-cover molecular-bg-img scale-[1.3] translate-y-[-30%] mobile:translate-y-[0%]"
+            className="object-cover scale-[1.3] mobile:translate-y-[0%]"
           />
         </div>
         <div className="container-sm py-[15%] relative z-[2] w-full h-full px-[4vw] mobile:px-0 tablet:px-0">

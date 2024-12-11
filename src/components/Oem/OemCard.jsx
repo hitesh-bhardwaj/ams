@@ -29,7 +29,7 @@ export default function OemCard() {
               </p>
               <div className="w-full mobile:flex mobile:justify-center">
 
-                <PrimaryButton btnText={"Explore Our R&D Capabilities"} link={"/research-and-development"} className={"fadeUp mobile:px-[6vw] tablet:px-[2vw] tablet:py-[1.5vw]"}/>
+                <PrimaryButton text={"Explore Our R&D Capabilities"} link={"/research-and-development"} className={"fadeUp mobile:px-[6vw] tablet:px-[2vw] tablet:py-[1.5vw]"}/>
               </div>
             </div>
             

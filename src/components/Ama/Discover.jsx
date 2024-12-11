@@ -23,7 +23,7 @@ export default function Discover() {
                             
                         </p>
                         <div className="w-full flex mobile:justify-center">
-                        <PrimaryButton className={"fadeUp"} link={"/manufacturing"} btnText={"Virtual Tour"}/>
+                        <PrimaryButton className={"fadeUp"} link={"/manufacturing"} text={"Virtual Tour"}/>
                         </div>
                     </div>
                     <div className="relative w-[55%] h-[30vw] rounded-[3vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] tablet:w-[80vw] tablet:h-[30vh] mobile:rounded-[6vw]">

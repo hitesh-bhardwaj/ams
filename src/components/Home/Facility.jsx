@@ -16,7 +16,7 @@ export default function Facility() {
                             Experience our facility virtually.
                         </p>
                         <div className="w-full flex mobile:justify-center pt-[2vw]">
-                            <PrimaryButton className={"fadeUp"} link={"/manufacturing"} btnText={"Virtual Tour"} />
+                            <PrimaryButton className={"fadeUp"} link={"/manufacturing"} text={"Virtual Tour"} />
                         </div>
                     </div>
                     <div className="relative w-[45%] h-[28vw] rounded-[4vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] mobile:rounded-[6vw] tablet:w-[80vw] tablet:h-[30vh]">

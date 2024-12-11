@@ -62,17 +62,17 @@ const Header = () => {
   }, []);
 
   // Restart Lenis on route change
-  // useEffect(() => {
-  //   const handleRouteChange = () => {
-  //     lenis && lenis.start();
-  //   };
+  useEffect(() => {
+    const handleRouteChange = () => {
+      lenis && lenis.start();
+    };
 
-  //   router.events.on("routeChangeComplete", handleRouteChange);
+    router.events.on("routeChangeComplete", handleRouteChange);
 
-  //   return () => {
-  //     router.events.off("routeChangeComplete", handleRouteChange);
-  //   };
-  // }, [router.events, lenis]);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events, lenis]);
 
   return (
     <>

@@ -85,7 +85,7 @@ imageAnim()
                   <div className="w-full flex mobile:justify-center">
                     <PrimaryButton
                       link="/"
-                      btnText="Read More"
+                      text="Read More"
                       className={"fadeUp"}
                     />
                   </div>
@@ -121,7 +121,7 @@ imageAnim()
                   <div className="w-full flex mobile:justify-center">
                     <PrimaryButton
                       link="/"
-                      btnText="Read More"
+                      text="Read More"
                       className={"fadeUp"}
                     />
                   </div>
@@ -157,7 +157,7 @@ imageAnim()
                   <div className="w-full flex mobile:justify-center">
                     <PrimaryButton
                       link="/"
-                      btnText="Read More"
+                      text="Read More"
                       className={"fadeUp"}
                     />
                   </div>

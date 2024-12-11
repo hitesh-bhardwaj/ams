@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { paraAnim } from "../gsapAnimations";
+import { paraAnim, titleAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode}) => {
+  titleAnim()
   paraAnim();
   useGSAP(() => { 
     const tl = gsap.timeline({
@@ -56,13 +57,13 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode}
                 
                 className={`title-1 w-full aeonik drop-shadow-lg  leading-[1] ${titleHidden}`}
               >
-                <span data-para-anim className={`leading-[1.3] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center ${titleColor?"text-black":"text-shadow"}`}>
+                <span data-title-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center ${titleColor?"text-black":"text-shadow"}`}>
                  {title}
                 </span>
               </h1>
               
-              <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw] ${paraWidth}`}>
-                <span data-para-anim className={`text-[#FFFFFF] mobile:text-center ${titleColor?"text-black":"text-shadow"}`}>
+              <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw] ${paraWidth}`}>
+                <span data-para-anim className={`text-[#FFFFFF] leading-[1.4] ${titleColor?"text-black":"text-shadow"}`}>
                   {content}
                 </span>
               </p>

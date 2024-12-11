@@ -20,7 +20,7 @@ const Connecting = () => {
           </p>
           </div>
           <div className='fadeUp'>
-          <PrimaryButton link="/contact-us" btnText="Contact Us"/>
+          <PrimaryButton link="/contact-us" text="Contact Us"/>
           </div>
           
             </div>

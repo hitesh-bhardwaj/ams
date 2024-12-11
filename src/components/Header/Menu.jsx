@@ -327,12 +327,12 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
-                    <img
+                    <Image
                       className="w-[1.4vw] h-[1.4vw] tablet:w-[2.5vw] tablet:h-[2.5vw] mobile:w-[7vw] mobile:h-[7vw]"
                       src="/assets/icons/fb.svg"
                       alt="Facebook Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                   <Link
@@ -340,12 +340,12 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
-                    <img
+                    <Image
                       className="w-[1.4vw] h-[1.4vw] tablet:w-[2.5vw] tablet:h-[2.5vw] mobile:w-[7vw] mobile:h-[7vw]"
                       src="/assets/icons/linkedin.svg"
                       alt="LinkedIn Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                   <Link
@@ -353,12 +353,12 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
-                    <img
+                    <Image
                       className="w-[1.4vw] h-[1.4vw] tablet:w-[2.5vw] tablet:h-[2.5vw] mobile:w-[7vw] mobile:h-[7vw]"
                       src="/assets/icons/twitter.svg"
                       alt="Twitter Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                   <Link
@@ -366,12 +366,12 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
-                    <img
+                    <Image
                       className="w-[1.4vw] h-[1.4vw] tablet:w-[2.5vw] tablet:h-[2.5vw] mobile:w-[7vw] mobile:h-[7vw]"
                       src="/assets/icons/insta.svg"
                       alt="Instagram Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                   <Link
@@ -379,12 +379,12 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     href="#"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
-                    <img
+                    <Image
                       className="w-[1.5vw] h-[1.4vw] tablet:w-[2.5vw] tablet:h-[2.5vw] mobile:w-[7vw] mobile:h-[7vw]"
                       src="/assets/icons/youtube.svg"
                       alt="Youtube Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                 </div>

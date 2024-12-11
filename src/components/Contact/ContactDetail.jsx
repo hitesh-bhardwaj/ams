@@ -3,6 +3,7 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
 import { fadeup } from "../gsapAnimations";
+import Image from "next/image";
 
 const ContactDetail = () => {
   fadeup()
@@ -46,60 +47,60 @@ const ContactDetail = () => {
                     href="/#"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
-                    <img
+                    <Image
                       className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                       src="/assets/icons/fb.svg"
                       alt="Facebook Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                   <Link
                     href="/#"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
-                    <img
+                    <Image
                       className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                       src="/assets/icons/linkedin.svg"
                       alt="LinkedIn Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                   <Link
                     href="/#"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
-                    <img
+                    <Image
                       className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                       src="/assets/icons/twitter.svg"
                       alt="Twitter Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                   <Link
                     href="/#"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
-                    <img
+                    <Image
                       className="w-[1.5vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                       src="/assets/icons/insta.svg"
                       alt="Instagram Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                   <Link
                     href="/#"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
-                    <img
+                    <Image
                       className="w-[1.6vw] h-[1.5vw] mobile:w-[8vw] mobile:h-[8vw] tablet:w-[4vw] tablet:h-[4vw]"
                       src="/assets/icons/youtube.svg"
                       alt="Youtube Icon"
-                      height="30"
-                      width="30"
+                      height={30}
+                      width={30}
                     />
                   </Link>
                 </div>

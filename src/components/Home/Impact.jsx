@@ -84,7 +84,7 @@ export default function Impact() {
                                 Our commitment to advancing healthcare globally is unwavering, and we are constantly pushing boundaries of MedTech, improving outcomes for people in every corner of the globe. With our geographical presence expanding over 180 countries, we have a unique opportunity to collaborate with partners around the world and leverage our collective expertise to develop and deliver transformative solutions that make a difference in patients’ lives.
                             </p>
                             <div className="w-full flex mobile:justify-center">
-                            <PrimaryButton className={"secondary fadeUp"} link={"/about"} btnText={"Know More"} />
+                            <PrimaryButton className={"secondary fadeUp !text-white"} link={"/about"} text={"Know More"} />
                             </div>
                         </div>
                     </div>

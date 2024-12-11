@@ -64,7 +64,7 @@ const PortfolioSwiper = ({ slidesData, textclass }) => {
 
   return (
     <section id="portfolio-swiper" className="overflow-x-hidden ">
-      <div className="w-full ml-[10%] py-[10%] relative h-full mobile:ml-[0%] mobile:mb-0 mobile:pt-0">
+      <div className="w-full ml-[10%] py-[10%] relative h-full mobile:ml-[0%]">
         <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]  tablet:hidden">
           <p className="text-end">{slidesData[0].title}</p>
         </div>
@@ -115,9 +115,9 @@ const PortfolioSwiper = ({ slidesData, textclass }) => {
             </Swiper>
           </div>
           </Media>
-          <Media lessThan="tablet">
+          <Media at="mobile">
 
-          <div className=" relative">
+          <div className=" relative ">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)} // Save Swiper instance to ref
               slidesPerView={1}
@@ -144,6 +144,7 @@ const PortfolioSwiper = ({ slidesData, textclass }) => {
             </Swiper>
 
             {/* Custom Next and Previous Buttons */}
+            <div className="tablet:hidden">
             <div
               className={`absolute z-[5] bottom-0 left-[63%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer  bg-white/50
                 ${
@@ -199,9 +200,10 @@ const PortfolioSwiper = ({ slidesData, textclass }) => {
               />
             </div>
             </div>
+            </div>
           </div>
           </Media>
-          <Media greaterThan="mobile">
+          <Media greaterThanOrEqual="tablet">
 
           <div className="absolute top-[75%] w-full left-[-3%] endoSmallSwiperContainer tablet:left-0">
             <Swiper

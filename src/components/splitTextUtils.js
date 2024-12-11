@@ -38,7 +38,29 @@ export function SplitInLineOnly(element) {
   // });
 
   return new SplitType(element, {
-    types: 'lines, words, chars',
+    types: 'lines,words,chars',
+  });
+
+  // // Add an additional div inside each line with the class name 'line-internal'
+  // splitInstance.lines.forEach(line => {
+  //   const internalDiv = document.createElement('div');
+  //   internalDiv.className = 'line-internal';
+  //   internalDiv.innerHTML = line.innerHTML;
+  //   line.innerHTML = '';
+  //   line.appendChild(internalDiv);
+  // });
+
+  // return splitInstance;
+}
+export function SplitInWord(element) {
+  if (!element) return null;
+
+  // const splitInstance = new SplitType(element, {
+  //   types: 'lines, words',
+  // });
+
+  return new SplitType(element, {
+    types: 'words',
   });
 
   // // Add an additional div inside each line with the class name 'line-internal'

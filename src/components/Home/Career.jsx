@@ -66,7 +66,7 @@ export default function Career() {
                             To achieve the extraordinary, we need an exceptional team. At AMS, diversity and inclusiveness are the foundation for our dynamic and thriving culture. Unleash your potential and achieve the extraordinary in your career. Our unwavering commitment to revolutionizing healthcare is fuelled by our desire to make a difference and a meaningful impact in people’s lives.
                         </p>
                         <div className="w-full flex mobile:justify-center">
-                        <PrimaryButton className={"fadeUp"} link={"/career"} btnText={"Career"} />
+                        <PrimaryButton className={"fadeUp"} link={"/career"} text={"Career"}/>
                         </div>
                         
                     </div>
