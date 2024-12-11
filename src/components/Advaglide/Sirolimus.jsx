@@ -14,7 +14,7 @@ const Sirolimus = () => {
                 <h3 data-para-anim className='text-[4vw] leading-[1.2] aeonik font-light mobile:text-[11vw] mobile:text-center mobile:mb-[3vw] tablet:text-[6vw]'>ADVA PRO</h3>
             <p className='text-[1.6vw] capitalize font-extralight mb-[1.5vw] mobile:text-[5vw] mobile:text-center mobile:mb-[15vw] mobile:w-[80%] tablet:text-[2.5vw]'>sirolimus drug eluting Stent system</p>
                 </div>
-            <PrimaryButton btnText={"See More"} link={"#"}/>
+            <PrimaryButton btnText={"See More"} link={"/advapro"}/>
           
 
         </div>
