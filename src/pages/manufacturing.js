@@ -14,16 +14,16 @@ export default function manufacturing() {
   const content = {
     heading: "Manufacturing",
     smallpara:
-      "AMS operates a facility designed with LEED-certified principles to minimize environmental impact, incorporating green manufacturing practices such as energy-efficient operations, responsible waste management, wastewater recycling, and utilization of solar energy for electricity generation. This comprehensive approach underscores our commitment to sustainable manufacturing practices and environmental stewardship.",
+      "At AMS, our robust manufacturing processes are meticulously designed to uphold stringent global testing and quality standards, ensuring that every product not only complies with but exceeds the highest regulatory requirements, establishing a new paradigm of excellence in healthcare.",
     bigpara:
-      "We prioritize rigorous R&D and adhere to global standards, guaranteeing our products meet the highest quality and innovation benchmarks in the industry.",
+      "AMS pioneers advancements in medical device manufacturing through the integration of transformative technologies like breakthrough automation, robotics and artificial intelligence, establishing benchmarks for quality and streamlined operations.",
     src: "/assets/manufacturing/manufacturing.png",
   };
   const hero = {
-    title: "Commitment To Global Standards",
+    title: "Ushering the next generation of medical device technology",
     src: "/assets/manufacturing/manufacturing-hero.png",
     content:
-      "The eco-friendly AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications.",
+      "At AMS, we are pioneering the future of medical device technology, harnessing cutting-edge manufacturing advancements to drive unparalleled quality, innovation, and agility in our processes. ",
   };
  fadeup()
 

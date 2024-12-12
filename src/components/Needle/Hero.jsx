@@ -84,7 +84,7 @@ const Hero = () => {
               </h1>
               <p className={` max-w-[50vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] `}>
                 <span data-para-anim className={`text-black mobile:text-center`}>
-                At Advanced Needle Technologies, our commitment to excellence begins with the finest raw materials and culminates in the creation of world-class surgical needles. Our meticulous process ensures that every needle we produce meets the highest standards of quality and performance.
+                Advanced Needle Technologies uses the finest materials and advanced production processes to develop surgical needles that embody the highest levels of quality and performance.
                 </span>
               </p>
             </div>

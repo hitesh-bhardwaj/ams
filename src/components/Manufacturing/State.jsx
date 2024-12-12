@@ -53,18 +53,13 @@ export default function State() {
 data-para-anim
                 className={`text-[3vw] font-light aeonik  text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
-                State Of The Art Excellence
+               State of the Art Excellence
               </h2>
               <p 
                 className={`leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
-                  Crafted by the visionary Spanish architect Ricardo Bofill, the
-                  AMS facility sprawls over 10.5 acres. Phase I spans 1.5 Lac
-                  sq. ft., with Phase II and III expanding by an additional 1
-                  Lac sq. ft. each. Embracing Gold standards in Green building
-                  principles, our facility embodies sustainability fused with
-                  operational brilliance.
+                Designed by the visionary Spanish architect Ricardo Bofill, the AMS campus is a testament to the bold vision and ingenuity of modern architecture, spanning 250,000 sq. ft. across 10.5 acres. This iconic MedTech hub stands as a beacon of excellence, combining form and function. It merges cutting-edge design with a groundbreaking blueprint that embodies AMS&apos;s commitment to healthcare innovation. A symbol of ambition, this campus is not just a facility—it is a landmark for medical, technological, and educational advancement, shaping the future of healthcare.
                 </span>
               </p>
             </div>
@@ -96,7 +91,7 @@ data-para-anim
                 className={`leading-[1.8] w-[99%] text-[#2A2A2A] font-light  text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
-                AMS leverages global partnerships for cutting-edge technology, ensuring uncompromising quality and innovation. Our LEAN manufacturing and Class C clean room maintain precision and efficiency.
+                AMS&apos;s expansive clean rooms are built to surpass industry standards, with a focus on reducing bio burden and maintaining impeccable cleanliness. Utilizing lean methodologies, including unidirectional material flow and precise man-material movement, we ensure unmatched efficiency and rigorous quality control. Our adoption of the visual factory concept enhances productivity, promotes agility, and reinforces our commitment to patient safety and product reliability.
                 </span>
               </p>
             </div>
@@ -128,7 +123,7 @@ data-para-anim
                 className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
-                Quality is our priority. We adhere to rigorous standards (Schedule M, L-1), backed by ISO 13485:2016 and CE certifications. Our advanced testing facilities ensure product safety and efficacy, reflecting our dedication to excellence.
+                At AMS, our unwavering commitment to quality is at the heart of every product we manufacture. We uphold some of the most stringent testing standards in the industry, building a culture that constantly strives to exceed expectations and elevate protocols. Our in-house QA & RA center, equipped with cutting-edge equipment, and a world-class microbiology lab enable us to perform comprehensive, precise testing at every stage. With meticulous planning, robust control functions, and an unwavering focus on continuous improvement, we ensure that every product meets the highest standards.
                 </span>
               </p>
             </div>
@@ -154,13 +149,13 @@ data-para-anim
 data-para-anim
                 className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
-                AMS OEM Solutions
+                Logistical Precision
               </h2>
               <p
                 className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
-                AMS offers comprehensive OEM solutions tailored to meet diverse client needs. With our state-of-the-art facility and expertise in manufacturing medical devices, we provide flexible and innovative OEM partnerships. From design to delivery, AMS ensures quality and compliance, empowering partners to bring their healthcare innovations to market with confidence.
+                At AMS, patients remain at the core of our supply chain strategy, driving the creation of optimal and efficient channels that benefit both patients and healthcare organizations. Our advanced distribution center serves as a pivotal element, integrating state-of-the-art warehousing with streamlined logistics to deliver unmatched precision and reliability. From meticulous inventory management to timely deliveries, AMS exemplifies logistical excellence, ensuring seamless operations that consistently support patient care worldwide.
                 </span>
               </p>
             </div>
@@ -186,13 +181,13 @@ data-para-anim
 data-para-anim
                 className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
-               Logistical Precision
+               Green Manufacturing
               </h2>
               <p 
                 className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
-                AMS excels in optimizing our supply chain to deliver efficient solutions for both patients and healthcare organizations. Our state-of-the-art warehousing and logistics operations ensure intense dedication, precision, and safety through continuous improvement initiatives.
+                AMS operates a LEED-certified facility dedicated to sustainable manufacturing. Our commitment to environmental stewardship is reflected in our energy-efficient operations, responsible waste management, wastewater recycling, and the use of solar electricity. These practices underscore our dedication to minimizing our environmental footprint while advancing medical technology.
                 </span>
               </p>
             </div>

@@ -14,33 +14,33 @@ export default function rnd() {
   const content = {
     heading: "Innovating for Tomorrow",
     smallpara:
-      "Our R&D center stands as a testament to our commitment to advancing medical technology. Equipped with the latest in research and engineering tools, this facility is designed to foster collaboration among our top scientists, engineers, and healthcare innovators. Here, we are dedicated to developing solutions that push the boundaries of what’s possible in medical technology. By integrating diverse expertise and cutting-edge advancements.",
+      "Our R&D center stands as a testament to our commitment to advancing medical technology. Equipped with the latest in research and engineering tools, this facility is designed to foster collaboration among our top scientists, engineers, and healthcare innovators. Here, we are dedicated to developing solutions that push the boundaries of what’s possible in medical technology.",
     bigpara:
-      "At AMS, our R&D efforts are driven by the vision of creating transformative technologies that improve patient outcomes and enhance the quality of life worldwide.",
+      "At AMS, our R&D efforts are driven by the vision of creating transformative technologies that improve patient outcomes and enhance the quality of life worldwide. ",
     src: "/assets/rnd/rnd-genesis-img.webp",
   };
   const hero = {
-    title: "Pioneering Innovation in Medical Research & Development",
+    title: "Pioneering MedTech Research and Development",
     src: "/assets/rnd/RND-hero-bg.webp",
     content:
-      "At AMS, we’re setting new standards in medical research and development. Our advanced R&D facility, located in the heart of a thriving innovation hub, is where cutting-edge technology and groundbreaking research come together to address the most pressing health challenges of our time.",
+      "At AMS, we're setting new standards in medical research and development. Our advanced R&D facility, located in the heart of a thriving innovation hub, is where science technology and groundbreaking research come together to address the most pressing health challenges of our time.",
   };
   const slidesData = [
     {
       title: "Vision for Enhanced Care",
       src: "/assets/rnd/rnd-carousel-img-1.webp",
       heading: "A Hub of Innovation",
-      para: "We advance surgical devices in wound care, cardiovascular, interventional cardiology, hernia solutions, and endo surgery to transform patient care and support surgeons with reliable solutions.",
+      para: "We innovate in surgical and cardiovascular devices, providing clinicians with trusted, high-performance devices.",
     },
     {
       src: "/assets/rnd/rnd-carousel-img-2.webp",
-      heading: "Commitment to Excellence",
-      para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability.",
+      heading: "Collaborative Innovation",
+      para: "We are committed to fostering flexible and holistic partnerships with R&D innovators globally, focusing on swift development and execution in manufacturing to deliver transformative solutions directly to healthcare practitioners.",
     },
     {
       src: "/assets/rnd/rnd-carousel-img-3.webp",
-      heading: "Empowering Surgical Success",
-      para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision.",
+      heading: "Future of Possibility",
+      para: "We are shaping the next generation of therapies that will redefine healthcare and deliver better outcomes for patients across the globe.",
     },
   ];
  fadeup()

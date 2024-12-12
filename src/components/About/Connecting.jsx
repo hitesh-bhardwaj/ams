@@ -17,11 +17,11 @@ data-para-anim className="title-2 aeonik tablet:text-center ">
           </div>
           <div className='mt-[2vw] mb-[5vw] content-p mobile:text-center mobile:w-[65vw] mobile:mt-[10vw] mobile:mb-[8vw]'>
           <p data-para-anim className='tablet:text-center'>
-          Ready to shape the future of healthcare with us? Reach out today and let&apos;s innovate together.
+          Ready to shape the future of healthcare with us? Reach out today and let&apos;s collaborate to innovate together.
           </p>
           </div>
           <div className='fadeUp'>
-          <PrimaryButton link="/contact-us" text="Contact Us"/>
+          <PrimaryButton link="/contact-us" text="Career"/>
           </div>
           
             </div>

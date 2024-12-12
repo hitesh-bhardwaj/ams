@@ -40,7 +40,7 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
 
         <div className='dna-card-container flex justify-between items-center p-[3%] px-[5vw] gap-[1.5vw] group '>
          <CardContainer className="inter-var ">
-            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1'>
+            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[32vw] dna-card1'>
                 <CardBody className=" relative group/card h-auto p-6">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative'> 
                 <Image
@@ -55,7 +55,7 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
                 </CardItem>
                 <CardItem className='content-p tracking-wide'  as="p"
           translateZ="60">
-               Breaking barriers to care. AMS designs affordable medical solutions that bring quality healthcare to everyone, everywhere.
+              AMS is transforming the landscape of MedTech, ensuring that high quality healthcare is accessible to everyone. Our pioneering products are designed to overcome barriers in care and deliver excellence globally.
                 </CardItem>
                 </CardBody>
                 </div>
@@ -63,7 +63,7 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
 
 
             <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1'>
+            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[32vw] dna-card1'>
                 <CardBody className=" relative group/card h-auto p-6">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative'> 
                 <Image
@@ -75,11 +75,11 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
                 
                 </CardItem>
                 <CardItem className='mt-[3vw] mb-[2vw]'  translateZ="60"> 
-                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111]'>Global Standards</h2>
+                    <h2 className='text-[2.5vw] aeonik leading-[1] font-light text-[#111111]'>People at the Core</h2>
                 </CardItem>
                 <CardItem className='content-p tracking-wide '  as="p"
           translateZ="60">
-              The AMS facility is equipped to produce cutting edge medical devices that meet the most stringent global specifications
+              	People are the cornerstone of AMS, and our commitment to them fuels everything we strive to achieve. At AMS, we unite the expertise of our skilled team with the fresh perspectives of motivated individuals, working together with a shared vision to advance healthcare.
                 </CardItem>
                 </CardBody>
                 </div>
@@ -88,7 +88,7 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
 
 
             <CardContainer className="inter-var">
-            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[30vw] dna-card1'>
+            <div className='dna-card px-[3%] py-[6%] w-[29vw] border-[1px] rounded-[3vw] bg-white/50 h-[32vw] dna-card1'>
                 <CardBody className=" relative group/card h-auto p-6">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative'> 
                 <Image
@@ -104,7 +104,7 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
                 </CardItem>
                 <CardItem className='content-p tracking-wide'  as="p"
           translateZ="60">
-              We uphold ethical standards and integrity in all business practices, ensuring transparency & honesty in building lasting relationships..
+              At AMS, we hold a deep belief that ethics and integrity are fundamental to effective healthcare, shaping every provider-patient relationship. Our mission is to embrace these values with transparency and honesty in all our practices, fostering a culture where compassionate care thrives.
                 </CardItem>
                 </CardBody>
                 </div>

@@ -20,7 +20,7 @@ data-para-anim className="title-1 aeonik drop-shadow-md leading-[1.15] mobile:te
               </h1>
               <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p tablet:text-[2vw] tablet:max-w-[40vw] mobile:max-w-[90vw] mobile:text-center">
                 <span data-para-anim>
-                  We are committed to transforming global patient care by enhancing outcomes through unparalleled quality, affordability, and accessibility.
+                At the heart of our mission is a commitment to improving global health by making quality care more affordable and accessible for all.
                 </span>
               </p>
             </div>

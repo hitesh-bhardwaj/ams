@@ -59,7 +59,9 @@ export default function Blog() {
                     className="h-full w-full object-cover scale-[1.4] imageanim"
                     src="/assets/home/blog-1.jpg"
                     alt="blog image"
-                    fill
+                    height={403}
+                    width={639}
+                    
                   />
                 </div>
                 <div className="w-[88%] mt-[1vw] fadeUp mobile:w-[100%] mobile:text-center mobile:mt-[5vw] mobile:flex-col mobile:items-center mobile:justify-center">
@@ -97,7 +99,8 @@ export default function Blog() {
                     className="h-full w-full object-cover scale-[1.4] imageanim"
                     src="/assets/home/blog-2.jpg"
                     alt="blog image"
-                    fill
+                    height={403}
+                    width={639}
                   />
                 </div>
                 <div className="w-[88%] mt-[1vw] fadeUp mobile:w-[100%] mobile:text-center mobile:mt-[5vw] mobile:flex-col mobile:items-center mobile:justify-center">
@@ -135,7 +138,8 @@ export default function Blog() {
                     className="h-full w-full object-cover scale-[1.4] imageanim"
                     src="/assets/home/blog-3.jpg"
                     alt="blog image"
-                    fill
+                    height={403}
+                    width={639}
                   />
                 </div>
                 <div className="w-[88%] mt-[1vw] fadeUp mobile:w-[100%] mobile:text-center mobile:mt-[5vw] mobile:flex-col mobile:items-center mobile:justify-center">

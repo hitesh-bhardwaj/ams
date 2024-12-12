@@ -10,7 +10,7 @@ const Discover = () => {
     <div className='container-lg px-[5%] flex justify-between mobile:flex-col mobile:px-[4%] border border-gray-200 bg-white/50 mobile:py-[15%] rounded-[3vw] mobile:rounded-[6vw] py-[5vw]'>
         <div className='w-[45%] flex flex-col items-start justify-center gap-[4vw] mobile:order-1 mobile:w-full mobile:items-center mobile:text-center mobile:gap-[12vw] mobile:mt-[12vw] tablet:w-[47%]'>
          <h2 className="title-2 aeonik">
-            <span data-para-anim  >Discover the profound impact our work is having on patients everywhere</span>
+            <span data-para-anim  >Discover the profound impact our work is having on patients everywhere.</span>
           </h2>
           <PrimaryButton link='/contact-us' text="Let's Meet" className={"fadeUp"}/>
           </div>

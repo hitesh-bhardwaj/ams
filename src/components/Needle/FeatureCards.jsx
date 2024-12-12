@@ -6,25 +6,25 @@ const cardData = [
   {
     title: "Sharpness",
     description: "Exceptional Penetration.",
-    detailedDescription: `Advanced chamfering diminishes chance for suture fracturing at the swage, by rounding off the sharp edges of the barrel in the swage area of the needle. This attention to detail elevates the performance of our needles, ensuring superior quality in every procedure.`,
+    detailedDescription: `Superior silicone coating a consistent penetration with each pass, reducing the potential for tissue trauma and providing precision you can rely on.`,
     imageSrc: "/assets/needle/Sharpness.webp",
   },
   {
     title: "Security",
-    description: "Superior Security.",
+    description: "Swage Integrity.",
     detailedDescription: `Advanced chamfering diminishes chance for suture fracturing at the swage, by rounding off the sharp edges of the barrel in the swage area of the needle. This attention to detail elevates the performance of our needles, ensuring superior quality in every procedure.`,
     imageSrc: "/assets/needle/Security.webp",
   },
   {
     title: "Strength",
     description: "Supreme Durability.",
-    detailedDescription: `With just the right balance of flexibility, our needles allow for easy handling and control during procedures, reducing hand fatigue and improving outcomes.`,
+    detailedDescription: `Experience the reliable performance of Advanced Needle Technologies' reinforced stainless steel. This groundbreaking material ensures exceptional high ductility, remarkable bending strength, and superior resistance to corrosion, establishing fresh benchmarks in the realm of needle performance.`,
     imageSrc: "/assets/needle/Strength.webp",
   },
   {
     title: "Dark Needle",
     description: "Non-reflective.",
-    detailedDescription: `The precision-engineered design ensures every movement is executed with the utmost accuracy, enhancing the outcome of delicate procedures.`,
+    detailedDescription: `A dark non-reflective finish offers desired visualization, specially crafted for enhanced assurance and confidence in the operating zone.`,
     imageSrc: "/assets/needle/Dark-Needle.webp",
   },
 ];
@@ -42,7 +42,7 @@ function FeatureCards() {
           <div className="container-lg flex flex-col h-full w-full items-center gap-[5vw] justify-between">
             <h2
 data-para-anim className="aeonik title-2">
-              Unmatched Precision with AMS Needles
+              UNMATCHED PRECISION WITH AMS NEEDLES
             </h2>
             <div className="w-full flex justify-between">
               {cardData.map((card, index) => (

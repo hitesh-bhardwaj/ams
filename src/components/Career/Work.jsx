@@ -7,7 +7,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP,ScrollTrigger)
 import { paraAnim , imgAnim , paraAnimation , fadeUp} from '@/components/gsapAnimations';
 
-const WorkCard = ({ no, heading, src, para, btn ,className }) => {
+const WorkCard = ({ no, heading, src, para, btn , link,className }) => {
   return (
     <>
       <div className={`w-[90vw] h-full flex flex-col gap-[4vw] rounded-[50px] pt-[2vw] pb-[5vw] bg-white px-[5vw] shadow-xl border border-black/10 mobile:rounded-[6vw] fadeup tablet:rounded-[3vw] mobile:py-[10vw] `}>
@@ -25,7 +25,7 @@ const WorkCard = ({ no, heading, src, para, btn ,className }) => {
           <div className="w-[50%] text-[2.5vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111] mobile:w-full mobile:text-[10vw] mobile:text-center mobile:leading-[1.2] mobile:items-center mobile:gap-[12vw] mobile:py-[10vw] tablet:text-[3.5vw]">
             <p className="overflow-hidden" ><span className="block para-animation">{para}
               </span></p>
-            <PrimaryButton link="/" text={btn} className={"mobile:py-[4vw] mobile:px-[7vw] tablet:py-[1.5vw] tablet:px-[3vw] fadeup"} />
+            <PrimaryButton link={`/${link}`} text={btn} className={"mobile:py-[4vw] mobile:px-[7vw] tablet:py-[1.5vw] tablet:px-[3vw] fadeup"} />
           </div>
         </div>
       </div>
@@ -84,13 +84,13 @@ const Work = () => {
         <div className="feature-container w-full flex justify-center items-center py-[7vw] mobile:pb-[4vh] feature-card tablet:pb-[3vw] tablet:pt-0">
         <WorkCard
           no={1}
-          heading={"Our work Environment"}
+          heading={"Our Work Environment"}
           src={"/assets/career/career-work.webp"}
           para={
-            "Innovative, collaborative, and Driven by a mission to improve lives."
+            "Innovative, collaborative, and driven by a mission to improve lives."
           }
           btn={"Learn More About Us"}
-         
+          link={"about"}
         />
 
         </div>
@@ -100,9 +100,10 @@ const Work = () => {
           heading={"Inclusivity & Equality"}
           src={"/assets/career/career-employees.webp"}
           para={
-            " Creating a space where every individual is valued and respected."
+            "Ensuring every voice is heard, valued, and empowered."
           }
           btn={"See Our Initiatives"}
+          link={"#"}
           
         />
 
@@ -110,10 +111,11 @@ const Work = () => {
        <div className="feature-container3 w-full flex justify-center items-center py-[7vw] mobile:pb-[4vh] feature-card tablet:py-[3vw]">
        <WorkCard
           no={3}
-          heading={"Build your future with Us"}
+          heading={"Build Your Future with Us"}
           src={"/assets/career/career-medical.webp"}
-          para={"Contribute to cutting-edge medical technology."}
+          para={"Be a catalyst for change in the world of medical technology."}
           btn={"Start Your Journey"}
+          link={"manufacturing"}
           
         />
 

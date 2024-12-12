@@ -10,15 +10,15 @@ export default function Discover() {
           <div className="w-[70%] relative  space-y-[3vw] px-[7vw] mobile:order-1 mobile:w-[90%] mobile:flex mobile:flex-col mobile:justify-center mobile:gap-[5vw] mobile:mt-[10vw]">
             <h2
 data-para-anim className="title-2 aeonik mobile:text-center">
-              <span className="">Discover Our R&D</span>
+              <span className="">AMS OEM SOLUTIONS</span>
             </h2>
             <p className="content-p pb-[1vw] mobile:text-center">
               <span data-para-anim className="">
-                Engineering the Next Generation of Medical Solutions
+              AMS offers specialized OEM solutions crafted to support medical device manufacturers in achieving excellence.
               </span>
             </p>
             <div className="fadeUp mobile:w-full mobile:flex mobile:justify-center">
-              <PrimaryButton link={"/research-and-development"} btnText={"Let's Meet"} />
+              <PrimaryButton link={"/oem"} text={"Know More"} />
             </div>
           </div>
           <div className="relative w-[32vw] h-[25vw] fadeUp mobile:w-[85vw] mobile:h-[85vw] mobile:-mr-[5%]">

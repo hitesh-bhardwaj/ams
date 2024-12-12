@@ -107,26 +107,26 @@ const Molecular = () => {
       symbol: "Pa",
       title: "Patients at the Heart",
       description:
-        "Patients are the heart of our purpose, igniting every decision and innovation with unwavering compassion and dedication to transforming healthcare for the better.",
+        "Patients are at the heart of AMS, driving our commitment to relentless innovation. We believe in the endless possibilities of MedTech to transform healthcare, pushing boundaries to improve patient outcomes.",
     },
     {
       symbol: "Qu",
-      title: "Uncompromising Quality",
+      title: "Quality First",
       description:
-        "Excellence is our benchmark. Our expert team ensures each device is crafted to the highest standards, delivering safety and reliability you can trust.",
+        "At AMS, quality is built into our design. Through advanced technology, meticulous raw material selection, rigorous testing and processes, we ensure that each device meets the highest standards of safety and reliability—delivering trust and performance you can count on.",
     },
     {
-      symbol: "In",
-      title: "Innovative Solutions",
+      symbol: "In (Innovation)",
+      title: "Life Enhancing Innovation",
       description:
-        "Pioneering the future of Healthcare. AMS remains at the forefront of cutting-edge medical technology.",
+        "AMS is at the forefront of a medical innovation landscape, consistently challenging the status quo through clinical research and development. Our commitment to scientific evidence and ground-breaking research fuels our drive to create innovative medical technologies. This relentless pursuit of advancement enables us to develop solutions that significantly enhance the quality of life for millions around the world. ",
     },
-    {
-      symbol: "Cr",
-      title: "Caring",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.",
-    },
+    // {
+    //   symbol: "Cr",
+    //   title: "Caring",
+    //   description:
+    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.",
+    // },
   ];
   const swiperRef = useRef(null); // Create a ref for Swiper
 
@@ -173,16 +173,14 @@ const Molecular = () => {
               <div className="w-[58%] mobile:w-[100%] tablet:w-full">
                 <h2 className="title-2 aeonik">
                   <span
-data-para-anim>Molecular Foundations </span>
+data-para-anim>Molecular Foundation</span>
                   <span
 data-para-anim>of AMS</span>
                 </h2>
               </div>
               <p className="content-p w-[75%] mobile:w-[100%]">
                 <span data-para-anim>
-                  Exploring the fundamental elements that shape AMS&apos;s ethos
-                  and culture, illustrating the core principles guiding our
-                  character and values.
+                Ethos and Culture.
                 </span>
               </p>
             </div>

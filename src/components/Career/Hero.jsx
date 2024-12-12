@@ -54,7 +54,7 @@ const Hero = () => {
               >
                 <span
 data-para-anim className={`leading-[1.3] overflow-hidden text-[#111111]`}>
-                Join Our Mission to Create a Healthier World
+               Join Our Mission to Create a Healthier World
                 
             
                 </span>
@@ -62,7 +62,7 @@ data-para-anim className={`leading-[1.3] overflow-hidden text-[#111111]`}>
              
               <p className={` max-w-[30vw] mt-[2vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw]`}>
                 <span data-para-anim className={`text-[#111111] mobile:text-center`}>
-                Be a part of a team making a meaningful difference in healthcare.
+                	Be a part of a team making a meaningful difference in healthcare.
                 </span>
               </p>
             </div>
@@ -72,7 +72,7 @@ data-para-anim className={`leading-[1.3] overflow-hidden text-[#111111]`}>
               </div>
               <input
                 type="text"
-                placeholder="Explore job openings"
+                placeholder="Explore Job Openings"
                 className="w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] placeholder:opacity-75 text-[#143CA3] glassmorphism placeholder:text-shadow tablet:h-[5.5vw] tablet:text-[2.2vw] tablet:px-[10%]"
               />
 
