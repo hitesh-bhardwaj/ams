@@ -1,3 +1,4 @@
+import "@/styles/fonts.css";
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';

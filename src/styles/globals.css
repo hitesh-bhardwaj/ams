@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 /* Import Fonts */
-@import url('./fonts.css');
 @import url('./swiper.css');
 @import url("./manufactuing-carousel.css");
 @import url("./specificationSwiper.css");

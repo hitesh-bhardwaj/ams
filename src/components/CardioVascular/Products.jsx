@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from "@/styles/cardiovascularProducts.module.css";
 import Image from "next/image"; 
-import gsap from 'gsap'; // Import GSAP
+import gsap from 'gsap'; 
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const slidesData = [
     {
@@ -58,63 +61,85 @@ const slidesData = [
 const Products = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
+  const fadeOutAndUpdateIndex = () => {
+    // Fade out the current text
+    gsap.to(".product-text", {
+      opacity: 0,
+      // y: -30,
+      duration: 0.3,
+      ease: "power3.out",
+      stagger:0.01,
+      onComplete: () => {
+        // After fade-out animation completes, update the index
+        setCurrentIndex((prev) => (prev === slidesData.length - 1 ? 0 : prev + 1));
+      }
+    });
+  };
+
+  const fadeInNewText = () => {
+    // Fade in the new text
+    const productText = document.querySelectorAll(".product-text");
     gsap.fromTo(
-      ".product-text", 
+      productText,
       {
-        y: 30,    
-        opacity: 0, 
+        opacity: 0,
+        y: 50,
       },
       {
-        y: 0,        
-        opacity: 1, 
-        duration: 1.5, 
-        ease: "power3.out", 
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.05,
       }
     );
+  };
+
+  useEffect(() => {
+    fadeInNewText();
   }, [currentIndex]);
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? slidesData.length - 1 : prev - 1));
+    fadeOutAndUpdateIndex();
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev === slidesData.length - 1 ? 0 : prev + 1));
+    fadeOutAndUpdateIndex();
   };
 
-  const radius = 20;
+  const radius = 19;
   const totalSlides = slidesData.length;
 
   return (
     <section id="products" className="w-screen h-screen  overflow-hidden relative mobile:h-[180vh]">
       <div className="w-full h-full flex items-center justify-between pl-[5vw] mobile:flex-col-reverse tablet:flex-col-reverse">
-        <div className="w-[50vw] h-[20%] flex flex-col justify-center mobile:w-full mobile:h-[60vh] tablet:w-full tablet:h-[50vh]">
+        <div className="w-[50vw] h-[20%] flex flex-col justify-center product-text-container mobile:w-full mobile:h-[60vh] tablet:w-full tablet:h-[50vh]">
           <div className="h-[10vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
             <h2 className="title-2 product-text aeonik mobile:text-center mobile:ml-0 mobile:px-[5vw]">
               <span data-para-anim>{slidesData[currentIndex]?.title}</span>
             </h2>
-            <p className="product-text text-[2.2vw] font-light mobile:text-[7vw] mobile:text-center mobile:w-[90%] tablet:text-[3.5vw]">
+            <p className="product-text overflow-hidden text-[2.2vw] font-light mobile:text-[7vw] mobile:text-center mobile:w-[90%] tablet:text-[3.5vw]">
               {slidesData[currentIndex]?.para}
             </p>
           </div>
-          <div className="pt-[2vw]">
-            <p className="product-text content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
+          <div className="pt-[2vw] ">
+            <p className="product-text  overflow-hidden content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[currentIndex].description1}
             </p>
-            <p className="product-text content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
+            <p className="product-text overflow-hidden content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[currentIndex].description2}
             </p>
-            <p className="product-text content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
+            <p className="product-text overflow-hidden content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[currentIndex].description3}
             </p>
           </div>
         </div>
-        <div className="w-[50vw] h-full overflow-hidden mobile:w-screen">
-          <div className='relative flex items-center justify-center h-screen w-screen m-auto'>
+        <div className="w-[36vw] h-[50vw] overflow-hidden mobile:w-screen">
+          <div className='relative flex items-start justify-end h-screen w-screen'>
             <div className='absolute flex justify-center items-center h-full w-full'>
               {slidesData.map((slide, index) => {
                 const angle = ((index - currentIndex) * (360 / totalSlides)) * (Math.PI / 180);
-                const x = -radius * Math.cos(angle);
+                const x = -radius*1.1 * Math.cos(angle);
                 const y = radius * Math.sin(angle);
 
                 const isPrevious = (index === (currentIndex - 1 + totalSlides) % totalSlides);
@@ -130,7 +155,7 @@ const Products = () => {
                       zIndex: isActive ? 3 : isPrevious || isNext ? 2 : 1, 
                     }}
                   >
-                    <img src={slide.imageSrc} alt={slide.title} className="w-full h-auto mobile:h-[40vw] mobile:w-[40vw]" />
+                    <img src={slide.imageSrc} alt={slide.title} className="w-full h-full object-contain flex  mobile:h-[40vw] mobile:w-[40vw]" />
                   </div>
                 );
               })}
@@ -162,12 +187,11 @@ const Products = () => {
           <Image
             src="/assets/home/arrow-left.png"
             alt="arrow-left"
-            className="object-cover group-hover:invert transition-all duration-300"
+            className="object-contain group-hover:invert transition-all duration-300"
             fill
           />
         </div>
       </div>
-
       <div className="absolute w-[50vw] h-[95vh] top-0 right-[-10%] z-[-1] mobile:h-[50vh] mobile:w-[90vw] mobile:top-[10%] tablet:hidden">
         <Image
           src="/assets/cardioVascular/product-bg.png"
