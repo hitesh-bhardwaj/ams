@@ -66,7 +66,7 @@ export default function Home() {
         </main>
       </Layout>
       <Media at='desktop'>
-      <Pixifinal/>
+      {/* <Pixifinal/> */}
       </Media>
       
     </>

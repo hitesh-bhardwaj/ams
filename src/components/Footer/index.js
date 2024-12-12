@@ -18,7 +18,7 @@ export default function Footer() {
             fill
           />
         </div>
-        <div className="container-sm mobile:pt-[10vw]">
+        <div className="container-sm px-[5vw] pt-[2vw] mobile:pt-[10vw]">
           <div className="grid grid-cols-12 pt-[3.5vw] pb-[1.5vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:pt-[6.5vw] tablet:pt-[5vw] ">
             <div className="col-span-6  mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
               <div className="mobile:flex mobile:items-center mobile:justify-center mobile:flex-col">

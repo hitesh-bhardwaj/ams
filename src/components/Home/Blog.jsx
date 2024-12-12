@@ -35,7 +35,7 @@ export default function Blog() {
         ref={blogContainer}
         id="blogs" 
       >
-        <div className="container-sm">
+        <div className="container-sm pl-[5vw]">
           <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:items-center tablet:flex-col">
             <div
               className="blog-left w-[45%] space-y-[2.5vw] mobile:w-[100%] mobile:space-y-[5vw] tablet:w-full"
@@ -51,7 +51,7 @@ export default function Blog() {
                 Discover how AMS is making a difference and stay updated with our latest news and releases.
               </p>
             </div>
-            <div className="blog-right w-[45%] mobile:w-[90%] mobile:space-y-[15vw] tablet:w-full tablet:mt-[7vw]">
+            <div className="blog-right w-[50%] mobile:w-[90%] mobile:space-y-[15vw] tablet:w-full tablet:mt-[7vw]">
               <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
                 <div className="blog-img h-[21vw] w-[87%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
                   <Image
