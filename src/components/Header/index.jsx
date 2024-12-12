@@ -114,7 +114,7 @@ const Header = () => {
                 </Link>
               </div>
               <div className="flex justify-center w-fit items-center gap-8">
-                <button className="w-[1.5vw] header-anim mobile:hidden">
+                {/* <button className="w-[1.5vw] header-anim mobile:hidden">
                   <div className="w-[1.5vw] h-[1.5vw] relative tablet:w-[4vw] tablet:h-[4vw]">
                     <Image
                       src="/assets/icons/notification.svg"
@@ -125,7 +125,7 @@ const Header = () => {
                       }`}
                     />
                   </div>
-                </button>
+                </button> */}
                 <div className="burger-wrapper other-wrapper header-anim">
                   <button
                     onClick={openMenu}

@@ -236,10 +236,12 @@ body{
 .title-1{
   font-size: 5.3vw;
   font-weight: 300;
-  color: var(--text-color);
+ 
   line-height: 110%;
 }
-
+.title-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
 .title-2{
   font-size: 3.96vw;
   font-weight: 300;
