@@ -7,6 +7,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import UmbilicalTape from "@/components/AdvabondTape/UmbilicalTape";
 import Pixifinal from "@/components/Pixifinal";
+import { Media } from "@/components/media";
 
 const cardData1 = [
   {
@@ -89,7 +90,10 @@ const bondtape= () => {
               <Uncover />
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+<Pixifinal/>
+          </Media>
+          
         
     </>
   );

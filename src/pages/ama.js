@@ -10,6 +10,7 @@ import CardsCarousel from "@/components/Ama/CardsCarousel";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
+import { Media } from "@/components/media";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,7 +69,10 @@ fadeup()
               <Discover />
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+ <Pixifinal/>
+          </Media>
+         
        
     </>
   );

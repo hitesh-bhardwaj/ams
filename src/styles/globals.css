@@ -10,7 +10,7 @@
 @import url("./newsSwiper.css");
 
 :root {
-  --text-color: #111111;
+  --text-color: #4A4A4A;
   --p-text-color:#2A2A2A;
   --color-primary: #000;
   --button-primary: #143CA3;
@@ -250,18 +250,18 @@ body{
 }
 .content-p-lg{
   color: var(--text-color);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.45vw;
 
 }
-.content-p-md{
+.content-p-md{  
   color: var(--text-color);
   font-weight: 300;
   font-size: 1.25vw; 
 }
 
 .content-p{
-  color: var(--p-text-color);
+  color: var(--text-color);
   font-weight: 300;
   font-size: 1.15vw;
   line-height: 1.5;

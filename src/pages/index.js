@@ -12,6 +12,7 @@ import GalleryComponent from "@/components/Home/SamplePin";
 import { fadeup, imageAnim } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import HomePageReel from "@/components/Home/HomePageReel";
+import { Media } from "@/components/media";
 
 const Product = dynamic(() => import("@/components/Home/Product"), {
   loading: () => <p>Loading products...</p>, // Optional loading component
@@ -58,7 +59,6 @@ export default function Home() {
         <main>
           <Hero />
           <HomePageReel/>
-          {/* <GalleryComponent/> */}
           <Product />
           <Impact />
           <Career />
@@ -66,7 +66,10 @@ export default function Home() {
           <Facility />
         </main>
       </Layout>
+      <Media at='desktop'>
       {/* <Pixifinal/> */}
+      </Media>
+      
     </>
   );
 }

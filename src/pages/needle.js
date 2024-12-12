@@ -7,6 +7,7 @@ import Advance from "@/components/Needle/Advance";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
+import { Media } from "@/components/media";
 
 
 export default function needle() {
@@ -55,7 +56,10 @@ export default function needle() {
               <Advance />
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+<Pixifinal/>
+          </Media>
+          
         
     </>
   );

@@ -8,6 +8,7 @@ import React from "react";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
+import { Media } from "@/components/media";
 
 export default function manufacturing() {
   const content = {
@@ -43,7 +44,10 @@ export default function manufacturing() {
           <Discover />
         </main>
       </Layout>
-      {/* <Pixifinal/> */}
+      <Media at="desktop">
+<Pixifinal/>
+      </Media>
+      
     </>
   );
 }

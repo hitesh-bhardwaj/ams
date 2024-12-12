@@ -8,6 +8,7 @@ import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
+import { Media } from "@/components/media";
 
 
 export default function endo() {
@@ -68,7 +69,10 @@ export default function endo() {
               <Portfolio />
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+<Pixifinal/>
+          </Media>
+          
        
     </>
   );

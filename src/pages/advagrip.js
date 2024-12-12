@@ -9,6 +9,7 @@ import KeyFeatures from "@/components/Advagrip/KeyFeatures";
 import Paradigm from "@/components/Advagrip/Paradigm";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
+import { Media } from "@/components/media";
 
 const EdgeCard = {
   card1: {
@@ -73,7 +74,10 @@ const advaGrip = () => {
               <Uncover />
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+<Pixifinal/>
+          </Media>
+          
        
     </>
   );

@@ -58,15 +58,14 @@ export default function Impact() {
     return (
         <>
             <section className="p-y-sm mt-[5%] mobile:mt-[10%]" id="impact">
-                <div className="container-lg relative px-[8%] h-full py-[6%] overflow-hidden rounded-[3vw] mobile:py-[15vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:rounded-[7vw] fadeUp">
-                    {/* Use the poster attribute to show a placeholder image */}
+                <div className="container-lg relative px-[8%] h-full py-[6%] overflow-hidden rounded-[2.5vw] mobile:py-[15vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:rounded-[7vw] fadeUp">
                     <video
-                        ref={videoRef} // Attach ref to video for lazy loading
+                        ref={videoRef}
                         muted
                         playsInline
                         loop
                         className="h-full w-full object-cover left-0 top-0 absolute imageAnim"
-                        poster="/assets/home/impact-video-poster.webp" // Use poster image
+                        poster="/assets/home/impact-video-poster.webp" 
                       
                     >
                     </video>
@@ -75,13 +74,13 @@ export default function Impact() {
                         <div className="w-1/2 relative z-10 space-y-[3.5vw] tablet:w-[70%] mobile:w-[100%] mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center mobile:space-y-[15vw]">
                             <h2 className="title-2 aeonik leading-[0] text-shadow">
                                 <span data-para-anim className="text-white leading-[1.3]">
-                                    Making an Impact:
-                               
-                                    Our Global Reach
+                                Making an Impact:
+                                
+                                 Our Global Reach
                                 </span>
                             </h2>
                             <p data-para-anim className="text-[1.15vw] font-light leading-[1.7] text-white text-shadow mobile:text-[4.5vw] tablet:text-[1.8vw]">
-                                Our commitment to advancing healthcare globally is unwavering, and we are constantly pushing boundaries of MedTech, improving outcomes for people in every corner of the globe. With our geographical presence expanding over 180 countries, we have a unique opportunity to collaborate with partners around the world and leverage our collective expertise to develop and deliver transformative solutions that make a difference in patients’ lives.
+                            Our unwavering commitment to global healthcare fuels our relentless pursuit of MedTech innovation, enhancing outcomes in every corner of the world. Our expanding footprint across 116+ countries, empowers us to forge powerful partnerships, creating solutions that make a profound difference in patients’&apos;lives.
                             </p>
                             <div className="w-full flex mobile:justify-center">
                             <PrimaryButton className={"secondary fadeUp !text-white"} link={"/about"} text={"Know More"} />

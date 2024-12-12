@@ -62,16 +62,13 @@ export default function Product() {
         <div className="container-lg">
           <div className="product-top text-center flex flex-col items-center">
             <h2 data-para-anim className="title-2 aeonik leading-[1.3]">
-              Empowering Healthcare Professionals
+            Empowering Healthcare Professionals
             </h2>
             <p
               data-para-anim
               className="content-p my-6 w-[55%] mobile:w-[90%] mobile:my-10 tablet:w-[70%]"
             >
-              Advanced MedTech Solutions empowers healthcare practitioners and
-              caregivers to manage and treat a wide range of medical conditions,
-              from chronic diseases to acute injuries, with the next generation
-              of insight-driven medical device technology and innovation.
+             Advanced MedTech Solutions paves the way for new therapies and enhanced treatment outcomes through insight-driven medical device technology and innovation.
             </p>
           </div>
           <div className="fadeUp">
@@ -124,11 +121,7 @@ export default function Product() {
                         <p className="content-p mb-[5vw] mobile:mb-[6vw] flex flex-col gap-[0.8vw] mobile:text-[4vw] tablet:text-[1.5vw]">
                           {/* <br /> */}
                           <span>
-                            ADVA GLIDE’s balloon catheter technologies are
-                            engineered to excel in the most demanding coronary
-                            anatomies, offering superior trackability,
-                            crossability, and navigability across complex
-                            lesions.
+                          ADVA GLIDE&apos;s balloon catheter technologies are engineered to excel in the most demanding coronary anatomies, offering superior trackability, crossability, and navigability across complex lesions.
                           </span>
                         </p>
                         <LinkButton
@@ -172,22 +165,18 @@ export default function Product() {
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
                         <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500">
-                          <span>ADVAGRIP</span>
+                          <span>ADVA PRO</span>
                         </h3>
                         <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
-                          A Grip like No Other
+                        Precision. Perfection. Pro.
                         </h4>
 
                         <p className="content-p mb-[5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">
-                          ADVAGRIP sets a new benchmark in Knotless Tissue
-                          Control Device, employing Tri-Cut Technology to
-                          produce barbs that delivers a robust anchoring force
-                          whilst maintaining the integrity of the suture
-                          strength.
+                        Designed for complex PCI, ADVA PRO provides optimized safety and efficacy, ensuring consistent and trusted patient outcomes.
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
-                          link={"/advagrip"}
+                          link={"/advapro"}
                           className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}
                         />
                       </div>
@@ -226,16 +215,14 @@ export default function Product() {
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
                         <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400">
-                          <span>ADVA PRO</span>
+                          <span>ADVAGRIP </span>
                         </h3>
                         <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
-                          Precision. Perfection. Pro.
+                        A GRIP like No Other.
                         </h4>
 
                         <p className="content-p mb-[5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">
-                          Designed for complex PCI, ADVA PRO provides optimized
-                          safety and efficacy, ensuring consistent and trusted
-                          patient outcomes.
+                        ADVAGRIP sets a new benchmark in Knotless Tissue Control Device, employing Tri-Cut Technology to produce barbs that delivers a robust anchoring force whilst maintaining the integrity of the suture strength.
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
@@ -299,7 +286,7 @@ export default function Product() {
                         <p className="content-p mb-[5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">
                           Consistent performance for confidence in a variety of
                           soft tissue approximation. The trusted choice of
-                          Polyglactin 910 for surgeon’s worldwide.
+                          Polyglactin 910 for surgeon&apos;s worldwide.
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
@@ -328,7 +315,7 @@ export default function Product() {
                   <div className="main relative">
                     <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]">
                       <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0 tablet:text-[1.8vw] tablet:pt-0">
-                        04
+                        05
                       </span>
                     </div>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
@@ -358,7 +345,7 @@ export default function Product() {
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
-                          link={"/advacryl"}
+                          link={"/poweredlc"}
                           className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}
                         />
                       </div>

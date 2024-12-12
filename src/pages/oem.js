@@ -51,7 +51,10 @@ export default function oem() {
               <FormOem />
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+<Pixifinal/>
+          </Media>
+          
        
     </>
   );

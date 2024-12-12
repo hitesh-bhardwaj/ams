@@ -8,6 +8,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Edge2 from "@/components/Products/Edge2";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
+import { Media } from "@/components/media";
 
 const EdgeCard = {
   card1: {
@@ -102,7 +103,10 @@ const advabondcv = () => {
               <Uncover />
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+ <Pixifinal/>
+          </Media>
+         
         
     </>
   );

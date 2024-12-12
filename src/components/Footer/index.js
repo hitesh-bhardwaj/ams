@@ -38,7 +38,7 @@ export default function Footer() {
                     Contact
                   </span>
                   <Image
-                    className="inline w-[6%] mobile:ml-[5%] mobile:w-[11%] relative z-[7] fadeUp"
+                    className="inline w-[7.35%] mobile:ml-[5%] mobile:w-[11%] relative z-[7] fadeUp"
                     src="/assets/icons/arrow-up-right.svg"
                     alt="arrow"
                     width={50}
@@ -208,7 +208,7 @@ export default function Footer() {
                   <li className="footer-link">
                     <Link
                       className="content-p text-head font-light mobile:text-[5vw]"
-                      href="/#"
+                      href="/wound-closure"
                     >
                       <span data-para-anim data-attr="Wound Closure">
                         Wound Closure
@@ -262,10 +262,10 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="relative col-span-full my-[3vw] h-[15vw] w-full tablet:my-[6vw] tablet:h-[15vw] fadeUp mobile:hidden">
+            <div className="relative col-span-full my-[3vw] h-[13vw] w-full tablet:my-[6vw] tablet:h-[15vw] fadeUp mobile:hidden">
               <Image
                 className="drop-shadow-2xl"
-                src="/ams-logo-with-tag.png"
+                src="/ams-logo-with-tag.svg"
                 alt="Logo"
                 fill
               />

@@ -8,6 +8,7 @@ import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
+import { Media } from "@/components/media";
 
 const EdgeCard = {
   card1: {
@@ -100,7 +101,10 @@ const advalenecv = () => {
               <Uncover />
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+<Pixifinal/>
+          </Media>
+          
        
     </>
   );

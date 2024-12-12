@@ -58,7 +58,10 @@ fadeup()
               <Portfolio/>
             </main>
           </Layout>
-          {/* <Pixifinal/> */}
+          <Media at="desktop">
+<Pixifinal/>
+          </Media>
+          
        
     </>
   );
