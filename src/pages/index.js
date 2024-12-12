@@ -8,7 +8,6 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import dynamic from "next/dynamic"; // Import next/dynamic
 import Layout from "@/components/Layout";
-import GalleryComponent from "@/components/Home/SamplePin";
 import { fadeup, imageAnim } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import HomePageReel from "@/components/Home/HomePageReel";
@@ -67,7 +66,7 @@ export default function Home() {
         </main>
       </Layout>
       <Media at='desktop'>
-      {/* <Pixifinal/> */}
+      <Pixifinal/>
       </Media>
       
     </>

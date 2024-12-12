@@ -21,13 +21,20 @@ const NewsCard = ({title,date,img}) => {
             className="rounded-[2.5vw] object-cover"
           />
         </div>
-        <div className="absolute text-white text-[2.5vw] font-light top-[80%] left-[5%] aeonik z-[5]">
-          <p data-para-anim>{title}</p>
+        <div className="absolute text-white text-[2.5vw] font-light top-[80%] left-[5%] aeonik z-[5] flex w-full">
+          <p data-para-anim>{title}</p> <Image
+                    className="inline w-[1.2vw] h-[1.2vw] ml-[2%] mt-[1.5vw] mobile:ml-[5%] mobile:w-[11%] relative z-[7] fadeUp invert"
+                    src="/assets/icons/arrow-up-right.svg"
+                    alt="arrow"
+                    width={50}
+                    height={50}
+                  />
         </div>
       </div>
       <p data-para-anim className="font-light text-[1.8vw] px-[2vw] py-[1vw] aeonik">
        {date}
       </p>
+      
     </>
   );
 };
