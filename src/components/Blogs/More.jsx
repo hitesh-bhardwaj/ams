@@ -94,7 +94,7 @@ const More = () => {
       <div className="w-full px-[4%]">
         <div className="text-center flex flex-col items-center">
           <h2
-            data-para-anim
+data-para-anim
             className="text-[2.7vw] font-light leading-[1.2] aeonik capitalize"
           >
             More from ams

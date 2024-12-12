@@ -172,8 +172,10 @@ const Molecular = () => {
             >
               <div className="w-[58%] mobile:w-[100%] tablet:w-full">
                 <h2 className="title-2 aeonik">
-                  <span data-para-anim>Molecular Foundations </span>
-                  <span data-para-anim>of AMS</span>
+                  <span
+data-para-anim>Molecular Foundations </span>
+                  <span
+data-para-anim>of AMS</span>
                 </h2>
               </div>
               <p className="content-p w-[75%] mobile:w-[100%]">

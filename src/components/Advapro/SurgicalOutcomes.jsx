@@ -37,7 +37,7 @@ const SurgicalOutcomes = () => {
         <div className="w-full h-full flex flex-col items-start justify-start pb-[2vw] mobile:h-fit tablet:py-0 tablet:gap-[5vw]">
           <div className="absolute top-[10%] text-center flex items-center justify-center w-full mobile:mb-[10vw] mobile:left-[22%] mobile:w-[60%] mobile:top-[5%]">
             <h2
-              data-para-anim
+             data-para-anim
               className="title-2 aeonik text-center z-[10] mobile:text-center"
             >
               Elevate Your Surgical Outcomes

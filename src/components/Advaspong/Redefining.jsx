@@ -36,8 +36,8 @@ const Redefining = () => {
         <div className="w-screen h-full container-lg z-[5] mobile:h-full tablet:h-[60vh] ">
           <div className="w-full h-full flex flex-col items-center justify-center tablet:justify-start ">
             <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit tablet:h-fit ">
-              <h2
-                data-para-anim
+             <h2
+data-para-anim
                 className="title-2 aeonik text-center  mobile:text-center mobile:w-[90%]"
               >
                ADVASPONG redefining wound care

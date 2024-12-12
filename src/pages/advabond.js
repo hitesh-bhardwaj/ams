@@ -106,7 +106,7 @@ const advabond = () => {
               <Uncover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

@@ -4,21 +4,11 @@ import Footer from "../Footer";
 import Transition from "../Transition";
 import { Media } from "../media";
 import Pixifinal from "../Pixifinal";
-// import gsap from "gsap";
-// import ScrollSmoother from "@/components/ScrollSmoother.min.js";
+import { titleAnim } from "../gsapAnimations";
 
-// gsap.registerPlugin(ScrollSmoother);
 
 const Layout = ({ children }) => {
-
-  // const smoother = useRef();
-
-  // useEffect(() => {
-  //   smoother.current = ScrollSmoother.create({
-  //     smooth: 2,
-  //     effects: true,
-  //   });
-  // }, []);
+// titleAnim()
 
   return (
     <>
@@ -33,6 +23,7 @@ const Layout = ({ children }) => {
       <Media lessThan="desktop">
        <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/30 via-white/50 to-blue-500/30"></div>
       </Media>
+      <div className="w-screen h-screen fixed top-0 left-0 z-[-20] bg-gradient-to-tr from-pink-500/30 via-white/50 to-blue-500/30"></div>
     </>
   );
 };

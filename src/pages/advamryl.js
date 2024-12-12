@@ -105,7 +105,7 @@ const advamryl = () => {
               <Uncover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

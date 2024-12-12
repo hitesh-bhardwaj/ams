@@ -107,7 +107,7 @@ const advacryl = () => {
               <Uncover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

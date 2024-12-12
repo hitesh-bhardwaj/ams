@@ -15,7 +15,8 @@ const ContactDetail = () => {
         <div className=" flex justify-between pr-[5vw] mobile:pr-0 mobile:flex-col tablet:flex-col tablet:pr-0">
           <div className="w-[50%] flex flex-col gap-[5vw] mt-[4vw] mobile:w-full tablet:flex-row tablet:w-full tablet:justify-between">
             <div className="flex flex-col gap-[1vw] mobile:gap-[10vw] tablet:w-[55%]">
-              <h2 data-para-anim className="aeonik text-[2.5vw] font-light mobile:text-[9vw] mobile:text-center mobile:leading-[1.3] tablet:text-[5vw]">
+              <h2
+data-para-anim className="aeonik text-[2.5vw] font-light mobile:text-[9vw] mobile:text-center mobile:leading-[1.3] tablet:text-[5vw]">
                 Let’s Work Together to Drive Innovation in Healthcare
               </h2>
               <p data-para-anim className="text-[1.25vw] font-light w-[80%] mobile:text-[5.5vw] mobile:w-full mobile:text-center tablet:text-[2.5vw] ">

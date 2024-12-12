@@ -40,7 +40,7 @@ const blogs = () => {
                 <More/>
         </main>
       </Layout>
-      <Pixifinal/>
+      {/* <Pixifinal/> */}
     </>
   );
 };

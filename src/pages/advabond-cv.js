@@ -102,7 +102,7 @@ const advabondcv = () => {
               <Uncover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

@@ -38,7 +38,7 @@ export function SplitInLineOnly(element) {
   // });
 
   return new SplitType(element, {
-    types: 'lines,words,chars',
+    types: 'lines,words',
   });
 
   // // Add an additional div inside each line with the class name 'line-internal'

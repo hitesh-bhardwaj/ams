@@ -59,14 +59,15 @@ const SutureCarouselSecond = () => {
   };
 
   return (
-    <section className="w-screen h-[60vw] overflow-hidden mobile:h-[240vw] mobile:py-[10%] relative tablet:py-[7%] tablet:h-[120vw]" id="suture-carousel-second">
+    <section className="w-screen h-fit overflow-hidden mobile:h-[240vw] mobile:py-[10%] relative tablet:py-[7%] tablet:h-[120vw] py-[3%]" id="suture-carousel-second">
       <div className="w-full h-fit flex flex-col gap-[1.5vw] items-center">
-        <h2 data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutures</h2>
+        <h2
+data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutures</h2>
         <p data-para-anim className="content-p w-[50%] text-center !leading-[1.4] mobile:w-[85%] tablet:w-[70%]">AMS Non-Absorbable Sutures provide superior tensile strength retention and a predictable absorption profile to meet your surgical needs and tissue healing requirements</p>
 
       </div>
 
-    <div className="swiper-container mt-[7vw] tablet:w-[100vw] fadeup relative mobile:mt-[15vw] tablet:mt-[12vw]">
+    <div className="swiper-container mt-[10vw] tablet:w-[100vw] fadeup relative mobile:mt-[15vw] tablet:mt-[12vw]">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={onSlideChange}

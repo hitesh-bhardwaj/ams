@@ -37,7 +37,8 @@ const EdgeCarousel = () => {
       className="overflow-x-hidden py-[7%] pb-[12%] mobile:pt-[10%]"
     >
       <div className="w-full relative h-full flex items-center flex-col gap-[5vw]">
-        <h2 data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
+        <h2
+data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
           Adva Glide Edge
         </h2>
         <div className="relative fadeUp rounded-[2vw] ">

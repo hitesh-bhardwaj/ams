@@ -6,10 +6,11 @@ const Locations = () => {
   fadeup()
   return (
     <>
-      <section id="location" className="relative w-screen h-[45vw] pb-[5%] mobile:h-full mobile:py-[15%] tablet:h-full tablet:py-[8%]">
+      <section id="location" className="relative w-screen h-full py-[5%] pb-[10%] mobile:h-full mobile:py-[15%] tablet:h-full tablet:py-[8%]">
         <div className="px-[10vw] w-full h-full flex justify-center items-center tablet:px-[5vw]">
           <div className="flex flex-col gap-[7vw] mobile:items-center mobile:gap-[15vw]">
-            <h2 data-para-anim className="text-[4vw] text-white aeonik font-light mobile:text-[11vw] tablet:text-[6.5vw]  ">
+            <h2
+data-para-anim className="text-[4vw] text-white aeonik font-light mobile:text-[11vw] tablet:text-[6.5vw]  ">
               Other Offices
             </h2>
             <div className="flex flex-wrap w-full text-white gap-y-[4vw] mobile:flex-col mobile:gap-y-[12vw]">

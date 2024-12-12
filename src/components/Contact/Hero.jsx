@@ -62,7 +62,7 @@ const Hero = () => {
             <div className="w-full">
               <h1 className={`title-1 aeonik drop-shadow-lg  leading-[1] tablet:text-[9vw]`}>
                 <span
-                  data-para-anim
+                 data-para-anim
                   className={`leading-[1.3] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center `}
                 >
                   CONTACT US

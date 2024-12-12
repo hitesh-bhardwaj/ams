@@ -17,7 +17,8 @@ const Ortho = () => {
       <div className="w-screen h-screen overflow-hidden py-[10vw] mobile:h-[180vw] tablet:h-[70vh]">
         <div className=" absolute w-full h-full top-[10%] mobile:flex-col mobile:top-[25] tablet:flex-col tablet:justify-start">
           <div className=" w-full flex items-center flex-col mobile:left-[17%] mobile:w-[100%] tablet:left-[15%]">
-          <h1 data-para-anim className="text-[#0A1F7A] text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text font-light ">
+          <h1
+data-para-anim className="text-[#0A1F7A] text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text font-light ">
                   <span 
                     className={`leading-[1.2] overflow-hidden  text-[5.75vw] mobile:text-[11.2vw] tablet:text-[9vw]`}
                   >

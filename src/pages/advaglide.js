@@ -22,7 +22,7 @@ const advaglide = () => {
             
         </main>
     </Layout>
-    <Pixifinal/>
+    {/* <Pixifinal/> */}
       
     </>
   )

@@ -197,7 +197,7 @@ const ProductDescription = ({ className, data }) => {
         <div className="flex flex-col items-center justify-center gap-[5vw]">
           <div className="mobile:mb-[8vw] tablet:mb-[5vw]">
             <h2
-              data-para-anim
+             data-para-anim
               className="title-2 aeonik mobile:text-center tablet:text-center"
             >
               Product Description

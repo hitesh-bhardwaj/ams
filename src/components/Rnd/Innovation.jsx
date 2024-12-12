@@ -7,7 +7,8 @@ export default function Innovation() {
       <section className="pt-[0] mobile:py-[10%]" id="Innovation">
         <div className="w-screen h-screen flex flex-col items-center justify-center gap-[3vw] tablet:h-[50vh] mobile:h-full mobile:gap-[12vw]">
         <div>
-        <h2 data-para-anim className="title-2 aeonik mobile:text-center ">
+        <h2
+data-para-anim className="title-2 aeonik mobile:text-center ">
         Breakthrough Innovations
         </h2>
       </div>

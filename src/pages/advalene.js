@@ -104,7 +104,7 @@ const advalene = () => {
               <Uncover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
        
     </>
   );

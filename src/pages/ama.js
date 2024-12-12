@@ -68,7 +68,7 @@ fadeup()
               <Discover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
        
     </>
   );

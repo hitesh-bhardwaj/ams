@@ -87,7 +87,7 @@ const advacat = () => {
               <Uncover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

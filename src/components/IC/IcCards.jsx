@@ -21,7 +21,8 @@ export default function IcCards() {
       <section className="" id="cards-carousel">
         <Media greaterThan="tablet">
           <div className="w-full h-full flex flex-col gap-[4vw] ">
-            <h2 data-para-anim className="aeonik title-2 text-center">
+            <h2
+data-para-anim className="aeonik title-2 text-center">
               Our Featured Programs
             </h2>
             <div className="mt-[2vw] fadeUp">
@@ -91,7 +92,8 @@ export default function IcCards() {
         <Media lessThan="desktop">
           <div className=" py-[5%]">
             <div className="w-full flex flex-col gap-[8vw] tablet:gap-[5vw]">
-              <h2 data-para-anim className="aeonik title-2 text-center">
+              <h2
+data-para-anim className="aeonik title-2 text-center">
                 Our Featured Programs
               </h2>
 

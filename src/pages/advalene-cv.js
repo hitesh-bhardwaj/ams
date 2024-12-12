@@ -100,7 +100,7 @@ const advalenecv = () => {
               <Uncover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
        
     </>
   );

@@ -164,7 +164,8 @@ const Product = () => {
       <Media greaterThan="tablet">
         <div className="flex flex-col w-full h-screen justify-between pb-[1%]">
         <div className='w-full flex justify-center'>
-        <h2 data-para-anim className="title-2 aeonik">
+        <h2
+data-para-anim className="title-2 aeonik">
           <span>The Foundation of Durable Repair</span>
         </h2>
       </div>

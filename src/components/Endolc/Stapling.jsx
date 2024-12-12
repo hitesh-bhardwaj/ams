@@ -47,7 +47,8 @@ const Stapling = () => {
         <div className="w-screen stapling-container overflow-hidden h-full pl-[12vw] mobile:h-full tablet:h-[70%] mobile:pl-0 tablet:pl-[7vw]">
           <div className=" flex flex-col items-center justify-center ">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center ">
-              <h2 data-para-anim className="title-2 aeonik mobile:text-center">Smart Stapling</h2>
+              <h2
+data-para-anim className="title-2 aeonik mobile:text-center">Smart Stapling</h2>
             </div>
 
             <div className="w-full mobile:flex-col mobile:gap-[10vw]">

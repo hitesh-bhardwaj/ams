@@ -40,7 +40,8 @@ function FeatureCards() {
       <section id="feature-cards" className="pb-[7%] tablet:pb-0">
         <Media greaterThanOrEqual="desktop">
           <div className="container-lg flex flex-col h-full w-full items-center gap-[5vw] justify-between">
-            <h2 data-para-anim className="aeonik title-2">
+            <h2
+data-para-anim className="aeonik title-2">
               Unmatched Precision with AMS Needles
             </h2>
             <div className="w-full flex justify-between">

@@ -33,7 +33,7 @@ const Manifold = () => {
       <div className="w-full h-full flex flex-col items-center justify-center  py-[2vw] gap-[2vw] tablet:py-0">
         <div className="w-full h-full flex flex-col items-center justify-center pt-[5vw] mobile:mb-[10vw] mobile:flex mobile:justify-start mobile:h-fit tablet:h-fit">
           <h2
-            data-para-anim
+data-para-anim
             className="title-2 aeonik text-center w-[60%] mobile:text-center"
           >
           Manifold

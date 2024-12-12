@@ -67,7 +67,7 @@ export default function hernia() {
               <Portfolio />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

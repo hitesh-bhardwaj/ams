@@ -44,6 +44,7 @@ export default function endo() {
     },
   ];
   fadeup()
+  // imageAnim()
 
   return (
     <>
@@ -67,7 +68,7 @@ export default function endo() {
               <Portfolio />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
        
     </>
   );

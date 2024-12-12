@@ -37,6 +37,7 @@ export default function Insights() {
     gsap.to(".swiper-slide", { scale: 0.8, duration: 0.5, ease: "power2.out" });
     gsap.to(swiper.slides[swiper.activeIndex], {
       scale: 1,
+      xPercent:-2,
       duration: 0.5,
       ease: "power2.out",
     });
@@ -59,7 +60,8 @@ export default function Insights() {
       >
         <div className="">
           <div className="insights-top text-center flex flex-col items-center">
-            <h2 data-para-anim className="title-2 aeonik leading-[1.3]">
+            <h2
+data-para-anim className="title-2 aeonik leading-[1.3]">
               Insights and Innovations in Healthcare
             </h2>
             <p
@@ -91,8 +93,8 @@ export default function Insights() {
                   spaceBetween: 30,
                 },
                 1024: {
-                  slidesPerView: 2.7,
-                    spaceBetween: 20,
+                  slidesPerView: 2.6,
+                    spaceBetween: 0,
                 },
               }}
               onSlideChange={handleSlideChange}

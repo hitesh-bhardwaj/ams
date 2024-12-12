@@ -55,7 +55,8 @@ const Hero = () => {
         />
         <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[15%] tablet:flex-col tablet:top-[22%]">
           <div className=" absolute left-[12%] mobile:left-[13%] mobile:w-[100%] tablet:left-[15%] z-[10]">
-            <h1 data-para-anim className="font-light text-blue-400 text-[5.3vw] aeonik drop-shadow-md leading-[1] relative mobile:left-[1%]">
+            <h1
+data-para-anim className="font-light text-blue-400 text-[5.3vw] aeonik drop-shadow-md leading-[1] relative mobile:left-[1%]">
               <span
                 className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw] text-center`}
               >

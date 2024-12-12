@@ -13,7 +13,8 @@ const Hero = () => {
         <div className="px-[10%] relative">
           <div className="flex h-dvh w-full justify-start items-center tablet:h-[50vh] mobile:flex-col mobile:justify-center  mobile:mt-[20%]">
             <div className=" w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50] ">
-              <h1 data-para-anim className="title-1 aeonik drop-shadow-md leading-[1.15] mobile:text-[12.5vw] ">
+              <h1
+data-para-anim className="title-1 aeonik drop-shadow-md leading-[1.15] mobile:text-[12.5vw] ">
                 Advancing Healthcare
                 for Generations to Come
               </h1>

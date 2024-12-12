@@ -1,6 +1,6 @@
 .sliderSection {
     height: 100vh;
-    top: 77vw;
+    top: 67vw;
     position: absolute;
     width: 100%;
 }
@@ -14,7 +14,7 @@
     height: 100vw;
     max-width: 2000px;
     max-height: 2000px;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
   }
   .wheelCard {

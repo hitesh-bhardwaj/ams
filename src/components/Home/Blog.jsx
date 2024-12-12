@@ -10,7 +10,7 @@ gsap.registerPlugin( ScrollTrigger);
 
 /* eslint-disable @next/next/no-img-element */
 export default function Blog() {
-imageAnim()
+// imageAnim()
 
   const blogLeft = useRef(null);
   const blogContainer = useRef(null);

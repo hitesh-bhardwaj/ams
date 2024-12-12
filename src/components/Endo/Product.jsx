@@ -18,7 +18,7 @@ const ProductCard = ({ img, heading,src}) => {
     <div className="group">
       <Link href={src||""}>
         <div
-          className={`h-[27vw] w-[26vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative bg-white/70 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}
+          className={`h-[25vw] w-[23vw] bg-white rounded-[30px] flex flex-col-reverse  items-center justify-between single drop-shadow-sm shadow-sm relative bg-white/70 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}
         >
           <div className="h-[22vw] w-[30vw] absolute top-[-5vw] mobile:w-[80vw] mobile:h-[80vw] tablet:top-[10%]">
             <Image fill src={img} alt={heading} className="object-contain group-hover:scale-[1.2] transition-all duration-500" />
@@ -105,7 +105,7 @@ const Product = () => {
         const images = gsap.utils.toArray(`.${styles.wheelCard}`); // Scoped class for wheelCard
   
         const setup = () => {
-          const radius = wheel.offsetWidth / 1;
+          const radius = wheel.offsetWidth / 1.1;
           const center = wheel.offsetWidth / 2;
           const total = images.length;
           const slice = (0.49 * Math.PI) / total;
@@ -129,7 +129,7 @@ const Product = () => {
         window.addEventListener("resize", setup);
   
         gsap.to(`.${styles.wheel}`, {
-          rotate: () => -73,
+          rotate: () => -71,
           ease: "none",
           duration: images.length,
           scrollTrigger: {

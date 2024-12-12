@@ -35,8 +35,8 @@ const Ergonomic = () => {
         <div className="w-screen h-[60vw] container-lg  mobile:h-[340vw] tablet:h-[95vh] ">
           <div className="w-full h-full flex flex-col items-center justify-center relative mobile:justify-between ">
             <div className="w-full h-full flex flex-col items-center mobile:mb-[10vw] mobile:flex mobile:justify-between mobile:h-fit">
-              <h2
-                data-para-anim
+             <h2
+data-para-anim
                 className="title-2 aeonik text-center w-[60%] leading-[1.2] mobile:text-center mobile:w-[90%]"
               >
                 Ergonomic Design For Comfortable Single-Hand Use

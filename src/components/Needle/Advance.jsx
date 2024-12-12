@@ -11,7 +11,7 @@ gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 export default function Advance() {
     paraAnim()
-    imageAnim()
+    // imageAnim()
     if(globalThis.innerWidth<1024){
         useGSAP(()=>{
             const tl = gsap.timeline({
@@ -69,7 +69,8 @@ export default function Advance() {
                 <div className=" suture-container ">
                 <div className=" container-lg virtual rounded-[3vw] relative flex items-center justify-between px-[6%] py-[8%] bg-white/50  border border-gray-200 mobile:pt-[60%] mobile:pb-[20%] mobile:flex-col-reverse mobile:rounded-[6vw] tablet:pt-[10%] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
                     <div className="w-full flex flex-col items-center justify-between gap-[5vw] mobile:gap-[12vw]">
-                        <h2 data-para-anim className="title-2 aeonik mobile:text-center">
+                        <h2
+data-para-anim className="title-2 aeonik mobile:text-center">
                             
                         Advanced Wound Closure
                             

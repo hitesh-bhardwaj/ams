@@ -24,7 +24,8 @@ export default function CardsCarousel() {
         <Media greaterThan="tablet">
 
         <div className="w-full h-full flex flex-col gap-[4vw] ">
-          <h2 data-para-anim className="aeonik title-2 text-center">
+          <h2
+data-para-anim className="aeonik title-2 text-center">
             Our Featured Programs
           </h2>
           <div className="mt-[2vw] fadeUp px-[5vw]">

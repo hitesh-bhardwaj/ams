@@ -22,7 +22,7 @@ export default function career() {
               <Discover />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

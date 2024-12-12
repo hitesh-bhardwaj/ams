@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="px-[12%] relative mobile:px-[5vw] mobile:w-[100vw] tablet:px-[10%] ">
             <div className="flex h-dvh w-full justify-start items-center mobile:h-screen tablet:h-[60vh]">
               <div className="w-[55%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4">
-                <h1 data-para-anim className="title-1 aeonik drop-shadow-md overflow-hidden mobile:text-center mobile:text-[15vw]">
+                <h1 data-para-anim className="title-1 aeonik drop-shadow-md mobile:text-center mobile:text-[15vw]">
                     Advancing the way we care
                 </h1>
                 <p  className="font-light max-w-[30vw] text-[1.25vw] mt-[4vw] mb-[4vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[5vw] mobile:mb-[15vw]  tablet:text-[2vw] tablet:max-w-[40vw]">

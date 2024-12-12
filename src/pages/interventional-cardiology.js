@@ -71,7 +71,7 @@ export default function ic() {
               <Portfolio />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

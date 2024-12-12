@@ -19,7 +19,8 @@ const NextGeneration = () => {
         
         <div className='w-full h-full relative px-[3%] py-[10%] pb-[8%] flex justify-center gap-[4vw] flex-col  items-center  z-10 mobile:gap-[15vw] mobile:pb-[30%]'>
           <div className="tablet:w-full tablet:flex tablet:justify-center mobile:w-[75vw]">
-            <h2 data-para-anim className="title-2 aeonik text-center z-10 ">
+            <h2
+data-para-anim className="title-2 aeonik text-center z-10 ">
               The Next Generation of Needle Technology
             </h2>
           </div>

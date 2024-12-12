@@ -17,8 +17,8 @@ const Performance = () => {
         <div className="w-screen h-full container-lg z-[5] mobile:h-full tablet:h-[70vh] ">
           <div className="w-full h-full flex flex-col items-center justify-center pb-[5vw] tablet:justify-start ">
             <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit tablet:h-fit ">
-              <h2
-                data-para-anim
+             <h2
+data-para-anim
                 className=" w-[70%] text-[3.95vw] font-light leading-[1.25] aeonik text-center text-white  mobile:text-center mobile:w-full mobile:text-[10.2vw]"
               >
               ADVA PRO, the Performance PRO for Complex Anatomies

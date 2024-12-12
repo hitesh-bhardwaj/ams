@@ -32,7 +32,8 @@ const Capabilities = () => {
       <section id='capabilities'>
         <div className='container-lg flex flex-col items-center justify-center py-[7%] mobile:py-[15%]'>
           <div>
-            <h2 data-para-anim className="text-[6vw] mobile:text-[12vw] font-light aeonik mobile:mb-[10vw] ">
+            <h2
+data-para-anim className="text-[6vw] mobile:text-[12vw] font-light aeonik mobile:mb-[10vw] ">
               <span>Our Capabilities</span>
             </h2>
           </div>

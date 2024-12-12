@@ -55,7 +55,7 @@ export default function needle() {
               <Advance />
             </main>
           </Layout>
-          <Pixifinal/>
+          {/* <Pixifinal/> */}
         
     </>
   );

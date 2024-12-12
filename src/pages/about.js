@@ -27,7 +27,7 @@ export default function about() {
           <Connecting />
         </main>
       </Layout>
-      <Pixifinal/>
+      {/* <Pixifinal/> */}
     </>
   )
 }

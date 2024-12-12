@@ -7,6 +7,8 @@ import Pixifinal from "@/components/Pixifinal";
 import { ReactLenis } from "lenis/react";
 import ScrollToTop from "@/components/ScrollToTop";
 
+
+
 export default function App({ Component, pageProps, router }) {
 
   return (

@@ -26,7 +26,7 @@ const Unique = () => {
       <div className="w-full h-full flex flex-col items-center justify-center relative">
         <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:w-[90%]">
           <h2
-            data-para-anim
+data-para-anim
             className="title-2 aeonik text-center mobile:text-center"
           >
             Unique Design, Universal Benefits

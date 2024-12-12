@@ -86,8 +86,8 @@ const Precision = () => {
         <div className="w-screen h-full container-lg  overflow-hidden  mobile:h-[130vh] tablet:h-[70%]">
           <div className="w-full h-full flex flex-col items-center justify-center relative mobile:static">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
-              <h2
-                data-para-anim
+             <h2
+data-para-anim
                 className="title-2 aeonik text-center mobile:text-center "
               >
                 Unmatched precision for every procedure

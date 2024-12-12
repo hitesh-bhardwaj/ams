@@ -34,7 +34,7 @@ const Hemostasis = () => {
       <div className="w-full h-full flex flex-col items-center justify-center relative  tablet:py-0">
         <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-0 mobile:flex mobile:justify-start tablet:justify-start">
           <h2
-            data-para-anim
+data-para-anim
             className="title-2 aeonik text-center w-[60%] mobile:text-center mobile:w-[90%]"
           >
            Hemostasis valve

@@ -103,7 +103,7 @@ const Versatility = () => {
       <div className="w-full h-full flex flex-col items-center justify-center relative gap-[5vw] py-[5vw] mobile:h-fit mobile:static">
         <div className="w-full h-full flex flex-col items-center mobile:mb-[10vw] mobile:flex mobile:justify-center">
           <h2
-            data-para-anim
+data-para-anim
             className="title-2 aeonik text-center w-[60%] mobile:text-center mobile:w-full"
           >
             Versatility Meets Strength

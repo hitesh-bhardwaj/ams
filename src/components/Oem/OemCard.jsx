@@ -23,7 +23,8 @@ export default function OemCard() {
             </div>
 
             <div className={`flex flex-col w-[43%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] tablet:mt-[2vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw]`}>
-              <h2 data-para-anim className='text-[2.5vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation'>Research & Development</h2>
+              <h2
+data-para-anim className='text-[2.5vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation'>Research & Development</h2>
               <p  className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full text-justify mobile:text-center mobile:leading-[1.6]'>
                 <span data-para-anim className='para-animation block'>At AMS, we’re setting new standards in medical research and development. Our advanced R&D facility paves the way for new therapies and enhanced treatment outcomes through insight-driven medical device technology and innovation.</span>
               </p>

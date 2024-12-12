@@ -175,23 +175,23 @@
     .btn {
      
       height: 14.2vw;
-     
+     margin-top: 1%;
       color: black;
-      font-size: 5.2vw;
-     
+      font-size: 5vw;
+     font-weight: 300;
       padding-left: 12vw;
       transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
     .btn .btnText{
       padding-right: 7.5vw;
-      padding-left: 0.5vw;
+      padding-left: 3vw;
       width: 100%;
       line-height: 1;
       position: relative;
       z-index: 2;
     }
     .btn .btnCircle {
-      clip-path: inset(10% calc(100% - 11vw) 10% 0.5vw round 1000px);
+      clip-path: inset(10% calc(100% - 12.3vw) 10% 1.4vw round 1000px);
       position: absolute;
       inset: 0px;
       border-radius: 1000px;
@@ -208,6 +208,6 @@
       width: 3.5vw;
       height: 3.5vw;
       overflow: hidden;
-      margin-left: 4vw;
+      margin-left: 5vw;
     }
   }

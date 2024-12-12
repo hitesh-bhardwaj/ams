@@ -7,31 +7,31 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = () => {
   paraAnim();
-  useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "hero-container",
-        scrub: true,
-      },
-    });
-    tl.to(".hero-img", {
-      yPercent: 60,
-    });
-    gsap.fromTo(
-      ".hero-img",
-      {
-        scale: 1.2,
-        yPercent: -10,
-      },
-      {
-        scale: 1.1,
-        yPercent: 0,
-        duration: 1,
-        delay: 0.1,
-        ease: "power3.out",
-      }
-    );
-  });
+  // useGSAP(() => {
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: "hero-container",
+  //       scrub: true,
+  //     },
+  //   });
+  //   tl.to(".hero-img", {
+  //     yPercent: 60,
+  //   });
+  //   gsap.fromTo(
+  //     ".hero-img",
+  //     {
+  //       scale: 1.2,
+  //       yPercent: -10,
+  //     },
+  //     {
+  //       scale: 1.1,
+  //       yPercent: 0,
+  //       duration: 1,
+  //       delay: 0.1,
+  //       ease: "power3.out",
+  //     }
+  //   );
+  // });
   return (
     <section className=" mb-[5%] hero-container mobile:mb-[15%]" id="hero">
       <div className="w-[100vw] h-[110vh] relative overflow-hidden tablet:h-[50vh]">
@@ -52,7 +52,8 @@ const Hero = () => {
                 
                 className={`title-1 aeonik drop-shadow-lg  leading-[1] tablet:w-full w-[80%] mobile:w-full mobile:text-center`}
               >
-                <span data-para-anim className={`leading-[1.3] overflow-hidden text-[#111111]`}>
+                <span
+data-para-anim className={`leading-[1.3] overflow-hidden text-[#111111]`}>
                 Join Our Mission to Create a Healthier World
                 
             

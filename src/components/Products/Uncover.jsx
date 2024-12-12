@@ -58,7 +58,8 @@ const Uncover = () => {
     <section id="uncover" className="mobile:pb-[20%] py-[5%]">
       <div className=" flex flex-col items-center justify-center px-[4%]  pb-[4%]">
         <div className="mobile:mb-[7vw]">
-          <h2 data-para-anim className="title-2 aeonik  ">
+          <h2
+data-para-anim className="title-2 aeonik  ">
             Uncover More
           </h2>
         </div>

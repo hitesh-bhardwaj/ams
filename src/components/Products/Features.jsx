@@ -60,7 +60,8 @@ const Features = ({ features }) => {
         <div className='h-full w-screen container-lg tablet:h-full mobile:hidden'>
           <div className='h-full w-full border rounded-[3vw] py-[4vw] flex flex-col bg-white/50 items-center justify-center gap-[4vw] tablet:py-[5vw] tablet:h-[60%]'>
             <div>
-              <h2 data-para-anim className='title-2 aeonik'>Key Features</h2>
+              <h2
+data-para-anim className='title-2 aeonik'>Key Features</h2>
             </div>
             <div className='flex items-center justify-evenly w-full feature-card-container tablet:flex-wrap tablet:justify-center tablet:items-start'>
               {features.map((feature, index) => (

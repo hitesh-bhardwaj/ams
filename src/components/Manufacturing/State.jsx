@@ -49,7 +49,8 @@ export default function State() {
             <div
               className={`flex flex-col w-[50%] ml-[5%] text-start items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
-              <h2 data-para-anim
+              <h2
+data-para-anim
                 className={`text-[3vw] font-light aeonik  text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 State Of The Art Excellence
@@ -85,7 +86,8 @@ export default function State() {
             <div
               className={`flex flex-col w-[40%]  items-left  text-start  justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
-              <h2 data-para-anim
+              <h2
+data-para-anim
                 className={`text-[3vw] font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 Cultivating High Standards
@@ -116,7 +118,8 @@ export default function State() {
             <div
               className={`flex flex-col  text-start  w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
-              <h2 data-para-anim
+              <h2
+data-para-anim
                 className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 Commitment to Quality
@@ -147,7 +150,8 @@ export default function State() {
             <div
               className={`flex flex-col w-[50%] items-left  text-start  justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
-              <h2 data-para-anim
+              <h2
+data-para-anim
                 className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                 AMS OEM Solutions
@@ -178,7 +182,8 @@ export default function State() {
             <div
               className={`flex flex-col w-[50%]  text-start  ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
-              <h2 data-para-anim
+              <h2
+data-para-anim
                 className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
                Logistical Precision

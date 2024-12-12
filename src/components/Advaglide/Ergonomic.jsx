@@ -12,7 +12,7 @@ const Ergonomic = () => {
       >
         <div className="w-full container-lg flex justify-center">
           <h2
-            data-para-anim
+data-para-anim
             className="title-2 w-[60%] font-light aeonik text-center z-[10] mobile:w-[90%] tablet:text-[7vw] tablet:w-[90%]"
           >
             Revolutionised for the Most Challenging Environments

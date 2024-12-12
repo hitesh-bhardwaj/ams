@@ -13,8 +13,8 @@ const Macroporous = () => {
         <div className="w-screen h-screen container-lg z-[5] mobile:h-full tablet:h-full">
           <div className="w-full h-full flex flex-col items-center justify-center pb-[5vw] tablet:justify-start mobile:justify-start mobile:h-fit ">
             <div className="w-full h-full flex flex-col items-center justify-start mobile:mb-[10vw] mobile:flex  mobile:h-fit tablet:h-fit tablet:flex tablet:justify-center">
-              <h2
-                data-para-anim
+             <h2
+data-para-anim
                 className=" w-[70%] text-[3.95vw] font-light leading-[1.25] aeonik text-center text-[#111111]  mobile:text-center mobile:w-full mobile:text-[11vw]  tablet:text-[7vw]"
               >
                 ADVAMESH Macroporous

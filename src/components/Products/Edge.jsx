@@ -45,7 +45,8 @@ const Edge = ({ sectionheading, card1, card2, card3,visibility }) => {
         <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] tablet:mb-0">
           <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] tablet:justify-between">
             <div className="w-full h-full mobile:mb-[10vw] mobile:flex mobile:justify-center">
-              <h2 data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectionheading}</h2>
+              <h2
+data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectionheading}</h2>
             </div>
 
             <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">

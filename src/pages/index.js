@@ -49,7 +49,7 @@ export default function Home() {
   });
 
   fadeup()
-  imageAnim()
+  // imageAnim()
 
   return (
     <>
@@ -64,7 +64,7 @@ export default function Home() {
           <Facility />
         </main>
       </Layout>
-      <Pixifinal/>
+      {/* <Pixifinal/> */}
     </>
   );
 }

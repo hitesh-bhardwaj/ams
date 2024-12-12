@@ -35,7 +35,7 @@ export function paraAnim() {
 export function titleAnim() {
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const paraAnimations = document.querySelectorAll("[data-title-anim]");
+      const paraAnimations = document.querySelectorAll("[data-para-anim]");
       paraAnimations.forEach((paraAnimation) => {
         SplitInLine(paraAnimation);
         const paraLine = paraAnimation.querySelectorAll(".word");
@@ -45,10 +45,10 @@ export function titleAnim() {
             start: "top 80%",
           },
          
-          yPercent: 100,
           duration: 0.8,
-          stagger: 0.05,
-          // ease: "power4.inOut", // Assuming `primaryEase` is `power3.Out`
+        yPercent: 100,
+        stagger: 0.05,
+        ease: "power3.out", // Assuming `primaryEase` is `power3.Out`
         });
       });
     });
@@ -56,52 +56,52 @@ export function titleAnim() {
   }, []);
 }
 
-export function imageAnim() {
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const images = document.querySelectorAll(".imageanim");
-      images.forEach((img) => {
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: img,
-            start: globalThis.innerWidth <= 541 ? "30% bottom" : "top 70%",
-            end: globalThis.innerWidth <= 1023 ? "bottom top" : "+=2000 top",
-            scrub: true,
-            // markers:true
-          },
-        });
-        if (globalThis.innerWidth <= 541) {
-          tl.to(img, {
-            yPercent: 40,
-            scale:1.2,
-            delay: 0,
-          });
-        } else if(globalThis.innerWidth<=1024){
-          tl.to(img, {
-            scale: 1.2,
-            delay: 0,
-          }).to(img, {
-            yPercent: 20,
-            delay: -0.5,
-          });
+// export function // imageAnim() {
+//   useEffect(() => {
+//     const ctx = gsap.context(() => {
+//       const images = document.querySelectorAll(".imageanim");
+//       images.forEach((img) => {
+//         const tl = gsap.timeline({
+//           scrollTrigger: {
+//             trigger: img,
+//             start: globalThis.innerWidth <= 541 ? "30% bottom" : "top 70%",
+//             end: globalThis.innerWidth <= 1023 ? "bottom top" : "+=2000 top",
+//             scrub: true,
+//             // markers:true
+//           },
+//         });
+//         if (globalThis.innerWidth <= 541) {
+//           tl.to(img, {
+//             yPercent: 40,
+//             scale:1.2,
+//             delay: 0,
+//           });
+//         } else if(globalThis.innerWidth<=1024){
+//           tl.to(img, {
+//             scale: 1.2,
+//             delay: 0,
+//           }).to(img, {
+//             yPercent: 20,
+//             delay: -0.5,
+//           });
 
-        } 
+//         } 
           
           
-          else{
-          tl.to(img, {
-            scale: 1.1,
-            delay: -1,
-          }).to(img, {
-            yPercent: 30,
-            delay: -1,
-          });
-        }
-      });
-    });
-    return () => ctx.revert();
-  }, []);
-}
+//           else{
+//           tl.to(img, {
+//             scale: 1.1,
+//             delay: -1,
+//           }).to(img, {
+//             yPercent: 30,
+//             delay: -1,
+//           });
+//         }
+//       });
+//     });
+//     return () => ctx.revert();
+//   }, []);
+// }
 export function genImageAnim() {
   useEffect(() => {
     if(globalThis.innerWidth>542){

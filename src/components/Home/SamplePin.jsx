@@ -95,7 +95,7 @@ const GalleryComponent = () => {
             <div className="detailsWrapper w-[70%]">
               <div className="space-y-[3vw] mobile:space-y-[5vw] tablet:space-y-[3vw] w-full h-screen flex flex-col justify-center">
                 <h2
-                  data-para-anim
+                 data-para-anim
                   className="title-2 aeonik mobile:text-center"
                 >
                   Ushering in the Next Generation of Medical Technology
@@ -202,7 +202,7 @@ const GalleryComponent = () => {
                 />
               </div>
               <h2
-                data-para-anim
+               data-para-anim
                 className="title-2 aeonik font-light text-center"
               >
                 Ushering in the Next Generation of Medical Technology
@@ -231,7 +231,7 @@ const GalleryComponent = () => {
                 />
               </div>
               <h2
-                data-para-anim
+               data-para-anim
                 className="title-2 aeonik font-light text-center"
               >
                 Building World Class Capability
@@ -258,8 +258,7 @@ const GalleryComponent = () => {
                   fill
                 />
               </div>
-              <h2
-                data-para-anim
+             <h2 data-para-anim
                 className="title-2 aeonik font-light text-center"
               >
                 Robust Manufacturing Processes
@@ -298,8 +297,7 @@ const GalleryComponent = () => {
                   loading="lazy"
                 />
               </div>
-              <h2
-                data-para-anim
+             <h2 data-para-anim
                 className="title-2 aeonik font-light text-center"
               >
                 Ushering in the Next Generation of Medical Technology
@@ -327,8 +325,7 @@ const GalleryComponent = () => {
                   fill
                 />
               </div>
-              <h2
-                data-para-anim
+             <h2 data-para-anim
                 className="title-2 aeonik font-light text-center"
               >
                 Building World Class Capability
@@ -355,8 +352,7 @@ const GalleryComponent = () => {
                   fill
                 />
               </div>
-              <h2
-                data-para-anim
+             <h2 data-para-anim
                 className="title-2 aeonik font-light text-center"
               >
                 Robust Manufacturing Processes

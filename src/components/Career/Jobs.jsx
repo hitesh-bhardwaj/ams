@@ -19,7 +19,8 @@ const JobCard =({dept, designation, location})=>{
               {dept}
             </div>
             <div className="w-[80%]">
-              <h2 data-para-anim className="text-[2.2vw] leading-[1.3] font-light text-[#111111] mobile:text-[8.3vw] tablet:text-[4.5vw]">
+              <h2
+data-para-anim className="text-[2.2vw] leading-[1.3] font-light text-[#111111] mobile:text-[8.3vw] tablet:text-[4.5vw]">
                 {designation} 
               </h2>
             </div>
@@ -58,7 +59,8 @@ const Jobs = () => {
     <section id="jobs">
       <div className="container-sm mb-[10%] mobile:py-[10%] mobile:pb-[15%] mobile:flex mobile:flex-col mobile:gap-[7vw] tablet:mt-[10%] tablet:mb-[5%] ">
         <div className=" flex items-center justify-center tablet:mb-[8vw] ">
-          <h2 data-para-anim className="title-2 aeonik ">
+          <h2
+data-para-anim className="title-2 aeonik ">
             Featured Jobs
           </h2>
         </div>
