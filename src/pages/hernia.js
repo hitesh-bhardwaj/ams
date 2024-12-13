@@ -62,7 +62,7 @@ export default function hernia() {
                 sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[30%]"}
               />
-              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"} width={"45%"}/>
+              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"} width={"35%"}/>
               <Product />
 
               <Portfolio />

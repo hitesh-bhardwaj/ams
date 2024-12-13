@@ -42,7 +42,7 @@ function FeatureCards() {
           <div className="container-lg flex flex-col h-full w-full items-center gap-[5vw] justify-between">
             <h2
 data-para-anim className="aeonik title-2">
-              UNMATCHED PRECISION WITH AMS NEEDLES
+              Unmatched Precision With AMS Needles
             </h2>
             <div className="w-full flex justify-between">
               {cardData.map((card, index) => (
@@ -59,7 +59,7 @@ data-para-anim className="aeonik title-2">
                     </h4>
                     <p
                       data-para-anim
-                      className="text-[#143CA3] text-[1.2vw] group-hover:hidden"
+                      className="text-[#143CA3] text-[1.2vw] group-hover:hidden font-light"
                     >
                       {card.description}
                     </p>
@@ -78,7 +78,7 @@ data-para-anim className="aeonik title-2">
                       />
                     </div>
                     <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] translate-y-[100%] origin-bottom group-hover:translate-y-[0] transition-all duration-300 ease-out">
-                      <div className="w-full h-full flex flex-col gap-[1vw] px-[3vw] py-[2vw]">
+                      <div className="w-full h-full flex flex-col gap-[1vw] pl-[3vw] pr-[1vw] py-[2vw]">
                         <h4
                           data-para-anim
                           className="text-[1.8vw] aeonik font-light"

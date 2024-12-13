@@ -56,7 +56,7 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode}
             <div className="w-[90%] mobile:w-full">
               <h1
                 
-                className={`title-1 w-full aeonik drop-shadow-lg  leading-[1] ${titleHidden}`}
+                className={`title-1 w-full aeonik title-shadow   leading-[1] ${titleHidden}`}
               >
                 <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center ${titleColor?"text-black":"title-shadow"}`}>
                  {title}

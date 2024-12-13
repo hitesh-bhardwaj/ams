@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
 
 
 const SutureCarouselFirst = () => {
@@ -9,32 +10,38 @@ const SutureCarouselFirst = () => {
     {
       iconSrc: "/assets/woundclosure/advacat-box.png",
       title: "Catgut - Chromic",
-      cardColor:"from-yellow-500/30"
+      cardColor:"from-yellow-500/30",
+      src:"/advacat"
     },
     {
       iconSrc: "/assets/woundclosure/advacrylplus-box.png",
       title: "Antibacterial Polyglactine 910",
-      cardColor:"from-purple-500/30"
+      cardColor:"from-purple-500/30",
+       src:"/advacrylplus"
     },
     {
       iconSrc: "/assets/woundclosure/advapd-box.png",
       title: "Polydioxanone",
-      cardColor:"from-gray-500/30"
+      cardColor:"from-gray-500/30",
+       src:"/advapd"
     },
     {
       iconSrc: "/assets/woundclosure/advacryl-box.png",
       title: "Polyglactine 910",
-      cardColor:"from-purple-500/30"
+      cardColor:"from-purple-500/30",
+       src:"/advacryl"
     },
     {
       iconSrc: "/assets/woundclosure/advamryl-box.png",
       title: "Poliglecaprone 25",
-      cardColor:"from-orange-500/30"
+      cardColor:"from-orange-500/30",
+       src:"/advamryl"
     },
     {
       iconSrc: "/assets/woundclosure/advacrylrapid-box.png",
       title: "Fast Absorbing Polyglactine 910",
-      cardColor:"from-red-500/30"
+      cardColor:"from-red-500/30",
+       src:"/advacryl-rapid"
     },
     
   ];
@@ -58,7 +65,7 @@ const SutureCarouselFirst = () => {
   };
 
   return (
-    <section className="w-screen h-fit overflow-hidden py-[3%] mobile:h-[240vw] tablet:h-[120vw] mobile:py-[15%] relative tablet:py-[8%] " id="suture-carousel-first">
+    <section className="w-screen h-[55vw] overflow-hidden py-[3%] mobile:h-[240vw] tablet:h-[120vw] mobile:py-[15%] relative tablet:py-[8%] " id="suture-carousel-first">
       <div className="w-full h-fit flex flex-col gap-[1.5vw] items-center text-center">
         <h2
 data-para-anim className="title-2 aeonik mobile:w-[80%]">Absorbable Sutures</h2>
@@ -70,7 +77,7 @@ data-para-anim className="title-2 aeonik mobile:w-[80%]">Absorbable Sutures</h2>
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={onSlideChange}
-        spaceBetween={100}
+        spaceBetween={150}
         slidesPerView={5}
         centeredSlides={true}
         roundLengths={true}
@@ -79,21 +86,22 @@ data-para-anim className="title-2 aeonik mobile:w-[80%]">Absorbable Sutures</h2>
           320: { slidesPerView: 1, spaceBetween: 0 },
           640: { slidesPerView: 1, spaceBetween: 0 },
           // 1024: { slidesPerView: 2, spaceBetween: 0 },
-          1280: { slidesPerView: 2.7, spaceBetween: 50 },
+          1280: { slidesPerView: 2.7, spaceBetween: 150 },
         }}
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index}>
+            <Link href={slide.src}>
             <div
               className={`w-full h-full flex flex-col justify-center items-center  ${
                 activeIndex === index ? "gap-[4vw]" : "gap-0"
               } transition-all duration-300`}
             >
-              <div className={`absolute w-[31.5vw] h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[85vw] tablet:h-[60vw]`}>
+              <div className={`absolute w-full h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[85vw] tablet:h-[60vw]`}>
                   </div>
 
               <div className={`w-fit h-[20vw] flex justify-center items-center mobile:h-[80vw] tablet:h-[30vw] cursor-grab z-[5] mobile:translate-y-[-10%] ${
-                activeIndex === index ? "scale-[1.8] translate-y-[-10%] mobile:scale-[1] tablet:translate-y-0" : "scale-[1]"
+                activeIndex === index ? "scale-[2] translate-y-[-10%] mobile:scale-[1] tablet:translate-y-0" : "scale-[1]"
               } transition-transform duration-300`}>
                 <div className="w-[25vw] h-[20vw] p-[3vw] mobile:w-[100vw] mobile:h-[90vw] tablet:w-[45vw] tablet:h-[35vw] tablet:p-[5vw]">
                   <Image
@@ -113,6 +121,8 @@ data-para-anim className="title-2 aeonik mobile:w-[80%]">Absorbable Sutures</h2>
                 </h3>
               </div>
             </div>
+            
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

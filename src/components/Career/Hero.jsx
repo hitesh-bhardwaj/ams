@@ -4,6 +4,7 @@ import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import LazyVideo from "../layoutComponents/LazyVideo";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = () => {
   paraAnim();
@@ -35,17 +36,29 @@ const Hero = () => {
   return (
     <section className=" mb-[5%] hero-container mobile:mb-[15%]" id="hero">
       <div className="w-[100vw] h-[110vh] relative overflow-hidden tablet:h-[50vh]">
-        <div className="w-screen h-[110vh] absolute tablet:h-[50vh]">
-          <Image data-speed="0.7"
-            className="hero-img absolute object-cover"
-            src="/assets/career/career-bg.png"
+        <div className="w-screen h-[23.5vw] absolute bottom-[-10%] tablet:h-[50vh]">
+          <Image
+            className="hero-img absolute  z-[2]  object-contain"
+            src="/assets/career/career-bg-hero.png"
             alt="Hero Image"
             priority={true}
             fill
           />
         </div>
+        <div className="bg-white/60 absolute w-screen h-[120vh] z-[1] top-0 left-0">
 
-        <div className="px-[12%] relative mobile:px-[5%]">
+        </div>
+        <LazyVideo
+                    poster={"/assets/home/career-poster.webp"}
+                    type="video/mp4"
+                    autoPlay="true"
+                    loop="true"
+                    videoSrc={"/assets/home/career.mp4"}
+                    className='w-full h-full object-cover left-0 top-0 absolute'
+                    />
+        
+
+        <div className="px-[12%] relative mobile:px-[5%] z-[10]">
           <div className="flex h-[120vh] w-full flex-col justify-center items-start tablet:h-[50vh] mobile:h-screen mobile:justify-start mobile:pt-[35vw]">
             <div className="w-full">
               <h1
@@ -66,9 +79,9 @@ data-para-anim className={`leading-[1.3] overflow-hidden text-[#111111]`}>
                 </span>
               </p>
             </div>
-            <div className={`w-full h-fit fadeUp mobile:hidden`}>
+            <div className={`w-full h-fit fadeUp mobile:hidden z-[10]`}>
               <div className="h-[3vw] w-[3vw] relative top-[40%] left-[2%] z-[2] tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[35%] ">
-                <img src="/assets/career/search.png" alt="search-icon" />
+                <img src="/assets/career/search-icon.svg" alt="search-icon" />
               </div>
               <input
                 type="text"

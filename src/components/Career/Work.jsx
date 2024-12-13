@@ -5,12 +5,12 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP,ScrollTrigger)
-import { paraAnim , imgAnim , paraAnimation , fadeUp} from '@/components/gsapAnimations';
+import { paraAnim  , fadeUp} from '@/components/gsapAnimations';
 
 const WorkCard = ({ no, heading, src, para, btn , link,className }) => {
   return (
     <>
-      <div className={`w-[90vw] h-full flex flex-col gap-[4vw] rounded-[50px] pt-[2vw] pb-[5vw] bg-white px-[5vw] shadow-xl border border-black/10 mobile:rounded-[6vw] fadeup tablet:rounded-[3vw] mobile:py-[10vw] `}>
+      <div className={`w-[100vw] h-full flex flex-col gap-[4vw] rounded-[50px] pt-[2vw] pb-[5vw] bg-white px-[5vw] shadow-xl border border-black/10 mobile:rounded-[6vw] fadeup tablet:rounded-[3vw] mobile:py-[10vw] `}>
         <div className="flex gap-[1vw] mobile:gap-[2vw] w-full mobile:justify-center">
           <div className="border-[1px] border-[#111111] rounded-[50%] h-[1.5vw] w-[1.5vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] mobile:mt-0 tablet:w-[2.5vw] tablet:h-[2.5vw] fadeup">
             {no}
@@ -25,7 +25,7 @@ const WorkCard = ({ no, heading, src, para, btn , link,className }) => {
           <div className="w-[50%] text-[2.5vw] aeonik leading-[1.25]  flex flex-col justify-between gap-[3vw] font-light text-[#111111] mobile:w-full mobile:text-[10vw] mobile:text-center mobile:leading-[1.2] mobile:items-center mobile:gap-[12vw] mobile:py-[10vw] tablet:text-[3.5vw]">
             <p className="overflow-hidden" ><span className="block para-animation">{para}
               </span></p>
-            <PrimaryButton link={`/${link}`} text={btn} className={"mobile:py-[4vw] mobile:px-[7vw] tablet:py-[1.5vw] tablet:px-[3vw] fadeup"} />
+            <PrimaryButton link={`/${link}`} text={btn} className={"mobile:py-[4vw] mobile:px-[7vw] tablet:py-[1.5vw] tablet:px-[3vw]"} />
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@ const WorkCard = ({ no, heading, src, para, btn , link,className }) => {
 
 const Work = () => {
   paraAnim()
-  imgAnim()
+  
   
   fadeUp()
   if(globalThis.innerWidth<1024){
@@ -47,33 +47,28 @@ const Work = () => {
         scrollTrigger:{
           trigger:".works-container",
           pin:true,
-          start:"top top",
+          start:"top -5%",
           end:"bottom -=1000",
           scrub:true,
         }
         
       })
       tl.to(".feature-container2",{
-            yPercent:-95,
-            
+            yPercent:-90,
+            duration:2,
             ease:"power4.out"
             
           })
-          tl.to(".feature-container",{
-            scale:0.90,
-            delay:-0.5
-          })
+          
           tl.to(".feature-container3",{
-            yPercent:-190,
+            yPercent:-180,
+            duration:2,
+            delay:-1,
             ease:"power4.out",
-            delay:-0.3
+            
   
           })
-          tl.to(".feature-container2",{
-            scale:0.95,
-            delay:-0.5
-            
-          })
+          
       
      
     })
@@ -112,7 +107,7 @@ const Work = () => {
        <WorkCard
           no={3}
           heading={"Build Your Future with Us"}
-          src={"/assets/career/career-medical.webp"}
+          src={"/assets/career/career-card-3.png"}
           para={"Be a catalyst for change in the world of medical technology."}
           btn={"Start Your Journey"}
           link={"manufacturing"}

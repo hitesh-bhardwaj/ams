@@ -25,11 +25,11 @@ const PortfolioCard = ({ src, heading, para,textclass }) => {
           alt="Hernia Slider"
           className="rounded-[20px] mobile:object-cover"
         />
-        <div className="absolute top-[30%] left-[10%] flex flex-col gap-[2vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
-          <h2 className={`${textclass} text-[2.8vw] font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]`}>
+        <div className="absolute top-[15%] left-[10%] flex flex-col gap-[2vw] w-[60%]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[10%]">
+          <h2 className={`${textclass} text-[2.8vw] !font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]`}>
             {heading}
           </h2>
-          <p className={`${textclass} text-[1.4vw] font-extralight w-[50%] text-shadow  mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]`}>
+          <p className={`${textclass} text-[1.4vw] font-light w-[80%]  mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]`}>
             {para}
           </p>
         </div>
@@ -62,9 +62,9 @@ const PortfolioSwiper = ({ slidesData, textclass,width }) => {
   };
 
   return (
-    <section id="portfolio-swiper" className="overflow-x-hidden ">
-      <div className="w-full ml-[10%] py-[10%] relative h-full mobile:ml-[0%]">
-        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[8%]  tablet:hidden">
+    <section id="portfolio-swiper" className="overflow-x-hidden bg-white/50 my-[7%] ">
+      <div className="w-full ml-[10%]  pb-[7%] relative h-full mobile:ml-[0%]">
+        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-0  tablet:hidden">
           <p className="text-end">{slidesData[0].title}</p>
         </div>
         <div className="mobile:block hidden w-full px-[5vw] text-center font-light text-[8vw] mb-[12vw]">
@@ -217,7 +217,7 @@ const PortfolioSwiper = ({ slidesData, textclass,width }) => {
                 <SwiperSlide key={index}>
                   <Image
                     src={slide.src}
-                    className="rounded-[20px] cursor-pointer border-[2px] border-white"
+                    className="rounded-[1.2vw] w-[11.5vw] h-[7vw] cursor-pointer border-[2px] border-white"
                     width={280}
                     height={280}
                     alt="small swiper"

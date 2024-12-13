@@ -12,7 +12,7 @@ import { Media } from "@/components/media";
 
 export default function needle() {
   const content = {
-    heading: "QUANTUM LEAP IN NEEDLE TECHNOLOGY",
+    heading: "Quantum Leap In Needle Tech",
     smallpara:
       "Pioneering needle technology stands as the culmination of innovation, surpassing industry leaders in needle penetration force data and ductility. Our extensive studies demonstrate superior consistency, ensuring no degradation in strength across multiple passes.",
     bigpara:
@@ -51,7 +51,7 @@ export default function needle() {
                 sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[40%]"}
               />
-              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"45%"}/>
+              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"35%"}/>
               <FeatureCards />
               <Advance />
             </main>

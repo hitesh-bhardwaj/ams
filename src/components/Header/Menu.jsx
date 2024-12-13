@@ -253,11 +253,11 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     <li className="footer-link">
                       <Link
                         prefetch={false}
-                        href="/wound-closure"
+                        href="/wound-care"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
                         <span
-                          onClick={() => handleLinkClick("/wound-closure")}
+                          onClick={() => handleLinkClick("/wound-care")}
                           data-attr="Wound Care"
                           className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
                         >

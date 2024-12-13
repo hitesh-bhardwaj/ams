@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
 
 
 const SutureCarouselSecond = () => {
@@ -9,32 +10,39 @@ const SutureCarouselSecond = () => {
     {
       iconSrc: "/assets/woundclosure/bondtape-box.png",
       title: "Catgut - Chromic",
-      cardColor:"from-yellow-500/30"
+      cardColor:"from-yellow-500/30",
+       src:"/bondtape"
     },
     {
       iconSrc: "/assets/woundclosure/advasyl-box.png",
       title: "Antibacterial Polyglactine 910",
-      cardColor:"from-blue-500/20"
+      cardColor:"from-blue-500/20",
+       src:"/advasyl"
     },
     {
       iconSrc: "/assets/woundclosure/advabond-box.png",
       title: "Polydioxanone",
-      cardColor:"from-orange-500/30"
+      cardColor:"from-orange-500/30",
+       src:"/advabond"
     },
     {
       iconSrc: "/assets/woundclosure/advalene-box.png",
       title: "Polyglactine 910",
-      cardColor:"from-blue-500/30"
+      cardColor:"from-blue-500/30",
+       src:"/advalene"
+
     },
     {
       iconSrc: "/assets/woundclosure/advapacer-box.png",
       title: "Poliglecaprone 25",
-      cardColor:"from-yellow-500/40"
+      cardColor:"from-yellow-500/40",
+       src:"/advapacer-and-wax"
     },
     {
       iconSrc: "/assets/woundclosure/advawax-box.png",
       title: "Fast Absorbing Polyglactine 910",
-      cardColor:"from-yellow-200/60"
+      cardColor:"from-yellow-200/60",
+       src:"/advapacer-and-wax"
     },
     
   ];
@@ -59,7 +67,7 @@ const SutureCarouselSecond = () => {
   };
 
   return (
-    <section className="w-screen h-fit overflow-hidden mobile:h-[240vw] mobile:py-[10%] relative tablet:py-[7%] tablet:h-[120vw] py-[3%]" id="suture-carousel-second">
+    <section className="w-screen h-[70vw] overflow-hidden mobile:h-[240vw] mobile:py-[10%] relative tablet:py-[7%] tablet:h-[120vw] py-[8%]" id="suture-carousel-second">
       <div className="w-full h-fit flex flex-col gap-[1.5vw] items-center">
         <h2
 data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutures</h2>
@@ -80,21 +88,22 @@ data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutu
           320: { slidesPerView: 1, spaceBetween: 0 },
           640: { slidesPerView: 1, spaceBetween: 0 },
       
-          1280: { slidesPerView: 2.7, spaceBetween: 50 },
+          1280: { slidesPerView: 2.7, spaceBetween: 150 },
         }}
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index}>
+            <Link href={slide.src}>
             <div
               className={`w-full h-full flex flex-col justify-center items-center  ${
                 activeIndex === index ? "gap-[4vw]" : "gap-0"
               } transition-all duration-300`}
             >
-              <div className={`absolute w-[31.5vw] h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[90vw] mobile:h-[100vw] tablet:w-[85vw] tablet:h-[60vw]`}>
+              <div className={`absolute w-full h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[90vw] mobile:h-[100vw] tablet:w-[85vw] tablet:h-[60vw]`}>
                   </div>
-
+             
               <div className={`w-fit h-[20vw] flex justify-center items-center mobile:h-[80vw] tablet:h-[30vw] cursor-grab z-[5] mobile:translate-y-[-10%] ${
-                activeIndex === index ? "scale-[1.8] translate-y-[-10%] mobile:scale-[1] tablet:translate-y-0" : "scale-[1]"
+                activeIndex === index ? "scale-[2] translate-y-[-10%] mobile:scale-[1] tablet:translate-y-0" : "scale-[1]"
               } transition-transform duration-300`}>
                 <div className="w-[25vw] h-[20vw] p-[3vw] mobile:w-[100vw] mobile:h-[90vw] tablet:w-[45vw] tablet:h-[35vw] tablet:p-[5vw] ">
                   <Image
@@ -113,7 +122,9 @@ data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutu
                   {slide.title}
                 </h3>
               </div>
+
             </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -208,7 +208,7 @@ export default function Footer() {
                   <li className="footer-link">
                     <Link
                       className="content-p text-head font-light mobile:text-[5vw]"
-                      href="/wound-closure"
+                      href="/wound-care"
                     >
                       <span data-para-anim data-attr="Wound Closure">
                         Wound Closure

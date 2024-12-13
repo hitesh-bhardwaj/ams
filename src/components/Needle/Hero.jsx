@@ -7,36 +7,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = () => {
   paraAnim();
-  useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "hero-container",
-        scrub: true,
-      },
-    });
-    // tl.to(".hero-img", {
-    //   yPercent: 60,
-    // });
-    tl.to(".hero-needle",{
-      yPercent:30,
-      delay:-1
-    })
-
-    gsap.fromTo(
-      ".hero-img",
-      {
-        scale: 1.2,
-        yPercent: -10,
-      },
-      {
-        scale: 1.1,
-        yPercent: 0,
-        duration: 1,
-        delay: 0.1,
-        ease: "power3.out",
-      }
-    );
-  });
+  
   return (
     <section className=" hero-container mobile:mb-[15%]" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
@@ -50,8 +21,8 @@ const Hero = () => {
           />
         </div>
         
-        <div className="w-[100vw] h-screen absolute top-0 right-[-10%] z-[20] tablet:h-[50vh] tablet:z-0 mobile:hidden hero-needle">
-            <Image src="/assets/needle/hero-needles.webp" fill className="object-cover absolute" alt="hero-needles"/>
+        <div className="w-[100vw] h-screen absolute top-[-5%] right-0 z-[20] tablet:h-[50vh] tablet:z-0 mobile:hidden hero-needle">
+            <Image src="/assets/needle/hero-needles.png" fill className="object-cover absolute" alt="hero-needles"/>
 
         </div>
         <div className="w-[100vw] h-screen top-0 left-0 absolute hidden mobile:block">
