@@ -1,101 +1,72 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Image from "next/image";
 import Link from "next/link";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-import { Media } from "../media";
-// import { paraAnim , fadeUp } from "../gsapAnimations";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+const Portfolio = ({ currentlink }) => {
 
+  const filteredContent = content.filter((item) => item.link !== currentlink).slice(0, 4);
 
-const PortfolioCard =({img, txt , className,src})=>{
   return (
-    <>
-    <Link href={src}>
-    <div className={` w-[20vw] h-[11.5vw] relative flex justify-center items-center  text-center text-[#fff] cursor-pointer rounded-[40px] overflow-hidden ${className} portfolio-card group mobile:w-[80vw] mobile:h-[80vw] mobile:rounded-[6vw] tablet:w-[43vw] tablet:h-[40vw] tablet:rounded-[3vw] fadeup`}>
-          <Image
-            src={img}
-           fill
-            alt="portfolio-1" 
-            className="group-hover:scale-[1.2] duration-300 object-cover "
-          />
-          <div className="imgoverlay glassmorphism absolute w-[10vw] h-[11.5vw]  group-hover:left-[-50%] duration-300 block top-0 left-[0%] mobile:w-[85vw] mobile:h-[35vw] mobile:left-0 mobile:bottom-0 mobile:top-auto tablet:w-[43vw] tablet:h-[20vw] tablet:left-0 tablet:bottom-0 tablet:top-auto"></div>
-          <div className="flex justify-center items-center absolute  mobile:bottom-[5%] tablet:bottom-[10%] tablet:w-[80%]">
-          <p
-           data-para-anim className=" font-light text-[1.2vw] text-shadow mobile:text-[8vw] mobile:leading-[1.25] tablet:text-[3.5vw] tablet:leading-[1.2]"
-          >
-           {txt}
-          </p>
-          </div>
-        </div>
-    </Link>
-  
-    </>
-  )
-}
-
-const Portfolio = () => {
-  // paraAnim()
-  // fadeUp()
-  if(globalThis.innerWidth<1024){
-
-  }
-  else{
-    useGSAP(()=>{
-      gsap.from(".portfolio-card",{
-        yPercent:50,
-        opacity:0,
-        duration:0.7,
-        scrollTrigger:{
-          trigger:".portfolio-card-container",
-          start:"top 80%",
-          end:"bottom 40%",
-         
-        },
-        stagger:0.1
-        
-      })
-  
-    })
-
-  }
-  return (
-    <section id="portfolio" className="pb-[5%]">
-      <div  className=" flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] mobile:pt-[5%] tablet:px-[4%] mobile:px-0 overflow-hidden">
-      <div>
-        <h2 data-para-anim className="title-2 aeonik mobile:text-center ">
+    <section id="portfolio" className="pb-[8%]">
+      <div className="flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] mobile:pt-[5%] tablet:px-[4%] mobile:px-0 overflow-hidden">
+        <h2 data-para-anim className="title-2 aeonik mobile:text-center">
           Our Advanced Portfolio
         </h2>
-      </div>
-      <Media greaterThan="mobile">
-      <div className="flex items-center justify-between gap-[3vw] mt-[7vw] portfolio-card-container tablet:flex-wrap mobile:hidden">
-       
-        <PortfolioCard img={"/assets/ic/ic-hero-bg.png"} txt = {"Advanced Interventional Cardiology"} src={"/interventional-cardiology"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"} src={"/cardiovascular-solutions"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"} src={"/endo"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"} src={"/hernia"}/>
-      </div>
-
-      </Media>
-      
-      <div className="w-full mobile:overflow-scroll mobile:mt-[12vw] mobile:pl-[7%] mobile:fadeup mobile:block hidden mobile:pr-[5%] fadeUp mobile:fadeup tablet:hidden overflow-visible ">
-            <div      
-              className=" mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw]  mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw] "
-            >
-             <PortfolioCard img={"/assets/ic/ic-hero-bg.png"} txt = {"Advanced Interventional Cardiology"} src={"/interventional-cardiology"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-2.webp"} txt = {"Advanced Cardiovascular Solutions"} src={"/cardiovascular-solutions"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-3.webp"} txt = {"Advanced Endo Surgery"} src={"/endo"}/>
-        <PortfolioCard img={"/assets/portfolio/portfolio-4.webp"} txt = {"Advanced Hernia Solutions"} src={"/hernia"}/>
-             
-             
-
-            </div>
-          </div>
+        <div className="items-center justify-between grid grid-cols-4 gap-[3vw] mt-[7vw] portfolio-card-container tablet:grid-cols-2 mobile:grid-cols-1 mobile:gap-8">
+          {filteredContent.map((item, index) => (
+            <PortfolioCard key={index} img={item.image} text={item.title} link={item.link} />
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
 export default Portfolio;
+
+const PortfolioCard = ({ img, text, link }) => {
+  return (
+    <>
+      <Link href={link} className="block group w-full">
+        <div className={`h-[11.5vw] w-full relative rounded-[2.5vw] overflow-hidden portfolio-car tablet:h-[24vw] tablet:rounded-[3vw] mobile:h-[45vw] mobile:w-[85vw] mobile:rounded-[6vw] fadeup`}>
+          <Image src={img} width={400} height={225} alt={`${text} image`} className="group-hover:scale-100 scale-110 duration-500 object-cover h-full w-full"
+          />
+          <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center" >
+            <span className="w-[45%] block h-full bg-white/25 backdrop-blur absolute group-hover:w-0 duration-500" />
+            <h6 className="font-light text-[1.2vw] text-white w-full text-center relative z-10 tablet:text-[2.5vw] mobile:text-lg">
+              {text}
+            </h6>
+          </div>
+        </div>
+      </Link>
+    </>
+  )
+}
+
+const content = [
+  {
+    title: "Advanced Interventional Cardiology",
+    image: "/assets/portfolio/Cardiology.png",
+    link: "/interventional-cardiology",
+  },
+  {
+    title: "Advanced Wound Care",
+    image: "/assets/portfolio/WoundCare.png",
+    link: "/wound-care",
+  },
+  {
+    title: "Advanced Cardiovascular Solutions",
+    image: "/assets/portfolio/Cardiovascular.png",
+    link: "/cardiovascular-solutions"
+  },
+  {
+    title: "Advanced Endo Surgery",
+    image: "/assets/portfolio/EndoSurgery.png",
+    link: "/endo"
+  },
+  {
+    title: "Advanced Hernia Solutions",
+    image: "/assets/portfolio/HerniaSolutions.png",
+    link: "/hernia"
+  }
+]

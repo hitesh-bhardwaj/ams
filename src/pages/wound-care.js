@@ -38,9 +38,9 @@ const woundClosure = () => {
             sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
             bParaWidth={"w-[30%]"}
           />
-          <SutureCarouselFirst/>
-          <SutureCarouselSecond/>
-          <Portfolio />
+          <SutureCarouselFirst />
+          <SutureCarouselSecond />
+          <Portfolio currentlink={"/wound-care"} />
         </main>
       </Layout>
     </>

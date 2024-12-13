@@ -29,40 +29,38 @@ export default function cardiovascular() {
       "Steady Performance for Superior confidence",
   };
 
-fadeup()
+  fadeup()
 
   return (
     <>
-      
-          <Layout>
-            <main>
-              <Hero
-                title={hero.title}
-                src={hero.src}
-                content={hero.content}
-                className="hidden"
-                paraWidth={"max-w-[90vw]"}
-                mode={"dark"}
-              />
-              <Genesis content={content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
-                bParaWidth={"w-[30%]"} />
-                <Media at="desktop">
-                <Products/>
-                </Media>
-                <Media at="mobile">
-                <ProductCarousel/> 
-                </Media>
-                <Media at="tablet">
-                <ProductCarousel/> 
-                </Media>
-              <Portfolio/>
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-   <Pixifinal/> 
+
+      <Layout>
+        <main>
+          <Hero
+            title={hero.title}
+            src={hero.src}
+            content={hero.content}
+            className="hidden"
+            paraWidth={"max-w-[90vw]"}
+            mode={"dark"}
+          />
+          <Genesis content={content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
+            bParaWidth={"w-[30%]"} />
+          <Media at="desktop">
+            <Products />
           </Media>
-          
-       
+          <Media at="mobile">
+            <ProductCarousel />
+          </Media>
+          <Media at="tablet">
+            <ProductCarousel />
+          </Media>
+          <Portfolio currentlink={"/cardiovascular-solutions"} />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <Pixifinal />
+      </Media>
     </>
   );
 }

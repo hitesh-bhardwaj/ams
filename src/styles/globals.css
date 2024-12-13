@@ -431,6 +431,7 @@ body{
 .gradient-text {
   background: -webkit-linear-gradient(right,#19516C, #BFF3FE, #9CE1F0 , #275F7B);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
   font-weight: 300;
@@ -440,6 +441,7 @@ body{
 .reloads-text {
   background: -webkit-linear-gradient(left,#459FFF, #459FFF , #FB4BCC, #FB4BCC);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 300;
   display: flex;
@@ -458,6 +460,7 @@ body{
 .advastap-text {
   background: -webkit-linear-gradient(left,#476CBF,#476CBF, #A883D7,#A883D7);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   gap: 0.5rem;
   font-weight: 300;
@@ -480,6 +483,7 @@ body{
 .grip-gradient {
   background: -webkit-linear-gradient(left,#CE71F4,#CE71F4, #EE7891, #EE7891);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .tracking-space{

@@ -48,35 +48,33 @@ export default function ic() {
     },
   ];
   fadeup()
-  
+
   return (
     <>
-  
-          <Layout>
-            <main>
-              <Hero
-                title={hero.title}
-                src={hero.src}
-                content={hero.content}
-                className="hidden"
-                mode={"dark"}
-              />
-              <Genesis
-                content={content}
-                sParaWidth={"w-[40%] ml-[6%] mobile:ml-0 tablet:ml-0"}
-                bParaWidth={"w-[40%]"}
-              />
-              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"} width={"35%"}/>
-              <IcCards />
 
-              <Portfolio />
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-   <Pixifinal/> 
-          </Media>
-          
-        
+      <Layout>
+        <main>
+          <Hero
+            title={hero.title}
+            src={hero.src}
+            content={hero.content}
+            className="hidden"
+            mode={"dark"}
+          />
+          <Genesis
+            content={content}
+            sParaWidth={"w-[40%] ml-[6%] mobile:ml-0 tablet:ml-0"}
+            bParaWidth={"w-[40%]"}
+          />
+          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"} width={"35%"} />
+          <IcCards />
+
+          <Portfolio currentlink={"/interventional-cardiology"} />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <Pixifinal />
+      </Media>
     </>
   );
 }

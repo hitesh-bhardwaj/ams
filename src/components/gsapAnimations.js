@@ -25,13 +25,13 @@ export function paraAnim() {
           yPercent: 100,
           duration: 1,
           stagger: 0.02,
-          // ease: "power4.inOut", // Assuming `primaryEase` is `power3.Out`
         });
       });
     });
     return () => ctx.revert();
   }, []);
 }
+
 export function titleAnim() {
   useEffect(() => {
     const ctx = gsap.context(() => {

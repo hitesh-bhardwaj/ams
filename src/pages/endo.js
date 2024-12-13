@@ -3,77 +3,64 @@
 import Portfolio from "@/components/Endo/Portfolio";
 import Product from "@/components/Endo/Product";
 import Genesis from "@/components/layoutComponents/Genesis";
-import Hero from "@/components/Hero";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
+import { fadeup, paraAnim } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Hero from "@/components/Endo/Hero";
+import OtherProduct from "@/components/Endo/OtherProducts";
 
 
 export default function endo() {
   const content = {
     heading: "Redefining Endo Surgery",
-    smallpara:
-      "At AMS, we are committed to advancing endo surgery with our innovative, dependable, and precision-engineered products. By focusing on advanced technology and stringent quality standards, AMS guarantees that each tool operates with optimal reliability and effectiveness, transforming surgical practices and enhancing patient outcomes. Our continuous efforts in R&D ensure that we stay ahead in providing cutting-edge solutions. We collaborate closely with healthcare professionals to tailor our products to the specific needs of each surgical procedure.",
-    bigpara:
-      "Our extensive range of surgical staplers empowers healthcare professionals to deliver exceptional care with confidence and efficiency.",
+    smallpara: "At AMS, we bring a new standard to endo surgery by addressing the unique demands of modern surgical practices. Our innovative product line of Surgical Stapling and Ligation Solutions are designed to ensure precision across a wide range of procedures. With a focus on ease of use, even in challenging anatomy, our technology empowers surgeons to confidently tackle complex procedures. We’re transforming surgical outcomes and advancing the future of minimally invasive and open surgeries.",
+    bigpara: "Engineered to ensure precise, secure, and consistent performance, with integrated safety mechanisms to minimize risk. Surgeons can rely on our solutions to perform with confidence, ensuring every procedure is completed smoothly and without complications.",
     src: "/assets/endo/endo-redefine.png",
   };
-  const hero = {
-    title: "Breaking New Ground in Endo Surgery",
-    src: "/assets/endo/endo-hero.png",
-    content:
-      "At AMS, we push the boundaries of endo surgery and set new benchmarks in surgical excellence with our innovative and reliable solutions.",
-  };
+
   const slidesData = [
     {
       title: "Your Partner in Surgical Excellence",
       src: "/assets/endo/endo-slider-1.png",
-      heading: "Cutting-Edge Technology for Superior Outcomes",
-      para: "AMS'S ADVASTAP staplers define new standards in surgical safety and efficiency with our advanced technology.",
+      heading: "The Future of Minimally Invasive Surgery",
+      para: "With the ADVASTAP Series and ADVACLIP Technologies, AMS leads the way in delivering innovative stapling and ligation solutions that ensure uncompromising quality and precision to meet the demands of modern surgical procedures. Our unique 3-row stapler range, crafted with insight-driven design, sets a new benchmark in surgical care, empowering surgeons to perform at their best. We are redefining the possibilities of minimally invasive procedures",
     },
     {
       src: "/assets/endo/endo-slider-2.png",
-      heading: "Elevating Surgical Standards",
-      para: "Crafted with cutting-edge technology and engineered by our expert R&D team, enhance patient outcomes through exceptional performance and reliability.",
+      heading: "Accelerating Optimal Outcomes",
+      para: "At AMS, we are dedicated to providing surgical staplers designed to increase efficiency in the operating room and reduce complications. Our solutions aim to promote swift healing and long-term success.",
     },
     {
       src: "/assets/endo/endo-slider-3.png",
       heading: "Why Surgeons Trust AMS",
-      para: "Surgeons rely on AMS for our steadfast commitment to quality, innovation, and comprehensive support for optimal results.",
+      para: "From our forward-thinking design to their ability to handle the most complex surgical challenges, our staplers offer unparalleled performance and reliability. Designed for both efficiency and safety, ADVASTAP Series is the ultimate choice for advanced surgical procedures, setting new industry standards.",
     },
   ];
-  fadeup()
-  // imageAnim()
+
+  fadeup();
+  paraAnim();
 
   return (
     <>
-    
-          <Layout>
-            <main>
-              <Hero
-                title={hero.title}
-                src={hero.src}
-                content={hero.content}
-                className="hidden"
-                mode={"dark"}
-              />
-              <Genesis
-                content={content}
-                sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
-                bParaWidth={"w-[30%]"}
-              />
-              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"} width={"35%"}/>
-              <Product />
-              <Portfolio />
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-   <Pixifinal/> 
-          </Media>
-          
-       
+      <Layout>
+        <main>
+          <Hero />
+          <Genesis
+            content={content}
+            sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}
+            bParaWidth={"w-[55%]"}
+          />
+          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"45%"} />
+          <Product />
+          <OtherProduct />
+          <Portfolio currentlink={"/endo"} />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <Pixifinal />
+      </Media>
     </>
   );
 }
