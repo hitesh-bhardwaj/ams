@@ -31,11 +31,11 @@ export default function Blog() {
   return (
     <>
       <section
-        className="p-y-sm mobile:py-[15vw]"
+        className="p-y-sm mobile:py-[15vw] w-screen overflow-hidden"
         ref={blogContainer}
         id="blogs" 
       >
-        <div className="container-sm pl-[5vw]">
+        <div className="container-sm pl-[5vw] mobile:pl-0">
           <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:items-center tablet:flex-col">
             <div
               className="blog-left w-[45%] space-y-[2.5vw] mobile:w-[100%] mobile:space-y-[5vw] tablet:w-full"
@@ -46,17 +46,17 @@ export default function Blog() {
               </h2>
               <p
                 data-para-anim
-                className="content-p w-[95%] tablet:w-[70%] mobile:w-full mobile:px-[3vw] mobile:pb-[10vw] mobile:text-center"
+                className="content-p w-[95%] tablet:w-[70%] mobile:w-full mobile:px-[3vw] mobile:pb-[15vw] mobile:text-center"
               >
                 Discover how AMS is making a difference and stay updated with our latest news and releases.
               </p>
             </div>
-            <div className="blog-right w-[50%] mobile:w-[90%] mobile:space-y-[15vw] tablet:w-full tablet:mt-[7vw]">
+            <div className="blog-right w-[50%] mobile:w-[100%] mobile:space-y-[15vw] tablet:w-full tablet:mt-[7vw]">
               <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[21vw] w-[87%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
+                <div className="blog-img h-[21vw] w-[87%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw] mobile:h-[110vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
-                    className="h-full w-full object-cover scale-[1.4] imageanim"
+                    className="h-full w-full object-cover"
                     src="/assets/home/blog-1.jpg"
                     alt="blog image"
                     height={403}
@@ -65,38 +65,38 @@ export default function Blog() {
                   />
                 </div>
                 <div className="w-[88%] mt-[1vw] fadeUp mobile:w-[100%] mobile:text-center mobile:mt-[5vw] mobile:flex-col mobile:items-center mobile:justify-center">
-                 <div className="flex items-start justify-between">
+                 <div className="flex items-start justify-between mobile:flex-col mobile:items-center">
                   <h5
                     data-para-anim
-                    className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.6vw] mobile:mb-[10vw] tablet:text-[3.5vw]"
+                    className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[8vw] mobile:mb-[8vw] tablet:text-[3.5vw] mobile:order-1"
                   >
                    National Interventional Cardiology Congress 2023!
                   </h5>
-                  <span className="text-[0.9vw] w-[10vw]  font-light mb-[1vw] block mobile:text-[4.2vw] mobile:mb-[5vw] tablet:text-[1.8vw]">
+                  <span className="text-[0.9vw] w-[10vw]  font-light mb-[1vw] block mobile:text-[4.2vw] mobile:w-full mobile:mb-[5vw] tablet:text-[1.8vw]">
                   June, 2023
                   </span>
                   </div>
                   <p
                     data-para-anim
-                    className="text-[0.94vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]"
+                    className="text-[0.94vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[8vw] tablet:text-[2vw]"
                   >
                   Shaping the future with ADVAGLIDE: AMS inspires at National Interventional Cardiology Congress.
                   </p>
-                  <div className="w-full flex mobile:justify-center">
+                  <div className="w-full flex mobile:justify-center fadeUp">
                     <PrimaryButton
                       link="/"
                       text="Read More"
-                      className={"fadeUp"}
+                      className={""}
                     />
                   </div>
                 </div>
               </div>
               <span className="block h-[1px] w-full my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw]" />
               <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[21vw] w-[87%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
+                <div className="blog-img h-[21vw] w-[87%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw]  mobile:h-[110vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
-                    className="h-full w-full object-cover scale-[1.4] imageanim"
+                    className="h-full w-full object-cover"
                     src="/assets/home/blog-2.jpg"
                     alt="blog image"
                     height={403}
@@ -104,38 +104,38 @@ export default function Blog() {
                   />
                 </div>
                 <div className="w-[88%] mt-[1vw] fadeUp mobile:w-[100%] mobile:text-center mobile:mt-[5vw] mobile:flex-col mobile:items-center mobile:justify-center">
-                 <div className="flex items-start justify-between">
+                 <div className="flex items-start justify-between mobile:flex-col mobile:items-center">
                   <h5
                     data-para-anim
-                    className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.6vw] mobile:mb-[10vw] tablet:text-[3.5vw]"
+                    className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.6vw] mobile:mb-[8vw] tablet:text-[3.5vw] mobile:order-1"
                   >
                     Cardiovascular Care Redefined: IACTSCON 2024!
                   </h5>
-                  <span className="text-[0.9vw] w-[10vw]  font-light mb-[1vw] block mobile:text-[4.2vw] mobile:mb-[5vw] tablet:text-[1.8vw]">
+                  <span className="text-[0.9vw] w-[10vw]  font-light mb-[1vw] block mobile:text-[4.2vw] mobile:w-full mobile:mb-[5vw] tablet:text-[1.8vw]">
                   January, 2024
                   </span>
                   </div>
                   <p
                     data-para-anim
-                    className="text-[0.94vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]"
+                    className="text-[0.94vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[8vw] tablet:text-[2vw]"
                   >
                    Cardiovascular Care Redefined with the pre-launch of ADVALVE: AMS at the Forefront of IACTSCON 2024.
                   </p>
-                  <div className="w-full flex mobile:justify-center">
+                  <div className="w-full flex mobile:justify-center fadeUp">
                     <PrimaryButton
                       link="/"
                       text="Read More"
-                      className={"fadeUp"}
+                      className={""}
                     />
                   </div>
                 </div>
               </div>
               <span className="block h-[1px] w-full my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw]" />
               <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[21vw] w-[87%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:h-[120vw] tablet:h-[35vw] fadeUp ">
+                <div className="blog-img h-[21vw] w-[87%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw] mobile:h-[110vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
-                    className="h-full w-full object-cover scale-[1.4] imageanim"
+                    className="h-full w-full object-cover"
                     src="/assets/home/blog-3.jpg"
                     alt="blog image"
                     height={403}
@@ -143,28 +143,28 @@ export default function Blog() {
                   />
                 </div>
                 <div className="w-[88%] mt-[1vw] fadeUp mobile:w-[100%] mobile:text-center mobile:mt-[5vw] mobile:flex-col mobile:items-center mobile:justify-center">
-                 <div className="flex items-start justify-between">
+                 <div className="flex items-start justify-between mobile:flex-col mobile:items-center">
                   <h5
                     data-para-anim
-                    className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.6vw] mobile:mb-[10vw] tablet:text-[3.5vw]"
+                    className="text-[2.2vw] font-extralight leading-[1.2] mb-[2vw] mobile:text-[7.6vw] mobile:mb-[8vw] tablet:text-[3.5vw] mobile:order-1"
                   >
                     Arab Health 2024!
                   </h5>
-                  <span className="text-[0.9vw] w-[6vw]  font-light mb-[1vw] block mobile:text-[4.2vw] mobile:mb-[5vw] tablet:text-[1.8vw]">
+                  <span className="text-[0.9vw] w-[6vw]  font-light mb-[1vw] block mobile:text-[4.2vw] mobile:w-full mobile:mb-[5vw] tablet:text-[1.8vw]">
                   March, 2024
                   </span>
                   </div>
                   <p
                     data-para-anim
-                    className="text-[0.94vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[10vw] tablet:text-[2vw]"
+                    className="text-[0.94vw] font-light mb-[2.5vw] text-anim-2 mobile:text-[4.2vw] mobile:mb-[8vw] tablet:text-[2vw]"
                   >
                   AMS Takes Center Stage at Arab Health in Dubai: Leading the Charge in Global MedTech with Industry leaders and partners Transforming Healthcare Worldwide
                   </p>
-                  <div className="w-full flex mobile:justify-center">
+                  <div className="w-full flex mobile:justify-center fadeUp">
                     <PrimaryButton
                       link="/"
                       text="Read More"
-                      className={"fadeUp"}
+                      className={""}
                     />
                   </div>
                 </div>

@@ -15,13 +15,13 @@ export default function Facility() {
                         <p data-para-anim className="content-p-md mr-[6vw] mobile:mr-[0vw] ">
                         Experience the Future of Healthcare: Discover our innovative ecosystem with an exclusive virtual tour.  
                         </p>
-                        <div className="w-full flex mobile:justify-center pt-[2vw]">
-                            <PrimaryButton className={"fadeUp"} link={"/manufacturing"} text={"Virtual Tour"} />
+                        <div className="w-full flex mobile:justify-center pt-[2vw] fadeUp">
+                            <PrimaryButton className={""} link={"/manufacturing"} text={"Virtual Tour"} />
                         </div>
                     </div>
                     <div className="relative w-[49.5%] h-[26.2vw] rounded-[2.5vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] mobile:rounded-[6vw] tablet:w-[80vw] tablet:h-[30vh]">
                         <Image data-speed="0.7"
-                            className="w-full object-cover scale-[1.4] imageanim"
+                            className="w-full object-cover "
                             src="/assets/home/virtual.jpg"
                             alt="facility"
                             fill

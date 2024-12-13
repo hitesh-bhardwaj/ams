@@ -48,11 +48,11 @@ export default function Career() {
                         muted
                         playsInline
                         ref={careerVideoRef}
-                        className="h-[45vw] w-full object-cover left-0 top-0 rounded-[3vw] absolute imageAnim"
+                        className="h-[45vw] w-full object-cover left-0 top-0 rounded-[3vw] absolute imageAnim mobile:h-[200vw]"
                         poster="/assets/home/career-poster.webp" 
                     >
                     </video>
-                    <div className="w-[58%] h-[35vw] relative z-10 space-y-[1vw] tablet:w-[70%] mobile:w-[100%] mobile:space-y-[5vw] mobile:text-center mobile:flex-col " >
+                    <div className="w-[58%] h-[35vw] relative z-10 space-y-[2vw] tablet:w-[70%] mobile:w-[100%] mobile:h-[180vw]  mobile:space-y-[5vw] mobile:text-center mobile:flex-col " >
                         <h2 className="title-2 aeonik mobile:w-full">
                             <span data-para-anim className="text-shadow1">
                             Join Our Mission to
@@ -64,8 +64,8 @@ export default function Career() {
                         <p data-para-anim className="content-p w-[70%] text-shadow1 mobile:w-[100%] tablet:text-[1.8vw] tablet:w-full mobile:py-[5vw] ">
                         To achieve the extraordinary, we need an exceptional team. At AMS, diversity and inclusiveness are the foundation for our dynamic and thriving culture. Unleash your potential and achieve the extraordinary in your career. Our unwavering commitment to revolutionizing healthcare is fuelled by our desire to make a difference in people&apos;s lives.
                         </p>
-                        <div className="w-full flex mobile:justify-center pt-[3vw]">
-                        <PrimaryButton className={"fadeUp"} link={"/career"} text={"Career"}/>
+                        <div className="w-full flex mobile:justify-center pt-[3vw] fadeUp">
+                        <PrimaryButton className={""} link={"/career"} text={"Career"}/>
                         </div>
                         
                     </div>

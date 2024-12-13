@@ -3,15 +3,14 @@ import PrimaryButton from "../Button/PrimaryButton";
 import gsap from "gsap";
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 import { Media } from "../media";
-import { useEffect, useState } from "react";
-import { useDevice } from "../useDevice";
-import GradientButton from "../Button/PrimaryButton";
+import { useEffect } from "react";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() { 
-  const {isDesktop} = useDevice()
-  const [isClient , setIsClient]= useState(null)
+  // const {isDesktop} = useDevice()
+  // const [isClient , setIsClient]= useState(null)
   
   useEffect(() => {
     // Create a GSAP context
@@ -43,7 +42,10 @@ export default function Hero() {
                   AMS is dedicated to advancing healthcare by providing meaningful MedTech solutions, improving lives for patients around the world.
                   </span>
                 </p>
-                <GradientButton text={"About us"} link={'/about'} className="fadeUp"/>
+                <div className="fadeUp">
+
+                <PrimaryButton text={"About us"} link={'/about'} className=""/>
+                </div>
                 {/* <PrimaryButton btnText={'Discover'} link={'/about'} className={"fadeUp"} /> */}
                
               </div>

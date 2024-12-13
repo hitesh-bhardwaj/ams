@@ -23,13 +23,13 @@ data-para-anim className="title-2 aeonik">
                                 Experience our facility virtually.
                             
                         </p>
-                        <div className="w-full flex mobile:justify-center">
-                        <PrimaryButton className={"fadeUp"} link={"/manufacturing"} text={"Virtual Tour"}/>
+                        <div className="w-full flex mobile:justify-center fadeUp">
+                        <PrimaryButton className={""} link={"/manufacturing"} text={"Virtual Tour"}/>
                         </div>
                     </div>
                     <div className="relative w-[55%] h-[30vw] rounded-[3vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] tablet:w-[80vw] tablet:h-[30vh] mobile:rounded-[6vw]">
                         <Image
-                            className="w-full object-cover imageanim"
+                            className="w-full object-cover "
                             src="/assets/ama/ama-discover-img.png" 
                             alt="ama-discover-img"
                             fill

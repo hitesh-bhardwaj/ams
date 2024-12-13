@@ -28,9 +28,9 @@ data-para-anim className='text-[2.5vw] font-light aeonik text-[#111111] w-[100%]
               <p  className='leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full text-justify mobile:text-center mobile:leading-[1.6]'>
                 <span data-para-anim className='para-animation block'>At AMS, we’re setting new standards in medical research and development. Our advanced R&D facility paves the way for new therapies and enhanced treatment outcomes through insight-driven medical device technology and innovation.</span>
               </p>
-              <div className="w-full mobile:flex mobile:justify-center">
+              <div className="w-full mobile:flex mobile:justify-center fadeUp">
 
-                <PrimaryButton text={"Explore Our R&D Capabilities"} link={"/research-and-development"} className={"fadeUp mobile:px-[6vw] tablet:px-[2vw] tablet:py-[1.5vw]"}/>
+                <PrimaryButton text={"Explore Our R&D Capabilities"} link={"/research-and-development"} className={" mobile:px-[6vw] tablet:px-[2vw] tablet:py-[1.5vw]"}/>
               </div>
             </div>
             

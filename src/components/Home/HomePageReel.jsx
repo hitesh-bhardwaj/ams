@@ -35,9 +35,9 @@ const HomePageReel = () => {
     }, [videoLoaded]);
   return (
     <>
-    <section className='w-screen h-full py-[8%] bg-white/50' id='homepagereel'>
+    <section className='w-screen h-full py-[8%] bg-white/50 mobile:h-[50vh]' id='homepagereel'>
         <div className='w-full h-full flex justify-center items-center'>
-        <div className='h-[40vw] w-[90vw] overflow-hidden'>
+        <div className='h-[40vw] w-[90vw] overflow-hidden mobile:h-[60vw]'>
            
             <video
                         loading="lazy"
@@ -45,7 +45,7 @@ const HomePageReel = () => {
                         muted
                         playsInline
                         ref={HomePageReel}
-                        className=" w-full h-full  object-cover rounded-[3vw]"
+                        className=" w-full h-full  object-cover  rounded-[3vw]"
                         poster="/assets/home/homepage-reel-poster.webp" // Set a poster image before the video loads
                     >
                         {/* The video source will be added dynamically via the IntersectionObserver */}

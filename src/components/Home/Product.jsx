@@ -6,7 +6,7 @@ import LinkButton from "../Button/LinkButton";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { Media } from "../media";
 gsap.registerPlugin(ScrollTrigger);
@@ -21,7 +21,9 @@ export default function Product() {
     if (swiperRef.current) {
       swiperRef.current.slideNext(); // Move to the next slide
       setActiveButton("next"); // Set next button as active
-      // Reset after 300ms
+       setTimeout(()=>{
+        setActiveButton("")
+       },200)// Reset after 300ms
     }
   };
 
@@ -29,7 +31,9 @@ export default function Product() {
     if (swiperRef.current) {
       swiperRef.current.slidePrev(); // Move to the previous slide
       setActiveButton("prev"); // Set previous button as active
-      // Reset after 300ms
+      setTimeout(()=>{
+        setActiveButton("")
+       },200)// Reset after 300ms
     }
   };
 
@@ -111,10 +115,10 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400 !font-normal">
                           <span>ADVA GLIDE</span>
                         </h3>
-                        <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
+                        <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
                           Gliding to Perfection.
                         </h4>
 
@@ -164,15 +168,15 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500">
-                          <span>ADVA PRO</span>
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500 !font-normal">
+                          <span>ADVAGRIP </span>
                         </h3>
-                        <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
-                        Precision. Perfection. Pro.
+                        <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
+                        A GRIP like No Other.
                         </h4>
 
-                        <p className="content-p mb-[5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">
-                        Designed for complex PCI, ADVA PRO provides optimized safety and efficacy, ensuring consistent and trusted patient outcomes.
+                        <p className="content-p mb-[5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">ADVAGRIP sets a new benchmark in Knotless Tissue Control Device, employing Tri-Cut Technology to produce barbs that delivers a robust anchoring force whilst maintaining the integrity of the suture strength.
+                        
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
@@ -205,7 +209,7 @@ export default function Product() {
                       </span>
                     </div>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
-                      <div className="w-[85%] h-[30vw] relative mobile:w-[70%] scale-[1.4]">
+                      <div className="w-[100%] h-[30vw] relative mobile:w-[70%] scale-[1.4]">
                         <Image
                           className="fadeUp object-contain "
                           src="/assets/home/advapro-product.png"
@@ -214,15 +218,15 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400">
-                          <span>ADVAGRIP </span>
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400 !font-normal">
+                        <span>ADVA PRO</span>
                         </h3>
-                        <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
-                        A GRIP like No Other.
+                        <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
+                        Precision. Perfection. Pro. 
                         </h4>
 
                         <p className="content-p mb-[5vw] mobile:mb-[6vw] mobile:text-[4vw] tablet:text-[1.5vw]">
-                        ADVAGRIP sets a new benchmark in Knotless Tissue Control Device, employing Tri-Cut Technology to produce barbs that delivers a robust anchoring force whilst maintaining the integrity of the suture strength.
+                        Designed for complex PCI, ADVA PRO provides optimized safety and efficacy, ensuring consistent and trusted patient outcomes.
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
@@ -276,10 +280,10 @@ export default function Product() {
                         </div>
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-400">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-400 !font-normal">
                           <span>ADVACRYL</span>
                         </h3>
-                        <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
+                        <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
                           Braided Coated Polyglactin 910
                         </h4>
 
@@ -332,11 +336,11 @@ export default function Product() {
                         
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500 !font-normal">
                           <span>ADVASTAP
                           POWERED LC</span>
                         </h3>
-                        <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw]">
+                        <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
                         Precision is the ultimate sophistication
                         </h4>
 
@@ -356,29 +360,59 @@ export default function Product() {
             </Swiper>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block
-                `} // Added background color transition
+             className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
+              ${
+                activeButton === "next"
+                  ? " text-white"
+                  : "bg-transparent text-[#111111]"
+              } transition-colors duration-300`}  // Added background color transition
             onClick={handleNext} // Trigger next slide
           >
-            <div className="w-[2.6vw] h-[2.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+            <span
+              className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
+                activeButton === "next"
+                  ? "scale-100 opacity-100 "
+                  : "scale-0 opacity-50"
+              } transition-all duration-300`}
+            ></span>
+            <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
               <Image
-                src="/assets/icons/product-carousel-arrow.svg"
+                src="/assets/home/arrow-right.png"
                 alt="arrow-right"
-                className={`object-contain`}
+                className={`object-cover group-hover:invert transition-all duration-300 ${
+                  activeButton === "next"
+                    ? "invert"
+                    : "invert-0"
+                } `}
                 fill
               />
             </div>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block
-                `} // Added background color transition
-            onClick={handlePrev} // Trigger previous slide
+             className={`px-[1.2vw] py-[1.2vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
+              ${
+                activeButton === "prev"
+                  ? " text-white"
+                  : "bg-transparent text-[#111111]"
+              } transition-colors duration-300`}
+              onClick={handlePrev}  // Trigger previous slide
           >
-            <div className="w-[2.6vw] h-[2.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
+            <span
+              className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
+                activeButton === "prev"
+                  ? "scale-100 opacity-100"
+                  : "scale-0 opacity-50"
+              } transition-all duration-300`}
+            ></span>
+            <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
               <Image
-                src="/assets/icons/product-carousel-arrow.svg"
+                src="/assets/home/arrow-left.png"
                 alt="arrow-left"
-                className={`object-contain `}
+                className={`object-cover group-hover:invert transition-all duration-300 rotate-180 ${
+                  activeButton === "prev"
+                    ? "invert"
+                    : "invert-0"
+                } `}
                 fill
               />
             </div>
