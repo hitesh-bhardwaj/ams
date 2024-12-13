@@ -69,7 +69,7 @@ export default function hernia() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-  <Pixifinal/>
+     <Pixifinal/> 
           </Media>
         
         

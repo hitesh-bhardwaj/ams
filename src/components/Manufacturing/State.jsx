@@ -35,11 +35,11 @@ export default function State() {
       <div className="wrap flex flex-col gap-[10vw] mobile:gap-[10vw] items-center w-full tablet:gap-[5vw] ">
         <div className="content--card w-[90vw]">
           <div
-            className={`rounded-[45px] border-[1px] border-gray-200  h-[38vw] px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
+            className={`rounded-[45px] border-[1px] border-gray-200   px-[4vw] py-[3vw] flex justify-between items-center bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
           >
-            <div className="h-[32vw] w-[60vw] relative rounded-[50px] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw]">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw]">
               <Image
-                src="/assets/manufacturing/state-1.webp"
+                src="/assets/manufacturing/state-1.png"
                 fill
                 alt="state-1"
                 className={"imageAnim object-cover"}
@@ -47,7 +47,7 @@ export default function State() {
             </div>
 
             <div
-              className={`flex flex-col w-[50%] ml-[5%] text-start items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col w-[40%] ml-[5%] text-start items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
 data-para-anim
@@ -56,7 +56,7 @@ data-para-anim
                State of the Art Excellence
               </h2>
               <p 
-                className={`leading-[1.8] w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8] w-full text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
                 Designed by the visionary Spanish architect Ricardo Bofill, the AMS campus is a testament to the bold vision and ingenuity of modern architecture, spanning 250,000 sq. ft. across 10.5 acres. This iconic MedTech hub stands as a beacon of excellence, combining form and function. It merges cutting-edge design with a groundbreaking blueprint that embodies AMS&apos;s commitment to healthcare innovation. A symbol of ambition, this campus is not just a facility—it is a landmark for medical, technological, and educational advancement, shaping the future of healthcare.
@@ -67,11 +67,11 @@ data-para-anim
         </div>
         <div className="content--card w-[90vw]">
         <div
-            className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex gap-[4vw] flex-row-reverse justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
+            className={`rounded-[45px] items-center border-[1px] border-gray-200  px-[4vw] py-[3vw] flex gap-[4vw] flex-row-reverse justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
           >
-            <div className="h-[32vw] w-[50vw] relative rounded-[50px] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
               <Image
-                src="/assets/manufacturing/state-2.webp"
+                src="/assets/manufacturing/state-2.png"
                 fill
                 alt="state-2"
                 className={"imageAnim object-cover"}
@@ -88,7 +88,7 @@ data-para-anim
                 Cultivating High Standards
               </h2>
               <p
-                className={`leading-[1.8] w-[99%] text-[#2A2A2A] font-light  text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8] w-full text-[#2A2A2A] font-light  text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
                 AMS&apos;s expansive clean rooms are built to surpass industry standards, with a focus on reducing bio burden and maintaining impeccable cleanliness. Utilizing lean methodologies, including unidirectional material flow and precise man-material movement, we ensure unmatched efficiency and rigorous quality control. Our adoption of the visual factory concept enhances productivity, promotes agility, and reinforces our commitment to patient safety and product reliability.
@@ -99,11 +99,11 @@ data-para-anim
         </div>
         <div className="content--card w-[90vw]">
         <div
-            className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
+            className={`rounded-[45px] items-center border-[1px] border-gray-200  px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
           >
-            <div className="h-[32vw] w-[60vw] relative rounded-[50px] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
               <Image
-                src="/assets/manufacturing/state-3.webp"
+                src="/assets/manufacturing/state-3.png"
                 fill
                 alt="state-3"
                 className={"imageAnim object-cover"}
@@ -111,7 +111,7 @@ data-para-anim
             </div>
 
             <div
-              className={`flex flex-col  text-start  w-[50%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col  text-start  w-[40%] ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
 data-para-anim
@@ -120,7 +120,7 @@ data-para-anim
                 Commitment to Quality
               </h2>
               <p 
-                className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8]  w-full text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
                 At AMS, our unwavering commitment to quality is at the heart of every product we manufacture. We uphold some of the most stringent testing standards in the industry, building a culture that constantly strives to exceed expectations and elevate protocols. Our in-house QA & RA center, equipped with cutting-edge equipment, and a world-class microbiology lab enable us to perform comprehensive, precise testing at every stage. With meticulous planning, robust control functions, and an unwavering focus on continuous improvement, we ensure that every product meets the highest standards.
@@ -131,11 +131,11 @@ data-para-anim
         </div>
         <div className="content--card w-[90vw]">
         <div
-            className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex flex-row-reverse gap-[4vw] justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
+            className={`rounded-[45px] border-[1px] items-center border-gray-200  px-[4vw] py-[3vw] flex flex-row-reverse gap-[4vw] justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
-            <div className="h-[32vw] w-[60vw] relative rounded-[50px] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
               <Image
-                src="/assets/manufacturing/state-4.webp"
+                src="/assets/manufacturing/state-4.png"
                 fill
                 alt="state-4"
                 className={"imageAnim object-cover"}
@@ -143,16 +143,16 @@ data-para-anim
             </div>
 
             <div
-              className={`flex flex-col w-[50%] items-left  text-start  justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col w-[40%] items-left  text-start  justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
 data-para-anim
                 className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
-                Logistical Precision
+               Logistical Precision
               </h2>
               <p
-                className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
+                className={`leading-[1.8]  w-full text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}
               >
                 <span data-para-anim className="para-animation block">
                 At AMS, patients remain at the core of our supply chain strategy, driving the creation of optimal and efficient channels that benefit both patients and healthcare organizations. Our advanced distribution center serves as a pivotal element, integrating state-of-the-art warehousing with streamlined logistics to deliver unmatched precision and reliability. From meticulous inventory management to timely deliveries, AMS exemplifies logistical excellence, ensuring seamless operations that consistently support patient care worldwide.
@@ -163,11 +163,11 @@ data-para-anim
         </div>
         <div className="w-[90vw]">
         <div
-            className={`rounded-[45px] border-[1px] border-gray-200 h-[38vw] px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
+            className={`rounded-[45px] border-[1px] items-center border-gray-200  p-[5vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
-            <div className="h-[32vw] w-[60vw] relative rounded-[50px] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
               <Image
-                src="/assets/manufacturing/state-5.webp"
+                src="/assets/manufacturing/state-5.png"
                 fill
                 alt="state-5"
                 className={"imageAnim object-cover"}
@@ -175,13 +175,13 @@ data-para-anim
             </div>
 
             <div
-              className={`flex flex-col w-[50%]  text-start  ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
+              className={`flex flex-col w-[40%]  text-start  ml-[5%] items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw] mobile:mt-[10vw] `}
             >
               <h2
 data-para-anim
                 className={`text-[3vw]  font-light aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}
               >
-               Green Manufacturing
+              Green Manufacturing
               </h2>
               <p 
                 className={`leading-[1.8]  w-[99%] text-[#2A2A2A] font-light text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full`}

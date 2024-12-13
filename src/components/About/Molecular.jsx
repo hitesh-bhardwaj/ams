@@ -7,14 +7,37 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Media } from "../media";
+import LazyVideo from "../layoutComponents/LazyVideo";
 import "swiper/css/navigation";
+import { smoothstep } from "three/src/math/MathUtils";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
-
-// Reusable Card Component
-const MolecularCard = ({ symbol, title, description }) => (
-  <div className="molecular-card w-[40vw] h-[30vw] px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
+const cardData = [
+  {
+    symbol: "Pa",
+    title: "Patients at the Heart",
+    smalltitle:"Patient",
+    description:
+      "Patients are at the heart of AMS, driving our commitment to relentless innovation. We believe in the endless possibilities of MedTech to transform healthcare, pushing boundaries to improve patient outcomes.",
+  },
+  {
+    symbol: "Qu",
+    title: "Quality First",
+    smalltitle:"Quality",
+    description:
+      "At AMS, quality is built into our design. Through advanced technology, meticulous raw material selection, rigorous testing and processes, we ensure that each device meets the highest standards of safety and reliability—delivering trust and performance you can count on.",
+  },
+  {
+    symbol: "In",
+    title: "Life Enhancing Innovation",
+    smalltitle:"Innovation",
+    description:
+      "AMS is at the forefront of a medical innovation landscape, consistently challenging the status quo through clinical research and development. Our commitment to scientific evidence and ground-breaking research fuels our drive to create innovative medical technologies. This relentless pursuit of advancement enables us to develop solutions that significantly enhance the quality of life for millions around the world. ",
+  },
+];
+const MolecularCard = ({ symbol,smalltitle, title, description }) => (
+  <div className="molecular-card  px-[3vw] py-[3vw] bg-white/50 border rounded-[2.5vw] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
     <div className="w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw] tablet:w-[10vw] tablet:h-[10vw]">
       <p data-para-anim className="text-[3.3vw] mobile:text-[12.2vw] tablet:text-[5vw]">
         {symbol}
@@ -23,7 +46,7 @@ const MolecularCard = ({ symbol, title, description }) => (
         data-para-anim
         className="text-[0.6vw] mt-[-1vw] mobile:text-[2.5vw] tablet:text-[1.2vw] mobile:mt-[-3vw] text-center"
       >
-        {title}
+        {smalltitle}
       </p>
     </div>
     <h2
@@ -56,7 +79,8 @@ const Molecular = () => {
             trigger: ".molecular",
             pin: true,
             start: "top top",
-            end: "+=2500 bottom",
+            invalidateOnRefresh: true,
+            end: "+=2000 bottom",
             scrub: true,
           },
         });
@@ -70,8 +94,6 @@ const Molecular = () => {
             scrub: true,
           },
         });
-        tlBg.to(".molecular-bg-img", { scale: 1.2, delay: -1 });
-        tlBg.to(".molecular-bg-img", { yPercent: 30, delay: -1 });
       } else if (globalThis.innerWidth > 541) {
         // For screens between 541px and 1024px
         const tlRight = gsap.timeline({
@@ -79,7 +101,7 @@ const Molecular = () => {
             trigger: ".molecular",
             pin: true,
             start: "top top",
-            end: "+=2000 bottom",
+            end: "+=2500 bottom",
             scrub: true,
           },
         });
@@ -89,63 +111,32 @@ const Molecular = () => {
           scrollTrigger: {
             trigger: ".molecular",
             start: "top bottom",
-            end: "bottom 20%",
+            end: "bottom 10%",
             scrub: true,
           },
         });
-        tlBg.to(".molecular-bg-img", { scale: 1.2, delay: -1 });
-        tlBg.to(".molecular-bg-img", { yPercent: 30, delay: -1 });
       }
     });
 
-    return () => ctx.revert(); // Clean up on unmount
+    return () => ctx.revert(); 
   }, []);
 
-  // Molecular card data
-  const cardData = [
-    {
-      symbol: "Pa",
-      title: "Patients at the Heart",
-      description:
-        "Patients are at the heart of AMS, driving our commitment to relentless innovation. We believe in the endless possibilities of MedTech to transform healthcare, pushing boundaries to improve patient outcomes.",
-    },
-    {
-      symbol: "Qu",
-      title: "Quality First",
-      description:
-        "At AMS, quality is built into our design. Through advanced technology, meticulous raw material selection, rigorous testing and processes, we ensure that each device meets the highest standards of safety and reliability—delivering trust and performance you can count on.",
-    },
-    {
-      symbol: "In",
-      title: "Life Enhancing Innovation",
-      description:
-        "AMS is at the forefront of a medical innovation landscape, consistently challenging the status quo through clinical research and development. Our commitment to scientific evidence and ground-breaking research fuels our drive to create innovative medical technologies. This relentless pursuit of advancement enables us to develop solutions that significantly enhance the quality of life for millions around the world. ",
-    },
-    // {
-    //   symbol: "Cr",
-    //   title: "Caring",
-    //   description:
-    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.",
-    // },
-  ];
-  const swiperRef = useRef(null); // Create a ref for Swiper
-
-  // State to track which button was clicked
+  const swiperRef = useRef(null); 
   const [activeButton, setActiveButton] = useState("");
 
   const handleNext = () => {
     if (swiperRef.current) {
-      swiperRef.current.slideNext(); // Move to the next slide
-      setActiveButton("next"); // Set next button as active
-      // Reset after 300ms
+      swiperRef.current.slideNext(); 
+      setActiveButton("next"); 
+      
     }
   };
 
   const handlePrev = () => {
     if (swiperRef.current) {
-      swiperRef.current.slidePrev(); // Move to the previous slide
-      setActiveButton("prev"); // Set previous button as active
-      // Reset after 300ms
+      swiperRef.current.slidePrev(); 
+      setActiveButton("prev"); 
+    
     }
   };
 
@@ -157,25 +148,29 @@ const Molecular = () => {
         ref={molecularContainer}
       >
         <div className="w-screen h-screen absolute z-[1] overflow-hidden mobile:h-[280vw] mobile:w-screen">
-          <Image
-            src="/assets/about/molecular-bg.webp"
-            fill
-            alt="molecular-bg"
-            className="object-cover scale-[1.3] mobile:translate-y-[0%]"
-          />
+          
+        <LazyVideo
+                    poster={"/assets/about/about-molecular-poster.webp"}
+                    type="video/mp4"
+                    autoPlay="true"
+                    loop="true"
+                    videoSrc={"/assets/about/molecular-bg-video.mp4"}
+                    className='w-full h-full object-cover'
+                    />
+                    <div className="absolute w-full h-full top-0 left-0 bg-white/20"></div>
         </div>
         <div className="container-sm py-[15%] relative z-[2] w-full h-full px-[4vw] mobile:px-0 tablet:px-0">
           <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:gap-[20vw]">
             <div
-              className="molecular-left w-[50%] space-y-[2.5vw] mobile:w-[100%] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:gap-[5vw] mobile:text-center tablet:w-[50%]"
+              className="molecular-left w-[50vw] space-y-[2.5vw] mobile:w-[100%] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:gap-[5vw] mobile:text-center tablet:w-[50%]"
               ref={molecularLeft}
             >
               <div className="w-[58%] mobile:w-[100%] tablet:w-full">
                 <h2 className="title-2 aeonik">
                   <span
-data-para-anim>Molecular Foundation</span>
+data-para-anim>Molecular Foundations</span>
                   <span
-data-para-anim>of AMS</span>
+data-para-anim> of AMS</span>
                 </h2>
               </div>
               <p className="content-p w-[75%] mobile:w-[100%]">
@@ -185,14 +180,14 @@ data-para-anim>of AMS</span>
               </p>
             </div>
 
-            {/* Cards for larger screens */}
            <Media greaterThan="mobile">
 
-             <div className="molecular-right w-[47%] flex flex-col gap-y-[2vw] tablet:w-[60%]">
+             <div className="molecular-right w-[37.5vw] flex flex-col gap-y-[2vw] tablet:w-[60%]">
               {cardData.map((card, index) => (
                 <MolecularCard
                   key={index}
                   symbol={card.symbol}
+                  smalltitle={card.smalltitle}
                   title={card.title}
                   description={card.description}
                 />

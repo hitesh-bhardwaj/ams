@@ -7,7 +7,7 @@ export default function Facility() {
 
         <>
             <section className="pt-[0] pb-[10%] mobile:pb-[20%] tablet:pb-[12%]" id="facility">
-                <div className="container-lg relative virtual rounded-[2.5vw] flex items-center justify-between px-[6%] py-[5%]  bg-gradient-to-b from-[#F9F9F9] to-[#E5E5E5] ease-in mobile:flex-col-reverse mobile:rounded-[9vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
+                <div className="container-lg relative virtual rounded-[2.5vw] flex items-center justify-between px-[6%] py-[3%]  bg-gradient-to-b from-[#F9F9F9] to-[#E5E5E5] ease-in mobile:flex-col-reverse mobile:rounded-[9vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
                     <div className="w-[45%] relative z-10 space-y-[2.5vw] duration-300 tablet:order-1 tablet:w-full mobile:w-[89%] mobile:text-center mobile:py-[5vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:space-y-[10vw]">
                         <h2 data-para-anim className="title-2 aeonik">
                         Delve Deeper into the World of AMS
@@ -30,7 +30,7 @@ export default function Facility() {
                         <Image
                             src="/assets/icons/360.svg"
                             alt="360 icon"
-                            className="absolute w-[10.5%] bottom-8 right-8"
+                            className="absolute w-[15%] bottom-8 right-8"
                             width={100}
                             height={100}
                         />

@@ -73,7 +73,7 @@ export default function ic() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-<Pixifinal/>
+   <Pixifinal/> 
           </Media>
           
         

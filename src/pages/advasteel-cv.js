@@ -87,7 +87,7 @@ const advasteelcv = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-<Pixifinal/>
+   <Pixifinal/> 
           </Media>
           
         

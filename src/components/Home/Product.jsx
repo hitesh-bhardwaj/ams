@@ -211,7 +211,7 @@ export default function Product() {
                       </span>
                     </div>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
-                      <div className="w-[100%] h-[30vw] relative mobile:w-[full] scale-[1.4] mobile:h-[80vw] ">
+                      <div className="w-[100%] h-[70vw] relative mobile:w-[full] scale-[1.8] mobile:h-[80vw] ">
                         <Image
                           className="fadeUp object-contain "
                           src="/assets/home/advapro-product.png"
@@ -326,7 +326,7 @@ export default function Product() {
                     </div>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[10vw]">
                       <div className="w-[75%] mobile:w-[70%]">
-                        <div className="w-[30vw] h-[24vw] relative scale-[1.4] mobile:w-[60vw] mobile:h-[50vw]">
+                        <div className="w-[30vw] h-[24vw] relative scale-[1.4] left-[10%] mobile:w-[60vw] mobile:h-[50vw]">
                           <Image
                             className="fadeUp object-contain"
                             src="/assets/home/poweredlc-product.png"

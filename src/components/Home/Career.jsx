@@ -5,7 +5,7 @@ export default function Career() {
     return (
         <>
             <section className="p-y-sm" id="career">
-                <div className="container-lg relative px-[8%] py-[6%] overflow-hidden rounded-[2.5vw] mobile:rounded-[7vw] mobile:py-[15%] fadeUp">
+                <div className="container-lg relative px-[8%] py-[6%] overflow-hidden border border-[#00000038] rounded-[2.5vw] mobile:rounded-[7vw] mobile:py-[15%] fadeUp">
                 <LazyVideo
                     poster={"/assets/home/career-poster.webp"}
                     type="video/mp4"

@@ -3,27 +3,21 @@ import Genesis from "@/components/layoutComponents/Genesis";
 import Capabilities from "@/components/Manufacturing/Capabilities";
 import Discover from "@/components/Manufacturing/Discover";
 import State from "@/components/Manufacturing/State";
-import Hero from "@/components/Hero";
 import React from "react";
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Hero from "@/components/Manufacturing/Hero";
 
 export default function manufacturing() {
   const content = {
     heading: "Manufacturing",
     smallpara:
-      "At AMS, our robust manufacturing processes are meticulously designed to uphold stringent global testing and quality standards, ensuring that every product not only complies with but exceeds the highest regulatory requirements, establishing a new paradigm of excellence in healthcare.",
+      "At AMS, our robust manufacturing processes are meticulously designed to uphold stringent global testing and quality standards, ensuring that every product not only complies with but exceeds the highest regulatory requirements, establishing a new paradigm of excellence in healthcare. Through the seamless integration of advanced technologies and an uncompromising dedication to quality, we consistently set new benchmarks in healthcare innovation.",
     bigpara:
-      "AMS pioneers advancements in medical device manufacturing through the integration of transformative technologies like breakthrough automation, robotics and artificial intelligence, establishing benchmarks for quality and streamlined operations.",
+      "AMS pioneers advancements in medical device manufacturing, integrating transformative technologies like breakthrough automation, robotics and artificial intelligence, establishing benchmarks for quality and streamlined operations.",
     src: "/assets/manufacturing/manufacturing.png",
-  };
-  const hero = {
-    title: "Ushering the next generation of medical device technology",
-    src: "/assets/manufacturing/manufacturing-hero.png",
-    content:
-      "At AMS, we are pioneering the future of medical device technology, harnessing cutting-edge manufacturing advancements to drive unparalleled quality, innovation, and agility in our processes. ",
   };
  fadeup()
 
@@ -31,13 +25,7 @@ export default function manufacturing() {
     <>
       <Layout>
         <main>
-          <Hero
-            title={hero.title}
-            src={hero.src}
-            content={hero.content}
-            className="hidden"
-            mode={"dark"}
-          />
+        <Hero/>
           <Genesis content={content} />
           <Capabilities />
           <State />
@@ -45,7 +33,7 @@ export default function manufacturing() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-<Pixifinal/>
+   <Pixifinal/> 
       </Media>
       
     </>
