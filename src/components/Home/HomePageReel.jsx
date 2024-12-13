@@ -45,7 +45,7 @@ const HomePageReel = () => {
                         muted
                         playsInline
                         ref={HomePageReel}
-                        className=" w-full h-full  object-cover  rounded-[3vw]"
+                        className=" w-full h-full object-cover rounded-[3vw]"
                         poster="/assets/home/homepage-reel-poster.webp" // Set a poster image before the video loads
                     >
                         {/* The video source will be added dynamically via the IntersectionObserver */}
