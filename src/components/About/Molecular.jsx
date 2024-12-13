@@ -17,26 +17,26 @@ const cardData = [
   {
     symbol: "Pa",
     title: "Patients at the Heart",
-    smalltitle:"Patient",
+    smalltitle: "Patient",
     description:
       "Patients are at the heart of AMS, driving our commitment to relentless innovation. We believe in the endless possibilities of MedTech to transform healthcare, pushing boundaries to improve patient outcomes.",
   },
   {
     symbol: "Qu",
     title: "Quality First",
-    smalltitle:"Quality",
+    smalltitle: "Quality",
     description:
       "At AMS, quality is built into our design. Through advanced technology, meticulous raw material selection, rigorous testing and processes, we ensure that each device meets the highest standards of safety and reliability—delivering trust and performance you can count on.",
   },
   {
     symbol: "In",
     title: "Life Enhancing Innovation",
-    smalltitle:"Innovation",
+    smalltitle: "Innovation",
     description:
       "AMS is at the forefront of a medical innovation landscape, consistently challenging the status quo through clinical research and development. Our commitment to scientific evidence and ground-breaking research fuels our drive to create innovative medical technologies. This relentless pursuit of advancement enables us to develop solutions that significantly enhance the quality of life for millions around the world. ",
   },
 ];
-const MolecularCard = ({ symbol,smalltitle, title, description }) => (
+const MolecularCard = ({ symbol, smalltitle, title, description }) => (
   <div className="molecular-card  px-[3vw] py-[3vw] bg-white/50 border rounded-[2.5vw] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
     <div className="w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw] tablet:w-[10vw] tablet:h-[10vw]">
       <p data-para-anim className="text-[3.3vw] mobile:text-[12.2vw] tablet:text-[5vw]">
@@ -118,25 +118,25 @@ const Molecular = () => {
       }
     });
 
-    return () => ctx.revert(); 
+    return () => ctx.revert();
   }, []);
 
-  const swiperRef = useRef(null); 
+  const swiperRef = useRef(null);
   const [activeButton, setActiveButton] = useState("");
 
   const handleNext = () => {
     if (swiperRef.current) {
-      swiperRef.current.slideNext(); 
-      setActiveButton("next"); 
-      
+      swiperRef.current.slideNext();
+      setActiveButton("next");
+
     }
   };
 
   const handlePrev = () => {
     if (swiperRef.current) {
-      swiperRef.current.slidePrev(); 
-      setActiveButton("prev"); 
-    
+      swiperRef.current.slidePrev();
+      setActiveButton("prev");
+
     }
   };
 
@@ -147,17 +147,17 @@ const Molecular = () => {
         id="molecular"
         ref={molecularContainer}
       >
-        <div className="w-screen h-screen absolute z-[1] overflow-hidden mobile:h-[280vw] mobile:w-screen">
-          
-        <LazyVideo
-                    poster={"/assets/about/about-molecular-poster.webp"}
-                    type="video/mp4"
-                    autoPlay="true"
-                    loop="true"
-                    videoSrc={"/assets/about/molecular-bg-video.mp4"}
-                    className='w-full h-full object-cover'
-                    />
-                    <div className="absolute w-full h-full top-0 left-0 bg-white/20"></div>
+        <div className="w-screen h-screen absolute z-[1] overflow-hidden mobile:h-[280vw] mobile:w-screen realative">
+          <span className="absolute bg-white/25 top-0 left-0 right-0 bottom-0"/>
+          <LazyVideo
+            poster={"/assets/about/about-molecular-poster.webp"}
+            type="video/mp4"
+            autoPlay="true"
+            loop="true"
+            videoSrc={"/assets/about/molecular-bg-video.mp4"}
+            className='w-full h-full object-cover'
+          />
+          <div className="absolute w-full h-full top-0 left-0 bg-white/20"></div>
         </div>
         <div className="container-sm py-[15%] relative z-[2] w-full h-full px-[4vw] mobile:px-0 tablet:px-0">
           <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:gap-[20vw]">
@@ -168,35 +168,35 @@ const Molecular = () => {
               <div className="w-[58%] mobile:w-[100%] tablet:w-full">
                 <h2 className="title-2 aeonik">
                   <span
-data-para-anim>Molecular Foundations</span>
+                    data-para-anim>Molecular Foundations</span>
                   <span
-data-para-anim> of AMS</span>
+                    data-para-anim> of AMS</span>
                 </h2>
               </div>
               <p className="content-p w-[75%] mobile:w-[100%]">
                 <span data-para-anim>
-                Ethos and Culture.
+                  Ethos and Culture.
                 </span>
               </p>
             </div>
 
-           <Media greaterThan="mobile">
+            <Media greaterThan="mobile">
 
-             <div className="molecular-right w-[37.5vw] flex flex-col gap-y-[2vw] tablet:w-[60%]">
-              {cardData.map((card, index) => (
-                <MolecularCard
-                  key={index}
-                  symbol={card.symbol}
-                  smalltitle={card.smalltitle}
-                  title={card.title}
-                  description={card.description}
-                />
-              ))}
-            </div>
+              <div className="molecular-right w-[37.5vw] flex flex-col gap-y-[2vw] tablet:w-[60%]">
+                {cardData.map((card, index) => (
+                  <MolecularCard
+                    key={index}
+                    symbol={card.symbol}
+                    smalltitle={card.smalltitle}
+                    title={card.title}
+                    description={card.description}
+                  />
+                ))}
+              </div>
             </Media>
 
             {/* Swiper for mobile view */}
-           
+
 
             <div className=" w-[47%] flex-col gap-y-[2vw] hidden mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full">
               <Swiper
@@ -218,65 +218,59 @@ data-para-anim> of AMS</span>
               </Swiper>
               <div
                 className={`absolute z-[5] bottom-[3%] left-[67%] translate-x-[-65%] overflow-hidden border bg-white/50  py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
-                ${
-                  activeButton === "next"
+                ${activeButton === "next"
                     ? " text-white border-none"
                     : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
+                  } transition-colors duration-300`} // Added background color transition
                 onClick={handleNext} // Trigger next slide
               >
                 <span
-                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  ${
-                    activeButton === "next"
+                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  ${activeButton === "next"
                       ? "scale-100 opacity-100"
                       : "scale-0 opacity-50"
-                  } transition-all duration-300`}
+                    } transition-all duration-300`}
                 ></span>
 
-<div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
-              <Image
-                src="/assets/home/arrow-right.png"
-                alt="arrow-right"
-                className={`object-cover group-hover:invert transition-all duration-300 ${
-                    activeButton === "next"
-                      ? "invert"
-                      : "invert-0"
-                  } `}
-                fill
-              />
-            </div>
+                <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+                  <Image
+                    src="/assets/home/arrow-right.png"
+                    alt="arrow-right"
+                    className={`object-cover group-hover:invert transition-all duration-300 ${activeButton === "next"
+                        ? "invert"
+                        : "invert-0"
+                      } `}
+                    fill
+                  />
+                </div>
               </div>
               <div
                 className={`absolute z-[5] bottom-[3%] left-[37%] translate-x-[-38%] bg-white/50 overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
-                ${
-                  activeButton === "prev"
+                ${activeButton === "prev"
                     ? " text-white border-none"
                     : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
+                  } transition-colors duration-300`} // Added background color transition
                 onClick={handlePrev} // Trigger previous slide
               >
                 <span
-                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${
-                    activeButton === "prev"
+                  className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${activeButton === "prev"
                       ? "scale-100 opacity-100"
                       : "scale-0 opacity-50"
-                  } transition-all duration-300`}
+                    } transition-all duration-300`}
                 ></span>
-                 <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw]">
-              <Image
-                src="/assets/home/arrow-left.png"
-                alt="arrow-left"
-                className={`object-cover group-hover:invert transition-all duration-300 ${
-                    activeButton === "prev"
-                      ? "invert"
-                      : "invert-0"
-                  } `}
-                fill
-              />
-            </div>
+                <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw]">
+                  <Image
+                    src="/assets/home/arrow-left.png"
+                    alt="arrow-left"
+                    className={`object-cover group-hover:invert transition-all duration-300 ${activeButton === "prev"
+                        ? "invert"
+                        : "invert-0"
+                      } `}
+                    fill
+                  />
+                </div>
               </div>
             </div>
-           
+
           </div>
         </div>
       </section>

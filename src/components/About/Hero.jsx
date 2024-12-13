@@ -13,14 +13,14 @@ const Hero = () => {
       setVideoSrc("/assets/about/about-hero-video.mp4");
     }, 4000);
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, []);
 
   paraAnim();
 
   return (
     <>
-      <section className="hero h-[100vh] mobile:mb-[20%] tablet:h-[60vh] mobile:h-[100vh] overflow-hidden mobile:w-full" id="hero">
+      <section className="hero h-screen mobile:mb-[20%] tablet:h-[60vh] mobile:h-screen overflow-hidden mobile:w-full bg-white" id="hero">
         <div className="px-[10%] relative">
           <div className="flex h-dvh w-full justify-start items-center tablet:h-[50vh] mobile:flex-col mobile:justify-center mobile:mt-[20%]">
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50]">
@@ -39,14 +39,14 @@ const Hero = () => {
               </p>
             </div>
             <div className="absolute right-0 bottom-0 h-full tablet:top-[45%] mobile:relative">
-              <div className="w-[77vw] h-full relative mobile:w-[100vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
+              <div className="w-[77vw] overflow-hidden h-full relative mobile:w-[100vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
                 <video
                   poster="/assets/about/about-hero-poster.webp"
                   autoPlay
                   loop
                   muted
-                  src={videoSrc} 
-                  className="w-full h-full object-cover object-left"
+                  src={videoSrc}
+                  className="w-full h-full object-cover object-left scale-[1.05]"
                   playsInline
                 ></video>
               </div>
