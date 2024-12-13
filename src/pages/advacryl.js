@@ -108,7 +108,7 @@ const advacryl = () => {
               <Uncover />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan='tablet'>
   <Pixifinal/>
           </Media>
         

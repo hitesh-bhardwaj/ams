@@ -103,7 +103,7 @@ const advabondcv = () => {
               <Uncover />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan='tablet'>
  <Pixifinal/>
           </Media>
          

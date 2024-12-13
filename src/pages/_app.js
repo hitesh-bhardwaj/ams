@@ -1,13 +1,9 @@
 import "@/styles/fonts.css";
 import "@/styles/globals.css";
-import { AnimatePresence } from "framer-motion";
 import { DefaultSeo } from 'next-seo';
-import { Media, MediaContextProvider , mediaStyles } from "@/components/media";
-import Pixifinal from "@/components/Pixifinal";
+import { MediaContextProvider } from "@/components/media";
 import { ReactLenis } from "lenis/react";
 import ScrollToTop from "@/components/ScrollToTop";
-
-
 
 export default function App({ Component, pageProps, router }) {
 
@@ -19,29 +15,28 @@ export default function App({ Component, pageProps, router }) {
         additionalLinkTags={[
           {
             rel: "preload",
-            href: "/assets/fonts/aeonik/Aeonik-Light.woff",
+            href: "/assets/fonts/aeonik/Aeonik-Light.woff2",
             as: "font",
-            type: "font/woff",
+            type: "font/woff2",
             crossOrigin: "",
           },
           {
             rel: "preload",
-            href: "/assets/fonts/sofia-pro/Sofia-Pro-Light.woff",
+            href: "/assets/fonts/sofia-pro/Sofia-Pro-Light.woff2",
             as: "font",
-            type: "font/woff",
+            type: "font/woff2",
             crossOrigin: "",
           },
         ]}
         dangerouslySetAllPagesToNoFollow={true}
         dangerouslySetAllPagesToNoIndex={true}
       />
-      <style>{mediaStyles}</style>
       <MediaContextProvider>
       <ReactLenis root>
         <ScrollToTop key={router.route}/>
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait"> */}
           <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
+        {/* </AnimatePresence> */}
       </ReactLenis>
       </MediaContextProvider>
       

@@ -107,7 +107,7 @@ const advalon = () => {
               <Uncover />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan='tablet'>
 <Pixifinal/>
           </Media>
           

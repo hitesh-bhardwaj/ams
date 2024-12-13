@@ -23,7 +23,7 @@ export default function career() {
               <Discover />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan='tablet'>
  <Pixifinal/>
           </Media>
          

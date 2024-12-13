@@ -64,12 +64,12 @@ export default function endo() {
                 sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[30%]"}
               />
-              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"}/>
+              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"} width={"45%"}/>
               <Product />
               <Portfolio />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan='tablet'>
 <Pixifinal/>
           </Media>
           

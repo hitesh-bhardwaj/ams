@@ -13,11 +13,11 @@ import {
   Autoplay,
 } from "swiper/modules";
 import Image from "next/image";
-import styles from "@/styles/portfolioSwiper.module.css";
+// import styles from "@/styles/portfolioSwiper.module.css";
 import { Media } from "../media";
 import { fadeup } from "../gsapAnimations";
 
-const EdgeCarousel = () => {
+const EdgeCarousel = ({width}) => {
   const slidesData = [
     {
       src: "/assets/advaglide/advaglide-carousel-1.png",
@@ -64,7 +64,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                   },
                 }}
                 modules={[FreeMode, Thumbs, EffectCreative, Autoplay]}
-                className={`${styles.endoSwiper} mySwiper rounded-[2vw] `}
+                className={`endoSwiper mySwiper rounded-[2vw] `}
                 thumbs={{
                   swiper:
                     thumbsSwiper && !thumbsSwiper.destroyed
@@ -148,7 +148,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
           </Media>
 
           <Media greaterThan="mobile">
-            <div className="absolute top-[90%] w-full left-[18%] endoSmallSwiperContainer fadeUp">
+            <div className={`absolute top-[90%] w-[${width}] left-[20%] endoSmallSwiperContainer fadeUp`}>
               <Swiper
                 onSwiper={setThumbsSwiper}
                 spaceBetween={20}
@@ -156,7 +156,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
-                className={`${styles.endoSmallSwiper} endosmallSwiper`}
+                className={` endosmallSwiper`}
               >
                 {slidesData.map((slide, index) => (
                   <SwiperSlide key={index}>

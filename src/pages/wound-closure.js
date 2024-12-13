@@ -40,7 +40,6 @@ const woundClosure = () => {
           />
           <SutureCarouselFirst/>
           <SutureCarouselSecond/>
-          
           <Portfolio />
         </main>
       </Layout>

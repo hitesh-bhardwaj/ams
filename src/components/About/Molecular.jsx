@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Reusable Card Component
 const MolecularCard = ({ symbol, title, description }) => (
-  <div className="molecular-card w-[35vw] h-[25vw] px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
+  <div className="molecular-card w-[40vw] h-[30vw] px-[3vw] py-[3vw] bg-white/50 border-[1px] rounded-[40px] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
     <div className="w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw] tablet:w-[10vw] tablet:h-[10vw]">
       <p data-para-anim className="text-[3.3vw] mobile:text-[12.2vw] tablet:text-[5vw]">
         {symbol}
@@ -116,7 +116,7 @@ const Molecular = () => {
         "At AMS, quality is built into our design. Through advanced technology, meticulous raw material selection, rigorous testing and processes, we ensure that each device meets the highest standards of safety and reliability—delivering trust and performance you can count on.",
     },
     {
-      symbol: "In (Innovation)",
+      symbol: "In",
       title: "Life Enhancing Innovation",
       description:
         "AMS is at the forefront of a medical innovation landscape, consistently challenging the status quo through clinical research and development. Our commitment to scientific evidence and ground-breaking research fuels our drive to create innovative medical technologies. This relentless pursuit of advancement enables us to develop solutions that significantly enhance the quality of life for millions around the world. ",

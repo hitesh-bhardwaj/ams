@@ -51,7 +51,7 @@ export default function oem() {
               <FormOem />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan='tablet'>
 <Pixifinal/>
           </Media>
           

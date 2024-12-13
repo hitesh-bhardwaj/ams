@@ -51,12 +51,12 @@ export default function needle() {
                 sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[40%]"}
               />
-              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"}/>
+              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"45%"}/>
               <FeatureCards />
               <Advance />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan='tablet'>
 <Pixifinal/>
           </Media>
           

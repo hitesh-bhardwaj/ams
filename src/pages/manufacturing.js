@@ -44,7 +44,7 @@ export default function manufacturing() {
           <Discover />
         </main>
       </Layout>
-      <Media at="desktop">
+      <Media greaterThan='tablet'>
 <Pixifinal/>
       </Media>
       

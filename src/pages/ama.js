@@ -74,12 +74,12 @@ fadeup()
                 mode={"dark"}
               />
               <Genesis content={content} />
-              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#2A2A2A]"}/>
+              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#2A2A2A]"} width={"70%"}/>
               <CardsCarousel />
               <Discover />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan="tablet">
  <Pixifinal/>
           </Media>
          

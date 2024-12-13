@@ -28,7 +28,7 @@ export default function about() {
           <Connecting />
         </main>
       </Layout>
-      <Media at='desktop'>
+      <Media greaterThan='tablet'>
       <Pixifinal/> 
       </Media>
       

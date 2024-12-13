@@ -19,12 +19,13 @@ export default function Facility() {
                             <PrimaryButton className={""} link={"/manufacturing"} text={"Virtual Tour"} />
                         </div>
                     </div>
-                    <div className="relative w-[49.5%] h-[26.2vw] rounded-[2.5vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] mobile:rounded-[6vw] tablet:w-[80vw] tablet:h-[30vh]">
+                    <div className=" w-[49.5%] h-[26.2vw] rounded-[2.5vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] mobile:rounded-[6vw] tablet:w-[80vw] tablet:h-[30vh]">
                         <Image data-speed="0.7"
                             className="w-full object-cover "
                             src="/assets/home/virtual.jpg"
                             alt="facility"
-                            fill
+                            width={741}
+                            height={503}
                         />
                         <Image
                             src="/assets/icons/360.svg"

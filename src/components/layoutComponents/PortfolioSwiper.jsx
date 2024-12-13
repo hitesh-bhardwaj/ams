@@ -13,7 +13,6 @@ import {
   Autoplay,
 } from "swiper/modules";
 import Image from "next/image";
-import styles from "@/styles/portfolioSwiper.module.css"
 import { Media } from "../media";
 
 const PortfolioCard = ({ src, heading, para,textclass }) => {
@@ -39,7 +38,7 @@ const PortfolioCard = ({ src, heading, para,textclass }) => {
   );
 };
 
-const PortfolioSwiper = ({ slidesData, textclass }) => {
+const PortfolioSwiper = ({ slidesData, textclass,width }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const swiperRef = useRef(null); // Create a ref for Swiper
 
@@ -73,7 +72,6 @@ const PortfolioSwiper = ({ slidesData, textclass }) => {
         </div>
         <div className="relative fadeUp rounded-bl-[10px] rounded-tl-[10px] overflow-hidden ">
           <Media greaterThan="mobile">
-
           <div className="">
             <Swiper
               slidesPerView={1}
@@ -96,7 +94,7 @@ const PortfolioSwiper = ({ slidesData, textclass }) => {
                 },
               }}
               modules={[FreeMode, Thumbs, EffectCreative, Autoplay]}
-              className={`${styles.endoSwiper} mySwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden`}
+              className={`endoSwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden`}
               thumbs={{
                 swiper:
                   thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
@@ -126,7 +124,7 @@ const PortfolioSwiper = ({ slidesData, textclass }) => {
               loop={true}
               speed={1000}
               modules={[FreeMode, Thumbs, Autoplay]}
-              className={`${styles.endoSwiper} mySwiper overflow-hidden mobile:h-[70vh] mobile:rounded-[20px]`}
+              className={` mySwiper overflow-hidden mobile:h-[70vh] mobile:rounded-[20px]`}
               thumbs={{
                 swiper:
                   thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
@@ -205,23 +203,23 @@ const PortfolioSwiper = ({ slidesData, textclass }) => {
           </Media>
           <Media greaterThanOrEqual="tablet">
 
-          <div className="absolute top-[75%] w-full left-[-3%] endoSmallSwiperContainer tablet:left-0">
+          <div className={`absolute top-[78%] w-[${width}] endoSmallSwiperContainer flex items-center justify-center  tablet:left-0`}>
             <Swiper
               onSwiper={setThumbsSwiper}
-              spaceBetween={10}
-              slidesPerView={3}
+              slidesPerView={slidesData.length}
+              spaceBetween={20}
               freeMode={true}
               watchSlidesProgress={true}
               modules={[FreeMode, Navigation, Thumbs]}
-              className={`${styles.endoSmallSwiper} endosmallSwiper `}
+              className={`endosmallSwiper`}
             >
               {slidesData.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <Image
                     src={slide.src}
-                    className="rounded-[20px] cursor-pointer"
-                    width={290}
-                    height={300}
+                    className="rounded-[20px] cursor-pointer border-[2px] border-white"
+                    width={280}
+                    height={280}
                     alt="small swiper"
                   />
                 </SwiperSlide>

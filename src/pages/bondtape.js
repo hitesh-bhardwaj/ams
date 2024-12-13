@@ -90,7 +90,7 @@ const bondtape= () => {
               <Uncover />
             </main>
           </Layout>
-          <Media at="desktop">
+          <Media greaterThan='tablet'>
 <Pixifinal/>
           </Media>
           

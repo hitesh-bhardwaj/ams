@@ -17,13 +17,13 @@ const advaglide = () => {
         <main>
            <Hero/>
            <Ergonomic/>
-           <EdgeCarousel/>
+           <EdgeCarousel width={"55%"}/>
            <AdvaGlideSpecifications/>
            <Sirolimus/>
             
         </main>
     </Layout>
-    <Media at="desktop">
+    <Media greaterThan='tablet'>
  <Pixifinal/>
     </Media>
    
