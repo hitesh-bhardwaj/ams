@@ -1,61 +1,58 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Genesis from "@/components/layoutComponents/Genesis";
-import Hero from "@/components/Hero";
-import OemCard from "@/components/Oem/OemCard";
 import Offerings from "@/components/Oem/Offerings";
 import FormOem from "@/components/Oem/FormOem";
-import OfferingsMob from "@/components/Oem/OfferingsMob";
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
+import { fadeup, paraAnim, titleAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import Pixifinal from "@/components/Pixifinal";
-
+import Image from "next/image";
 
 export default function oem() {
+
   const content = {
     heading: "Trust Has a New Name",
-    smallpara:
-      "With a comprehensive range of services, we guarantee excellence at every step, regardless of the scale or complexity of your project. We understand that entering the market is a multifaceted journey, requiring meticulous planning, design, and compliance. From innovative product development and precision manufacturing to rigorous quality assurance and regulatory adherence, AMS is committed to turning your vision into reality.",
-    bigpara:
-      "AMS OEM features a dedicated team specializing in R&D and engineering, delivering medical device solutions tailored to OEM needs with unparalleled expertise. Our focus on performance, flexibility, and reliability drives innovation in medical technology.",
-    src: "/assets/rnd/rnd-genesis-img.webp",
+    smallpara: "At AMS, we elevate the standards for OEM and Custom Branding Solutions with unmatched expertise and dedication. We recognize that entering the market involves a multifaceted journey, requiring meticulous planning, design, and compliance. From innovative product development and precision manufacturing to rigorous quality assurance and regulatory adherence, AMS is committed to making your vision a reality.",
+    bigpara: "Our comprehensive range of services guarantees excellence at every step, no matter the scale or complexity of your project. Partner with AMS for unparalleled trust and reliability in your journey to market success.",
+    src: "/assets/oem/oem-genesis-bg.png",
   };
-  const hero = {
-    title: "Ams Oem",
-    src: "/assets/oem/oem-hero-bg.webp",
-  };
- fadeup()
+
+  fadeup();
+  paraAnim();
 
   return (
     <>
-     
-          <Layout>
-            <main>
-              <Hero
-                title={hero.title}
-                src={hero.src}
-                className="hidden"
-                paraWidth={"max-w-[50vw]"}
-                titleHidden={"hidden"}
-                mode={"dark"}
+      <Layout>
+        <main>
+          <section className="hero-container mobile:mb-[15%] dark" id="hero">
+            <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
+              <Image
+                className="hero-img top-0 left-0 right-0 bottom-0 object-cover h-full w-full absolute object-left"
+                src="/assets/oem/oem-hero-image.png"
+                alt="Hero Image"
+                width={1920}
+                height={1080}
+                priority={true}
               />
-              <Genesis content={content} />
-              <OemCard />
-              <Media greaterThanOrEqual="desktop" >
+              <h1 className="hidden">AMS OEM</h1>
+            </div>
+          </section>
+          <Genesis content={content} />
 
-              <Offerings />
-              </Media>
-              <Media lessThan="desktop">
-              <OfferingsMob />
-              </Media>
-              <FormOem />
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-<Pixifinal/>
+          <Media greaterThanOrEqual="desktop" >
+            <Offerings />
           </Media>
-          
-       
+
+          {/* <Media lessThan="desktop">
+            <OfferingsMob />
+          </Media> */}
+
+          <FormOem />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <Pixifinal />
+      </Media>
     </>
   );
 }

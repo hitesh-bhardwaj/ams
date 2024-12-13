@@ -65,6 +65,7 @@ const Header = () => {
   useEffect(() => {
     const handleRouteChange = () => {
       lenis && lenis.start();
+      lenis && lenis.scrollTo(0, { immediate: true});
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);

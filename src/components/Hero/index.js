@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode}) => {
+  
   titleAnim()
   paraAnim();
   // useGSAP(() => { 
