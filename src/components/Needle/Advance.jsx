@@ -65,7 +65,7 @@ export default function Advance() {
     }
     return (
         <>
-            <section className=" pb-[10%] pt-[5%] mobile:pb-[20%] tablet:pb-[8%] overflow-hidden" id="facility">
+            <section className=" py-[10%] mobile:pb-[20%] tablet:pb-[8%] overflow-hidden bg-white/50" id="facility">
                 <div className=" suture-container ">
                 <div className=" container-lg virtual rounded-[3vw] relative flex items-center justify-between px-[6%] py-[8%] bg-white/50  border border-gray-200 mobile:pt-[60%] mobile:pb-[20%] mobile:flex-col-reverse mobile:rounded-[6vw] tablet:pt-[10%] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
                     <div className="w-full flex flex-col items-center justify-between gap-[5vw] mobile:gap-[12vw]">

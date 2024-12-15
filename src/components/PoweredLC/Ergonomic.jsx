@@ -58,7 +58,7 @@ data-para-anim
                   </div>
                   <div className="mobile:flex mobile:flex-col mobile:gap-[5vw] tablet:flex tablet:flex-wrap tablet:gap-[2vw] tablet:order-1">
 
-                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] left-[12%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
+                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1.5vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] left-[12%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
                     <p
                       data-para-anim
                       className="text-[1.67vw] font-light mobile:text-[6vw] tablet:text-[3vw]"
@@ -72,7 +72,7 @@ data-para-anim
                       Effortless reload angulation adjustment.
                     </p>
                   </div>
-                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] right-[20%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
+                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1.5vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] right-[20%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
                     <p data-para-anim className="text-[1.67vw] font-light mobile:text-[6vw] tablet:text-[3vw]">
                       Smart Reload:
                     </p>
@@ -80,7 +80,7 @@ data-para-anim
                       Convenient reload unload switch.
                     </p>
                   </div>
-                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] right-[25%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
+                  <div className="absolute w-fit h-fit rounded-[1vw] px-[1.5vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] right-[25%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
                     <p
                       data-para-anim
                       className="text-[1.67vw] font-light mobile:text-[6vw] tablet:text-[3vw]"
@@ -95,7 +95,7 @@ data-para-anim
                       Efficient for up to multiple firings.
                     </p>
                   </div>
-                  <div className="absolute w-[25%] h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] right-[15%] bottom-[15%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
+                  <div className="absolute w-[25%] h-fit rounded-[1vw] px-[1.5vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] right-[15%] bottom-[15%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
                     <p
                       data-para-anim
                       className="text-[1.67vw] font-light mobile:text-[6vw] tablet:text-[3vw]"
@@ -110,7 +110,7 @@ data-para-anim
                       and fire functions.
                     </p>
                   </div>
-                    <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[65%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
+                    <div className="absolute w-fit h-fit rounded-[1vw] px-[1.5vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] left-[15%] top-[65%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
                       <p data-para-anim className="text-[1.67vw] font-light mobile:text-[6vw] tablet:text-[3vw]">
                         Actuated Motor:
                       </p>
@@ -119,7 +119,7 @@ data-para-anim
                       </p>
                     </div>
                    
-                      <div className="absolute w-fit h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] left-[20%] bottom-[10%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
+                      <div className="absolute w-fit h-fit rounded-[1vw] px-[1.5vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] left-[20%] bottom-[10%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:px-[5vw] tablet:static tablet:w-[48.5%] tablet:h-[12vw] tablet:px-[2.5vw] ecard-up">
                         <p data-para-anim className="text-[1.67vw] font-light mobile:text-[6vw] tablet:text-[3vw]">
                           Atraumatic Tapered Tip:
                         </p>

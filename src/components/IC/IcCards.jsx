@@ -62,7 +62,7 @@ data-para-anim className="aeonik title-2 text-center">
                       >
                         <h4
                           className={`aeonik uppercase font-light text-[3vw] text-center relative z-[7] ${
-                            slide == 3 ? "text-[2.3vw] normal-case" : ""
+                            slide == 3 ? "!text-[2.3vw] normal-case" : ""
                           }`}
                         >
                           {slide === 1

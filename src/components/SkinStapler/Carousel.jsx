@@ -56,7 +56,7 @@ const Carousel = () => {
      
   return (
     <>
-    <section id='skinstapler-carousel' className='overflow-hidden tablet:h-[80vh]'>  
+    <section id='skinstapler-carousel' className='overflow-hidden tablet:h-[80vh] pb-[5%]'>  
         <div className={`w-screen h-full  py-[5vw] text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab relative`}>
         <Swiper
          onSwiper={(swiper) => (swiperRef.current = swiper)}

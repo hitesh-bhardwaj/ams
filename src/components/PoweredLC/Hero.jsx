@@ -7,66 +7,66 @@ gsap.registerPlugin(useGSAP);
 const Hero = () => {
   fadeUp();
   lineAnim()
-  useGSAP(() => {
-    gsap.from(
-      ".hero-img-1",
-      {
-        xPercent:2,
-        yPercent:-2,
-        opacity:0,
-        duration: 1.5,
-        delay:0.5,
-        ease: "power3.out",
-      });
-      gsap.from(
-        ".hero-img-2",
-        {
-          xPercent:-2,
-          yPercent:2,
-          opacity:0,
-          duration: 1.5,
-          delay:0.5,
-          ease: "power3.out",
-        });
+  // useGSAP(() => {
+  //   gsap.from(
+  //     ".hero-img-1",
+  //     {
+  //       xPercent:2,
+  //       yPercent:-2,
+  //       opacity:0,
+  //       duration: 1.5,
+  //       delay:0.5,
+  //       ease: "power3.out",
+  //     });
+  //     gsap.from(
+  //       ".hero-img-2",
+  //       {
+  //         xPercent:-2,
+  //         yPercent:2,
+  //         opacity:0,
+  //         duration: 1.5,
+  //         delay:0.5,
+  //         ease: "power3.out",
+  //       });
 
 
-    gsap.from('.lineSpan',{
-      scale:0,
-      duration:1,
-      delay:0.5,
-      transformOrigin:'left',
-      ease: "power3.out",
+  //   gsap.from('.lineSpan',{
+  //     scale:0,
+  //     duration:1,
+  //     delay:0.5,
+  //     transformOrigin:'left',
+  //     ease: "power3.out",
 
-    })
-    gsap.from('.hero-text',{
-      y:10,
-      opacity:0,
-      duration:1,
-      ease:'power3.out',
-      delay:0.5
-    })
-    const tl = gsap.timeline({
-      scrollTrigger:{
-        trigger:"#advastap-hero",
-        start:"top top",
-        end:"bottom top",
-        scrub:true,
+  //   })
+  //   gsap.from('.hero-text',{
+  //     y:10,
+  //     opacity:0,
+  //     duration:1,
+  //     ease:'power3.out',
+  //     delay:0.5
+  //   })
+  //   const tl = gsap.timeline({
+  //     scrollTrigger:{
+  //       trigger:"#advastap-hero",
+  //       start:"top top",
+  //       end:"bottom top",
+  //       scrub:true,
        
-      }
-    })
-    tl.to(".hero-img-1",{
-       yPercent:20,
-       ease:"none",
-       duration:3
-    })
-    tl.to(".hero-img-2",{
-      yPercent:20,
-      ease:"none",
-      duration:3,
-      delay:-3
-   })
+  //     }
+  //   })
+  //   tl.to(".hero-img-1",{
+  //      yPercent:20,
+  //      ease:"none",
+  //      duration:3
+  //   })
+  //   tl.to(".hero-img-2",{
+  //     yPercent:20,
+  //     ease:"none",
+  //     duration:3,
+  //     delay:-3
+  //  })
   
-  });
+  // });
 
   return (
     <>

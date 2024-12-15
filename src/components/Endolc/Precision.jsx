@@ -108,6 +108,7 @@ data-para-anim
                     className="font-light leading-[1.2] text-[2.5vw] text-[#2A2A2A] mobile:text-[9vw] mobile:w-[80vw] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]"
                   >
                     Sequential Firing Mechanism
+                    <br/>
                     <span
                       data-para-anim
                       className="block text-[1.25vw] font-light mobile:text-[4vw] tablet:text-[2.2vw] "

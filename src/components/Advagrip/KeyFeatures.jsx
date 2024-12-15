@@ -23,7 +23,7 @@ const FeatureCard = ({ src, title }) => {
           </div>
         </div>
         <div className='w-full flex justify-center items-center mobile:mt-[5vw]'>
-          <p data-para-anim className='text-[1.7vw] font-light text-center w-[60%] mobile:text-[6.5vw] tablet:text-[2.5vw] mt-[2vw] mobile:w-full aeonik'>
+          <p data-para-anim className='text-[1.7vw] leading-[1.2] font-light text-center w-[78%]  mobile:text-[6.5vw] tablet:text-[2.5vw] mt-[2vw] mobile:w-full'>
             {title}
           </p>
         </div>
@@ -55,7 +55,7 @@ const KeyFeatures = ({ card1, card2, card3, card4 }) => {
 
   return (
     <>
-      <section className='mobile:py-[10%] tablet:py-[10%]' id='features'>
+      <section className='mobile:py-[10%] tablet:py-[10%] mt-[5%]' id='features'>
  
 
         <div className='h-screen w-screen tablet:h-full mobile:h-full '>

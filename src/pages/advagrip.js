@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Edge from "@/components/Products/Edge";
 import NextGeneration from "@/components/Products/NextGeneration";
-import Uncover from "@/components/Products/Uncover";
+
 import Layout from "@/components/Layout";
 import Hero from "@/components/Advagrip/Hero";
 import TricCut from "@/components/Advagrip/TricCut";
@@ -71,11 +71,13 @@ const advaGrip = () => {
               <Paradigm/>
              
               <NextGeneration />
-              <Uncover />
+              {/* <Uncover /> */}
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-   <Pixifinal/> 
+         <Pixifinal/>  
+
+
           </Media>
           
        

@@ -6,7 +6,7 @@ import { fadeup } from '../gsapAnimations'
 const TricCut = () => {
   fadeup()
   return (
-    <section id='tricut' className='w-screen h-[65vw] overflow-hidden py-[7%] mobile:py-[15%] relative bg-white/20 mobile:h-[125vh] tablet:py-[10%] tablet:h-[60vh]'>
+    <section id='tricut' className='w-screen h-[58vw] overflow-hidden pt-[7%] mb-[3%] pb-[5%] mobile:py-[15%] relative bg-white/20 mobile:h-[125vh] tablet:py-[10%] tablet:h-[60vh]'>
       <div className='container-lg flex items-center flex-col gap-[4vw] mobile:gap-[18vw]'>
         <h2
 data-para-anim className='title-2 aeonik mobile:text-center'>Tri-Cut Technology</h2>
@@ -21,7 +21,7 @@ data-para-anim className='title-2 aeonik mobile:text-center'>Tri-Cut Technology<
           </div>
         </div>
       </div>
-      <div className='absolute bottom-[10%] w-[100vw] h-[50vw] mobile:h-[100vw] mobile:z-[-1] mobile:w-[180vw] mobile:bottom-[20%] mobile:left-[-50%]'>
+      <div className='absolute bottom-[2%] w-[100vw] h-[50vw] mobile:h-[100vw] mobile:z-[-1] mobile:w-[180vw] mobile:bottom-[20%] mobile:left-[-50%]'>
         <Image src={"/assets/advagrip/Tricut-bg.png"} alt='tricut-bg' fill className='mobile:rotate-[-40deg] mobile:object-contain mobile:w-full mobile:h-full' />
       </div>
 

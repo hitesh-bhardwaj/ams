@@ -12,11 +12,11 @@ import { Media } from "@/components/media";
 
 export default function hernia() {
   const content = {
-    heading: "Redefining Hernia  Surgery",
+    heading: "Redefining Hernia Surgery",
     smallpara:
-      "Each product is meticulously crafted to ensure exceptional strength and resilience, with a focus on biocompatibility and infection resistance. Our advanced designs support seamless tissue integration and contribute to reduced recurrence rates. By leveraging innovative technology, we enhance the effectiveness of each repair and prioritize patient comfort and recovery. Our dedication to quality and performance ensures that our solutions meet the highest standards, empowering surgeons and improving surgical outcomes.",
+      "Each polypropylene mesh is meticulously crafted to deliver exceptional strength, resilience, and biocompatibility, with a strong focus on infection resistance. Our advanced solutions support seamless tissue integration, reducing recurrence rates and elevating surgical outcomes. From open to minimally invasive surgeries, including robotic-assisted techniques, we provide versatile solutions tailored to a wide range of hernia repair needs, from inguinal to ventral procedures.",
     bigpara:
-      "Trust AMS to provide reliable and effective solutions for superior hernia repair. With our ongoing commitment to research and development.",
+      "By leveraging inhouse technologies, AMS enhances the effectiveness of every repair while prioritizing patient comfort and swift recovery. We remain committed to adapting and designing products that meet evolving surgical demands, ensuring the best possible results for both surgeons and patients.",
     src: "/assets/hernia/hernia-redefine.png",
   };
   const hero = {
@@ -56,11 +56,12 @@ export default function hernia() {
                 content={hero.content}
                 className="hidden"
                 mode={"dark"}
+                titleWidth={"w-full"}
               />
               <Genesis
                 content={content}
-                sParaWidth={"w-[60%] ml-[5%] mobile:ml-0 tablet:ml-0"}
-                bParaWidth={"w-[30%]"}
+                sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}
+                bParaWidth={"w-[60%]"}
               />
               <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"} width={"35%"}/>
               <Product />
@@ -69,7 +70,9 @@ export default function hernia() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-     <Pixifinal/> 
+           <Pixifinal/>  
+
+
           </Media>
         
         

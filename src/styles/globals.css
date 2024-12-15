@@ -336,9 +336,9 @@ body{
 }
 .portfolio-text::before{
   content: " ";
-  width: 15vw;
+  width: 12vw;
   height: 1px;
-  background-color: #000;
+  background-color: #898989;
   display: block;
 }
 .capability-card-outer{
@@ -485,9 +485,6 @@ body{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.tracking-space{
-  letter-spacing: 0.5vw;
 }
 
 .swiper-container .swiper{

@@ -3,11 +3,12 @@ import styles from "@/styles/cardiovascularProducts.module.css";
 import Image from "next/image"; 
 import gsap from 'gsap'; 
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import PrimaryButton from '../Button/PrimaryButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const slidesData = [
-    {
+    { src:"/advabond",
       title: "ADVABOND",
       para: "Braided Coated Polyester Green & White",
       imageSrc: "/assets/cardioVascular/advabond.png",
@@ -15,7 +16,7 @@ const slidesData = [
       description2:"Silicone coating designed for excellent handling enabling superior pliability and knotting characteristics.",
       description3 : "ADVAPLEDGET assures consistent performance providing smooth uniform construction for precise suture placement.",
     }   ,
-    {
+    { src:"/advalene",
       title: "ADVALENE",
       para: "Monofilament Polypropylene Blue",
       imageSrc: "/assets/cardioVascular/advalene.png",
@@ -24,6 +25,7 @@ const slidesData = [
       description3 : "ADVAPRIME needles are specially designed with an engineered tip to maintain shape and sharpness pass after pass for the most challenging calcified lesions & fibrotic blood vessels.",
     },
     {
+      src:"/advasteel",
       title: "ADVASTEEL",
       para: "Monofilament stainless Steel 316 LVM",
       imageSrc: "/assets/cardioVascular/advasteel.png",
@@ -31,7 +33,7 @@ const slidesData = [
       description2:"Advanced design with superior pliability conforming closely to contour of sternum.",
       description3 : "High resistance to breakage during bend tightening by twisting with excellent knot security.",
     } ,
-    {
+    {src:"/advapacer-and-wax",
       title: "ADVAWAX",
       para: "Braided Coated Polyester Green & White",
       imageSrc: "/assets/cardioVascular/advawax.png",
@@ -40,6 +42,7 @@ const slidesData = [
       description3 : "ADVAWAX provides ease of application due to smooth consistency.",
     }  ,
     {
+      src:"/advapacer-and-wax",
       title: "ADVAPACER",
       para: "Multifilament 316L Stainless Steel",
       imageSrc: "/assets/cardioVascular/advapacer.png",
@@ -47,7 +50,7 @@ const slidesData = [
       description2:" Lead conductor resistant (14.50Ω/M)",
       description3 : "",
     } ,
-    {
+    { src:"/",
       title: "ADVANOVA",
       para: "Monofilament Polyamide Blue (Treated)",
       imageSrc: "/assets/cardioVascular/advanova.png",
@@ -111,7 +114,7 @@ const Products = () => {
   const totalSlides = slidesData.length;
 
   return (
-    <section id="products" className="w-screen h-screen  overflow-hidden relative mobile:h-[180vh]">
+    <section id="products" className="w-screen h-[60vw]  overflow-hidden relative mobile:h-[180vh] mt-[10%]">
       <div className="w-full h-full flex items-center justify-between pl-[5vw] mobile:flex-col-reverse tablet:flex-col-reverse">
         <div className="w-[50vw] h-[20%] flex flex-col justify-center product-text-container mobile:w-full mobile:h-[60vh] tablet:w-full tablet:h-[50vh]">
           <div className="h-[10vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
@@ -132,9 +135,13 @@ const Products = () => {
             <p className="product-text overflow-hidden content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[3vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[currentIndex].description3}
             </p>
+            <div className='fadeUp mt-[4vw]'>
+
+            <PrimaryButton text={"Read More"} link={slidesData[currentIndex].src}/>
+            </div>
           </div>
         </div>
-        <div className="w-[36vw] h-[50vw] overflow-hidden mobile:w-screen">
+        <div className="w-[36vw] h-[50vw] overflow-hidden ">
           <div className='relative flex items-start justify-end h-screen w-screen'>
             <div className='absolute flex justify-center items-center h-full w-full'>
               {slidesData.map((slide, index) => {
@@ -192,7 +199,7 @@ const Products = () => {
           />
         </div>
       </div>
-      <div className="absolute w-[50vw] h-[95vh] top-0 right-[-10%] z-[-1] mobile:h-[50vh] mobile:w-[90vw] mobile:top-[10%] tablet:hidden">
+      <div className="absolute w-[55vw] h-[60vw] top-0 right-[-10%] z-[-1] mobile:h-[50vh] mobile:w-[90vw] mobile:top-[10%] tablet:hidden">
         <Image
           src="/assets/cardioVascular/product-bg.png"
           fill

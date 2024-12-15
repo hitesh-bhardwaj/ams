@@ -25,7 +25,7 @@ const cardData = [
     title: "Dark Needle",
     description: "Non-reflective.",
     detailedDescription: `A dark non-reflective finish offers desired visualization, specially crafted for enhanced assurance and confidence in the operating zone.`,
-    imageSrc: "/assets/needle/Dark-Needle.webp",
+    imageSrc: "/assets/needle/Dark-Needle.png",
   },
 ];
 
@@ -37,7 +37,7 @@ function FeatureCards() {
   };
   return (
     <>
-      <section id="feature-cards" className="pb-[7%] tablet:pb-0">
+      <section id="feature-cards" className="pb-[10%] pt-[3%] tablet:pb-0">
         <Media greaterThanOrEqual="desktop">
           <div className="container-lg flex flex-col h-full w-full items-center gap-[5vw] justify-between">
             <h2
@@ -48,7 +48,7 @@ data-para-anim className="aeonik title-2">
               {cardData.map((card, index) => (
                 <div
                   key={index}
-                  className="w-[20vw] h-[25vw] relative border border-gray-200 rounded-[2vw] overflow-hidden glassmorphism group transition-all duration-700 origin-center fadeUp"
+                  className="w-[21vw] h-[26vw] relative border border-gray-200 rounded-[2vw] overflow-hidden glassmorphism group transition-all duration-700 origin-center fadeUp"
                 >
                   <div className="w-full h-full relative px-[2.5vw] py-[2vw]">
                     <h4
@@ -63,22 +63,26 @@ data-para-anim className="aeonik title-2">
                     >
                       {card.description}
                     </p>
+                    <div className={`${index==2?"":"hidden"} absolute top-[40%] left-0 flex w-full justify-around text-[1.2vw] text-[#143CA3] group-hover:hidden font-light `}>
+                      <p>AMS</p>
+                      <p>Others</p>
+                    </div>
                     <div
                       className={`w-[20vw] h-[25vw] absolute  ${
-                        index >= 1 ? "top-[30%] left-[5%]" : "top-0 left-0"
-                      }`}
+                        index >= 1 ? "top-[25%] left-[5%]" : "top-0 right-0"
+                      }  ${index==1?"!top-[10%] !w-[17vw] !right-0 !left-auto":""} ${index==3?"!top-0":""}`}
                     >
                       <Image
                         src={card.imageSrc}
                         alt={`${card.title}-image`}
                         className={`${
-                          index <= 1 ? "object-cover" : "object-contain"
+                          index < 1 ? "object-cover" : "object-contain"
                         }`}
                         fill
                       />
                     </div>
                     <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] translate-y-[100%] origin-bottom group-hover:translate-y-[0] transition-all duration-300 ease-out">
-                      <div className="w-full h-full flex flex-col gap-[1vw] pl-[3vw] pr-[1vw] py-[2vw]">
+                      <div className="w-full h-full flex flex-col gap-[1vw] px-[3vw] py-[2vw]">
                         <h4
                           data-para-anim
                           className="text-[1.8vw] aeonik font-light"
@@ -86,7 +90,7 @@ data-para-anim className="aeonik title-2">
                           {card.title}
                         </h4>
                         <div className="w-[3vw] h-[1.2px] bg-[#143CA3]"></div>
-                        <p data-para-anim className="text-[1vw] font-light">
+                        <p data-para-anim className="text-[1vw] font-light text-justify">
                           {card.detailedDescription}
                         </p>
                       </div>

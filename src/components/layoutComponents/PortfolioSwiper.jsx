@@ -29,7 +29,7 @@ const PortfolioCard = ({ src, heading, para,textclass }) => {
           <h2 className={`${textclass} text-[2.8vw] !font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]`}>
             {heading}
           </h2>
-          <p className={`${textclass} text-[1.4vw] font-light w-[80%]  mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]`}>
+          <p className={`${textclass} text-[1.3vw] font-light w-[80%]  mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]`}>
             {para}
           </p>
         </div>
@@ -62,9 +62,9 @@ const PortfolioSwiper = ({ slidesData, textclass,width }) => {
   };
 
   return (
-    <section id="portfolio-swiper" className="overflow-x-hidden bg-white/50 my-[7%] ">
+    <section id="portfolio-swiper" className="overflow-x-hidden bg-white/50 my-[7%] mt-[10%] ">
       <div className="w-full ml-[10%]  pb-[7%] relative h-full mobile:ml-[0%]">
-        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-0  tablet:hidden">
+        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[-10%]  tablet:hidden">
           <p className="text-end">{slidesData[0].title}</p>
         </div>
         <div className="mobile:block hidden w-full px-[5vw] text-center font-light text-[8vw] mb-[12vw]">

@@ -2,7 +2,7 @@
 import Genesis from "@/components/layoutComponents/Genesis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import Hero from "@/components/Hero";
+
 import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Portfolio from "@/components/Endo/Portfolio";
@@ -10,6 +10,7 @@ import ProductCarousel from "@/components/CardioVascular/ProductCarousel";
 import Products from "@/components/CardioVascular/Products";
 import { Media } from "@/components/media";
 import Pixifinal from "@/components/Pixifinal";
+import Hero from "@/components/CardioVascular/Hero";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,17 +18,12 @@ export default function cardiovascular() {
   const content = {
     heading: "Transforming Cardiac Health",
     smallpara:
-      "Every surgery delivers a life changing impact for patients. Towards that purpose, Advanced Medtech Solutions Cardiovascular Sutures are designed to offer unmatched precision, unparalleled strength and optimal efficiency. Poised to redefine the way surgery is done, AMS’ CV suture range maintains the integrity of closure with absolute strength retention while minimizing tissue trauma. Our Advanced Cardiovascular Solutions helps you achieved optimal patient outcomes by delivering consistent product preformance pass after pass. ",
+      "We are advancing cardiac surgery through continuous innovation, evidence-based practices, and scientific rigor, equipping surgeons with the latest tools to address complex conditions like coronary artery disease, valvular heart disorders, and congenital heart defects. By integrating cutting-edge advancements in surgical procedures, device technologies, and cardiothoracic innovation, we provide clinicians with the resources to optimize patient outcomes. Through collaboration and rapid adaptation to evolving clinical challenges, we ensure every intervention is guided by precision, scientific evidence, and the highest standards of care. ",
     bigpara:
-      "Our CV portfolio includes state-of-the-art devices designed to restore and maintain optimal blood flow in patients with coronary artery disease.",
+      "Together, we are shaping the future of cardiac surgery, advancing therapeutic options and improving patient quality of life.",
     src: "/assets/cardioVascular/cardio-vascular-genesis-bg.png",
   };
-  const hero = {
-    title: "Advanced Cardiovascular Solutions",
-    src: "/assets/cardioVascular/cardio-vascular-hero-bg.png",
-    content:
-      "Steady Performance for Superior confidence",
-  };
+
 
   fadeup()
 
@@ -36,14 +32,7 @@ export default function cardiovascular() {
 
       <Layout>
         <main>
-          <Hero
-            title={hero.title}
-            src={hero.src}
-            content={hero.content}
-            className="hidden"
-            paraWidth={"max-w-[90vw]"}
-            mode={"dark"}
-          />
+         <Hero/>
           <Genesis content={content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
             bParaWidth={"w-[30%]"} />
           <Media at="desktop">
@@ -59,7 +48,7 @@ export default function cardiovascular() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal />
+        {/* <Pixifinal /> */}
       </Media>
     </>
   );

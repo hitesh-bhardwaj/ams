@@ -66,10 +66,10 @@ const Hero = () => {
           <div className="flex h-dvh w-full flex-col  mt-[12vw] items-start tablet:h-[70vh] mobile:items-center mobile:mt-[35vw] tablet:mt-[25vw]">
             <div className=" mobile:flex mobile:flex-col mobile:items-center ">
               <h1
-                data-para-anim
-                className="text-[5.5vw] title-1  aeonik drop-shadow-lg  leading-[1.25] mobile:text-center tablet:text-[9vw]"
+                
+                className="text-[5.5vw] title-1  aeonik drop-shadow-lg  leading-[1.25] mobile:text-center tablet:text-[9vw] fadeUp"
               >
-                <span className={`leading-[1.2] overflow-hidden text-white`}>
+                <span className={`leading-[1.2] overflow-hidden grip-gradient text-white`}>
                   ADVAGRIP
                 </span>
               </h1>
@@ -86,7 +86,7 @@ const Hero = () => {
               </p>
               <div className="w-screen h-full text-white aeonik relative mobile:static mobile:w-full">
                 <p data-para-anim className="uppercase text-[14vw] tracking-wider opacity-10 font-light top-[-20%] absolute left-[-12%] mobile:hidden tablet:top-[80%]">advagrip</p>
-                <p data-para-anim className="text-[2.5vw] font-light absolute top-[45%] left-0 mobile:static mobile:text-[5vw] mobile:text-center tablet:top-[130%]">A <span className=" text-white">Grip</span> Like No Other.</p>
+                <p className="text-[2.5vw] font-light absolute top-[45%] left-0 mobile:static mobile:text-[5vw] mobile:text-center tablet:top-[130%] fadeUp">A <span className=" text-white grip-gradient">Grip</span> Like No Other.</p>
 
               </div>
             </div>

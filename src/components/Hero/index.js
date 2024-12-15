@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode}) => {
+const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode,titleWidth}) => {
   
   titleAnim()
   paraAnim();
@@ -54,7 +54,7 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode}
         </div>
         <div className="px-[12%] relative mobile:px-[5%]">
           <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[60vh] mobile:justify-start mobile:pt-[35vw]">
-            <div className="w-[90%] mobile:w-full">
+            <div className={`w-[90%] mobile:w-full ${titleWidth}`}>
               <h1
                 
                 className={`title-1 w-full aeonik title-shadow   leading-[1] ${titleHidden}`}

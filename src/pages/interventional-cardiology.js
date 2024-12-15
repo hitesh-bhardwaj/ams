@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ic() {
   const content = {
-    heading: "Transforming Cardiac Health",
+    heading: "Transforming Cardiac Surgery",
     smallpara:
       "Our commitment to advancing the science of flow restoration is reflected in our cutting-edge products and technologies. We focus on developing innovative solutions that address the critical needs of cardiovascular health, ensuring that every heartbeat is supported by the best possible care. By combining advanced technology with clinical expertise, AMS is dedicated to improving patient outcomes and enhancing the quality of life for those affected by cardiovascular diseases.",
     bigpara:
@@ -33,7 +33,7 @@ export default function ic() {
     {
       title: "Discover How We Advance Cardiology",
       src: "/assets/ic/ic-carousel-img-1.png",
-      heading: "A new Era in Healthcare",
+      heading: "A New Era in Healthcare",
       para: "AMS has forayed into the Interventional Cardiology space with the arrival of its PTCA Balloon Catheter Rx and forthcoming launch of its Drug Eluting Stent and related accessories. Our advanced technologies, decades rich experiences of our people and partners in healthcare brings synergy to enhance confidence of Interventional Cardiologists globally.",
     },
     {
@@ -73,7 +73,7 @@ export default function ic() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal />
+        {/* <Pixifinal /> */}
       </Media>
     </>
   );
