@@ -10,6 +10,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 const EdgeCard = {
   card1: {
@@ -51,27 +52,38 @@ const cardData = [
   {
     title: "Composition",
     description: "90% Glycolide, 10% L-lactide",
+    svg:"/assets/advacryl-plus/composition.svg"
   },
   {
     title: "Colour",
     description: "Undyed and Violet",
+    svg:"/assets/advacryl-plus/color.svg"
+
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 2 to 4-0",
+    svg:"/assets/advacryl-plus/sizes.svg"
+
   },
   {
     title: "Coating",
     description:
       "Poly (glycolide-co-lactide) (Glacomer 37) and Calcium Stearate, Triclosan",
+    svg:"/assets/advacryl-plus/coating.svg"
+
   },
   {
     title: "Tensile Strength",
     description: "~75% | 14 Days ~55% | 21 Days",
+    svg:"/assets/advacryl-plus/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Essentially complete up to 80 days",
+    svg:"/assets/advacryl-plus/absorption.svg"
+
   },
 ];
 
@@ -97,6 +109,7 @@ const advacrylplus = () => {
                 bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
                 para2={"Steady performance for superior confidence"}
               />
+              <Information info={"ADVACRYL PLUS suture is a braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. ADVACRYL PLUS suture is Triclosan coated antibacterial absorbable surgical suture assures consistent performance for confidence in a variety of soft tissue approximation by minimizing Surgical Site Infections (SSI)."}/>
               <Edge
                 sectionheading={"The ADVACRYL PLUS Edge"}
                 card1={EdgeCard.card1}
@@ -104,7 +117,7 @@ const advacrylplus = () => {
                 card3={EdgeCard.card3}
               />
               <Features features={featureData}/>
-              <ProductDescription className={"text-[#855EA6]"} data={cardData}/>
+              <ProductDescription data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

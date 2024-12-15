@@ -52,7 +52,7 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
             <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">
               <div className="edge-card1 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50  mobile:w-[90vw] mobile:gap-[10vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:order-1 mobile:text-center tablet:h-[50vw] tablet:w-[23vw] ">
                 <div>
-                  <h3 className="text-[2.5vw] font-extralight text-center leading-[1.2] mobile:text-[8.2vw] tablet:text-[2.5vw]">
+                  <h3 className="text-[2.5vw] font-extralight  leading-[1.2] mobile:text-[8.2vw] tablet:text-[2.5vw]">
                     {card1.title}
                   </h3>
                 </div>
@@ -102,11 +102,10 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
                     src={card2.bgsrc}
                     alt="background"
                     fill
-                    
                     className="object-fill w-[50vw] h-full top-0 left-0 "
                   />
-                  <p className="relative flex mobile:flex-col text-white text-[1.1vw] font-light w-[90%] mobile:text-[3.3vw] mobile:font-extralight tablet:text-[1.4vw]">
-                    <span className="block w-[10vw] h-[2vw] relative mobile:h-[5vw] mobile:w-[20vw]">
+                  <p className="relative flex mobile:flex-col text-white text-[1.1vw] font-light w-[90%] h-full mobile:text-[3.3vw] mobile:font-extralight tablet:text-[1.4vw]">
+                    <span className=" w-[10vw] h-[2vw] relative mobile:h-[5vw] mobile:w-[20vw]">
                       <Image
                         src="/assets/advacryl/advatray-white.png"
                         fill
@@ -114,7 +113,6 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
                         className="object-contain"
                       />
                     </span>
-                   
                       {card2.para}
                     
                   </p>
@@ -123,7 +121,7 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
 
               <div className="edge-card3 px-[3vw] py-[3vw] h-[40vw] w-[21vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:h-full mobile:py-[15vw] mobile:rounded-[9vw] mobile:gap-[10vw] mobile:text-center mobile:order-2 tablet:h-[50vw] tablet:w-[23vw] ">
                 <div>
-                  <h3 className="text-[2.5vw] font-extralight text-center leading-[1.2] mobile:text-[8.2vw]  tablet:text-[2.5vw] ">
+                  <h3 className="text-[2.5vw] font-extralight  leading-[1.2] mobile:text-[8.2vw]  tablet:text-[2.5vw] ">
                     {card3.title}
                   </h3>
                 </div>

@@ -9,6 +9,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 const EdgeCard = {
   card1: {
@@ -50,27 +51,38 @@ const cardData = [
   {
     title: "Composition",
     description: "Glycolide and    -Caprolactone",
+    svg:"/assets/advamryl/composition.svg"
   },
   {
     title: "Colour",
     description: "Undyed and Violet",
+    svg:"/assets/advamryl/color.svg"
+
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 5-0",
+    svg:"/assets/advamryl/sizes.svg"
+
   },
   {
     title: "Coating",
     description:
       "None",
+    svg:"/assets/advamryl/coating.svg"
+
   },
   {
     title: "Tensile Strength",
     description: "~75% | 14 Days ~55% | 21 Days",
+    svg:"/assets/advamryl/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Essentially complete up to 90 days",
+    svg:"/assets/advamryl/absorption.svg"
+
   },
 ];
 
@@ -93,6 +105,7 @@ const advamryl = () => {
                 bgimg={"/assets/advamryl/advamryl-hero-bg.png"}
                 para2={"Steady performance for superior confidence"}
               />
+              <Information info={"ADVAMRYL suture is monofilament synthetic absorbable surgical suture prepared from a copolymer of Glycolide and epsilon-caprolactone. ADVAMRYL suture is colored violet to increase visibility and are also available undyed."}/>
               <Edge
                 sectionheading={" The ADVAMRYL Edge"}
                 card1={EdgeCard.card1}
@@ -101,7 +114,7 @@ const advamryl = () => {
               />
               <Features features={featureData}
               />
-              <ProductDescription className={"text-[#E58D72]"} data={cardData}/>
+              <ProductDescription  data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

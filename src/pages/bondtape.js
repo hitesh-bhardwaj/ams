@@ -13,54 +13,74 @@ const cardData1 = [
   {
     title: "Composition",
     description: "Polyester Fibre",
+    svg:"/assets/advabondtape/composition.svg"
   },
   {
     title: "Colour",
     description: "White",
+    svg:"/assets/advabondtape/color.svg"
+
   },
   {
     title: "Available Sizes",
     description: "Length 30 cm  |  Width 5 mm",
+    svg:"/assets/advabondtape/sizes.svg"
+
   },
   {
     title: "Sterilization Method",
     description:
       "Gamma irradiation",
+    svg:"/assets/advabondtape/sterilization.svg"
+
   },
   {
     title: "Tensile Strength",
     description: "Permanent",
+    svg:"/assets/advabondtape/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Non Absorbable",
+    svg:"/assets/advabondtape/absorption.svg"
+
   },
 ];
 const cardData2 = [
   {
     title: "Composition",
     description: "100% Cotton",
+    svg:"/assets/advabondtape/composition2.svg"
   },
   {
     title: "Colour",
     description: "White",
+    svg:"/assets/advabondtape/color2.svg"
   },
   {
     title: "Available Sizes",
     description: "3 mm x 75 cm",
+    svg:"/assets/advabondtape/sizes2.svg"
   },
   {
     title: "Construction",
     description:
       "Flat Braided, Non-Woven",
+    svg:"/assets/advabondtape/construction.svg"
+
   },
   {
     title: "Foils/box",
     description: "12",
+    svg:"/assets/advabondtape/box.svg"
+
   },
   {
     title: "Shelf life",
     description: "5 Years",
+    svg:"/assets/advabondtape/shelf.svg"
+
   },
 ];
 const bondtape= () => {

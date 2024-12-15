@@ -9,6 +9,7 @@ import Edge2 from "@/components/Products/Edge2";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 const EdgeCard = {
   card1: {
@@ -30,27 +31,39 @@ const cardData = [
   {
     title: "Composition",
     description: "Stainless 316LVM Steel",
+    svg:"/assets/advasteel-cv/composition.svg"
   },
   {
     title: "Colour",
     description: "None",
+    svg:"/assets/advasteel-cv/color.svg"
+
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 7 to 1",
+    svg:"/assets/advasteel-cv/sizes.svg"
+
   },
   {
     title: "Coating",
     description:
       "None",
+    svg:"/assets/advasteel-cv/coating.svg"
+
   },
+
   {
     title: "Tensile Strength",
     description: "Permanent",
+    svg:"/assets/advasteel-cv/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Non Absorbable",
+    svg:"/assets/advasteel-cv/absorption.svg"
+
   },
 ];
 
@@ -73,6 +86,7 @@ const advasteelcv = () => {
                 bgimg={"/assets/advasteel-cv/advasteel-cv-hero-bg.png"}
                 para2={"Monofilament Non-Absorbable Surgical Suture"}
               />
+              <Information info={"ADVASTEEL monofilament is made from 316L stainless steel, a high-quality material used in surgical implants. It is renowned for its strength and non-absorbable properties, ensuring secure wound closure in various surgical procedures. ADVASTEEL represents a durable and reliable stainless steel suture, engineered for effective tissue approximation and long-lasting wound closure across a wide range of surgical applications."}/>
               <Edge2
                 sectionheading={"The ADVASTEEL Edge"}
                 card1={EdgeCard.card1}
@@ -81,7 +95,7 @@ const advasteelcv = () => {
                 className={"hidden"}
               />
              
-              <ProductDescription className={"text-[#E08B19]"} data={cardData}/>
+              <ProductDescription  data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

@@ -9,47 +9,65 @@ import Layout from "@/components/Layout";
 import Advawax from "@/components/Advawax/Advawax";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 
 const cardData1 = [
   {
     title: "Composition",
     description: "Stainless Steel",
+    svg:"/assets/advapacer/composition.svg"
   },
   {
     title: "Colour",
     description: "Blue",
+    svg:"/assets/advapacer/color.svg"
+
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 2-0",
+    svg:"/assets/advapacer/sizes.svg"
+
   },
   {
     title: "Coating",
     description:
       "LDPE",
+    svg:"/assets/advapacer/coating.svg"
+
   },
   {
     title: "Tensile Strength",
     description: "Permanent",
+    svg:"/assets/advapacer/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Non Absorbable",
+    svg:"/assets/advapacer/absorption.svg"
+
   },
 ];
 const cardData2 = [
     {
       title: "Composition",
       description: "Bees Wax and Isopropyl Myristate.",
+    svg:"/assets/advapacer/composition.svg"
+
     },
     {
       title: "Colour",
       description: "White",
+    svg:"/assets/advapacer/color.svg"
+
     },
     {
       title: "Available Sizes",
       description: "ADVAW810",
+    svg:"/assets/advapacer/sizes.svg"
+
     },
     {
       title: "Coating",
@@ -59,6 +77,8 @@ const cardData2 = [
     {
       title: "Tensile Strength",
       description: "Permanent",
+    svg:"/assets/advapacer/tensile.svg"
+
     },
     {
       title: "Weight (g)",
@@ -85,9 +105,11 @@ const advapacer = () => {
                 bgimg={"/assets/advapacer/advapacer-bg.png"}
                 para2={"Monofilament Non-Absorbable Surgical Suture"}
               />
-              <ProductDescription className={"text-[#CBA82A]"} data={cardData1}/>
+              <Information info={"ADVAPACER is a twisted 316L stainless steel wire, featuring a dual coating of blue and blue-orange Low Densile Polyethylene (sheathed) for enhanced durability. The advanced coating offers smooth handling and minimizes tissue trauma, making it ideal for various surgical applications requiring precision and durability. "}/>
+              <ProductDescription data={cardData1}/>
               <Advawax/>
-              <ProductDescription className={"text-[#CBA82A]"} data={cardData2}/>
+              <Information info={"ADVAWAX is a non-absorbable, biocompatible material designed to control bleeding from bone surfaces by acting as a mechanical tamponade. It provides excellent malleability and ease of application due to its ultra-soft consistency. ADVAWAX minimizes inflammatory reactions and is ideal for achieving local hemostasis."}/>
+              <ProductDescription data={cardData2}/>
               <NextGeneration />
               <Uncover />
             </main>

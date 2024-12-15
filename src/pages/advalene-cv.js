@@ -9,6 +9,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 const EdgeCard = {
   card1: {
@@ -46,27 +47,38 @@ const cardData = [
   {
     title: "Composition",
     description: "Polypropylene",
+    svg:"/assets/advalene-cv/composition.svg"
   },
   {
     title: "Colour",
     description: "Blue",
+    svg:"/assets/advalene-cv/color.svg"
+
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 5-0",
+    svg:"/assets/advalene-cv/sizes.svg"
+
   },
   {
     title: "Coating",
     description:
       "None",
+    svg:"/assets/advalene-cv/coating.svg"
+
   },
   {
     title: "Tensile Strength",
     description: "Permanent",
+    svg:"/assets/advalene-cv/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Non Absorbable",
+    svg:"/assets/advalene-cv/absorption.svg"
+
   },
 ];
 const advalenecv = () => {
@@ -88,6 +100,7 @@ const advalenecv = () => {
                 bgimg={"/assets/advalene/advalene-hero-bg.png"}
                 para2={"With exceptional strength comes confidence that lasts"}
               />
+              <Information info={"ADVALENE Cardiovascular suture is a monofilament synthetic non-absorbable, sterile surgical suture composed of an isotactic crystalline stereoisomer of polypropylene, synthetic linear polyolefin. The suture is dyed with Phthalocyanine Blue to enhance visibility in tissue. Due to its relative biological inertness it is recommended for use where the least possible suture reaction is desired. ADVALENE Cardiovascular Suture an ideal choice for anastomosis."}/>
               <Edge
                 sectionheading={"The ADVALENE Edge"}
                 card1={EdgeCard.card1}
@@ -96,7 +109,7 @@ const advalenecv = () => {
               />
               <Features features={featureData}
               />
-              <ProductDescription className={"text-[#1480B8]"} data={cardData}/>
+              <ProductDescription  data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

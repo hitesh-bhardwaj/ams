@@ -9,6 +9,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 const EdgeCard = {
   card1: {
@@ -50,27 +51,38 @@ const cardData = [
   {
     title: "Composition",
     description: "Polydioxanone",
+    svg:"/assets/advapd/composition.svg"
   },
   {
     title: "Colour",
     description: "Violet",
+    svg:"/assets/advapd/color.svg"
+
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 5-0",
+    svg:"/assets/advapd/sizes.svg"
+
   },
   {
     title: "Coating",
     description:
       "None",
+    svg:"/assets/advapd/coating.svg"
+
   },
   {
     title: "Tensile Strength",
     description: "~80% | 14 Days ~70% | 28 Days",
+    svg:"/assets/advapd/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Essentially complete between 180 to 220 days",
+    svg:"/assets/advapd/absorption.svg"
+
   },
 ];
 
@@ -93,6 +105,7 @@ const advapd = () => {
                 bgimg={"/assets/advapd/advapd-hero-bg.png"}
                 para2={"Steady performance for superior confidence"}
               />
+              <Information info={"ADVAPD suture is a monofilament synthetic absorbable sterile surgical suture composed of a copolymer made from the Polyester and Polydioxanone. ADVAPD suture is available in both dyed and undyed form. These sutures are particularly useful where the combination of an absorbable suture and extended wound support (up to six weeks) is desirable."}/>
               <Edge
                 sectionheading={"The ADVAPD Edge"}
                 card1={EdgeCard.card1}
@@ -101,7 +114,7 @@ const advapd = () => {
               />
               <Features features={featureData}
               />
-              <ProductDescription className={"text-[#A49EA3]"} data={cardData}/>
+              <ProductDescription data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

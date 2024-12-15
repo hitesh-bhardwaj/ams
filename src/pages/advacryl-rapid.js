@@ -9,6 +9,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 const EdgeCard = {
   card1: {
@@ -50,27 +51,33 @@ const cardData = [
   {
     title: "Composition",
     description: "90% Glycolide, 10% L-lactide",
+    svg: "/assets/advacryl-rapid/composition.svg"
   },
   {
     title: "Colour",
     description: "Undyed",
+    svg: "/assets/advacryl-rapid/color.svg"
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 5-0",
+    svg:"/assets/advacryl-rapid/sizes.svg"
   },
   {
     title: "Coating",
     description:
       "Poly (glycolide-co-lactide) (Glacomer 37)",
+      svg:"/assets/advacryl-rapid/coating.svg"
   },
   {
     title: "Tensile Strength",
     description: "~42%  |  5 Days  ~ 0%   |  10-14 Days",
+    svg:"/assets/advacryl-rapid/tensile.svg"
   },
   {
     title: "Absorption Profile",
     description: "Essentially complete upto 42 days",
+    svg:"/assets/advacryl-rapid/absorption.svg"
   },
 ];
 const advacrylrapid = () => {
@@ -94,6 +101,7 @@ const advacrylrapid = () => {
                   "Swift Confidence for Superior Predictability"
                 }
               />
+              <Information info={"  ADVACRYL RAPID is a braided synthetic absorbable suture made of 90% glycolide and 10% L-lactide. ADVACRYL RAPID in comparison to ADVACRYL has a rapid loss of strength and absorption rate. The characteristic rapid loss of strength is achieved by use of a polymer material with a lower molecular weight than regular ADVACRYL (polyglactin 910) suture."}/>
               <Edge
                 sectionheading={" The ADVACRYL RAPID Edge"}
                 card1={EdgeCard.card1}
@@ -102,7 +110,7 @@ const advacrylrapid = () => {
               />
               <Features features={featureData}
               />
-              <ProductDescription className={"text-[#E41F30]"} data={cardData}/>
+              <ProductDescription data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

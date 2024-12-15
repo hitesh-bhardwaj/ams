@@ -9,6 +9,7 @@ import Edge2 from "@/components/Products/Edge2";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 const EdgeCard = {
   card1: {
@@ -50,27 +51,38 @@ const cardData = [
   {
     title: "Composition",
     description: "Polyethylene Terephthalate",
+    svg:"/assets/advabond/composition.svg"
   },
   {
     title: "Colour",
     description: "White (Undyed) & Green",
+    svg:"/assets/advabond/color.svg"
+
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 5 to 6-0",
+    svg:"/assets/advabond/sizes.svg"
+
   },
   {
     title: "Coating",
     description:
       "Silicone",
+    svg:"/assets/advabond/coating.svg"
+
   },
   {
     title: "Tensile Strength",
     description: "Permanent",
+    svg:"/assets/advabond/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Non Absorbable",
+    svg:"/assets/advabond/absorption.svg"
+
   },
 ];
 
@@ -93,6 +105,7 @@ const advabond = () => {
                 bgimg={"/assets/advabond/advabond-hero-bg.png"}
                 para2={"Enhancing confidence for everlasting support"}
               />
+              <Information info={"ADVABOND suture is a sterile, coated, braided, synthetic, non-absorbable surgical suture composed of Polyethylene Terephthalate. The suture is coated with Silicone which acts as a lubricant to mechanically improve the ease of passage through tissue and the overall handling qualities of the suture. No significant change in the retention of tensile strength of the suture occurs during the lifetime of the implantation."}/>
               <Edge2
                 sectionheading={"The ADVABOND Edge"}
                 card1={EdgeCard.card1}
@@ -102,7 +115,7 @@ const advabond = () => {
               />
               <Features features={featureData}
               />
-              <ProductDescription className={"text-[#F08144]"} data={cardData}/>
+              <ProductDescription  data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>

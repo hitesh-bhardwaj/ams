@@ -58,7 +58,7 @@ const Features = ({ features }) => {
   return (
     <section className='mobile:py-[10%] py-[5%] tablet:py-[8%]' id='features'>
         <div className='h-full w-screen container-lg tablet:h-full mobile:hidden'>
-          <div className='h-full w-full border rounded-[3vw] py-[4vw] flex flex-col bg-white/50 items-center justify-center gap-[4vw] tablet:py-[5vw] tablet:h-[60%]'>
+          <div className='h-full w-full border-[2px] border-[#ffffff] rounded-[2.5vw] py-[4vw] flex flex-col bg-white/50 items-center justify-center gap-[4vw] tablet:py-[5vw] tablet:h-[60%]'>
             <div>
               <h2
 data-para-anim className='title-2 aeonik'>Key Features</h2>

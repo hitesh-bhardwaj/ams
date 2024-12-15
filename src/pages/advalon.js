@@ -9,6 +9,7 @@ import Edge2 from "@/components/Products/Edge2";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Information from "@/components/Products/Information";
 
 const EdgeCard = {
   card1: {
@@ -50,27 +51,37 @@ const cardData = [
   {
     title: "Composition",
     description: "Polyamide",
+    svg:"/assets/advalon/composition.svg"
   },
   {
     title: "Colour",
     description: "Black",
+    svg:"/assets/advalon/color.svg"
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 10-0",
+    svg:"/assets/advalon/sizes.svg"
+
   },
   {
     title: "Coating",
     description:
       "None",
+    svg:"/assets/advalon/coating.svg"
+
   },
   {
     title: "Tensile Strength",
     description: "Permanent",
+    svg:"/assets/advalon/tensile.svg"
+
   },
   {
     title: "Absorption Profile",
     description: "Non Absorbable",
+    svg:"/assets/advalon/absorption.svg"
+
   },
 ];
 
@@ -93,6 +104,7 @@ const advalon = () => {
                 bgimg={"/assets/advalon/advalon-hero-bg.png"}
                 para2={"Ideal selection for confidence in skin closure"}
               />
+              <Information info={"ADVALON suture is a non-absorbable sterile surgical suture composed of the long chain aliphatic polymers Nylon 6-6.6. ADVALON suture elicits a minimal initial inflammatory reaction in tissues which is followed by gradual encapsulation of the suture by fibrous connective tissues. ADVALON suture is effective as a pull-out suture due to its lack of adherence to tissue."}/>
               <Edge2
                 sectionheading={"The ADVALON Edge"}
                 card1={EdgeCard.card1}
@@ -102,7 +114,7 @@ const advalon = () => {
               />
               <Features features={featureData}
               />
-              <ProductDescription className={"text-[#7FC18E]"} data={cardData}/>
+              <ProductDescription data={cardData}/>
               <NextGeneration />
               <Uncover />
             </main>
