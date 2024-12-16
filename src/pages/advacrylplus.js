@@ -68,22 +68,18 @@ const cardData = [
   },
   {
     title: "Coating",
-    description:
-      "Poly (glycolide-co-lactide) (Glacomer 37) and Calcium Stearate, Triclosan",
+    description: "Poly (glycolide-co-lactide) (Glacomer 37) and Calcium Stearate, Triclosan",
     svg:"/assets/advacryl-plus/coating.svg"
-
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days ~55% | 21 Days",
+    description: "~75% | 14 Days<br />~55% | 21 Days",
     svg:"/assets/advacryl-plus/tensile.svg"
-
   },
   {
     title: "Absorption Profile",
     description: "Essentially complete up to 80 days",
     svg:"/assets/advacryl-plus/absorption.svg"
-
   },
 ];
 

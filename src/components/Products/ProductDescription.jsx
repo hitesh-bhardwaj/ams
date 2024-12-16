@@ -21,15 +21,15 @@ const ProductDescription = ({ data }) => {
           ease: "power3.out",
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top 75%", 
+            start: "top 75%",
             end: "bottom 25%",
-           
+
           },
         }
       );
     }, sectionRef);
 
-    return () => ctx.revert(); 
+    return () => ctx.revert();
   }, []);
   return (
     <section
@@ -41,7 +41,7 @@ const ProductDescription = ({ data }) => {
         <div className="flex flex-col items-center justify-center gap-[5vw]">
           <div className="mobile:mb-[8vw] tablet:mb-[5vw]">
             <h2
-             data-para-anim
+              data-para-anim
               className="title-2 aeonik mobile:text-center tablet:text-center"
             >
               Product Description
@@ -59,24 +59,25 @@ const ProductDescription = ({ data }) => {
                       className={`w-[5vw] h-[5vw] mobile:h-[30vw] mobile:w-[30vw] tablet:w-[10vw] tablet:h-[10vw]`}
                     >
                       <Image className="w-full h-full relative"
-                      src={card.svg} alt="product-icons" fill
-                  />
+                        src={card.svg} alt="product-icons" fill
+                      />
                     </div>
                   </div>
                 </div>
 
                 <div className="absolute bottom-[18%] left-[4%] flex flex-col justify-start gap-[1vw] mobile:static mobile:w-full mobile:h-full mobile:justify-end mobile:pb-[10vw] mobile:px-[5vw] mobile:text-center">
                   <p
-                    
+
                     className="text-[1.65vw] font-medium mobile:text-[6vw] tablet:text-[3vw]"
                   >
                     {card.title}
                   </p>
                   <p
-                   
                     className="text-[1.65vw] font-light mobile:text-[4vw] tablet:text-[2.5vw]"
+                    dangerouslySetInnerHTML={{
+                      __html: card.description,
+                    }}
                   >
-                    {card.description}
                   </p>
                 </div>
               </div>
