@@ -9,7 +9,6 @@ import { Navigation } from "swiper/modules";
 import { Media } from "../media";
 import LazyVideo from "../layoutComponents/LazyVideo";
 import "swiper/css/navigation";
-import { smoothstep } from "three/src/math/MathUtils";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -152,8 +151,8 @@ const Molecular = () => {
           <LazyVideo
             poster={"/assets/about/about-molecular-poster.webp"}
             type="video/mp4"
-            autoPlay="true"
-            loop="true"
+            autoPlay
+            loop
             videoSrc={"/assets/about/molecular-bg-video.mp4"}
             className='w-full h-full object-cover'
           />

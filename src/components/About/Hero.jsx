@@ -1,9 +1,5 @@
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { paraAnim } from "../gsapAnimations";
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const [videoSrc, setVideoSrc] = useState(null);
@@ -48,7 +44,7 @@ const Hero = () => {
                   src={videoSrc}
                   className="w-full h-full object-cover object-left scale-[1.05]"
                   playsInline
-                ></video>
+                />
               </div>
             </div>
           </div>

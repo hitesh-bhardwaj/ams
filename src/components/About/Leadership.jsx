@@ -1,0 +1,193 @@
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import styles from "./index.module.css";
+import { useRef, useEffect } from "react";
+
+const Leadership = () => {
+    const topBoxRef = useRef(null);
+    const swiperRef = useRef(null);
+
+    const handleSlideChange = (swiper) => {
+        const translatePercent = -(swiper.activeIndex * 16.66);
+        if (topBoxRef.current) {
+            topBoxRef.current.style.transform = `translateX(${translatePercent}%)`;
+        }
+    };
+
+    const slideNext = () => {
+        if (swiperRef.current) swiperRef.current.slideNext();
+    };
+
+    const slidePrevious = () => {
+        if (swiperRef.current) swiperRef.current.slidePrev();
+    };
+
+    useEffect(() => {
+        if (topBoxRef.current) {
+            topBoxRef.current.style.transform = `translateX(0%)`;
+        }
+    }, []);
+
+    return (
+        <>
+            <section id="leadership" className="bg-white/50">
+                <div className="w-full py-[7%]">
+                    <h3 className="aeonik title-2 text-center">The Vision of AMS Leadership</h3>
+                    <div className="relative">
+                        <div className="w-screen px-[4vw] flex justify-between items-center top-[20%] z-10 absolute">
+                            <div onClick={slidePrevious} className="px-[1.2vw] py-[1.2vw] z-[5] relative bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer mobile:block group hover:text-white">
+                                <span className="bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300" />
+                                <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
+                                    <Image
+                                        src="/assets/home/arrow-left.png"
+                                        alt="arrow-left"
+                                        className={`object-cover group-hover:invert duration-300 rotate-180`}
+                                        fill
+                                    />
+                                </div>
+                            </div>
+                            <div onClick={slideNext} className="px-[1.2vw] py-[1.2vw] z-[5] relative overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer group hover:text-white bg-white/50">
+                                <span className="bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300" />
+                                <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+                                    <Image
+                                        src="/assets/home/arrow-right.png"
+                                        alt="arrow-right"
+                                        className={`object-cover group-hover:invert duration-300`}
+                                        fill
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-[600%] h-[40vw] pt-[2vw] flex items-center absolute top-box duration-1000" ref={topBoxRef}>
+                            {content.map((content, key) => (
+                                <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative">
+                                    <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full">{content.name}</p>
+                                    <Image className="absolute w-[60%] top-[-8%] opacity-75 left-1/2 -translate-x-1/2" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={90} />
+                                </div>
+                            ))}
+                        </div>
+                        <Swiper
+                            className={`${styles.swiper} !pt-[35vw] font-light`}
+                            style={swiperStyle}
+                            slidesPerView={3}
+                            spaceBetween={100}
+                            centeredSlides={true}
+                            speed={1000}
+                            navigation={false}
+                            onSwiper={(swiper) => (swiperRef.current = swiper)}
+                            onSlideChange={handleSlideChange}
+                        >
+                            {content.map((item, i) => (
+                                <SwiperSlide key={i} className={styles.swiperSlide}>
+                                    <div className="relative">
+                                        <div className={`leader-image flex justify-center`}>
+                                            <Image
+                                                className="w-[100%]"
+                                                src={item.slideImage}
+                                                alt={`${item.name} image`}
+                                                width={450}
+                                                height={300}
+                                                quality={90}
+                                            />
+                                        </div>
+                                        <div className="h-[24vw] w-[36vw] bg-white/70 backdrop-blur-md rounded-[1.5vw] p-[2vw] overflow-hidden border-white absolute top-0 left-1/2 -translate-x-1/2 duration-500 opacity-0 translate-y-[0%] leaderSwiperContent pointer-events-none">
+                                            <h4 className="text-[2.5vw] aeonik mb-[0.5vw]">{item.name}</h4>
+                                            <p className="uppercase mb-[0.5vw]">{item.title}</p>
+                                            <span className="bg-black h-[1.5px] w-[3vw] block mb-[1.5vw]" />
+                                            <div data-lenis-prevent className="overflow-y-scroll h-[60%]">
+                                                <div className="text-justify text-[1.1vw] font-extralight space-y-[3%] pr-3">
+                                                    {item.description.map((text, index) => (
+                                                        <p key={index}>{text}</p>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+export default Leadership;
+
+const swiperStyle = {
+    padding: "0 5% 5% 5%"
+}
+
+const content = [
+    {
+        name: "Vijay Kewalramani",
+        title: "Founder and Chairman",
+        description: [
+            "Vijay Kewalramani is the Founder and Chairman of Advanced MedTech Solutions. He is a global entrepreneur, investor and visionary leader with a career spanning several capital market cycles over 45 years across the U.S., Africa, Asia & Europe. Adept at managing volatility and leveraging opportunities in any economic condition, he started his career in textile and apparel manufacturing where he acquired rights to open a licensed retail division for the Polo Ralph Lauren Group in Greenwich, Connecticut. With a continued focus and growth in both retail and manufacturing he forged a 20 year tenure that helped facilitate another two decades of successful fund management through working closely with financial institutions such as UBS, Credit Suisse, & Citigroup.",
+            "His invaluable hands-on experience in proprietary trading, investment management and global property development have made him a seasoned investment magnate with expertise in varied multi-asset class portfolios ranging from ETFs, equities, fixed income and forex. He was an investment advisor to IDC Global overseeing an index of unlisted and listed companies, private equity, venture capital and wealth management. He serves on the advisory boards of investment funds managed by Invesco Private Capital, Vedanta Capital, New Silk Route, & Tenzing S.A."
+        ],
+        slideImage: "/assets/about/leadership/Vijay-Ramani-small.png",
+        slideImageBg: "/assets/about/leadership/Vijay-Ramani.png",
+    },
+    {
+        name: "Parag Saxena",
+        title: "Chief Advisor",
+        description: [
+            "Parag Saxena co-founded two private equity investment firms, Vedanta Management and New Silk Route, with commitments over $2 billion. Over the span of his 37-year career, he been a part of teams that have invested in companies with aggregate market value exceeding $500 billion. Named multiple times to the Forbes' Midas List of top investors, he has led or been on teams that have made over 80 investments in pharma-biotech, digital health, medical devices, hospital management and health insurance. He is also CEO and a Director at Eucrates Biomedical Acquisition Corp which seeks to target healthcare companies, specifically those utilizing biomedicine and data science.",
+            "Previously, he was Chief Executive Officer of INVESCO Private Capital (and its predecessor firms), a venture capital firm in the U.S. During his 23-year tenure at INVESCO, over 300 investments were made, including Amgen, Costco, PictureTel, Polycom, Staples, and Starbucks. Mr. Saxena led more than 90 investments for INVESCO Private Capital (and its predecessor firms), a third of which went on to become public companies. These investments include Alkermes, Celgene, Genomic Health, Indigo, Masimo, Transgenomic, Xenon Pharmaceuticals, Amber Networks, ARM Holdings, Horizon Health Corp. and MetroPCS.",
+            "Mr. Saxena has served on committees advising the Prime Minister of India on foreign direct investments, and the Planning Commission of India on venture capital. He has also addressed U.S. Congressional Members on Venture Capital and Healthcare. He is also a Founding, Global Advisory Board Member of the Wilson Center in Washington D.C, a past Board Member of the TB Alliance and on the U.S. Advisory Board of the Royal Shakespeare Company. He was the President of TiE Tri-State (NY, CT, NJ) from 2003 to 2010. He was also on Mayor Bloomberg's Applied Sciences NYC Advisory Committee which attracted Cornell University to New York City.",
+            "Mr. Saxena received an M.B.A. from the Wharton School of the University of Pennsylvania. He earned a B.Tech. from the Indian Institute of Technology, Bombay, and an M.S. in Chemical Engineering from the West Virginia College of Graduate Studies."
+        ],
+        slideImage: "/assets/about/leadership/Parag-Saxena-small.png",
+        slideImageBg: "/assets/about/leadership/Parag-Saxena.png",
+    },
+    {
+        name: "Jiten Surtani",
+        title: "Executive Director",
+        description: [
+            "Jiten Surtani is an Executive Director at Advanced MedTech Solutions (AMS) with over 18 years of experience in the finance industry. He was a founding partner at IIFL Investment Managers and was instrumental in the organizations evolution from a start up to one of India's leading private wealth management outfits. Strategic, yet tactical, his comprehensive knowledge of leveraging numerous investment opportunities and trading scenarios compliment his investment banking expertise.",
+            "His zeal to build various businesses have greatly contributed to AMS's growth and expansion. With an MBA from IIM Calcutta and Economic Honors from Shri Ram College of Commerce, Surtani leads by example with the proven ability to achieve and exceed all business development goals. Performance driven, he is a dynamic and invaluable asset to AMS.",
+        ],
+        slideImage: "/assets/about/leadership/Jiten-Surtani-small.png",
+        slideImageBg: "/assets/about/leadership/Jiten-Surtani.png",
+    },
+    {
+        name: "Sameer Ramani",
+        title: "Director",
+        description: [
+            "Sameer Ramani is a Director at Advanced MedTech Solutions with two decades of distinguished experience in global manufacturing . A seasoned entrepreneur, real estate developer and business driver, Sameer started his career in textile and apparel production with a significant footprint in the U.S. amidst a diverse exposure across Europe, Asia & Africa.",
+            "An outstanding leader, motivator and creative thinker, he excels in specialized marketing concepts, principles and tactics. Embracing the core values of integrity, innovation and growth, Sameer has been momentous in cultivating AMS' brand development & architecture, digital presence and cultural acuity.",
+            "He brings an extensive knowledge in the design and deployment of profitable manufacturing strategies and hands on experience in U.S Quality Control, Process Audit & Logistics. A dynamic public speaker and evangelizer he holds a Bachelor's degree in Economics from New York University amongst an expertise in Sales & Marketing, P.R. & Business Management.",
+            "Profoundly driven and perfectionistic, Sameer instills a spirit of ingenuity and resolve to AMS."
+        ],
+        slideImage: "/assets/about/leadership/Sameer-Ramani-small.png",
+        slideImageBg: "/assets/about/leadership/Sameer-Ramani.png",
+    },
+    {
+        name: "Davendra Dhama",
+        title: "DIRECTOR, OPERATIONS",
+        description: [
+            "Davendra Kumar Dhama is the Director of Operations at AMS. An effective project leader and problem solver with over 24 years of extensive experience in Medical Devices & Pharmaceuticals, Mr. Dhama cemented a legacy serving a 22 years tenure for Peters Surgical India. Some of his noteworthy achievements include setting up an independent surgical suture & needle manufacturing plant along with launching a new Cardiovascular suture technology into the South Asian markets whilst attaining to several FDA Regulatory & Quality Certifications.",
+            "At AMS, his demonstrative work ethic and crafty negotiating skills have added intrinsic value to the organizations success. His ability in launching successful projects over his reputed career in Medical Devices along with rich expertise in Regulatory affairs has helped develop and bring to market ADVA GLIDE, AMS' PTCA Balloon Catheter in collaboration with one of the foremost leading Swiss implantable device technologies.",
+            "He holds a Diploma in Pharmaceutical QC and Assurance Management, B. Sc. in Chemistry from Chaudhary Charan Singh University, Meerut, MBA in Operations Management and brings to Advanced MedTech Solutions a tenacious leadership and relentless commitment.",
+        ],
+        slideImage: "/assets/about/leadership/Davendra-Dhama-small.png",
+        slideImageBg: "/assets/about/leadership/Davendra-Dhama.png",
+    },
+    {
+        name: "Manuel Parente",
+        title: "ADVISOR INTERVENTIONAL CARDIOLOGY",
+        description: [
+            "“Manuel Parente brings to AMS more than 40 years of global experience in Interventional Cardiology and Radiology. He served as a Director of Oerlikon Buhrle from 1981 to 1990 where he was responsible for ADATS & Patriot Missile systems (Switzerland and USA).",
+            "Mr. Parente served as a Director and VP in Schneider Worldwide from 1991 to 1999 where he developed Catheter's like, Goldie, Medina, Bonnie and Maverick* (*PTCA Catheter for Boston Scientific in 1998/1999). He presented in numerous Congress' on various topics including catheters like Goldie, Bonnie and more, also in PTA balloon technology. He participated in securing more than 800 patents in Interventional Cardiology and Radiology products.",
+            "He also served as Vice President, Director of Production and R&D at Bolton Medical from 1999 to 2004 and amongst other things was instrumental in design, development and introduction of two new balloon catheters on the market (Runner in PTCA and Rider in PTA). ",
+            "In 2008 he found Conic Vascular (own Company) which develops and manufactures medical devices with particular focus on PTCA and PTA balloon technology.",
+            "Mr. Parente has been awarded with numerous products, process and technology patents.",
+            'Mr. Parente graduated from Technical School of Engineering, "Zurich, Switzerland"',
+        ],
+        slideImage: "/assets/about/leadership/Manuel-Parente-small.png",
+        slideImageBg: "/assets/about/leadership/Manuel-Parente.png",
+    }
+]

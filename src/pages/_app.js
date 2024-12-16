@@ -3,7 +3,6 @@ import "@/styles/globals.css";
 import { DefaultSeo } from 'next-seo';
 import { MediaContextProvider } from "@/components/media";
 import { ReactLenis } from "lenis/react";
-import ScrollToTop from "@/components/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
 
 export default function App({ Component, pageProps, router }) {
@@ -33,16 +32,12 @@ export default function App({ Component, pageProps, router }) {
         dangerouslySetAllPagesToNoIndex={true}
       />
       <MediaContextProvider>
-      <ReactLenis root>
-        <ScrollToTop key={router.route}/>
-        <AnimatePresence mode="wait">
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </ReactLenis>
+        <ReactLenis root>
+          <AnimatePresence mode="wait">
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </ReactLenis>
       </MediaContextProvider>
-      
-
-       
     </>
   );
 }

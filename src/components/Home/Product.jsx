@@ -6,16 +6,13 @@ import LinkButton from "../Button/LinkButton";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { Media } from "../media";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Product() {
-  const swiperRef = useRef(null); // Create a ref for Swiper
-
-  // State to track which button was clicked
-  const [activeButton, setActiveButton] = useState("");
+  const swiperRef = useRef(null);
 
   const handleNext = () => {
     if (swiperRef.current) {
