@@ -16,7 +16,6 @@ const contact = () => {
               <ContactDetail/>
               <ContactList/>
               <Locations/>
-
         </main>
     </Layout>
       

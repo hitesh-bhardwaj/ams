@@ -790,3 +790,6 @@ transition:border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25
 .kerning-none {
   font-kerning: none;
 }
+.oemcard-button.active>div{
+  box-shadow: 0px 10px 15px #00000030;
+}
