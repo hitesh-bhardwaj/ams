@@ -8,7 +8,7 @@ const Hero = () => {
         const video = videoRef.current;
         setTimeout(() => {
             video.src = videoSrc;
-        }, 3000);
+        }, 2000);
     }, []);
 
     return (

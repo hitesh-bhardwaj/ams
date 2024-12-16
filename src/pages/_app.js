@@ -4,6 +4,7 @@ import { DefaultSeo } from 'next-seo';
 import { MediaContextProvider } from "@/components/media";
 import { ReactLenis } from "lenis/react";
 import ScrollToTop from "@/components/ScrollToTop";
+import { AnimatePresence } from "framer-motion";
 
 export default function App({ Component, pageProps, router }) {
 
@@ -34,9 +35,9 @@ export default function App({ Component, pageProps, router }) {
       <MediaContextProvider>
       <ReactLenis root>
         <ScrollToTop key={router.route}/>
-        {/* <AnimatePresence mode="wait"> */}
+        <AnimatePresence mode="wait">
           <Component {...pageProps} key={router.route} />
-        {/* </AnimatePresence> */}
+        </AnimatePresence>
       </ReactLenis>
       </MediaContextProvider>
       

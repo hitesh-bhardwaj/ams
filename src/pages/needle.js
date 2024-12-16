@@ -23,16 +23,19 @@ export default function needle() {
     {
       title: "From Concept to Perfection",
       src: "/assets/needle/needle-carousel-img-2.webp",
+      srcsmall:"/assets/needle/small1.png",
       heading: "Exceptional Core ",
       para: "Our needles are crafted from premium-grade stainless steel 302 alloy, known for their outstanding durability, malleability, and corrosion resistance, ensuring the highest performance in the operating zone.",
     },
     {
       src: "/assets/needle/needle-carousel-img-3.webp",
+      srcsmall:"/assets/needle/small2.png",
       heading: "Engineering Meets Automation",
       para: "Witness the pinnacle of precision engineering behind the next generation intelligent alloy with immaculate point geometry. Employing state-of-the-art robotics and advanced manufacturing, each needle is honed to perfection, with a needle tip so incredibly sharp it breezes through tissue with remarkable ease.",
     },
     {
       src: "/assets/needle/needle-carousel-img-1.png",
+      srcsmall:"/assets/needle/small3.png",
       heading: "Enduring Quality Control",
       para: "Every needle is subjected to stringent testing for sharpness, durability, and swage integrity, guaranteeing flawless performance and reliability in all surgical applications.",
     },
@@ -57,7 +60,7 @@ export default function needle() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-          <Pixifinal/>
+         <Pixifinal/>
 
 
 

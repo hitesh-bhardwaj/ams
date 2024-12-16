@@ -10,6 +10,7 @@ import Paradigm from "@/components/Advagrip/Paradigm";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import AdvagripSpecifications from "@/components/Advagrip/AdvagripSpecifications";
 
 const EdgeCard = {
   card1: {
@@ -55,6 +56,7 @@ const advaGrip = () => {
             <main>
                 <Hero/>
                 <TricCut/>
+                {/* <AdvagripSpecifications/> */}
             
               <Edge visibility={"!hidden"}
                 sectionheading={"The ADVAGRIP Edge"}
@@ -71,11 +73,10 @@ const advaGrip = () => {
               <Paradigm/>
              
               <NextGeneration />
-              {/* <Uncover /> */}
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-          <Pixifinal/>
+         <Pixifinal/>
 
 
           </Media>

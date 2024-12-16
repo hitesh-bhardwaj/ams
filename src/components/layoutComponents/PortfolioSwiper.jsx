@@ -216,7 +216,7 @@ const PortfolioSwiper = ({ slidesData, textclass,width }) => {
               {slidesData.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <Image
-                    src={slide.src}
+                    src={slide.srcsmall}
                     className="rounded-[1.2vw] w-[11.5vw] h-[7vw] cursor-pointer border-[2px] border-white"
                     width={280}
                     height={280}

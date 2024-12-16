@@ -33,16 +33,19 @@ export default function ama() {
     {
       title: "Advancing the way we learn",
       src: "/assets/ama/ama-carousel-1.png",
+      srcsmall:"/assets/ama/small1.png",
       heading: "Personalized and insightful training:",
       para: "AMA’s structured courses span basic to advanced levels, covering cognitive skill development, advanced minimally invasive surgery, complex interventional cardiology and optimizing revascularization techniques.",
     },
     {
       src: "/assets/ama/ama-carousel-3.png",
+      srcsmall:"/assets/ama/small2.png",
       heading: "Extensive Research & Science Library",
       para: "With accessible learning anytime, anywhere—via classrooms, auditoriums, or online platforms—participants earn certifications, refine skills, and gain access to unparalleled resources, setting a new standard in medical education.",
     },
     {
       src: "/assets/ama/ama-carousel-2.png",
+      srcsmall:"/assets/ama/small3.png",
       heading: "State of the-Art Hands-On Training Centers ",
       para: "Our world-class facilities offer hands-on training with life-like models and ex-vivo and in-vivo tissue, bridging theory and real-world application. Insight-driven modules, enriched with live procedure observations and collaborative discussions, deliver an unmatched immersive experience.",
     },
@@ -72,7 +75,7 @@ fadeup()
             </main>
           </Layout>
           <Media greaterThan="tablet">
-           <Pixifinal/>
+          <Pixifinal/>
 
 
           </Media>

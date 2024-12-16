@@ -30,16 +30,19 @@ export default function hernia() {
     {
       title: "A Partner in Your Success",
       src: "/assets/hernia/portfolio-1.png",
+      srcsmall:"/assets/hernia/small1.png",
       heading: "Advancing Patient Recovery",
       para: "Our ADVAMESH products are designed to enhance patient recovery and comfort. By offering exceptional support and promoting natural tissue integration, our meshes minimize bioreactivity and reduce recurrence rates, ensuring a smoother recovery process.",
     },
     {
       src: "/assets/hernia/portfolio-2.png",
+      srcsmall:"/assets/hernia/small2.png",
       heading: "Commitment to Excellence",
       para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability. We continuously strive to meet the evolving needs of hernia repair through ongoing research and collaboration with leading surgeons.",
     },
     {
       src: "/assets/hernia/portfolio-3.png",
+      srcsmall:"/assets/hernia/small3.png",
       heading: "Empowering Surgical Success",
       para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision. We provide the necessary tools and support to enhance surgical practice and improve patient care.",
     },
@@ -64,9 +67,7 @@ export default function hernia() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-            <Pixifinal/>
-
-
+           <Pixifinal/>
           </Media>
         
         
