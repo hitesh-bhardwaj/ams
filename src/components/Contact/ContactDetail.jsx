@@ -113,7 +113,7 @@ data-para-anim className="aeonik text-[2.5vw] font-light mobile:text-[9vw] mobil
           </div>
         </div>
         
-        <div className="relative z-0 w-[85vw] h-[40vw] ml-[2vw] rounded-[2vw] overflow-hidden fadeUp mobile:h-[160vw] mobile:w-[90vw] mobile:ml-0 mobile:rounded-[7vw] tablet:h-[60vw] tablet:w-[90vw] tablet:ml-0">
+        <div className="relative z-0 w-full h-[36vw] rounded-[2vw] overflow-hidden fadeUp mobile:h-[160vw] mobile:w-[90vw] mobile:ml-0 mobile:rounded-[7vw] tablet:h-[60vw] tablet:w-[90vw] tablet:ml-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.271775312155!2d73.1982016!3d22.4416587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcd55d94a2c7b%3A0x15b70110ad06dd8d!2sAdvanced%20MedTech%20Solutions!5e0!3m2!1sen!2sin!4v1699342803289!5m2!1sen!2sin"
             width="100%"

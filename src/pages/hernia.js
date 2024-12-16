@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Portfolio from "@/components/Endo/Portfolio";
 import Product from "@/components/Hernia/Product";
-import Hero from "@/components/Hero";
+
 import Genesis from "@/components/layoutComponents/Genesis";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import React from "react";
@@ -9,6 +9,7 @@ import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Hero from "@/components/Hernia/Hero";
 
 export default function hernia() {
   const content = {
@@ -50,14 +51,7 @@ export default function hernia() {
       
           <Layout>
             <main>
-              <Hero
-                title={hero.title}
-                src={hero.src}
-                content={hero.content}
-                className="hidden"
-                mode={"dark"}
-                titleWidth={"w-full"}
-              />
+             <Hero/>
               <Genesis
                 content={content}
                 sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}
@@ -70,7 +64,7 @@ export default function hernia() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-           <Pixifinal/>  
+           <Pixifinal/> 
 
 
           </Media>

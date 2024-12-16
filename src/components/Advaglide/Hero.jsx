@@ -9,40 +9,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
   paraAnim();
-  lineAnim()
-  
-
-  //   useGSAP(() => {
-  //     if(globalThis.innerWidth>1024){
-  //     const tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: ".hero-container",
-  //       },
-  //     });
-
-  //     tl.fromTo(
-  //       ".hero-img",
-  //       {
-  //         xPercent:100
-  //       },
-  //       {
-  //        xPercent:10,
-  //         duration: 1,
-  //         delay: 0.1,
-  //         ease: "power3.out",
-  //       }
-  //     );
-  //     tl.fromTo(".line",{
-  //       scale:0,
-  //     },{
-  //       scale:1,
-  //       transformOrigin:"left",
-  //       duration: 1,
-  //       delay: -0.7,
-  //       ease: "power3.out",
-  //     })
-  //   }
-  //   });
+  lineAnim();
 
   return (
     <section className="" id="advaglideHero">
@@ -56,7 +23,9 @@ const Hero = () => {
         <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[15%] tablet:flex-col tablet:top-[22%]">
           <div className=" absolute left-[12%] mobile:left-[13%] mobile:w-[100%] tablet:left-[15%] z-[10]">
             <h1
-data-para-anim className="font-light text-blue-400 text-[5.3vw] aeonik drop-shadow-md leading-[1] relative mobile:left-[1%]">
+              data-para-anim
+              className="font-light text-blue-400 text-[5.3vw] aeonik drop-shadow-md leading-[1] relative mobile:left-[1%]"
+            >
               <span
                 className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw] text-center`}
               >
@@ -72,14 +41,14 @@ data-para-anim className="font-light text-blue-400 text-[5.3vw] aeonik drop-shad
                 PTCA BALLOON CATHETER SEMI COMPLIANT
               </p>
             </div>
-              <div className="flex items-center justify-start ml-[-2vw] mobile:justify-start mobile:mt-[4vw] mobile:text-center mobile:ml-[-2vw] ">
-                <span className="w-[4.5vw] h-[2px] bg-black rotate-90  mobile:hidden tablet:w-[8vw] fadeUp"></span>
-                <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.8vw] mobile:max-w-full mobile:leading-[1.2] tablet:text-[2.5vw] tablet:max-w-[55%]">
-                  <span data-para-anim>
-                    Pioneering The Next Frontier of PTCA Technology
-                  </span>
-                </p>
-              </div>
+            <div className="flex items-center justify-start ml-[-2vw] mobile:justify-start mobile:mt-[4vw] mobile:text-center mobile:ml-[-2vw] ">
+              <span className="w-[4.5vw] h-[2px] bg-black rotate-90  mobile:hidden tablet:w-[8vw] fadeUp"></span>
+              <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.8vw] mobile:max-w-full mobile:leading-[1.2] tablet:text-[2.5vw] tablet:max-w-[55%]">
+                <span data-para-anim>
+                  Pioneering The Next Frontier of PTCA Technology
+                </span>
+              </p>
+            </div>
           </div>
 
           <div className="w-full h-full relative left-[10%] hero-container   tablet:w-[100%]  mobile:top-[25%] tablet:top-[0%] tablet:left-[10%]">

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import { paraAnim, titleAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -11,35 +11,7 @@ const Hero = ({}) => {
   
   titleAnim()
   paraAnim();
-  // useGSAP(() => { 
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: "hero-container",
-  //       start: "top top",
-  //       end: "bottom top",
-  //       scrub: true,
-  //       // markers:true
-  //     },
-  //   });
-  //   tl.to(".hero-img", {
-  //     yPercent: 60,
-  //   });
-  //   gsap.fromTo(
-  //     ".hero-img",
-  //     {
-  //       scale: 1.2,
-  //       yPercent: -10,
-  //     },
-  //     {
-  //       scale: 1.1,
-  //       yPercent: 0,
-  //       duration: 1,
-  //       delay: 0.1,
-  //       ease: "power3.out",
-  //     }
-  //   );
-  
-  // });
+
   return (
     <section className={` hero-container mobile:mb-[15%] dark`} id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">

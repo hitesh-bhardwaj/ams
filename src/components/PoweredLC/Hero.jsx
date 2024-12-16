@@ -88,11 +88,11 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex items-center justify-end w-full ml-[-16vw]  mt-[-0.5vw]  mobile:justify-center mobile:text-center mobile:ml-0 ">
-                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineSpan tablet:absolute tablet:top-[87%] tablet:left-[45%]"></span>
+                <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineDraw tablet:absolute tablet:top-[87%] tablet:left-[45%]"></span>
               </div>
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse mobile:right-0 mobile:top-[20%] tablet:top-[30%]">
-              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-45%] top-[-5%] mobile:top-[80%] mobile:left-[65%] mobile:w-[55vw] mobile:h-[55vw] tablet:w-[45vw] tablet:h-[45vw] pointer-evente-none tablet:right-[-110%] tablet:top-[10%]">
+              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-45%] top-[-5%] mobile:top-[80%] mobile:left-[65%] mobile:w-[55vw] mobile:h-[55vw] tablet:w-[45vw] tablet:h-[45vw] pointer-events-none fadeUp tablet:right-[-110%] tablet:top-[10%]">
                 <Image
                   className="object-contain hero-img-1"
                   src="/assets/poweredlc/lc-1.png"

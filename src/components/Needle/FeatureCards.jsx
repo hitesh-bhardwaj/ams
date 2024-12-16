@@ -48,7 +48,7 @@ data-para-anim className="aeonik title-2">
               {cardData.map((card, index) => (
                 <div
                   key={index}
-                  className="w-[21vw] h-[26vw] relative border border-gray-200 rounded-[2vw] overflow-hidden glassmorphism group transition-all duration-700 origin-center fadeUp"
+                  className="w-[21vw] h-[26vw] relative border border-gray-200 rounded-[2vw] overflow-hidden glassmorphism group transition-all duration-500 origin-center fadeUp hover:h-[30vw]"
                 >
                   <div className="w-full h-full relative px-[2.5vw] py-[2vw]">
                     <h4
@@ -75,13 +75,13 @@ data-para-anim className="aeonik title-2">
                       <Image
                         src={card.imageSrc}
                         alt={`${card.title}-image`}
-                        className={`${
+                        className={` ${
                           index < 1 ? "object-cover" : "object-contain"
                         }`}
                         fill
                       />
                     </div>
-                    <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] translate-y-[100%] origin-bottom group-hover:translate-y-[0] transition-all duration-300 ease-out">
+                    <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] opacity-0 origin-bottom group-hover:opacity-100 transition-all duration-500 ease-in-out">
                       <div className="w-full h-full flex flex-col gap-[1vw] px-[3vw] py-[2vw]">
                         <h4
                           data-para-anim

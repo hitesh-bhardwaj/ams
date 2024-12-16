@@ -1,4 +1,5 @@
 import ContactDetail from '@/components/Contact/ContactDetail';
+import ContactList from '@/components/Contact/ContactList';
 import Hero from '@/components/Contact/Hero';
 import Locations from '@/components/Contact/Locations';
 
@@ -13,6 +14,7 @@ const contact = () => {
         <main>
           <Hero/>
               <ContactDetail/>
+              <ContactList/>
               <Locations/>
 
         </main>

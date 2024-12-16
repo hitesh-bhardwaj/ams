@@ -8,36 +8,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = () => {
   paraAnim();
   fadeup()
-  useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "hero-container",
-        scrub: true,
-      },
-    });
-    // tl.to(".hero-img", {
-    //   yPercent: 60,
-    // });
-    tl.to(".hero-needle", {
-      yPercent: 30,
-      delay: -1,
-    });
-
-    gsap.fromTo(
-      ".hero-img",
-      {
-        scale: 1.2,
-        yPercent: -10,
-      },
-      {
-        scale: 1.1,
-        yPercent: 0,
-        duration: 1,
-        delay: 0.1,
-        ease: "power3.out",
-      }
-    );
-  });
+ 
   return (
     <section className=" hero-container dark" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh] mobile:h-screen">
@@ -52,7 +23,7 @@ const Hero = () => {
           />
         </div>
         
-        <div className="w-[100vw] h-screen absolute top-[20%] right-[-20%] z-[20] tablet:h-[70vh] tablet:z-0 hero-needle mobile:h-[200vw] mobile:w-[250vw] mobile:z-[0] mobile:right-[-50%] mobile:top-[10%] ">
+        <div className="w-[100vw] h-screen absolute top-[10%] right-[-20%] z-[20] tablet:h-[70vh] tablet:z-0 hero-needle mobile:h-[200vw] mobile:w-[250vw] mobile:z-[0] mobile:right-[-50%] mobile:top-[10%] ">
           <Image
             src="/assets/advagrip/advagrip-needle.png"
             fill

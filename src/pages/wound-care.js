@@ -1,7 +1,8 @@
 import Portfolio from "@/components/Endo/Portfolio";
-import Hero from "@/components/Hero";
+
 import Layout from "@/components/Layout";
 import Genesis from "@/components/layoutComponents/Genesis";
+import Hero from "@/components/Woundclosure/Hero";
 import SutureCarouselFirst from "@/components/Woundclosure/SutureCarouselFirst";
 import SutureCarousel from "@/components/Woundclosure/SutureCarouselFirst";
 import SutureCarouselSecond from "@/components/Woundclosure/SutureCarouselSecond";
@@ -26,13 +27,7 @@ const woundClosure = () => {
     <>
       <Layout>
         <main>
-          <Hero
-            title={hero.title}
-            src={hero.src}
-            content={hero.content}
-            className="hidden"
-            mode={"dark"}
-          />
+          <Hero/>
           <Genesis
             content={content}
             sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}

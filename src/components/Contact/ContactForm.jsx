@@ -136,7 +136,7 @@ export default function ContactForm() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full fadeUp mobile:flex mobile:justify-center tablet:flex tablet:justify-center">
+                <Button type="submit" className="w-full fadeUp flex justify-end pt-[2vw] mobile:flex mobile:justify-center tablet:flex tablet:justify-center">
                 <div className={`${styles.btn}`}>
             <div aria-hidden="true" className={styles.btnCircle}>
                 <div className={styles.btnCircleText}>

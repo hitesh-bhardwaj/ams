@@ -8,35 +8,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
   paraAnim();
-  useGSAP(() => { 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "hero-container",
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-        // markers:true
-      },
-    });
-    tl.to(".hero-img", {
-      yPercent: 60,
-    });
-    gsap.fromTo(
-      ".hero-img",
-      {
-        scale: 1.2,
-        yPercent: -10,
-      },
-      {
-        scale: 1.1,
-        yPercent: 0,
-        duration: 1,
-        delay: 0.1,
-        ease: "power3.out",
-      }
-    );
   
-  });
   return (
     <section id='accessoriesHero' className='dark'>
       <div className="w-screen h-screen relative overflow-hidden hero-container mobile:h-screen tablet:h-[70vh]">

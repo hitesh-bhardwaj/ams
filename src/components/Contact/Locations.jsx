@@ -88,7 +88,7 @@ data-para-anim className="text-[4vw] text-white aeonik font-light mobile:text-[1
         </div>
         <div className="absolute h-full w-full z-[-1] top-0 left-0">
           <Image
-            src={"/assets/contact/loactions-bg.png"}
+            src={"/assets/contact/locations-bg.png"}
             alt="locations-bg"
             fill
           />

@@ -65,7 +65,7 @@ const SutureCarouselFirst = () => {
   };
 
   return (
-    <section className="w-screen h-[55vw] overflow-hidden py-[3%] mobile:h-[240vw] tablet:h-[120vw] mobile:py-[15%] relative tablet:py-[8%] " id="suture-carousel-first">
+    <section className="w-screen h-[55vw] overflow-hidden py-[7%] mobile:h-[240vw] tablet:h-[120vw] mobile:py-[15%] relative tablet:py-[8%] " id="suture-carousel-first">
       <div className="w-full h-fit flex flex-col gap-[1.5vw] items-center text-center">
         <h2
 data-para-anim className="title-2 aeonik mobile:w-[80%]">Absorbable Sutures</h2>

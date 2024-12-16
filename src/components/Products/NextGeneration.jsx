@@ -5,7 +5,7 @@ import Image from 'next/image';
 const NextGeneration = () => {
 
   return (
-    <section className='mobile:pb-[10%] py-[5%]' id='next-generation'>
+    <section className='mobile:pb-[10%] py-[5%] pb-[10%]' id='next-generation'>
       <div className='container-lg fadeUp relative '>
         <div className='absolute inset-0 w-full h-full z-0'>
         <Image
