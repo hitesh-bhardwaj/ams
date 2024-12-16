@@ -20,25 +20,29 @@ export default function rnd() {
     src: "/assets/rnd/rnd-genesis-img.webp",
   };
   const hero = {
-    title: "Pioneering MedTech Research and Development",
-    src: "/assets/rnd/RND-hero-bg.webp",
+    title: "Pioneering Innovation in Medical Research & Development",
+    
+    src: "/assets/rnd/RND-hero-bg.png",
     content:
-      "At AMS, we're setting new standards in medical research and development. Our advanced R&D facility, located in the heart of a thriving innovation hub, is where science technology and groundbreaking research come together to address the most pressing health challenges of our time.",
+      "At AMS, we’re setting new standards in medical research and development. Our advanced R&D facility, located in the heart of a thriving innovation hub, is where cutting-edge technology and groundbreaking research come together to address the most pressing health challenges of our time.",
   };
   const slidesData = [
     {
       title: "Vision for Enhanced Care",
       src: "/assets/rnd/rnd-carousel-img-1.png",
+      srcsmall:"/assets/rnd/small1.png",
       heading: "A Hub of Innovation",
       para: "We advance surgical devices in wound care, cardiovascular, interventional cardiology, hernia solutions, and endo surgery to transform patient care and support surgeons with reliable solutions.",
     },
     {
       src: "/assets/rnd/rnd-carousel-img-2.png",
+      srcsmall:"/assets/rnd/small2.png",
       heading: "Collaborative Excellence",
       para: "Our tech-driven R&D hub collaborates with leaders, startups, and academics to accelerate the development of next-gen medical solutions.",
     },
     {
       src: "/assets/rnd/rnd-carousel-img-3.png",
+      srcsmall:"/assets/rnd/small3.png",
       heading: "A Future of Possibilities",
       para: "We are committed to evolving our R&D capabilities to tackle global health challenges and drive impactful medical innovations.",
     },
@@ -56,7 +60,8 @@ export default function rnd() {
                 content={hero.content}
                 className="hidden"
                 titleColor={true}
-                mode={""}
+                mode={"dark"}
+                titleWidth={"w-[110%]"}
                 paraWidth={"max-w-[50vw]"}
               />
               <Genesis content={content} />
@@ -66,7 +71,7 @@ export default function rnd() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-          <Pixifinal/>
+         <Pixifinal/>
 
 
           </Media>

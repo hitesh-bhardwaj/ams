@@ -24,16 +24,19 @@ export default function endo() {
     {
       title: "Your Partner in Surgical Excellence",
       src: "/assets/endo/endo-slider-1.png",
+      srcsmall:"/assets/endo/small1.png",
       heading: "The Future of Minimally Invasive Surgery",
       para: "With the ADVASTAP Series and ADVACLIP Technologies, AMS leads the way in delivering innovative stapling and ligation solutions that ensure uncompromising quality and precision to meet the demands of modern surgical procedures. Our unique 3-row stapler range, crafted with insight-driven design, sets a new benchmark in surgical care, empowering surgeons to perform at their best. We are redefining the possibilities of minimally invasive procedures",
     },
     {
       src: "/assets/endo/endo-slider-2.png",
+      srcsmall:"/assets/endo/small2.png",
       heading: "Accelerating Optimal Outcomes",
       para: "At AMS, we are dedicated to providing surgical staplers designed to increase efficiency in the operating room and reduce complications. Our solutions aim to promote swift healing and long-term success.",
     },
     {
       src: "/assets/endo/endo-slider-3.png",
+      srcsmall:"/assets/endo/small3.png",
       heading: "Why Surgeons Trust AMS",
       para: "From our forward-thinking design to their ability to handle the most complex surgical challenges, our staplers offer unparalleled performance and reliability. Designed for both efficiency and safety, ADVASTAP Series is the ultimate choice for advanced surgical procedures, setting new industry standards.",
     },

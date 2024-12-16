@@ -33,16 +33,19 @@ export default function ic() {
     {
       title: "The Next Frontier of PCI",
       src: "/assets/ic/ic-carousel-img-1.png",
+      srcsmall:"/assets/ic/small1.png",
       heading: "Simplifying Complex Cardiac Interventions",
       para: "At AMS, we are committed to propelling your cardiac care to new heights. As cath lab complexities increase, our focus on innovation and quality provides you with advanced solutions that drive better patient outcomes and optimize procedural efficiency.",
     },
     {
       src: "/assets/ic/ic-carousel-img-2.png",
+      srcsmall:"/assets/ic/small2.png",
       heading: "Confidence in Every Intervention",
       para: "With our PTCA Balloon Catheter Rx and cutting-edge Drug Eluting Stents, AMS is advancing the frontiers of interventional cardiology to enhance angioplasty procedures. Backed by expertise and innovation, our precision-driven solutions aim to restore confidence in treatment outcomes and elevate patient care globally.",
     },
     {
       src: "/assets/ic/ic-carousel-img-3.png",
+      srcsmall:"/assets/ic/small3.png",
       heading: "Crafting Tomorrow's Solutions, Today",
       para: "AMS delivers interventional cardiology solutions built on unmatched production excellence, pioneering technology, and relentless innovation, driving pathbreaking advancements in cardiac care.",
     },
