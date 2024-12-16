@@ -3,7 +3,7 @@ import PrimaryButton from "../Button/PrimaryButton";
 import gsap from "gsap";
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 import { Media } from "../media";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -11,6 +11,16 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Hero() { 
   // const {isDesktop} = useDevice()
   // const [isClient , setIsClient]= useState(null)
+
+  const [videoSrc, setVideoSrc] = useState(null);
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setVideoSrc("/assets/home/homepage-hero-video.mp4");
+      }, 2000);
+  
+      return () => clearTimeout(timer); 
+    }, []);
   
   useEffect(() => {
     // Create a GSAP context
@@ -30,41 +40,38 @@ export default function Hero() {
 // if(!isClient) return null;
   
     return (
-        <section className="hero mobile:mb-[0vw] overflow-hidden" id="hero">
+        <section className="hero mobile:mb-[0vw] overflow-hidden relative" id="hero">
           <div className="px-[12%] relative mobile:px-[5vw] mobile:w-[100vw] tablet:px-[10%] ">
             <div className="flex h-dvh w-full justify-start items-center mobile:h-screen tablet:h-[60vh]">
-              <div className="w-[55%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4 mt-[4vw]">
-                <h1 data-para-anim className="title-1 aeonik  mobile:text-center mobile:text-[15vw] text-[#111111]">
+              <div className="w-[55%] z-[50] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4 mt-[4vw]">
+                <h1 data-para-anim className="title-1 aeonik  mobile:text-center mobile:text-[15vw] text-[#ffffff] title-shadow">
                 Advancing the Way we Care
                 </h1>
-                <p  className="font-light max-w-[50vw] text-[1.25vw] mt-[4vw] mb-[7vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[5vw] mobile:mb-[15vw]  tablet:text-[2vw] tablet:max-w-[40vw]">
+                <p  className="font-light max-w-[50vw] text-[1.25vw] text-white mt-[4vw] mb-[7vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[5vw] mobile:mb-[15vw]  tablet:text-[2vw] tablet:max-w-[40vw]">
                   <span data-para-anim className="mobile:leading-[1.8]">
                   AMS is dedicated to advancing healthcare by providing meaningful MedTech solutions, improving lives for patients around the world.
                   </span>
                 </p>
                 <div className="fadeUp">
 
-                <PrimaryButton text={"About us"} link={'/about'} className=""/>
+                <PrimaryButton text={"About us"} link={'/about'} className={"secondary  !text-white"}/>
                 </div>
-                {/* <PrimaryButton btnText={'Discover'} link={'/about'} className={"fadeUp"} /> */}
                
               </div>
-             <Media greaterThan="mobile">
-              <div className="absolute w-[43%] right-0 bottom-0">
-
-              <div className=" w-[43vw] h-[38vw]  hero-img-anim  tablet:w-[45vw] tablet:h-[42vw] overflow-hidden">
-                <Image
-                  className="hero-img"
-                  src="/assets/home/hero-image.webp"
-                  alt="Hero Image"
-                  width={830}
-                  height={765}
-                  
-                  priority={true}
-                />
+             
+              <div className="absolute top-0 left-0  h-full tablet:top-[45%] mobile:relative">
+              <div className="w-screen h-full relative mobile:w-[100vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
+                <video
+                  poster="/assets/home/homepage-hero-video-poster.webp"
+                  autoPlay
+                  loop
+                  muted
+                  src={videoSrc} 
+                  className="w-full h-full object-cover object-left"
+                  playsInline
+                ></video>
               </div>
-              </div>
-             </Media>
+            </div>
               
             </div>
           </div>
