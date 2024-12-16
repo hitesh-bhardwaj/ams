@@ -8,9 +8,9 @@ import 'swiper/css/free-mode';
 import gsap from 'gsap';
 
 export default function Offerings() {
-
-    if(globalThis.innerWidth > 1024) {
     useEffect(() => {
+    if(globalThis.innerWidth > 1024) {
+    
         const navbarLinks = document.querySelectorAll(".oemcard-button");
         const cardContainer = document.querySelector(".card-container");
         const focSections = document.querySelectorAll(".card-item");
@@ -45,8 +45,8 @@ export default function Offerings() {
                 link.removeEventListener("click", () => { });
             });
         };
-    }, []);
-}
+    }
+}, []);
 
 
     return (
@@ -87,7 +87,7 @@ export default function Offerings() {
                                     <h4 className='text-[2.5vw]'>Needle Technology</h4>
                                     <p className='text-[1.75vw]'>Surgical Suture Needle</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/35 relative h-[36vw] overflow-hidden'>
+                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
                                     <Image
                                         className='absolute right-0 top-0 w-[52%]'
                                         src="/assets/oem/needle-tech-big.png"
@@ -151,7 +151,7 @@ export default function Offerings() {
                                     <h4 className='text-[2.5vw]'>Sternotomy Suture</h4>
                                     <p className='text-[1.75vw]'>316 LVM Stainless Steel</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/35 relative h-[36vw] overflow-hidden'>
+                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
                                     <Image
                                         className='absolute right-0 top-0 w-[52%]'
                                         src="/assets/oem/sternotomy-suture-big.png"
@@ -215,7 +215,7 @@ export default function Offerings() {
                                     <h4 className='text-[2.5vw]'>Hernia Solutions</h4>
                                     <p className='text-[1.75vw]'>Monofilament Polypropylene Mesh</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/35 relative h-[36vw] overflow-hidden'>
+                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
                                     <Image
                                         className='absolute right-0 top-0 w-[52%]'
                                         src="/assets/oem/hernia-solutions-big.png"
@@ -273,7 +273,7 @@ export default function Offerings() {
                                     <h4 className='text-[2.5vw]'>Stent Delivery Systems</h4>
                                     <p className='text-[1.75vw]'>Rapid Exchange Catheter</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/35 relative h-[36vw] overflow-hidden'>
+                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
                                     <Image
                                         className='absolute right-0 top-0 w-[52%]'
                                         src="/assets/oem/stent-delivery-big.png"
@@ -349,7 +349,7 @@ export default function Offerings() {
                                     <h4 className='text-[2.5vw]'>Knotless Tissue Control Device</h4>
                                     <p className='text-[1.75vw]'>Polydioxanone | Poliglecaprone 25 | Polypropylene</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/35 relative h-[36vw] overflow-hidden'>
+                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
                                     <Image
                                         className='absolute right-0 top-0 w-[52%]'
                                         src="/assets/oem/knotless-tissue-big.png"

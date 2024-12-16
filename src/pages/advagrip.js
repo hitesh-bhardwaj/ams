@@ -75,7 +75,7 @@ const advaGrip = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         {/* <Pixifinal/>  */} 
+         <Pixifinal/> 
 
 
           </Media>
