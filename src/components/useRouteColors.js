@@ -144,7 +144,7 @@ function useRouteColors() {
                       color3: "#F74141",
                     });
                     break;
-                    case "/advagrip":
+                    case "/knotless-tissue-control-device":
                     setColors({
                       color1: "#D7B3E1",
                       color2: "#669DE5",

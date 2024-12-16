@@ -50,7 +50,7 @@ const Product = () => {
       imgSrc: "/assets/endo/Product3.png",
       heading: "Advastap Endo lc",
       text: '3-Row Endoscopic Linear Cutter',
-      link: "/advastap"
+      link: "/advastaphd"
     },
     {
       imgSrc: "/assets/endo/Product4.png",

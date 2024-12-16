@@ -14,7 +14,7 @@ export default function rnd() {
   const content = {
     heading: "Innovating for Tomorrow",
     smallpara:
-      "Our R&D center stands as a testament to our commitment to advancing medical technology. Equipped with the latest in research and engineering tools, this facility is designed to foster collaboration among our top scientists, engineers, and healthcare innovators. Here, we are dedicated to developing solutions that push the boundaries of what’s possible in medical technology.",
+      "Our R&D center stands as a testament to our commitment to advancing medical technology. Equipped with the latest in research and engineering tools, this facility is designed to foster collaboration among our top scientists, engineers, and healthcare innovators. Here, we are dedicated to developing solutions that push the boundaries of what’s possible in medical technology. By integrating diverse expertise and cutting-edge advancements.",
     bigpara:
       "At AMS, our R&D efforts are driven by the vision of creating transformative technologies that improve patient outcomes and enhance the quality of life worldwide. ",
     src: "/assets/rnd/rnd-genesis-img.webp",
@@ -28,19 +28,19 @@ export default function rnd() {
   const slidesData = [
     {
       title: "Vision for Enhanced Care",
-      src: "/assets/rnd/rnd-carousel-img-1.webp",
+      src: "/assets/rnd/rnd-carousel-img-1.png",
       heading: "A Hub of Innovation",
-      para: "We innovate in surgical and cardiovascular devices, providing clinicians with trusted, high-performance devices.",
+      para: "We advance surgical devices in wound care, cardiovascular, interventional cardiology, hernia solutions, and endo surgery to transform patient care and support surgeons with reliable solutions.",
     },
     {
-      src: "/assets/rnd/rnd-carousel-img-2.webp",
-      heading: "Collaborative Innovation",
-      para: "We are committed to fostering flexible and holistic partnerships with R&D innovators globally, focusing on swift development and execution in manufacturing to deliver transformative solutions directly to healthcare practitioners.",
+      src: "/assets/rnd/rnd-carousel-img-2.png",
+      heading: "Collaborative Excellence",
+      para: "Our tech-driven R&D hub collaborates with leaders, startups, and academics to accelerate the development of next-gen medical solutions.",
     },
     {
-      src: "/assets/rnd/rnd-carousel-img-3.webp",
-      heading: "Future of Possibility",
-      para: "We are shaping the next generation of therapies that will redefine healthcare and deliver better outcomes for patients across the globe.",
+      src: "/assets/rnd/rnd-carousel-img-3.png",
+      heading: "A Future of Possibilities",
+      para: "We are committed to evolving our R&D capabilities to tackle global health challenges and drive impactful medical innovations.",
     },
   ];
  fadeup()

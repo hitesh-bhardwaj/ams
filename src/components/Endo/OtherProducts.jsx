@@ -50,7 +50,7 @@ const OtherProduct = () => {
       imgSrc: "/assets/endo/other-product3.png",
       heading: "Advastap",
       text: 'Skin Stapler',
-      link: "/advastap"
+      link: "/advastaphd"
     },
     {
       imgSrc: "/assets/endo/other-product4.png",

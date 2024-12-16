@@ -40,7 +40,7 @@ const JobDescription = ({ onClose }) => {
       </span>
     </button>
         <div className="container-lg flex items-center justify-center h-full" >
-          <div className="w-[70vw] h-[45vw] rounded-[3vw] overflow-hidden relative px-[5vw] pt-[3vw] bg-white jd-card" id='jd-block'>
+          <div className="w-[70vw] h-[45vw]  rounded-[3vw] overflow-hidden relative px-[5vw] pt-[3vw] bg-white jd-card" id='jd-block'>
             <div className="w-full h-full absolute top-0 left-0">
               <Image
                 src="/assets/career/jd-bg.png"
@@ -49,6 +49,7 @@ const JobDescription = ({ onClose }) => {
                 className="object-cover w-full h-full"
               />
             </div>
+            <div data-lenis-prevent className='overflow-y-scroll overflow-visible h-full w-full'>
             <div className="w-full h-full flex flex-col gap-[2vw] text-[1.3vw] !text-[#111111] relative z-[10] font-light">
               <p>
                 Experience: 3-5 years (medical devices/interventional cardiology
@@ -86,6 +87,9 @@ const JobDescription = ({ onClose }) => {
               <div className="mt-[2vw]">
                 <PrimaryButton text="Apply Now" link="/" onClick={handleLinkClick} />
               </div>
+            </div>
+          
+
             </div>
           </div>
         </div>
