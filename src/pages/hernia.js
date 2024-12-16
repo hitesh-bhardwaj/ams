@@ -68,8 +68,6 @@ export default function hernia() {
           </Layout>
           <Media greaterThan='tablet'>
            <Pixifinal/>
-
-
           </Media>
         
         
