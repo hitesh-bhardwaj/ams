@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { useState, useEffect } from "react";
 import { paraAnim } from "../gsapAnimations";
 import { gsap } from "gsap/dist/gsap";
@@ -11,7 +11,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVideoSrc("/assets/manufacturing/manufacturing-hero-video.mp4");
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer); 
   }, []);
