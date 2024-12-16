@@ -20,7 +20,7 @@ const Discover = () => {
         <div className='w-[45%] flex flex-col items-end justify-center gap-[2vw] mobile:w-full mobile:items-center mobile:gap-[5vw]'>
           <div className='w-[25vw] h-[20vw] rounded-[40px] overflow-hidden relative fadeUp mobile:w-[80vw] mobile:h-[90vw] mobile:rounded-[6vw] tablet:rounded-[3vw] tablet:w-[30vw] tablet:h-[25vw]'>
           <Image
-            src="/assets/career/career-discover-1.webp"
+            src="/assets/career/career-discover-1.png"
             fill
             alt="Discover"
             className=' object-cover'/>
@@ -28,7 +28,7 @@ const Discover = () => {
           </div>
           <div className='w-[35vw] h-[25vw] rounded-[40px] overflow-hidden relative fadeUp mobile:w-[80vw] mobile:h-[120vw] mobile:rounded-[6vw] tablet:rounded-[3vw] tablet:w-[38vw] tablet:h-[28vw]'>
           <Image
-            src="/assets/career/career-discover-2.webp"
+            src="/assets/career/career-discover-2.png"
            fill
             alt="Discover"
             className=' object-cover'

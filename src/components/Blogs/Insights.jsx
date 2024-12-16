@@ -11,14 +11,14 @@ gsap.registerPlugin(ScrollTrigger);
 const NewsCard = ({title,date,img}) => {
   return (
     <>
-      <div className="h-[40vw] w-[41vw] rounded-[2vw] newsCard relative overflow-hidden transition-all duration-500 ease-in">
+      <div className="h-[40vw] w-[41vw] rounded-[2vw] newsCard relative overflow-hidden transition-all duration-500 ease-in group">
       <div className="w-full h-full absolute top-0 left-0 z-[2] rounded-[2vw] bg-gradient-to-b from-transparent to-black/30"></div>
         <div className="relative h-full w-full">
           <Image
             src={img}
             fill
             alt="news-img"
-            className="rounded-[2.5vw] object-cover"
+            className="rounded-[2.5vw] object-cover scale-[1.1] group-hover:scale-[1] transition-all ease-in-out duration-500"
           />
         </div>
         <div className="absolute text-white text-[2.5vw] font-light top-[80%] left-[5%] aeonik z-[5] flex w-full">

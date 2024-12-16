@@ -38,11 +38,11 @@ export default function Product() {
         <div className="h-full">
           <Media greaterThanOrEqual="tablet">
             <Image
-              src={"/assets/home/product-bg.webp"}
+              src={"/assets/home/homepage-product-bg.png"}
               width={1960}
               height={1180}
               alt={"product-bg"}
-              className="object-cover w-full h-full product-bg-img absolute scale-[1.3] "
+              className="object-cover top-0 w-full h-full product-bg-img absolute scale-[1] "
             />
           </Media>
           <Media lessThan="tablet">
@@ -50,7 +50,7 @@ export default function Product() {
               src={"/assets/home/product-bg-mobile.png"}
               fill
               alt={"product-bg"}
-              className="object-cover product-bg-img scale-[1.3] "
+              className="object-cover product-bg-img scale-[1] "
             />
           </Media>
         </div>

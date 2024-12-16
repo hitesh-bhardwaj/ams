@@ -9,6 +9,7 @@ import { paraAnim } from "../gsapAnimations";
 import {useLenis} from 'lenis/react'
 import styles from "@/styles/careerSwiper.module.css"; // Import the modal component
 import JobDescription from "./JobDescription";
+import Image from "next/image";
 
 const JobCard = ({ dept, designation, location, onClick }) => {
   return (
@@ -19,13 +20,18 @@ const JobCard = ({ dept, designation, location, onClick }) => {
       <div className="content-p mobile:text-[5.7vw] tablet:text-[2.5vw] mt-[2vw]">
         {dept}
       </div>
-      <div className="w-[80%] flex">
+      <div className="w-[75%] flex">
         <h2
           data-para-anim
           className="text-[2.2vw] leading-[1.3] font-light text-[#2a2a2a] mobile:text-[8.3vw] tablet:text-[4.5vw]"
         >
-          {designation}
+          {designation}  {""}
+          <span className="pl-[0.3vw]">
+
+          <Image src={"/assets/icons/arrow-up-right.svg"} alt="arrow-up-right" height={20} width={20}/>
+          </span>
         </h2>
+
       </div>
       <div className="content-p border-t-[1px] w-full h-[4vw] items-center py-[3%] bg-white/90 flex justify-center location rounded-b-[40px] mobile:w-[90vw] mobile:h-[16vw] mobile:rounded-b-[7vw] tablet:text-[2.5vw] tablet:w-[40.5vw] tablet:h-[7vw]">
         {location}

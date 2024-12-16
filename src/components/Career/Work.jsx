@@ -48,15 +48,15 @@ const Work = () => {
           trigger:".works-container",
           pin:true,
           start:"top -5%",
-          end:"bottom -=1000",
+          end:"bottom -=800",
           scrub:true,
         }
         
       })
       tl.to(".feature-container2",{
             yPercent:-90,
-            duration:2,
-            ease:"power4.out"
+            duration:1.3,
+            ease:"none"
             
           })
           
@@ -64,7 +64,7 @@ const Work = () => {
             yPercent:-180,
             duration:2,
             delay:-1,
-            ease:"power4.out",
+            ease:"none",
             
   
           })

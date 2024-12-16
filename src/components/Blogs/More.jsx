@@ -47,18 +47,18 @@ const blogCardData = [
 const BlogCard = ({ title, para, date, img, large }) => (
 
   <div
-    className={`${
+    className={` group overflow-hidden ${
       large ? "col-span-9 row-span-2 h-[44vw]" : "col-span-3 h-[18vw]"
     } rounded-[1.5vw] relative mt-[1vw] fadeUp`}
   >
      <Link href={"#"} >
      <div className="w-full h-full absolute top-0 left-0 z-[2] rounded-[2vw] bg-gradient-to-b from-transparent to-black/30"></div>
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative ">
       <Image
         src={img}
         fill
         alt="blog image"
-        className="rounded-[2vw] object-cover"
+        className="rounded-[2vw] object-cover scale-[1.1] group-hover:scale-[1] transition-all duration-500 ease-in-out"
       />
     </div>
     <div className="absolute bottom-[6%] left-[5%] px-[0.5vw]  z-[10]">
