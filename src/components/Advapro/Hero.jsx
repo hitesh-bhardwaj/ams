@@ -54,6 +54,7 @@ const Hero = () => {
         <Image
           src="/assets/advapro/advapro-bg-hero.png"
           fill
+          priority={true}
           alt="advapro Hero bg"
           className="object-cover "
         />

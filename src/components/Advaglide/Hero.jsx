@@ -57,6 +57,7 @@ const Hero = () => {
                 src="/assets/advaglide/advaglide-hero-element.png"
                 alt="side-image"
                 fill
+                priority={true}
                 className=" hero-img object-contain mobile:rotate-[-105deg]"
               />
             </div>

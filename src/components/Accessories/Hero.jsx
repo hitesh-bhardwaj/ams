@@ -15,6 +15,7 @@ const Hero = () => {
         <Image
           src="/assets/accessories/accessories-hero-bg.png"
           fill
+          priority={true}
           alt="accessories-hero"
           className="object-cover absolute hero-img"
         />
