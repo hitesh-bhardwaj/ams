@@ -24,7 +24,7 @@ export default function career() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-           {/* <Pixifinal/> */}
+           <Pixifinal/>
 
 
           </Media>
