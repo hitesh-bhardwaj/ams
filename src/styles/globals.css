@@ -505,7 +505,7 @@ body{
 .surgicalSwiper .swiper-scrollbar-horizontal{
   width: 50vw !important;
   position: relative;
-  background-color: #dadada;
+  background-color: #ffffff;
   height: 4px;
   border-radius: 20vw;
   left: 50%;
@@ -514,7 +514,7 @@ body{
 .surgicalSwiper .swiper-scrollbar-drag{
   height: 4px;
   margin-top: 3vw;
-  background-color: #b3b3b3;
+  background-color: #111111;
   border-radius: 20vw;
 }
 
@@ -538,6 +538,18 @@ body{
 transition:width 0.25s ease-out, height 0.25s ease-out 0.25s; }
 .draw:hover:after{border-bottom-color:#3A87C8;border-left-color:#3A87C8;
 transition:border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;} 
+
+
+.uncover-swiper{
+  overflow: visible !important;
+}
+/* .surgicalSwiper .swiper-scrollbar .swiper-scrollbar-drag{
+background-color: #ffffff !important;
+color: #000 !important;
+} */
+
+
+
 @media screen  and (max-width:541px){
   ::-webkit-scrollbar {
     height: 0;

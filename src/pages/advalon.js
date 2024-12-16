@@ -39,10 +39,6 @@ const featureData = [
     title: "Elasticity to ensure compact and safe knotting",
   },
    {
-    src: "/assets/advabond/features3.png",
-    title: "Inertness for minimal risk of infection",
-  },
-   {
     src: "/assets/advalon/features4.png",
     title: "Excellent and consistent knotting strength",
   },
@@ -120,7 +116,7 @@ const advalon = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         <Pixifinal/> 
+          <Pixifinal/>
 
 
           </Media>

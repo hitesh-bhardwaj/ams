@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-
 import Edge from "@/components/Products/Edge";
 import Features from "@/components/Products/Features";
 import Hero from "@/components/Products/Hero";
@@ -21,7 +20,7 @@ const EdgeCard = {
   card2: {
     title: "- the confidence to suture with ease",
     src: "/assets/advacryl/advacryl-tray.png",
-    para: "  patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    para: "patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
     bgsrc: "/assets/advacryl/purple-rectangle.png",
   },
   card3: {
@@ -96,10 +95,10 @@ const advacrylplus = () => {
                 heading={"Advacryl Plus"}
                 className="text-[#855EA6]"
                 tagline={
-                  " Antibacterial with Triclosan Braided Coated Polyglactin 910"
+                  "Antibacterial with Triclosan Braided Coated Polyglactin 910"
                 }
                 para1={
-                  "  Consistent performance for confidence in a variety of soft tissue approximation minimizing Surgical Site Infections (SSI)"
+                  "Consistent performance for confidence in a variety of soft tissue approximation minimizing Surgical Site Infections (SSI)"
                 }
                 src={"/assets/advacryl/advacryl-plus-hero.png"}
                 bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
@@ -119,7 +118,7 @@ const advacrylplus = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         <Pixifinal/> 
+          <Pixifinal/>
 
 
           </Media>

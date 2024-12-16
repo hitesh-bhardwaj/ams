@@ -4,12 +4,12 @@ import Features from "@/components/Products/Features";
 import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
-import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
+import UncoverCV from "@/components/Products/UncoverCV";
 
 const EdgeCard = {
   card1: {
@@ -111,11 +111,11 @@ const advalenecv = () => {
               />
               <ProductDescription  data={cardData}/>
               <NextGeneration />
-              <Uncover />
+              <UncoverCV/>
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         <Pixifinal/> 
+          <Pixifinal/>
 
 
           </Media>

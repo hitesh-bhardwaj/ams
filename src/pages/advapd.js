@@ -74,7 +74,7 @@ const cardData = [
   },
   {
     title: "Tensile Strength",
-    description: "~80% | 14 Days ~70% | 28 Days",
+    description: "~80% | 14 Days <br/> ~70% | 28 Days",
     svg:"/assets/advapd/tensile.svg"
 
   },
@@ -97,9 +97,9 @@ const advapd = () => {
               <Hero
                 heading={"AdvaPd"}
                 className="text-[#A49EA3]"
-                tagline={" Monofilament Polydioxanone"}
+                tagline={"Monofilament Polydioxanone"}
                 para1={
-                  "  Enduring performance for confidence in extended wound support"
+                  "Enduring performance for confidence in extended wound support"
                 }
                 src={"/assets/advapd/advapd-hero.png"}
                 bgimg={"/assets/advapd/advapd-hero-bg.png"}
@@ -120,7 +120,7 @@ const advapd = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         <Pixifinal/> 
+          <Pixifinal/>
 
 
           </Media>

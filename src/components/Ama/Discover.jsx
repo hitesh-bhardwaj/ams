@@ -30,7 +30,7 @@ data-para-anim className="title-2 aeonik">
                     <div className="relative w-[50%] h-[26vw] rounded-[3vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] tablet:w-[80vw] tablet:h-[30vh] mobile:rounded-[6vw]">
                         <Image
                             className="w-full object-cover "
-                            src="/assets/ama/ama-discover-img.png" 
+                            src="/assets/ama/green-building.png" 
                             alt="ama-discover-img"
                             fill
                         />

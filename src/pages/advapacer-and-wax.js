@@ -3,13 +3,13 @@ import Features from "@/components/Products/Features";
 import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
-import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Advawax from "@/components/Advawax/Advawax";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
+import UncoverCV from "@/components/Products/UncoverCV";
 
 
 const cardData1 = [
@@ -73,6 +73,8 @@ const cardData2 = [
       title: "Coating",
       description:
         "62 GSM - Siliconized",
+    svg:"/assets/advapacer/coating.svg"
+
     },
     {
       title: "Tensile Strength",
@@ -83,6 +85,8 @@ const cardData2 = [
     {
       title: "Weight (g)",
       description: "Minimum 2.5",
+    svg:"/assets/advapacer/absorption.svg"
+
     },
   ];
 
@@ -111,11 +115,11 @@ const advapacer = () => {
               <Information info={"ADVAWAX is a non-absorbable, biocompatible material designed to control bleeding from bone surfaces by acting as a mechanical tamponade. It provides excellent malleability and ease of application due to its ultra-soft consistency. ADVAWAX minimizes inflammatory reactions and is ideal for achieving local hemostasis."}/>
               <ProductDescription data={cardData2}/>
               <NextGeneration />
-              <Uncover />
+           <UncoverCV/>
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         <Pixifinal/> 
+          <Pixifinal/>
 
 
           </Media>

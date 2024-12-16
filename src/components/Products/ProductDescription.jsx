@@ -73,7 +73,7 @@ const ProductDescription = ({ data }) => {
                     {card.title}
                   </p>
                   <p
-                    className="text-[1.65vw] font-light mobile:text-[4vw] tablet:text-[2.5vw]"
+                    className="text-[1.65vw] font-light  mobile:text-[4vw] tablet:text-[2.5vw]"
                     dangerouslySetInnerHTML={{
                       __html: card.description,
                     }}

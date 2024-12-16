@@ -57,7 +57,7 @@ data-para-anim className="aeonik title-2 text-center">
                     >
                       <div
                         className={`relative w-[30vw] ${
-                          activeIndex === index ? "h-[38vw]" : "h-[38vw]"
+                          activeIndex === index ? "h-[40vw]" : "h-[40vw]"
                         } transition-all duration-500 rounded-[2vw] overflow-hidden flex flex-col px-[3vw] py-[4vw] items-center justify-between border border-gray-200 bg-white/50`}
                       >
                         <h4

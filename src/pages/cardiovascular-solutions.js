@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function cardiovascular() {
   const content = {
-    heading: "Transforming Cardiac Health",
+    heading: "Pioneering Excellence in Cardiac Care",
     smallpara:
       "We are advancing cardiac surgery through continuous innovation, evidence-based practices, and scientific rigor, equipping surgeons with the latest tools to address complex conditions like coronary artery disease, valvular heart disorders, and congenital heart defects. By integrating cutting-edge advancements in surgical procedures, device technologies, and cardiothoracic innovation, we provide clinicians with the resources to optimize patient outcomes. Through collaboration and rapid adaptation to evolving clinical challenges, we ensure every intervention is guided by precision, scientific evidence, and the highest standards of care. ",
     bigpara:

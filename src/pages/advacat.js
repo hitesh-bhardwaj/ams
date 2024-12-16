@@ -58,7 +58,7 @@ const cardData = [
   },
   {
     title: "Tensile Strength",
-    description: "Chromic Gut: 21-25 days Plain Gut: 10-12 days",
+    description: "Chromic Gut: 21-25 days <br/> Plain Gut: 10-12 days",
     svg :"/assets/advacat/tensile.svg"
 
   },
@@ -103,7 +103,7 @@ const advacat = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         <Pixifinal/> 
+          <Pixifinal/>
 
 
           </Media>

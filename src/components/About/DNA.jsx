@@ -38,13 +38,13 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
         </div>
         <Media at='desktop'>
 
-        <div className='dna-card-container flex justify-between items-center p-[3%] px-[5vw] gap-[1.5vw] group '>
-         <CardContainer className="inter-var ">
+        <div className='dna-card-container flex justify-between items-center p-[3%] px-[5vw] gap-[1.5vw]  '>
+         <CardContainer className="inter-var group">
             <div className='dna-card px-[2%] py-[6%] w-[28.5vw] border-[1px] rounded-[3vw] bg-white/50 h-[37vw] dna-card1'>
                 <CardBody className=" relative group/card h-auto p-6">
-                <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative'> 
+                <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative '> 
                 <Image
-                  className="rounded-[20px] object-contain"
+                  className="rounded-[20px] object-contain group-hover:scale-[1.2] transition-all duration-500 ease"
                   src="/assets/about/globe.svg"
                   alt="Accessible Image"
                   fill
@@ -62,12 +62,12 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
             </CardContainer>
 
 
-            <CardContainer className="inter-var">
+            <CardContainer className="inter-var group">
             <div className='dna-card px-[2%] py-[6%] w-[28.5vw] border-[1px] rounded-[3vw] bg-white/50 h-[37vw] dna-card1'>
                 <CardBody className=" relative group/card h-auto p-6">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative'> 
                 <Image
-                  className="rounded-[20px]  object-contain"
+                  className="rounded-[20px]  object-contain group-hover:scale-[1.2] transition-all duration-500 ease"
                   src="/assets/about/people.svg"
                   alt="Accessible Image"
                   fill
@@ -87,12 +87,12 @@ data-para-anim className="title-2 aeonik ml-[7%] mobile:ml-0">
 
 
 
-            <CardContainer className="inter-var">
+            <CardContainer className="inter-var group">
             <div className='dna-card px-[1vw] py-[6%] w-[28.5vw] border-[1px] rounded-[3vw] bg-white/50 h-[37vw] dna-card1'>
                 <CardBody className=" relative group/card h-auto p-6">
                 <CardItem translateZ="100" className=' ml-[1vw] w-[5.5vw] h-[6vw] relative'> 
                 <Image
-                  className="rounded-[20px] object-contain"
+                  className="rounded-[20px] object-contain group-hover:scale-[1.2] transition-all duration-500 ease"
                   src="/assets/about/ethics.svg"
                   alt="Accessible Image"
                   fill

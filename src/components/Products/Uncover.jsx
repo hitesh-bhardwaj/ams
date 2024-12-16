@@ -6,14 +6,17 @@ import { useRouter } from "next/router";
 
 
 const cards = [
-  { img: "/assets/advacryl/advapd.png", txt: "AdvaPD", src: "/advapd" },
   { img: "/assets/advacryl/advacryl-rapid.png", txt: "Advacryl Rapid", src: "/advacryl-rapid" },
+  { img: "/assets/advacryl/advacryl.png", txt: "Advacryl", src: "/advacryl" },
+  { img: "/assets/advacryl/advacrylplus.png", txt: "Advacryl Plus", src: "/advacrylplus" },
   { img: "/assets/advacryl/advamryl.png", txt: "Advamryl", src: "/advamryl" },
-  { img: "/assets/advacryl/advacryl-plus.png", txt: "Advacryl Plus", src: "/advacrylplus" },
-  { img: "/assets/advacryl/advapd.png", txt: "AdvaPD", src: "/advapd" },
-  { img: "/assets/advacryl/advacryl-rapid.png", txt: "Advacryl Rapid", src: "/advacryl-rapid" },
-  { img: "/assets/advacryl/advamryl.png", txt: "Advamryl", src: "/advamryl" },
-  { img: "/assets/advacryl/advacryl-plus.png", txt: "Advacryl Plus", src: "/advacrylplus" },
+  { img: "/assets/advacryl/advapd.png", txt: "Advapd", src: "/advapd" },
+  { img: "/assets/advacryl/advacat.png", txt: "Advacat", src: "/advacat" },
+  { img: "/assets/advacryl/advalene.png", txt: "Advalene", src: "/advalene" },
+  { img: "/assets/advacryl/advabond.png", txt: "Advabond", src: "/advabond" },
+  { img: "/assets/advacryl/advasyl.png", txt: "Advasyl", src: "/advasyl" },
+  { img: "/assets/advacryl/advacryl.png", txt: "Advacryl", src: "/advacryl" },
+  { img: "/assets/advacryl/bondtape.png", txt: "Advabond tape", src: "/bondtape" }, 
 ];
 
 
@@ -47,12 +50,12 @@ const Uncover = () => {
   const filteredCards = cards.filter(card => card.src !== currentRoute);
 
   return (
-    <section id="uncover" className="mobile:pb-[20%] py-[5%]">
+    <section id="uncover" className="mobile:pb-[20%] py-[5%] ">
       <div className="flex flex-col items-center justify-center px-[4%] pb-[4%]">
         <div className="mobile:mb-[7vw]">
           <h2 className="title-2 aeonik">Uncover More</h2>
         </div>
-        <div className="w-screen h-full pt-[5vw]">
+        <div className="w-screen h-full pt-[5vw] px-[3vw] ">
           <Swiper
             slidesPerView={4}
             spaceBetween={20}

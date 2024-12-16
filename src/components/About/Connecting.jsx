@@ -21,7 +21,7 @@ data-para-anim className="title-2 aeonik tablet:text-center ">
           </p>
           </div>
           <div className='fadeUp'>
-          <PrimaryButton link="/contact-us" text="Career"/>
+          <PrimaryButton link="/career" text="Career"/>
           </div>
           
             </div>

@@ -62,8 +62,8 @@ const Hero = () => {
               </span>
             </h1>
             <div className='flex items-center mt-[2vw]'>
-            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.45em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[20%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full mobile:my-[7vw] flex items-center justify-start mobile:text-center mobile:justify-center tablet:justify-center tablet:ml-[20%]">
-            Hemorrhoid stapler
+            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.4em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[20%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full mobile:my-[7vw] flex items-center justify-start mobile:text-center mobile:justify-center tablet:justify-center tablet:ml-[20%]">
+            Hemorrhoid {"   "} stapler
                 </p>
               <span className="w-[5.2vw] h-[1px] bg-white line mobile:hidden tablet:hidden "></span>
               </div>

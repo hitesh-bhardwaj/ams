@@ -29,7 +29,7 @@ export default function about() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-               <Pixifinal/> 
+                <Pixifinal/>
 
  
       </Media>

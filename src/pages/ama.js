@@ -37,25 +37,16 @@ export default function ama() {
       para: "AMA’s structured courses span basic to advanced levels, covering cognitive skill development, advanced minimally invasive surgery, complex interventional cardiology and optimizing revascularization techniques.",
     },
     {
-      src: "/assets/ama/ama-carousel-2.png",
-      heading: "State of the art hands on training center:",
-      para: "Our world-class facilities offer hands-on training with life-like models and ex-vivo and in-vivo tissue, bridging theory and real-world application. Insight-driven modules, enriched with live procedure observations and collaborative discussions, deliver an unmatched immersive experience.",
-    },
-    {
       src: "/assets/ama/ama-carousel-3.png",
-      heading: "Personalized and insightful training: ",
-      para: "AMA’s structured courses span basic to advanced levels, covering cognitive skill development, advanced minimally invasive surgery, complex interventional cardiology and optimizing revascularization techniques.",
-    },
-    {
-      src: "/assets/ama/ama-carousel-3.png",
-      heading: "Extensive research and Science library: ",
+      heading: "Extensive Research & Science Library",
       para: "With accessible learning anytime, anywhere—via classrooms, auditoriums, or online platforms—participants earn certifications, refine skills, and gain access to unparalleled resources, setting a new standard in medical education.",
     },
     {
-      src: "/assets/ama/ama-carousel-3.png",
-      heading: "State of the art hands on training center:",
+      src: "/assets/ama/ama-carousel-2.png",
+      heading: "State of the-Art Hands-On Training Centers ",
       para: "Our world-class facilities offer hands-on training with life-like models and ex-vivo and in-vivo tissue, bridging theory and real-world application. Insight-driven modules, enriched with live procedure observations and collaborative discussions, deliver an unmatched immersive experience.",
     },
+  
   ];
 
 fadeup()
@@ -75,13 +66,13 @@ fadeup()
               />
               <Genesis content={content} />
               <CardiacCare/>
-              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#2A2A2A]"} width={"60%"}/>
+              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#2A2A2A]"} width={"35%"}/>
               <CardsCarousel />
               <Discover />
             </main>
           </Layout>
           <Media greaterThan="tablet">
-          <Pixifinal/> 
+           <Pixifinal/>
 
 
           </Media>

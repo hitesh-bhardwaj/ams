@@ -11,7 +11,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVideoSrc("/assets/about/about-hero-video.mp4");
-    }, 4000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);

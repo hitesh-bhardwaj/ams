@@ -38,7 +38,7 @@ const cardData = [
 ];
 const MolecularCard = ({ symbol, smalltitle, title, description }) => (
   <div className="molecular-card  px-[3vw] py-[3vw] bg-white/50 border rounded-[2.5vw] border-white glassmorphism mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[50vw] tablet:h-[50vw] tablet:py-[4vw] mobile:rounded-[6vw]">
-    <div className="w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] mobile:h-[25vw] tablet:w-[10vw] tablet:h-[10vw]">
+    <div className="w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[25vw] rounded-[0.8vw] mobile:h-[25vw] tablet:w-[10vw] tablet:h-[10vw]">
       <p data-para-anim className="text-[3.3vw] mobile:text-[12.2vw] tablet:text-[5vw]">
         {symbol}
       </p>

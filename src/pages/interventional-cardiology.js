@@ -15,36 +15,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ic() {
   const content = {
-    heading: "Transforming Cardiac Surgery",
+    heading: "Innovation at the Heart of Healing",
     smallpara:
-      "Our commitment to advancing the science of flow restoration is reflected in our cutting-edge products and technologies. We focus on developing innovative solutions that address the critical needs of cardiovascular health, ensuring that every heartbeat is supported by the best possible care. By combining advanced technology with clinical expertise, AMS is dedicated to improving patient outcomes and enhancing the quality of life for those affected by cardiovascular diseases.",
+      "Transforming cardiac health through innovation and expertise, AMS is committed to advancing revascularization. Our comprehensive portfolio of interventional cardiology solutions, including PTCA Balloon Catheters and Drug Eluting Stents, is designed to address coronary artery disease with unwavering excellence and life-saving impact. Focused on minimally invasive solutions, advanced catheterization, and stent technologies, we aim to prevent restenosis and restore optimal blood flow. By combining evidence-based practices, data-driven outcomes, and collaboration in research, we empower cardiologists to tackle even the most complex percutaneous coronary interventions (PCI). ",
     bigpara:
-      "Our IC portfolio includes state-of-the-art devices designed to restore and maintain optimal blood flow in patients with coronary artery disease.",
+      "With a steadfast dedication to enhancing quality of life and improving patient outcomes, AMS continues to shape the future of cardiology and redefine what’s possible in cardiovascular care.",
     src: "/assets/ic/ic-genesis.webp",
   };
   const hero = {
-    title: "Advancing the science of flow restoration",
+    title: "Advancing the Science of Flow Restoration",
 
     src: "/assets/ic/ic-hero-bg.png",
     content:
-      "Advanced MedTech Solutions (AMS) is at the forefront of innovation in Interventional Cardiology. Our mission is to provide meaningful solutions through continuous research and development, ultimately delivering better care and significantly impacting patients' lives.",
+      "Every heartbeat tells a story of life, and at AMS, we are rewriting those stories with groundbreaking innovations. Our relentless pursuit of excellence is transforming the science of flow restoration, bringing hope and healing to millions affected by cardiovascular diseases.",
   };
   const slidesData = [
     {
-      title: "Discover How We Advance Cardiology",
+      title: "The Next Frontier of PCI",
       src: "/assets/ic/ic-carousel-img-1.png",
-      heading: "A New Era in Healthcare",
-      para: "AMS has forayed into the Interventional Cardiology space with the arrival of its PTCA Balloon Catheter Rx and forthcoming launch of its Drug Eluting Stent and related accessories. Our advanced technologies, decades rich experiences of our people and partners in healthcare brings synergy to enhance confidence of Interventional Cardiologists globally.",
-    },
-    {
-      src: "/assets/ic/ic-carousel-img-2.png",
-      heading: "Elevate Your Cardiac Care",
+      heading: "Simplifying Complex Cardiac Interventions",
       para: "At AMS, we are committed to propelling your cardiac care to new heights. As cath lab complexities increase, our focus on innovation and quality provides you with advanced solutions that drive better patient outcomes and optimize procedural efficiency.",
     },
     {
+      src: "/assets/ic/ic-carousel-img-2.png",
+      heading: "Confidence in Every Intervention",
+      para: "With our PTCA Balloon Catheter Rx and cutting-edge Drug Eluting Stents, AMS is advancing the frontiers of interventional cardiology to enhance angioplasty procedures. Backed by expertise and innovation, our precision-driven solutions aim to restore confidence in treatment outcomes and elevate patient care globally.",
+    },
+    {
       src: "/assets/ic/ic-carousel-img-3.png",
-      heading: "Quality First’ Culture",
-      para: "AMS has forayed into the Interventional Cardiology space with the arrival of its PTCA Balloon Catheter Rx and forthcoming launch of its Drug Eluting Stent and related accessories. Our advanced technologies, decades rich experiences of our people and partners in healthcare brings synergy to enhance confidence of Interventional Cardiologists globally.",
+      heading: "Crafting Tomorrow's Solutions, Today",
+      para: "AMS delivers interventional cardiology solutions built on unmatched production excellence, pioneering technology, and relentless innovation, driving pathbreaking advancements in cardiac care.",
     },
   ];
   fadeup()

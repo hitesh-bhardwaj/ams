@@ -20,7 +20,7 @@ const EdgeCard = {
   card2: {
     title: "- the confidence to suture with ease",
     src: "/assets/advamryl/advamryl-tray.png",
-    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    para: "patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
     bgsrc: "/assets/advamryl/orange-rectangle.png",
   },
   card3: {
@@ -50,7 +50,7 @@ const featureData = [
 const cardData = [
   {
     title: "Composition",
-    description: "Glycolide and    -Caprolactone",
+    description: "Glycolide and  ε-Caprolactone",
     svg:"/assets/advamryl/composition.svg"
   },
   {
@@ -74,7 +74,7 @@ const cardData = [
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days ~55% | 21 Days",
+    description: "7 days   ~60%    ~55% <br/> 14days   ~40%   ~20%",
     svg:"/assets/advamryl/tensile.svg"
 
   },
@@ -97,9 +97,9 @@ const advamryl = () => {
               <Hero
                 heading={"Advamryl"}
                 className="text-[#E58D72]"
-                tagline={" Monofilament Poliglecaprone 25"}
+                tagline={"Monofilament Poliglecaprone 25"}
                 para1={
-                  "  Supreme handling performance for confidence in subcuticular skin closure"
+                  "Supreme handling performance for confidence in subcuticular skin closure"
                 }
                 src={"/assets/advamryl/advamryl-hero.png"}
                 bgimg={"/assets/advamryl/advamryl-hero-bg.png"}
@@ -120,7 +120,7 @@ const advamryl = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         <Pixifinal/> 
+          <Pixifinal/>
 
 
           </Media>

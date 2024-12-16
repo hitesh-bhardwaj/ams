@@ -20,7 +20,7 @@ const EdgeCard = {
   card2: {
     title: "- the confidence to suture with ease",
     src: "/assets/advacryl-rapid/edge-card2.png",
-    para: "  patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
     bgsrc: "/assets/advacryl-rapid/red-rectangle.png",
   },
   card3: {
@@ -71,7 +71,7 @@ const cardData = [
   },
   {
     title: "Tensile Strength",
-    description: "~42%  |  5 Days  ~ 0%   |  10-14 Days",
+    description: "~42%  |  5 Days <br/>  ~ 0%   |  10-14 Days",
     svg:"/assets/advacryl-rapid/tensile.svg"
   },
   {
@@ -101,7 +101,7 @@ const advacrylrapid = () => {
                   "Swift Confidence for Superior Predictability"
                 }
               />
-              <Information info={"  ADVACRYL RAPID is a braided synthetic absorbable suture made of 90% glycolide and 10% L-lactide. ADVACRYL RAPID in comparison to ADVACRYL has a rapid loss of strength and absorption rate. The characteristic rapid loss of strength is achieved by use of a polymer material with a lower molecular weight than regular ADVACRYL (polyglactin 910) suture."}/>
+              <Information info={" ADVACRYL RAPID is a braided synthetic absorbable suture made of 90% glycolide and 10% L-lactide. ADVACRYL RAPID in comparison to ADVACRYL has a rapid loss of strength and absorption rate. The characteristic rapid loss of strength is achieved by use of a polymer material with a lower molecular weight than regular ADVACRYL (polyglactin 910) suture."}/>
               <Edge
                 sectionheading={" The ADVACRYL RAPID Edge"}
                 card1={EdgeCard.card1}
@@ -116,7 +116,7 @@ const advacrylrapid = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-         <Pixifinal/> 
+          <Pixifinal/>
 
 
           </Media>

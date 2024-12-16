@@ -76,7 +76,7 @@ const Hd3Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Improved accessibility for precise placement of purse string suture</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Improved accessibility for precise placement of purse string suture</span></p>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@ const Hd3Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%]  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Mitigates risk of accidental detachment due to anvil rod leaning</span></p>
+                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%]  font-light  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Mitigates risk of accidental detachment due to anvil rod leaning</span></p>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@ const Hd3Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw]  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[15%]'><span data-para-anim>With dentate line marking</span></p>
+                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw]  font-light mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[15%]'><span data-para-anim>With dentate line marking</span></p>
                 </div>
             </div>
         </div>
@@ -124,64 +124,38 @@ const Hd3Carousel = () => {
         
       </Swiper>
       <div>
-      <div
-            className={`px-[1.6vw] py-[1.6vw] border absolute z-[5] bottom-[10%] right-0 mobile:bottom-[2%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[95%]  tablet:right-[33%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2.5vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50
-                ${
-                  activeButton === "next"
-                    ? " text-white "
-                    : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
-            onClick={handleNext} // Trigger next slide
-          >
-            <span
-              className={`bg-[#020912] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
-                activeButton === "next"
-                  ? "scale-100 opacity-100 "
-                  : "scale-0 opacity-50"
-              } transition-all duration-300`}
-            ></span>
-            <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[3.5vw] tablet:h-[3.5vw]">
-              <Image
-                src="/assets/home/arrow-right.png"
-                alt="arrow-right"
-                className={`object-cover group-hover:invert transition-all duration-300 ${
-                    activeButton === "next"
-                      ? "invert"
-                      : "invert-0"
-                  } `}
-                fill
-              />
-            </div>
-          </div>
-          <div
-            className={`px-[1.6vw] py-[1.6vw] bottom-[10%] border right-[7%] absolute z-[5] mobile:bottom-[2%] mobile:right-auto mobile:top-auto mobile:left-[39%] translate-x-[-38%]  tablet:top-[95%] tablet:bottom-auto tablet:right-[47%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2.5vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white
-                ${
-                  activeButton === "prev"
-                    ? " text-white "
-                    : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
-            onClick={handlePrev} // Trigger previous slide
-          >
-            <span
-              className={`bg-[#020912] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
-                activeButton === "prev"
-                  ? "scale-100 opacity-100"
-                  : "scale-0 opacity-50"
-              } transition-all duration-300`}
-            ></span>
-            <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[3.5vw] tablet:h-[3.5vw]">
-              <Image
-                src="/assets/home/arrow-left.png"
-                alt="arrow-left"
-                className={`object-cover group-hover:invert transition-all duration-300 ${
-                    activeButton === "prev"
-                      ? "invert"
-                      : "invert-0"
-                  } `}
-                fill
-              />
-            </div>
-          </div>
+       <div
+                 className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[82%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+                 onClick={handleNext} // Trigger next slide
+               >
+                 <span
+                   className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+                 />
+                 <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+                   <Image
+                     src="/assets/home/arrow-right.png"
+                     alt="arrow-right"
+                     className={`object-cover group-hover:invert duration-300`}
+                     fill
+                   />
+                 </div>
+               </div>
+               <div
+                 className={`px-[1.2vw] py-[1.2vw] top-[82%] right-[6%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
+                 onClick={handlePrev} // Trigger previous slide
+               >
+                 <span
+                   className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+                 />
+                 <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
+                   <Image
+                     src="/assets/home/arrow-left.png"
+                     alt="arrow-left"
+                     className={`object-cover group-hover:invert duration-300 rotate-180`}
+                     fill
+                   />
+                 </div>
+               </div>
       </div>
         </div>
     </section>
