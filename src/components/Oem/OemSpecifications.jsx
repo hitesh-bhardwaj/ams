@@ -39,7 +39,7 @@ const OemSpecifications = ({ children }) => {
 
   return (
     <>
-    <div className="relative">
+    <div className="fixed">
         <div className="w-[20vw] h-[5vw]  flex overflow-hidden items-center pt-[3vw] mobile:pt-0 pl-[10vw]  tablet:h-[15vh] mobile:h-[18vh]">
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
