@@ -32,11 +32,11 @@ const Leadership = () => {
     return (
         <>
             <section id="leadership" className="bg-white/50">
-                <div className="w-full py-[7%]">
+                <div className="w-full py-[7%] mobile:py-[15%]">
                     <h3 className="aeonik title-2 text-center">The Vision of AMS Leadership</h3>
-                    <div className="relative">
-                        <div className="w-screen px-[4vw] flex justify-between items-center top-[20%] z-10 absolute">
-                            <div onClick={slidePrevious} className="px-[1.2vw] py-[1.2vw] z-[5] relative bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer mobile:block group hover:text-white">
+                    <div className="relative w-screen overflow-hidden">
+                        <div className="w-screen mobile:gap-12 px-[4vw] flex justify-between mobile:justify-center items-center top-[20%] z-10 absolute mobile:top-[90%] mobile:h-fit">
+                            <div onClick={slidePrevious} className="px-[1.2vw] py-[1.2vw] z-[5] relative bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer mobile:block group hover:text-white border border-black/20">
                                 <span className="bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300" />
                                 <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
                                     <Image
@@ -47,7 +47,7 @@ const Leadership = () => {
                                     />
                                 </div>
                             </div>
-                            <div onClick={slideNext} className="px-[1.2vw] py-[1.2vw] z-[5] relative overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer group hover:text-white bg-white/50">
+                            <div onClick={slideNext} className="px-[1.2vw] py-[1.2vw] z-[5] relative overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer group hover:text-white bg-white/50 border border-black/20">
                                 <span className="bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300" />
                                 <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
                                     <Image
@@ -59,19 +59,25 @@ const Leadership = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[600%] h-[40vw] pt-[2vw] flex items-center absolute top-box duration-1000" ref={topBoxRef}>
+                        <div className="w-[600%] h-[40vw] pt-[2vw] flex items-center absolute top-box duration-1000 mobile:pt-[5vw] mobile:h-[70vw]" ref={topBoxRef}>
                             {content.map((content, key) => (
-                                <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative">
-                                    <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full">{content.name}</p>
-                                    <Image className="absolute w-[60%] top-[-8%] opacity-75 left-1/2 -translate-x-1/2" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={90} />
+                                <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative tablet:overflow-hidden">
+                                    <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full mobile:text-[15vw]">{content.name}</p>
+                                    <Image className="absolute w-[60%] top-[-4%] opacity-75 left-1/2 -translate-x-1/2 mobile:w-[100%] mobile:top-0" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={90} />
                                 </div>
                             ))}
                         </div>
                         <Swiper
-                            className={`${styles.swiper} !pt-[35vw] font-light`}
+                            className={`${styles.swiper} !pt-[35vw] tablet:!pt-[40vw] font-light mobile:!pt-[70vw]`}
                             style={swiperStyle}
-                            slidesPerView={3}
-                            spaceBetween={100}
+                            breakpoints={{
+                                1200: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 100,
+                                }
+                            }}
+                            slidesPerView={1}
+                            spaceBetween={50}
                             centeredSlides={true}
                             speed={1000}
                             navigation={false}
@@ -81,9 +87,9 @@ const Leadership = () => {
                             {content.map((item, i) => (
                                 <SwiperSlide key={i} className={styles.swiperSlide}>
                                     <div className="relative">
-                                        <div className={`leader-image flex justify-center`}>
+                                        <div className={`leader-image flex justify-center mobile:hidden`}>
                                             <Image
-                                                className="w-[100%]"
+                                                className="w-[100%] tablet:w-[40%]"
                                                 src={item.slideImage}
                                                 alt={`${item.name} image`}
                                                 width={450}
@@ -91,12 +97,12 @@ const Leadership = () => {
                                                 quality={90}
                                             />
                                         </div>
-                                        <div className="h-[24vw] w-[36vw] bg-white/70 backdrop-blur-md rounded-[1.5vw] p-[2vw] overflow-hidden border-white absolute top-0 left-1/2 -translate-x-1/2 duration-500 opacity-0 translate-y-[0%] leaderSwiperContent pointer-events-none">
-                                            <h4 className="text-[2.5vw] aeonik mb-[0.5vw]">{item.name}</h4>
-                                            <p className="uppercase mb-[0.5vw]">{item.title}</p>
-                                            <span className="bg-black h-[1.5px] w-[3vw] block mb-[1.5vw]" />
-                                            <div data-lenis-prevent className="overflow-y-scroll h-[60%]">
-                                                <div className="text-justify text-[1.1vw] font-extralight space-y-[3%] pr-3">
+                                        <div className="h-[24vw] w-[36vw] tablet:h-[40vw] tablet:w-3/4 bg-white/70 backdrop-blur-md rounded-[1.5vw] p-[2vw] tablet:p-[4vw] overflow-hidden border-white absolute top-0 left-1/2 -translate-x-1/2 duration-500 opacity-0 translate-y-[0%] leaderSwiperContent pointer-events-none mobile:w-full mobile:h-[100vw] mobile:relative mobile:py-[10vw] mobile:px-[7vw] mobile:rounded-2xl mobile:opacity-100 mobile:translate-y-[-15%]">
+                                            <h4 className="text-[2.5vw] aeonik mb-[0.5vw] tablet:text-[4vw] tablet:mb-2 mobile:text-[8vw] mobile:text-center">{item.name}</h4>
+                                            <p className="uppercase mb-[0.5vw] tablet:font-bold tablet:mb-2 mobile:text-[3.5vw] mobile:text-center mobile:mb-[8%]">{item.title}</p>
+                                            <span className="bg-black/50 h-[1.5px] w-[3vw] block mb-[1.5vw] tablet:mb-[4vw] tablet:w-[30vw] mobile:hidden" />
+                                            <div data-lenis-prevent className="overflow-y-scroll h-[60%] tablet:h-[55%] mobile:h-[70%]">
+                                                <div className="text-justify text-[1.1vw] font-extralight space-y-[3%] pr-3 tablet:text-lg mobile:text-[4vw]">
                                                     {item.description.map((text, index) => (
                                                         <p key={index}>{text}</p>
                                                     ))}
