@@ -119,70 +119,58 @@
     transition: transform 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
   }
   
-  /* @media screen and (max-width: 1024px) {
+  
+
+  @media screen and (max-width:1024px){
     .btn {
-      height: 11vw;
-      padding: 0 4vw;
-      max-width: 35vw;
-      font-size: 3vw;
-      width: 35vw;
-      font-weight: 400;
+     
+      height: 7.2vw;
+     margin-top: 1%;
+      color: black;
+      font-size: 2vw;
+     font-weight: 300;
+      padding-left: 7vw;
+      /* transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86); */
     }
-    .btn[data-secondary] .btnCircle {
-      padding: 0 4vw;
-      clip-path: inset(14% 5% 15% calc(100% - 27%) round 10vw);
-    }
-    .btn[data-secondary]:hover .btnCircle {
-      clip-path: inset(0 round 10vw);
-    }
-    .btn .btnCircle[data-demo] {
-      padding: 0 4vw;
-      clip-path: inset(16% 6% 18% calc(100% - 27%) round 4vw);
+    .btn .btnText{
+      padding-right: 5vw;
+      padding-left: 3vw;
+      width: 100%;
+      line-height: 1;
+      position: relative;
+      z-index: 2;
     }
     .btn .btnCircle {
-      padding: 0 4vw;
-      clip-path: inset(16% 6% 18% calc(100% - 27%) round 4vw);
+      clip-path: inset(10% calc(100% - 6.5vw) 10% 1vw round 1000px);
+      position: absolute;
+      inset: 0px;
+      border-radius: 1000px;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      background-image: linear-gradient(to right, #9E7BDF, #ac26b0, #1e40af);
+      background-size: 400%;
+      
+      color: white;
+      transition: all 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
     .btn .btnIcon {
-      width: 2vw;
-      height: 2vw;
+      width: 1.5vw;
+      height: 1.5vw;
+      overflow: hidden;
+      margin-left: 3vw;
     }
-    .btn .btnCircleText {
-      padding: 0 2% 0 0;
-    }
-    .btn:hover .btnCircle {
-      clip-path: inset(0 round 4vw);
-    }
-  
-    .btn[data-secondary] .btnCircle{
-      padding: 0 4vw;
-      clip-path: inset(14% 5% 15% calc(100% - 27%) round 10vw);
-    }
-    .btn[data-secondary]:hover .btnCircle{
-      clip-path: inset(0 round 10vw);
-    }
-  
-  
-    .btn[data-thankyou]{
-      width: 47vw;
-      max-width: 47vw;
-    }
-    .btn[data-thankyou] .btnCircle{
-      clip-path: inset(1.6vw 2vw 1.6vw calc(100% - 10vw) round 4vw);
-    }
-  
-  } */
-  
+  }
   @media screen and (max-width: 540px) {
     .btn {
      
       height: 14.2vw;
      margin-top: 1%;
       color: black;
-      font-size: 5vw;
+      font-size: 4vw;
      font-weight: 300;
       padding-left: 12vw;
-      transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      /* transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86); */
     }
     .btn .btnText{
       padding-right: 7.5vw;

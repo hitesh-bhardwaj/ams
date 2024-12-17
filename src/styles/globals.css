@@ -751,14 +751,14 @@ color: #000 !important;
   }
 
   .title-1 {
-    font-size: 7vw;
+    font-size: 8.5vw;
     font-weight: 300;
-    color: var(--text-color);
-    line-height: 130%;
+    
+    line-height: 110%;
   }
 
   .title-2 {
-    font-size: 5.5vw;
+    font-size: 7vw;
     font-weight: 300;
     color: var(--text-color);
     line-height: 1.25;
@@ -772,13 +772,13 @@ color: #000 !important;
   .content-p-md {
     color: var(--text-color);
     font-weight: 300;
-    font-size: 1.8vw;
+    font-size: 2.2vw;
   }
 
   .content-p {
     color: var(--p-text-color);
     font-weight: 300;
-    font-size: 2vw;
+    font-size: 2.2vw;
     line-height: 1.7;
   }
   .para-animation .line {

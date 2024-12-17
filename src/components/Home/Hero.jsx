@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="w-[55%] z-[50] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4 mt-[4vw]">
             <h1
               data-para-anim
-              className="title-1 aeonik  mobile:text-center mobile:text-[15vw] text-[#ffffff] title-shadow"
+              className="title-1 aeonik  mobile:text-center mobile:text-[15vw] text-[#ffffff]"
             >
               Advancing the way we care
             </h1>
@@ -42,8 +42,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute top-0 left-0  h-full tablet:top-[45%] mobile:relative">
-            <div className="w-screen h-full relative mobile:w-[100vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
+          <div className="absolute top-0 left-0  h-full">
+            <div className="w-screen h-full relative">
               <video
                 poster="/assets/home/homepage-hero-video-poster.webp"
                 autoPlay
