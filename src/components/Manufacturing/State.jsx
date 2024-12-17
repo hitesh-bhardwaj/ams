@@ -163,7 +163,7 @@ data-para-anim
         </div>
         <div className="w-[90vw]">
         <div
-            className={`rounded-[45px] border-[1px] items-center border-gray-200  p-[5vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
+            className={`rounded-[45px] border-[1px] items-center border-gray-200  px-[4vw] py-[3vw]  flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
           >
             <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
               <Image

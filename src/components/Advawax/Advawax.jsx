@@ -8,7 +8,7 @@ const Advawax = () => {
           <div className="flex h-dvh w-full justify-start items-center mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
-                <h2 className="title-1 aeonik drop-shadow-md leading-[1]">
+                <h2 className="title-1 aeonik  leading-[1]">
                   <span data-para-anim
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] text-[#CBA82A] tablet:text-[9vw]`}
                   >

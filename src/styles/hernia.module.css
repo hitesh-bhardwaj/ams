@@ -1,6 +1,6 @@
 .sliderSection {
     height: 100%;
-    top: 77vw;
+    top: 74vw;
     position: absolute;
     width: 100%;
   }
@@ -53,4 +53,14 @@
     height: 40vw;
     max-height: 350px;
     max-width: 350px;
+  }
+
+  @media screen  and (max-width:1520px){
+    .sliderSection {
+      height: 100%;
+      top: 82vw ;
+      position: absolute;
+      width: 100%;
+    }
+    
   }

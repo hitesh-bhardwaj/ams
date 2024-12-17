@@ -20,13 +20,13 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero h-[100vh] mobile:mb-[20%] tablet:h-[60vh] mobile:h-[100vh] overflow-hidden mobile:w-full" id="hero">
+      <section className="hero h-[100vh] mobile:mb-[20%] tablet:h-[60vh] mobile:h-[100vh] overflow-hidden mobile:w-full dark" id="hero">
         <div className="px-[10%] relative">
           <div className="flex h-dvh w-full justify-start items-center tablet:h-[50vh] mobile:flex-col mobile:justify-center mobile:mt-[20%]">
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50]">
               <h1
                 data-para-anim
-                className="title-1 aeonik drop-shadow-md  leading-[1.15] mobile:text-[12.5vw]"
+                className="title-1 aeonik  leading-[1.15] mobile:text-[12.5vw]"
               >
                  <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[90%] mobile:w-full mobile:text-center  title-shadow `}>
                  Ushering the next generation of medical device technology

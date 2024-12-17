@@ -1,13 +1,27 @@
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Scrollbar } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 import gsap from 'gsap';
+import {useLenis} from "lenis/react"
+import OemSpecification from './OemSpecification';
 
 export default function Offerings() {
+    const [isOpen , setIsOpen] = useState(false);
+    const lenis = useLenis()
+    const handleModal = () => {
+        setIsOpen(true)
+        lenis&&lenis.stop()
+
+    }
+    const handleModalClose = () => {
+        setIsOpen(false);
+        lenis&&lenis.start(); // Start Lenis
+      };
+    
     useEffect(() => {
     if(globalThis.innerWidth > 1024) {
     
@@ -130,7 +144,7 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%]'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal'>
+                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal' onClick={handleModal}>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -409,6 +423,7 @@ export default function Offerings() {
 
                     </div>
                 </div>
+                {isOpen&&<OemSpecification onClose={handleModalClose}/>}
             </section>
         </>
     )

@@ -51,7 +51,7 @@ const Jobs = () => {
   const handleCardClick = () => {
     lenis&&lenis.stop(); // Stop Lenis
     setModalOpen(true);
-    console.log("working")
+    
   };
 
   // Close modal and restart Lenis

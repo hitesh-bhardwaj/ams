@@ -42,7 +42,7 @@ const Hero = () => {
           <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-screen  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[70vh]">
             <div className=" relative top-[10%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 tablet:top-0 ">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center relative z-[1] mobile:top-[-30%]">
-                <h1 className="text-[#CF181E] text-[5.3vw]  font-light aeonik drop-shadow-md leading-[1] ">
+                <h1 className="text-[#CF181E] text-[5.3vw]  font-light aeonik  leading-[1] ">
                   <span data-para-anim
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw]`}
                   >

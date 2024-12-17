@@ -47,7 +47,7 @@ const AdvastapLC3 = () => {
             />
             </div>
             <div className=" absolute top-[15%] left-[8%] p-[2vw] mobile:w-full mobile:pl-0 tablet:w-full tablet:pl-0 mobile:left-0 mobile:top-[3%] tablet:left-0 tablet:top-0">
-            <h2 className="text-[4vw] aeonik drop-shadow-lg  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[7.5vw]">
+            <h2 className="text-[4vw] aeonik  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[7.5vw]">
           <span data-para-anim className="leading-[1.3] overflow-hidden w-full mobile:w-full mobile:text-center tablet:w-full tablet:text-center font-light">
           ADVASTAP LC II
           </span>

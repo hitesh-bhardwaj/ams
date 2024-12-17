@@ -38,7 +38,7 @@ const Hero = () => {
             <div className=" mobile:flex mobile:flex-col mobile:items-center ">
               <h1
                 
-                className="text-[5.5vw] title-1  aeonik drop-shadow-lg  leading-[1.25] mobile:text-center tablet:text-[9vw] fadeUp"
+                className="text-[5.5vw] title-1  aeonik   leading-[1.25] mobile:text-center tablet:text-[9vw] fadeUp"
               >
                 <span className={`leading-[1.2] overflow-hidden grip-gradient text-white`}>
                   ADVAGRIP

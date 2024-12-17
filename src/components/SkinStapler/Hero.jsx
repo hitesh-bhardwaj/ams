@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="  flex flex-col h-screen w-screen justify-center items-start  mobile:h-[75vh] mobile:flex-col mobile:justify-start mobile:w-full mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className=" absolute top-[30%] left-[10%] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 mobile:static">
               <div className=" flex-col mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
-                <h1 className="advastap-text text-white text-[5.3vw] aeonik drop-shadow-md leading-[1] hero-text">
+                <h1 className="advastap-text text-white text-[5.3vw] aeonik  leading-[1] hero-text">
                   <span 
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw]`}
                   >

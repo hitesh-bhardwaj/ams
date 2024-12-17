@@ -8,7 +8,7 @@ const UmbilicalTape = () => {
       <div className="flex h-screen w-full justify-start items-start mobile:h-full mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
         <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
           <div className="w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
-            <h1 className="title-1 aeonik drop-shadow-md leading-[1]">
+            <h1 className="title-1 aeonik  leading-[1]">
               <span
 data-para-anim
                 className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[11.2vw] text-[#79C0E4] tablet:text-[7.5vw]`}

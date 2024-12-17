@@ -59,12 +59,12 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode,
                 
                 className={`title-1 w-full aeonik  leading-[1] ${titleHidden}`}
               >
-                <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center ${titleColor?"text-black":"title-shadow"}`}>
+                <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center ${titleColor?"text-black":""}`}>
                  {title}
                 </span>
               </h1>
               <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw] ${paraWidth}`}>
-                <span data-para-anim className={`text-[#FFFFFF] leading-[1.4] ${titleColor?"text-black":"title-shadow"}`}>
+                <span data-para-anim className={`text-[#FFFFFF] leading-[1.4] ${titleColor?"text-black":""}`}>
                   {content}
                 </span>
               </p>
