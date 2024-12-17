@@ -28,7 +28,7 @@ const Hero = () => {
                 data-para-anim
                 className="title-1 aeonik  leading-[1.15] mobile:text-[12.5vw]"
               >
-                 <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[90%] mobile:w-full mobile:text-center  title-shadow `}>
+                 <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[90%] mobile:w-full mobile:text-center  `}>
                  Ushering the next generation of medical device technology
                  </span>
                
