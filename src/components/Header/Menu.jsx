@@ -97,16 +97,14 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
       >
         <div className="bg-white h-2/3 w-full relative tablet:h-1/2 mobile:h-full">
           <Media greaterThan="mobile">
-
             <div className="w-[28%] h-full absolute">
               <video
-                ref={videoRef} // Attach ref to video for lazy loading
+                ref={videoRef}
                 muted
                 playsInline
                 loop
                 className="h-full w-full object-cover"
                 poster="/assets/home/menu-video-poster.webp"
-              // Use poster image
               ></video>
             </div>
           </Media>
@@ -120,24 +118,17 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               />
             </div>
             <div className="flex h-1/2 justify-between items-center col-span-full mobile:h-[10vw]  mobile:mt-[5vw]">
-              {/* <Link
-                href="/"
-                aria-label=":to home page"
-                className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[15vw] mobile:w-[25vw] mobile:h-[20vw] relative"
-              > */}
               <span
                 onClick={() => handleLinkClick("/")}
                 data-attr="home"
                 className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[15vw] mobile:w-[25vw] mobile:h-[20vw] relative cursor-pointer"
               >
-                {/* Default image for tablet and larger screens */}
                 <Image
                   src="/assets/header/ams-logo-white.webp"
                   className="object-contain w-full h-full mobile:hidden"
                   fill
                   alt="AMS Logo"
                 />
-                {/* Mobile image */}
                 <Image
                   src="/logo.svg"
                   className="object-contain w-full h-full hidden mobile:block"
@@ -167,155 +158,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
             </div>
 
             <div className="col-start-5 col-span-8 nav row-start-2 mobile:flex mobile:flex-col mobile:items-start mobile:justify-start mobile:col-start-2 mobile:row-start-2 mobile:mt-[-15vw]">
-                <NavWrapper />
-              {/* <div className="flex justify-start mobile:flex-col mobile:items-start">
-                <div className="border-r border-[#D8D8D8] py-[1.8vw] pr-[5vw] mobile:border-none mobile:border-b mobile:border-[#D8D8D8] mobile:py-0">
-                  <ul className="space-y-[0.8vw] tablet:space-y-[1vw]">
-                    <li className="footer-link">
-                      <Link href="/" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/")}
-                          data-attr="Home"
-                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
-                        >
-                          Home
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link href="/about" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/about")}
-                          data-attr="About"
-                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
-                        >
-                          About
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link href="#" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/product")}
-                          data-attr="Product"
-                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
-                        >
-                          Product
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link href="/manufacturing" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/manufacturing")}
-                          data-attr="Manufacturing"
-                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
-                        >
-                          Manufacturing
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link" >
-                      <Link href="/career" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/career")}
-                          data-attr="Career"
-                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
-                        >
-                          Career
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link href="/blogs" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/blogs")}
-                          data-attr="News"
-                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
-                        >
-                          News
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link href="/contact-us" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/contact-us")}
-                          data-attr="Contact"
-                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
-                        >
-                          Contact
-                        </span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="hidden mobile:block h-[1px] bg-[#D8D8D8] w-full my-[5vw] lineDraw"></div>
-                <div className="py-[1.8vw] pl-[5vw] mobile:pl-[0vw]">
-                  <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw] mobile:space-y-[1.2vw]">
-                    <li className="footer-link">
-                      <Link
-                        prefetch={false}
-                        href="/wound-care"
-                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
-                      >
-                        <span
-                          onClick={() => handleLinkClick("/wound-care")}
-                          data-attr="Wound Care"
-                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
-                        >
-                          Wound Care
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link href="/endo" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/endo")}
-                          data-attr="Endo Surgery"
-                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
-                        >
-                          Endo Surgery
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link href="/hernia" prefetch={false}>
-                        <span
-                          onClick={() => handleLinkClick("/hernia")}
-                          data-attr="Hernia Solutions"
-                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
-                        >
-                          Hernia Solutions
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link
-                        prefetch={false}
-                        href="/interventional-cardiology"
-                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
-                      >
-                        <span data-attr="Interventional Cardiology">
-                          Interventional Cardiology
-                        </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
-                      <Link
-                        prefetch={false}
-                        href="/cardiovascular-solutions"
-                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
-                      >
-                        <span data-attr="Cardiovascular Solutions">
-                          Cardiovascular Solutions
-                        </span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div> */}
-
+              <NavWrapper isMenuOpen={isMenuOpen} />
               <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center ">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">
                   <Link prefetch={false} href="#">

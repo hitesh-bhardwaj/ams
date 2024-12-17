@@ -9,9 +9,16 @@ import InterventionalCardiologyMenu from './InterventionalCardiologyMenu';
 import CardiacSurgeryMenu from './CardiacSurgeryMenu';
 import { NavLink, NavButton } from './NavLink';
 
-export default function NavWrapper() {
+export default function NavWrapper({ isMenuOpen }) {
     const [currentMenu, setCurrentMenu] = useState(null);
     const submenuContainerRef = useRef(null);
+
+    useEffect(() => {
+        // When menu closes, reset currentMenu
+        if (!isMenuOpen) {
+            setCurrentMenu(null);
+        }
+    }, [isMenuOpen]);
 
     useEffect(() => {
         const container = submenuContainerRef.current;
