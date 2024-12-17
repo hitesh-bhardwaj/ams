@@ -15,6 +15,11 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
   const router = useRouter();
   const videoRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const [openList, setOpenList] = useState("");
+
+  const handleLinkClick = (listName) => {
+    setOpenList((prevList) => (prevList === listName ? "" : listName));
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -82,11 +87,11 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
     }
   }, [isMenuOpen]);
 
-  const handleLinkClick = (href) => {
-    router.push(href).then(() => {
-      window.location.reload();
-    });
-  };
+  // const handleLinkClick = (href) => {
+  //   router.push(href).then(() => {
+  //     window.location.reload();
+  //   });
+  // };
 
   return (
     <>
@@ -129,14 +134,12 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                 data-attr="home"
                 className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[15vw] mobile:w-[25vw] mobile:h-[20vw] relative cursor-pointer"
               >
-                {/* Default image for tablet and larger screens */}
                 <Image
                   src="/assets/header/ams-logo-white.webp"
                   className="object-contain w-full h-full mobile:hidden"
                   fill
                   alt="AMS Logo"
                 />
-                {/* Mobile image */}
                 <Image
                   src="/logo.svg"
                   className="object-contain w-full h-full hidden mobile:block"
@@ -186,25 +189,25 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                           data-attr="About"
                           className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
                         >
-                          About
+                          About Us
                         </span>
                       </Link>
                     </li>
                     <li className="footer-link">
                       <Link href="#" prefetch={false}>
                         <span
-                          onClick={() => handleLinkClick("/product")}
-                          data-attr="Product"
-                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                           onClick={() => handleLinkClick("products")}
+                          data-attr="Products"
+                          className="aeonik  font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
                         >
-                          Product
+                          Products
                         </span>
                       </Link>
                     </li>
                     <li className="footer-link">
-                      <Link href="/manufacturing" prefetch={false}>
+                      <Link href="/#" prefetch={false}>
                         <span
-                          onClick={() => handleLinkClick("/manufacturing")}
+                          onClick={() => handleLinkClick("manufacturing")}
                           data-attr="Manufacturing"
                           className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
                         >
@@ -215,57 +218,61 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     <li className="footer-link" >
                       <Link href="/career" prefetch={false}>
                         <span
-                          onClick={() => handleLinkClick("/career")}
-                          data-attr="Career"
+                          data-attr="Careers"
                           className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
                         >
-                          Career
+                          Careers
                         </span>
                       </Link>
                     </li>
                     <li className="footer-link">
                       <Link href="/blogs" prefetch={false}>
                         <span
-                          onClick={() => handleLinkClick("/blogs")}
-                          data-attr="News"
+                         
+                          data-attr="Stories"
                           className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
                         >
-                          News
+                          Stories
                         </span>
                       </Link>
                     </li>
                     <li className="footer-link">
                       <Link href="/contact-us" prefetch={false}>
                         <span
-                          onClick={() => handleLinkClick("/contact-us")}
-                          data-attr="Contact"
+                          data-attr="Contact Us"
                           className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
                         >
-                          Contact
+                          Contact Us
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link href="/ama" prefetch={false}>
+                        <span
+                          data-attr="Advanced Medtech Academy"
+                          className="aeonik font-light text-[1.6vw] leading-tight text-[#1a1a1a] tablet:text-[3vw]  mobile:text-[10vw] cursor-pointer"
+                        >
+                          Advanced Medtech Academy
                         </span>
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <div className="hidden mobile:block h-[1px] bg-[#D8D8D8] w-full my-[5vw] lineDraw"></div>
-                <div className="py-[1.8vw] pl-[5vw] mobile:pl-[0vw]">
-                  <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw] mobile:space-y-[1.2vw]">
-                    <li className="footer-link">
-                      <Link
-                        prefetch={false}
-                        href="/wound-care"
-                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
-                      >
-                        <span
-                          onClick={() => handleLinkClick("/wound-care")}
+                {openList === "products" && (
+        <div className="py-[1.8vw] pl-[5vw] mobile:pl-[0vw]">
+          <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw] mobile:space-y-[1.2vw]">
+            <li className="footer-link">
+              <Link href="/wound-care" prefetch={false} className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]">
+              <span
+                          onClick={() => handleLinkClick("woundcare")}
                           data-attr="Wound Care"
                           className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
                         >
                           Wound Care
                         </span>
-                      </Link>
-                    </li>
-                    <li className="footer-link">
+              </Link>
+            </li>
+            <li className="footer-link">
                       <Link href="/endo" prefetch={false}>
                         <span
                           onClick={() => handleLinkClick("/endo")}
@@ -304,13 +311,190 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                         href="/cardiovascular-solutions"
                         className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
                       >
-                        <span data-attr="Cardiovascular Solutions">
-                          Cardiovascular Solutions
+                        <span data-attr="Cardiac Surgery">
+                          Cardiac Surgery
                         </span>
                       </Link>
                     </li>
-                  </ul>
-                </div>
+          </ul>
+        </div>
+      )}
+       {openList === "manufacturing" && (
+        <div className="py-[1.8vw] pl-[5vw] mobile:pl-[0vw]">
+          <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw] mobile:space-y-[1.2vw]">
+            <li className="footer-link">
+              <Link href="/research-and-development" prefetch={false} className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]">
+              <span
+                          onClick={() => handleLinkClick("/research-and-development")}
+                          data-attr="Research and Development"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
+                          Research and Development
+                        </span>
+              </Link>
+            </li>
+            <li className="footer-link">
+                      <Link href="/oem" prefetch={false}>
+                        <span
+                          onClick={() => handleLinkClick("/oem")}
+                          data-attr="OEM Solutions"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
+                          OEM Solutions
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link href="/needle" prefetch={false}>
+                        <span
+                          onClick={() => handleLinkClick("/needle")}
+                          data-attr="Advanced Needle Technology"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
+                          Advanced Needle Technology
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/manufacturing"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Manufactring Page">
+                         Manufacturing Page
+                        </span>
+                      </Link>
+                    </li>
+          </ul>
+        </div>
+      )}
+        {openList === "woundcare" && (
+        <div className="py-[1.8vw] pl-[5vw] mobile:pl-[0vw]">
+          <ul className="space-y-[0.3vw] tablet:space-y-[0.8vw] mobile:space-y-[1.2vw]">
+            <li className="footer-link">
+              <Link href="/advacryl" prefetch={false} className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]">
+              <span
+                          data-attr="Advacryl"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
+                          Advacryl
+                        </span>
+              </Link>
+            </li>
+            <li className="footer-link">
+                      <Link href="/advacrylplus" prefetch={false}>
+                        <span
+                          data-attr="Advacryl Plus"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
+                          Advacryl Plus
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link href="/advacryl-rapid" prefetch={false}>
+                        <span
+                          data-attr="Advacryl Rapid"
+                          className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw] cursor-pointer"
+                        >
+                          Advacryl Rapid
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/advamryl"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Advamryl">
+                        Advamryl
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/advapd"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Advapd">
+                        Advapd
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/advacat"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Advacat">
+                        Advacat
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/advalene"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Advalene">
+                        Advalene
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/advabond"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Advabond">
+                        Advabond
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/advalon"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Advalon">
+                        Advalon
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/advasyl"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Advasyl">
+                        Advasyl
+                        </span>
+                      </Link>
+                    </li>
+                    <li className="footer-link">
+                      <Link
+                        prefetch={false}
+                        href="/bondtape"
+                        className="aeonik font-light text-[1.35vw] leading-tight text-[#1a1a1a] tablet:text-[2vw]  mobile:text-[5vw]"
+                      >
+                        <span data-attr="Advabond">
+                        Advamryl
+                        </span>
+                      </Link>
+                    </li>
+          </ul>
+        </div>
+      )}
+                <div className="hidden mobile:block h-[1px] bg-[#D8D8D8] w-full my-[5vw] lineDraw"></div>
+            
               </div>
               <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center ">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">

@@ -7,7 +7,6 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 import gsap from 'gsap';
 import {useLenis} from "lenis/react"
-import OemSpecification from './OemSpecification';
 
 export default function Offerings() {
     const [isOpen , setIsOpen] = useState(false);
@@ -144,7 +143,7 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%]'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal' onClick={handleModal}>
+                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal' >
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -217,6 +216,7 @@ export default function Offerings() {
                                                     <path d="M3.01701 48.0165L48.0168 3.01677M48.0168 3.01677L48.0795 46.9876M48.0168 3.01677L4.04596 2.95404" stroke="currentColor" strokeWidth="5" strokeLinecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </button>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -423,7 +423,7 @@ export default function Offerings() {
 
                     </div>
                 </div>
-                {isOpen&&<OemSpecification onClose={handleModalClose}/>}
+                {/* {isOpen&&<OemSpecification onClose={handleModalClose}/>} */}
             </section>
         </>
     )

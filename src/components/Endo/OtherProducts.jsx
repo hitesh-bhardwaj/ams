@@ -38,25 +38,25 @@ const OtherProduct = () => {
       imgSrc: "/assets/endo/other-product1.png",
       heading: "Advastap LC ii",
       text: '2-Row Linear Cutter',
-      link: "/poweredlc"
+      link: "/advastaplc"
     },
     {
       imgSrc: "/assets/endo/other-product2.png",
       heading: "Advastap HD II",
       text: '2-Row Hemorrhoid Stapler',
-      link: "/advastaplc"
+      link: "/advastaphd"
     },
     {
       imgSrc: "/assets/endo/other-product3.png",
       heading: "Advastap",
       text: 'Skin Stapler',
-      link: "/advastaphd"
+      link: "/skinstapler"
     },
     {
       imgSrc: "/assets/endo/other-product4.png",
       heading: "ADVACLIP",
       text: 'Titanium Ligation Clip',
-      link: "/advastapcs"
+      link: "/#"
     },    
   ];
 

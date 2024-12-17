@@ -12,31 +12,51 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hd2Carousel = () => {
-    paraAnim();
-    const swiperRef = useRef(null); // Create a ref for Swiper
+    paraAnim(); 
+    const swiperRef = useRef(null); 
+
+    useGSAP(()=>{
+      if(globalThis.innerWidth>1024){
+      const tl = gsap.timeline({
+          scrollTrigger:{
+              trigger:'#advastap-specificationCarousel'
+          }
+      });
+      tl.fromTo(".specificationSwiper .swiper-slide",{
+          xPercent:70,
+          opacity:0.5
+      },{
+          xPercent:0,
+          duration: 2,
+      delay: 0.3,
+      opacity:1,
+      ease: "power3.out",
+      })
+  };
+  });
 
     // State to track which button was clicked
     const [activeButton, setActiveButton] = useState("");
   
     const handleNext = () => {
       if (swiperRef.current) {
-        swiperRef.current.slideNext(); // Move to the next slide
-        setActiveButton("next"); // Set next button as active
-        // Reset after 300ms
+        swiperRef.current.slideNext();
+        setActiveButton("next"); 
+        
       }
     };
   
     const handlePrev = () => {
       if (swiperRef.current) {
-        swiperRef.current.slidePrev(); // Move to the previous slide
-        setActiveButton("prev"); // Set previous button as active
-        // Reset after 300ms
+        swiperRef.current.slidePrev(); 
+        setActiveButton("prev"); 
+        
       }
     };
      
   return (
     <>
-    <section id='specificationCarousel' className='overflow-hidden relative tablet:h-[60vh] mobile:h-[100vh]'>  
+    <section id='advastap-specificationCarousel' className='overflow-hidden relative tablet:h-[60vh] mobile:h-[100vh]'>  
         <div className={`w-screen h-full py-[10vw] bg-[#020912]   text-white items-center flex justify-center swiper-container `}>
         <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -59,7 +79,7 @@ const Hd2Carousel = () => {
               spaceBetween: 50,
             },
           }}
-        className={`w-screen flex items-center justify-center specificationSwiper fadeUp tablet:h-[50vh] cursor-grab`}
+        className={`w-screen flex items-center justify-center specificationSwiper  advastapSwiper fadeUp tablet:h-[50vh] cursor-grab`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">

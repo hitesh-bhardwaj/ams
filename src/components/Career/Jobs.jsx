@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import Link from "next/link";
 import { paraAnim } from "../gsapAnimations";
 import {useLenis} from 'lenis/react'
-import styles from "@/styles/careerSwiper.module.css"; // Import the modal component
+import styles from "@/styles/careerSwiper.module.css"; 
 import JobDescription from "./JobDescription";
 import Image from "next/image";
 
@@ -49,7 +49,8 @@ const Jobs = () => {
 
   // Open modal and stop Lenis
   const handleCardClick = () => {
-    lenis&&lenis.stop(); // Stop Lenis
+    lenis && lenis.stop();
+    document.body.style.overflow = "hidden";
     setModalOpen(true);
     
   };
@@ -57,7 +58,8 @@ const Jobs = () => {
   // Close modal and restart Lenis
   const handleModalClose = () => {
     setModalOpen(false);
-    lenis&&lenis.start(); // Start Lenis
+    lenis && lenis.start();
+    document.body.style.overflow = "";
   };
 
   return (
@@ -104,7 +106,7 @@ const Jobs = () => {
             className="MySwiper !px-[5vw]"
           >
             <SwiperSlide>
-              <JobCard
+              <JobCard 
                 dept={"Sales"}
                 designation={"Territory Sales Manager"}
                 location={"Jaipur"}

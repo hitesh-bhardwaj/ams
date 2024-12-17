@@ -118,9 +118,7 @@ const advacrylplus = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-          <Pixifinal/>
-
-
+          <Pixifinal />
           </Media>
           
         

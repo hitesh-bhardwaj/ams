@@ -41,34 +41,34 @@ const Product = () => {
       link: "/poweredlc"
     },
     {
-      imgSrc: "/assets/endo/Product2.png",
+      imgSrc: "/assets/endo/Product3.png",
       heading: "Advastap HD III",
       text: '3-Row Hemorrhoid Stapler',
-      link: "/advastaplc"
-    },
-    {
-      imgSrc: "/assets/endo/Product3.png",
-      heading: "Advastap Endo lc",
-      text: '3-Row Endoscopic Linear Cutter',
       link: "/advastaphd"
     },
     {
       imgSrc: "/assets/endo/Product4.png",
-      heading: "Advastap Reloads",
-      text: 'Endoscopic Linear Cutter Reloads',
-      link: "/advastapcs"
+      heading: "Advastap Endo lc",
+      text: '3-Row Endoscopic Linear Cutter',
+      link: "/endolc"
     },
     {
       imgSrc: "/assets/endo/Product5.png",
-      heading: "Advastap LC iii",
-      text: '3-Row Linear Cutter',
-      link: "/endolc"
+      heading: "Advastap Reloads",
+      text: 'Endoscopic Linear Cutter Reloads',
+      link: "/reloads"
     },
     {
       imgSrc: "/assets/endo/Product6.png",
+      heading: "Advastap LC iii",
+      text: '3-Row Linear Cutter',
+      link: "/advastaplc"
+    },
+    {
+      imgSrc: "/assets/endo/Product2.png",
       heading: "ADVASTAP CS",
       text: '3-Row Circular Stapler III',
-      link: "/endolc"
+      link: "/advastapcs"
     },
   ];
   if (globalThis.innerWidth < 1024) {

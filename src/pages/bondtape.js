@@ -111,9 +111,7 @@ const bondtape= () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-          <Pixifinal/>
-
-
+          <Pixifinal />
           </Media>
           
         

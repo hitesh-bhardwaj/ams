@@ -45,45 +45,54 @@ const blogCardData = [
 ];
 
 const BlogCard = ({ title, para, date, img, large }) => (
-
   <div
-    className={` group overflow-hidden ${
-      large ? "col-span-9 row-span-2 h-[44vw]" : "col-span-3 h-[18vw]"
+    className={`group overflow-hidden ${
+      large ? "col-span-9 row-span-2 h-[44vw]" : "col-span-3 h-[18.5vw]"
     } rounded-[1.5vw] relative mt-[1vw] fadeUp`}
   >
-     <Link href={"#"} >
-     <div className="w-full h-full absolute top-0 left-0 z-[2] rounded-[2vw] bg-gradient-to-b from-transparent to-black/30"></div>
+    <Link href={"#"}>
     <div className="w-full h-full relative ">
-      <Image
-        src={img}
-        fill
-        alt="blog image"
-        className="rounded-[2vw] object-cover scale-[1.1] group-hover:scale-[1] transition-all duration-500 ease-in-out"
-      />
-    </div>
-    <div className="absolute bottom-[6%] left-[5%] px-[0.5vw]  z-[10]">
-      <p  className={`text-white  ${large ? "text-[2.5vw]" : "text-[1.8vw] aeonik"} font-extralight`}>
-        {title}
-      </p>
-      <p 
-        className={`text-white aeonik z-[10] ${
-          large ? "text-[1.8vw] w-[70%]" : "text-[1.4vw] w-[95%]"
-        } font-light aeonik leading-[1.2]`}
-      >
-        {para}
-      </p>
-    </div>
-    <p 
-      className={`${
-        large ? "text-[1.8vw]" : "text-[1.4vw]"
-      } text-[#111111] font-light ml-[2vw] py-[0.5vw] aeonik`}
-    >
-      {date}
-    </p>
+      <div className="relative w-full h-[92%] rounded-[2vw] overflow-hidden py-[1vw]">
+        <div className="w-full h-full absolute top-0 left-0 z-[2] bg-gradient-to-b from-transparent to-black/30"></div>
+        <Image
+          src={img}
+          fill
+          alt="blog image"
+          className="rounded-[2vw] object-cover scale-[1.1] group-hover:scale-[1] transition-all duration-500 ease-in-out"
+        />
+        <div className="absolute bottom-[6%] left-[5%] px-[0.5vw] z-[10]">
+          <p
+            className={`text-white ${
+              large ? "text-[2.5vw]" : "text-[1.8vw]"
+            } font-extralight aeonik`}
+          >
+            {title}
+          </p>
+          <p
+            className={`text-white ${
+              large ? "text-[1.8vw] w-[70%]" : "text-[1.4vw] w-[95%]"
+            } font-light aeonik leading-[1.2]`}
+          >
+            {para}
+          </p>
+        </div>
+      </div>
+      <div className="w-full mt-[1vw]  absolute bottom-0 left-[5%]">
+        <p
+          className={`${
+            large ? "text-[1.5vw]" : "text-[1.2vw]"
+          } text-[#111111] font-light aeonik`}
+        >
+          {date}
+        </p>
+      </div>
+      </div>
     </Link>
   </div>
-
 );
+
+
+
 
 const More = () => {
   return (

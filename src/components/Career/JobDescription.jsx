@@ -1,9 +1,33 @@
-import Image from 'next/image';
-import React from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+import gsap from "gsap";
+import { useLenis } from "lenis/react";
 import PrimaryButton from '../Button/PrimaryButton';
 
 const JobDescription = ({ onClose }) => {
-  // Handler for the outer section click
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const modalRef = useRef(null);
+  const lenis = useLenis();
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    lenis && lenis.stop();
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    gsap.to(modalRef.current, {
+      opacity: 0,
+      duration: 0.7,
+      ease: "power3.out",
+      onComplete: () => {
+        setIsModalOpen(false);
+        lenis && lenis.start();
+        document.body.style.overflow = "";
+      },
+    });
+  };
+  
   const handleBackgroundClick = (e) => {
     if (e.target.id === 'job-description' || !e.target.id=='jd-block') {
       onClose();
@@ -13,7 +37,7 @@ const JobDescription = ({ onClose }) => {
     router.push(href).then(() => {
       window.location.reload();
     });
-  };
+  }; 
 
   return (
     <>
@@ -23,8 +47,9 @@ const JobDescription = ({ onClose }) => {
         className="w-screen h-screen fixed bg-black/50 z-[999] top-0 left-0"
          // Close modal on click outside the card
       >  <button
-      onClick={onClose}
+   
       className="absolute flex right-[5%] top-[5%]  items-center gap-3"
+      onClick={onClose}
     >
       <span className="aeonik content-p text-head leading-tight !text-white">
         Close

@@ -14,13 +14,18 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
     <div className="submenu" ref={menuRef}>
       <div className="submenu-header">
         <button className="back-button" onClick={onBack}>Back</button>
-        <h2>Products</h2>
       </div>
+      <h2>ADVANCED SURGERY</h2>
       <ul>
         <li><NavButton linkText="Wound Care" onClick={() => onSelectMenu('wound-care')}/></li>
         <li><NavButton linkText="Endo Surgery" onClick={() => onSelectMenu('endo-surgery')}/></li>
-        <li><NavButton linkText="Hernia Solutions" onClick={() => onSelectMenu('hernia')}/></li>
-        <li><NavButton linkText="Interventional Cardiology" onClick={() => onSelectMenu('interventional-cardio')}/></li>
+        <li><NavButton linkText="Hernia Solutions" onClick={() => onSelectMenu('hernia-solutions')}/></li>
+        </ul>
+        <h2>
+          ADVANCED CARDIOVASCULAR
+        </h2>
+        <ul>
+        <li><NavButton linkText="Interventional Cardiology" onClick={() => onSelectMenu('interventional-cardiology')}/></li>
         <li><NavButton linkText="Cardiac Surgery" onClick={() => onSelectMenu('cardiac-surgery')}/></li>
       </ul>
     </div>

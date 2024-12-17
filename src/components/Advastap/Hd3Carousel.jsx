@@ -14,31 +14,29 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hd3Carousel = () => {
     paraAnim();
   
-    const swiperRef = useRef(null); // Create a ref for Swiper
-
-    // State to track which button was clicked
+    const swiperRef = useRef(null); 
     const [activeButton, setActiveButton] = useState("");
   
     const handleNext = () => {
       if (swiperRef.current) {
-        swiperRef.current.slideNext(); // Move to the next slide
-        setActiveButton("next"); // Set next button as active
+        swiperRef.current.slideNext();
+        setActiveButton("next"); 
         // Reset after 300ms
       }
     };
   
     const handlePrev = () => {
       if (swiperRef.current) {
-        swiperRef.current.slidePrev(); // Move to the previous slide
-        setActiveButton("prev"); // Set previous button as active
+        swiperRef.current.slidePrev(); 
+        setActiveButton("prev"); 
         // Reset after 300ms
       }
     };
       
   return (
     <>
-    <section id='specificationCarousel' className='overflow-hidden relative tablet:h-[60vh]'>  
-        <div className={`w-screen h-full py-[10vw] bg-[#020912]   text-white items-center flex justify-center mobile:py-[20vw] swiper-container `}>
+    <section id='advastap2-specificationCarousel' className='overflow-hidden relative tablet:h-[60vh]'>  
+        <div className={`w-screen h-full py-[10vw] bg-[#020912]   text-white items-center flex justify-center mobile:py-[20vw] swiper-container advastapSwiper`}>
         <Swiper 
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         
@@ -60,7 +58,7 @@ const Hd3Carousel = () => {
               spaceBetween: 50,
             },
           }}
-        className={`w-screen flex items-center justify-center specificationSwiper fadeUp tablet:h-[50vh] cursor-grab`}
+        className={`w-screen flex items-center justify-center specificationSwiper   fadeUp tablet:h-[50vh] cursor-grab`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">

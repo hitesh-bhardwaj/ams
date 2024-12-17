@@ -1,28 +1,28 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-
 import ProductsMenu from './ProductsMenu';
 import WoundCareMenu from './WoundCareMenu';
 import EndoSurgeryMenu from './EndoSurgeryMenu';
 import ManufacturingMenu from './ManufacturingMenu';
+import HerniaSolutionsMenu from './HerniaSolutionsMenu';
+import InterventionalCardiologyMenu from './InterventionalCardiologyMenu';
+import CardiacSurgeryMenu from './CardiacSurgeryMenu';
 import { NavLink, NavButton } from './NavLink';
 
 export default function NavWrapper() {
-    const [currentMenu, setCurrentMenu] = useState(null); // Start with no submenu open
+    const [currentMenu, setCurrentMenu] = useState(null); 
     const submenuContainerRef = useRef(null);
 
-    // Animate the submenu container whenever currentMenu changes
+   
     useEffect(() => {
         const container = submenuContainerRef.current;
         if (currentMenu) {
-            // Animate in
             gsap.fromTo(
                 container,
                 { x: 100, autoAlpha: 0 },
                 { x: 0, autoAlpha: 1, duration: 0.5, ease: 'power3.out' }
             );
         } else {
-            // If you want to animate out when no menu is selected
             gsap.to(container, {
                 x: 100,
                 autoAlpha: 0,
@@ -50,6 +50,15 @@ export default function NavWrapper() {
                 {currentMenu === 'endo-surgery' && (
                     <EndoSurgeryMenu onBack={() => goToMenu('products')} />
                 )}
+                 {currentMenu === 'hernia-solutions' && (
+                    <HerniaSolutionsMenu onBack={() => goToMenu('products')} />
+                )}
+                {currentMenu === 'interventional-cardiology' && (
+                    <InterventionalCardiologyMenu onBack={() => goToMenu('products')} />
+                )}
+                 {currentMenu === 'cardiac-surgery' && (
+                    <CardiacSurgeryMenu onBack={() => goToMenu('products')} />
+                )}
             </div>
         </div>
     );
@@ -72,16 +81,16 @@ function MainNav({ onSelectMenu }) {
                     <NavButton onClick={() => onSelectMenu('manufacturing')} linkText="Manufacturing" />
                 </li>
                 <li>
-                    <NavLink href={"/careers"} linkText="Careers" />
+                    <NavLink href={"/career"} linkText="Careers" />
                 </li>
                 <li>
-                    <NavLink href={"/blogs"} linkText="Latest News" />
+                    <NavLink href={"/blogs"} linkText="Stories" />
                 </li>
                 <li>
                     <NavLink href={"/contact-us"} linkText="Contact Us" />
                 </li>
                 <li>
-                    <NavLink href={"/advanced-medtech-academy"} linkText="Advanced Medtech Academy" />
+                    <NavLink href={"/ama"} linkText="Advanced Medtech Academy" />
                 </li>
             </ul>
         </nav>

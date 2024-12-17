@@ -222,13 +222,10 @@ data-para-anim className="title-2 aeonik">
               />
             </div>
           ))}
-             
-             
-
             </div>
           </div>
-          <div className='w-full product-base-text flex justify-center'>
-        <p data-para-anim className='aeonik font-light uppercase tracking-widest text-[6vw] text-center tablet:text-[3vw] mobile:mt-[-5vw]'>advamesh range</p>
+          <div className='w-full product-base-text flex justify-center '>
+        <p data-para-anim className='aeonik font-light  uppercase tracking-widest text-[6vw] text-center tablet:text-[3vw] mobile:mt-[-5vw]'>advamesh range</p>
       </div>
 
         </div>

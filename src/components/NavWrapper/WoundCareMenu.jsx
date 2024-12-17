@@ -17,21 +17,21 @@ export default function WoundCareMenu({ onBack }) {
         <h2>ABSORBABLE SUTURES</h2>
       </div>
       <ul>
-        <li><NavLink href="/wound-care/advacryl" linkText="Advacryl" /></li>
-        <li><NavLink href="/wound-care/advacryl-plus" linkText="Advacryl Plus" /></li>
-        <li><NavLink href="/wound-care/advacryl-rapid" linkText="Advacryl Rapid" /></li>
-        <li><NavLink href="/wound-care/advamryl" linkText="Advamryl" /></li>
-        <li><NavLink href="/wound-care/advapd" linkText="Advapd" /></li>
-        <li><NavLink href="/wound-care/advacat" linkText="Advacat" /></li>
+        <li><NavLink href="/advacryl" linkText="Advacryl" /></li>
+        <li><NavLink href="/advacrylplus" linkText="Advacryl Plus" /></li>
+        <li><NavLink href="/advacryl-rapid" linkText="Advacryl Rapid" /></li>
+        <li><NavLink href="/advamryl" linkText="Advamryl" /></li>
+        <li><NavLink href="/advapd" linkText="Advapd" /></li>
+        <li><NavLink href="/advacat" linkText="Advacat" /></li>
       </ul>
       <h2>NON ABSORBABLE SUTURES</h2>
       <ul>
-        <li><NavLink href="/wound-care/advalene" linkText="Advalene" /></li>
-        <li><NavLink href="/wound-care/advabond" linkText="Advabond" /></li>
-        <li><NavLink href="/wound-care/advalon" linkText="Advalon" /></li>
-        <li><NavLink href="/wound-care/advasyl" linkText="Advasyl" /></li>
-        <li><NavLink href="/wound-care/umbilical-cotton-tape" linkText="Cotton Tape" /></li>
-        <li><NavLink href="/wound-care/advabond-tape" linkText="Advabond tape" /></li>
+        <li><NavLink href="/advalene" linkText="Advalene" /></li>
+        <li><NavLink href="/advabond" linkText="Advabond" /></li>
+        <li><NavLink href="/advalon" linkText="Advalon" /></li>
+        <li><NavLink href="/advasyl" linkText="Advasyl" /></li>
+        <li><NavLink href="/bondtape" linkText="Cotton Tape" /></li>
+        <li><NavLink href="/bondtape" linkText="Advabond tape" /></li>
       </ul>
     </div>
   );

@@ -60,10 +60,7 @@ export default function needle() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-          <Pixifinal/>
-
-
-
+          <Pixifinal />
           </Media>
           
         

@@ -14,12 +14,11 @@ export default function ManufacturingMenu({ onBack }) {
     <div className="submenu" ref={menuRef}>
       <div className="submenu-header">
         <button className="back-button" onClick={onBack}>Back</button>
-        <h2>Manufacturing</h2>
       </div>
       <ul>
-        <li><NavLink href="/reasearch-and-development" linkText="Reasearch & Development"/></li>
-        <li><NavLink href="/oem" linkText="OEM"/></li>
-        <li><NavLink href="/needle" linkText="Needle"/></li>
+        <li><NavLink href="/research-and-development" linkText="Research & Development"/></li>
+        <li><NavLink href="/oem" linkText="OEM Solutions"/></li>
+        <li><NavLink href="/needle" linkText="Advanced Needle Technology"/></li>
       </ul>
     </div>
   );

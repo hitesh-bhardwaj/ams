@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <section
-      className="hero mobile:mb-[0vw] overflow-hidden relative"
+      className="hero mobile:mb-[0vw] overflow-hidden relative dark"
       id="hero"
     >
       <div className="px-[12%] relative mobile:px-[5vw] mobile:w-[100vw] tablet:px-[10%] ">

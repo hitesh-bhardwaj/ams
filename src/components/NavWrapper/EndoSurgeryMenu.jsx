@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { NavLink } from './NavLink';
 
 export default function EndoSurgeryMenu({ onBack }) {
   const menuRef = useRef(null);
@@ -12,13 +13,21 @@ export default function EndoSurgeryMenu({ onBack }) {
     <div className="submenu" ref={menuRef}>
       <div className="submenu-header">
         <button className="back-button" onClick={onBack}>Back</button>
-        <h2>Endo Surgery Products</h2>
+        <h2>ADVASTAP</h2>
       </div>
-      <ul>
-        <li><a href="/products/wound-care/product1">Endo Surgery Product 1</a></li>
-        <li><a href="/products/wound-care/product2">Endo Surgery Product 2</a></li>
-        <li><a href="/products/wound-care/product3">Endo Surgery Product 3</a></li>
-      </ul>
+            <ul>
+              <li><NavLink href="/advastaphd" linkText="HemorrhoidStapler" /></li>
+              <li><NavLink href="/advastaplc" linkText="Linear Cutter" /></li>
+              <li><NavLink href="/skinstapler" linkText="Skin Stapler" /></li>
+              <li><NavLink href="/endolc" linkText="Endoscopic Linear Cutter" /></li>
+              <li><NavLink href="/poweredlc" linkText="Powered Linear Cutter" /></li>
+              <li><NavLink href="/advastapcs" linkText="Circular Stapler" /></li>
+              <li><NavLink href="/reloads" linkText="Endoscopic Reloads" /></li>
+            </ul>
+             <h2>LIGATION SOLUTIONS</h2>
+                  <ul>
+                    <li><NavLink href="/#" linkText="Advaclip" /></li>
+                    </ul>
     </div>
   );
 }
