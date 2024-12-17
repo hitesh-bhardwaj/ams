@@ -6,21 +6,10 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 import gsap from 'gsap';
-import {useLenis} from "lenis/react"
+
+import KnotlessSpecifications from './KnotlessSpecifications';
 
 export default function Offerings() {
-    const [isOpen , setIsOpen] = useState(false);
-    const lenis = useLenis()
-    const handleModal = () => {
-        setIsOpen(true)
-        lenis&&lenis.stop()
-
-    }
-    const handleModalClose = () => {
-        setIsOpen(false);
-        lenis&&lenis.start(); // Start Lenis
-      };
-    
     useEffect(() => {
     if(globalThis.innerWidth > 1024) {
     
@@ -415,6 +404,7 @@ export default function Offerings() {
                                                     <path d="M3.01701 48.0165L48.0168 3.01677M48.0168 3.01677L48.0795 46.9876M48.0168 3.01677L4.04596 2.95404" stroke="currentColor" strokeWidth="5" strokeLinecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </button>
+                                            {/* <KnotlessSpecifications/> */}
                                         </div>
                                     </div>
                                 </div>
@@ -423,7 +413,6 @@ export default function Offerings() {
 
                     </div>
                 </div>
-                {/* {isOpen&&<OemSpecification onClose={handleModalClose}/>} */}
             </section>
         </>
     )
