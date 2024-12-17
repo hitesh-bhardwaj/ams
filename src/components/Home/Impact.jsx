@@ -13,8 +13,8 @@ export default function Impact() {
                 <LazyVideo
                     poster={"/assets/home/impact-video-poster.webp"}
                     type="video/mp4"
-                    autoPlay="true"
-                    loop="true"
+                    autoPlay
+                    loop
                     videoSrc={"/assets/home/impact-video.mp4"}
                     className='w-full h-full object-cover left-0 top-0 absolute'
                     />

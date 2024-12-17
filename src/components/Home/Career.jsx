@@ -9,8 +9,8 @@ export default function Career() {
                 <LazyVideo
                     poster={"/assets/home/career-poster.webp"}
                     type="video/mp4"
-                    autoPlay="true"
-                    loop="true"
+                    autoPlay
+                    loop
                     videoSrc={"/assets/home/career.mp4"}
                     className='w-full h-full object-cover left-0 top-0 absolute'
                     />

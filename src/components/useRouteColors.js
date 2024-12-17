@@ -88,111 +88,111 @@ function useRouteColors() {
           color3: "#669FE5",
         });
         break;
-        case "/advapd":
+      case "/advapd":
         setColors({
           color1: "#A5BBCE",
           color2: "#A5BBCE",
           color3: "#CCCCCC",
         });
         break;
-        case "/advacat":
-          setColors({
-            color1: "#DDCB9F",
-            color2: "#DDCB9F",
-            color3: "#CCCCCC",
-          });
-          break;
-          case "/advalene":
-            setColors({
-              color1: "#D5D6F3",
-              color2: "#D5D6F3",
-              color3: "#307FB2",
-            });
-            break;
-            case "/advabond":
-              setColors({
-                color1: "#669DE5",
-                color2: "#669DE5",
-                color3: "#FFCDBC",
-              });
-              break;
-              case "/advalon":
-                setColors({
-                  color1: "#DFD6F3",
-                  color2: "#DFD6F3",
-                  color3: "#307FB2",
-                });
-                break;
-                case "/advasyl":
-                  setColors({
-                    color1: "#DFD6F3",
-                    color2: "#DFD6F3",
-                    color3: "#307FB2",
-                  });
-                  break;
-                  case "/bondtape":
-                  setColors({
-                    color1: "#669DE5",
-                    color2: "#669DE5",
-                    color3: "#FFCDBC",
-                  });
-                  break;
-                  case "/cardiovascular-solutions":
-                    setColors({
-                      color1: "#669DE5",
-                      color2: "#669DE5",
-                      color3: "#F74141",
-                    });
-                    break;
-                    case "/knotless-tissue-control-device":
-                    setColors({
-                      color1: "#D7B3E1",
-                      color2: "#669DE5",
-                      color3: "#669DE5",
-                    });
-                    break;
-                    case "/advastaplc":
-                      setColors({
-                        color1: "#669DE5",
-                        color2: "#669DE5",
-                        color3: "#ACBCFA",
-                      });
-                      break;
-                      case "/advabond-cv":
-                        setColors({
-                          color1: "#669DE5",
-                          color2: "#669DE5",
-                          color3: "#FFCDBC",
-                        });
-                        break;
-                        case "/advalene-cv":
-                          setColors({
-                            color1: "#DFD6F3",
-                            color2: "#DFD6F3",
-                            color3: "#307FB2",
-                          });
-                          break;
-                          case "/advasteel-cv":
-                          setColors({
-                            color1: "#669DE5",
-                            color2: "#669DE5",
-                            color3: "#FFCDBC",
-                          });
-                          break;
-                          case "/advapacer-and-wax":
-                            setColors({
-                              color1: "#669DE5",
-                              color2: "#669DE5",
-                              color3: "#EED681",
-                            });
-                            break;
-                            case "/advacryl-rapid":
-                              setColors({
-                                color1: "#A5BBCE",
-                                color2: "#A5BBCE",
-                                color3: "#E41F30",
-                              });
-                              break;
+      case "/advacat":
+        setColors({
+          color1: "#DDCB9F",
+          color2: "#DDCB9F",
+          color3: "#CCCCCC",
+        });
+        break;
+      case "/advalene":
+        setColors({
+          color1: "#D5D6F3",
+          color2: "#D5D6F3",
+          color3: "#307FB2",
+        });
+        break;
+      case "/advabond":
+        setColors({
+          color1: "#669DE5",
+          color2: "#669DE5",
+          color3: "#FFCDBC",
+        });
+        break;
+      case "/advalon":
+        setColors({
+          color1: "#DFD6F3",
+          color2: "#DFD6F3",
+          color3: "#307FB2",
+        });
+        break;
+      case "/advasyl":
+        setColors({
+          color1: "#DFD6F3",
+          color2: "#DFD6F3",
+          color3: "#307FB2",
+        });
+        break;
+      case "/bondtape":
+        setColors({
+          color1: "#669DE5",
+          color2: "#669DE5",
+          color3: "#FFCDBC",
+        });
+        break;
+      case "/cardiovascular-solutions":
+        setColors({
+          color1: "#669DE5",
+          color2: "#669DE5",
+          color3: "#F74141",
+        });
+        break;
+      case "/knotless-tissue-control-device":
+        setColors({
+          color1: "#D7B3E1",
+          color2: "#669DE5",
+          color3: "#669DE5",
+        });
+        break;
+      case "/advastaplc":
+        setColors({
+          color1: "#669DE5",
+          color2: "#669DE5",
+          color3: "#ACBCFA",
+        });
+        break;
+      case "/advabond-cv":
+        setColors({
+          color1: "#669DE5",
+          color2: "#669DE5",
+          color3: "#FFCDBC",
+        });
+        break;
+      case "/advalene-cv":
+        setColors({
+          color1: "#DFD6F3",
+          color2: "#DFD6F3",
+          color3: "#307FB2",
+        });
+        break;
+      case "/advasteel-cv":
+        setColors({
+          color1: "#669DE5",
+          color2: "#669DE5",
+          color3: "#FFCDBC",
+        });
+        break;
+      case "/advapacer-and-wax":
+        setColors({
+          color1: "#669DE5",
+          color2: "#669DE5",
+          color3: "#EED681",
+        });
+        break;
+      case "/advacryl-rapid":
+        setColors({
+          color1: "#A5BBCE",
+          color2: "#A5BBCE",
+          color3: "#E41F30",
+        });
+        break;
 
       default:
         setColors({
