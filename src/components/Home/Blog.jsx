@@ -35,7 +35,7 @@ export default function Blog() {
         ref={blogContainer}
         id="blogs" 
       >
-        <div className="container-sm pl-[3vw] mobile:pl-0">
+        <div className="container-sm pl-[3vw] mobile:pl-0 tablet:pl-0">
           <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:items-center tablet:flex-col">
             <div
               className="blog-left w-[45%] space-y-[2.5vw] mobile:w-[100%] mobile:space-y-[5vw] tablet:w-full"
@@ -46,14 +46,14 @@ export default function Blog() {
               </h2>
               <p
                 data-para-anim
-                className="content-p w-[95%] tablet:w-[70%] mobile:w-full mobile:px-[3vw] mobile:pb-[15vw] mobile:text-center"
+                className="content-p w-[95%] tablet:w-[80%] mobile:w-full mobile:px-[3vw] mobile:pb-[15vw] mobile:text-center"
               >
                 Stay connected with the latest updates, breakthrough innovations, and exciting events that drive our progress.
               </p>
             </div>
             <div className="blog-right w-[50%] mobile:w-[100%] mobile:space-y-[15vw] tablet:w-full tablet:mt-[7vw]">
-              <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[18.7vw] w-[83%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw] mobile:h-[110vw] tablet:h-[35vw] fadeUp ">
+              <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center tablet:gap-[2vw]">
+                <div className="blog-img h-[18.7vw] w-[83%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw] mobile:h-[60vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
                     className="h-full w-full object-cover"
@@ -89,9 +89,9 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <span className="block h-[1px] w-[84%] ml-[3vw] my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw]" />
-              <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[18.7vw] w-[83%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw]  mobile:h-[110vw] tablet:h-[35vw] fadeUp ">
+              <span className="block h-[1px] w-[84%] ml-[3vw] my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw] tablet:w-[93%] tablet:h-[0.5px] mobile:w-[94%]" />
+              <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center tablet:gap-[2vw]">
+                <div className="blog-img h-[18.7vw] w-[83%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw]  mobile:h-[60vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
                     className="h-full w-full object-cover"
@@ -127,9 +127,9 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <span className="block h-[1px] w-[84%] ml-[3vw] my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw]" />
-              <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[18.7vw] w-[83%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw] mobile:h-[110vw] tablet:h-[35vw] fadeUp ">
+              <span className="block h-[1px] w-[84%] ml-[3vw] my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw] tablet:w-[93%] mobile:w-[94%]" />
+              <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center tablet:gap-[2vw]">
+                <div className="blog-img h-[18.7vw] w-[83%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw] mobile:h-[60vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
                     className="h-full w-full object-cover"
@@ -165,9 +165,9 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <span className="block h-[1px] w-[84%] ml-[3vw] my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw]" />
-              <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center">
-                <div className="blog-img h-[18.7vw] w-[83%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw] mobile:h-[110vw] tablet:h-[35vw] fadeUp ">
+              <span className="block h-[1px] w-[84%] ml-[3vw] my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw] tablet:w-[93%] mobile:w-[94%]" />
+              <div className="flex flex-col items-center justify-between gap-[4%] mobile:flex-col mobile:items-center mobile:justify-center tablet:gap-[2vw]">
+                <div className="blog-img h-[18.7vw] w-[83%] overflow-hidden rounded-[1.1vw] relative mobile:w-[90vw] mobile:rounded-[5vw] mobile:h-[60vw] tablet:h-[35vw] fadeUp ">
                   <Image
                     data-speed="0.7"
                     className="h-full w-full object-cover"
@@ -203,7 +203,7 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <span className="block h-[1px] w-[84%]  ml-[3vw] my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw]" />
+              <span className="block h-[1px] w-[84%]  ml-[3vw] my-[4vw] bg-[#444444] lineDraw tablet:my-[7vw] tablet:w-[93%] mobile:w-[94%]" />
              
              
             </div>

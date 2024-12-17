@@ -48,22 +48,22 @@ data-para-anim className="aeonik title-2">
               {cardData.map((card, index) => (
                 <div
                   key={index}
-                  className="w-[21vw] h-[26vw] relative border border-gray-200 rounded-[2vw] overflow-hidden glassmorphism group transition-all duration-500 origin-center fadeUp hover:h-[30vw]"
+                  className="w-[21vw] h-[26vw] relative border border-gray-200 rounded-[2vw] overflow-hidden glassmorphism group transition-all duration-700 ease-in-out origin-center fadeUp hover:h-[30vw]"
                 >
                   <div className="w-full h-full relative px-[2.5vw] py-[2vw]">
                     <h4
                       data-para-anim
-                      className="text-[1.8vw] aeonik font-light group-hover:hidden"
+                      className="text-[1.8vw] aeonik font-light group-hover:opacity-0 transition-all duration-300 ease-out"
                     >
                       {card.title}
                     </h4>
                     <p
                       data-para-anim
-                      className="text-[#143CA3] text-[1.2vw] group-hover:hidden font-light"
+                      className="text-[#143CA3] text-[1.2vw] group-hover:opacity-0 font-light"
                     >
                       {card.description}
                     </p>
-                    <div className={`${index==2?"":"hidden"} absolute top-[40%] left-0 flex w-full justify-around text-[1.2vw] text-[#143CA3] group-hover:hidden font-light `}>
+                    <div className={`${index==2?"":"hidden"} absolute top-[40%] left-0 flex w-full justify-around text-[1.2vw] text-[#143CA3] group-hover:opacity-0 font-light `}>
                       <p>AMS</p>
                       <p>Others</p>
                     </div>
@@ -81,8 +81,8 @@ data-para-anim className="aeonik title-2">
                         fill
                       />
                     </div>
-                    <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] opacity-0 origin-bottom group-hover:opacity-100 transition-all duration-500 ease-in-out">
-                      <div className="w-full h-full flex flex-col gap-[1vw] px-[3vw] py-[2vw]">
+                    <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] opacity-0 origin-bottom group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                      <div className="w-full h-full flex flex-col gap-[1vw] px-[2.5vw] py-[2vw]">
                         <h4
                           data-para-anim
                           className="text-[1.8vw] aeonik font-light"

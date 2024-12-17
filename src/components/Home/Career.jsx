@@ -14,7 +14,7 @@ export default function Career() {
                     videoSrc={"/assets/home/career.mp4"}
                     className='w-full h-full object-cover left-0 top-0 absolute'
                     />
-                    <div className="w-[58%] h-[35vw] relative z-10 space-y-[1vw] tablet:w-[70%] mobile:w-[100%] mobile:space-y-[5vw] mobile:text-center mobile:flex-col " >
+                    <div className="w-[58%] h-[35vw] relative z-10 space-y-[1vw] tablet:w-[80%] tablet:h-[60vw] mobile:w-[100%] mobile:h-[180vw] mobile:space-y-[5vw] mobile:text-center mobile:flex-col " >
                         <h2 className="title-2 aeonik mobile:w-full">
                             <span data-para-anim className="text-shadow1">
                             Join Our Mission to

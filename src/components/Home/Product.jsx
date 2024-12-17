@@ -106,7 +106,7 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400 !font-normal">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVA GLIDE</span>
                         </h3>
                         <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -163,7 +163,7 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500 !font-normal">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVAGRIP </span>
                         </h3>
                         <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -217,7 +217,7 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400 !font-normal">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVA PRO</span>
                         </h3>
                         <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -279,7 +279,7 @@ export default function Product() {
                         </div>
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-400 !font-normal">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-400 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVACRYL</span>
                         </h3>
                         <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -333,7 +333,7 @@ export default function Product() {
                         </div>
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500 !font-normal">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVASTAP POWERED LC</span>
                         </h3>
                         <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -358,7 +358,7 @@ export default function Product() {
             </Swiper>
           </div>
           <div
-            className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+            className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[68%] tablet:right-[-2%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
             onClick={handleNext} // Trigger next slide
           >
             <span
@@ -374,7 +374,7 @@ export default function Product() {
             </div>
           </div>
           <div
-            className={`px-[1.2vw] py-[1.2vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
+            className={`px-[1.2vw] py-[1.2vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[68%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
             onClick={handlePrev} // Trigger previous slide
           >
             <span
