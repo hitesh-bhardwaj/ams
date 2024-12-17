@@ -35,7 +35,9 @@ export default function Home() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        {/* <Pixifinal /> */}
+              {/* <Pixifinal/> */}
+
+
       </Media>
     </>
   );
