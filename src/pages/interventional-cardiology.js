@@ -2,7 +2,7 @@
 import Genesis from "@/components/layoutComponents/Genesis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import Hero from "@/components/Hero";
+
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import IcCards from "@/components/IC/IcCards";
 import Portfolio from "@/components/Endo/Portfolio";
@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import Hero from "@/components/IC/Hero";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,13 +58,7 @@ export default function ic() {
 
       <Layout>
         <main>
-          <Hero
-            title={hero.title}
-            src={hero.src}
-            content={hero.content}
-            className="hidden"
-            mode={"dark"}
-          />
+          <Hero/>
           <Genesis
             content={content}
             sParaWidth={"w-[40%] ml-[6%] mobile:ml-0 tablet:ml-0"}
