@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRouter } from "next/router";
 import { Media } from "../media";
+import NavWrapper from "../NavWrapper";
 
 gsap.registerPlugin(useGSAP);
 
@@ -47,7 +48,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
   }, [videoLoaded]);
 
   useGSAP(() => {
-    const links = document.querySelectorAll(".nav .footer-link");
+    const links = document.querySelectorAll(".main-nav li");
     if (isMenuOpen) {
       gsap.to(mainMenu.current, {
         top: 0,
@@ -164,8 +165,10 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                 </button>
               </div>
             </div>
+
             <div className="col-start-5 col-span-8 nav row-start-2 mobile:flex mobile:flex-col mobile:items-start mobile:justify-start mobile:col-start-2 mobile:row-start-2 mobile:mt-[-15vw]">
-              <div className="flex justify-start mobile:flex-col mobile:items-start">
+                <NavWrapper />
+              {/* <div className="flex justify-start mobile:flex-col mobile:items-start">
                 <div className="border-r border-[#D8D8D8] py-[1.8vw] pr-[5vw] mobile:border-none mobile:border-b mobile:border-[#D8D8D8] mobile:py-0">
                   <ul className="space-y-[0.8vw] tablet:space-y-[1vw]">
                     <li className="footer-link">
@@ -311,7 +314,8 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
+
               <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center ">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">
                   <Link prefetch={false} href="#">
@@ -390,7 +394,9 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                   </Link>
                 </div>
               </div>
+
             </div>
+
           </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function NavWrapper() {
     const goToMenu = (menuName) => setCurrentMenu(menuName);
 
     return (
-        <div className="flex items-start gap-[3vw]">
+        <div className="flex items-start gap-[3vw] mobile:flex-col text-left">
             <MainNav onSelectMenu={goToMenu} />
             <div ref={submenuContainerRef} className='py-5'>
                 {currentMenu === 'products' && (
@@ -65,7 +65,7 @@ export default function NavWrapper() {
 
 function MainNav({ onSelectMenu }) {
     return (
-        <ul className='space-y-[0.8vw] border-r pr-[3vw] border-[#d8d8d8] py-5'>
+        <ul className='space-y-[0.5vw] border-r pr-[3vw] border-[#d8d8d8] py-5 main-nav'>
             <li>
                 <NavLink href={"/"} linkText="Homepage" />
             </li>
