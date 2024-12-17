@@ -20,14 +20,14 @@ export default function Impact() {
                     />
                     <div className="flex items-center mobile:justify-center">
                         <div className="w-1/2 h-[35vw] relative z-10 space-y-[2vw] tablet:w-[80%] mobile:w-[100%] mobile:h-[180vw] tablet:h-[60vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center mobile:space-y-[15vw]">
-                            <h2 className="title-2 aeonik leading-[0] text-shadow">
+                            <h2 className="title-2 aeonik leading-[0]  ">
                                 <span data-para-anim className="text-white leading-[1.3]">
                                 Making an Impact:
                                 
                                  Our Global Reach
                                 </span>
                             </h2>
-                            <p data-para-anim className="text-[1.15vw] font-light leading-[1.7] text-white text-shadow mobile:text-[4.5vw] tablet:text-[1.8vw]">
+                            <p data-para-anim className="text-[1.15vw] font-light leading-[1.7] text-white   mobile:text-[4.5vw] tablet:text-[1.8vw]">
                             Our unwavering commitment to global healthcare fuels our relentless pursuit of MedTech innovation, enhancing outcomes in every corner of the world. Our expanding footprint across 116+ countries, empowers us to forge powerful partnerships, creating solutions that make a profound difference in patients’&apos;lives.
                             </p>
                             <div className="w-full flex mobile:justify-center pt-[3vw] fadeUp">

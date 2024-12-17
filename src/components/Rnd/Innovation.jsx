@@ -19,7 +19,7 @@ data-para-anim className="title-2 aeonik mobile:text-center ">
           alt="Innovation "
           className="mobile:rounded-[20px]"
           />
-          <div className="text-white absolute  text-[2.5vw] font-light w-full h-full flex justify-center items-center text-shadow tablet:text-[3.2vw] mobile:text-[6vw]" >
+          <div className="text-white absolute  text-[2.5vw] font-light w-full h-full flex justify-center items-center   tablet:text-[3.2vw] mobile:text-[6vw]" >
             <p>Knotless tissue
             control device</p>
           </div>
@@ -31,7 +31,7 @@ data-para-anim className="title-2 aeonik mobile:text-center ">
           alt="Innovation "
            className="mobile:rounded-[20px]"
           />
-          <div className="text-white absolute  text-[2.5vw] font-light text-shadow tablet:text-[3.2vw] mobile:text-[6vw]">
+          <div className="text-white absolute  text-[2.5vw] font-light   tablet:text-[3.2vw] mobile:text-[6vw]">
             <p>Heart Valves</p>
           </div>
         </div>
@@ -42,7 +42,7 @@ data-para-anim className="title-2 aeonik mobile:text-center ">
           alt="Innovation "
            className="mobile:rounded-[20px]"
           />
-          <div className="text-white absolute text-[2.5vw] font-light text-shadow tablet:text-[3.2vw] mobile:text-[6vw]">
+          <div className="text-white absolute text-[2.5vw] font-light   tablet:text-[3.2vw] mobile:text-[6vw]">
             <p>Soft Nylon</p>
           </div>
         </div>

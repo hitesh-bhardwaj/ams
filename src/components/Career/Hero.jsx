@@ -86,7 +86,7 @@ data-para-anim className={`leading-[1.3] overflow-hidden text-[#111111]`}>
               <input
                 type="text"
                 placeholder="Explore Job Openings"
-                className="w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] placeholder:opacity-75 text-[#143CA3] glassmorphism placeholder:text-shadow tablet:h-[5.5vw] tablet:text-[2.2vw] tablet:px-[10%]"
+                className="w-[95%] h-[4vw] px-[7%] rounded-[40px] outline-0 text-[1.3vw] bg-white/80  placeholder-[#143CA3] placeholder:opacity-75 text-[#143CA3] glassmorphism placeholder:  tablet:h-[5.5vw] tablet:text-[2.2vw] tablet:px-[10%]"
               />
 
               <div className="relative left-[90%] bottom-[35%] tablet:bottom-[35%] tablet:left-[88%]">
