@@ -1,16 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Edge from "@/components/Products/Edge";
+import Edge2 from "@/components/Products/Edge2";
 import NextGeneration from "@/components/Products/NextGeneration";
-
 import Layout from "@/components/Layout";
 import Hero from "@/components/Advagrip/Hero";
 import TricCut from "@/components/Advagrip/TricCut";
 import KeyFeatures from "@/components/Advagrip/KeyFeatures";
 import Paradigm from "@/components/Advagrip/Paradigm";
-import { fadeup } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
-import AdvagripSpecifications from "@/components/Advagrip/AdvagripSpecifications";
 
 const EdgeCard = {
   card1: {
@@ -21,7 +18,6 @@ const EdgeCard = {
   card2: {
     title: "Superior Holding Strength",
     src: "/assets/advagrip/advagrip-edge-center.png",
-  
   },
   card3: {
     title: "Closer Barb Spacing",
@@ -46,19 +42,15 @@ const FeatureCard = {
 };
 
 const advaGrip = () => {
-  // fadeup()
- 
-
-  return (
+   return (
     <>
-      
-          <Layout>
+         <Layout>
             <main>
                 <Hero/>
                 <TricCut/>
                 {/* <AdvagripSpecifications/> */}
-            
-              <Edge visibility={"!hidden"}
+                 <Edge2 visibility={"!hidden"} 
+                   className={"hidden"}
                 sectionheading={"The ADVAGRIP Edge"}
                 card1={EdgeCard.card1}
                 card2={EdgeCard.card2}

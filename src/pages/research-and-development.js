@@ -72,8 +72,6 @@ export default function rnd() {
           </Layout>
           <Media greaterThan='tablet'>
           <Pixifinal/>
-
-
           </Media>
           
        

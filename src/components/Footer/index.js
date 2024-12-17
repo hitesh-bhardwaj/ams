@@ -76,7 +76,7 @@ export default function Footer() {
                 </div>
                 <div className="social-icons flex items-bottom gap-[3vw] fadeUp z-10 mobile:mb-[5vw] mobile:mt-[5vw] mobile:gap-[10vw]">
                   <Link
-                    href="/#"
+                    href="https://www.facebook.com/AdvancedMedTechSolutions" target="_blank"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
                     <Image
@@ -88,7 +88,7 @@ export default function Footer() {
                     />
                   </Link>
                   <Link
-                    href="/#"
+                    href="https://www.linkedin.com/company/advanced-medtech-solutions/" target="_blank"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
                     <Image
@@ -100,7 +100,7 @@ export default function Footer() {
                     />
                   </Link>
                   <Link
-                    href="/#"
+                    href="https://twitter.com/AmsMedTech" target="_blank"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
                     <Image
@@ -112,7 +112,7 @@ export default function Footer() {
                     />
                   </Link>
                   <Link
-                    href="/#"
+                    href="https://www.instagram.com/officialamsltd/" target="_blank"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
                     <Image
@@ -124,7 +124,7 @@ export default function Footer() {
                     />
                   </Link>
                   <Link
-                    href="/#"
+                    href="https://www.youtube.com/channel/UCRwHSaWfb2ciojSBz3dhrUw" target="_blank"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
                     <Image

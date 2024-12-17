@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="w-[55%] z-[50] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-3/4 mt-[4vw]">
             <h1
               data-para-anim
-              className="title-1 aeonik  mobile:text-center mobile:text-[15vw] text-[#ffffff]"
+              className="title-1 aeonik  capitalize mobile:text-center mobile:text-[15vw] text-[#ffffff]"
             >
               Advancing the way we care
             </h1>

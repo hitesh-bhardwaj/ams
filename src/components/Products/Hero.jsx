@@ -3,12 +3,12 @@ import Image from "next/image";
 const Hero = ({ heading, tagline, para1, src,bgimg, para2,margin, className = "" }) => {
   return (
     <>
-      <section className="hero tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden shadow-sm drop-shdow-sm py-[2%]" id="hero">
+      <section className="hero tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden h-screen shadow-sm drop-shdow-sm py-[2%]" id="hero">
         <div className="px-[10%] relative hero-container mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="flex h-dvh w-full justify-start items-center mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
-            <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
+          <div className="flex h-full w-full justify-start items-center mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+            <div className="pt-[15%] gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
-                <h1 className="title-1 aeonik  leading-[1] overflow-hidden">
+                <h1 className="title-1 aeonik  leading-[1] overflow-hidden uppercase">
                   <span
 data-para-anim
                     className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] ${className} tablet:text-[9vw]`}
@@ -28,7 +28,7 @@ data-para-anim
               </div>
             </div>
             <div className="absolute right-0 top-[20%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-0 mobile:top-[25%] tablet:top-[30%]">
-              <div className="w-[55vw] h-[45vw] absolute bottom-[5%] mobile:w-[100vw] mobile:h-[80vw] mobile:right-[10%] mobile:bottom-0 tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
+              <div className="w-[55vw] h-[45vw] absolute bottom-[-5%] right-[5%] mobile:w-[100vw] mobile:h-[80vw] mobile:right-[10%] mobile:bottom-0 tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
                 <Image
                   className="object-cover"
                   src={bgimg}
@@ -37,7 +37,7 @@ data-para-anim
                 />
               </div>
 
-              <div className="w-[48vw] h-[40vw] relative bottom-[10%]  mobile:bottom-0 mobile:w-[100vw] mobile:h-[80vw] mobile:left-0  tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
+              <div className="w-[40vw] h-[40vw] relative bottom-[10%] right-[15%]  mobile:bottom-0 mobile:w-[100vw] mobile:h-[80vw] mobile:left-0  tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
                 <Image
                   className="object-contain mobile:object-cover"
                   src={src}
@@ -47,8 +47,8 @@ data-para-anim
                 />
               </div>
 
-              <div className={`mobile:mt-[15vw] mt-[-3vw] ${margin}`}>
-                <p data-para-anim className="max-w-[40vw]  text-[1.65vw] leading-[1.2] font-light mobile:text-[5vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
+              <div className={`mobile:mt-[15vw] mt-[-5vw] ${margin} ml-[-15vw]`}>
+                <p data-para-anim className="max-w-[35vw]  text-[1.65vw] leading-[1.2] font-light mobile:text-[5vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[30vw] tablet:mt-[-10vw] tablet:text-left">
                   {para2}
                 </p>
               </div>

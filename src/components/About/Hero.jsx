@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50]">
               <h1
                 data-para-anim
-                className="title-1 aeonik leading-[1.15] mobile:text-[12.5vw]"
+                className="title-1 aeonik capitalize leading-[1.15] mobile:text-[12.5vw]"
               >
                 Advancing Healthcare for Generations to Come
               </h1>

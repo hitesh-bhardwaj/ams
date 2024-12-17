@@ -63,7 +63,7 @@ const Hero = () => {
             <div className="w-full">
               <h1
                 
-                className={`title-1 aeonik   leading-[1] tablet:w-full w-[80%] mobile:w-full mobile:text-center`}
+                className={`title-1 aeonik capitalize  leading-[1] tablet:w-full w-[80%] mobile:w-full mobile:text-center`}
               >
                 <span
 data-para-anim className={`leading-[1.3] overflow-hidden text-[#111111]`}>

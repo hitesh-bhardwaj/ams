@@ -26,7 +26,7 @@ const Hero = () => {
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50]">
               <h1
                 data-para-anim
-                className="title-1 aeonik  leading-[1.15] mobile:text-[12.5vw]"
+                className="title-1 aeonik capitalize leading-[1.15] mobile:text-[12.5vw]"
               >
                  <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[90%] mobile:w-full mobile:text-center  `}>
                  Ushering the next generation of medical device technology

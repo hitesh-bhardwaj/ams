@@ -208,7 +208,7 @@ const Products = () => {
           alt="product-bg"
         />
       </div>
-      <div className="absolute w-[60vw] h-[100%] top-0 left-0 z-[-2] mobile:bottom-0 mobile:top-[10%] mobile:w-full" >
+      <div className="absolute w-[110vw] h-[100%] top-0 left-0 z-[-2] mobile:bottom-0 mobile:top-[10%] mobile:w-full" >
         <Image
           src="/assets/cardioVascular/carousel-bg.png"
           fill

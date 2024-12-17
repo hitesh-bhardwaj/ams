@@ -20,7 +20,7 @@ const Hero = () => {
           <h1
 data-para-anim className="text-[#F14A92] text-[5.3vw] aeonik leading-[1] hero-text font-light z-[10] mobile:w-[70%] mobile:text-center mobile:ml-[17%] tablet:ml-[5%]">
                   <span 
-                    className={`leading-[1.2] overflow-hidden  text-[5.75vw] mobile:text-[11.2vw] tablet:text-[9vw]`}
+                    className={`leading-[1.2] overflow-hidden capitalize  text-[5.75vw] mobile:text-[11.2vw] tablet:text-[9vw]`}
                   >
                 ADVAKIT C-Section
                   </span>

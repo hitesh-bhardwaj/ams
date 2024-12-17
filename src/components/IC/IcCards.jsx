@@ -22,8 +22,8 @@ export default function IcCards() {
         <Media greaterThan="tablet">
           <div className="w-full h-full flex flex-col gap-[4vw] ">
             <h2
-data-para-anim className="aeonik title-2 text-center">
-              Our Featured Programs
+data-para-anim className="aeonik title-2 text-center capitalize">
+              Cardiac Surgery Product Line
             </h2>
             <div className="mt-[2vw] fadeUp">
               <Swiper

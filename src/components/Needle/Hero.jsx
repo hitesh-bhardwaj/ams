@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="">
               <h1
                 data-para-anim
-                className="title-1 aeonik  leading-[1.25] mobile:text-center"
+                className="title-1 aeonik capitalize  leading-[1.25] mobile:text-center"
               >
                 <span className={`leading-[1.25] overflow-hidden text-black `}>
                 The Next Generation 

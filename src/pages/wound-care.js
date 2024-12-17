@@ -19,12 +19,6 @@ const woundClosure = () => {
       "Our extensive portfolio of sutures includes products for a wide spectrum of general and specialized surgeries.",
     src: "/assets/woundclosure/wound-closure-genesis-bg.png",
   };
-  const hero = {
-    title: "Advancing The Science of Wound Closure",
-    src: "/assets/woundclosure/wound-closure-bg-hero.png",
-    content:
-      "We offer an impressive portfolio of sutures to provide critical choices for optimal results where every suture is a seal of confidence.",
-  };
   return (
     <>
       <Layout>

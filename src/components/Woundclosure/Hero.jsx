@@ -33,7 +33,7 @@ const Hero = () => {
                     <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[60vh] mobile:justify-start mobile:pt-[35vw]">
                         <div className="w-[80%] mobile:w-full">
                             <h1 className='title-1 w-full aeonik  leading-[1]'>
-                                <span data-para-anim className='leading-[1.21] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center  '>
+                                <span data-para-anim className='leading-[1.21] overflow-hidden capitalize text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center  '>
                                 Advancing The Science of Wound Closure
                                 </span>
                             </h1>

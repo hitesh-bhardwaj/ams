@@ -56,7 +56,7 @@ const Hero = () => {
         />
         <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center mobile:flex-col mobile:top-[25%] tablet:flex-col tablet:top-[22%]">
           <div className="text-white absolute left-[12%]  mobile:left-[0%] mobile:w-[100%] tablet:left-[20%]">
-            <h1 className=" text-[5.7vw] font-light leading-[1] aeonik  mobile:text-[12.2vw] mobile:text-center tablet:text-[9vw] tablet:text-center">
+            <h1 className=" text-[5.7vw] font-light leading-[1] aeonik uppercase mobile:text-[12.2vw] mobile:text-center tablet:text-[9vw] tablet:text-center">
               <span data-para-anim className="leading-[1] overflow-hidden text-[#FFFFFF]  mobile:w-full mobile:text-center">
               ADVASTAP HD
               </span>

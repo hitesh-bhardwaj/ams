@@ -28,7 +28,7 @@ const Hero = () => {
               <h1 className={`title-1 aeonik   leading-[1] tablet:text-[9vw]`}>
                 <span
                  data-para-anim
-                  className={`leading-[1.3] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center `}
+                  className={`leading-[1.3] overflow-hidden uppercase text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center `}
                 >
                   CONTACT US
                 </span>
