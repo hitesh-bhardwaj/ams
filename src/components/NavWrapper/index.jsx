@@ -10,10 +10,9 @@ import CardiacSurgeryMenu from './CardiacSurgeryMenu';
 import { NavLink, NavButton } from './NavLink';
 
 export default function NavWrapper() {
-    const [currentMenu, setCurrentMenu] = useState(null); 
+    const [currentMenu, setCurrentMenu] = useState(null);
     const submenuContainerRef = useRef(null);
 
-   
     useEffect(() => {
         const container = submenuContainerRef.current;
         if (currentMenu) {
@@ -35,9 +34,9 @@ export default function NavWrapper() {
     const goToMenu = (menuName) => setCurrentMenu(menuName);
 
     return (
-        <div className="nav-wrapper" style={{ display: 'flex', position: 'relative', overflow: 'hidden' }}>
+        <div className="flex items-start gap-[3vw]">
             <MainNav onSelectMenu={goToMenu} />
-            <div ref={submenuContainerRef} style={{ flex: '1', padding: '1rem', position: 'relative' }}>
+            <div ref={submenuContainerRef} className='py-5'>
                 {currentMenu === 'products' && (
                     <ProductsMenu onBack={() => goToMenu(null)} onSelectMenu={goToMenu} />
                 )}
@@ -50,13 +49,13 @@ export default function NavWrapper() {
                 {currentMenu === 'endo-surgery' && (
                     <EndoSurgeryMenu onBack={() => goToMenu('products')} />
                 )}
-                 {currentMenu === 'hernia-solutions' && (
+                {currentMenu === 'hernia-solutions' && (
                     <HerniaSolutionsMenu onBack={() => goToMenu('products')} />
                 )}
                 {currentMenu === 'interventional-cardiology' && (
                     <InterventionalCardiologyMenu onBack={() => goToMenu('products')} />
                 )}
-                 {currentMenu === 'cardiac-surgery' && (
+                {currentMenu === 'cardiac-surgery' && (
                     <CardiacSurgeryMenu onBack={() => goToMenu('products')} />
                 )}
             </div>
@@ -66,33 +65,31 @@ export default function NavWrapper() {
 
 function MainNav({ onSelectMenu }) {
     return (
-        <nav className="main-nav">
-            <ul className='flex flex-col'>
-                <li>
-                    <NavLink href={"/"} linkText="Homepage" />
-                </li>
-                <li>
-                    <NavLink href={"/about"} linkText="About Us" />
-                </li>
-                <li>
-                    <NavButton onClick={() => onSelectMenu('products')} linkText="Products" />
-                </li>
-                <li>
-                    <NavButton onClick={() => onSelectMenu('manufacturing')} linkText="Manufacturing" />
-                </li>
-                <li>
-                    <NavLink href={"/career"} linkText="Careers" />
-                </li>
-                <li>
-                    <NavLink href={"/blogs"} linkText="Stories" />
-                </li>
-                <li>
-                    <NavLink href={"/contact-us"} linkText="Contact Us" />
-                </li>
-                <li>
-                    <NavLink href={"/ama"} linkText="Advanced Medtech Academy" />
-                </li>
-            </ul>
-        </nav>
+        <ul className='space-y-[0.8vw] border-r pr-[3vw] border-[#d8d8d8] py-5'>
+            <li>
+                <NavLink href={"/"} linkText="Homepage" />
+            </li>
+            <li>
+                <NavLink href={"/about"} linkText="About Us" />
+            </li>
+            <li>
+                <NavButton onClick={() => onSelectMenu('products')} linkText="Products" />
+            </li>
+            <li>
+                <NavButton onClick={() => onSelectMenu('manufacturing')} linkText="Manufacturing" />
+            </li>
+            <li>
+                <NavLink href={"/career"} linkText="Careers" />
+            </li>
+            <li>
+                <NavLink href={"/blogs"} linkText="Stories" />
+            </li>
+            <li>
+                <NavLink href={"/contact-us"} linkText="Contact Us" />
+            </li>
+            <li>
+                <NavLink href={"/ama"} linkText="Advanced Medtech Academy" />
+            </li>
+        </ul>
     );
 }

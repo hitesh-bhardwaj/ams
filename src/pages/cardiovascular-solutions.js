@@ -24,7 +24,6 @@ export default function cardiovascular() {
     src: "/assets/cardioVascular/cardio-vascular-genesis-bg.png",
   };
 
-
   fadeup()
 
   return (

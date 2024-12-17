@@ -1,65 +1,68 @@
 import React, { useState, useEffect } from 'react';
 import styles from "@/styles/cardiovascularProducts.module.css";
-import Image from "next/image"; 
-import gsap from 'gsap'; 
+import Image from "next/image";
+import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import PrimaryButton from '../Button/PrimaryButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const slidesData = [
-    { src:"/advabond",
-      title: "ADVABOND",
-      para: "Braided Coated Polyester Green & White",
-      imageSrc: "/assets/cardioVascular/advabond.png",
-      description1: "The enduring and comprehensive solution for valve replacement and valve repair procedures providing excellent tensile strength for permanent support.",
-      description2:"Silicone coating designed for excellent handling enabling superior pliability and knotting characteristics.",
-      description3 : "ADVAPLEDGET assures consistent performance providing smooth uniform construction for precise suture placement.",
-    }   ,
-    { src:"/advalene",
-      title: "ADVALENE",
-      para: "Monofilament Polypropylene Blue",
-      imageSrc: "/assets/cardioVascular/advalene.png",
-      description1: "-The only Polypropylene with an advanced and unique dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-      description2: "Most inert monofilament structure makes ADVALENE Cardiovascular suture an ideal choice for anastomosis.",
-      description3 : "ADVAPRIME needles are specially designed with an engineered tip to maintain shape and sharpness pass after pass for the most challenging calcified lesions & fibrotic blood vessels.",
-    },
-    {
-      src:"/advasteel",
-      title: "ADVASTEEL",
-      para: "Monofilament stainless Steel 316 LVM",
-      imageSrc: "/assets/cardioVascular/advasteel.png",
-      description1: "Excellent compatibility with body tissues for minimal tissue reactivity.",
-      description2:"Advanced design with superior pliability conforming closely to contour of sternum.",
-      description3 : "High resistance to breakage during bend tightening by twisting with excellent knot security.",
-    } ,
-    {src:"/advapacer-and-wax",
-      title: "ADVAWAX",
-      para: "Braided Coated Polyester Green & White",
-      imageSrc: "/assets/cardioVascular/advawax.png",
-      description1: "ADVAWAX acts as a mechanical (tamponade) barrier helping in achieving local hemostasis of bone.",
-      description2:"ADVAWAX minimizes formation of any foreign body or inflammatory reaction and delays bone regeneration.",
-      description3 : "ADVAWAX provides ease of application due to smooth consistency.",
-    }  ,
-    {
-      src:"/advapacer-and-wax",
-      title: "ADVAPACER",
-      para: "Multifilament 316L Stainless Steel",
-      imageSrc: "/assets/cardioVascular/advapacer.png",
-      description1: "Twisted 316L stainless steel wire, with blue Low Densile Polyethylene coating (sheathed), double needle in suture size 2-0, having a length of 60 cm.",
-      description2:" Lead conductor resistant (14.50Ω/M)",
-      description3 : "",
-    } ,
-    { src:"/",
-      title: "ADVANOVA",
-      para: "Monofilament Polyamide Blue (Treated)",
-      imageSrc: "/assets/cardioVascular/advanova.png",
-      description1: "Engineered to cater the specialized demands of intricate cardiac procedures.",
-      description2:" Ensures structural integrity within calcified tissues.",
-      description3 : "ADVAPASS & ADVAPOINT needles",
-    },
-         
-  ];
+  {
+    src: "/advabond",
+    title: "ADVABOND",
+    para: "Braided Coated Polyester Green & White",
+    imageSrc: "/assets/cardioVascular/advabond-1.png",
+    description1: "The enduring and comprehensive solution for valve replacement and valve repair procedures providing excellent tensile strength for permanent support.",
+    description2: "ADVAPLEDGET assures consistent performance providing smooth uniform construction for precise suture placement.",
+    description3: "",
+  },
+  {
+    src: "/advalene",
+    title: "ADVALENE",
+    para: "Monofilament Polypropylene Blue",
+    imageSrc: "/assets/cardioVascular/advalene-1.png",
+    description1: "-The only Polypropylene with an advanced and unique dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    description2: "Most inert monofilament structure makes ADVALENE Cardiovascular suture an ideal choice for anastomosis.",
+    description3: "",
+  },
+  {
+    src: "/advasteel",
+    title: "ADVASTEEL",
+    para: "Monofilament stainless Steel 316 LVM",
+    imageSrc: "/assets/cardioVascular/advasteel-1.png",
+    description1: "Excellent compatibility with body tissues for minimal tissue reactivity.",
+    description2: "Advanced design with superior pliability conforming closely to contour of sternum.",
+    description3: "High resistance to breakage during bend tightening by twisting with excellent knot security.",
+  },
+  {
+    src: "/advapacer-and-wax",
+    title: "ADVAWAX",
+    para: "Braided Coated Polyester Green & White",
+    imageSrc: "/assets/cardioVascular/advawax-1.png",
+    description1: "ADVAWAX acts as a mechanical (tamponade) barrier helping in achieving local hemostasis of bone.",
+    description2: "ADVAWAX minimizes formation of any foreign body or inflammatory reaction and delays bone regeneration.",
+    description3: "ADVAWAX provides ease of application due to smooth consistency.",
+  },
+  {
+    src: "/advapacer-and-wax",
+    title: "ADVAPACER",
+    para: "Multifilament 316L Stainless Steel",
+    imageSrc: "/assets/cardioVascular/advapacer-1.png",
+    description1: "Twisted 316L stainless steel wire, with blue Low Densile Polyethylene coating (sheathed), double needle in suture size 2-0, having a length of 60 cm.",
+    description2: "Lead conductor resistant (14.50Ω/M)",
+    description3: "",
+  },
+  {
+    src: "#",
+    title: "ADVACLIP",
+    para: "Titanium Ligation Clip",
+    imageSrc: "/assets/cardioVascular/advaclip-1.png",
+    description1: "Engineered to cater the specialized demands of intricate cardiac procedures.",
+    description2: "Ensures structural integrity within calcified tissues.",
+    description3: "ADVAPASS & ADVAPOINT needles",
+  },
+];
 
 const Products = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -71,7 +74,7 @@ const Products = () => {
       // y: -30,
       duration: 0.3,
       ease: "power3.out",
-      stagger:0.01,
+      stagger: 0.01,
       onComplete: () => {
         // After fade-out animation completes, update the index
         setCurrentIndex((prev) => (prev === slidesData.length - 1 ? 0 : prev + 1));
@@ -136,17 +139,16 @@ const Products = () => {
               {slidesData[currentIndex].description3}
             </p>
             <div className='fadeUp mt-[4vw]'>
-
-            <PrimaryButton text={"Read More"} link={slidesData[currentIndex].src}/>
+              <PrimaryButton text={"Read More"} link={slidesData[currentIndex].src} />
             </div>
           </div>
         </div>
-        <div className="w-[36vw] h-[50vw] overflow-hidden ">
+        <div className="w-[40vw] h-[50vw] overflow-hidden ">
           <div className='relative flex items-start justify-end h-screen w-screen'>
             <div className='absolute flex justify-center items-center h-full w-full'>
               {slidesData.map((slide, index) => {
                 const angle = ((index - currentIndex) * (360 / totalSlides)) * (Math.PI / 180);
-                const x = -radius*1.1 * Math.cos(angle);
+                const x = -radius * 1.1 * Math.cos(angle);
                 const y = radius * Math.sin(angle);
 
                 const isPrevious = (index === (currentIndex - 1 + totalSlides) % totalSlides);
@@ -159,7 +161,7 @@ const Products = () => {
                     className={`${styles.card} ${isActive ? styles.active : ''} ${isPrevious ? styles.previous : ''} ${isNext ? styles.next : ''}`}
                     style={{
                       transform: `translate(${x}vw, ${y}vw)`,
-                      zIndex: isActive ? 3 : isPrevious || isNext ? 2 : 1, 
+                      zIndex: isActive ? 3 : isPrevious || isNext ? 2 : 1,
                     }}
                   >
                     <img src={slide.imageSrc} alt={slide.title} className="w-full h-full object-contain flex  mobile:h-[40vw] mobile:w-[40vw]" />
