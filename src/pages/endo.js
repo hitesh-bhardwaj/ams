@@ -62,7 +62,7 @@ export default function endo() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal />
+        <Pixifinal/>
       </Media>
     </>
   );

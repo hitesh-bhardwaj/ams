@@ -9,40 +9,46 @@ const SutureCarouselSecond = () => {
   const slidesData = [
     {
       iconSrc: "/assets/woundclosure/bondtape-box.png",
-      title: "Catgut - Chromic",
+      title: "Polyester Tape Suture",
       cardColor:"from-yellow-500/30",
        src:"/bondtape"
     },
     {
       iconSrc: "/assets/woundclosure/advasyl-box.png",
-      title: "Antibacterial Polyglactine 910",
+      title: "Silk",
       cardColor:"from-blue-500/20",
        src:"/advasyl"
     },
     {
       iconSrc: "/assets/woundclosure/advabond-box.png",
-      title: "Polydioxanone",
+      title: "Silk",
       cardColor:"from-orange-500/30",
        src:"/advabond"
     },
     {
       iconSrc: "/assets/woundclosure/advalene-box.png",
-      title: "Polyglactine 910",
+      title: "Polypropylene",
       cardColor:"from-blue-500/30",
        src:"/advalene"
 
     },
     {
       iconSrc: "/assets/woundclosure/advapacer-box.png",
-      title: "Poliglecaprone 25",
+      title: "316 Stainless Steel",
       cardColor:"from-yellow-500/40",
        src:"/advapacer-and-wax"
     },
     {
       iconSrc: "/assets/woundclosure/advawax-box.png",
-      title: "Fast Absorbing Polyglactine 910",
+      title: "Bonewax",
       cardColor:"from-yellow-200/60",
        src:"/advapacer-and-wax"
+    },
+    {
+      iconSrc: "/assets/woundclosure/advalon-box.png",
+      title: "Polyamide",
+      cardColor:"from-green-200/60",
+       src:"/advalon"
     },
     
   ];

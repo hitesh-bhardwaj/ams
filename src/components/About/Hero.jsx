@@ -34,8 +34,8 @@ const Hero = () => {
                 </span>
               </p>
             </div>
-            <div className="absolute right-0 bottom-0 h-full tablet:top-[45%] mobile:relative">
-              <div className="w-[77vw] overflow-hidden h-full relative mobile:w-[100vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
+            <div className="absolute right-[-8%] bottom-0 h-full tablet:top-[45%] mobile:left-[-50%] mobile:bottom-[-50%]">
+              <div className="w-[77vw] overflow-hidden h-full mobile:w-[200vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
                 <video
                   poster="/assets/about/about-hero-poster.webp"
                   autoPlay

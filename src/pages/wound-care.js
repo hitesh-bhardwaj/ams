@@ -2,6 +2,8 @@ import Portfolio from "@/components/Endo/Portfolio";
 
 import Layout from "@/components/Layout";
 import Genesis from "@/components/layoutComponents/Genesis";
+import { Media } from "@/components/media";
+import Pixifinal from "@/components/Pixifinal";
 import Hero from "@/components/Woundclosure/Hero";
 import SutureCarouselFirst from "@/components/Woundclosure/SutureCarouselFirst";
 import SutureCarousel from "@/components/Woundclosure/SutureCarouselFirst";
@@ -37,7 +39,11 @@ const woundClosure = () => {
           <SutureCarouselSecond />
           <Portfolio currentlink={"/wound-care"} />
         </main>
+        
       </Layout>
+      <Media greaterThan='tablet'>
+            <Pixifinal/>
+          </Media>
     </>
   );
 };
