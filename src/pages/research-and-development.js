@@ -22,7 +22,7 @@ export default function rnd() {
   const hero = {
     title: "Pioneering Innovation in Medical Research & Development",
     
-    src: "/assets/rnd/RND-hero-bg.png",
+    src: "/assets/rnd/rnd-hero-bg.png",
     content:
       "At AMS, we’re setting new standards in medical research and development. Our advanced R&D facility, located in the heart of a thriving innovation hub, is where cutting-edge technology and groundbreaking research come together to address the most pressing health challenges of our time.",
   };

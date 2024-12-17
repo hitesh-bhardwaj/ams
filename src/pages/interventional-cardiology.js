@@ -23,13 +23,6 @@ export default function ic() {
       "With a steadfast dedication to enhancing quality of life and improving patient outcomes, AMS continues to shape the future of cardiology and redefine what’s possible in cardiovascular care.",
     src: "/assets/ic/ic-genesis.webp",
   };
-  const hero = {
-    title: "Advancing the Science of Flow Restoration",
-
-    src: "/assets/ic/ic-hero-bg.png",
-    content:
-      "Every heartbeat tells a story of life, and at AMS, we are rewriting those stories with groundbreaking innovations. Our relentless pursuit of excellence is transforming the science of flow restoration, bringing hope and healing to millions affected by cardiovascular diseases.",
-  };
   const slidesData = [
     {
       title: "The Next Frontier of PCI",
@@ -71,7 +64,7 @@ export default function ic() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal/>
+        {/* <Pixifinal/> */}
       </Media>
     </>
   );
