@@ -120,7 +120,7 @@ const advamryl = () => {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-          {/* <Pixifinal/> */}
+          <Pixifinal/>
 
 
           </Media>
