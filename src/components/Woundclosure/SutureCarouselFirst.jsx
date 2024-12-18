@@ -73,7 +73,7 @@ data-para-anim className="title-2 aeonik mobile:w-[80%]">Absorbable Sutures</h2>
 
       </div>
 
-    <div className="swiper-container mt-[10vw] tablet:w-[100vw] mobile:mt-[15vw] fadeup relative tablet:mt-[12vw]">
+    <div className="swiper-container mt-[10vw] tablet:w-[100vw] mobile:mt-[15vw] fadeUp relative tablet:mt-[12vw]">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={onSlideChange}

@@ -20,7 +20,7 @@ export default function Impact() {
                     />
                     <div className="flex items-center mobile:justify-center">
                         <div className="w-1/2 h-[35vw] relative z-10 space-y-[2vw] tablet:w-[80%] mobile:w-[100%] mobile:h-[180vw] tablet:h-[60vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:text-center mobile:space-y-[15vw]">
-                            <h2 className="title-2 aeonik leading-[0]  ">
+                            <h2 className="title-2 aeonik leading-[0]">
                                 <span data-para-anim className="text-white leading-[1.3]">
                                 Making an Impact:
                                 

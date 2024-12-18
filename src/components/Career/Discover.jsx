@@ -1,10 +1,9 @@
 import React from 'react'
 import PrimaryButton from '../Button/PrimaryButton'
 import Image from 'next/image'
-import { imgAnim } from '../gsapAnimations'
 
 const Discover = () => {
-  imgAnim()
+  
   return ( 
    <section id='discover' className='tablet:py-[10%] pb-[10%] mobile:pb-[20%]'>
     <div className='px-[5%] border border-gray-200 bg-white/50 mobile:py-[15%] rounded-[3vw] mobile:rounded-[6vw] py-[7vw]'>

@@ -5,13 +5,13 @@ import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { fadeup } from '../gsapAnimations';
+import { fadeUp } from '../gsapAnimations';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const Hero = () => {
   paraAnim();
-  fadeup();
+  fadeUp();
   return (
     <section className=' relative w-screen h-screen overflow-hidden mobile:h-[90vh] tablet:h-[70vh]' id='c-sectionHero'>
       <div className="w-full h-full  ">

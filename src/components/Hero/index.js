@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { paraAnim, titleAnim } from "../gsapAnimations";
+import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -8,7 +8,6 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden ,mode,titleWidth}) => {
   
-  titleAnim()
   paraAnim();
   // useGSAP(() => { 
   //   const tl = gsap.timeline({

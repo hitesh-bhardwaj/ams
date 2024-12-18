@@ -69,7 +69,7 @@ data-para-anim
         <div
             className={`rounded-[45px] items-center border-[1px] border-gray-200  px-[4vw] py-[3vw] flex gap-[4vw] flex-row-reverse justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
           >
-            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeUp">
               <Image
                 src="/assets/manufacturing/state-2.png"
                 fill
@@ -101,7 +101,7 @@ data-para-anim
         <div
             className={`rounded-[45px] items-center border-[1px] border-gray-200  px-[4vw] py-[3vw] flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
           >
-            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeUp">
               <Image
                 src="/assets/manufacturing/state-3.png"
                 fill
@@ -131,9 +131,9 @@ data-para-anim
         </div>
         <div className="content--card w-[90vw]">
         <div
-            className={`rounded-[45px] border-[1px] items-center border-gray-200  px-[4vw] py-[3vw] flex flex-row-reverse gap-[4vw] justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
+            className={`rounded-[45px] border-[1px] items-center border-gray-200  px-[4vw] py-[3vw] flex flex-row-reverse gap-[4vw] justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
           >
-            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeUp">
               <Image
                 src="/assets/manufacturing/state-4.png"
                 fill
@@ -163,9 +163,9 @@ data-para-anim
         </div>
         <div className="w-[90vw]">
         <div
-            className={`rounded-[45px] border-[1px] items-center border-gray-200  px-[4vw] py-[3vw]  flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeup`}
+            className={`rounded-[45px] border-[1px] items-center border-gray-200  px-[4vw] py-[3vw]  flex justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[20vw] fadeUp`}
           >
-            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup">
+            <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeUp">
               <Image
                 src="/assets/manufacturing/state-5.png"
                 fill

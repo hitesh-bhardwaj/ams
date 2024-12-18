@@ -7,7 +7,7 @@ import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Discover from "@/components/Ama/Discover";
 import CardsCarousel from "@/components/Ama/CardsCarousel";
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
+import { fadeUp } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import CardiacCare from "@/components/Ama/CardiacCare";
@@ -52,7 +52,7 @@ export default function ama() {
   
   ];
 
-fadeup()
+fadeUp()
 
   return (
     <>

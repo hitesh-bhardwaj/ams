@@ -1,12 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
-import { fadeup, paraAnim } from "../gsapAnimations";
-import { Media } from "../media";
 
 export default function Footer() {
-  paraAnim();
-  fadeup();
   return (
     <>
       <footer className=" h-full mobile:pb-[10vw] relative overflow-hidden rounded-tl-[3vw] mt-[-2.5%] rounded-tr-[3vw] ">

@@ -151,7 +151,7 @@ const OtherProduct = () => {
       <Media lessThan="desktop">
         <div className="hidden mobile:block tablet:block">
           <div className="w-full flex flex-col gap-[10vw] tablet:gap-[5vw]">
-            <div className="w-full mobile:mt-[5vw] mobile:fadeup mobile:block hidden fadeUp tablet:overflow-scroll mobile:fadeup tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
+            <div className="w-full mobile:mt-[5vw] mobile:fadeUp mobile:block hidden fadeUp tablet:overflow-scroll mobile:fadeUp tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0 ">
               <div className=" mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:gap-[12vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit tablet:ml-[4vw]">
                 {productData.map((product, i) => (
                   <div

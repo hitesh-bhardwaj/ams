@@ -10,7 +10,6 @@ import Layout from "@/components/Layout";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
-import { Svg } from "@react-three/drei";
 
 const EdgeCard = {
   card1: {

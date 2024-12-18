@@ -6,7 +6,7 @@ import Genesis from "@/components/layoutComponents/Genesis";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import React from "react";
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
+import { fadeUp } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Hero from "@/components/Hernia/Hero";
@@ -47,7 +47,7 @@ export default function hernia() {
       para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision. We provide the necessary tools and support to enhance surgical practice and improve patient care.",
     },
   ];
- fadeup()
+ fadeUp()
 
   return (
     <>

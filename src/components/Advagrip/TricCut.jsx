@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import { fadeup } from '../gsapAnimations'
+import { fadeUp } from '../gsapAnimations'
 
 
 const TricCut = () => {
-  fadeup()
+  fadeUp()
   return (
     <section id='tricut' className='w-screen h-[58vw] overflow-hidden pt-[7%] mb-[3%] pb-[5%] mobile:py-[15%] relative bg-white/20 mobile:h-[125vh] tablet:py-[10%] tablet:h-[60vh]'>
       <div className='container-lg flex items-center flex-col gap-[4vw] mobile:gap-[18vw]'>

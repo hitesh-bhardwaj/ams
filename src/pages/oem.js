@@ -3,7 +3,7 @@ import Genesis from "@/components/layoutComponents/Genesis";
 import Offerings from "@/components/Oem/Offerings";
 import FormOem from "@/components/Oem/FormOem";
 import Layout from "@/components/Layout";
-import { fadeup, paraAnim } from "@/components/gsapAnimations";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import Pixifinal from "@/components/Pixifinal";
 import Image from "next/image";
@@ -17,7 +17,7 @@ export default function oem() {
     src: "/assets/oem/oem-genesis-bg.png",
   };
 
-  fadeup();
+  fadeUp();
   paraAnim();
 
   return (

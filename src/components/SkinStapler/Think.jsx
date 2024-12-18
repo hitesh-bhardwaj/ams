@@ -84,7 +84,7 @@ const Think = () => {
                     height={35}
                     width={35}
                     alt="point"
-                    className="fadeup"
+                    className="fadeUp"
                   />
                   <p
                     data-para-anim

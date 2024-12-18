@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { paraAnim, fadeup } from "../gsapAnimations";
+import { paraAnim, fadeUp } from "../gsapAnimations";
 import "swiper/css/navigation";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -34,7 +34,7 @@ const FeatureCard = ({ src, title }) => {
 
 const KeyFeatures = ({ card1, card2, card3, card4 }) => {
   paraAnim();
-  fadeup();
+  fadeUp();
 
   const swiperRef = useRef(null);
   const [activeButton, setActiveButton] = useState(" ");

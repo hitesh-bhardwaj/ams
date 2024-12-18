@@ -32,14 +32,14 @@ data-para-anim
                       src="/assets/advapro/advapro-tube.png"
                       fill
                       alt="advapro tube"
-                      className=" fadeup object-contain "
+                      className=" fadeUp object-contain "
                     />
                   </div>
                   <div className="mobile:mt-[15vw] mobile:flex mobile:flex-col mobile:gap-[7vw]">
 
                   <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[10%] top-[35%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:gap-[5vw] mobile:px-[5vw] tablet:w-[40%] tablet:top-[30%]">
                     <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] mobile:top-[47%] mobile:relative mobile:h-[15vw] mobile:w-[15vw]">
-                        <Image src="/assets/advapro/coating.png" fill alt="coating" className="fadeup"/>
+                        <Image src="/assets/advapro/coating.png" fill alt="coating" className="fadeUp"/>
                     </div>
                     <p
                       data-para-anim
@@ -50,7 +50,7 @@ data-para-anim
                   </div>
                   <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] right-[10%] top-[40%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:gap-[5vw] mobile:px-[5vw] tablet:w-[40%] tablet:right-[2%] tablet:top-[35%]">
                     <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw]  mobile:top-[56%] mobile:left-0 mobile:h-[15vw] mobile:w-[15vw] mobile:relative ">
-                        <Image src="/assets/advapro/design.png" fill alt="coating" className="fadeup"/>
+                        <Image src="/assets/advapro/design.png" fill alt="coating" className="fadeUp"/>
                     </div>
                     <p
                       data-para-anim
@@ -61,7 +61,7 @@ data-para-anim
                   </div>
                   <div className="absolute w-[22%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[15%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:gap-[5vw] mobile:px-[5vw] tablet:w-[30%] tablet:top-[43%] tablet:left-[10%]">
                     <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] mobile:top-[66%] mobile:left-0 mobile:h-[15vw] mobile:w-[15vw] mobile:relative ">
-                        <Image src="/assets/advapro/drug.png" fill alt="coating" className="fadeup"/>
+                        <Image src="/assets/advapro/drug.png" fill alt="coating" className="fadeUp"/>
                     </div>
                     <p
                       data-para-anim
@@ -72,7 +72,7 @@ data-para-anim
                   </div>
                   <div className="absolute w-[32%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[38%] bottom-[12%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:gap-[5vw] mobile:px-[5vw] tablet:w-[50%] tablet:bottom-[20%] tablet:left-[25%]">
                     <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] mobile:top-[75%] mobile:left-0 mobile:h-[15vw] mobile:w-[15vw] mobile:relative">
-                        <Image src="/assets/advapro/matrix.png" fill alt="coating" className="fadeup"/>
+                        <Image src="/assets/advapro/matrix.png" fill alt="coating" className="fadeUp"/>
                     </div>
                     <p
                       data-para-anim
@@ -83,10 +83,10 @@ data-para-anim
                   </div>
                   <div className="absolute w-[28%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] right-[5%] bottom-[20%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:gap-[5vw] mobile:px-[5vw] tablet:w-[40%] tablet:bottom-[30%]">
                     <div className="absolute h-[4vw] w-[4vw] left-0 top-0  tablet:h-[5vw] tablet:w-[5vw] mobile:top-[84%] mobile:left-0 mobile:h-[15vw] mobile:w-[15vw] mobile:relative">
-                        <Image src="/assets/advapro/stent.png" fill alt="coating" className="fadeup"/>
+                        <Image src="/assets/advapro/stent.png" fill alt="coating" className="fadeUp"/>
                     </div>
                     <div className="absolute h-[7vw] w-[6vw]  bottom-[90%] mobile:hidden">
-                        <Image src="/assets/advapro/cobalt.png" fill alt="coating" className="fadeup"/>
+                        <Image src="/assets/advapro/cobalt.png" fill alt="coating" className="fadeUp"/>
                     </div>
                     <p
                       data-para-anim

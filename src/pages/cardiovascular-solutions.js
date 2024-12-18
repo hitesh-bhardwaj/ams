@@ -4,7 +4,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
+import { fadeUp } from "@/components/gsapAnimations";
 import Portfolio from "@/components/Endo/Portfolio";
 import ProductCarousel from "@/components/CardioVascular/ProductCarousel";
 import Products from "@/components/CardioVascular/Products";
@@ -24,7 +24,7 @@ export default function cardiovascular() {
     src: "/assets/cardioVascular/cardio-vascular-genesis-bg.png",
   };
 
-  fadeup()
+  fadeUp()
 
   return (
     <>

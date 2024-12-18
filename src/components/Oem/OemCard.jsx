@@ -13,7 +13,7 @@ export default function OemCard() {
           >
             <div className="w-[85%] flex justify-between mobile:flex-col mobile:w-full mobile:items-center tablet:flex-col tablet:w-full">
 
-            <div className='h-[23vw] w-[35vw] relative rounded-[50px] overflow-hidden tablet:h-[45vw] tablet:w-[80vw] tablet:rounded-[4vw] mobile:w-[80vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeup'>
+            <div className='h-[23vw] w-[35vw] relative rounded-[50px] overflow-hidden tablet:h-[45vw] tablet:w-[80vw] tablet:rounded-[4vw] mobile:w-[80vw] mobile:h-[85vw] mobile:rounded-[6vw] fadeUp'>
               <Image
                 src="/assets/oem/oem-rnd-img.webp"
                 fill

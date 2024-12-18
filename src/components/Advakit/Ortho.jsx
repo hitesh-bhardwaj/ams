@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { fadeup } from '../gsapAnimations';
+import { fadeUp } from '../gsapAnimations';
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const Ortho = () => {
   paraAnim();
-  fadeup();
+  fadeUp();
   return (
     <section className=' relative overflow-hidden'>
       <div className="w-screen h-screen overflow-hidden py-[10vw] mobile:h-[180vw] tablet:h-[70vh]">

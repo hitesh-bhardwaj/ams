@@ -5,7 +5,7 @@ import Product from "@/components/Endo/Product";
 import Genesis from "@/components/layoutComponents/Genesis";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Layout from "@/components/Layout";
-import { fadeup, paraAnim } from "@/components/gsapAnimations";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Hero from "@/components/Endo/Hero";
@@ -42,7 +42,7 @@ export default function endo() {
     },
   ];
 
-  fadeup();
+  fadeUp();
   paraAnim();
 
   return (

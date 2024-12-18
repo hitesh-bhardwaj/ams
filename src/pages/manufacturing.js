@@ -5,7 +5,7 @@ import Discover from "@/components/Manufacturing/Discover";
 import State from "@/components/Manufacturing/State";
 import React from "react";
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
+import { fadeUp } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Hero from "@/components/Manufacturing/Hero";
@@ -19,7 +19,7 @@ export default function manufacturing() {
       "AMS pioneers advancements in medical device manufacturing, integrating transformative technologies like breakthrough automation, robotics and artificial intelligence, establishing benchmarks for quality and streamlined operations.",
     src: "/assets/manufacturing/manufacturing.png",
   };
-  fadeup();
+  fadeUp();
 
   return (
     <>

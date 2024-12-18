@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import { fadeup } from "../gsapAnimations";
+import { fadeUp } from "../gsapAnimations";
 
 const Locations = () => {
-  fadeup()
+  fadeUp()
   return (
     <>
       <section id="location" className="relative w-screen h-full py-[5%] pb-[10%] mobile:h-full mobile:py-[15%] tablet:h-full tablet:py-[8%]">

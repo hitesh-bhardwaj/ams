@@ -1,14 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import LinkButton from "../Button/LinkButton";
-// import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { useRef } from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { Media } from "../media";
+
+import "swiper/css/navigation";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Product() {
@@ -73,7 +74,7 @@ export default function Product() {
               navigation={false}
               modules={[Navigation]}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              className="homeCarousel"
+              className="homeCarousel mobile:!w-full"
             >
               <SwiperSlide>
                 <CardContainer className="product-card relative h-full">
@@ -254,7 +255,7 @@ export default function Product() {
                     alt="product-frame"
                   />
                   <div className="main relative">
-                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]">
+                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] mobile:right-[10%] mobile:top-[2%] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%]">
                       <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0 tablet:text-[1.8vw] tablet:pt-0">
                         04
                       </span>
@@ -316,7 +317,7 @@ export default function Product() {
                     alt="product-frame"
                   />
                   <div className="main relative">
-                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw]">
+                    <div className="absolute right-[4.5%] top-[1%] font-light text-[#2a2a2a] border border-[#2a2a2a] rounded-full h-[1.8vw] w-[1.8vw] flex justify-center items-center mobile:h-[8vw] mobile:w-[8vw] mobile:right-[10%] mobile:top-[2%] tablet:w-[3vw] tablet:h-[3vw] tablet:right-[2%]">
                       <span className="text-[0.9vw] pt-1 mobile:text-[4vw] mobile:pt-0 tablet:text-[1.8vw] tablet:pt-0">
                         05
                       </span>
@@ -359,7 +360,7 @@ export default function Product() {
           </div>
           <div
             className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[68%] tablet:right-[-2%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
-            onClick={handleNext} // Trigger next slide
+            onClick={handleNext}
           >
             <span
               className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
@@ -375,7 +376,7 @@ export default function Product() {
           </div>
           <div
             className={`px-[1.2vw] py-[1.2vw] top-[55%] left-[5%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[68%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
-            onClick={handlePrev} // Trigger previous slide
+            onClick={handlePrev}
           >
             <span
               className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}

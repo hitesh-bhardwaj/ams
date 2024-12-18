@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { paraAnim } from "../gsapAnimations";
 
 const Hero = () => {
   const [videoSrc, setVideoSrc] = useState(null);
@@ -12,14 +11,12 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  paraAnim();
-
   return (
     <>
-      <section className="hero h-screen mobile:mb-[20%] tablet:h-[60vh] mobile:h-screen overflow-hidden mobile:w-full bg-white" id="hero">
+      <section className="hero h-screen mobile:mb-[20%] tablet:h-[80vh] overflow-hidden mobile:w-full bg-white" id="hero">
         <div className="px-[10%] relative">
-          <div className="flex h-dvh w-full justify-start items-center tablet:h-[50vh] mobile:flex-col mobile:justify-center mobile:mt-[20%]">
-            <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50]">
+          <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:h-screen mobile:justify-center">
+            <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50] mobile:pb-[20vw]">
               <h1
                 data-para-anim
                 className="title-1 aeonik capitalize leading-[1.15] mobile:text-[12.5vw]"
@@ -34,15 +31,15 @@ const Hero = () => {
                 </span>
               </p>
             </div>
-            <div className="absolute right-[-8%] bottom-0 h-full tablet:top-[45%] mobile:left-[-50%] mobile:bottom-[-50%]">
-              <div className="w-[77vw] overflow-hidden h-full mobile:w-[200vw] mobile:h-[80vw] mobile:bottom-[50%] tablet:bottom-0 tablet:w-[65vw] tablet:h-[45vw]">
+            <div className="absolute right-0 bottom-0 h-full">
+              <div className="w-[77vw] overflow-hidden h-full tablet:w-[100vw] tablet:h-[100%] mobile:w-[100vw] mobile:h-[60%] mobile:mt-[80%]">
                 <video
                   poster="/assets/about/about-hero-poster.webp"
                   autoPlay
                   loop
                   muted
                   src={videoSrc}
-                  className="w-full h-full object-cover object-left scale-[1.05]"
+                  className="w-full h-full object-cover object-left tablet:object-center scale-[1.05] mobile:object-center"
                   playsInline
                 />
               </div>

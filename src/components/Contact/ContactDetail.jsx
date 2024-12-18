@@ -2,11 +2,11 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
-import { fadeup } from "../gsapAnimations";
+import { fadeUp } from "../gsapAnimations";
 import Image from "next/image";
 
 const ContactDetail = () => {
-  fadeup()
+  fadeUp()
   return (
     <>
       <section className="py-[5%] pb-[8%] relative mobile:py-[15%]" id="contactDetail">

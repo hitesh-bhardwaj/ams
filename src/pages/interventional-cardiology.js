@@ -7,7 +7,7 @@ import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import IcCards from "@/components/IC/IcCards";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
+import { fadeUp } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Hero from "@/components/IC/Hero";
@@ -44,7 +44,7 @@ export default function ic() {
       para: "AMS has forayed into the Interventional Cardiology space with the arrival of its PTCA Balloon Catheter Rx and forthcoming launch of its Drug Eluting Stent and related accessories. Our advanced technologies, decades rich experiences of our people and partners in healthcare brings synergy to enhance confidence of Interventional Cardiologists globally.",
     },
   ];
-  fadeup()
+  fadeUp()
 
   return (
     <>

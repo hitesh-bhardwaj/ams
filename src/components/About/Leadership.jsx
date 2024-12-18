@@ -32,10 +32,10 @@ const Leadership = () => {
     return (
         <>
             <section id="leadership" className="bg-white/50">
-                <div className="w-full py-[7%] mobile:py-[15%]">
+                <div className="w-full pt-[7%] mobile:py-[15%] h-[76vw] tablet:h-[100vw] mobile:h-[230vw]">
                     <h3 className="aeonik title-2 text-center">The Vision of AMS Leadership</h3>
                     <div className="relative w-screen overflow-hidden">
-                        <div className="w-screen mobile:gap-12 px-[4vw] flex justify-between mobile:justify-center items-center top-[20%] z-10 absolute mobile:top-[90%] mobile:h-fit">
+                        <div className="w-screen mobile:gap-8 px-[4vw] flex justify-between mobile:justify-center items-center top-[20%] z-10 absolute mobile:top-[90%] mobile:h-fit">
                             <div onClick={slidePrevious} className="px-[1.2vw] py-[1.2vw] z-[5] relative bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer mobile:block group hover:text-white border border-black/20">
                                 <span className="bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300" />
                                 <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
@@ -61,7 +61,7 @@ const Leadership = () => {
                         </div>
                         <div className="w-[600%] h-[40vw] pt-[2vw] flex items-center absolute top-box duration-1000 mobile:pt-[5vw] mobile:h-[70vw]" ref={topBoxRef}>
                             {content.map((content, key) => (
-                                <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative tablet:overflow-hidden">
+                                <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative tablet:overflow-hidden mobile:overflow-hidden">
                                     <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full mobile:text-[15vw]">{content.name}</p>
                                     <Image className="absolute w-[60%] top-[-4%] opacity-75 left-1/2 -translate-x-1/2 mobile:w-[100%] mobile:top-0" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={90} />
                                 </div>

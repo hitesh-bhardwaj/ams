@@ -28,7 +28,7 @@ const PortfolioCard = ({ img, text, link }) => {
   return (
     <>
       <Link href={link} className="block group w-full">
-        <div className={`h-[11.5vw] w-full relative rounded-[2.5vw] overflow-hidden portfolio-car tablet:h-[24vw] tablet:rounded-[3vw] mobile:h-[45vw] mobile:w-[85vw] mobile:rounded-[6vw] fadeup`}>
+        <div className={`h-[11.5vw] w-full relative rounded-[2.5vw] overflow-hidden portfolio-car tablet:h-[24vw] tablet:rounded-[3vw] mobile:h-[45vw] mobile:w-[85vw] mobile:rounded-[6vw] fadeUp`}>
           <Image src={img} width={400} height={225} alt={`${text} image`} className="group-hover:scale-100 scale-110 duration-500 object-cover h-full w-full"
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center" >

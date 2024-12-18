@@ -15,7 +15,7 @@ import {
 import Image from "next/image";
 // import styles from "@/styles/portfolioSwiper.module.css";
 import { Media } from "../media";
-import { fadeup } from "../gsapAnimations";
+import { fadeUp } from "../gsapAnimations";
 
 const EdgeCarousel = ({width}) => {
   const slidesData = [

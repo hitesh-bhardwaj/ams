@@ -5,10 +5,10 @@ import Hero from '@/components/About/Hero'
 import Molecular from '@/components/About/Molecular'
 import Genesis from '@/components/layoutComponents/Genesis'
 import Layout from '@/components/Layout'
-import { fadeup } from '@/components/gsapAnimations'
-import Pixifinal from '@/components/Pixifinal'
+import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 import { Media } from '@/components/media'
 import Leadership from '@/components/About/Leadership'
+import BgVideo from '@/components/Layout/BgVideo'
 
 export default function about() {
 
@@ -19,7 +19,8 @@ export default function about() {
     src: "/assets/about/genesis.png"
   }
 
-  fadeup();
+  fadeUp();
+  paraAnim();
 
   return (
     <>
@@ -34,7 +35,7 @@ export default function about() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal/>
+        <BgVideo videoSrc={"/assets/bg-videos/original-bg.mp4"} />
       </Media>
     </>
   )

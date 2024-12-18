@@ -81,7 +81,7 @@ data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutu
 
       </div>
 
-    <div className="swiper-container mt-[10vw] tablet:w-[100vw] fadeup relative mobile:mt-[15vw] tablet:mt-[12vw]">
+    <div className="swiper-container mt-[10vw] tablet:w-[100vw] fadeUp relative mobile:mt-[15vw] tablet:mt-[12vw]">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={onSlideChange}

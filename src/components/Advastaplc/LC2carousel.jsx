@@ -5,14 +5,14 @@ import 'swiper/css/scrollbar';
 import { Scrollbar } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css/navigation';
-import { fadeup, paraAnim } from "../gsapAnimations";
+import { fadeUp, paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const LC2Carousel = () => {
-  fadeup()
+  fadeUp()
     paraAnim();
     useGSAP(()=>{
             if(globalThis.innerWidth>1024){

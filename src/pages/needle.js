@@ -5,7 +5,7 @@ import Hero from "@/components/Needle/Hero";
 import FeatureCards from "@/components/Needle/FeatureCards";
 import Advance from "@/components/Needle/Advance";
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
+import { fadeUp } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 
@@ -41,7 +41,7 @@ export default function needle() {
     },
   ];
 
-  fadeup()
+  fadeUp()
 
   return (
     <>

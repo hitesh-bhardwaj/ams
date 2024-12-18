@@ -56,7 +56,7 @@ const Hero = () => {
                   Absorbable Gelatin Sponge
                 </p>
               </div>
-              <div className="absolute rounded-[1.5vw] p-[1.5vw] glassmorphism w-[45vw] top-[190%] left-[5%] mobile:w-[90vw] mobile:left-[-3%] mobile:p-[3vw] mobile:rounded-[3vw] mobile:top-[150%] tablet:left-0  tablet:w-[40vw] fadeup">
+              <div className="absolute rounded-[1.5vw] p-[1.5vw] glassmorphism w-[45vw] top-[190%] left-[5%] mobile:w-[90vw] mobile:left-[-3%] mobile:p-[3vw] mobile:rounded-[3vw] mobile:top-[150%] tablet:left-0  tablet:w-[40vw] fadeUp">
                 <p data-para-anim className="text-[1.67vw] font-light mobile:text-[4.5vw] tablet:text-[2.5vw]">
                   Ultra-refined gelatin-based foam <br className="tablet:hidden"/> Precise bleed management,
                   unhindered tissue healing Unmatched proficiency, supreme

@@ -4,10 +4,10 @@ import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import dynamic from "next/dynamic";
 import Layout from "@/components/Layout";
-import { fadeup } from "@/components/gsapAnimations";
-import Pixifinal from "@/components/Pixifinal";
 import HomePageReel from "@/components/Home/HomePageReel";
 import { Media } from "@/components/media";
+import BgVideo from "@/components/Layout/BgVideo";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 
 const Product = dynamic(() => import("@/components/Home/Product"), {
   loading: () => <p>Loading products...</p>
@@ -19,14 +19,15 @@ const Blog = dynamic(() => import("@/components/Home/Blog"), {
 
 export default function Home() {
 
-  fadeup()
+  fadeUp();
+  paraAnim();
 
   return (
     <>
       <Layout>
         <main>
           <Hero />
-          <HomePageReel/>
+          <HomePageReel />
           <Product />
           <Impact />
           <Career />
@@ -35,7 +36,7 @@ export default function Home() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal/>
+        <BgVideo videoSrc={"/assets/bg-videos/original-bg.mp4"} />
       </Media>
     </>
   );
