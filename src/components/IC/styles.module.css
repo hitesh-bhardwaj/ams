@@ -1,0 +1,4 @@
+.icProductSwiper :global(.swiper-slide-active){
+    width: 35vw !important;
+    height: 40vw !important;
+}

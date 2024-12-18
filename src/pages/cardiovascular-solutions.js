@@ -43,7 +43,7 @@ export default function cardiovascular() {
           <Media at="tablet">
             <ProductCarousel />
           </Media>
-          <Portfolio currentlink={"/cardiovascular-solutions"} />
+          <Portfolio currentlink={"/cardiovascular-solutions"} sectionheading={"Our Advanced Therapies"}/>
         </main>
       </Layout>
       <Media greaterThan='tablet'>

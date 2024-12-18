@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const slidesData = [
   {
-    src: "/advabond",
+    src: "/advabond-cv",
     title: "ADVABOND",
     para: "Braided Coated Polyester Green & White",
     imageSrc: "/assets/cardioVascular/advabond-1.png",
@@ -18,7 +18,7 @@ const slidesData = [
     description3: "",
   },
   {
-    src: "/advalene",
+    src: "/advalene-cv",
     title: "ADVALENE",
     para: "Monofilament Polypropylene Blue",
     imageSrc: "/assets/cardioVascular/advalene-1.png",
@@ -27,7 +27,7 @@ const slidesData = [
     description3: "",
   },
   {
-    src: "/advasteel",
+    src: "/advasteel-cv",
     title: "ADVASTEEL",
     para: "Monofilament stainless Steel 316 LVM",
     imageSrc: "/assets/cardioVascular/advasteel-1.png",
@@ -54,7 +54,7 @@ const slidesData = [
     description3: "",
   },
   {
-    src: "#",
+    src: "/ligation-solutions",
     title: "ADVACLIP",
     para: "Titanium Ligation Clip",
     imageSrc: "/assets/cardioVascular/advaclip-1.png",
@@ -67,51 +67,55 @@ const slidesData = [
 const Products = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const fadeOutAndUpdateIndex = () => {
-    // Fade out the current text
-    gsap.to(".product-text", {
+const fadeOutAndUpdateIndex = (direction) => {
+  // Fade out the current text
+  gsap.to(".product-text", {
+    opacity: 0,
+    duration: 0.3,
+    ease: "power3.out",
+    stagger: 0.01,
+    onComplete: () => {
+      setCurrentIndex((prev) => {
+        if (direction === "next") {
+          return prev === slidesData.length - 1 ? 0 : prev + 1;
+        } else if (direction === "prev") {
+          return prev === 0 ? slidesData.length - 1 : prev - 1;
+        }
+      });
+    },
+  });
+};
+
+const fadeInNewText = () => {
+  const productText = document.querySelectorAll(".product-text");
+  gsap.fromTo(
+    productText,
+    {
       opacity: 0,
-      // y: -30,
-      duration: 0.3,
+      y: 50,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1,
       ease: "power3.out",
-      stagger: 0.01,
-      onComplete: () => {
-        // After fade-out animation completes, update the index
-        setCurrentIndex((prev) => (prev === slidesData.length - 1 ? 0 : prev + 1));
-      }
-    });
-  };
+      stagger: 0.05,
+    }
+  );
+};
 
-  const fadeInNewText = () => {
-    // Fade in the new text
-    const productText = document.querySelectorAll(".product-text");
-    gsap.fromTo(
-      productText,
-      {
-        opacity: 0,
-        y: 50,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power3.out",
-        stagger: 0.05,
-      }
-    );
-  };
+useEffect(() => {
+  fadeInNewText();
+}, [currentIndex]);
 
-  useEffect(() => {
-    fadeInNewText();
-  }, [currentIndex]);
+const handlePrev = () => {
+  fadeOutAndUpdateIndex("prev");
+};
 
-  const handlePrev = () => {
-    fadeOutAndUpdateIndex();
-  };
+const handleNext = () => {
+  fadeOutAndUpdateIndex("next");
+};
 
-  const handleNext = () => {
-    fadeOutAndUpdateIndex();
-  };
 
   const radius = 19;
   const totalSlides = slidesData.length;
@@ -173,7 +177,7 @@ const Products = () => {
         </div>
       </div>
       <div
-        className="px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-[20%] right-[23%] mobile:top-[45%] mobile:right-auto mobile:left-[62%] translate-x-[-65%] mobile:bottom-auto tablet:top-[10%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer mobile:block group hover:text-white bg-white/50 tablet:right-0 tablet:bottom-auto"
+        className="px-[1.6vw] py-[1.6vw]  absolute z-[5] bottom-[20%] right-[23%] mobile:top-[45%] mobile:right-auto mobile:left-[62%] translate-x-[-65%] mobile:bottom-auto tablet:top-[10%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer mobile:block group hover:text-white bg-white/50 tablet:right-0 tablet:bottom-auto"
         onClick={handleNext}
       >
         <span className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 transition-all duration-300`} />
@@ -188,7 +192,7 @@ const Products = () => {
       </div>
 
       <div
-        className="px-[1.6vw] py-[1.6vw] top-[20%] right-[25%] absolute z-[5] mobile:bottom-auto mobile:right-auto mobile:top-[45%] mobile:left-[39%] translate-x-[-38%] tablet:top-[10%] bg-white/50 overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer mobile:block group hover:text-white"
+        className="px-[1.6vw] py-[1.6vw] top-[20%] right-[25%] absolute z-[999] mobile:bottom-auto mobile:right-auto mobile:top-[45%] mobile:left-[39%] translate-x-[-38%] tablet:top-[10%] bg-white/50 overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer mobile:block group hover:text-white"
         onClick={handlePrev}
       >
         <span className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 transition-all duration-300`} />

@@ -63,7 +63,7 @@ export default function hernia() {
               <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"} width={"35%"}/>
               <Product />
 
-              <Portfolio currentlink={"/hernia"} />
+              <Portfolio currentlink={"/hernia"} sectionheading={"Our Advanced Therapies"}/>
             </main>
           </Layout>
           <Media greaterThan='tablet'>

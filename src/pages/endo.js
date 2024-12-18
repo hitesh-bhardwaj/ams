@@ -58,7 +58,7 @@ export default function endo() {
           <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"35%"} />
           <Product />
           <OtherProduct />
-          <Portfolio currentlink={"/endo"} />
+          <Portfolio currentlink={"/endo"} sectionheading={"Our Advanced Therapies"}/>
         </main>
       </Layout>
       <Media greaterThan='tablet'>

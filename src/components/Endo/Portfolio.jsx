@@ -2,15 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Portfolio = ({ currentlink }) => {
+const Portfolio = ({ currentlink , sectionheading }) => {
 
   const filteredContent = content.filter((item) => item.link !== currentlink).slice(0, 4);
 
   return (
     <section id="portfolio" className="pb-[8%]">
       <div className="flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] mobile:pt-[5%] tablet:px-[4%] mobile:px-0 overflow-hidden">
-        <h2 data-para-anim className="title-2 aeonik mobile:text-center">
-          Our Advanced Portfolio
+        <h2 data-para-anim className="title-2 aeonik capitalize mobile:text-center">
+         {sectionheading}
         </h2>
         <div className="items-center justify-between grid grid-cols-4 gap-[3vw] mt-[7vw] portfolio-card-container tablet:grid-cols-2 mobile:grid-cols-1 mobile:gap-8">
           {filteredContent.map((item, index) => (

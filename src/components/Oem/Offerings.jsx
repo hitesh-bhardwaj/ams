@@ -6,13 +6,27 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 import gsap from 'gsap';
-
-import KnotlessSpecifications from './KnotlessSpecifications';
+import Modal from './Modal';
+import { useLenis } from "lenis/react";
 
 export default function Offerings() {
-    useEffect(() => {
-    if(globalThis.innerWidth > 1024) {
+    const [isOpen, setIsOpen] = useState(false);
+    // const [card, setCard] = useState();
+      const lenis = useLenis();
     
+    const handleOpenModal = (id) => {
+        setIsOpen(true);
+        // setCard(id);
+        lenis && lenis.stop();
+        document.body.style.overflow = "hidden";
+      };
+      const handleCloseModal = () => {
+        setIsOpen(false);
+        lenis && lenis.start();
+        document.body.style.overflow = "";
+      };
+    useEffect(() => {
+    if(globalThis.innerWidth > 1024) { 
         const navbarLinks = document.querySelectorAll(".oemcard-button");
         const cardContainer = document.querySelector(".card-container");
         const focSections = document.querySelectorAll(".card-item");
@@ -395,7 +409,7 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%]'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal'>
+                                            <button   onClick={handleOpenModal}  className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -404,14 +418,13 @@ export default function Offerings() {
                                                     <path d="M3.01701 48.0165L48.0168 3.01677M48.0168 3.01677L48.0795 46.9876M48.0168 3.01677L4.04596 2.95404" stroke="currentColor" strokeWidth="5" strokeLinecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </button>
-                                            {/* <KnotlessSpecifications/> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <Modal isOpen={isOpen} onClose={handleCloseModal} cardId={1}/>
                 </div>
             </section>
         </>
@@ -444,3 +457,6 @@ const smallContent = [
 const swiperStyle = {
     paddingBottom: "5vw"
 }
+
+  
+  

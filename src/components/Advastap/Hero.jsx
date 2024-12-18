@@ -1,25 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import Image from 'next/image';
-import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(useGSAP, ScrollTrigger);
-
 
 const Hero = () => {
-  paraAnim();
-
- 
   useGSAP(() => {
     if(globalThis.innerWidth>1024){
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".hero-container",
-      },
-    });
-   
+    const tl = gsap.timeline(); 
     tl.fromTo(
       ".hero-img",
       {
@@ -27,8 +15,8 @@ const Hero = () => {
       },
       {
        xPercent:10,
-        duration: 1,
-        delay: 0.1,
+        duration: 1.5,
+        delay: 0.2,
         ease: "power3.out",
       }
     );
@@ -62,8 +50,8 @@ const Hero = () => {
               </span>
             </h1>
             <div className='flex items-center mt-[2vw]'>
-            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.4em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[20%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full mobile:my-[7vw] flex items-center justify-start mobile:text-center mobile:justify-center tablet:justify-center tablet:ml-[20%]">
-            Hemorrhoid {"   "} stapler
+            <p data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] tracking-[.4em]  mobile:text-[4.6vw] mobile:tracking-widest mobile:ml-[20%]  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full mobile:my-[7vw] mobile:text-center mobile:justify-center tablet:justify-center tablet:ml-[20%]">
+            Hemorrhoid stapler
                 </p>
               <span className="w-[5.2vw] h-[1px] bg-white line mobile:hidden tablet:hidden "></span>
               </div>

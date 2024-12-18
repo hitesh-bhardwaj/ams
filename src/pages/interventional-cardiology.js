@@ -11,6 +11,7 @@ import { fadeUp } from "@/components/gsapAnimations";
 import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Hero from "@/components/IC/Hero";
+import ICProducts from "@/components/IC/ICProducts";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,12 +60,11 @@ export default function ic() {
           />
           <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"} width={"35%"} />
           <IcCards />
-
-          <Portfolio currentlink={"/interventional-cardiology"} />
+          <Portfolio currentlink={"/interventional-cardiology"} sectionheading={"Our Advanced Therapies"}/>
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        {/* <Pixifinal/> */}
+        <Pixifinal/>
       </Media>
     </>
   );

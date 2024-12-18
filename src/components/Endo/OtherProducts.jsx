@@ -56,7 +56,7 @@ const OtherProduct = () => {
       imgSrc: "/assets/endo/other-product4.png",
       heading: "ADVACLIP",
       text: 'Titanium Ligation Clip',
-      link: "/#"
+      link: "/ligation-solutions"
     },    
   ];
 

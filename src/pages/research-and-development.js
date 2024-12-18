@@ -51,28 +51,30 @@ export default function rnd() {
 
   return (
     <>
-
-      <Layout>
-        <main>
-          <Hero
-            title={hero.title}
-            src={hero.src}
-            content={hero.content}
-            className="hidden"
-            titleColor={true}
-            mode={"dark"}
-            titleWidth={"w-[110%]"}
-            paraWidth={"max-w-[50vw]"}
-          />
-          <Genesis content={content} />
-          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"35%"} />
-          <Innovation />
-          <Portfolio />
-        </main>
-      </Layout>
-      <Media greaterThan='tablet'>
-        <Pixifinal />
-      </Media>
+      
+          <Layout>
+            <main>
+              <Hero
+                title={hero.title}
+                src={hero.src}
+                content={hero.content}
+                className="hidden"
+                titleColor={true}
+                mode={"dark"}
+                titleWidth={"w-[110%]"}
+                paraWidth={"max-w-[50vw]"}
+              />
+              <Genesis content={content} />
+              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"35%"}/>
+              <Innovation/>
+              <Portfolio sectionheading={"Our Advanced Portfolio"}/>
+            </main>
+          </Layout>
+          <Media greaterThan='tablet'>
+          <Pixifinal/>
+          </Media>
+          
+       
     </>
   );
 }

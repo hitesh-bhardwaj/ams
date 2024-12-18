@@ -31,7 +31,7 @@ const woundClosure = () => {
           />
           <SutureCarouselFirst />
           <SutureCarouselSecond />
-          <Portfolio currentlink={"/wound-care"} />
+          <Portfolio currentlink={"/wound-care"} sectionheading={"Our Advanced Portfolio"}/>
         </main>
         
       </Layout>

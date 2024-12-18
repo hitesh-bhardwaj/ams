@@ -67,8 +67,7 @@ data-para-anim className='title-2 aeonik mobile:text-center tablet:text-center'>
             <div className='flex items-center justify-evenly px-[5vw] w-full feature-card-container mobile:flex-col tablet:flex-wrap tablet:justify-center tablet:items-start mobile:gap-[20vw] mobile:mt-[15vw]'>
               <FeatureCard src={card1.src} title={card1.title} />
               <FeatureCard src={card2.src} title={card2.title} />
-              <FeatureCard src={card3.src} title={card3.title} />
-             
+              <FeatureCard src={card3.src} title={card3.title} /> 
             </div>
           </div>
         </div>
