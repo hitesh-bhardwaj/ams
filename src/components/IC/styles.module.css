@@ -1,4 +1,11 @@
+.icProductSwiper :global(.swiper-slide){
+    width: 19vw !important;
+    height:28vw !important;
+    margin-right: 2vw !important;
+}
 .icProductSwiper :global(.swiper-slide-active){
-    width: 35vw !important;
-    height: 40vw !important;
+    width: 47vw !important;
+    height:43vw !important;
+    margin-left: 1vw !important;
+    margin-right: 8vw !important;
 }
