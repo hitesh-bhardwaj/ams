@@ -3,9 +3,9 @@ import Insights from "@/components/Blogs/Insights";
 import More from "@/components/Blogs/More";
 import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
+import BgVideo from "@/components/Layout/BgVideo";
 import Genesis from "@/components/layoutComponents/Genesis";
 import { Media } from "@/components/media";
-import Pixifinal from "@/components/Pixifinal";
 
 const blogs = () => {
     const content = {
@@ -42,11 +42,8 @@ const blogs = () => {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-           <Pixifinal/>
-
-
+        <BgVideo videoSrc={"/assets/bg-videos/original-bg.mp4"} />
       </Media>
-     
     </>
   );
 };

@@ -8,10 +8,10 @@ import IcCards from "@/components/IC/IcCards";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
 import { fadeUp } from "@/components/gsapAnimations";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Hero from "@/components/IC/Hero";
 import ICProducts from "@/components/IC/ICProducts";
+import BgVideo from "@/components/Layout/BgVideo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,7 +64,7 @@ export default function ic() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal/>
+        <BgVideo videoSrc={"/assets/bg-videos/interventional-cardiology.mp4"} />
       </Media>
     </>
   );

@@ -7,9 +7,9 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
+import BgVideo from "@/components/Layout/BgVideo";
 
 const EdgeCard = {
   card1: {
@@ -31,7 +31,7 @@ const EdgeCard = {
 };
 
 const featureData = [
-   {
+  {
     src: "/assets/advacryl/features1.png",
     title: " Excellent strength over the critical wound healing period",
   },
@@ -43,7 +43,7 @@ const featureData = [
     src: "/assets/advacryl/features3.png",
     title: " Excellent handling",
   },
- {
+  {
     src: "/assets/advacryl/features4.png",
     title: "Excellent knot security",
   },
@@ -91,43 +91,39 @@ const advacryl = () => {
 
   return (
     <>
-    
-          <Layout>
-            <main>
-              <Hero 
-                heading={"Advacryl"}
-                className="text-[#855EA6]"
-                tagline={"BRAIDED COATED POLYGLACTIN 910 SURGICAL SUTURE"}
-                para1={
-                  "Consistent performance for confidence in a variety of soft tissue approximation"
-                }
-                src={"/assets/advacryl/advacryl-hero.png"}
-                bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
-                para2={
-                  "With great versatility comes the confidence to meet specific needs"
-                }
-              />
-              <Information info={"ADVACRYL suture is braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. Braided ADVACRYL suture is coated with a mixture composed of Poly (Glycolide-co-lactide) (Glacomer 37) and calcium stearate. The suture is colored violet to increase visibility and is also available undyed."}/>
-              <Edge
-                sectionheading={" The ADVACRYL Edge"}
-                card1={EdgeCard.card1}
-                card2={EdgeCard.card2}
-                card3={EdgeCard.card3}
-              />
-              <Features features={featureData}
-              />
-              <ProductDescription  data={cardData}/>
-              <NextGeneration />
-              <Uncover />
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-            <Pixifinal/>
 
-
-          </Media>
-        
-        
+      <Layout>
+        <main>
+          <Hero
+            heading={"Advacryl"}
+            className="text-[#855EA6]"
+            tagline={"BRAIDED COATED POLYGLACTIN 910 SURGICAL SUTURE"}
+            para1={
+              "Consistent performance for confidence in a variety of soft tissue approximation"
+            }
+            src={"/assets/advacryl/advacryl-hero.png"}
+            bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
+            para2={
+              "With great versatility comes the confidence to meet specific needs"
+            }
+          />
+          <Information info={"ADVACRYL suture is braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. Braided ADVACRYL suture is coated with a mixture composed of Poly (Glycolide-co-lactide) (Glacomer 37) and calcium stearate. The suture is colored violet to increase visibility and is also available undyed."} />
+          <Edge
+            sectionheading={" The ADVACRYL Edge"}
+            card1={EdgeCard.card1}
+            card2={EdgeCard.card2}
+            card3={EdgeCard.card3}
+          />
+          <Features features={featureData}
+          />
+          <ProductDescription data={cardData} />
+          <NextGeneration />
+          <Uncover />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <BgVideo videoSrc={"/assets/bg-videos/advacryl.mp4"} />
+      </Media>
     </>
   );
 };

@@ -6,8 +6,8 @@ import Hero from "@/components/Advagrip/Hero";
 import TricCut from "@/components/Advagrip/TricCut";
 import KeyFeatures from "@/components/Advagrip/KeyFeatures";
 import Paradigm from "@/components/Advagrip/Paradigm";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import BgVideo from "@/components/Layout/BgVideo";
 
 const EdgeCard = {
   card1: {
@@ -38,42 +38,38 @@ const FeatureCard = {
     src: "/assets/advagrip/advagrip-feature-3.png",
     title: "Maintains consistent tension across the wound.",
   },
-  
+
 };
 
 const advaGrip = () => {
-   return (
+  return (
     <>
-         <Layout>
-            <main>
-                <Hero/>
-                <TricCut/>
-                {/* <AdvagripSpecifications/> */}
-                 <Edge2 visibility={"!hidden"} 
-                   className={"hidden"}
-                sectionheading={"The ADVAGRIP Edge"}
-                card1={EdgeCard.card1}
-                card2={EdgeCard.card2}
-                card3={EdgeCard.card3}
-              />
-              <KeyFeatures
-                card1={FeatureCard.card1}
-                card2={FeatureCard.card2}
-                card3={FeatureCard.card3}
-               
-              />
-              <Paradigm/>
-             
-              <NextGeneration />
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-          <Pixifinal/>
+      <Layout>
+        <main>
+          <Hero />
+          <TricCut />
+          {/* <AdvagripSpecifications/> */}
+          <Edge2 visibility={"!hidden"}
+            className={"hidden"}
+            sectionheading={"The ADVAGRIP Edge"}
+            card1={EdgeCard.card1}
+            card2={EdgeCard.card2}
+            card3={EdgeCard.card3}
+          />
+          <KeyFeatures
+            card1={FeatureCard.card1}
+            card2={FeatureCard.card2}
+            card3={FeatureCard.card3}
 
+          />
+          <Paradigm />
 
-          </Media>
-          
-       
+          <NextGeneration />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <BgVideo videoSrc={"/assets/bg-videos/knotless.mp4"} />
+      </Media>
     </>
   );
 };

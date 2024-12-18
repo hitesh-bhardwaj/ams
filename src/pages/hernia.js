@@ -7,9 +7,9 @@ import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import React from "react";
 import Layout from "@/components/Layout";
 import { fadeUp } from "@/components/gsapAnimations";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Hero from "@/components/Hernia/Hero";
+import BgVideo from "@/components/Layout/BgVideo";
 
 export default function hernia() {
   const content = {
@@ -30,47 +30,45 @@ export default function hernia() {
     {
       title: "A Partner in Your Success",
       src: "/assets/hernia/portfolio-1.png",
-      srcsmall:"/assets/hernia/small1.png",
+      srcsmall: "/assets/hernia/small1.png",
       heading: "Advancing Patient Recovery",
       para: "Our ADVAMESH products are designed to enhance patient recovery and comfort. By offering exceptional support and promoting natural tissue integration, our meshes minimize bioreactivity and reduce recurrence rates, ensuring a smoother recovery process.",
     },
     {
       src: "/assets/hernia/portfolio-2.png",
-      srcsmall:"/assets/hernia/small2.png",
+      srcsmall: "/assets/hernia/small2.png",
       heading: "Commitment to Excellence",
       para: "AMS is dedicated to maintaining the highest standards of quality and innovation. Our rigorous quality assurance protocols guarantee that every ADVAMESH product delivers superior performance and reliability. We continuously strive to meet the evolving needs of hernia repair through ongoing research and collaboration with leading surgeons.",
     },
     {
       src: "/assets/hernia/portfolio-3.png",
-      srcsmall:"/assets/hernia/small3.png",
+      srcsmall: "/assets/hernia/small3.png",
       heading: "Empowering Surgical Success",
       para: "AMS partners with healthcare professionals to achieve surgical success. Our comprehensive range of ADVAMESH products is supported by extensive training and resources, enabling surgeons to perform hernia repairs with confidence and precision. We provide the necessary tools and support to enhance surgical practice and improve patient care.",
     },
   ];
- fadeUp()
+  fadeUp()
 
   return (
     <>
-      
-          <Layout>
-            <main>
-             <Hero/>
-              <Genesis
-                content={content}
-                sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}
-                bParaWidth={"w-[60%]"}
-              />
-              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#FFFFFF]"} width={"35%"}/>
-              <Product />
 
-              <Portfolio currentlink={"/hernia"} sectionheading={"Our Advanced Therapies"}/>
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-            <Pixifinal/>
-          </Media>
-        
-        
+      <Layout>
+        <main>
+          <Hero />
+          <Genesis
+            content={content}
+            sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}
+            bParaWidth={"w-[60%]"}
+          />
+          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"35%"} />
+          <Product />
+
+          <Portfolio currentlink={"/hernia"} sectionheading={"Our Advanced Therapies"}/>
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <BgVideo videoSrc={"/assets/bg-videos/endo.mp4"} />
+      </Media>
     </>
   );
 }

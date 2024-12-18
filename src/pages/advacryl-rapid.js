@@ -7,9 +7,9 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
+import BgVideo from "@/components/Layout/BgVideo";
 
 const EdgeCard = {
   card1: {
@@ -30,19 +30,19 @@ const EdgeCard = {
   },
 };
 const featureData = [
-   {
+  {
     src: "/assets/advacryl-rapid/feature-card1.png",
     title: "Excellent strength over the critical wound healing period",
   },
-   {
+  {
     src: "/assets/advacryl-rapid/feature-card2.png",
     title: "Tighter braided construction",
   },
-   {
+  {
     src: "/assets/advacryl-rapid/feature-card3.png",
     title: "Excellent knot security",
   },
-   {
+  {
     src: "/assets/advacryl-rapid/feature-card4.png",
     title: "Excellent handling",
   },
@@ -61,23 +61,23 @@ const cardData = [
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 5-0",
-    svg:"/assets/advacryl-rapid/sizes.svg"
+    svg: "/assets/advacryl-rapid/sizes.svg"
   },
   {
     title: "Coating",
     description:
       "Poly (glycolide-co-lactide) (Glacomer 37)",
-      svg:"/assets/advacryl-rapid/coating.svg"
+    svg: "/assets/advacryl-rapid/coating.svg"
   },
   {
     title: "Tensile Strength",
     description: "~42%  |  5 Days <br/>  ~ 0%   |  10-14 Days",
-    svg:"/assets/advacryl-rapid/tensile.svg"
+    svg: "/assets/advacryl-rapid/tensile.svg"
   },
   {
     title: "Absorption Profile",
     description: "Essentially complete upto 42 days",
-    svg:"/assets/advacryl-rapid/absorption.svg"
+    svg: "/assets/advacryl-rapid/absorption.svg"
   },
 ];
 const advacrylrapid = () => {
@@ -85,43 +85,39 @@ const advacrylrapid = () => {
 
   return (
     <>
-          <Layout>
-            <main>
-              <Hero 
-              
-                heading={"ADVAcryl Rapid"}
-                className="text-[#E41F30]"
-                tagline={" BRAIDED COATED POLYGLACTIN 910 SURGICAL SUTURE"}
-                para1={
-                  "  Accelerated performance for confidence in delicate tissue approximation"
-                }
-                src={"/assets/advacryl-rapid/advacryl-rapid-hero.png"}
-                bgimg={"/assets/advacryl-rapid/advacryl-rapid-hero-bg.png"}
-                para2={
-                  "Swift Confidence for Superior Predictability"
-                }
-              />
-              <Information info={" ADVACRYL RAPID is a braided synthetic absorbable suture made of 90% glycolide and 10% L-lactide. ADVACRYL RAPID in comparison to ADVACRYL has a rapid loss of strength and absorption rate. The characteristic rapid loss of strength is achieved by use of a polymer material with a lower molecular weight than regular ADVACRYL (polyglactin 910) suture."}/>
-              <Edge
-                sectionheading={" The ADVACRYL RAPID Edge"}
-                card1={EdgeCard.card1}
-                card2={EdgeCard.card2}
-                card3={EdgeCard.card3}
-              />
-              <Features features={featureData}
-              />
-              <ProductDescription data={cardData}/>
-              <NextGeneration />
-              <Uncover />
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-          <Pixifinal/>
+      <Layout>
+        <main>
+          <Hero
 
-
-          </Media>
-          
-        
+            heading={"ADVAcryl Rapid"}
+            className="text-[#E41F30]"
+            tagline={" BRAIDED COATED POLYGLACTIN 910 SURGICAL SUTURE"}
+            para1={
+              "  Accelerated performance for confidence in delicate tissue approximation"
+            }
+            src={"/assets/advacryl-rapid/advacryl-rapid-hero.png"}
+            bgimg={"/assets/advacryl-rapid/advacryl-rapid-hero-bg.png"}
+            para2={
+              "Swift Confidence for Superior Predictability"
+            }
+          />
+          <Information info={" ADVACRYL RAPID is a braided synthetic absorbable suture made of 90% glycolide and 10% L-lactide. ADVACRYL RAPID in comparison to ADVACRYL has a rapid loss of strength and absorption rate. The characteristic rapid loss of strength is achieved by use of a polymer material with a lower molecular weight than regular ADVACRYL (polyglactin 910) suture."} />
+          <Edge
+            sectionheading={" The ADVACRYL RAPID Edge"}
+            card1={EdgeCard.card1}
+            card2={EdgeCard.card2}
+            card3={EdgeCard.card3}
+          />
+          <Features features={featureData}
+          />
+          <ProductDescription data={cardData} />
+          <NextGeneration />
+          <Uncover />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <BgVideo videoSrc={"/assets/bg-videos/advarapid.mp4"} />
+      </Media>
     </>
   );
 };

@@ -1,12 +1,11 @@
 import Portfolio from "@/components/Endo/Portfolio";
 
 import Layout from "@/components/Layout";
+import BgVideo from "@/components/Layout/BgVideo";
 import Genesis from "@/components/layoutComponents/Genesis";
 import { Media } from "@/components/media";
-import Pixifinal from "@/components/Pixifinal";
 import Hero from "@/components/Woundclosure/Hero";
 import SutureCarouselFirst from "@/components/Woundclosure/SutureCarouselFirst";
-import SutureCarousel from "@/components/Woundclosure/SutureCarouselFirst";
 import SutureCarouselSecond from "@/components/Woundclosure/SutureCarouselSecond";
 import React from "react";
 
@@ -33,11 +32,10 @@ const woundClosure = () => {
           <SutureCarouselSecond />
           <Portfolio currentlink={"/wound-care"} sectionheading={"Our Advanced Portfolio"}/>
         </main>
-        
       </Layout>
       <Media greaterThan='tablet'>
-            <Pixifinal/>
-          </Media>
+        <BgVideo videoSrc={"/assets/bg-videos/original-bg.mp4"} />
+      </Media>
     </>
   );
 };

@@ -7,18 +7,17 @@ import Layout from '@/components/Layout'
 import React from 'react'
 
 const contact = () => {
-    
+
   return (
     <>
-    <Layout>
+      <Layout>
         <main>
-          <Hero/>
-              <ContactDetail/>
-              <ContactList/>
-              <Locations/>
+          <Hero />
+          <ContactDetail />
+          <ContactList />
+          <Locations />
         </main>
-    </Layout>
-      
+      </Layout>
     </>
   )
 }

@@ -6,8 +6,8 @@ import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
 import { fadeUp } from "@/components/gsapAnimations";
 import Innovation from "@/components/Rnd/Innovation";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
+import BgVideo from "@/components/Layout/BgVideo";
 
 
 export default function rnd() {
@@ -71,7 +71,7 @@ export default function rnd() {
             </main>
           </Layout>
           <Media greaterThan='tablet'>
-          <Pixifinal/>
+          <BgVideo videoSrc={"/assets/bg-videos/endo.mp4"}/>
           </Media>
           
        

@@ -6,10 +6,10 @@ import Genesis from "@/components/layoutComponents/Genesis";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Layout from "@/components/Layout";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Hero from "@/components/Endo/Hero";
 import OtherProduct from "@/components/Endo/OtherProducts";
+import BgVideo from "@/components/Layout/BgVideo";
 
 
 export default function endo() {
@@ -62,7 +62,7 @@ export default function endo() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal/>
+        <BgVideo videoSrc={"/assets/bg-videos/endo.mp4"} />
       </Media>
     </>
   );

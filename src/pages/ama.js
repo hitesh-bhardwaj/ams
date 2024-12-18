@@ -8,9 +8,9 @@ import Discover from "@/components/Ama/Discover";
 import CardsCarousel from "@/components/Ama/CardsCarousel";
 import Layout from "@/components/Layout";
 import { fadeUp } from "@/components/gsapAnimations";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import CardiacCare from "@/components/Ama/CardiacCare";
+import BgVideo from "@/components/Layout/BgVideo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,54 +33,50 @@ export default function ama() {
     {
       title: "Advancing the way we learn",
       src: "/assets/ama/ama-carousel-1.png",
-      srcsmall:"/assets/ama/small1.png",
+      srcsmall: "/assets/ama/small1.png",
       heading: "Personalized and insightful training:",
       para: "AMA’s structured courses span basic to advanced levels, covering cognitive skill development, advanced minimally invasive surgery, complex interventional cardiology and optimizing revascularization techniques.",
     },
     {
       src: "/assets/ama/ama-carousel-3.png",
-      srcsmall:"/assets/ama/small2.png",
+      srcsmall: "/assets/ama/small2.png",
       heading: "Extensive Research & Science Library",
       para: "With accessible learning anytime, anywhere—via classrooms, auditoriums, or online platforms—participants earn certifications, refine skills, and gain access to unparalleled resources, setting a new standard in medical education.",
     },
     {
       src: "/assets/ama/ama-carousel-2.png",
-      srcsmall:"/assets/ama/small3.png",
+      srcsmall: "/assets/ama/small3.png",
       heading: "State of the-Art Hands-On Training Centers ",
       para: "Our world-class facilities offer hands-on training with life-like models and ex-vivo and in-vivo tissue, bridging theory and real-world application. Insight-driven modules, enriched with live procedure observations and collaborative discussions, deliver an unmatched immersive experience.",
     },
-  
+
   ];
 
-fadeUp()
+  fadeUp()
 
   return (
     <>
-      
-          <Layout>
-            <main>
-              <Hero
-                title={hero.title}
-                src={hero.src}
-                content={hero.content}
-                className="hidden"
-                paraWidth={"max-w-[38vw]"}
-                mode={"dark"}
-              />
-              <Genesis content={content} />
-              <CardiacCare/>
-              <PortfolioSwiper slidesData={slidesData}  textclass={"text-[#2A2A2A]"} width={"35%"}/>
-              <CardsCarousel />
-              <Discover />
-            </main>
-          </Layout>
-          <Media greaterThan="tablet">
-           <Pixifinal/>
 
-
-          </Media>
-         
-       
+      <Layout>
+        <main>
+          <Hero
+            title={hero.title}
+            src={hero.src}
+            content={hero.content}
+            className="hidden"
+            paraWidth={"max-w-[38vw]"}
+            mode={"dark"}
+          />
+          <Genesis content={content} />
+          <CardiacCare />
+          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"} width={"35%"} />
+          <CardsCarousel />
+          <Discover />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <BgVideo videoSrc={"/assets/bg-videos/endo.mp4"} />
+      </Media>
     </>
   );
 }

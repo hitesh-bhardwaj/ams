@@ -5,8 +5,8 @@ import Hero from '@/components/Advaglide/Hero'
 import Sirolimus from '@/components/Advaglide/Sirolimus'
 import { fadeUp } from '@/components/gsapAnimations'
 import Layout from '@/components/Layout'
+import BgVideo from '@/components/Layout/BgVideo'
 import { Media } from '@/components/media'
-import Pixifinal from '@/components/Pixifinal'
 import React from 'react'
 
 const advaglide = () => {
@@ -24,12 +24,8 @@ const advaglide = () => {
         </main>
     </Layout>
     <Media greaterThan='tablet'>
-           <Pixifinal/>
-
-
-    </Media>
-   
-      
+        <BgVideo videoSrc={"/assets/bg-videos/original-bg.mp4"} />
+      </Media>
     </>
   )
 }

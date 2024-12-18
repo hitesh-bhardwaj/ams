@@ -9,8 +9,8 @@ import Portfolio from "@/components/Endo/Portfolio";
 import ProductCarousel from "@/components/CardioVascular/ProductCarousel";
 import Products from "@/components/CardioVascular/Products";
 import { Media } from "@/components/media";
-import Pixifinal from "@/components/Pixifinal";
 import Hero from "@/components/CardioVascular/Hero";
+import BgVideo from "@/components/Layout/BgVideo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,7 +47,7 @@ export default function cardiovascular() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal/>
+        <BgVideo videoSrc={"/assets/bg-videos/interventional-cardiology.mp4"} />
       </Media>
     </>
   );

@@ -5,8 +5,8 @@ import FormOem from "@/components/Oem/FormOem";
 import Layout from "@/components/Layout";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
-import Pixifinal from "@/components/Pixifinal";
 import Image from "next/image";
+import BgVideo from "@/components/Layout/BgVideo";
 
 export default function oem() {
 
@@ -51,7 +51,7 @@ export default function oem() {
         </main>
       </Layout>
       <Media greaterThan='tablet'>
-        <Pixifinal/>
+        <BgVideo videoSrc={"/assets/bg-videos/endo.mp4"} />
       </Media>
     </>
   );

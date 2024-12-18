@@ -7,9 +7,9 @@ import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
 import { fadeUp } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
-import Pixifinal from "@/components/Pixifinal";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
+import BgVideo from "@/components/Layout/BgVideo";
 
 const EdgeCard = {
   card1: {
@@ -51,37 +51,37 @@ const cardData = [
   {
     title: "Composition",
     description: "Polypropylene",
-    svg:"/assets/advalene/composition.svg"
+    svg: "/assets/advalene/composition.svg"
   },
   {
     title: "Colour",
     description: "Blue",
-    svg:"/assets/advalene/color.svg"
+    svg: "/assets/advalene/color.svg"
 
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 5-0",
-    svg:"/assets/advalene/sizes.svg"
+    svg: "/assets/advalene/sizes.svg"
 
   },
   {
     title: "Coating",
     description:
       "None",
-    svg:"/assets/advalene/coating.svg"
+    svg: "/assets/advalene/coating.svg"
 
   },
   {
     title: "Tensile Strength",
     description: "Permanent",
-    svg:"/assets/advalene/tensile.svg"
+    svg: "/assets/advalene/tensile.svg"
 
   },
   {
     title: "Absorption Profile",
     description: "Non Absorbable",
-    svg:"/assets/advalene/absorption.svg"
+    svg: "/assets/advalene/absorption.svg"
   },
 ];
 const advalene = () => {
@@ -89,41 +89,37 @@ const advalene = () => {
 
   return (
     <>
-      
-          <Layout>
-            <main>
-              <Hero
-                heading={"Advalene"}
-                className="text-[#1680B7]"
-                tagline={" Monofilament Polypropylene Blue"}
-                para1={
-                  "  Reliable performance for confidence in contaminated wound closure"
-                }
-                src={"/assets/advalene/advalene-hero.png"}
-                bgimg={"/assets/advalene/advalene-hero-bg.png"}
-                para2={"Steady performance for superior confidence"}
-              />
-              <Information info={"ADVALENE suture is a monofilament non-absorbable sterile surgical suture composed of an isotactic crystalline stereoisomer of polypropylene, a synthetic linear polyolefin. ADVALENE suture is dyed with Phthalocyanine Blue to enhance visibility in tissue. ADVALENE suture is not absorbed nor is subjected to degradation or weakening by the action of tissue enzymes. Due to its relative biological inertness it is recommended for use where the least possible suture reaction is desired."}/>
-              <Edge
-                sectionheading={"The ADVALENE Edge"}
-                card1={EdgeCard.card1}
-                card2={EdgeCard.card2}
-                card3={EdgeCard.card3}
-              />
-              <Features features={featureData}
-              />
-              <ProductDescription  data={cardData}/>
-              <NextGeneration />
-              <Uncover />
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-          <Pixifinal/>
 
-
-          </Media>
-          
-       
+      <Layout>
+        <main>
+          <Hero
+            heading={"Advalene"}
+            className="text-[#1680B7]"
+            tagline={" Monofilament Polypropylene Blue"}
+            para1={
+              "  Reliable performance for confidence in contaminated wound closure"
+            }
+            src={"/assets/advalene/advalene-hero.png"}
+            bgimg={"/assets/advalene/advalene-hero-bg.png"}
+            para2={"Steady performance for superior confidence"}
+          />
+          <Information info={"ADVALENE suture is a monofilament non-absorbable sterile surgical suture composed of an isotactic crystalline stereoisomer of polypropylene, a synthetic linear polyolefin. ADVALENE suture is dyed with Phthalocyanine Blue to enhance visibility in tissue. ADVALENE suture is not absorbed nor is subjected to degradation or weakening by the action of tissue enzymes. Due to its relative biological inertness it is recommended for use where the least possible suture reaction is desired."} />
+          <Edge
+            sectionheading={"The ADVALENE Edge"}
+            card1={EdgeCard.card1}
+            card2={EdgeCard.card2}
+            card3={EdgeCard.card3}
+          />
+          <Features features={featureData}
+          />
+          <ProductDescription data={cardData} />
+          <NextGeneration />
+          <Uncover />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <BgVideo videoSrc={"/assets/bg-videos/advalene.mp4"} />
+      </Media>
     </>
   );
 };
