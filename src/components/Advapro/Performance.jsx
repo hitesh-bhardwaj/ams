@@ -1,13 +1,7 @@
 import React,{useEffect} from "react";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { fadeUp } from "../gsapAnimations";
-gsap.registerPlugin(ScrollTrigger);
 
 const Performance = () => {
-  fadeUp();
-
   return (
     <>
       <section

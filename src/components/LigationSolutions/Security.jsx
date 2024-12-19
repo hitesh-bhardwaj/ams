@@ -17,13 +17,13 @@ const Security = () => {
             
            </div>
          </div>
-         <div className="absolute  top-0 left-0 z-[-1]">
+         <div className="absolute  top-0 left-0 z-[-1] ">
                <Image
                  src="/assets/ligation/security-bg.png"
                 width={1920}
                 height={283}
                  alt="Security bg"
-                 className="object-cover"
+                 className="object-cover mobile:h-[25vh] tablet:h-[20vh]"
                />
              </div>
        </section>

@@ -1,16 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import Image from "next/image";
-import { lineAnim, paraAnim } from "../gsapAnimations";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
-  paraAnim();
-  lineAnim();
-
   return (
     <section className="" id="advaglideHero">
       <div className="w-screen h-screen relative overflow-hidden mobile:h-screen tablet:h-[70vh]">
@@ -33,17 +25,17 @@ const Hero = () => {
               </span>
             </h1>
             <div className="w-[75%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block lineDraw"></div>
-            <div className="flex items-center mobile:w-[80%] mobile:relative mobile:left-[-3%] ">
+            <div className=" mobile:w-full">
               <p
                 data-para-anim
-                className=" text-[1.25vw] uppercase leading-[1.2] tracking-wide font-light mobile:text-[4.6vw] mobile:tracking-widest  tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full  flex items-center justify-start mobile:text-center mobile:justify-center"
+                className=" text-[1.25vw] uppercase leading-[1.2] tracking-wide font-light mobile:text-[4.6vw] mobile:tracking-[0.2em] tablet:text-[3vw] tablet:tracking-widest tablet:max-w-full   mobile:text-center mobile:justify-center mobile:w-[78%]"
               >
                 PTCA BALLOON CATHETER SEMI COMPLIANT
               </p>
             </div>
-            <div className="flex items-center justify-start ml-[-2vw] mobile:justify-start mobile:mt-[4vw] mobile:text-center mobile:ml-[-2vw] ">
+            <div className="flex items-center justify-start ml-[-2vw] mobile:justify-start mobile:mt-[4vw] mobile:text-center mobile:ml-[4vw] ">
               <span className="w-[4.5vw] h-[2px] bg-black rotate-90  mobile:hidden tablet:w-[8vw] fadeUp"></span>
-              <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.8vw] mobile:max-w-full mobile:leading-[1.2] tablet:text-[2.5vw] tablet:max-w-[55%]">
+              <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1.2] font-light mobile:text-[4.8vw] mobile:max-w-[70%] mobile:leading-[1.2] tablet:text-[2.5vw] tablet:max-w-[55%]">
                 <span data-para-anim>
                   Pioneering The Next Frontier of PTCA Technology
                 </span>

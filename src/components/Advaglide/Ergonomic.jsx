@@ -26,8 +26,6 @@ data-para-anim
             className="object-contain w-full h-full rotate-[10deg]"
           />
         </div>
-
-        {/* Dots with individual hover logic */}
         <span
           className="w-[2vw] h-[2vw] bg-white/30 rounded-full absolute top-[43%] right-[28.5%] flex justify-center items-center cursor-pointer border mobile:w-[8vw] mobile:h-[8vw] mobile:top-[40%] tablet:w-[5vw] tablet:h-[5vw]"
           onMouseEnter={() => setVisibleTextIndex(0)}
@@ -70,8 +68,6 @@ data-para-anim
         >
           <span className="w-[0.5vw] h-[0.5vw] bg-blue-500 rounded-full mobile:w-[3vw] mobile:h-[3vw] tablet:w-[1.5vw] tablet:h-[1.5vw]"></span>
         </span>
-
-        {/* Individual text elements */}
         <p
           className={`text-[1.4vw] font-light absolute top-[33%] right-[8%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${
             visibleTextIndex === 0 ? "opacity-100" : "opacity-0"

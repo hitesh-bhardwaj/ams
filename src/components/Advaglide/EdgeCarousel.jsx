@@ -13,9 +13,7 @@ import {
   Autoplay,
 } from "swiper/modules";
 import Image from "next/image";
-// import styles from "@/styles/portfolioSwiper.module.css";
 import { Media } from "../media";
-import { fadeUp } from "../gsapAnimations";
 
 const EdgeCarousel = ({width}) => {
   const slidesData = [
@@ -34,7 +32,7 @@ const EdgeCarousel = ({width}) => {
   return (
     <section
       id="portfolio-swiper"
-      className="overflow-x-hidden py-[7%] pb-[12%] mobile:pt-[10%]"
+      className="overflow-x-hidden py-[7%] pb-[12%] mobile:pt-[10%] bg-white/50"
     >
       <div className="w-full relative h-full flex items-center flex-col gap-[5vw]">
         <h2

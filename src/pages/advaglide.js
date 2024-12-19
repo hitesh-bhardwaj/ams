@@ -3,14 +3,15 @@ import EdgeCarousel from '@/components/Advaglide/EdgeCarousel'
 import Ergonomic from '@/components/Advaglide/Ergonomic'
 import Hero from '@/components/Advaglide/Hero'
 import Sirolimus from '@/components/Advaglide/Sirolimus'
-import { fadeUp } from '@/components/gsapAnimations'
 import Layout from '@/components/Layout'
 import BgVideo from '@/components/Layout/BgVideo'
 import { Media } from '@/components/media'
 import React from 'react'
+import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 
 const advaglide = () => {
-  fadeUp()
+  fadeUp();
+  paraAnim();
   return (
     <>
     <Layout>
@@ -19,8 +20,7 @@ const advaglide = () => {
            <Ergonomic/>
            <EdgeCarousel width={"55%"}/>
            <AdvaGlideSpecifications/>
-           <Sirolimus/>
-            
+           <Sirolimus/>       
         </main>
     </Layout>
     <Media greaterThan='tablet'>
