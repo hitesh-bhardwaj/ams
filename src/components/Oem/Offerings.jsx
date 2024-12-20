@@ -68,7 +68,7 @@ export default function Offerings() {
         <>
             <section id='offerings'>
                 <div className='offerings-container pt-[12%] tablet:pt-[15%] mobile:pt-[25%]'>
-                    <h2 className='title-2 font-light text-center aeonik mb-[6vw] mobile:mb-10 fadeUp'>OEM Offerings</h2>
+                    <h2 className='title-2 font-light text-center aeonik mb-[6vw] mobile:mb-10 fadeUp'>OEM Solutions</h2>
                     <Swiper
                         freeMode={true}
                         scrollbar={true}
@@ -175,7 +175,7 @@ export default function Offerings() {
                             <div className='w-[90%] mx-auto h-full'>
                                 <div className={`${styles.cardHead}`}>
                                     <h4 className=''>Sternotomy Suture</h4>
-                                    <p className=''>316 LVM Stainless Steel</p>
+                                    <p className=''>316LVM Stainless Steel</p>
                                 </div>
                                 <div className={styles.cardMain}>
                                     <Image

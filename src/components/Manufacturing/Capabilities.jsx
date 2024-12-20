@@ -32,18 +32,18 @@ const Capabilities = () => {
           <div className='mt-[5%] flex justify-between w-full px-[5%] tablet:gap-[5vw] mobile:flex-col mobile:gap-[10vw] tablet:flex-wrap tablet:px-[2%]'>
             {capabilitiesData.map((capability) => (
               <div key={capability.id} className={`capability-card group fadeUp ${capability.id == 3 ? "tablet:w-full tablet:flex tablet:justify-center" : ""}`}>
-                <div className='h-[23vw] w-[21vw] bg-white/50 absolute  rounded-[2.5vw] mobile:w-[80vw] mobile:h-[80vw] tablet:w-[40vw] tablet:h-[40vw]'></div>
-                <div className='h-[22vw] w-[20vw] flex flex-col items-center justify-center mobile:w-[80vw] mobile:h-[80vw] tablet:w-[40vw] tablet:h-[40vw]'>
-                  <div className={`h-[9vw] w-[9vw] relative top-[-10%] group-hover:scale-[1.2] transition-all duration-300 ease-in-out mobile:h-[30vw] mobile:w-[30vw] tablet:h-[15vw] tablet:w-[15vw]`}>
+                <div className='h-[21vw] w-[21vw] rounded-[2.5vw] bg-white/50 flex flex-col items-center justify-center mobile:w-[80vw] mobile:h-[80vw] tablet:w-[40vw] tablet:h-[40vw]'>
+                  <div className={`h-[9vw] w-[9vw] relative top-[-10%] group-hover:scale-[1.2] transition-all duration-500 ease-in-out mobile:h-[30vw] mobile:w-[30vw] tablet:h-[15vw] tablet:w-[15vw]`}>
                     <Image
                       src={capability.imageSrc}
-                      fill
+                      width={200}
+                      height={200}
                       alt={`capability-${capability.id}`}
                       className='object-contain'
                     />
                   </div>
-                  <div className='mt-[12vw] absolute mobile:mt-[50vw] tablet:mt-[20vw]'>
-                    <p className='text-[1.5vw] font-light mobile:text-[7vw] tablet:text-[4vw]'>{capability.title}</p>
+                  <div className='mt-[13vw] absolute mobile:mt-[50vw] tablet:mt-[20vw]'>
+                    <p className='text-[1.25vw] font-light mobile:text-[7vw] tablet:text-[4vw]'>{capability.title}</p>
                   </div>
                 </div>
               </div>

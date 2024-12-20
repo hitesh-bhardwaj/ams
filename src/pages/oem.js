@@ -12,8 +12,8 @@ export default function oem() {
 
   const content = {
     heading: "Trust Has a New Name",
-    smallpara: "At AMS, we elevate the standards for OEM and Custom Branding Solutions with unmatched expertise and dedication. We recognize that entering the market involves a multifaceted journey, requiring meticulous planning, design, and compliance. From innovative product development and precision manufacturing to rigorous quality assurance and regulatory adherence, AMS is committed to making your vision a reality.",
-    bigpara: "Our comprehensive range of services guarantees excellence at every step, no matter the scale or complexity of your project. Partner with AMS for unparalleled trust and reliability in your journey to market success.",
+    smallpara: "With a comprehensive range of services, we guarantee excellence at every step, regardless of the scale or complexity of your project. We understand that entering the market is a multifaceted journey, requiring meticulous planning, design, and compliance. From innovative product development and precision manufacturing to rigorous quality assurance and regulatory adherence, AMS is committed to turning your vision into reality.",
+    bigpara: "AMS OEM features a dedicated team specializing in R&D and engineering, delivering medical device solutions tailored to OEM needs with unparalleled expertise. Our focus on performance, flexibility, and reliability drives innovation in medical technology.",
     src: "/assets/oem/oem-genesis-bg.png",
   };
 

@@ -6,7 +6,7 @@ export default function Discover() {
 
     return (
         <>
-            <section className="pt-[0] pb-[10%] mobile:pb-[20%] tablet:pb-[8%]" id="facility">
+            <section className="pt-[10%] mobile:pt-[20%] tablet:pt-[15%]" id="facility">
                 <div className=" container-lg virtual rounded-[3vw] flex items-center justify-between px-[7%] py-[4%] bg-white/50  border border-gray-200 mobile:flex-col-reverse mobile:rounded-[9vw] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw] tablet:rounded-[4vw] tablet:py-[5%]">
                     <div className="w-[45%] relative z-10 space-y-[3.5vw] duration-300 tablet:order-1 tablet:w-full mobile:w-[89%] mobile:text-center mobile:py-[5vw] mobile:flex-col mobile:items-center mobile:justify-center mobile:space-y-[10vw]">
                         <h2 data-para-anim className="title-2 aeonik">
@@ -22,8 +22,8 @@ export default function Discover() {
                     <div className="relative w-[50%] h-[26vw] rounded-[3vw] overflow-hidden fadeUp mobile:h-[100vw] mobile:w-[80vw] tablet:w-[80vw] tablet:h-[30vh] mobile:rounded-[6vw]">
                         <Image
                             className="w-full object-cover "
-                            src="/assets/ama/green-building.png"
-                            alt="ama-discover-img"
+                            src="/assets/rnd/rnd-discover.png"
+                            alt="rnd discover img"
                             fill
                         />
                         <img
