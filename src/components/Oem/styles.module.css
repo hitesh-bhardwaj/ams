@@ -7,7 +7,6 @@
     left: 50%;
     transform: translateX(-50%);
 }
-
 .cardHead{
     font-weight: 300;
     font-family: 'Aeonik';
@@ -58,11 +57,9 @@
     align-items: center;
     gap: 5vw;
     justify-content: flex-end;
-}
-.cardText p>span{
     transition: all 0.5s;
 }
-.cardText p>span:hover{
+.cardText p:hover{
     scale: 1.05;
 }
 .bigImage {
