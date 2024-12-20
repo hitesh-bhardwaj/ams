@@ -17,21 +17,20 @@ data-para-anim
                 ADVAMESH mid-weight
               </h2>
             </div>
-            <div className=" h-full w-full absolute left-[45%] top-[30%]  mobile:h-full   pt-[10vw] mobile:pb-[10%] mobile:top-[25%] fadeUp tablet:pb-[5%] tablet:left-0 tablet:top-[10%]">
-              <div className="h-[38vw] w-[50vw] relative mobile:w-[140vw] mobile:h-[100vw] mobile:left-[-65%]  mobile:top-0 tablet:w-[100vw] tablet:h-[50vw] tablet:top-[15%] tablet:scale-[1.5]">
+            <div className=" h-full w-full absolute left-[45%] top-[30%]  mobile:h-full   pt-[10vw] mobile:pb-[10%] mobile:top-[25%]  tablet:pb-[5%] tablet:left-0 tablet:top-[10%]">
+              <div className="h-[38vw] w-[50vw] relative mobile:w-[140vw] mobile:h-[100vw] mobile:left-[-65%]  mobile:top-0 tablet:w-[100vw] tablet:h-[50vw] tablet:top-[15%] tablet:scale-[1.5] fadeUp">
                 <Image
                   src="/assets/advamesh/mid-weight.png"
                   fill
                   alt="mid-weight"
-                  className=" fadein object-contain"
+                  className=" object-contain"
                 />
               </div>
             </div>
           </div>
-          <div className="absolute top-[29%] text-[1.25vw] left-[5%] h-[50vw] py-[5.4%] space-y-[25%] mobile:static mobile:space-y-0 mobile:flex mobile:flex-col mobile:gap-[8vw] mobile:justify-center mobile:mt-[50vh] mobile:w-full mobile:h-fit mobile:text-[6vw] tablet:static tablet:space-y-0 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center tablet:mt-[40vh] tablet:w-full tablet:h-fit tablet:gap-[5vw] tablet:text-[4vw]">
-              <div className="ml-[35%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center">
-                <p data-para-anim className=" leading-[1.2] font-light w-[27vw] text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:w-full">A Revolutionary Solution Engineered
-                for Surgical Success</p>
+          <div className="absolute top-[32%] text-[1.25vw] left-[5%] h-[50vw] py-[5.4%] space-y-[25%] mobile:static mobile:space-y-0 mobile:flex mobile:flex-col mobile:gap-[8vw] mobile:justify-center mobile:mt-[50vh] mobile:w-full mobile:h-fit mobile:text-[6vw] tablet:static tablet:space-y-0 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center tablet:mt-[40vh] tablet:w-full tablet:h-fit tablet:gap-[5vw] tablet:text-[4vw]">
+              <div className="ml-[50%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center">
+                <p data-para-anim className=" leading-[1.2] font-light w-[21vw] text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:w-[80%] tablet:text-center">A Revolutionary Solution Engineered for Surgical Success</p>
               </div>
               <div className="translate-y-[-110%] ml-[40%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center">
                 <p data-para-anim className=" leading-[1.2] font-light w-[25vw] text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal tablet:w-full">Dual Elasticity – Comfortable Healing</p>

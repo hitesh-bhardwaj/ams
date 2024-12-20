@@ -19,11 +19,11 @@ const Hero = () => {
               <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[60vh] mobile:justify-start mobile:pt-[35vw]">
                 <div className={`w-[90%] mobile:w-full `}>
                   <h1
-                    className={`title-1 w-full aeonik capitalize leading-[1] mobile:text-center`}
+                    className={`title-1 w-full aeonik capitalize leading-[1] mobile:text-center overflow-hidden`}
                   >
                     <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#507EBC] w-[80%] mobile:w-full mobile:text-center`}>
                     ADVACLIP
-                    </span>
+                    </span> 
                   </h1>
                   <p className={` max-w-[30vw]  mb-[4vw] text-[1.15vw] leading-[1.5]  aeonik tracking-wide mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw] mobile:text-[4.2vw]`}>
                     <span data-para-anim className={`text-[#111111] uppercase leading-[1.4]`}>

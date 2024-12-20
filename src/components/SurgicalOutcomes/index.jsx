@@ -17,7 +17,7 @@ const SurgicalCard = ({ img, para,title,tclass }) => {
         <p  data-para-anim className={`text-[1.67vw] font-light w-[85%] ml-[2vw] h-[6vw] ${tclass} mobile:text-[8vw] mobile:w-[90%] mobile:h-[25vw] mobile:text-center tablet:text-[3vw] tablet:leading-[1.2] tablet:h-[10vw]`}>{title}</p>
         <div className="h-[24vw] w-[20vw] p-[1vw] rounded-[2.5vw] bg-white flex flex-col items-center justify-center gap-[1vw] mobile:w-[90vw] mobile:h-[110vw] mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[55vw] tablet:rounded-[4vw]">
           <div className="h-[80%] w-[100%] rounded-[2vw] flex items-center justify-center surgical-card-image mobile:rounded-[6vw] mobile:h-[67%] mobile:w-[95%] tablet:rounded-[3vw]">
-            <div className="h-[50%] w-[50%] relative">
+            <div className="h-[44%] w-[45%] relative">
               <Image
                 src={img}
                 fill
@@ -26,7 +26,7 @@ const SurgicalCard = ({ img, para,title,tclass }) => {
               />
             </div>
           </div>
-          <div className=" aeonik font-light leading-[1.2] text-[1.25vw] text-center h-[20%] mobile:text-[6vw] mobile:leading-[1.3] mobile:mt-[3vw] mobile:w-[90%] mobile:text-center mobile:h-[25%] tablet:text-[2.8vw]">
+          <div className=" aeonik font-light leading-[1.2] text-[1.25vw]  text-center h-[20%] mobile:text-[6vw] mobile:leading-[1.3] mobile:mt-[3vw] mobile:w-[90%] mobile:text-center mobile:h-[25%] tablet:text-[2.8vw]">
             <p data-para-anim >{para}</p>
           </div>
         </div>

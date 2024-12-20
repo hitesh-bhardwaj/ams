@@ -1,13 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const AdvastapLC2 = () => {
-  paraAnim();
   useGSAP(() => {
     if(globalThis.innerWidth>1024){
 
@@ -55,7 +53,7 @@ const AdvastapLC2 = () => {
           ADVASTAP LC III
           </span>
         </h2>
-        <p className="mb-[4vw] text-[1.66vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:text-[4.75vw] mobile:my-[7vw] flex items-center justify-start mobile:justify-center tablet:justify-center tablet:text-[3vw] tablet:tracking-wider">
+        <p className="mb-[4vw] text-[1.65vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:text-[4.75vw] mobile:my-[7vw] flex items-center justify-start mobile:justify-center tablet:justify-center tablet:text-[3vw] tablet:tracking-wider">
           <span data-para-anim className="mobile:text-center uppercase tracking-wide mobile:tracking-normal font-light mobile:w-[80%]">
           innovation. securty. consistency.
           </span>

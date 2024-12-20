@@ -2,11 +2,9 @@ import React from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { fadeUp } from "../gsapAnimations";
 gsap.registerPlugin(useGSAP);
 
 const Think = () => {
-  fadeUp();
   useGSAP(() => {
     if(globalThis.innerWidth<1025){
       gsap.from(".think-img", {

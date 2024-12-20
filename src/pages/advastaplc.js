@@ -9,8 +9,11 @@ import LC2Specifications from "@/components/Advastaplc/LC2Specifications";
 import LC3Carousel from "@/components/Advastaplc/LC3carousel";
 import LC3Specifications from "@/components/Advastaplc/LC3Specifications";
 import Layout from "@/components/Layout";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 
 const advastaplc = () => {
+  fadeUp();
+  paraAnim();
   return (
     <>
       <Layout>

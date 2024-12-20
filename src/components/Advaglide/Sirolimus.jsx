@@ -8,7 +8,7 @@ const Sirolimus = () => {
       <section id='SiroLimus' className=' w-screen h-screen relative py-[8%] bg-white/50 overflow-hidden mobile:h-full mobile:py-[20%] tablet:h-full'>
       <div className='container-lg'>
 
-        <div className='w-[45vw] h-[30vw] rounded-[4vw] p-[4vw] py-[6vw] flex flex-col glassmorphism-light justify-between border border-gray-400/60 fadeUp mobile:w-[90vw] mobile:h-[160vw] overflow-hidden mobile:justify-end mobile:items-center mobile:pb-[20vw] fadeUp tablet:w-[90vw] tablet:h-[45vw] tablet:justify-start tablet:gap-[7vw]'>
+        <div className='w-[45vw] h-[30vw] rounded-[3vw] p-[4vw] py-[6vw] flex flex-col glassmorphism-light justify-between border border-gray-400/60 fadeUp mobile:w-[90vw] mobile:h-[160vw] overflow-hidden mobile:justify-end mobile:items-center mobile:pb-[20vw] fadeUp tablet:w-[90vw] tablet:h-[45vw] tablet:justify-start tablet:gap-[7vw]'>
             <div className='w-full mobile:flex mobile:flex-col mobile:items-center'>
                 
                 <h3 data-para-anim className='text-[4vw] leading-[1.2] aeonik font-light mobile:text-[11vw] mobile:text-center mobile:mb-[3vw] tablet:text-[6vw]'>ADVA PRO</h3>

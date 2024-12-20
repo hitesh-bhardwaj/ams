@@ -1,30 +1,8 @@
 import Image from "next/image";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { fadeUp, lineAnim } from "../gsapAnimations";
-gsap.registerPlugin(useGSAP);
+import { useEffect } from "react";
 
 const Hero = () => {
-  fadeUp();
-  lineAnim()
-  useGSAP(() => {
-    gsap.from(
-      ".hero-img",
-      {
-        xPercent:5,
-        opacity:0,
-        duration: 1.5,
-        delay:0.5,
-        ease: "power3.out",
-      });
-      gsap.from('.hero-text',{
-        y:10,
-        opacity:0,
-        duration:1,
-        ease:'power3.out',
-        delay:0.5
-      })
-  });
   return (
     <>
       <section className="hero  tablet:pr-[3%] relative overflow-hidden w-screen" id="advastap-hero">
@@ -32,8 +10,8 @@ const Hero = () => {
           <div className=" flex flex-col h-screen w-full justify-center items-start  mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[70vh]">
             <div className=" absolute top-[30%] left-[12%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 mobile:top-[15%] mobile:left-0 tablet:top-[20%] tablet:left-[10%]">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
-                <h1 className=" text-[#38C5FF] text-[5.3vw] leading-[1.21] font-light aeonik w-[60%] mobile:w-full fadeUp ">
-                  <span 
+                <h1 className=" text-[#38C5FF] text-[5.3vw] leading-[1.21] font-light aeonik w-[60%] mobile:w-full ">
+                  <span data-para-anim
                     className={`leading-[1.1] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw]`}
                   >
                   ADVASTAP RELOADS
@@ -45,7 +23,7 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-              <div className=" w-[100vw] h-[22vw]  scale-[1.7] absolute right-[-25%] z-[10] top-[30%] mobile:top-[40%] mobile:right-[5%] mobile:w-[60vw] mobile:h-[90vw] tablet:w-[40vw] tablet:h-[40vw] tablet:right-[10%] tablet:top-[40%] pointer-events-none">
+              <div className=" w-[100vw] h-[22vw]  scale-[1.7] absolute right-[-25%] z-[10] top-[30%] mobile:top-[40%] mobile:right-[5%] mobile:w-[60vw] mobile:h-[90vw] tablet:w-[40vw] tablet:h-[40vw] tablet:right-[10%] tablet:top-[40%] pointer-events-none fadeUp">
                 <Image
                   className="object-contain hero-img"
                   src="/assets/reloads/reloads-hero.png"

@@ -5,14 +5,12 @@ import 'swiper/css/scrollbar';
 import { Scrollbar } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css/navigation';
-import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Carousel = () => {
-    paraAnim();
     useGSAP(()=>{
             if(globalThis.innerWidth>1024){
             const tl = gsap.timeline({
@@ -33,30 +31,30 @@ const Carousel = () => {
         };
         });
 
-        const swiperRef = useRef(null); // Create a ref for Swiper
+        const swiperRef = useRef(null); 
 
-        // State to track which button was clicked
+      
         const [activeButton, setActiveButton] = useState("");
       
         const handleNext = () => {
           if (swiperRef.current) {
-            swiperRef.current.slideNext(); // Move to the next slide
-            setActiveButton("next"); // Set next button as active
-            // Reset after 300ms
+            swiperRef.current.slideNext(); 
+            setActiveButton("next"); 
+            
           }
         };
       
         const handlePrev = () => {
           if (swiperRef.current) {
-            swiperRef.current.slidePrev(); // Move to the previous slide
-            setActiveButton("prev"); // Set previous button as active
-            // Reset after 300ms
+            swiperRef.current.slidePrev(); 
+            setActiveButton("prev"); 
+            
           }
         };
      
   return (
     <>
-    <section id='skinstapler-carousel' className='overflow-hidden tablet:h-[80vh] pb-[5%]'>  
+    <section id='skinstapler-carousel' className='overflow-hidden tablet:h-[70vh] pb-[5%] mobile:h-[100vh]'>  
         <div className={`w-screen h-full  py-[5vw] text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab relative`}>
         <Swiper
          onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -93,7 +91,7 @@ const Carousel = () => {
                         className='object-contain '
                         />
                     </div> 
-                    <p className='text-center text-[1.25vw] leading-[1.3] absolute top-[15%] right-[10%] font-light aeonik  w-[15vw] text-[#2A2A2A] mobile:text-[7vw] mobile:w-[70%] mobile:top-[70%] mobile:font-light mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[85%] tablet:font-light tablet:w-[40vw]'><span data-para-anim>Smooth and effortless stapling performance</span></p>
+                    <p className='text-[1.25vw] leading-[1.3] absolute top-[15%] right-[10%] font-light aeonik  w-[15vw] text-[#2A2A2A] mobile:text-[7vw] mobile:w-[70%] mobile:top-[70%] mobile:font-light mobile:left-[15%] mobile:text-center  mobile:z-50 tablet:text-[2.5vw] tablet:top-[85%] tablet:font-light tablet:w-[40vw]'><span data-para-anim>Smooth and effortless stapling performance</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/skinstapler/carousel-card1-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -115,7 +113,7 @@ const Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik  w-[20vw]  leading-[1.3] text-[#2A2A2A] font-light mobile:text-[7vw] mobile:w-[80%] mobile:font-light mobile:bottom-[10%] mobile:left-[10%]  mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light'><span data-para-anim>Innovative design for precise positioning accuracy</span></p>
+                    <p className=' text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik  w-[20vw]  leading-[1.3] text-[#2A2A2A] font-light mobile:text-[7vw] mobile:w-[80%] mobile:font-light mobile:bottom-[10%] mobile:left-[10%]  mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light'><span data-para-anim>Innovative design for precise positioning accuracy</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/skinstapler/carousel-card2-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -137,7 +135,7 @@ const Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]' ><span data-para-anim>Enhanced staple count visibility</span></p>
+                    <p className=' text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]' ><span data-para-anim>Enhanced staple count visibility</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/skinstapler/carousel-card3-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -159,7 +157,7 @@ const Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center w-[35%] text-[1.25vw] absolute bottom-[15%] right-[5%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]' ><span data-para-anim>Effortless locking mechanism smartly locks next staple until the previous is deployed.</span></p>
+                    <p className=' w-[35%] text-[1.25vw] absolute bottom-[15%] right-[5%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[7vw] mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:left-[5%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]' ><span data-para-anim>Effortless locking mechanism smartly locks next staple until the previous is deployed.</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/skinstapler/carousel-card3-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -181,7 +179,7 @@ const Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik  w-[20vw] text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[7vw]  mobile:font-light mobile:w-[80%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light'><span data-para-anim>Effortless removal with sleek and elegant design</span></p>
+                    <p className=' text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik  w-[20vw] text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[7vw]  mobile:font-light mobile:w-[80%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 mobile:text-center tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light'><span data-para-anim>Effortless removal with sleek and elegant design</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/skinstapler/carousel-card4-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -195,7 +193,7 @@ const Carousel = () => {
       </Swiper>
       
        <div
-                      className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[7%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+                      className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[7%] right-0 mobile:bottom-0 mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%]  tablet:top-[93%] tablet:right-[35%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
                       onClick={handleNext} // Trigger next slide
                     >
                       <span
@@ -211,7 +209,7 @@ const Carousel = () => {
                       </div>
                     </div>
                     <div
-                      className={`px-[1.2vw] py-[1.2vw] bottom-[7%] right-[6%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
+                      className={`px-[1.2vw] py-[1.2vw] bottom-[7%] right-[6%] absolute z-[5] mobile:bottom-0 mobile:top-auto mobile:left-[37%] mobile:right-auto  translate-x-[-38%]  tablet:top-[93%] tablet:right-[48%] tablet:bottom-auto tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
                       onClick={handlePrev} // Trigger previous slide
                     >
                       <span

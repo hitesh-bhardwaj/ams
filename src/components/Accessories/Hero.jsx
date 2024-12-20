@@ -1,14 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { paraAnim } from "../gsapAnimations";
-import gsap from 'gsap';
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Hero = () => {
-  paraAnim();
-  
   return (
     <section id='accessoriesHero' className='dark'>
       <div className="w-screen h-screen relative overflow-hidden hero-container mobile:h-screen tablet:h-[70vh]">

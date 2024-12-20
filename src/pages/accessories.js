@@ -7,10 +7,11 @@ import SpecificationsInflation from '@/components/Accessories/SpecificationsInfl
 import SpecificationsManifold from '@/components/Accessories/SpecificationsManifold'
 import Layout from '@/components/Layout'
 import React from 'react'
-import { fadeIn } from '@/components/gsapAnimations'
+import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 
 const accessories = () => {
-  fadeIn();
+  fadeUp();
+  paraAnim();
   return (
     <Layout>
     <main>

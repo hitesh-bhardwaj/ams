@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="flex items-center mt-[0.2vw] tablet:mt-[1vw]">
               <p
                 data-para-anim
-                className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-widest mobile:text-[4.6vw] mobile:tracking-widest  mobile:w-[80%] tablet:text-[2.5vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center"
+                className=" text-[1.25vw] uppercase font-light text-[#1A1A1A] leading-[1.2] tracking-wide mobile:text-[4.6vw] mobile:tracking-widest  mobile:w-[80%] tablet:text-[2.5vw] tablet:tracking-widest tablet:max-w-full  mobile:text-center mobile:justify-center"
               >
                 Sirolimus Eluting Coronary Stent System
               </p>

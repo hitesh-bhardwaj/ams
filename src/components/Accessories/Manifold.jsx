@@ -45,7 +45,7 @@ data-para-anim
               src="/assets/accessories/manifold.png"
               fill
               alt="Ergonomic Product"
-              className="object-contain fadein mobile:rotate-[-45deg]"
+              className="object-contain fadeUp mobile:rotate-[-45deg]"
             />
           </div>
 

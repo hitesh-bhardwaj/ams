@@ -1,15 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react'
 import Image from 'next/image'
-import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const AdvastapLC3 = () => {
-  paraAnim();
-  
   useGSAP(() => {
     if(globalThis.innerWidth>1024){
     const tl = gsap.timeline({
@@ -46,14 +43,14 @@ const AdvastapLC3 = () => {
             tablet:object-contain'
             />
             </div>
-            <div className=" absolute top-[15%] left-[8%] p-[2vw] mobile:w-full mobile:pl-0 tablet:w-full tablet:pl-0 mobile:left-0 mobile:top-[3%] tablet:left-0 tablet:top-0">
+            <div className=" absolute top-[15%] left-[8%] p-[2vw] mobile:w-full mobile:pl-0 tablet:w-full tablet:pl-0 mobile:left-[10%] mobile:top-[3%] tablet:left-0 tablet:top-0">
             <h2 className="text-[4vw] aeonik  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[7.5vw]">
-          <span data-para-anim className="leading-[1.3] overflow-hidden w-full mobile:w-full mobile:text-center tablet:w-full tablet:text-center font-light">
+          <span data-para-anim className="leading-[1.3] overflow-hidden w-full mobile:w-full mobile:text-center tablet:w-full tablet:text-center font-light ">
           ADVASTAP LC II
           </span>
         </h2>
-        <p className="mb-[4vw] text-[1.66vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:my-[7vw] mobile:text-[4.75vw] flex items-center justify-start mobile:justify-center tablet:justify-center tablet:text-[3vw] tablet:tracking-wider">
-          <span data-para-anim className="mobile:text-center uppercase tracking-wide mobile:tracking-normal font-light mobile:w-[70%]">
+        <p className="mb-[4vw] text-[1.66vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:my-[5vw] mobile:text-[4.75vw] flex items-center justify-start tablet:justify-center tablet:text-[3vw] tablet:tracking-wider">
+          <span data-para-anim className="mobile:text-center uppercase tracking-wide mobile:tracking-normal font-light mobile:w-[80%]">
           innovation. securty. consistency.
           </span>
         </p>

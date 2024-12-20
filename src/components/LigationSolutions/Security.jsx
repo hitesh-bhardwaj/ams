@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 const Security = () => {
-  return (
+  return ( 
     <section className="overflow-hidden relative mobile:py-[10%]" id="security">
          <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] ">
            <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] py-[5vw]">

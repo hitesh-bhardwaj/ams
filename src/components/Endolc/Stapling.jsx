@@ -1,14 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { fadeIn } from "../gsapAnimations";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const Stapling = () => {
-  fadeIn();
   useGSAP(()=>{
     gsap.to(
       ".sline-draw",
@@ -59,8 +57,8 @@ data-para-anim className="title-2 aeonik mobile:text-center">Smart Stapling</h2>
                     Flexible reach for precise and accurate positioning in challenging surgical procedures.   </span>
                     </p>
                     <div className="flex flex-col h-[100%] w-[30%] items-center justify-center pr-[30%] mobile:pr-0 tablet:pr-[10%]">
-                <div  className="relative h-[18vw] w-[14vw] fadein mobile:w-[55vw] mobile:h-[80vw] tablet:w-[35vw] tablet:h-[35vw]">
-                    <Image src="/assets/endolc/stapling-pro-1.png" fill alt="stapling" className="object-fill fade-in"/>
+                <div  className="relative h-[18vw] w-[14vw] mobile:w-[55vw] mobile:h-[80vw] tablet:w-[35vw] tablet:h-[35vw] fadeUp">
+                    <Image src="/assets/endolc/stapling-pro-1.png" fill alt="stapling" className="object-fill "/>
                 </div>
                     </div> 
                 </div>
@@ -74,7 +72,7 @@ data-para-anim className="title-2 aeonik mobile:text-center">Smart Stapling</h2>
                     </div>
                     
                    
-                <div className="relative h-[20vw] w-[50vw] scale-[2] bottom-[10%] fadein mobile:w-[80vw] mobile:h-[50vw] mobile:bottom-[35%] mobile:absolute mobile:right-[-5%] tablet:w-[30vw] tablet:h-[30vw]">
+                <div className="relative h-[20vw] w-[50vw] scale-[2] bottom-[10%] fadein mobile:w-[80vw] mobile:h-[50vw] mobile:bottom-[35%] mobile:absolute mobile:right-[-5%] tablet:w-[30vw] tablet:h-[30vw] fadeUp">
                     <Image src="/assets/endolc/stapling-pro-2.png" fill alt="stapling" className="object-contain mobile:rotate-[60deg]  fadein  "/>
                 </div>  
                 </div>

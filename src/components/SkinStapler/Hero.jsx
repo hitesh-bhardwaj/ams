@@ -11,11 +11,11 @@ const Hero = () => {
         xPercent:10,
         opacity:0,
         duration: 1.5,
-        delay:0.5,
+        delay:0.3,
         ease: "power3.out",
       });
       gsap.from('.hero-text',{
-        y:10,
+        y:30,
         opacity:0,
         duration:1,
         ease:'power3.out',
@@ -43,7 +43,7 @@ const Hero = () => {
               
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse">
-              <div className="w-[45vw] h-[25vw] scale-[1.5] absolute right-0 bottom-[15%] mobile:bottom-auto mobile:top-[40%] mobile:left-[30%] mobile:w-[80vw] mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
+              <div className="w-[45vw] h-[25vw] scale-[1.5] absolute right-0 bottom-[15%] mobile:bottom-auto mobile:top-[40%] mobile:left-[30%] mobile:w-[80vw] mobile:h-[60vw] tablet:w-[50vw] tablet:h-[50vw] z-10 ">
                 <Image
                   className="object-contain hero-img"
                   src="/assets/skinstapler/skin-stapler.png"

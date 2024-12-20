@@ -4,6 +4,7 @@ import Specifications from '@/components/AdvastapCS/AdvastapSpecifications'
 import Layout from '@/components/Layout'
 import SurgicalOutcomes from '@/components/SurgicalOutcomes'
 import React from 'react'
+import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 
 const surgicalData = [
   {
@@ -29,6 +30,8 @@ const surgicalData = [
   
 ];
 const advastapcs = () => {
+  fadeUp();
+  paraAnim();
   return (
     <Layout>
     <main>

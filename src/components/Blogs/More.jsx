@@ -5,91 +5,63 @@ import Link from "next/link";
 
 const blogCardData = [
   {
-    title: "Diwali Celebration 2024 ",
-    para: "The sparkle of Diwali lives on at AMS, inspiring us to keep illuminating new paths in healthcare innovation.",
-    date: "November 24, 2024",
+    para: "AMS serves as a healthcare ecosystem focused on the MedTech fields of Advanced Surgery & Advanced Cardiovascular.",
+    link: "Shaping the Future of Healthcare ",
     img: "/assets/blogs/blog-1.png",
     large: true,
   },
   {
-    title: " ",
     para: "Learn the signs & take steps toward better management.",
-    date: "March 17, 2024",
+    link: "Nurturing Nursing Skills Programs ",
     img: "/assets/blogs/blog-2.png",
   },
   {
-    title: " ",
     para: "Knotting Workshop PIMS Hospital, Pondicherry",
-    date: "February 5, 2023",
+    link: "A successful MEDICA 2024",
     img: "/assets/blogs/blog-3.png",
-  },
-  {
-    title: "",
-    para: "Nurturing Nursing Skill Program, Karnataka",
-    date: "November 24, 2024",
-    img: "/assets/blogs/blog-4.png",
-    large: true,
-  },
-  {
-    title: "",
-    para: "Pioneering Progress In Healthcare",
-    date: "March 17, 2024",
-    img: "/assets/blogs/blog-5.png",
-  },
-  {
-    title: "",
-    para: "Nurturing Nursing Skill Program, Karnataka",
-    date: "February 5, 2023",
-    img: "/assets/blogs/blog-6.png",
   },
 ];
 
-const BlogCard = ({ title, para, date, img, large }) => (
+const BlogCard = ({ para, link, img }) => (
   <div
-    className={`group overflow-hidden ${
-      large ? "col-span-9 row-span-2 h-[44vw]" : "col-span-3 h-[18.5vw]"
-    } rounded-[1.5vw] relative mt-[1vw] fadeUp`}
+    className={`group h-full w-full  fadeUp`}
   >
     <Link href={"#"}>
-    <div className="w-full h-full relative ">
-      <div className="relative w-full h-[92%] rounded-[2vw] overflow-hidden py-[1vw]">
-        <div className="w-full h-full absolute top-0 left-0 z-[2] bg-gradient-to-b from-transparent to-black/30"></div>
-        <Image
-          src={img}
-          fill
-          alt="blog image"
-          className="rounded-[2vw] object-cover scale-[1.1] group-hover:scale-[1] transition-all duration-500 ease-in-out"
-        />
-        <div className="absolute bottom-[6%] left-[5%] px-[0.5vw] z-[10]">
-          <p
-            className={`text-white ${
-              large ? "text-[2.5vw]" : "text-[1.8vw]"
-            } font-extralight aeonik`}
-          >
-            {title}
-          </p>
-          <p
-            className={`text-white ${
-              large ? "text-[1.8vw] w-[70%]" : "text-[1.4vw] w-[95%]"
-            } font-light aeonik leading-[1.2]`}
-          >
-            {para}
-          </p>
+      <div className="w-full h-full relative">
+        <div className=" w-full h-full  rounded-[2.5vw] overflow-hidden py-[1vw]">
+          <div className="w-full h-full absolute top-0 left-0 z-[2] bg-gradient-to-b from-transparent to-black/30"></div>
+          <Image
+            src={img}
+            fill
+            alt="blog image"
+            className="object-cover scale-[1.1] group-hover:scale-[1.1] transition-transform duration-500 ease-in-out  group-hover:blur-sm"
+          />
+          <div className="absolute inset-0 flex flex-col items-start justify-center z-[10] opacity-0 px-[3vw] group-hover:opacity-100 transition-opacity duration-500 ease bg-black/40 ">
+            <p
+              className={`text-white tracking-widest text-[1.25vw] w-[75%] font-light aeonik leading-[1.2]`}
+            >
+              {para}
+            </p>
+          
+          </div>
         </div>
-      </div>
-      <div className="w-full mt-[1vw]  absolute bottom-0 left-[5%]">
-        <p
-          className={`${
-            large ? "text-[1.5vw]" : "text-[1.2vw]"
-          } text-[#111111] font-light aeonik`}
-        >
-          {date}
-        </p>
-      </div>
+        <div className="w-full mt-[1vw] ">
+          <p
+            className={` leading-[1.2] text-[1.5vw]
+             text-[#111111] font-light aeonik`}
+          >
+            {link}
+            <span className="inline-block ml-[0.5vw]"> 
+                <Image src= "/assets/icons/arrow-up-right.svg"  alt="arrrow" height={10} width={10}/>
+                </span>
+          </p>
+        
+        </div>
       </div>
     </Link>
   </div>
 );
+
 
 
 
@@ -109,20 +81,18 @@ data-para-anim
             More from ams
           </h2>
         </div>
-        {Array(2)
-          .fill()
-          .map((_, i) => (
-            <div
-              key={i}
-              className="w-full h-full py-[3vw] grid grid-cols-12 gap-[1vw] space-x-[1.5vw] space-y-[1.5vw]"
-            >
-              {blogCardData
-                .slice(i * 3, i * 3 + 3)
-                .map((data, index) => (
-                  <BlogCard key={index} {...data} />
-                ))}
-            </div>
-          ))}
+        <div  className="w-full h-[50vw] py-[3vw] grid grid-cols-12 row-span-2 space-x-[1.5vw] ">
+          <div className="col-span-9 col-start-1 row-span-2 row-start-1">
+            <BlogCard {...blogCardData[0]}/>
+          </div>
+          <div className="col-span-3 col-start-10 row-start-1 row-span-1">
+            <BlogCard {...blogCardData[1]}/>
+          </div>
+          <div className="col-span-3 col-start-10 row-start-2 row-span-1">
+            <BlogCard {...blogCardData[2]}/>
+          </div>
+
+        </div>
         <div className="w-full flex items-center justify-center py-[2vw]">
           <LinkButton link={"#"} btnText={"See More"} />
         </div>

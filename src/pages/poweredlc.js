@@ -4,6 +4,7 @@ import Hero from '@/components/PoweredLC/Hero'
 import PoweredlcSpecifications from '@/components/PoweredLC/PoweredlcSpecifications'
 import SurgicalOutcomes from '@/components/SurgicalOutcomes'
 import React from 'react'
+import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 
 const surgicalData = [
   {
@@ -38,6 +39,8 @@ const surgicalData = [
   },
 ];
 const poweredlc = () => {
+  fadeUp();
+  paraAnim();
   return (
     <Layout>
     <main>

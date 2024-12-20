@@ -4,9 +4,11 @@ import Precision from '@/components/Endolc/Precision'
 import Stapling from '@/components/Endolc/Stapling'
 import Layout from '@/components/Layout'
 import React from 'react'
+import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 
 const endolc = () => {
-
+fadeUp();
+paraAnim();
   return (
    <>
       <Layout>

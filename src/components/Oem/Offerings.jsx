@@ -11,6 +11,7 @@ import styles from './styles.module.css';
 import { useLenis } from "lenis/react";
 
 export default function Offerings() {
+  
     const lenis = useLenis();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedCardId, setSelectedCardId] = useState(null);
@@ -26,11 +27,12 @@ export default function Offerings() {
         setSelectedCardId(null);
         lenis.start();
     };
-
+    const content = modalContent.find((item) => item.id === selectedCardId)?.description;
     useEffect(() => {
         const navbarLinks = document.querySelectorAll(".oemcard-button");
         const cardContainer = document.querySelector(".card-container");
         const focSections = document.querySelectorAll(".card-item");
+       
 
         navbarLinks.forEach((link) => {
             link.addEventListener("click", (e) => {
@@ -434,7 +436,9 @@ export default function Offerings() {
                         </div>
 
                     </div>
-                    <Modal isOpen={isModalOpen} onClose={closeModal} cardId={selectedCardId} />
+                    <Modal isOpen={isModalOpen} onClose={closeModal} >
+                    {content}
+                    </Modal>
                 </div>
             </section>
         </>
@@ -463,6 +467,490 @@ const smallContent = [
         image: '/assets/oem/knotless-tissue.png',
     }
 ]
+const modalContent = [
+    {
+      id: 1,
+      title: 'Knotless Tissue Control Device',
+      description: (
+        <div>
+          <h2 className="text-lg font-bold">Knotless Tissue Control Device</h2>
+          <p>This is a detailed description of the Knotless Tissue Control Device...</p>
+          <ul className="list-disc pl-4">
+            <li>Closer Barb Spacing</li>
+            <li>Superior Holding Strength</li>
+            <li>Unidirectional and Circumferential Barbs</li>
+            <li>Ultrasonic Welded Loop</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      id: 2,
+      description: (
+        <>
+        <div
+        className={`text-[#111111] font-light text-[2.5vw] mt-[-3vw] leading-[1.2] mobile:text-[7vw] tablet:text-[5vw] mobile:mt-0`}
+      >
+        <p>Technical Specification</p>
+      </div>
+      <div  className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw]">
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw]">
+            <div className=" p-[1vw] font-light w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Composition
+            </div>
+            <div className="p-[1vw] font-light w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            Stainless 316LVM Steel
 
+            </div>
+          </div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]   tablet:gap-[8vw] mobile:gap-[17vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Coating
+            </div>
+
+            <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            NA
+
+            </div>
+          </div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Available Sizes
+
+            </div>
+
+            <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            U.S.P. 1 to 7
+            </div>
+          </div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Colour
+
+            </div>
+
+            <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            Steel
+            </div>
+          </div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Tensile Strength
+            </div>
+
+            <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            Permanent
+            </div>
+          </div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Needle 
+            </div>
+
+            <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            Taper Cut, Cutting, Reverse Cutting &
+            </div>
+          </div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Availability
+
+            </div>
+
+            <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            Blunt Point.
+
+            </div>
+          </div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[14vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Length
+
+            </div>
+
+            <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            40-90 mm
+            </div>
+          </div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Wire Diameter
+
+            </div>
+
+            <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            1.00-1.60 mm
+
+            </div>
+          </div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+            <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+            Hole Diameter
+
+            </div>
+
+            <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            0.5-1.03 mm
+
+            </div>
+          </div>
+        </div>
+      </>
+      ),
+    },
+    {
+        id: 3,
+        description: (
+            <>
+            <div
+            className={`text-[#111111] font-light text-[2.5vw] mt-[-3vw] leading-[1.2] mobile:text-[7vw] tablet:text-[5vw] mobile:mt-0`}
+          >
+            <p>Technical Specification</p>
+          </div>
+          <div  className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw]">
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw]">
+                <div className=" p-[1vw] font-light w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Filament Diameter
+
+                </div>
+                <div className="p-[1vw] font-light w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                0.125 & 0.150 mm
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]   tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Weight
+                </div>
+    
+                <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                40 – 90 GSM
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Thickness
+    
+                </div>
+    
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                0.36, 0.50 & 0.60 mm
+
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Burst Strength
+
+    
+                </div>
+    
+                <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                245 – 1000 KPA
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Warp Direction
+
+                </div>
+    
+                <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                13, 14 & 20 wpi
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Weft Direction
+
+                </div>
+    
+                <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                19, 26 & 40 cpi
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Shipped
+
+    
+                </div>
+    
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                Pre-Cut
+
+    
+                </div>
+              </div>
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[14vw]">
+                <div className=" p-[1vw] w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Sizes
+
+    
+                </div>
+    
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                Customizable
+                </div>
+              </div>
+            </div>
+          </>
+          ),
+      },
+      {
+        id: 4,
+        description: (
+            <>
+            <div
+            className={`text-[#111111] font-light text-[2.5vw] mt-[-3vw] leading-[1.2] mobile:text-[7vw] tablet:text-[5vw] mobile:mt-0`}
+          >
+            <p>Technical Specification</p>
+          </div>
+          <div data-lenis-prevent  className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw]">
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw]">
+                <div className=" p-[1vw] font-light w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Proximal Shaft  Diameter
+
+                </div>
+                <div className="p-[1vw] font-light w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                1.9 Fr.
+
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]   tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Distal Shaft Diameter
+                </div>
+    
+                <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                2.4 Fr. 
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Usable Catheter Length
+    
+                </div>
+    
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                140 ± 2 cm
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Shaft Marker (Tip to Proximal & Distal marker)
+    
+                </div>
+    
+                <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                94 ± 2 cm & 104 ± 2 cm
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                X-Ray Markers - Low Profile & Highly Visible
+
+                </div>
+    
+                <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                2 Pt/Ir Markers - 0.6 mm width
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Proximal Shaft Material
+                </div>
+    
+                <div className="p-[1vw]  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                PTFE Coated Kink Resistant Shaft
+
+                </div>
+              </div>
+    
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[17vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Rapid Exchange Length
+                </div>
+    
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                23 cm
+
+    
+                </div>
+              </div>
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[14vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Soft Tip Entry Profile
+                </div>
+    
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                0.016&apos; (0.40 mm)
+
+                </div>
+              </div>
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[14vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Tip Material
+                </div>
+    
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                PEBAX
+                </div>
+              </div>
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[14vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Crossing Profile / Balloon Profile    
+                </div>
+    
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                0.65 mm - 0.85 mm
+
+
+                </div>
+              </div>
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[14vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Balloon Nominal Pressure
+            </div>
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                6 ATM*
+                </div>
+              </div>
+
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[14vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                Coating (Except Balloon)
+            </div>
+                <div className="p-[1vw] w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+                Hydrophilic
+                </div>
+              </div>
+
+              <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[14vw]">
+                <div className=" p-[1vw] w-[30vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[30vw]">
+                * Depending on diameters & Stent Length
+            </div>
+              </div>
+            </div>
+          </>
+          ),
+      },
+      {
+        id: 5,
+       description:(
+        <>
+        <div
+        className={`text-[#111111] font-light text-[2.5vw] mt-[-3vw] leading-[1.2] mobile:text-[7vw] tablet:text-[5vw] mobile:mt-0`}
+      >
+        <p>Technical Specification</p>
+      </div>
+        <div  className="w-full text-[1.25vw] font-light py-[3vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:overflow-x-scroll  mobile:py-[5vw] mobilepy-[4vw] tablet:py-[3.5vw]">
+        <div className="flex w-full border-b border-[#DADADA]  mobile:w-[130vw]">
+          <div className=" p-[1vw] w-[20vw] font-light tablet:w-[25vw] mobile:w-[50vw] text-[#4564AC]">Features</div>
+          <div className=" flex justify-start gap-[18vw] ">
+            <div className="p-[1vw] font-light  ">
+            Poliglecaprone 25
+            </div>
+            <div className="p-[1vw] font-light  ">
+            Polydioxanone
+            </div>
+          </div>
+        </div>
+
+        <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
+          <div className=" p-[1vw] w-[20vw] tablet:w-[25vw] mobile:w-[50vw] text-[#4564AC]">Tensile Strength
+
+          </div>
+          <div className=" flex justify-start gap-[20.5vw] mobile:gap-[22vw] ">
+            <div className="p-[1vw]  "><p>7 days - 60%</p>
+            <p>14 days - 40%</p>
+            </div>
+            <div className="p-[1vw]  ">
+<p>14 days - 80% </p>
+<p>28 days - 70%</p>
+<p>42 days - 45 %</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
+          <div className=" p-[1vw] w-[20vw] tablet:w-[25vw] mobile:w-[50vw] text-[#4564AC]">Absorption Profile</div>
+          <div className=" flex justify-start gap-[21vw] tablet:gap-[30vw] mobile:gap-[38vw]">
+            <div className="p-[1vw] ">Upto 90 days</div>
+            <div className="p-[1vw] ">180 - 220 days</div>
+          </div>
+        </div>
+
+        <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
+          <div className=" p-[1vw] w-[20vw] tablet:w-[25vw] mobile:w-[50vw] text-[#4564AC]">Color</div>
+          <div className=" flex justify-start gap-[24vw] mobile:gap-[25vw] ">
+            <div className="p-[1vw]  ">Undyed </div>
+            <div className="p-[1vw]  ">Violet</div>
+          </div>
+        </div>
+        <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
+          <div className=" p-[1vw] w-[20vw] tablet:w-[25vw] mobile:w-[50vw] text-[#4564AC]">USP Size
+          </div>
+          <div className=" flex justify-start gap-[24vw] mobile:gap-[26vw] ">
+            <div className="p-[1vw]  ">0 to 4-0 
+            </div>
+            <div className="p-[1vw]  ">1 to 4-0
+            </div>
+          </div>
+          
+        </div>
+        <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
+          <div className=" p-[1vw] w-[20vw] tablet:w-[25vw] mobile:w-[50vw] text-[#4564AC]">No. of Barbs/ inch
+          </div>
+          <div className=" flex justify-start gap-[27vw] mobile:gap-[26vw] ">
+            <div className="p-[1vw]  ">46
+            </div>
+            <div className="p-[1vw]  ">46
+            </div>
+          </div>
+          
+        </div>
+        <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
+          <div className=" p-[1vw] w-[20vw] tablet:w-[25vw] mobile:w-[50vw] text-[#4564AC]">Indications
+          </div>
+          <div className=" flex justify-start gap-[11vw] mobile:gap-[26vw] ">
+            <div className="p-[1vw]  w-[20vw]">Indicated for general soft tissue approximation purpose. 
+            </div>
+            <div className="p-[1vw]  w-[20vw]">Indicated for general soft tissue approximation purpose.
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      </>
+       )
+      },
+    
+  ];
 
 

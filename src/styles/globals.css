@@ -506,7 +506,7 @@ body {
 .surgicalSwiper .swiper-scrollbar-horizontal {
   width: 50vw !important;
   position: relative;
-  background-color: #ffffff;
+  background-color: #dadada;
   height: 4px;
   border-radius: 20vw;
   left: 50%;
@@ -515,7 +515,7 @@ body {
 .surgicalSwiper .swiper-scrollbar-drag {
   height: 4px;
   margin-top: 3vw;
-  background-color: #111111;
+  background-color: #2a2a2a;
   border-radius: 20vw;
 }
 

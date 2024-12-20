@@ -46,7 +46,7 @@ data-para-anim
               src="/assets/accessories/inflation-device.png"
               fill
               alt="Ergonomic Product"
-              className="object-contain fadein mobile:rotate-[-35deg]"
+              className="object-contain fadeUp mobile:rotate-[-35deg]"
             />
           </div> 
 

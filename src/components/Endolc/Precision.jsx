@@ -2,14 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { lineAnim } from "../gsapAnimations";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 const Precision = () => {
-
-  lineAnim()
-
   useGSAP(() => {
     if (globalThis.innerWidth >= 1024) {
       gsap.from(".precision-img", {
@@ -22,7 +19,6 @@ const Precision = () => {
         yPercent: 20,
         opacity: 0,
         duration: 1.5,
-        // transformOrigin: "left",
         delay: 0,
         ease: "power3.out",
       });
@@ -94,8 +90,8 @@ data-para-anim
               </h2>
             </div>
 
-            <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw]">
-              <div className="h-[43vw] w-[85%] relative left-[-10%] mobile:absolute mobile:top-[40%] mobile:left-0 mobile:w-[170vw] mobile:h-[50vh] tablet:w-full tablet:left-0 tablet:h-[60vw]">
+            <div className="flex items-center justify-evenly gap-[1vw] w-full mobile:flex-col mobile:gap-[10vw] overflow-hidden">
+              <div className="h-[43vw] w-[85%] relative left-[-10%] mobile:absolute mobile:top-[40%] mobile:left-0 mobile:w-[170vw] mobile:h-[50vh] tablet:w-full tablet:left-0 tablet:h-[60vw] ">
                 <Image
                   src="/assets/endolc/precision-product.png"
                   fill

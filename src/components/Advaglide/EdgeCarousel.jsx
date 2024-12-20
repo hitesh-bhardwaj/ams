@@ -87,7 +87,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                       >
                         Superior Navigability
                       </h2>
-                      <p className="text-black text-[1.4vw] font-extralight w-[50%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
+                      <p className="text-black text-[1.25vw] font-extralight w-[50%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
                         Excellent force transmission during navigation is
                         achieved by balanced pushability and trackability along
                         with low profile balloon, kink resistant shaft and
@@ -110,7 +110,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                       <h2 className="text-black text-[2.2vw] aeonik font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
                         Unsurpass Crossability
                       </h2>
-                      <p className="text-black text-[1.4vw] font-extralight w-[80%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[90%] tablet:leading-[1.3]">
+                      <p className="text-black text-[1.25vw] font-extralight w-[80%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[90%] tablet:leading-[1.3]">
                         Thinnest balloon wall (0.008 mm) results in excellent
                         gliding and flexibility through tortuous coronary
                         anatomies.
@@ -132,7 +132,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                       <h2 className="text-black text-[2.2vw] aeonik font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]">
                         Novel Inner Tube
                       </h2>
-                      <p className="text-black text-[1.4vw] font-extralight w-[80%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
+                      <p className="text-black text-[1.25vw] font-extralight w-[80%] mobile:text-[4.2vw] mobile:w-[80%] tablet:text-[2.2vw] tablet:w-[70%] tablet:leading-[1.3]">
                         Patented design of inner tube at distal catheter segment
                         provides absolute freedom of guide wire movement on
                         occluded balloon at high inflation pressure (up to RBP)
@@ -143,9 +143,6 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                 </SwiperSlide>
               </Swiper>
             </div>
-          </Media>
-
-          <Media greaterThan="mobile">
             <div className={`absolute top-[90%] w-[${width}] left-[20%] endoSmallSwiperContainer fadeUp`}>
               <Swiper
                 onSwiper={setThumbsSwiper}
@@ -171,7 +168,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
             </div>
           </Media>
         </div>
-        <Media at="mobile">
+        <Media lessThan="tablet">
           <div className="w-full flex flex-col gap-[7vw]">
             <div className="w-[85vw] h-[160vw] flex flex-col relative justify-end items-center p-[8vw] pb-[12vw] gap-[5vw] aeonik bg-white/40 rounded-[9vw] overflow-hidden border fadeUp  ">
               <div className="w-full h-full absolute top-[-25%]">

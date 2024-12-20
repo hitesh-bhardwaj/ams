@@ -3,7 +3,7 @@ import React from 'react'
 
 const Unique = () => {
   return (
-   <>
+   <> 
    <section id='unique' className='py-[8vw] mobile:pt-0 overflow-hidden'>
    <div className='h-full w-screen tablet:h-full mobile:h-full '>
           <div className='h-full w-full flex flex-col   items-center justify-center gap-[7vw] tablet:py-[5vw] tablet:h-[60%] mobile:h-full mobile:py-[10%]'>

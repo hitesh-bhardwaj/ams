@@ -5,15 +5,12 @@ import 'swiper/css/scrollbar';
 import { Scrollbar } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css/navigation';
-import { fadeUp, paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const LC3Carousel = () => {
-  fadeUp()
-    paraAnim();
     useGSAP(()=>{
             if(globalThis.innerWidth>1024){
             const tl = gsap.timeline({
@@ -34,24 +31,21 @@ const LC3Carousel = () => {
         };
         });
 
-        const swiperRef = useRef(null); // Create a ref for Swiper
-
-        // State to track which button was clicked
+        const swiperRef = useRef(null); 
         const [activeButton, setActiveButton] = useState("");
-      
         const handleNext = () => {
           if (swiperRef.current) {
-            swiperRef.current.slideNext(); // Move to the next slide
-            setActiveButton("next"); // Set next button as active
-            // Reset after 300ms
+            swiperRef.current.slideNext(); 
+            setActiveButton("next");
+           
           }
         };
       
         const handlePrev = () => {
           if (swiperRef.current) {
-            swiperRef.current.slidePrev(); // Move to the previous slide
-            setActiveButton("prev"); // Set previous button as active
-            // Reset after 300ms
+            swiperRef.current.slidePrev(); 
+            setActiveButton("prev"); 
+           
           }
         };
      
@@ -79,7 +73,7 @@ const LC3Carousel = () => {
               spaceBetween: 50,
             },
           }}
-        className={`w-screen flex items-center justify-center lc3Swiper specificationSwiper   tablet:h-[60vh]`}
+        className={`w-screen flex items-center justify-center lc3Swiper specificationSwiper   tablet:h-[60vh] mobile:h-[90vh]`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
@@ -138,7 +132,7 @@ const LC3Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute top-[30%] right-[5%] aeonik font-light text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%]  tablet:left-[5%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[80%] tablet:font-light'><span data-para-anim>Enhanced staple count visibility</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[20%] right-[5%] aeonik font-light text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%]  tablet:left-[5%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[80%] tablet:font-light'><span data-para-anim>Enhanced staple count visibility</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc3-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -160,7 +154,7 @@ const LC3Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  w-[20vw] text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]'><span data-para-anim>Even pressure distribution from proximal to distal ends.</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[90%] mobile:bottom-[5%] mobile:left-[5%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]'><span data-para-anim>Even pressure distribution from proximal to distal ends.</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc3-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -182,7 +176,7 @@ const LC3Carousel = () => {
                         className='object-contain '
                         />
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw]  mobile:font-light mobile:w-[70%] mobile:bottom-[5%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]'><span data-para-anim>Avoids accidental misfiring before clamping.</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw]  mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[12%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]'><span data-para-anim>Avoids accidental misfiring before clamping.</span></p>
                     <div className='absolute h-[100%] w-[100%] z-[-1]'>
                     <Image src="/assets/advastaplc/lc3-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
                 </div>
@@ -195,7 +189,7 @@ const LC3Carousel = () => {
       
       </Swiper>
      <div
-                           className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[-3%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+                           className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[-3%] right-0 mobile:bottom-[-3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
                            onClick={handleNext} // Trigger next slide
                          >
                            <span
@@ -211,7 +205,7 @@ const LC3Carousel = () => {
                            </div>
                          </div>
                          <div
-                           className={`px-[1.2vw] py-[1.2vw] bottom-[-3%] right-[6%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
+                           className={`px-[1.2vw] py-[1.2vw] bottom-[-3%] right-[6%] absolute z-[5] mobile:bottom-[-3%] mobile:top-auto mobile:left-[37%] mobile:right-auto translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
                            onClick={handlePrev} // Trigger previous slide
                          >
                            <span

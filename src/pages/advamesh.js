@@ -7,8 +7,11 @@ import MidWeightSpecifications from "@/components/Advamesh/MidWeightSpecificatio
 import Polypropylene from "@/components/Advamesh/Polypropylene";
 import PolypropyleneSpecifications from "@/components/Advamesh/PolypropyleneSpecifications";
 import Layout from "@/components/Layout";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 
 const advamesh = () => {
+  fadeUp();
+  paraAnim();
   return (
     <>
       <Layout>

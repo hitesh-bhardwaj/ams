@@ -6,21 +6,24 @@ import Layout from "@/components/Layout";
 import BgVideo from "@/components/Layout/BgVideo";
 import Genesis from "@/components/layoutComponents/Genesis";
 import { Media } from "@/components/media";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 
 const blogs = () => {
+  fadeUp();
+  paraAnim();
     const content = {
-        heading: "Transforming Healthcare Globally",
+        heading: "Stories of Change",
         smallpara:
-          "Stay informed with the latest innovations and achievements from AMS. We are continually advancing surgical technologies to enhance patient care and improve outcomes. Explore our latest product launches, industry partnerships, and thought leadership initiatives. AMS is dedicated to providing cutting-edge medical devices and education for healthcare professionals worldwide. Follow our updates as we continue our journey to revolutionize medical technology.",
+          "Stay connected with the latest updates, breakthrough innovations, and exciting events that drive our progress. From industry-leading advancements and strategic partnerships to impactful conferences and community initiatives, this page is your gateway to everything happening in our world. Join us as we share the stories that shape the future and inspire change.",
         bigpara:
-          "With a global presence, we are committed to advancing healthcare, collaborating with professionals worldwide to set new benchmarks in medical solutions.",
+          "Explore how we’re driving meaningful change, guided by innovation, compassion, and a relentless dedication to improving lives. Whether it’s through revolutionary medical devices, empowering partnerships, or initiatives that bring care closer to communities, we are committed to creating a healthier tomorrow.",
         src: "/assets/blogs/blogs-genesis-bg.png",
       };
       const hero = {
-        title: "Latest News",
+        title: "STORIES NEWS & EVENTS",
         src: "/assets/blogs/blogs-hero-bg.png",
         content:
-          "Latest Updates from Advanced MedTech Solutions",
+          "",
       };
   return (
     <>
@@ -35,8 +38,8 @@ const blogs = () => {
                 mode={"dark"}
                 paraWidth={"max-w-[16vw]"}
               />
-        <Genesis content={content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
-                bParaWidth={"w-[30%]"} />
+        <Genesis content={content} sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}
+                bParaWidth={"w-[60%]"} />
                 <Insights/>
                 <More/>
         </main>

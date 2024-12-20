@@ -1,14 +1,10 @@
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { fadeUp, lineAnim } from "../gsapAnimations";
 gsap.registerPlugin(useGSAP);
 
 const Hero = () => {
-  fadeUp();
-  lineAnim()
   useGSAP(() => {
-    
     gsap.from('.lineSpan',{
       scale:0,
       duration:1,
@@ -17,9 +13,9 @@ const Hero = () => {
       ease: "power3.out",
     });
     gsap.from('.hero-text',{
-      y:10,
+      y:30,
       opacity:0,
-      duration:1,
+      duration:1.5,
       ease:'power3.out',
       delay:0.5
     })
@@ -40,17 +36,17 @@ const Hero = () => {
                   </span>
                 </h1>
                 <div className="bg-black/50 w-[80%] h-[3px] mt-[3vw] hidden mobile:block lineDraw"></div>
-                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-space font-light mobile:text-[5vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
+                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-wider font-light mobile:text-[5vw] mobile:leading-[1.2] mobile:w-full mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 CIRCULAR STAPLER 3-row
                 </p>
               </div>
-              <div className="flex items-center justify-end w-[108%]  mt-[-0.55vw]  mobile:justify-center mobile:text-center mobile:ml-0 ">
+              <div className="flex items-center justify-end w-[82%]  mt-[-0.55vw]  mobile:justify-center mobile:text-center mobile:ml-0 ">
                 <span className="w-[12vw] h-[1px] bg-[#4A4A4A] mobile:hidden tablet:w-[15vw] lineSpan tablet:absolute tablet:left-[60%] tablet:top-[87%]"></span>
               </div>
             </div>
               <div className="w-[80vw] h-[20vw]  scale-[2.5] relative left-[-14%] bottom-[7%] pointer-events-none mobile:bottom-[-25%] mobile:w-[70vw]  mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] tablet:bottom-[10%] z-10 fadeUp ">
                 <Image
-                  className="object-contain mobile:rotate-[-45deg] hero-img"
+                  className="object-contain mobile:rotate-[-45deg] "
                   src="/assets/advastapcs/circular-stapler.png"
                   alt="Hero Image"
                   priority={true}

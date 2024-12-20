@@ -1,13 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import { fadeIn } from '../gsapAnimations'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Versatility = () => {
-  fadeIn();
   useGSAP(()=>{
     gsap.to(
       ".rline-draw1",
@@ -110,19 +108,19 @@ data-para-anim
           </h2>
         </div>
         <div className=" w-full h-full flex flex-col items-center justify-center">
-          <div className="h-[40vw] w-[70vw] absolute scale-[1] left-[-10%] bottom-[-5%] mobile:order-1 mobile:w-[180vw] mobile:h-[120vw] mobile:right-[-80%] mobile:left-auto mobile:top-[45%] mobile:absolute tablet:w-[100vw] tablet:h-[60vw] ">
+          <div className="h-[40vw] w-[70vw] absolute scale-[1] left-[-10%] bottom-[-5%] mobile:order-1 mobile:w-[180vw] mobile:h-[120vw] mobile:right-[-80%] mobile:left-auto mobile:top-[45%] mobile:absolute tablet:w-[100vw] tablet:h-[60vw] fadeUp">
             <Image
               src="/assets/reloads/reloads2.png"
               fill
               alt="Reloads Product"
-              className="object-contain mobile:rotate-[-80deg] fadein"
+              className="object-contain mobile:rotate-[-80deg] "
             />
           </div>
           <div className='absolute bottom-[10%] left-[40%] mobile:bottom-[10%] mobile:left-[10%]'>
-            <p className='text-[1.67vw] font-light mobile:text-[6vw] mobile:w-[50%] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]'>Three rows of varied height staples</p>
+            <p data-para-anim className='text-[1.67vw] font-light mobile:text-[6vw] mobile:w-[50%] mobile:text-center mobile:leading-[1.2] tablet:text-[3vw]'>Three rows of varied height staples</p>
           </div>
           <div className='absolute top-[35%] left-[5%] mobile:top-[55%] tablet:top-[45%]  '>
-            <p   className='text-[1.67vw] font-light mobile:text-[6vw] mobile:w-[60%] mobile:text-center tablet:text-[3vw]'><span>Drop shaped anvil pockets</span></p>
+            <p data-para-anim  className='text-[1.67vw] font-light mobile:text-[6vw] mobile:w-[60%] mobile:text-center tablet:text-[3vw]'><span>Drop shaped anvil pockets</span></p>
           </div>
           <div className='absolute right-[10%] top-[45%] mobile:static mobile:w-[80vw] mobile:h-[30vw] mobile:mt-[15vw] mobile:flex mobile:flex-col mobile:gap-[4vw] tablet:w-[35vw] tablet:top-[30%]'>
             <Image src="/assets/reloads/stepped.png" height={200} width={200} alt="stepped" className='object-contain w-full h-full'/>
@@ -134,7 +132,7 @@ data-para-anim
     </div>
         <div className="absolute h-[100%] w-[100vw] z-[-1] top-0 left-0">
           <Image
-            src="/assets/advastapcs/ergonomic-bg.png"
+            src="/assets/reloads/versatility-bg.png"
             fill
             alt="Ergonomic bg"
             className="object-cover z-[-1]"

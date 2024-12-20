@@ -67,9 +67,9 @@ const LC3Specifications = () => {
         <div className="flex w-full border-b border-[#DADADA]  tablet:w-[130vw] mobile:w-[180vw]">
           <div className=" p-[1vw] text-[#4564AC] w-[25vw]  tablet:w-[40vw] mobile:w-[60vw]">Approx. staple height closed</div>
           <div className=" flex justify-start  gap-[8vw] ">
-            <div className="p-[1vw]  ">
+            <div className="p-[1vw] ">
                 <ul>
-                    <li className='flex items-center w-[15vw] tablet:w-[40vw] mobile:w-[55vw]'><span className='h-[10px] w-[10px] rounded-full bg-[#5391C8] block mr-[0.5vw]'></span>Regular, 1.5 mm</li>
+                    <li className='flex items-center w-[15vw]  tablet:w-[40vw] mobile:w-[55vw]'><span className='h-[10px] w-[10px] rounded-full bg-[#5391C8] block mr-[0.5vw]'></span>Regular, 1.5 mm</li>
                     <li className='flex items-center w-[15vw] tablet:w-[40vw] mobile:w-[55vw]'><span className='h-[10px] w-[10px] rounded-full bg-[#D7B56E] block mr-[0.5vw] '></span>Regular - Thick, 1.8 mm</li>
                     <li className='flex items-center w-[15vw]  tablet:w-[40vw] mobile:w-[55vw]'><span className='h-[10px] w-[10px] rounded-full bg-[#52B173] block mr-[0.5vw]'></span>Thick, 2.0 mm</li>
                 </ul>

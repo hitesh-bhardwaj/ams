@@ -6,8 +6,11 @@ import Hero from "@/components/Advakit/Hero";
 import Ortho from "@/components/Advakit/Ortho";
 import OrthoSpecifications from "@/components/Advakit/OrthoSpecifications";
 import Layout from "@/components/Layout";
+import { fadeUp , paraAnim } from "@/components/gsapAnimations";
 
 const advakit = () => {
+  fadeUp();
+  paraAnim();
   return (
     <>
       <Layout>

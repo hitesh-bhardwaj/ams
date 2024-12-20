@@ -53,7 +53,7 @@ data-para-anim
                    Stent (Scaffold) Design
                     </p>
                   </div>
-                  <div className="absolute w-[22%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[15%] top-[55%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:gap-[5vw] mobile:px-[5vw] tablet:w-[30%] tablet:top-[43%] tablet:left-[10%]">
+                  <div className="absolute w-[22%] h-fit rounded-[1vw] px-[2vw] py-[1vw] flex items-center justify-center  text-[#FFFFFF] left-[10%] top-[52%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:gap-[5vw] mobile:px-[5vw] tablet:w-[30%] tablet:top-[43%] tablet:left-[10%]">
                     <div className="absolute h-[4vw] w-[4vw] left-0 top-0 tablet:h-[5vw] tablet:w-[5vw] mobile:top-[66%] mobile:left-0 mobile:h-[15vw] mobile:w-[15vw] mobile:relative ">
                         <Image src="/assets/advapro/drug.png" fill alt="coating" className="fadeUp"/>
                     </div>
@@ -88,6 +88,9 @@ data-para-anim
                     >
                   Cobalt Chromium Stent
                     </p>
+                  </div>
+                  <div className="absolute left-[10%] bottom-[20%] mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[6vw] mobile:rounded-[4vw] mobile:gap-[5vw] mobile:px-[5vw] tablet:bottom-[35%] tablet:left-[2%]">
+                  <Image src={"/assets/advapro/sirolimus-drug.png"} width={154} height={154} alt="Sirolimus drug" className="fadeUp"/>
                   </div>
 
                   </div>                 
