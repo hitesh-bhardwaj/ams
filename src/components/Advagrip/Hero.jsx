@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import { fadeUp, paraAnim } from "../gsapAnimations";
+import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hero = () => {
   paraAnim();
-  fadeUp()
+  
  
   return (
     <section className=" hero-container dark" id="hero">
@@ -34,11 +34,11 @@ const Hero = () => {
         
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col  mt-[12vw] items-start tablet:h-[70vh] mobile:items-center mobile:mt-[35vw] tablet:mt-[25vw]">
+          <div className="flex h-dvh w-full flex-col  mt-[12vw] items-start tablet:h-[70vh] mobile:items-center mobile:mt-[40vw] tablet:mt-[25vw]">
             <div className=" mobile:flex mobile:flex-col mobile:items-center ">
               <h1
                 
-                className="text-[5.5vw] title-1  aeonik uppercase  leading-[1.25] mobile:text-center tablet:text-[9vw] fadeUp"
+                className="text-[5.5vw] title-1  aeonik uppercase  leading-[1.25] mobile:text-center tablet:text-[9vw] fadeUp mobile:text-[15vw]"
               >
                 <span className={`leading-[1.2] overflow-hidden grip-gradient text-white`}>
                   ADVAGRIP
@@ -46,7 +46,7 @@ const Hero = () => {
               </h1>
              
               <p
-                className={` w-[50vw] mb-[4vw] tablet:max-w-[50vw] mobile:w-[80vw] mobile:my-[7vw] `}
+                className={` w-[50vw] mb-[4vw] tablet:max-w-[50vw] mobile:w-[80vw] mobile:my-[7vw] mobile:text-center `}
               >
                 <span
                   data-para-anim

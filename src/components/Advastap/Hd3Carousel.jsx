@@ -123,7 +123,7 @@ const Hd3Carousel = () => {
       </Swiper>
       <div>
        <div
-                 className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[82%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+                 className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[82%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[64%] translate-x-[-65%] tablet:top-[95%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
                  onClick={handleNext} // Trigger next slide
                >
                  <span
@@ -139,7 +139,7 @@ const Hd3Carousel = () => {
                  </div>
                </div>
                <div
-                 className={`px-[1.2vw] py-[1.2vw] top-[82%] right-[6%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
+                 className={`px-[1.2vw] py-[1.2vw] top-[82%] right-[6%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[40%] mobile:right-auto translate-x-[-38%] tablet:right-[10%]  tablet:top-[95%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
                  onClick={handlePrev} // Trigger previous slide
                >
                  <span

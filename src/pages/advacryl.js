@@ -75,7 +75,7 @@ const cardData = [
   },
   {
     title: "Tensile Strength",
-    description: "~75% | 14 Days  ~55% | 21 Days",
+    description: "~75% | 14 Days  <br/>  ~55% | 21 Days",
     svg: "/assets/advacryl/tensile.svg"
 
   },

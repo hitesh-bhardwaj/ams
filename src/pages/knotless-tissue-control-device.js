@@ -8,6 +8,7 @@ import KeyFeatures from "@/components/Advagrip/KeyFeatures";
 import Paradigm from "@/components/Advagrip/Paradigm";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
+import { fadeUp } from "@/components/gsapAnimations";
 
 const EdgeCard = {
   card1: {
@@ -42,6 +43,7 @@ const FeatureCard = {
 };
 
 const advaGrip = () => {
+  fadeUp()
   return (
     <>
       <Layout>

@@ -17,10 +17,10 @@ import { Media } from "../media";
 
 const PortfolioCard = ({ src, heading, para, textclass }) => {
   return (
-    <div className="w-[85vw] h-[50vw] relative rounded-[10px] mobile:h-[150vw] mobile:w-full mobile:rounded-2xl mobile:overflow-hidden mobile:border tablet:h-[70vw] mobile:pt-[20%]">
+    <div className="w-[85vw] h-[50vw] relative rounded-[10px] mobile:h-[150vw] mobile:w-full mobile:rounded-2xl mobile:overflow-hidden mobile:border tablet:w-[90vw] tablet:h-[70vw] mobile:pt-[20%]">
       <Image src={src} width={1800} height={900} alt="Hernia Slider" className="object-cover w-full h-full mobile:absolute mobile:left-0 mobile:top-0 mobile:z-[-1]"/>
       <div className="absolute top-[15%] left-[10%] flex flex-col gap-[2vw] w-[60%] tablet:w-[70%] tablet:top-[10%] mobile:w-full mobile:px-[8%] mobile:static mobile:z-[5] mobile:text-center" >
-        <h2 className={`${textclass} text-[2.8vw] !font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw]`}>
+        <h2 className={`${textclass} text-[2.8vw] !font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw] aeonik`}>
           {heading}
         </h2>
         <p className={`${textclass} text-[1.3vw] font-light w-[80%] mobile:text-[4.2vw] tablet:text-[2.2vw] tablet:w-full tablet:leading-[1.3] mobile:w-full`}>
@@ -48,9 +48,9 @@ const PortfolioSwiper = ({ slidesData, textclass, width }) => {
   };
 
   return (
-    <section id="portfolio-swiper" className="overflow-x-hidden bg-white/50 my-[7%] mt-[12%] tablet:mt-[15%] mobile:mt-[25%]">
+    <section id="portfolio-swiper" className="overflow-x-hidden bg-white/50 my-[7%] mt-[12%] tablet:mt-[15%] mobile:mt-[10%]">
       <div className="w-full ml-[10%] pb-[7%] relative h-full mobile:ml-[0%] mobile:pt-[10vw] mobile:pb-[15vw]">
-        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[-10%] tablet:text-[2.5vw] tablet:top-[12%]">
+        <div className="text-[1.25vw] text-[#2A2A2A] font-light rotate-[-90deg] absolute left-[-52%] portfolio-text flex items-center gap-[2vw] w-full top-[-10%] tablet:text-[2.5vw] tablet:top-[20%] tablet:left-[-55%]">
           <p className="text-end">{slidesData[0].title}</p>
         </div>
         <div className="mobile:block hidden w-full px-[5vw] text-center font-light text-[8vw] mb-[12vw] capitalize">

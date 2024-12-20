@@ -64,8 +64,8 @@ export default function FormOem() {
   return (
     <section className="pt-[12%]" id="formoem">
       <div className="w-full h-full py-[8vw] border-gray-200 bg-white/50">
-        <div className="w-[75%] mx-auto font-light pr-[2vw]">
-          <div className="w-full flex gap-[12vw] mobile:flex-col mobile:w-full mobile:items-center tablet:w-[85%]">
+        <div className="w-[75%] mx-auto font-light pr-[2vw] tablet:w-full">
+          <div className="w-full flex gap-[12vw] mobile:flex-col mobile:w-full mobile:items-center tablet:w-full tablet:px-[5vw] tablet:gap-[5vw] tablet:justify-between">
             <div className="w-[40%] flex flex-col gap-[2vw] mobile:w-full mobile:gap-[5vw] ">
               <h3 data-para-anim className="text-[2.8vw] aeonik mobile:text-[10vw] mobile:text-center tablet:text-[5vw] ">Get in Touch</h3>
               <p data-para-anim className="text-[1.3vw] mobile:text-[4.5vw] mobile:text-center tablet:text-[2.2vw] ">
@@ -88,7 +88,7 @@ export default function FormOem() {
               </div>
             </div>
 
-            <div className="w-[40%] px-[3vw] rounded-[2.5vw] shadow-sm py-[2vw] mobile:w-[90%] bg-white mobile:rounded-[9vw] mobile:px-[10vw] mobile:py-[15vw] mobile:border mobile:items-center tablet:w-[40%] fadeUp">
+            <div className="w-[40%] px-[3vw] rounded-[2.5vw] shadow-sm py-[2vw] mobile:w-[90%] bg-white mobile:rounded-[9vw] mobile:px-[10vw] mobile:py-[15vw] mobile:border mobile:items-center tablet:w-[50%] fadeUp">
               <h3 className="aeonik text-[2.5vw] mobile:text-[9vw] mobile:text-center tablet:text-[4.5vw] mb-[2vw]">Send Message</h3>
               <Form {...form}>
                 <form

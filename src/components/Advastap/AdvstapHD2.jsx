@@ -34,7 +34,7 @@ const AdvastapHD2 = () => {
    <>
   <section id='advastapAbout'>
   <div className="w-screen h-screen bg-[#020F20] overflow-hidden tablet:h-screen">
-    <div className="w-screen h-[80%] bg-white relative overflow-hidden pt-[4vw] mobile:pt-[10vw] tablet:justify-center">
+    <div className="w-screen h-[80%] bg-white relative overflow-hidden pt-[4vw] mobile:pt-[10vw] tablet:justify-center mobile:h-[85%] ">
     
       <div className="w-full h-full relative scale-[1.05]  about-container mobile:rotate-45 tablet:rotate-90 mobile:top-[10%] mobile:scale-[1.5] mobile:left-[15%] tablet:top-[15%] tablet:left-[10%]">
         <Image 
@@ -45,7 +45,7 @@ const AdvastapHD2 = () => {
         />
       </div>
       
-      <div className="absolute top-[15%] right-[8%]  p-[2vw] mobile:w-full mobile:right-[0%] mobile:text-center tablet:w-full tablet:p-[4vw] tablet:top-[5%] tablet:text-center tablet:right-[0%]">
+      <div className="absolute top-[15%] right-[8%]  p-[2vw] mobile:w-full mobile:right-[0%] mobile:text-center tablet:w-full tablet:p-[4vw] tablet:top-[5%] tablet:text-center tablet:right-[0%] mobile:top-[10%]">
         <h2 className="text-[4vw] aeonik  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[7.5vw]">
           <span data-para-anim className="leading-[1.3] overflow-hidden w-full mobile:w-full mobile:text-center tablet:w-full tablet:text-center">
           ADVASTAP HD III
@@ -60,8 +60,8 @@ const AdvastapHD2 = () => {
 
     </div>
 
-    <div className="w-screen h-[20%] flex items-center justify-center ">
-      <div className="text-white text-[2.5vw] tracking-wider font uppercase gradient-text mobile:text-[4.1vw] tablet:text-[4.5vw] ">
+    <div className="w-screen h-[20%] flex items-center justify-center mobile:h-[15%]">
+      <div className="text-white text-[2.5vw] tracking-wider font uppercase gradient-text mobile:text-[5vw] tablet:text-[4.5vw] ">
       <p>Raised to the</p>
         <span className="gradient-line"></span>
         <span className="gradient-line"></span>

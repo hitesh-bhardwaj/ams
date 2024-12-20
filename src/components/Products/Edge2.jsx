@@ -72,11 +72,11 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
 
               <div className="edge-card2 py-[3vw] px-[1vw] h-[41vw] w-[43vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw] ">
                 <div className="flex items-center justify-center mobile:flex-col mobile:gap-[5vw]">
-                  <p className="text-[2.5vw] font-light aeonik mobile:text-[4.2vw] text-center  tablet:text-[2vw]">
+                  <p className="text-[2.5vw] font-light aeonik mobile:text-[8vw] text-center  tablet:text-[2vw]">
                     {card2.title}
                   </p>
                 </div>
-                <div className="w-[28vw] h-[25vw] mobile:h-[50vw] mobile:w-[75vw] mobile:mt-[5vw]">
+                <div className="w-[35vw] h-[30vw] mobile:h-[50vw] mobile:w-[75vw] mobile:mt-[5vw]">
                   <div className="w-full h-full relative">
                     <Image
                       src={card2.src}
@@ -86,7 +86,7 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
                     />
                   </div>
                 </div>
-                <div className={`mobile:w-[70%] ${className}`}>
+                <div className={`mobile:w-[70%] ${className} tablet:w-[80%]`}>
                         <ul className="list-disc text-[1.15vw] font-light space-y-[0.5vw] mobile:text-[5.5vw] mobile:text-left tablet:text-[2vw]">
                             <li>{card2.list1}</li>
                             <li>{card2.list2}</li>

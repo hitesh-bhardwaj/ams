@@ -1,6 +1,6 @@
 .sliderSection {
     height: 100vh;
-    top: 67vw;
+    top: 65vw;
     position: absolute;
     width: 100%;
 }
@@ -25,4 +25,12 @@
     height: 26vw;
     cursor: pointer;
   }
-  
+  @media screen and (max-width: 1440px) {
+    .sliderSection {
+      height: 100vh;
+      top: 72vw;
+      position: absolute;
+      width: 100%;
+  }
+ 
+  }

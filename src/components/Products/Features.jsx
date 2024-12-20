@@ -3,18 +3,18 @@ import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { paraAnim, fadeUp } from "../gsapAnimations";
+import { paraAnim } from "../gsapAnimations";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
-import { Media } from '../media';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const FeatureCard = ({ src, title }) => {
   return (
-    <div className='w-full  tablet:w-fit flex flex-col items-center justify-center feature-card group opacity-[0.2] cursor-pointer duration-500 transition-all ease  hover:opacity-[1] tablet:py-[5%] mobile:opacity-[1] tablet:opacity-[1] hover:scale-[1.2]'>
+    <div className='w-full  tablet:w-fit flex flex-col items-center justify-center feature-card group opacity-[0.2] cursor-pointer duration-500 transition-all ease  hover:opacity-[1] tablet:py-[5%] mobile:opacity-[1] tablet:opacity-[1] hover:scale-[1.1]'>
       <div className='h-[19vw] w-[19vw] mobile:w-[60vw] mobile:h-[50vw] tablet:w-[42vw] tablet:h-[25vw]'>
         <div className='w-full h-full relative'>
           <Image
@@ -36,7 +36,6 @@ const FeatureCard = ({ src, title }) => {
 
 const Features = ({ features }) => {
   paraAnim();
-  fadeUp();
 
   const swiperRef = useRef(null);
   const [activeButton, setActiveButton] = useState("");

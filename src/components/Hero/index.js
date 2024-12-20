@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden="" ,mode,titleWidth=""}) => {
   return (
-    <section className={`hero-container mobile:mb-[15%] ${mode}`} id="hero">
+    <section className={`hero-container ${mode}`} id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh]">
         <div className="w-full h-full absolute tablet:h-full">
           <Image
@@ -17,7 +17,7 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden="" ,mo
         </div>
         <div className="px-[12%] relative mobile:px-[5%]">
           <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[80vh] mobile:justify-start mobile:pt-[35vw]">
-            <div className={`w-[90%] mobile:w-full ${titleWidth}`}>
+            <div className={`w-[90%] mobile:w-full ${titleWidth} tablet:w-full`}>
               <h1 className={`title-1 w-full aeonik capitalize leading-[1] mobile:text-center ${titleHidden}`} >
                 <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center ${titleColor?"text-black":""}`}>
                  {title}

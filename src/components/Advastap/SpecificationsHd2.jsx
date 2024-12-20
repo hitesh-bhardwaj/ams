@@ -72,8 +72,8 @@ const SpecificationsHd2 = () => {
           <div className="flex w-full border-b border-[#DADADA] gap-[5vw] mobile:w-[180vw]">
             <div className="w-[20vw] p-[1vw]">Closed staple shape</div>
             <div className=" flex justify-start  gap-[5vw] mobile:w-[100vw] ">
-              <div className="p-[1vw] w-[20vw] flex gap-[1vw]  mobile:w-[80vw]"><p>B Form</p> <Image src="/assets/advastap/bform.png" height={36} width={20} alt="bform"/></div>
-              <div className="p-[1vw] w-[20vw] flex gap-[1vw]  mobile:w-[80vw]"><p>B Form</p> <Image src="/assets/advastap/bform.png" height={36} width={20} alt="bform"/></div>
+              <div className="p-[1vw] w-[20vw] flex gap-[1vw]  mobile:w-[80vw]"><p>B Form</p> <Image src="/assets/advastap/bform.png" height={36} width={36} alt="bform" className="mobile:w-[7vw] mobile:h-[7vw]"/></div>
+              <div className="p-[1vw] w-[20vw] flex gap-[1vw]  mobile:w-[80vw]"><p>B Form</p> <Image src="/assets/advastap/bform.png" height={36} width={36} alt="bform" className="mobile:w-[7vw] mobile:h-[7vw]"/></div>
             </div>
           </div>
 
@@ -95,8 +95,8 @@ const SpecificationsHd2 = () => {
           <div className="flex w-full border-b border-[#DADADA] gap-[5vw] mobile:w-[180vw]">
             <div className="w-[20vw] p-[1vw]">Quantity/Box</div>
             <div className=" flex justify-start  gap-[5vw] mobile:w-[100vw] ">
-              <div className="p-[1vw] w-[20vw]   mobile:w-[80vw]">01</div>
-              <div className="p-[1vw]   w-[20vw] mobile:w-[80vw]">01</div>
+              <div className="p-[1vw] w-[20vw]   mobile:w-[80vw]">1</div>
+              <div className="p-[1vw]   w-[20vw] mobile:w-[80vw]">1</div>
             </div>
           </div>
           <div className="flex w-full border-b border-[#DADADA] gap-[5vw] mobile:w-[180vw]">

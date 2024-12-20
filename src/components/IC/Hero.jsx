@@ -12,7 +12,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className='hero-container mobile:mb-[15%] dark' id="hero">
+        <section className='hero-container dark' id="hero">
             <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
                 <div className="w-full h-full absolute">
                     <video
@@ -27,13 +27,13 @@ const Hero = () => {
                 </div>
                 <div className="px-[12%] relative mobile:px-[5%]">
                     <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[60vh] mobile:justify-start mobile:pt-[35vw]">
-                        <div className="w-[80%] mobile:w-full">
-                            <h1 className='title-1 w-full aeonik  capitalize  leading-[1]'>
+                        <div className="w-[80%] mobile:w-full tablet:w-full">
+                            <h1 className='title-1 w-full aeonik  leading-[1] mobile:text-center'>
                                 <span data-para-anim className='leading-[1.21] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center  '>
                                 Advancing the science of flow restoration
                                 </span>
                             </h1>
-                            <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
+                            <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[60vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
                                 <span data-para-anim className='text-[#FFFFFF] leading-[1.4]  '>
                                 Advanced MedTech Solutions (AMS) is at the forefront of innovation in Interventional Cardiology. Our mission is to provide meaningful solutions through continuous research and development, ultimately delivering better care and significantly impacting patients&apos; lives.
                                 </span>

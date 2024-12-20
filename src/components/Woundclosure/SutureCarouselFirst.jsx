@@ -65,8 +65,8 @@ const SutureCarouselFirst = () => {
   };
 
   return (
-    <section className="w-screen h-[55vw] overflow-hidden py-[7%] mobile:h-[240vw] tablet:h-[120vw] mobile:py-[15%] relative tablet:py-[8%] " id="suture-carousel-first">
-      <div className="w-full h-fit flex flex-col gap-[1.5vw] items-center text-center">
+    <section className="w-screen h-[55vw] overflow-hidden py-[7%] mobile:h-[240vw] tablet:h-[120vw] mobile:pb-[15%] relative tablet:py-[8%] " id="suture-carousel-first">
+      <div className="w-full h-fit flex flex-col gap-[1.5vw] items-center text-center mobile:gap-[5vw]">
         <h2
 data-para-anim className="title-2 aeonik mobile:w-[80%]">Absorbable Sutures</h2>
         <p data-para-anim className="content-p w-[50%] text-center !leading-[1.4] mobile:w-[85%] tablet:w-[70%]">AMS Absorbable Sutures provide superior tensile strength retention and a predictable absorption profile to meet your surgical needs and tissue healing requirements</p>

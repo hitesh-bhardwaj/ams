@@ -519,6 +519,10 @@ body {
   border-radius: 20vw;
 }
 
+.uncover-swiper{
+  overflow: visible !important;
+  }
+
 /* ::-webkit-scrollbar-track{
   width: 0.3vw !important;
 } */
@@ -715,8 +719,8 @@ color: #000 !important;
     bottom: -30px;
   }
   .gradient-line {
-    height: 15vh;
-    width: 3px;
+    height: 11vh;
+    width: 2px;
   }
   .mySwiper .swiper-scrollbar-horizontal {
     display: none;

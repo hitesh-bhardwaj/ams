@@ -29,7 +29,7 @@ export default function ic() {
       title: "Discover How We Advance Cardiology",
       src: "/assets/ic/ic-carousel-img-1.png",
       srcsmall:"/assets/ic/small1.png",
-      heading: "A new Era in Healthcare",
+      heading: "A New Era In Healthcare",
       para: "AMS has forayed into the Interventional Cardiology space with the arrival of its PTCA Balloon Catheter Rx and forthcoming launch of its Drug Eluting Stent and related accessories. Our advanced technologies, decades rich experiences of our people and partners in healthcare brings synergy to enhance confidence of Interventional Cardiologists globally.",
     },
     {

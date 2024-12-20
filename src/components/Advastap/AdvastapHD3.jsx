@@ -37,7 +37,7 @@ const AdvastapHD3 = () => {
    <section id='advastapHd'>
     <div className='w-screen h-screen bg-[#020F20] overflow-hidden mobile:h-[85vh] tablet:h-[85vh]'>
         <div className='w-screen  bg-white relative  flex h-[80%] flex-col-reverse justify-between items-start pt-[4vw] mobile:py-[10vw] mobile:h-[70vh] tablet:h-[70vh] mobile:overflow-hidden'>
-            <div className='w-full h-full scale-[1.3]  left-[-15%] relative hd-container top-[15%] mobile:w-full mobile:-rotate-[110deg] mobile:left-[20%] mobile:scale-[1] mobile:top-[25%] tablet:left-0 tablet:scale-[1]'>
+            <div className='w-full h-full scale-[1.6]  left-[-8%] relative hd-container top-[15%] mobile:w-full mobile:-rotate-[40deg] mobile:left-[0%] mobile:scale-[1.3] mobile:top-[10%] tablet:left-0 tablet:scale-[1]'>
             <Image 
             src="/assets/advastap/hd2.png"
             fill
@@ -46,8 +46,8 @@ const AdvastapHD3 = () => {
             tablet:object-contain'
             />
             </div>
-            <div className=" absolute top-[15%] left-[8%] p-[2vw] mobile:w-full mobile:pl-0 tablet:w-full tablet:pl-0 mobile:left-0 tablet:left-0">
-            <h2 className="text-[4vw] aeonik  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[7.5vw]">
+            <div className=" absolute top-[15%] left-[8%] p-[2vw] mobile:w-full mobile:pl-0 tablet:w-full tablet:pl-0 mobile:left-0 mobile:static mobile:flex mobile:justify-center mobile:flex-col tablet:left-0 ">
+            <h2 className="text-[4vw] aeonik  tracking-wide text-[#4A4A4A] leading-[1] mobile:text-[11.2vw] tablet:text-[7.5vw] mobile:text-center">
           <span data-para-anim className="leading-[1.3] overflow-hidden w-full mobile:w-full mobile:text-center tablet:w-full tablet:text-center">
           ADVASTAP HD II
           </span>

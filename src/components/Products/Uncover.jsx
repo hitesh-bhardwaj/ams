@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useRouter } from "next/router";
+import { FreeMode } from "swiper/modules";
 
 
 const cards = [
@@ -50,17 +51,19 @@ const Uncover = () => {
   const filteredCards = cards.filter(card => card.src !== currentRoute);
 
   return (
-    <section id="uncover" className="mobile:pb-[20%] py-[5%] ">
+    <section id="uncover" className="mobile:pb-[20%] py-[5%] w-screen overflow-hidden ">
       <div className="flex flex-col items-center justify-center px-[4%] pb-[4%]">
         <div className="mobile:mb-[7vw]">
           <h2 className="title-2 aeonik">Uncover More</h2>
         </div>
-        <div className="w-screen h-full pt-[5vw] px-[3vw] ">
+        <div className="w-screen h-full pt-[5vw] px-[3vw] mobile:pl-[5vw] ">
           <Swiper
-            slidesPerView={4}
+            slidesPerView={1.2}
             spaceBetween={20}
+            freeMode={true}
+            modules={[FreeMode]}
             breakpoints={{
-              640: { slidesPerView: 1 },
+              540: { slidesPerView: 2.2 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 4 },
             }}

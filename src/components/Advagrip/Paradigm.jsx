@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import { fadeUp } from "../gsapAnimations";
+
 
 const Paradigm = () => {
-  fadeUp()
+ 
   return (
     <>
       <section id="paradigm" className="mobile:py-[15%] py-[3%]">
         <div className="container-lg flex flex-col gap-[6vw] justify-center items-center mobile:gap-[15vw]">
           <h2
-data-para-anim className="title-2 aeonik w-[60%] text-center mobile:w-[90%] tablet:w-[70%]">
+data-para-anim className="title-2 aeonik w-[60%] text-center mobile:w-[90%] tablet:w-[90%]">
             Changing The Paradigm of Knotless Suture Technology
           </h2>
           <div className="w-full h-full flex gap-[2vw] mobile:flex-col mobile:gap-[7vw] ">

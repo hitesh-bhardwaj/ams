@@ -73,7 +73,7 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
                 </div>
               </div>
 
-              <div className="edge-card2 py-[3vw] px-[1vw] h-[41vw] w-[43vw] border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw]  ">
+              <div className="edge-card2 py-[3vw] px-[1vw] h-[41vw] w-[43vw] border flex flex-col items-center justify-center gap-[1vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw]  ">
                 <div className="flex items-center justify-center mobile:flex-col mobile:gap-[5vw]">
                   <span className={`block w-[10.7vw] h-[1.65vw] relative mr-[0.5vw] mobile:w-[36vw] mobile:h-[6vw] tablet:w-[20vw] tablet:h-[3vw] ${visibility} `}>
                     <Image
@@ -87,8 +87,8 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
                     {card2.title}
                   </p>
                 </div>
-                <div className="w-[28vw] h-[25vw] mobile:h-[50vw] mobile:w-[75vw] mobile:mt-[5vw]">
-                  <div className="w-full h-full relative">
+                <div className="w-[35vw] h-[30vw] mobile:h-[50vw] mobile:w-[75vw] mobile:mt-[5vw]">
+                  <div className="w-full h-full relative right-[-5%] mt-[2vw] mobile:mt-0 mobile:right-auto">
                     <Image
                       src={card2.src}
                       fill

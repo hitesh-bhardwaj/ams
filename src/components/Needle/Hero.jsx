@@ -9,7 +9,7 @@ const Hero = () => {
   paraAnim();
   
   return (
-    <section className=" hero-container mobile:mb-[15%]" id="hero">
+    <section className=" hero-container" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
         <div className="w-screen h-screen absolute tablet:h-full">
           <Image data-speed="0.7"
@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[70vh] mobile:items-center">
+          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[70vh] mobile:justify-start mobile:pt-[40%]">
             <div className="">
               <h1
                 data-para-anim
@@ -53,8 +53,8 @@ const Hero = () => {
                   
                 </span>
               </h1>
-              <p className={` max-w-[50vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] `}>
-                <span data-para-anim className={`text-black mobile:text-center`}>
+              <p className={` max-w-[50vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] mobile:text-center `}>
+                <span data-para-anim className={`text-black `}>
                 Advanced Needle Technologies uses the finest materials and advanced production processes to develop surgical needles that embody the highest levels of quality and performance.
                 </span>
               </p>

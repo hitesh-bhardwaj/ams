@@ -8,11 +8,11 @@ const Portfolio = ({ currentlink , sectionheading }) => {
 
   return (
     <section id="portfolio" className="pb-[8%]">
-      <div className="flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[15%] mobile:pt-[5%] tablet:px-[4%] mobile:px-0 overflow-hidden">
+      <div className="flex flex-col items-center justify-center px-[4%] pt-[10%] pb-[4%] mobile:py-[12%] tablet:px-[4%] mobile:px-0 overflow-hidden">
         <h2 data-para-anim className="title-2 aeonik capitalize mobile:text-center">
          {sectionheading}
         </h2>
-        <div className="items-center justify-between grid grid-cols-4 gap-[3vw] mt-[7vw] portfolio-card-container tablet:grid-cols-2 mobile:grid-cols-1 mobile:gap-8">
+        <div className="items-center justify-between grid grid-cols-4 gap-[3vw] mt-[7vw] portfolio-card-container tablet:grid-cols-2 mobile:grid-cols-1 mobile:gap-8 mobile:mt-[12vw]">
           {filteredContent.map((item, index) => (
             <PortfolioCard key={index} img={item.image} text={item.title} link={item.link} />
           ))}
@@ -28,7 +28,7 @@ const PortfolioCard = ({ img, text, link }) => {
   return (
     <>
       <Link href={link} className="block group w-full">
-        <div className={`h-[11.5vw] w-full relative rounded-[2.5vw] overflow-hidden portfolio-car tablet:h-[24vw] tablet:rounded-[3vw] mobile:h-[45vw] mobile:w-[85vw] mobile:rounded-[6vw] fadeUp`}>
+        <div className={`h-[11.5vw] w-full relative rounded-[2.5vw] overflow-hidden portfolio-car tablet:h-[24vw] tablet:rounded-[3vw] mobile:h-[60vw] mobile:w-[85vw] mobile:rounded-[6vw] fadeUp`}>
           <Image src={img} width={400} height={225} alt={`${text} image`} className="group-hover:scale-100 scale-110 duration-500 object-cover h-full w-full"
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center" >

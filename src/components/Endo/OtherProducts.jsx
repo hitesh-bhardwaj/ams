@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 const ProductCard = ({ img, heading, link, text }) => {
   return (
     <Link href={link} className="block w-full h-full group">
-      <div className={`h-full w-full bg-white flex flex-col-reverse rounded-[1.5vw] items-center justify-between single relative bg-white/70 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}>
+      <div className={`h-full w-full bg-white flex flex-col-reverse rounded-[1.5vw] items-center justify-between single relative bg-white/70 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw] mobile:rounded-[5vw]`}>
         <div className="w-[43vw] absolute top-[-6vw] mobile:w-[120vw] tablet:top-[10%] mobile:top-[0%]">
           <Image src={img} alt={heading} className="object-contain w-full pointer-events-none group-hover:scale-[1.2] group-hover:-translate-y-[5%] transition-all duration-500" width={600} height={500} priority={false} />
         </div>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const UmbilicalTape = () => {
   return (
-    <section className="hero py-[5%] pt-[8%] tablet:pb-0 tablet:pr-[3%] w-screen overflow-hidden" id="hero">
+    <section className="hero py-[5%] pt-[8%] tablet:pb-0 tablet:pr-[3%] w-screen overflow-hidden bg-white/30 shadow-md box-shadow-sm mobile:shadow-none" id="hero">
     <div className="px-[10%] relative  tablet:px-[5%] mobile:px-[8%]">
       <div className="flex h-screen w-full justify-start items-start mobile:h-full mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
         <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">

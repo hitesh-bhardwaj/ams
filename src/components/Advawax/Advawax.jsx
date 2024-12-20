@@ -3,9 +3,9 @@ import Image from "next/image";
 const Advawax = () => {
   return (
     <>
-      <section className="hero tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden  shadow-md drop-shdow-md" id="hero">
-        <div className="px-[10%] relative hero-container mobile:mt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="flex h-dvh w-full justify-start items-center mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+      <section className="hero tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden  shadow-md drop-shdow-md mobile:bg-white/30 mobile:pt-[10%]" id="hero">
+        <div className="px-[10%] relative hero-container tablet:px-[5%] mobile:px-[8%]">
+          <div className="flex h-dvh w-full justify-start items-center mobile:h-[90vh] mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
             <div className="gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
                 <h2 className="title-1 aeonik  leading-[1]">
@@ -27,7 +27,7 @@ const Advawax = () => {
                 </p>
               </div>
             </div>
-            <div className="absolute right-0 top-[20%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-0 mobile:top-[25%] tablet:top-[30%]">
+            <div className="absolute right-0 top-[20%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-0 mobile:top-[23%] tablet:top-[30%]">
               <div className="w-[55vw] h-[40vw] absolute bottom-[10%] mobile:w-[100vw] mobile:h-[80vw] mobile:right-[10%] mobile:bottom-0 tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
                 <Image
                   className="object-cover"

@@ -91,7 +91,7 @@ const advacrylplus = () => {
       <Layout>
         <main>
           <Hero
-            margin={"mobile:mt-[35vw]"}
+            margin={"mobile:mt-[30vw]"}
             heading={"Advacryl Plus"}
             className="text-[#855EA6]"
             tagline={

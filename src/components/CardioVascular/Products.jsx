@@ -123,12 +123,12 @@ const handleNext = () => {
   return (
     <section id="products" className="w-screen h-[60vw]  overflow-hidden relative mobile:h-[180vh] mt-[10%]">
       <div className="w-full h-full flex items-center justify-between pl-[5vw] mobile:flex-col-reverse tablet:flex-col-reverse">
-        <div className="w-[50vw] h-[20%] flex flex-col justify-center product-text-container mobile:w-full mobile:h-[60vh] tablet:w-full tablet:h-[50vh]">
+        <div className="w-[50vw] h-[20%] flex flex-col justify-center product-text-container mobile:w-full mobile:h-[60vh] tablet:w-full tablet:h-[50vh] z-[10]">
           <div className="h-[10vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
             <h2 className="title-2 product-text aeonik mobile:text-center mobile:ml-0 mobile:px-[5vw]">
               <span data-para-anim>{slidesData[currentIndex]?.title}</span>
             </h2>
-            <p className="product-text overflow-hidden text-[2.2vw] font-light mobile:text-[7vw] mobile:text-center mobile:w-[90%] tablet:text-[3.5vw]">
+            <p className="product-text overflow-hidden text-[2.2vw] aeonik font-light mobile:text-[7vw] mobile:text-center mobile:w-[90%] tablet:text-[3.5vw]">
               {slidesData[currentIndex]?.para}
             </p>
           </div>
@@ -205,14 +205,14 @@ const handleNext = () => {
           />
         </div>
       </div>
-      <div className="absolute w-[55vw] h-[60vw] top-0 right-[-10%] z-[-1] mobile:h-[50vh] mobile:w-[90vw] mobile:top-[10%] tablet:hidden">
+      <div className="absolute w-[55vw] h-[60vw] top-0 right-[-10%] mobile:h-[50vh] mobile:w-[90vw] mobile:top-[10%] tablet:hidden">
         <Image
           src="/assets/cardioVascular/product-bg.png"
           fill
           alt="product-bg"
         />
       </div>
-      <div className="absolute w-[110vw] h-[100%] top-0 left-0 z-[-2] mobile:bottom-0 mobile:top-[10%] mobile:w-full" >
+      <div className="absolute w-[110vw] h-[100%] top-0 left-0 z-0 mobile:bottom-0 mobile:top-[10%] mobile:w-full" >
         <Image
           src="/assets/cardioVascular/carousel-bg.png"
           fill

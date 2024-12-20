@@ -47,18 +47,18 @@ const ProductDescription = ({ data }) => {
               Product Description
             </h2>
           </div>
-          <div className="flex flex-wrap items-center gap-[2vw] product-description-card-container tablet:justify-between mobile:overflow-scroll mobile:flex-nowrap mobile:w-[100vw] mobile:gap-[5vw] mobile:p-[5vw]">
+          <div className="flex flex-wrap items-center gap-[3vw] product-description-card-container tablet:justify-between mobile:overflow-scroll mobile:flex-nowrap mobile:w-[100vw] mobile:gap-[5vw] mobile:p-[5vw]">
             {data.map((card, index) => (
               <div
                 key={index}
                 className="flex flex-col justify-between items-center w-[28vw] h-[16vw]   product-description-card border relative rounded-[2vw] bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0  mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw] "
               >
-                <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:left-[30%] tablet:w-[8vw] tablet:h-[8vw]">
+                <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:left-[35%] mobile:top-[17%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full relative">
                     <div
-                      className={`w-[5vw] h-[5vw] mobile:h-[30vw] mobile:w-[30vw] tablet:w-[10vw] tablet:h-[10vw]`}
+                      className={`w-[5vw] h-[5vw] mobile:h-[25vw] mobile:w-[25vw] tablet:w-[10vw] tablet:h-[10vw] relative`}
                     >
-                      <Image className="w-full h-full relative"
+                      <Image className="w-full h-full "
                         src={card.svg} alt="product-icons" fill
                       />
                     </div>

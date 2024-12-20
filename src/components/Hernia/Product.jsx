@@ -218,6 +218,7 @@ data-para-anim className="title-2 aeonik">
               <ProductCard
                 img={product.imgSrc}
                 heading={product.heading}
+                arrowColor={`${i==2?true:""}`}
                 className={`${i==2?"text-white #ffffff ":""}`}
               />
             </div>

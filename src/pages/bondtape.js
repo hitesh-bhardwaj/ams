@@ -92,7 +92,7 @@ const bondtape = () => {
       <Layout>
         <main>
           <Hero
-            margin={"mobile:mt-[25vw]"}
+            margin={"mobile:mt-[28vw]"}
             heading={"Advabond Tape"}
             className="text-[#F08144]"
             tagline={"Braided Polyester Tape Suture"}

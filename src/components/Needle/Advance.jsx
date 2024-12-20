@@ -3,7 +3,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Image from "next/image";
 import PrimaryButton from "../Button/PrimaryButton";
-import { paraAnim , imageAnim} from "../gsapAnimations";
+import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -70,7 +70,7 @@ export default function Advance() {
                 <div className=" container-lg virtual rounded-[3vw] relative flex items-center justify-between px-[6%] py-[8%] bg-white/50  border border-gray-200 mobile:pt-[60%] mobile:pb-[20%] mobile:flex-col-reverse mobile:rounded-[6vw] tablet:pt-[10%] tablet:flex tablet:flex-col tablet:justify-between tablet:gap-[5vw]">
                     <div className="w-full flex flex-col items-center justify-between gap-[5vw] mobile:gap-[12vw]">
                         <h2
-data-para-anim className="title-2 aeonik mobile:text-center">
+data-para-anim className="title-2 aeonik mobile:text-center tablet:text-center">
                             
                         Advanced Wound Closure
                             

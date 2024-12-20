@@ -57,7 +57,7 @@ const Hero = () => {
               </div>
           </div>
 
-          <div className="w-[60%] h-full relative left-[40%] right-0 hero-container mobile:rotate-90 mobile:w-full mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[0%] mobile:top-[25%] tablet:top-[10%] tablet:left-[5%]">
+          <div className="w-[60%] h-full relative left-[40%] right-0 hero-container mobile:rotate-[88deg] mobile:w-full mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[5%] mobile:top-[25%] tablet:top-[10%] tablet:left-[5%]">
             <div className="w-full h-full">
               <Image
                 src="/assets/advastap/advastap-hero.png"

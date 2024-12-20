@@ -40,19 +40,20 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
   return (
     <>
       <section id="specifications" className="relative ">
-        <div className="w-screen h-[30vh]  flex overflow-hidden items-center pt-[3vw] mobile:pt-0 pl-[10vw]  tablet:h-[15vh] mobile:h-[18vh] ">
+        <div className="w-screen h-[30vh]  flex overflow-hidden items-center pt-[3vw] mobile:pt-0 pl-[10vw]  tablet:h-[15vh] mobile:h-[15vh] ">
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
               <div
-                className={`text-white aeonik text-[2.5vw]  uppercase mt-[-3vw] leading-[1.2] tracking-widest ${textclass} mobile:text-[7vw] tablet:text-[5vw] mobile:mt-0`}
+                className={`text-white aeonik text-[2.5vw]  uppercase mt-[-3vw] leading-[1.2] tracking-widest ${textclass} mobile:text-[6vw] tablet:text-[5vw] mobile:mt-0`}
               >
                 <p>Specifications</p>
               </div>
-              <div className="h-[2vw] w-[2vw]  ml-[1vw] mt-[-2vw] mobile:h-[3vw] mobile:w-[5vw] mobile:mt-[-1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1]">
+              <div className="h-[1.5vw] w-[1.5vw]  ml-[0.5vw] mt-[-2.8vw] mobile:h-[4vw] mobile:w-[4vw] mobile:mt-[1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1]">
                 <svg
                   width="20"
                   height="20"
                   viewBox="0 0 51 51"
+                  className="w-full h-full"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
