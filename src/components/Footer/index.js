@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className=" h-full mobile:pb-[10vw] relative overflow-hidden rounded-tl-[3vw] mt-[-2.5%] rounded-tr-[3vw] ">
+      <footer className=" h-full mobile:pb-[10vw] z-10 relative overflow-hidden rounded-tl-[3vw] mt-[-2.5%] rounded-tr-[3vw] ">
         <div className="absolute w-screen h-[120vh]  mobile:h-full  overflow-hidden">
           <Image
             src="/assets/footer-bg-img.webp"

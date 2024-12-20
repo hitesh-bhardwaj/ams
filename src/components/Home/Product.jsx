@@ -31,7 +31,7 @@ export default function Product() {
     <>
       <section
         id="product"
-        className="py-[5%] relative overflow-hidden mobile:pb-[30%] mobile:pt-[15vw] "
+        className="py-[5%] relative overflow-hidden mobile:pb-[30%] mobile:pt-[15vw]"
       >
         <div className="h-full">
           <Media greaterThanOrEqual="tablet">
@@ -53,8 +53,8 @@ export default function Product() {
           </Media>
         </div>
 
-        <div className="container-lg">
-          <div className="product-top text-center flex flex-col items-center">
+        <div className="">
+          <div className="container-lg product-top text-center flex flex-col items-center">
             <h2 data-para-anim className="title-2 aeonik leading-[1.3]">
               Empowering Healthcare Professionals
             </h2>
@@ -69,12 +69,17 @@ export default function Product() {
           </div>
           <div className="fadeUp">
             <Swiper
-              spaceBetween={50}
-              speed={700}
+              spaceBetween={70}
+              breakpoints={{
+                1024: {
+                  spaceBetween: 160
+                }
+              }}
+              speed={1000}
               navigation={false}
               modules={[Navigation]}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              className="homeCarousel mobile:!w-full"
+              className="homeCarousel !px-[10vw] mobile:!px-[5%]"
             >
               <SwiperSlide>
                 <CardContainer className="product-card relative h-full">
@@ -107,7 +112,7 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-[#3ABFF0] tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVA GLIDE</span>
                         </h3>
                         <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -115,7 +120,6 @@ export default function Product() {
                         </h4>
 
                         <p className="content-p mb-[5vw] mobile:mb-[6vw] flex flex-col gap-[0.8vw] mobile:text-[4vw] tablet:text-[1.5vw]">
-                          {/* <br /> */}
                           <span>
                             ADVA GLIDE&apos;s balloon catheter technologies are
                             engineered to excel in the most demanding coronary
@@ -164,7 +168,7 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-[#8855C3] tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVAGRIP </span>
                         </h3>
                         <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -218,7 +222,7 @@ export default function Product() {
                         />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-blue-400 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-[#3ABFF0] tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVA PRO</span>
                         </h3>
                         <h4 className="content-p mb-[2.5vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -280,7 +284,7 @@ export default function Product() {
                         </div>
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-400 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-[#9263A5] tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVACRYL</span>
                         </h3>
                         <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">
@@ -334,7 +338,7 @@ export default function Product() {
                         </div>
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
-                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-purple-500 !font-normal tablet:text-[6vw] tablet:leading-[1.1]">
+                        <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-[#3F5EA8] tablet:text-[6vw] tablet:leading-[1.1]">
                           <span>ADVASTAP POWERED LC</span>
                         </h3>
                         <h4 className="content-p mb-[2vw] mobile:mb-[2.5vw] mobile:text-[5.2vw] !font-normal">

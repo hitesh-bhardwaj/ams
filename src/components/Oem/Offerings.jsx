@@ -7,12 +7,25 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 import gsap from 'gsap';
 import Modal from './Modal';
-import { useLenis } from "lenis/react";
 import styles from './styles.module.css';
+import { useLenis } from "lenis/react";
 
 export default function Offerings() {
-    const [isOpen, setIsOpen] = useState(false);
     const lenis = useLenis();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCardId, setSelectedCardId] = useState(null);
+
+    const openModal = (id) => {
+        setSelectedCardId(id);
+        setIsModalOpen(true);
+        lenis.stop();
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedCardId(null);
+        lenis.start();
+    };
 
     useEffect(() => {
         const navbarLinks = document.querySelectorAll(".oemcard-button");
@@ -50,7 +63,6 @@ export default function Offerings() {
             });
         };
     }, []);
-
 
     return (
         <>
@@ -144,7 +156,7 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
+                                            <button onClick={() => openModal(1)} aria-label='open specification modal' className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -208,7 +220,7 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
+                                            <button onClick={() => openModal(2)} aria-label='open specification modal' className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -232,6 +244,7 @@ export default function Offerings() {
                                 <div className={styles.cardMain}>
                                     <Image
                                         className={styles.bigImage}
+                                        src="/assets/oem/hernia-solutions-big.png"
                                         alt='product image'
                                         width={900}
                                         height={700}
@@ -265,7 +278,7 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
+                                            <button onClick={() => openModal(3)} aria-label='open specification modal' className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -341,7 +354,7 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
+                                            <button onClick={() => openModal(4)} aria-label='open specification modal' className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -405,7 +418,7 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
+                                            <button onClick={() => openModal(5)} aria-label='open specification modal' className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -421,17 +434,12 @@ export default function Offerings() {
                         </div>
 
                     </div>
-                    {/* <Modal isOpen={isOpen} onClose={handleCloseModal} cardId={1} /> */}
+                    <Modal isOpen={isModalOpen} onClose={closeModal} cardId={selectedCardId} />
                 </div>
             </section>
         </>
     )
 }
-
-// const Modal = () => {
-//     const { isOpen, onClose, cardId } = useModal();
-
-// }
 
 const smallContent = [
     {

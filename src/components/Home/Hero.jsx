@@ -6,7 +6,7 @@ export default function Hero() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setVideoSrc("/assets/home/homepage-hero-video.mp4");
+      setVideoSrc("/assets/home/hero-final.mp4");
     }, 1000);
 
     return () => clearTimeout(timer);

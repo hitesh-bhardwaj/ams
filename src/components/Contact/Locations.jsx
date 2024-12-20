@@ -1,17 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import { fadeUp } from "../gsapAnimations";
 
 const Locations = () => {
-  fadeUp()
   return (
     <>
       <section id="location" className="relative w-screen h-full py-[5%] pb-[10%] mobile:h-full mobile:py-[15%] tablet:h-full tablet:py-[8%]">
-        <div className="px-[10vw] w-full h-full flex justify-center items-center tablet:px-[5vw]">
+        <div className="px-[10vw] w-full h-full flex justify-center items-center tablet:px-[5vw] relative z-10">
           <div className="flex flex-col gap-[7vw] mobile:items-center mobile:gap-[15vw]">
-            <h2
-data-para-anim className="text-[4vw] text-white aeonik font-light mobile:text-[11vw] tablet:text-[6.5vw]  ">
-              Other Offices
+            <h2 data-para-anim className="text-[4vw] text-white aeonik font-light mobile:text-[11vw] tablet:text-[6.5vw]  ">
+              Our Locations
             </h2>
             <div className="flex flex-wrap w-full text-white gap-y-[4vw] mobile:flex-col mobile:gap-y-[12vw]">
               <div className="w-[50%] flex gap-[1.5vw] mobile:w-full mobile:flex-col mobile:items-center mobile:gap-[8vw] ">
@@ -86,11 +83,13 @@ data-para-anim className="text-[4vw] text-white aeonik font-light mobile:text-[1
             </div>
           </div>
         </div>
-        <div className="absolute h-full w-full z-[-1] top-0 left-0">
+        <div className="absolute h-full w-full z-[1] top-0 left-0">
           <Image
-            src={"/assets/contact/locations-bg.png"}
-            alt="locations-bg"
-            fill
+            src="/assets/contact/locations-bg.png"
+            alt="locations-bg-image"
+            width={1920}
+            height={900}
+            className="w-full h-full object-cover"
           />
         </div>
       </section>

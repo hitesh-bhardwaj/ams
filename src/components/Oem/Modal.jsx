@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const modalContent = [
   {
-    id: 1, 
+    id: 1,
     title: 'Knotless Tissue Control Device',
     description: 'This is a detailed description of the Knotless Tissue Control Device...',
     features: [
@@ -16,6 +16,24 @@ const modalContent = [
   {
     id: 2,
     title: 'Another Card Title',
+    description: 'This is the content for another card...',
+    features: ['Feature 1', 'Feature 2', 'Feature 3'],
+  },
+  {
+    id: 3,
+    title: 'Third Content Another Card Title',
+    description: 'This is the content for another card...',
+    features: ['Feature 1', 'Feature 2', 'Feature 3'],
+  },
+  {
+    id: 4,
+    title: 'Fourth Content Another Card Title',
+    description: 'This is the content for another card...',
+    features: ['Feature 1', 'Feature 2', 'Feature 3'],
+  },
+  {
+    id: 5,
+    title: 'Fifth Content Another Card Title',
     description: 'This is the content for another card...',
     features: ['Feature 1', 'Feature 2', 'Feature 3'],
   },
@@ -45,7 +63,7 @@ const Modal = ({ isOpen, onClose, cardId }) => {
           />
         </div>
       </div>
-      
+
       {/* Modal Content */}
       <div className="bg-[#efefef] border border-white rounded-[2vw] p-[3vw] pt-[4vw] w-[80vw] max-h-[95vh] mobile:max-h-[95vh] mobile:py-[7vw] mobile:w-[95vw] mobile:rounded-[7vw] tablet:w-[90vw] tablet:max-w-[95vw] tablet:rounded-[3.5vw] tablet:p-[4vw]">
         <h2 className="text-2xl font-bold mb-4">{content.title}</h2>
@@ -59,5 +77,5 @@ const Modal = ({ isOpen, onClose, cardId }) => {
     </div>
   );
 };
- 
+
 export default Modal;

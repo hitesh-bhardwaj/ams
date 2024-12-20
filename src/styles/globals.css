@@ -289,9 +289,9 @@ body {
 /* Index Page CSS Start */
 
 /* Hero Section - 1920px */
-.homeCarousel {
+/* .homeCarousel {
   width: 80vw !important;
-}
+} */
 .product-bg {
   background-image: url("/assets/home/product-bg.png");
   background-repeat: no-repeat;
@@ -792,9 +792,6 @@ color: #000 !important;
   }
 
   /* hero carousel */
-  .homeCarousel {
-    width: 80vw !important;
-  }
   .product-card {
     height: 40vh;
     width: 75vw;

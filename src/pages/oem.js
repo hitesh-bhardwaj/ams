@@ -38,12 +38,7 @@ export default function oem() {
             </div>
           </section>
           <Genesis content={content} />
-          {/* <Media greaterThanOrEqual="tablet" > */}
-            <Offerings />
-          {/* </Media> */}
-          {/* <Media lessThan="desktop">
-            <OfferingsMob />
-          </Media> */}
+          <Offerings />
           <FormOem />
         </main>
       </Layout>

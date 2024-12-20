@@ -35,7 +35,7 @@ const Leadership = () => {
                 <div className="w-full pt-[7%] mobile:py-[15%] h-[76vw] tablet:h-[100vw] mobile:h-[230vw]">
                     <h3 className="aeonik title-2 text-center">The Vision of AMS Leadership</h3>
                     <div className="relative w-screen overflow-hidden">
-                        <div className="w-screen mobile:gap-8 px-[4vw] flex justify-between mobile:justify-center items-center top-[20%] z-10 absolute mobile:top-[90%] mobile:h-fit">
+                        <div className="w-screen mobile:gap-8 px-[4vw] flex justify-between mobile:justify-center items-center top-[37%] z-10 absolute mobile:top-[90%] mobile:h-fit">
                             <div onClick={slidePrevious} className="px-[1.2vw] py-[1.2vw] z-[5] relative bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer mobile:block group hover:text-white border border-black/20">
                                 <span className="bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300" />
                                 <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
@@ -63,7 +63,7 @@ const Leadership = () => {
                             {content.map((content, key) => (
                                 <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative tablet:overflow-hidden mobile:overflow-hidden">
                                     <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full mobile:text-[15vw]">{content.name}</p>
-                                    <Image className="absolute w-[60%] top-[-4%] opacity-75 left-1/2 -translate-x-1/2 mobile:w-[100%] mobile:top-0" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={90} />
+                                    <Image className="absolute w-[60%] top-[-10%] opacity-75 left-1/2 -translate-x-1/2 mobile:w-[100%] mobile:top-0" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={100} priority={false} />
                                 </div>
                             ))}
                         </div>
@@ -97,7 +97,7 @@ const Leadership = () => {
                                                 quality={90}
                                             />
                                         </div>
-                                        <div className="h-[24vw] w-[36vw] tablet:h-[40vw] tablet:w-3/4 bg-white/70 backdrop-blur-md rounded-[1.5vw] p-[2vw] tablet:p-[4vw] overflow-hidden border-white absolute top-0 left-1/2 -translate-x-1/2 duration-500 opacity-0 translate-y-[0%] leaderSwiperContent pointer-events-none mobile:w-full mobile:h-[100vw] mobile:relative mobile:py-[10vw] mobile:px-[7vw] mobile:rounded-2xl mobile:opacity-100 mobile:translate-y-[-15%]">
+                                        <div className="h-[24vw] w-[42vw] tablet:h-[40vw] tablet:w-3/4 bg-white/70 backdrop-blur-md rounded-[1.5vw] p-[2vw] tablet:p-[4vw] overflow-hidden border-white absolute top-0 left-1/2 -translate-x-1/2 duration-500 opacity-0 translate-y-[0%] leaderSwiperContent pointer-events-none mobile:w-full mobile:h-[100vw] mobile:relative mobile:py-[10vw] mobile:px-[7vw] mobile:rounded-2xl mobile:opacity-100 mobile:translate-y-[-15%]">
                                             <h4 className="text-[2.5vw] aeonik mb-[0.5vw] tablet:text-[4vw] tablet:mb-2 mobile:text-[8vw] mobile:text-center">{item.name}</h4>
                                             <p className="uppercase mb-[0.5vw] tablet:font-bold tablet:mb-2 mobile:text-[3.5vw] mobile:text-center mobile:mb-[8%]">{item.title}</p>
                                             <span className="bg-black/50 h-[1.5px] w-[3vw] block mb-[1.5vw] tablet:mb-[4vw] tablet:w-[30vw] mobile:hidden" />
