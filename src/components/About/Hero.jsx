@@ -23,12 +23,10 @@ const Hero = () => {
               >
                 Advancing Healthcare for Generations to Come
               </h1>
-              <p className="max-w-[30vw] mt-[4vw] mb-[4vw] content-p tablet:text-[2vw] tablet:max-w-[40vw] mobile:max-w-[90vw] mobile:text-center">
-                <span data-para-anim>
+              <p data-para-anim className="max-w-[30vw] mt-[4vw] mb-[4vw] content-p tablet:text-[2vw] tablet:max-w-[40vw] mobile:max-w-[90vw] mobile:text-center">
                   At the heart of our mission is a commitment to improving
                   global health by making quality care more affordable and
                   accessible for all.
-                </span>
               </p>
             </div>
             <div className="absolute right-0 bottom-0 h-full">

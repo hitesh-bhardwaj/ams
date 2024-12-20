@@ -8,25 +8,13 @@ import 'swiper/css/free-mode';
 import gsap from 'gsap';
 import Modal from './Modal';
 import { useLenis } from "lenis/react";
+import styles from './styles.module.css';
 
 export default function Offerings() {
     const [isOpen, setIsOpen] = useState(false);
-    // const [card, setCard] = useState();
-      const lenis = useLenis();
-    
-    const handleOpenModal = (id) => {
-        setIsOpen(true);
-        // setCard(id);
-        lenis && lenis.stop();
-        document.body.style.overflow = "hidden";
-      };
-      const handleCloseModal = () => {
-        setIsOpen(false);
-        lenis && lenis.start();
-        document.body.style.overflow = "";
-      };
+    const lenis = useLenis();
+
     useEffect(() => {
-    if(globalThis.innerWidth > 1024) { 
         const navbarLinks = document.querySelectorAll(".oemcard-button");
         const cardContainer = document.querySelector(".card-container");
         const focSections = document.querySelectorAll(".card-item");
@@ -61,30 +49,39 @@ export default function Offerings() {
                 link.removeEventListener("click", () => { });
             });
         };
-    }
-}, []);
+    }, []);
 
 
     return (
         <>
             <section id='offerings'>
-                <div className='container-lg offerings-container pt-[12%]'>
-                    <h2 className='title-2 font-light text-center aeonik mb-[6vw] fadeUp'>OEM Offerings</h2>
+                <div className='offerings-container pt-[12%] tablet:pt-[15%] mobile:pt-[25%]'>
+                    <h2 className='title-2 font-light text-center aeonik mb-[6vw] mobile:mb-10 fadeUp'>OEM Offerings</h2>
                     <Swiper
-                        style={swiperStyle}
                         freeMode={true}
                         scrollbar={true}
-                        slidesPerView={4}
+                        slidesPerView={1.2}
+                        spaceBetween={20}
+                        breakpoints={{
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 40,
+                            },
+                            640: {
+                                slidesPerView: 2.5,
+                                spaceBetween: 30,
+                            },
+                        }}
                         navigation={false}
-                        spaceBetween={40}
                         modules={[FreeMode, Scrollbar]}
+                        className={`${styles.offeringSwiper}`}
                     >
                         {smallContent.map((item, index) => (
                             <SwiperSlide key={index} className='h-full fadeUp'>
                                 <a href={`#card-item-${index + 1}`} className='links oemcard-button block h-full w-full'>
-                                    <div className='rounded-[3vw] p-[1vw] h-full w-full bg-white duration-300'>
-                                        <h3 className='aeonik text-center font-light my-[1vw] text-[1.2vw]'>{item.title}</h3>
-                                        <div className='rounded-[2vw] overflow-hidden h-[19vw]'>
+                                    <div className='rounded-[3vw] p-[1vw] h-full w-full bg-white duration-300 tablet:p-[2vw] mobile:p-[3.5vw] mobile:rounded-3xl'>
+                                        <h3 className='aeonik text-center font-light my-[1vw] text-[1.2vw] tablet:text-[2.6vw] tablet:mb-4 mobile:text-[4.5vw] mobile:mb-4'>{item.title}</h3>
+                                        <div className='rounded-[2vw] overflow-hidden h-[19vw] tablet:h-[30vw] mobile:h-[70vw] mobile:rounded-2xl'>
                                             <Image src={item.image} alt={item.title} className='object-cover h-full w-full' width={400} height={400} />
                                         </div>
                                     </div>
@@ -94,18 +91,19 @@ export default function Offerings() {
                     </Swiper>
                 </div>
 
-                <div className='w-screen h-full mt-[5%] overflow-hidden'>
+                <div className='w-screen h-full mt-[5%] overflow-hidden mobile:mt-10'>
 
                     <div className='w-[500%] flex whitespace-nowrap items-center card-container'>
-                        <div className='w-screen card-item shadow-sm' id='card-item-1'>
+
+                        <div className={`w-screen card-item shadow-sm`} id='card-item-1'>
                             <div className='w-[90%] mx-auto h-full'>
-                                <div className='font-light aeonik pl-4 mb-5'>
-                                    <h4 className='text-[2.5vw]'>Needle Technology</h4>
-                                    <p className='text-[1.75vw]'>Surgical Suture Needle</p>
+                                <div className={`${styles.cardHead}`}>
+                                    <h4>Needle Technology</h4>
+                                    <p>Surgical Suture Needle</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
+                                <div className={styles.cardMain}>
                                     <Image
-                                        className='absolute right-0 top-0 w-[52%]'
+                                        className={styles.bigImage}
                                         src="/assets/oem/needle-tech-big.png"
                                         alt='product image'
                                         width={900}
@@ -113,40 +111,40 @@ export default function Offerings() {
                                         priority={false}
                                         quality={100}
                                     />
-                                    <div className='w-1/2 relative h-full flex items-center justify-end'>
-                                        <div className='font-light text-[1.25vw] space-y-[10%] text-right pb-[3vw] relative z-10'>
-                                            <p className='flex items-center gap-[5vw] mr-[0.8vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Advanced US & German Technology</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                    <div className={`${styles.cardTextContainer}`}>
+                                        <div className={styles.cardText}>
+                                            <p className='mr-[0.8vw]'>
+                                                <span>Advanced US & German Technology</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Cutting-Edge Robotics and Automation</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>Cutting-Edge Robotics and Automation</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Robust Capacity</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>Robust Capacity</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[0.8vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Precision Engineering & Quality Assurance</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[0.8vw]'>
+                                                <span>Precision Engineering & Quality Assurance</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
                                         </div>
-                                        <div className='absolute'>
+                                        <div className='absolute mobile:hidden'>
                                             <div className='pb-[3vw]'>
                                                 <Image src="/assets/oem/half-circle.png" className='h-[100%]' alt='half-circle image' height={700} width={1000} priority={false} quality={100} />
                                             </div>
                                         </div>
-                                        <div className='absolute bottom-[10%] left-[20%]'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal' >
+                                        <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
+                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -163,13 +161,13 @@ export default function Offerings() {
 
                         <div className='card-item w-screen shadow-sm' id='card-item-2'>
                             <div className='w-[90%] mx-auto h-full'>
-                                <div className='font-light aeonik pl-4 mb-5'>
-                                    <h4 className='text-[2.5vw]'>Sternotomy Suture</h4>
-                                    <p className='text-[1.75vw]'>316 LVM Stainless Steel</p>
+                                <div className={`${styles.cardHead}`}>
+                                    <h4 className=''>Sternotomy Suture</h4>
+                                    <p className=''>316 LVM Stainless Steel</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
+                                <div className={styles.cardMain}>
                                     <Image
-                                        className='absolute right-0 top-0 w-[52%]'
+                                        className={styles.bigImage}
                                         src="/assets/oem/sternotomy-suture-big.png"
                                         alt='product image'
                                         width={900}
@@ -177,40 +175,40 @@ export default function Offerings() {
                                         priority={false}
                                         quality={100}
                                     />
-                                    <div className='w-1/2 relative h-full flex items-center justify-end'>
-                                        <div className='font-light text-[1.25vw] space-y-[13%] text-right pb-[3vw] relative z-10'>
-                                            <p className='flex items-center gap-[5vw] mr-[0.8vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Excellent Tissue Compatibility</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                    <div className={`${styles.cardTextContainer}`}>
+                                        <div className={styles.cardText}>
+                                            <p className='mr-[0.8vw]'>
+                                                <span>Excellent Tissue Compatibility</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Superior Pliability</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>Superior Pliability</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>High Resistance to Breakage</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>High Resistance to Breakage</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[0.8vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Excellent Knot Security</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[0.8vw]'>
+                                                <span>Excellent Knot Security</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
                                         </div>
-                                        <div className='absolute'>
+                                        <div className='absolute mobile:hidden'>
                                             <div className='pb-[3vw]'>
                                                 <Image src="/assets/oem/half-circle.png" className='h-[100%]' alt='half-circle image' height={700} width={1000} priority={false} quality={100} />
                                             </div>
                                         </div>
-                                        <div className='absolute bottom-[10%] left-[20%]'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal'>
+                                        <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
+                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -219,7 +217,6 @@ export default function Offerings() {
                                                     <path d="M3.01701 48.0165L48.0168 3.01677M48.0168 3.01677L48.0795 46.9876M48.0168 3.01677L4.04596 2.95404" stroke="currentColor" strokeWidth="5" strokeLinecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </button>
-                                           
                                         </div>
                                     </div>
                                 </div>
@@ -228,48 +225,47 @@ export default function Offerings() {
 
                         <div className='card-item w-screen shadow-sm' id='card-item-3'>
                             <div className='w-[90%] mx-auto h-full'>
-                                <div className='font-light aeonik pl-4 mb-5'>
-                                    <h4 className='text-[2.5vw]'>Hernia Solutions</h4>
-                                    <p className='text-[1.75vw]'>Monofilament Polypropylene Mesh</p>
+                                <div className={`${styles.cardHead}`}>
+                                    <h4 className=''>Hernia Solutions</h4>
+                                    <p className=''>Monofilament Polypropylene Mesh</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
+                                <div className={styles.cardMain}>
                                     <Image
-                                        className='absolute right-0 top-0 w-[52%]'
-                                        src="/assets/oem/hernia-solutions-big.png"
+                                        className={styles.bigImage}
                                         alt='product image'
                                         width={900}
                                         height={700}
                                         priority={false}
                                         quality={100}
                                     />
-                                    <div className='w-[55%] relative h-full flex items-center justify-end'>
-                                        <div className='font-light text-[1.25vw] space-y-[10%] text-right pb-[3vw] relative z-10'>
-                                            <p className='flex items-center gap-[3vw] mr-[0.2vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>European Knitting Technology</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                    <div className={`${styles.cardTextContainer}`}>
+                                        <div className={styles.cardText}>
+                                            <p className='mr-[0.2vw]'>
+                                                <span>European Knitting Technology</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[3vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Ability to Customize Knitting Pattern, Pore Size, Weight, and Size</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>Ability to Customize Knitting Pattern, Pore Size, Weight, and Size</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[3vw] mr-[-0.2vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Integrated Process with Minimal Human Intervention</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.2vw]'>
+                                                <span>Integrated Process with Minimal Human Intervention</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
                                         </div>
-                                        <div className='absolute'>
+                                        <div className='absolute mobile:hidden'>
                                             <div className='pb-[3vw]'>
                                                 <Image src="/assets/oem/half-circle.png" className='h-[100%]' alt='half-circle image' height={700} width={1000} priority={false} quality={100} />
                                             </div>
                                         </div>
-                                        <div className='absolute bottom-[10%] left-[20%]'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal'>
+                                        <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
+                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -286,13 +282,13 @@ export default function Offerings() {
 
                         <div className='card-item w-screen shadow-sm' id='card-item-4'>
                             <div className='w-[90%] mx-auto h-full'>
-                                <div className='font-light aeonik pl-4 mb-5'>
-                                    <h4 className='text-[2.5vw]'>Stent Delivery Systems</h4>
-                                    <p className='text-[1.75vw]'>Rapid Exchange Catheter</p>
+                                <div className={`${styles.cardHead}`}>
+                                    <h4 className=''>Stent Delivery Systems</h4>
+                                    <p className=''>Rapid Exchange Catheter</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
+                                <div className={styles.cardMain}>
                                     <Image
-                                        className='absolute right-0 top-0 w-[52%]'
+                                        className={styles.bigImage}
                                         src="/assets/oem/stent-delivery-big.png"
                                         alt='product image'
                                         width={900}
@@ -300,52 +296,52 @@ export default function Offerings() {
                                         priority={false}
                                         quality={100}
                                     />
-                                    <div className='w-[45%] relative h-full flex items-center justify-end'>
-                                        <div className='font-light text-[1.25vw] space-y-[10%] text-right pb-[3vw] relative z-10'>
-                                            <p className='flex items-center gap-[5vw] mr-[2vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Proprietary Shaft Design</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                    <div className={`${styles.cardTextContainer}`}>
+                                        <div className={styles.cardText}>
+                                            <p className='mr-[2vw]'>
+                                                <span>Proprietary Shaft Design</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Engineered for Trackability</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[0.5vw]'>
+                                                <span>Engineered for Trackability</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Enhanced Deliverability</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>Enhanced Deliverability</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Precise Balloon Positioning</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>Precise Balloon Positioning</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Deep Shoulder Balloon</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[0.5vw]'>
+                                                <span>Deep Shoulder Balloon</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[2vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Minimized Vessel Trauma</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[2vw]'>
+                                                <span>Minimized Vessel Trauma</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
                                         </div>
-                                        <div className='absolute'>
+                                        <div className='absolute mobile:hidden'>
                                             <div className='pb-[3vw]'>
                                                 <Image src="/assets/oem/half-circle.png" className='h-[100%]' alt='half-circle image' height={700} width={1000} priority={false} quality={100} />
                                             </div>
                                         </div>
-                                        <div className='absolute bottom-[10%] left-[20%]'>
-                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal'>
+                                        <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
+                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -362,13 +358,13 @@ export default function Offerings() {
 
                         <div className='card-item w-screen shadow-sm' id='card-item-5'>
                             <div className='w-[90%] mx-auto h-full'>
-                                <div className='font-light aeonik pl-4 mb-5'>
-                                    <h4 className='text-[2.5vw]'>Knotless Tissue Control Device</h4>
-                                    <p className='text-[1.75vw]'>Polydioxanone | Poliglecaprone 25 | Polypropylene</p>
+                                <div className={`${styles.cardHead}`}>
+                                    <h4 className=''>Knotless Tissue Control Device</h4>
+                                    <p className=''>Polydioxanone | Poliglecaprone 25 | Polypropylene</p>
                                 </div>
-                                <div className='rounded-[2.5vw] bg-white/50 relative h-[36vw] overflow-hidden'>
+                                <div className={styles.cardMain}>
                                     <Image
-                                        className='absolute right-0 top-0 w-[52%]'
+                                        className={styles.bigImage}
                                         src="/assets/oem/knotless-tissue-big.png"
                                         alt='product image'
                                         width={900}
@@ -376,40 +372,40 @@ export default function Offerings() {
                                         priority={false}
                                         quality={100}
                                     />
-                                    <div className='w-[45%] relative h-full flex items-center justify-end'>
-                                        <div className='font-light text-[1.25vw] space-y-[10%] text-right pb-[3vw] relative z-10'>
-                                            <p className='flex items-center gap-[5vw] mr-[0.8vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Closer Barb Spacing</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                    <div className={`${styles.cardTextContainer}`}>
+                                        <div className={styles.cardText}>
+                                            <p className='mr-[0.8vw]'>
+                                                <span>Closer Barb Spacing</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Superior Holding Strength</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>Superior Holding Strength</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[-0.5vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Unidirectional and Circumferential Barbs</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[-0.5vw]'>
+                                                <span>Unidirectional and Circumferential Barbs</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
-                                            <p className='flex items-center gap-[5vw] mr-[0.8vw] justify-end'>
-                                                <span className='hover:scale-105 duration-500'>Ultrasonic Welded Loop</span>
-                                                <span className='bg-white h-5 w-5 p-[4px] shadow-[0px_0px_8px_4px_#4d7ec8] rounded-full'>
-                                                    <span className='bg-[#5885EE] block h-full w-full rounded-full blur-[3px]' />
+                                            <p className='mr-[0.8vw]'>
+                                                <span>Ultrasonic Welded Loop</span>
+                                                <span className={styles.bulletPoint}>
+                                                    <span />
                                                 </span>
                                             </p>
                                         </div>
-                                        <div className='absolute'>
+                                        <div className='absolute mobile:hidden'>
                                             <div className='pb-[3vw]'>
                                                 <Image src="/assets/oem/half-circle.png" className='h-[100%]' alt='half-circle image' height={700} width={1000} priority={false} quality={100} />
                                             </div>
                                         </div>
-                                        <div className='absolute bottom-[10%] left-[20%]'>
-                                            <button   onClick={handleOpenModal}  className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal'>
+                                        <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
+                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -423,13 +419,19 @@ export default function Offerings() {
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <Modal isOpen={isOpen} onClose={handleCloseModal} cardId={1}/>
+                    {/* <Modal isOpen={isOpen} onClose={handleCloseModal} cardId={1} /> */}
                 </div>
             </section>
         </>
     )
 }
+
+// const Modal = () => {
+//     const { isOpen, onClose, cardId } = useModal();
+
+// }
 
 const smallContent = [
     {
@@ -454,9 +456,5 @@ const smallContent = [
     }
 ]
 
-const swiperStyle = {
-    paddingBottom: "5vw"
-}
 
-  
-  
+

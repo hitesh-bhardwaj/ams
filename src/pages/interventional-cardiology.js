@@ -58,7 +58,7 @@ export default function ic() {
             sParaWidth={"w-[40%] ml-[6%] mobile:ml-0 tablet:ml-0"}
             bParaWidth={"w-[40%]"}
           />
-          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"} width={"35%"} />
+          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"} width={"w-[35%] tablet:w-[50%]"}/>
           <IcCards />
           <Portfolio currentlink={"/interventional-cardiology"} sectionheading={"Our Advanced Therapies"}/>
         </main>

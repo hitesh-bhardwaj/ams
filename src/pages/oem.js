@@ -24,7 +24,7 @@ export default function oem() {
     <>
       <Layout>
         <main>
-          <section className="hero-container mobile:mb-[15%] dark" id="hero">
+          <section className="hero-container dark" id="hero">
             <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
               <Image
                 className="hero-img top-0 left-0 right-0 bottom-0 object-cover h-full w-full absolute object-left"
@@ -38,15 +38,12 @@ export default function oem() {
             </div>
           </section>
           <Genesis content={content} />
-
-          <Media greaterThanOrEqual="desktop" >
+          {/* <Media greaterThanOrEqual="tablet" > */}
             <Offerings />
-          </Media>
-
+          {/* </Media> */}
           {/* <Media lessThan="desktop">
             <OfferingsMob />
           </Media> */}
-
           <FormOem />
         </main>
       </Layout>

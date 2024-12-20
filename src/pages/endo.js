@@ -55,7 +55,7 @@ export default function endo() {
             sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}
             bParaWidth={"w-[55%]"}
           />
-          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"35%"} />
+          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"w-[35%] tablet:w-[50%]"} />
           <Product />
           <OtherProduct />
           <Portfolio currentlink={"/endo"} sectionheading={"Our Advanced Therapies"}/>

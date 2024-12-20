@@ -4,13 +4,16 @@ import Hero from "@/components/Hero";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
-import { fadeUp } from "@/components/gsapAnimations";
 import Innovation from "@/components/Rnd/Innovation";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
-
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 
 export default function rnd() {
+
+  fadeUp();
+  paraAnim();
+
   const content = {
     heading: "Innovating for Tomorrow",
     smallpara:
@@ -47,34 +50,30 @@ export default function rnd() {
       para: "We are committed to evolving our R&D capabilities to tackle global health challenges and drive impactful medical innovations.",
     },
   ];
-  fadeUp()
 
   return (
     <>
-      
-          <Layout>
-            <main>
-              <Hero
-                title={hero.title}
-                src={hero.src}
-                content={hero.content}
-                className="hidden"
-                titleColor={true}
-                mode={"dark"}
-                titleWidth={"w-[110%]"}
-                paraWidth={"max-w-[50vw]"}
-              />
-              <Genesis content={content} />
-              <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"35%"}/>
-              <Innovation/>
-              <Portfolio sectionheading={"Our Advanced Portfolio"}/>
-            </main>
-          </Layout>
-          <Media greaterThan='tablet'>
-          <BgVideo videoSrc={"/assets/bg-videos/endo.mp4"}/>
-          </Media>
-          
-       
+      <Layout>
+        <main>
+          <Hero
+            title={hero.title}
+            src={hero.src}
+            content={hero.content}
+            className="hidden"
+            titleColor={true}
+            mode={"dark"}
+            titleWidth={"w-[110%]"}
+            paraWidth={"max-w-[50vw]"}
+          />
+          <Genesis content={content} />
+          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"w-[35%] tablet:w-[50%]"} />
+          <Innovation />
+          <Portfolio sectionheading={"Our Advanced Portfolio"} />
+        </main>
+      </Layout>
+      <Media greaterThan='tablet'>
+        <BgVideo videoSrc={"/assets/bg-videos/endo.mp4"} />
+      </Media>
     </>
   );
 }

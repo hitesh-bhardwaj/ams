@@ -7,7 +7,7 @@ import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Discover from "@/components/Ama/Discover";
 import CardsCarousel from "@/components/Ama/CardsCarousel";
 import Layout from "@/components/Layout";
-import { fadeUp } from "@/components/gsapAnimations";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import CardiacCare from "@/components/Ama/CardiacCare";
 import BgVideo from "@/components/Layout/BgVideo";
@@ -17,25 +17,23 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ama() {
   const content = {
     heading: "Advancing the Way We Learn",
-    smallpara:
-      "Nestled within the state-of-the-art AMS manufacturing facility in Vadodara, Advanced Medtech Academy (AMA) is a beacon for advancing healthcare education. With a sprawling world-class infrastructure spanning ___ sq. ft., AMA is dedicated to empowering healthcare professionals through advanced simulation and academic training. We believe that skillful hands and confident minds are the foundation for improving patient outcomes and transforming lives.",
-    bigpara:
-      "We prioritize rigorous R&D and adhere to global standards, guaranteeing our products meet the highest quality and innovation benchmarks in the industry. ",
+    smallpara: "Nestled within the state-of-the-art AMS manufacturing facility in Vadodara, Advanced Medtech Academy (AMA) is a beacon for advancing healthcare education. With a sprawling world-class infrastructure spanning ___ sq. ft., AMA is dedicated to empowering healthcare professionals through advanced simulation and academic training. We believe that skillful hands and confident minds are the foundation for improving patient outcomes and transforming lives.",
+    bigpara: "We prioritize rigorous R&D and adhere to global standards, guaranteeing our products meet the highest quality and innovation benchmarks in the industry. ",
     src: "/assets/ama/ama-genesis-bg.png",
   };
+
   const hero = {
     title: "Advanced MedTech Academy (AMA)",
     src: "/assets/ama/ama-bg-hero.png",
-    content:
-      "AMA’s globally recognized for its industry experts and initiatives, centered on empowering healthcare professionals to achieve superior patient outcomes worldwide. Through meticulously curated programs that impart advanced knowledge and skills, foster expertise, and nurture a culture of continuous learning.",
+    content: "AMA's globally recognized for its industry experts and initiatives, centered on empowering healthcare professionals to achieve superior patient outcomes worldwide. Through meticulously curated programs that impart advanced knowledge and skills, foster expertise, and nurture a culture of continuous learning.",
   };
   const slidesData = [
     {
       title: "Advancing the way we learn",
       src: "/assets/ama/ama-carousel-1.png",
       srcsmall: "/assets/ama/small1.png",
-      heading: "Personalized and insightful training:",
-      para: "AMA’s structured courses span basic to advanced levels, covering cognitive skill development, advanced minimally invasive surgery, complex interventional cardiology and optimizing revascularization techniques.",
+      heading: "Personalized and Insightful Training",
+      para: "AMA's structured courses span basic to advanced levels, covering cognitive skill development, advanced minimally invasive surgery, complex interventional cardiology and optimizing revascularization techniques.",
     },
     {
       src: "/assets/ama/ama-carousel-3.png",
@@ -46,13 +44,13 @@ export default function ama() {
     {
       src: "/assets/ama/ama-carousel-2.png",
       srcsmall: "/assets/ama/small3.png",
-      heading: "State of the-Art Hands-On Training Centers ",
+      heading: "State of the-Art Hands-On Training Centers",
       para: "Our world-class facilities offer hands-on training with life-like models and ex-vivo and in-vivo tissue, bridging theory and real-world application. Insight-driven modules, enriched with live procedure observations and collaborative discussions, deliver an unmatched immersive experience.",
     },
-
   ];
 
-  fadeUp()
+  fadeUp();
+  paraAnim();
 
   return (
     <>
@@ -69,7 +67,7 @@ export default function ama() {
           />
           <Genesis content={content} />
           <CardiacCare />
-          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"} width={"35%"} />
+          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#2A2A2A]"} width={"w-[35%] tablet:w-[50%]"} />
           <CardsCarousel />
           <Discover />
         </main>
