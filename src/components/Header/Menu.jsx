@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
-// import { Gradient } from "@/components/Gradient";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRouter } from "next/router";
 import { Media } from "../media";
 import NavWrapper from "../NavWrapper";
 
@@ -13,7 +11,6 @@ gsap.registerPlugin(useGSAP);
 
 const Menu = ({ isMenuOpen, toggleMenu }) => {
   const mainMenu = useRef(null);
-  const router = useRouter();
   const videoRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
@@ -83,21 +80,15 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
     }
   }, [isMenuOpen]);
 
-  const handleLinkClick = (href) => {
-    router.push(href).then(() => {
-      window.location.reload();
-    });
-  };
-
   return (
     <>
       <div
         ref={mainMenu}
         className={`w-screen h-screen fixed left-0 z-[100] top-[-100%] mobile:h-full mobile:w-full`}
       >
-        <div className="bg-white h-2/3 w-full relative tablet:h-1/2 mobile:h-full">
+        <div className="bg-white h-[70%] w-full relative tablet:h-1/2 mobile:h-full">
           <Media greaterThan="mobile">
-            <div className="w-[28%] h-full absolute">
+            <div className="w-[25%] tablet:w-[28%] h-full absolute">
               <video
                 ref={videoRef}
                 muted
@@ -108,7 +99,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               ></video>
             </div>
           </Media>
-          <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-12 tablet:grid-rows-4 tablet:h-[50vh]">
+          <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-14 grid-rows-5 tablet:grid-rows-5 tablet:h-[50vh] mobile:grid-cols-12">
             <div className="w-[15vw] h-[2vw] absolute bottom-[5%] left-[4%] fadeUp tablet:h-[5vw] tablet:w-[20vw]">
               <Image
                 src="/assets/header/ams-slogan.webp"
@@ -117,11 +108,10 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                 fill
               />
             </div>
-            <div className="flex h-1/2 justify-between items-center col-span-full mobile:h-[10vw]  mobile:mt-[5vw]">
+            <div className="flex h-fit justify-between items-center col-span-full mobile:h-[10vw]  mobile:mt-[5vw]">
               <span
-                onClick={() => handleLinkClick("/")}
                 data-attr="home"
-                className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[15vw] mobile:w-[25vw] mobile:h-[20vw] relative cursor-pointer"
+                className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[6vw] mobile:w-[25vw] mobile:h-[20vw] relative cursor-pointer"
               >
                 <Image
                   src="/assets/header/ams-logo-white.webp"
@@ -140,13 +130,14 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               <div>
                 <button
                   onClick={toggleMenu}
-                  className="flex items-center gap-3"
+                  className="flex items-center gap-3 group"
                 >
                   <span className="aeonik content-p text-head leading-tight">
                     Close
                   </span>
-                  <span className="w-[2.2vw] h-[2.2vw] flex justify-center items-center p-2 border border-head rounded-full tablet:w-[4vw] tablet:h-[4vw] mobile:w-[10vw] mobile:h-[10vw] mobile:p-[2.8vw]">
+                  <span className="w-[2.2vw] h-[2.2vw] group-hover:bg-black duration-300 flex justify-center items-center p-2 border border-head rounded-full tablet:w-[4vw] tablet:h-[4vw] mobile:w-[10vw] mobile:h-[10vw] mobile:p-[2.8vw]">
                     <Image
+                      className="group-hover:invert duration-300 group-hover:rotate-180 transition-all"
                       src="/assets/icons/close-icon.svg"
                       alt="Close Menu"
                       width={20}
@@ -157,9 +148,9 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               </div>
             </div>
 
-            <div className="col-start-5 col-span-8 nav row-start-2 mobile:flex mobile:flex-col mobile:items-start mobile:justify-start mobile:col-start-2 mobile:row-start-2 mobile:mt-[-15vw]">
+            <div className="col-start-5 row-span-4 h-full col-span-12 nav row-start-2 mobile:col-start-1 mobile:row-start-2 mobile:col-span-12 mobile:mt-[-15vw]">
               <NavWrapper isMenuOpen={isMenuOpen} />
-              <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center ">
+              <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center mobile:w-[85%] mobile:bottom-10">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">
                   <Link prefetch={false} href="#">
                     <span>Privacy Policy</span>
@@ -169,7 +160,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                     <span>Terms & Conditions</span>
                   </Link>
                 </div>
-                <div className="flex gap-[1vw] mobile:justify-center mobile:items-center mobile:gap-[7vw] mobile:mt-[-5vw]">
+                <div className="flex gap-[1vw] mobile:items-center mobile:w-full mobile:justify-between">
                   <Link
                     target="_blank"
                     href="#"

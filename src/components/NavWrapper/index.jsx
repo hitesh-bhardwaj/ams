@@ -14,7 +14,6 @@ export default function NavWrapper({ isMenuOpen }) {
     const submenuContainerRef = useRef(null);
 
     useEffect(() => {
-        // When menu closes, reset currentMenu
         if (!isMenuOpen) {
             setCurrentMenu(null);
         }
@@ -41,9 +40,12 @@ export default function NavWrapper({ isMenuOpen }) {
     const goToMenu = (menuName) => setCurrentMenu(menuName);
 
     return (
-        <div className="flex items-start gap-[3vw] mobile:flex-col text-left">
-            <MainNav onSelectMenu={goToMenu} />
-            <div ref={submenuContainerRef} className='py-5'>
+        <div className="flex items-start gap-[2vw] mobile:flex-col text-left">
+            {/* Conditionally render the main menu */}
+            {(currentMenu === null || window.innerWidth > 1024) && (
+                <MainNav onSelectMenu={goToMenu} />
+            )}
+            <div ref={submenuContainerRef} className='pt-[1vw]'>
                 {currentMenu === 'products' && (
                     <ProductsMenu onBack={() => goToMenu(null)} onSelectMenu={goToMenu} />
                 )}
@@ -69,33 +71,32 @@ export default function NavWrapper({ isMenuOpen }) {
         </div>
     );
 }
-
 function MainNav({ onSelectMenu }) {
     return (
-        <ul className='space-y-[0.5vw] border-r pr-[3vw] border-[#d8d8d8] py-5 main-nav'>
+        <ul className='space-y-[0.5vw] mobile:space-y-[2vw] border-r pr-[3vw] border-[#d8d8d8] py-5 main-nav tablet:border-none mobile:border-none pl-[3vw]'>
             <li>
-                <NavLink href={"/"} linkText="Homepage" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/"} linkText="Homepage" />
             </li>
             <li>
-                <NavLink href={"/about"} linkText="About Us" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/about"} linkText="About Us" />
             </li>
             <li>
-                <NavButton onClick={() => onSelectMenu('products')} linkText="Products" />
+                <NavButton className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' onClick={() => onSelectMenu('products')} linkText="Products" />
             </li>
             <li>
-                <NavButton onClick={() => onSelectMenu('manufacturing')} linkText="Manufacturing" />
+                <NavButton className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' onClick={() => onSelectMenu('manufacturing')} linkText="Manufacturing" />
             </li>
             <li>
-                <NavLink href={"/career"} linkText="Careers" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/career"} linkText="Careers" />
             </li>
             <li>
-                <NavLink href={"/blogs"} linkText="Stories" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/blogs"} linkText="Stories" />
             </li>
             <li>
-                <NavLink href={"/contact-us"} linkText="Contact Us" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/contact-us"} linkText="Contact Us" />
             </li>
             <li>
-                <NavLink href={"/ama"} linkText="Advanced Medtech Academy" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/ama"} linkText="Advanced Medtech Academy" />
             </li>
         </ul>
     );

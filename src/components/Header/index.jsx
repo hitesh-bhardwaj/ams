@@ -46,7 +46,6 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Header visibility logic based on scroll direction
       setIsHeaderVisible(currentScrollY <= lastScrollY);
 
       lastScrollY = currentScrollY;

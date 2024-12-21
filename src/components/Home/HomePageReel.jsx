@@ -32,7 +32,7 @@ const HomePageReel = () => {
           scale: "1",
           duration: 4
         });
-      }, [])
+      });
       return () => ctx.revert();
     }
   }, [])
