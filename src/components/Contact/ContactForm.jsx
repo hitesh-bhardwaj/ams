@@ -23,6 +23,14 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Invalid email address.",
   }),
+  number: z.string().min(10, {
+    message: "Contact number must be at least 10 digits.",
+  }),
+
+  companyName: z.string().min(1, {
+    message: "company name must be at least 2 characters.",
+  }),
+
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
@@ -35,17 +43,27 @@ export default function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
+      mobile:"",
+      companyName:"",
       message: "",
     },
   });
 
   const onSubmit = async (data) => {
     console.log("Form Submitted:", data);
+    const formData = {
+      name: data.name,
+      email: data.email,
+     number: data.number,
+     message: data.message,
+     companyName:data.companyName
+    };
+    
 
     try {
-      const res = await fetch("/api/formoem", {
+      const res = await fetch("/api/contactform", {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify(formData),
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
@@ -109,7 +127,7 @@ export default function ContactForm() {
               />
               <FormField
                 control={form.control}
-                name="Company Name*"
+                name="companyName"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
@@ -125,7 +143,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Textarea placeholder="Message*" />
+                      <Textarea placeholder="Message*" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

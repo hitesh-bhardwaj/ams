@@ -1,14 +1,14 @@
 import React from "react";
 import { Body, Column, Container, Head, Hr, Html, Img, Link, Preview, Row, Section, Text} from "@react-email/components";
 
-const ContactDetails = ({ userName, userEmail, userMessage}) => {
+const CareerDetails = ({ userName, userEmail}) => {
 
 
   return (
     <Html>
       <Head />
       <Preview>
-        Someone just filled OEM contact details on AMS website.
+        Someone just filled career details on AMS website.
       </Preview>
       <Body style={main}>
         <Container style={container}>
@@ -21,7 +21,7 @@ const ContactDetails = ({ userName, userEmail, userMessage}) => {
           />
           <Text style={paragraph}>Hi,</Text>
           <Text style={paragraph}>
-            You have a new OEM contact form submission on the AMS website.
+            You have a new career form submission on the Ams website.
             <br />
             Below are the details.
           </Text>
@@ -34,14 +34,11 @@ const ContactDetails = ({ userName, userEmail, userMessage}) => {
               <Column style={columnHead}>Email</Column>
               <Column style={{...columnText, textDecoration: "underline", color: "#067df7"}}>{userEmail}</Column>
             </Row>
-            <Row style={row}>
-              <Column style={columnHead}>Message</Column>
-              <Column style={columnText}>{userMessage}</Column>
-            </Row>
+            
            
           </Section>
           <Text style={footer}>
-            This form is submitted from <Link href="/oem">OEM Page</Link>
+            This form is submitted from <Link href="/career">Career Page.</Link>
           </Text>
           <Text style={paragraph}>
             - Team Ams
@@ -56,7 +53,7 @@ const ContactDetails = ({ userName, userEmail, userMessage}) => {
   );
 };
 
-export default ContactDetails;
+export default CareerDetails;
 
 const main = {
   backgroundColor: "#ffffff",

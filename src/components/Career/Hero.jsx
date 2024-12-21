@@ -5,7 +5,7 @@ import LazyVideo from "../layoutComponents/LazyVideo";
 const Hero = () => {
 
   return (
-    <section className=" mb-[5%] hero-container mobile:mb-[15%]" id="hero">
+    <section className=" mb-[5%] hero-container" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh]">
         <div className="w-screen h-[23.5vw] absolute bottom-[-10%] tablet:h-[30vh]">
           <Image

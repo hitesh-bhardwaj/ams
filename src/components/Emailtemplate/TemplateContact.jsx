@@ -1,14 +1,14 @@
 import React from "react";
 import { Body, Column, Container, Head, Hr, Html, Img, Link, Preview, Row, Section, Text} from "@react-email/components";
 
-const ContactDetails = ({ userName, userEmail, userMessage}) => {
+const ContactUsDetails = ({ userName, userEmail, userMessage , userNumber , userCompany}) => {
 
 
   return (
     <Html>
       <Head />
       <Preview>
-        Someone just filled OEM contact details on AMS website.
+        Someone just filled contact details on AMS website.
       </Preview>
       <Body style={main}>
         <Container style={container}>
@@ -21,7 +21,7 @@ const ContactDetails = ({ userName, userEmail, userMessage}) => {
           />
           <Text style={paragraph}>Hi,</Text>
           <Text style={paragraph}>
-            You have a new OEM contact form submission on the AMS website.
+            You have a new contact form submission on the AMS website.
             <br />
             Below are the details.
           </Text>
@@ -35,13 +35,21 @@ const ContactDetails = ({ userName, userEmail, userMessage}) => {
               <Column style={{...columnText, textDecoration: "underline", color: "#067df7"}}>{userEmail}</Column>
             </Row>
             <Row style={row}>
+              <Column style={columnHead}>Number</Column>
+              <Column style={columnText}>{userNumber}</Column>
+            </Row>
+            <Row style={row}>
+              <Column style={columnHead}>Company Name</Column>
+              <Column style={columnText}>{userCompany}</Column>
+            </Row>
+            <Row style={row}>
               <Column style={columnHead}>Message</Column>
               <Column style={columnText}>{userMessage}</Column>
             </Row>
            
           </Section>
           <Text style={footer}>
-            This form is submitted from <Link href="/oem">OEM Page</Link>
+            This form is submitted from <Link href="/contact-us">Contact Page</Link>
           </Text>
           <Text style={paragraph}>
             - Team Ams
@@ -56,7 +64,7 @@ const ContactDetails = ({ userName, userEmail, userMessage}) => {
   );
 };
 
-export default ContactDetails;
+export default ContactUsDetails;
 
 const main = {
   backgroundColor: "#ffffff",
