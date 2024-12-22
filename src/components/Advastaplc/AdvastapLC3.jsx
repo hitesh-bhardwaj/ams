@@ -51,7 +51,7 @@ const AdvastapLC3 = () => {
         </h2>
         <p className="mb-[4vw] text-[1.66vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:my-[5vw] mobile:text-[4.75vw] flex items-center justify-start tablet:justify-center tablet:text-[3vw] tablet:tracking-wider">
           <span data-para-anim className="mobile:text-center uppercase tracking-wide mobile:tracking-normal font-light mobile:w-[80%]">
-          innovation. securty. consistency.
+          INNOVATION. SECURITY. CONSISTENCY.
           </span>
         </p>
           </div>

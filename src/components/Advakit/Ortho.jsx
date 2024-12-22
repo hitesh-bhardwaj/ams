@@ -7,9 +7,9 @@ const Ortho = () => {
     <section className=' relative overflow-hidden'>
       <div className="w-screen h-screen overflow-hidden py-[10vw] mobile:h-[180vw] tablet:h-[70vh]">
         <div className=" absolute w-full h-full top-[10%] mobile:flex-col mobile:top-[25] tablet:flex-col tablet:justify-start">
-          <div className=" w-full flex items-center flex-col mobile:left-[17%] mobile:w-[100%] tablet:left-[15%]">
+          <div className=" w-full flex items-center flex-col mobile:left-[17%] mobile:w-[100%] tablet:left-[15%] z-[10]">
           <h1
-data-para-anim className="text-[#0A1F7A] text-[5.3vw] aeonik  leading-[1] hero-text font-light ">
+data-para-anim className="text-[#0A1F7A] text-[5.3vw] aeonik  leading-[1] hero-text font-light z-[10] ">
                   <span 
                     className={`leading-[1.2] overflow-hidden  text-[5.75vw] mobile:text-[11.2vw] tablet:text-[9vw]`}
                   >
@@ -25,11 +25,11 @@ data-para-anim className="text-[#0A1F7A] text-[5.3vw] aeonik  leading-[1] hero-t
 
         </div>
       </div>
-      <div className="absolute h-[35vw] w-[80vw] bottom-0 left-[12%] mobile:bottom-[10%] mobile:scale-[2.5] mobile:left-[50%] tablet:scale-[1.3] tablet:bottom-[10%] fadeUp">
+      <div className="absolute h-[35vw] w-[80vw] bottom-0 left-[12%] mobile:bottom-[10%] mobile:scale-[2.5] mobile:left-[50%] tablet:scale-[1.3] tablet:bottom-[10%] fadeUp z-[10]">
           <Image src="/assets/advakit/ortho-product.png" fill alt='Ortho Product' className=''/>
 
         </div>
-      <div className="absolute h-[100%] w-[100%] top-0 right-0 mobile:w-[100vw] mobile:h-[180vw] mobile:right-0 z-[-1]">
+      <div className="absolute h-[100%] w-[100%] top-0 right-0 mobile:w-[100vw] mobile:h-[180vw] mobile:right-0 z-[1]">
                 <Image src="/assets/advakit/ortho-bg.png"
               fill
                 alt="ortho bg"

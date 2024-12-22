@@ -5,46 +5,62 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper/modules";
+import styles from './styles.module.css'
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const NewsCard = ({title,date,img}) => {
+const NewsCard = ({ title, para, img }) => {
   return (
     <>
-      <div className="h-[40vw] w-[41vw] rounded-[2vw] newsCard relative overflow-hidden transition-all duration-500 ease-in group">
-      <div className="w-full h-full absolute top-0 left-0 z-[2] rounded-[2vw] bg-gradient-to-b from-transparent to-black/30"></div>
+    <Link href={"#"}>
+      <div className="h-full w-full rounded-[2vw] newsCard relative transition-all duration-500 ease group">
         <div className="relative h-full w-full">
           <Image
             src={img}
             fill
             alt="news-img"
-            className="rounded-[2.5vw] object-cover scale-[1.1] group-hover:scale-[1] transition-all ease-in-out duration-500"
+            className="rounded-[2.5vw] object-cover"
           />
         </div>
-        <div className="absolute text-white text-[2.5vw] font-light top-[80%] left-[5%] aeonik z-[5] flex w-full">
-          <p data-para-anim>{title}</p> <Image
-                    className="inline w-[1.2vw] h-[1.2vw] ml-[2%] mt-[1.5vw] mobile:ml-[5%] mobile:w-[11%] relative z-[7] fadeUp invert"
-                    src="/assets/icons/arrow-up-right.svg"
-                    alt="arrow"
-                    width={50}
-                    height={50}
-                  />
+        <div className="absolute inset-0 flex items-center justify-center z-[5] text-white transition-all rounded-[2.5vw] duration-500 ease opacity-0 group-hover:opacity-100 group-hover:bg-black/80">
+          <p
+            data-para-anim
+            className="text-[1.25vw] font-light text-center px-[2vw] aeonik"
+          >
+            {para}
+          </p>
         </div>
-      </div>
-      <p data-para-anim className="font-light text-[1.8vw] px-[2vw] py-[1vw] aeonik">
-       {date}
-      </p>
       
+      <div>
+      <p
+        data-para-anim
+        className="font-light text-[2.5vw] px-[2vw] py-[1vw] aeonik leading-[1.2]"
+      >
+        {title}
+      </p>
+      {/* <Image
+            className="inline w-[1.2vw] h-[1.2vw] ml-[2%] mt-[1.5vw] mobile:ml-[5%] mobile:w-[11%] relative z-[7] fadeUp invert"
+            src="/assets/icons/arrow-up-right.svg"
+            alt="arrow"
+            width={50}
+            height={50}
+          /> */}
+          </div>
+         
+          </div>
+          </Link>
     </>
   );
 };
+
 
 export default function Insights() {
   const handleSlideChange = (swiper) => {
     gsap.to(".swiper-slide", { scale: 0.8, duration: 0.5, ease: "power2.out" });
     gsap.to(swiper.slides[swiper.activeIndex], {
       scale: 1,
-      xPercent:-2,
+      // xPercent:-2,
       duration: 0.5,
       ease: "power2.out",
     });
@@ -80,10 +96,10 @@ data-para-anim className="title-2 aeonik leading-[1.3]">
               industry.
             </p>
             <p  data-para-anim className="aeonik font-light text-[2.5vw]  mt-[2vw]">
-              What’s Trending News
+              What&apos;s Trending News
             </p>
           </div>
-          <div className="w-full h-full pt-[3vw] pb-[2vw] cursor-grab fadeUp">
+          <div className="w-full h-[48vw] pt-[3vw] pb-[2vw] cursor-grab fadeUp ">
             <Swiper
               scrollbar={{
                 hide: false,
@@ -100,23 +116,23 @@ data-para-anim className="title-2 aeonik leading-[1.3]">
                   spaceBetween: 30,
                 },
                 1024: {
-                  slidesPerView: 2.6,
-                    spaceBetween: 0,
+                  slidesPerView: 2.5,
+                    spaceBetween: 20,
                 },
               }}
               onSlideChange={handleSlideChange}
               onSwiper={(swiper) => handleSlideChange(swiper)}
               modules={[Scrollbar]}
-              className="h-full w-full newsSwiper flex items-start justify-start"
+              className={`h-full w-full ${styles.newsSwiper}`}
             >
-              <SwiperSlide className="pb-[3vw] ">
-                <NewsCard title={"ADVASTAP HD3 Row Lauch "}  date={"November 29, 2024"} img={"/assets/blogs/news-img1.png"}/>
+              <SwiperSlide className="pb-[7vw]">
+                <NewsCard para={"The ADVASTAP Staplers 3-row series is here, setting a new benchmark in endo surgery. Designed to enhance precision and improve patient outcomes, our innovative stapling technology is transforming the surgical landscape. "}  title={"Discover the Next Leap in Endo Surgery  ↗"} img={"/assets/blogs/news1.png"}/>
               </SwiperSlide>
-              <SwiperSlide className="pb-[3vw]">
-                <NewsCard title={"MEDICA 2024 Congress "} date={"November 28, 2024"} img={"/assets/blogs/news-img2.png"} />
+              <SwiperSlide className="pb-[7vw]">
+                <NewsCard para={"Advanced MedTech Solutions is excited to showcase innovation at Arab Health 2025! Visit us to explore advanced solutions transforming healthcare."} title={"Arab Health 2025 ↗"} img={"/assets/blogs/news2.png"} />
               </SwiperSlide>
-              <SwiperSlide className="pb-[3vw]">
-                <NewsCard title={"Expert Perspectives"} date={"November 27, 2024"} img={"/assets/blogs/news-img3.png"}/>
+              <SwiperSlide className="pb-[7vw]">
+                <NewsCard para={"AMS is expanding the campus with the launch of its 60,000 sq. ft. Phase 2 facility, enhancing capabilities in medical device manufacturing, sustainability, and innovation. Featuring the Advanced MedTech Academy and advanced cleanroom spaces, this expansion sets new standards in global healthcare and patient care."} title={"Building the Future of MedTech ↗"} img={"/assets/blogs/news3.png"}/>
               </SwiperSlide>
             </Swiper>
           </div>

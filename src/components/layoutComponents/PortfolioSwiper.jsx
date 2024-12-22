@@ -14,6 +14,7 @@ import {
 } from "swiper/modules";
 import Image from "next/image";
 import { Media } from "../media";
+import styles from './styles.module.css'
 
 const PortfolioCard = ({ src, heading, para, textclass }) => {
   return (
@@ -69,7 +70,7 @@ const PortfolioSwiper = ({ slidesData, textclass, width }) => {
                   disableOnInteraction: false,
                 }}
                 effect={"creative"}
-                speed={1500}
+                speed={2000}
                 creativeEffect={{
                   prev: {
                     shadow: true,
@@ -80,7 +81,7 @@ const PortfolioSwiper = ({ slidesData, textclass, width }) => {
                   },
                 }}
                 modules={[FreeMode, Thumbs, EffectCreative, Autoplay]}
-                className={`endoSwiper rounded-bl-[20px] rounded-tl-[20px] overflow-hidden`}
+                className={`${styles.endoSwiper} rounded-bl-[20px] rounded-tl-[20px] overflow-hidden`}
                 thumbs={{
                   swiper:
                     thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
@@ -155,7 +156,7 @@ const PortfolioSwiper = ({ slidesData, textclass, width }) => {
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
-                className={`endosmallSwiper`}
+                className={`${styles.endosmallSwiper}`}
               >
                 {slidesData.map((slide, index) => (
                   <SwiperSlide key={index}>

@@ -19,7 +19,7 @@ const EdgeCard = {
   },
   card2: {
     title: "- the confidence to suture with ease",
-    src: "/assets/advacryl/advacryl-tray.png",
+    src: "/assets/advacryl-plus/advacryl-plus-tray.png",
     para: "patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
     bgsrc: "/assets/advacryl/purple-rectangle.png",
   },

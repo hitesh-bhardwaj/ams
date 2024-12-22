@@ -36,7 +36,7 @@ const Hero = () => {
   });
   return (
     <section className='' id='advastapHero'>
-      <div className="w-screen h-screen relative overflow-hidden mobile:h-screen tablet:h-[70vh]">
+      <div className="w-screen h-screen relative overflow-hidden mobile:h-screen tablet:h-[80vh]">
         <Image
           src="/assets/advastaplc/advastaplc-hero-bg.png"
           fill

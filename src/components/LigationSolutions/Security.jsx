@@ -6,7 +6,7 @@ const Security = () => {
     <section className="overflow-hidden relative mobile:py-[10%]" id="security">
          <div className="w-screen h-full container-lg  mobile:h-full tablet:h-[70%] ">
            <div className="w-full h-full flex flex-col items-center justify-center gap-[5vw] py-[5vw]">
-             <div className="w-full h-full flex flex-col items-center justify-center mobile:flex mobile:justify-center">
+             <div className="w-full h-full flex flex-col items-center justify-center mobile:flex mobile:justify-center z-[10]">
                <h2
                  data-para-anim
                  className="title-2 aeonik text-center uppercase mobile:text-center mobile:w-[80%]"
@@ -17,7 +17,7 @@ const Security = () => {
             
            </div>
          </div>
-         <div className="absolute  top-0 left-0 z-[-1] ">
+         <div className="absolute  top-0 left-0 z-[1] ">
                <Image
                  src="/assets/ligation/security-bg.png"
                 width={1920}

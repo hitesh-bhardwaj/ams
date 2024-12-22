@@ -1,13 +1,11 @@
 import Image from "next/image";
-import gsap from "gsap";
-import { useEffect } from "react";
 
 const Hero = () => {
   return (
     <>
       <section className="hero  tablet:pr-[3%] relative overflow-hidden w-screen" id="advastap-hero">
         <div className="px-[10%] hero-container overflow-hidden  tablet:px-[5%] mobile:px-[8%]">
-          <div className=" flex flex-col h-screen w-full justify-center items-start  mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[70vh]">
+          <div className=" flex flex-col h-screen w-full justify-center items-start  mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[80vh]">
             <div className=" absolute top-[30%] left-[12%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 mobile:top-[15%] mobile:left-0 tablet:top-[20%] tablet:left-[10%]">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
                 <h1 className=" text-[#38C5FF] text-[5.3vw] leading-[1.21] font-light aeonik w-[60%] mobile:w-full ">
@@ -23,7 +21,7 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-              <div className=" w-[100vw] h-[22vw]  scale-[1.7] absolute right-[-25%] z-[10] top-[30%] mobile:top-[40%] mobile:right-[5%] mobile:w-[60vw] mobile:h-[90vw] tablet:w-[40vw] tablet:h-[40vw] tablet:right-[10%] tablet:top-[40%] pointer-events-none fadeUp">
+              <div className=" w-[100vw] h-[22vw]  scale-[1.7] absolute right-[-32%] z-[10] top-[30%] mobile:top-[40%] mobile:right-[5%] mobile:w-[60vw] mobile:h-[90vw] tablet:w-[40vw] tablet:h-[40vw] tablet:right-[10%] tablet:top-[40%] pointer-events-none fadeUp">
                 <Image
                   className="object-contain hero-img"
                   src="/assets/reloads/reloads-hero.png"
@@ -49,7 +47,7 @@ const Hero = () => {
                 <Image src="/assets/reloads/hero-bg-2.png"
                fill
                 alt="Advastap Hero bg"
-                className="object-cover z-[-1]"/>
+                className="object-cover"/>
             </div>
       </section>
     </>

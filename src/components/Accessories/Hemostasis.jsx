@@ -30,8 +30,8 @@ const Hemostasis = () => {
   }, []);
   return (
     <section className="overflow-hidden relative hemostasis-container  mobile:py-[15%] tablet:py-[7%] pt-[7%]" id="hemostasis">
-    <div className="w-screen h-full container-lg  mobile:h-[150vh] tablet:h-[60vh] ">
-      <div className="w-full h-full flex flex-col items-center justify-center relative  tablet:py-0">
+    <div className="w-screen h-full container-lg  mobile:h-[150vh] tablet:h-[60vh]">
+      <div className="w-full h-full flex flex-col items-center justify-center relative  tablet:py-0 z-[10]">
         <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-0 mobile:flex mobile:justify-start tablet:justify-start">
           <h2
 data-para-anim
@@ -72,7 +72,7 @@ data-para-anim
         
       </div>
     </div>
-    <div className="absolute h-[100%] w-[100vw] top-0 left-0 z-[-1] ">
+    <div className="absolute h-[100%] w-[100vw] top-0 left-0 z-[1] ">
           <Image
             src="/assets/advastapcs/ergonomic-bg.png"
             fill

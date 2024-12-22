@@ -11,8 +11,8 @@ const Hero = () => {
  
   return (
     <section className=" hero-container dark" id="hero">
-      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh] mobile:h-screen">
-        <div className="w-screen h-screen absolute tablet:h-[70vh]">
+      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh] mobile:h-screen">
+        <div className="w-screen h-screen absolute tablet:h-[80vh]">
           <Image
             data-speed="0.7"
             className="hero-img absolute object-cover"
@@ -23,7 +23,7 @@ const Hero = () => {
           />
         </div>
         
-        <div className="w-[100vw] h-screen absolute top-[10%] right-[-20%] z-[20] tablet:h-[70vh] tablet:z-0 hero-needle mobile:h-[200vw] mobile:w-[250vw] mobile:z-[0] mobile:right-[-50%] mobile:top-[10%] ">
+        <div className="w-[100vw] h-screen absolute top-[10%] right-[-20%] z-[20] tablet:h-[80vh] tablet:top-[20%] tablet:z-0 hero-needle mobile:h-[200vw] mobile:w-[250vw] mobile:z-[0] mobile:right-[-50%] mobile:top-[10%] ">
           <Image
             src="/assets/advagrip/advagrip-needle.png"
             fill
@@ -34,7 +34,7 @@ const Hero = () => {
         
 
         <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col  mt-[12vw] items-start tablet:h-[70vh] mobile:items-center mobile:mt-[40vw] tablet:mt-[25vw]">
+          <div className="flex h-dvh w-full flex-col  mt-[12vw] items-start tablet:h-[80vh] mobile:items-center mobile:mt-[40vw] tablet:mt-[25vw]">
             <div className=" mobile:flex mobile:flex-col mobile:items-center ">
               <h1
                 

@@ -84,13 +84,14 @@ const Product = () => {
       heading: "Polypropylene Mesh",
     },
     {
+      imgSrc: "/assets/hernia/product-3.png",
+      heading: "Mid-Weight Mesh",
+    },
+    {
         imgSrc: "/assets/hernia/product-2.png",
         heading: "Macroporous Mesh",
       },
-      {
-        imgSrc: "/assets/hernia/product-3.png",
-        heading: "Mid-Weight Mesh",
-      },
+     
      
   ];
   if(globalThis.innerWidth<1024){
@@ -181,8 +182,8 @@ data-para-anim className="title-2 aeonik">
               <ProductCard
                 img={product.imgSrc}
                 heading={product.heading}
-                arrowColor={`${i==2?true:""}`}
-                className={`${i==2?"text-white #ffffff ":""}`}
+                arrowColor={`${i==1?true:""}`}
+                className={`${i==1?"text-white #ffffff ":""}`}
               />
             </div>
           ))}

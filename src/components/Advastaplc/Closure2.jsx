@@ -11,7 +11,7 @@ const Closure2 = () => {
                   <span 
                     className={`leading-[1.2] overflow-hidden uppercase text-[2.5vw] mobile:text-[8.2vw] tablet:text-[6vw] `}
                   >
-                 INNOVATION. SECURITY. CONSISTENCY.
+                Secure hemostasis for unwavering confidence
                   </span>
                 </h2>
           </div>

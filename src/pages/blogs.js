@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Insights from "@/components/Blogs/Insights";
 import More from "@/components/Blogs/More";
-import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
 import BgVideo from "@/components/Layout/BgVideo";
 import Genesis from "@/components/layoutComponents/Genesis";
 import { Media } from "@/components/media";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
+import Hero from "@/components/Blogs/Hero";
 
 const blogs = () => {
   fadeUp();
@@ -19,25 +19,11 @@ const blogs = () => {
           "Explore how we’re driving meaningful change, guided by innovation, compassion, and a relentless dedication to improving lives. Whether it’s through revolutionary medical devices, empowering partnerships, or initiatives that bring care closer to communities, we are committed to creating a healthier tomorrow.",
         src: "/assets/blogs/blogs-genesis-bg.png",
       };
-      const hero = {
-        title: "STORIES NEWS & EVENTS",
-        src: "/assets/blogs/blogs-hero-bg.png",
-        content:
-          "",
-      };
   return (
     <>
       <Layout>
         <main>
-        <Hero
-                title={hero.title}
-                src={hero.src}
-                content={hero.content}
-                className="hidden"
-                titleColor={false}
-                mode={"dark"}
-                paraWidth={"max-w-[16vw]"}
-              />
+       <Hero/>
         <Genesis content={content} sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}
                 bParaWidth={"w-[60%]"} />
                 <Insights/>

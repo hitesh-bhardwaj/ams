@@ -14,7 +14,7 @@ import BgVideo from "@/components/Layout/BgVideo";
 const EdgeCard = {
   card1: {
     title: "Swage Point Integrity",
-    src: "/assets/advacryl/magnifying-glass.png",
+    src: "/assets/advacryl-rapid/lens.png",
     para: "Advanced Tipping",
   },
   card2: {

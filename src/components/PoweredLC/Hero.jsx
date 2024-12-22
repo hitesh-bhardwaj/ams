@@ -40,7 +40,7 @@ const Hero = () => {
     <>
       <section className="hero relative w-screen overflow-hidden" id="advastap-hero">
         <div className="px-[10%] hero-container overflow-hidden  mobile:pt-[10%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[90vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[70vh] tablet:justify-start tablet:pt-[15vw]">
+          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[90vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[80vh] tablet:justify-start tablet:pt-[15vw]">
             <div className=" relative top-[10%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center relative z-[1]">
                 <h1 className="advastap-text text-white text-[5.3vw] aeonik leading-[1] hero-text">
@@ -61,20 +61,20 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse mobile:right-0 mobile:top-[20%] tablet:top-[30%]">
-              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-45%] top-[-5%] mobile:top-[80%] mobile:left-[65%] mobile:w-[55vw] mobile:h-[55vw] tablet:w-[45vw] tablet:h-[45vw] pointer-events-none tablet:right-[-110%] tablet:top-[10%]">
+              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-55%] top-[-5%] mobile:top-[80%] mobile:left-[65%] mobile:w-[55vw] mobile:h-[55vw] tablet:w-[45vw] tablet:h-[45vw] pointer-events-none tablet:right-[-110%] tablet:top-[10%]">
                 <Image
-                  className="object-contain hero-img-1"
-                  src="/assets/poweredlc/lc-1.png"
+                  className="object-contain hero-img-1 rotate-[90]"
+                  src="/assets/poweredlc/poweredlc-1.png"
                   alt="Hero Image"
                   priority={true}
                   fill
                 />
               </div>
             </div>
-            <div className="w-[80vw] h-[20vw]  scale-[1.3] left-[-20%] bottom-[5%] absolute  mobile:top-[25%] mobile:left-[10%] mobile:w-[80vw] mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] z-[0]  ">
+            <div className="w-[80vw] h-[20vw]  scale-[1.3] left-[-25%] bottom-[5%] absolute  mobile:top-[25%] mobile:left-[10%] mobile:w-[80vw] mobile:h-[60vw] tablet:w-[55vw] tablet:h-[60vw] z-[0]  ">
                 <Image
                   className="object-contain hero-img-2"
-                  src="/assets/poweredlc/lc-2.png"
+                  src="/assets/poweredlc/poweredlc.png"
                   alt="Hero Image"
                   priority={true}
                   fill

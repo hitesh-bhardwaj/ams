@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden dark" id="hero">
       <div className="px-[12%] w-full relative mobile:px-[5vw] tablet:px-[10%]">
-        <div className="flex h-dvh relative z-10 w-full justify-start items-center mobile:h-screen tablet:h-[70vh]">
+        <div className="flex h-dvh relative z-10 w-full justify-start items-center mobile:h-screen tablet:h-[80vh]">
           <div className="w-[55%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-[85%] mt-[4vw]">
             <h1 data-para-anim className="title-1 aeonik capitalize mobile:text-center mobile:text-[15vw] text-[#ffffff] tablet:text-[10vw]" >
               Advancing the way we care

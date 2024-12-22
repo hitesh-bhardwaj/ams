@@ -30,7 +30,7 @@ const UncoverCard = ({ img, txt, src }) => {
           </p>
         </div>
         <div className="h-[6vw] w-[24vw] mobile:w-[55vw] mobile:h-[60vw] tablet:w-[25vw] tablet:h-[25vw]">
-          <div className="w-full h-full relative">
+          <div className="w-full h-full relative right-[-7%]">
             <Image src={img} fill alt="uncover" className="object-contain" />
           </div>
         </div>

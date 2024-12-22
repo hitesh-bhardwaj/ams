@@ -18,8 +18,8 @@ const cardData1 = [
     svg: "/assets/advapacer/composition.svg"
   },
   {
-    title: "Colour",
-    description: "Blue",
+    title: "Colour Dual",
+    description: "Blue & Orange",
     svg: "/assets/advapacer/color.svg"
 
   },

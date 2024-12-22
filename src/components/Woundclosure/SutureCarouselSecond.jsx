@@ -103,15 +103,15 @@ data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutu
             <div
               className={`w-full h-full flex flex-col justify-center items-center  ${
                 activeIndex === index ? "gap-[4vw]" : "gap-0"
-              } transition-all duration-300`}
+              } transition-all duration-500 ease`}
             >
               <div className={`absolute w-full h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[90vw] mobile:h-[100vw] tablet:w-[85vw] tablet:h-[60vw]`}>
                   </div>
              
               <div className={`w-fit h-[20vw] flex justify-center items-center mobile:h-[80vw] tablet:h-[30vw] cursor-grab z-[5] mobile:translate-y-[-10%] ${
-                activeIndex === index ? "scale-[2] translate-y-[-10%] mobile:scale-[1] tablet:translate-y-0" : "scale-[1]"
-              } transition-transform duration-300`}>
-                <div className="w-[25vw] h-[20vw] p-[3vw] mobile:w-[100vw] mobile:h-[90vw] tablet:w-[45vw] tablet:h-[35vw] tablet:p-[5vw] ">
+                activeIndex === index ? "scale-[1.7] translate-y-[-10%] mobile:scale-[1] tablet:translate-y-0" : "scale-[1]"
+              } transition-transform duration-500 ease`}>
+                <div className="w-[28vw] h-[22.5vw] p-[3vw] mobile:w-[100vw] mobile:h-[90vw] tablet:w-[45vw] tablet:h-[35vw] tablet:p-[5vw] ">
                   <Image
                     src={slide.iconSrc}
                     alt="slide icon"

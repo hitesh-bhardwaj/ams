@@ -17,7 +17,7 @@ const Hero = () => {
 
     return (
         <section className='hero-container dark' id="hero">
-            <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
+            <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh]">
                 <div className="w-full h-full absolute">
                     <video
                         ref={videoRef}

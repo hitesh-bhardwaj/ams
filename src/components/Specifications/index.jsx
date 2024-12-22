@@ -44,7 +44,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
               <div
-                className={`text-white aeonik text-[2.5vw]  uppercase mt-[-3vw] leading-[1.2] tracking-widest ${textclass} mobile:text-[6vw] tablet:text-[5vw] mobile:mt-0`}
+                className={`text-white aeonik text-[2.5vw]  uppercase mt-[-3vw] leading-[1.2] tracking-widest ${textclass} mobile:text-[6vw] tablet:text-[5vw] mobile:mt-0 z-[10]`}
               >
                 <p>Specifications</p>
               </div>
@@ -102,7 +102,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
             </div>
           </>
         )}
-        <div className="w-[100vw] h-[100%] absolute z-[-1] top-0 left-0">
+        <div className="w-[100vw] h-[100%] absolute z-[1] top-0 left-0">
           <Image
             src={bgimg}
             fill

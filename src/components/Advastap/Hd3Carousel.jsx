@@ -15,21 +15,15 @@ const Hd3Carousel = () => {
     paraAnim();
   
     const swiperRef = useRef(null); 
-    const [activeButton, setActiveButton] = useState("");
-  
     const handleNext = () => {
       if (swiperRef.current) {
-        swiperRef.current.slideNext();
-        setActiveButton("next"); 
-        // Reset after 300ms
+        swiperRef.current.slideNext(); // Move to the next slide
       }
     };
   
     const handlePrev = () => {
       if (swiperRef.current) {
-        swiperRef.current.slidePrev(); 
-        setActiveButton("prev"); 
-        // Reset after 300ms
+        swiperRef.current.slidePrev(); // Move to the previous slide
       }
     };
       

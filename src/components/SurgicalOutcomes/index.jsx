@@ -7,6 +7,7 @@ import { Scrollbar } from "swiper/modules";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import styles from './styles.module.css'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -40,11 +41,11 @@ const SurgicalOutcomes = ({data, tclass}) => {
     if (globalThis.innerWidth > 1024) {
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: ".swiper-container",
+          trigger: ".surgicalSwiper",
         },
       });
       tl.fromTo(
-        ".surgicalSwiper",
+        ".surgicalSwiper .swiper-container",
         {
           xPercent: 70,
           opacity: 0.5,
@@ -61,19 +62,15 @@ const SurgicalOutcomes = ({data, tclass}) => {
   });
 
   const swiperRef = useRef(null);
-  const [activeButton, setActiveButton] = useState("");
-
   const handleNext = () => {
     if (swiperRef.current) {
       swiperRef.current.slideNext();
-      setActiveButton("next");
     }
   };
 
   const handlePrev = () => {
     if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-      setActiveButton("prev");
+      swiperRef.current.slidePrev(); 
     }
   };
 
@@ -93,7 +90,7 @@ const SurgicalOutcomes = ({data, tclass}) => {
           <div className="w-full h-full mt-[5vw] cursor-grab fadeUp">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              className="mySwiper w-full h-full surgicalSwiper"
+              className={`mySwiper w-full h-full ${styles.surgicalSwiper}`}
               spaceBetween={20}
             scrollbar={true}
               modules={[Scrollbar]}
@@ -120,57 +117,38 @@ const SurgicalOutcomes = ({data, tclass}) => {
             </Swiper>
           </div>
 
-          {/* Navigation buttons */}
           <div className="w-full hidden mobile:block">
             <div
-              className={`absolute z-[5] bottom-[5%] left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer bg-white/50 ${
-                activeButton === "next"
-                  ? "text-white border-none"
-                  : "bg-transparent text-[#111111]"
-              } transition-colors duration-300`}
+              className={`absolute z-[5] bottom-[5%] left-[65%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] rounded-full next-button cursor-pointer bg-white/50 `}
               onClick={handleNext}
             >
               <span
-                className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${
-                  activeButton === "next"
-                    ? "scale-100 opacity-100"
-                    : "scale-0 opacity-50"
-                } transition-all duration-300`}
+                className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full `}
               ></span>
               <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
                 <Image
                   src="/assets/home/arrow-right.png"
                   alt="arrow-right"
-                  className={`object-cover group-hover:invert transition-all duration-300 ${
-                    activeButton === "next" ? "invert" : "invert-0"
-                  }`}
+                  className={`object-cover group-hover:invert transition-all duration-300 `}
                   fill
                 />
               </div>
             </div>
 
             <div
-              className={`absolute z-[5] bottom-[5%] left-[39%] translate-x-[-38%] bg-white/50 overflow-hidden py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer ${
-                activeButton === "prev"
-                  ? "text-white border-none"
-                  : "bg-transparent text-[#111111]"
-              } transition-colors duration-300`}
+              className={`absolute z-[5] bottom-[5%] left-[39%] translate-x-[-38%] bg-white/50 overflow-hidden py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer`} 
+              
               onClick={handlePrev}
             >
               <span
-                className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${
-                  activeButton === "prev"
-                    ? "scale-100 opacity-100"
-                    : "scale-0 opacity-50"
-                } transition-all duration-300`}
+                className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full`}
+                  
               ></span>
               <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw]">
                 <Image
                   src="/assets/home/arrow-left.png"
                   alt="arrow-left"
-                  className={`object-cover group-hover:invert transition-all duration-300 ${
-                    activeButton === "prev" ? "invert" : "invert-0"
-                  }`}
+                  className={`object-cover group-hover:invert transition-all duration-300`}
                   fill
                 />
               </div>

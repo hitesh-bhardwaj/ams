@@ -50,9 +50,9 @@ const content = [
     link: "/interventional-cardiology",
   },
   {
-    title: "Advanced Wound Care",
-    image: "/assets/portfolio/WoundCare.png",
-    link: "/wound-care",
+    title: "Advanced Hernia Solutions",
+    image: "/assets/portfolio/HerniaSolutions.png",
+    link: "/hernia"
   },
   {
     title: "Advanced Cardiovascular Solutions",
@@ -65,8 +65,8 @@ const content = [
     link: "/endo"
   },
   {
-    title: "Advanced Hernia Solutions",
-    image: "/assets/portfolio/HerniaSolutions.png",
-    link: "/hernia"
-  }
+    title: "Advanced Wound Care",
+    image: "/assets/portfolio/WoundCare.png",
+    link: "/wound-care",
+  },
 ]

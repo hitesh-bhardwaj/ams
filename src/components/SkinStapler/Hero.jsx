@@ -26,7 +26,7 @@ const Hero = () => {
     <>
       <section className="hero tablet:pr-[3%] relative w-screen overflow-hidden" id="advastap-hero">
         <div className=" hero-container overflow-hidden  mobile:pt-[30%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="  flex flex-col h-screen w-screen justify-center items-start  mobile:h-[75vh] mobile:flex-col mobile:justify-start mobile:w-full mobile:text-center mobile:gap-[2vw] tablet:h-[60vh]">
+          <div className="  flex flex-col h-screen w-screen justify-center items-start  mobile:h-[75vh] mobile:flex-col mobile:justify-start mobile:w-full mobile:text-center mobile:gap-[2vw] tablet:h-[80vh]">
             <div className=" absolute top-[30%] left-[10%] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 mobile:static">
               <div className=" flex-col mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw]">
                 <h1 className="advastap-text text-white text-[5.3vw] aeonik  leading-[1] hero-text">
@@ -43,7 +43,7 @@ const Hero = () => {
               
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse">
-              <div className="w-[45vw] h-[25vw] scale-[1.5] absolute right-0 bottom-[15%] mobile:bottom-auto mobile:top-[40%] mobile:left-[30%] mobile:w-[80vw] mobile:h-[60vw] tablet:w-[50vw] tablet:h-[50vw] z-10 ">
+              <div className="w-[57vw] h-[39vw]   absolute right-[-5%] bottom-[15%] mobile:bottom-auto mobile:top-[40%] mobile:left-[30%] mobile:w-[80vw] mobile:h-[60vw] tablet:w-[50vw] tablet:h-[50vw] z-10 ">
                 <Image
                   className="object-contain hero-img"
                   src="/assets/skinstapler/skin-stapler.png"

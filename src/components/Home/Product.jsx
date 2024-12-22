@@ -360,7 +360,7 @@ export default function Product() {
                   </div>
                 </CardContainer>
               </SwiperSlide>
-            </Swiper>
+            </Swiper> 
           </div>
           <div
             className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[68%] tablet:right-[-2%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}

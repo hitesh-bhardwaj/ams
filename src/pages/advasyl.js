@@ -14,7 +14,7 @@ import BgVideo from "@/components/Layout/BgVideo";
 const EdgeCard = {
   card1: {
     title: "Swage Point Integrity",
-    src: "/assets/advacryl/magnifying-glass.png",
+    src: "/assets/advasyl/lens.png",
     para: "Advanced Tipping",
   },
   card2: {
@@ -36,7 +36,7 @@ const featureData = [
   },
   {
     src: "/assets/advasyl/feature-card2.png",
-    title: "Minimal memory for handling ease",
+    title: "Minimal memory for ease of handling",
   },
   {
     src: "/assets/advasyl/feature-card3.png",

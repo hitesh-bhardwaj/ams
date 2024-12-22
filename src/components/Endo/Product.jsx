@@ -8,12 +8,13 @@ import styles from "@/styles/endocard.module.css"; // Import the module CSS
 import Link from "next/link";
 import Image from "next/image";
 import { Media } from "../media";
+import LinkButton from "../Button/LinkButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ProductCard = ({ img, heading, link, text }) => {
   return (
-    <Link href={link} className="block w-full h-full group">
+    <div  className="block w-full h-full group">
       <div className={`h-full w-full bg-white rounded-[1.5vw] flex flex-col-reverse  items-center justify-between single relative bg-white/70 group-hover:bg-white group-hover:shadow-xl duration-500 mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw] mobile:rounded-[5vw]`}>
         <div className="w-[43vw] absolute top-[-6vw] mobile:w-[120vw] tablet:top-[10%] mobile:top-[0%]">
           <Image src={img} alt={heading} className="object-contain group-hover:scale-[1.2] group-hover:-translate-y-[5%] transition-all duration-500 pointer-events-none w-full" width={600} height={500} priority={false} />
@@ -22,10 +23,12 @@ const ProductCard = ({ img, heading, link, text }) => {
           <h2 className="text-center font-extralight text-[1.8vw] uppercase mobile:text-[6vw] tablet:text-[3vw]">
             {heading}
           </h2>
-          <p className="text-[1.15vw] tablet:text-lg mobile:text-lg font-extralight">{text}</p>
+          <p className="text-[1.15vw] tablet:text-lg mobile:text-lg font-extralight mb-[2vw]">{text}</p>
+          <LinkButton btnText={"See More"} link={link}/>
+
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 
@@ -44,7 +47,7 @@ const Product = () => {
       imgSrc: "/assets/endo/Product3.png",
       heading: "Advastap HD III",
       text: '3-Row Hemorrhoid Stapler',
-      link: "/advastaphd"
+      link: "/advastap"
     },
     {
       imgSrc: "/assets/endo/Product4.png",

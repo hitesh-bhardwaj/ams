@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import gsap from "gsap";
+import styles from './styles.module.css'
 
 const ProductCarousel = () => {
   const slidesData = [
@@ -146,7 +147,7 @@ const ProductCarousel = () => {
             ref={swiperRef}
             spaceBetween={20}
             centeredSlides={true}
-            className={`cardiovascularSwiper w-full h-full absolute left-[30%] top-[3%] rounded-[30px] mobile:left-0 mobile:h-[50%] tablet:left-0 tablet:h-full mobile:pointer-events-none`}
+            className={`${styles.cardiovascularSwiper} w-full h-full absolute left-[30%] top-[3%] rounded-[30px] mobile:left-0 mobile:h-[50%] tablet:left-0 tablet:h-full mobile:pointer-events-none`}
             onSlideChange={handleSlideChange}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             breakpoints={{       

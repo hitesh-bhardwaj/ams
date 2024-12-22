@@ -31,7 +31,7 @@ const Modal = ({ isOpen, onClose, children }) => {
           />
         </div>
       </div>
-      <div data-lenis-prevent className="bg-[#efefef] border border-white rounded-[2vw] p-[3vw] pt-[5vw] w-[80vw] max-h-[95vh] mobile:max-h-[95vh] mobile:py-[7vw] mobile:w-[95vw] mobile:rounded-[7vw] tablet:w-[90vw] tablet:max-w-[95vw] tablet:rounded-[3.5vw] tablet:p-[4vw]">
+      <div data-lenis-prevent className="bg-[#efefef] border border-white rounded-[2vw] p-[3vw] pt-[5vw] w-[80vw] max-h-[95vh] mobile:max-h-[95vh] mobile:py-[7vw] mobile:w-[95vw] mobile:rounded-[7vw] tablet:w-[90vw] tablet:max-w-[95vw] tablet:rounded-[3.5vw] tablet:p-[4vw] mobile:overflow-x-scroll tablet:overflow-x-scroll">
        {children}
       </div>
     </div>

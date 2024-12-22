@@ -34,21 +34,15 @@ const Carousel = () => {
         const swiperRef = useRef(null); 
 
       
-        const [activeButton, setActiveButton] = useState("");
-      
         const handleNext = () => {
           if (swiperRef.current) {
-            swiperRef.current.slideNext(); 
-            setActiveButton("next"); 
-            
+            swiperRef.current.slideNext();
           }
         };
       
         const handlePrev = () => {
           if (swiperRef.current) {
             swiperRef.current.slidePrev(); 
-            setActiveButton("prev"); 
-            
           }
         };
      
@@ -76,7 +70,7 @@ const Carousel = () => {
               spaceBetween: 50,
             },
           }}
-        className={`w-screen flex items-center justify-center specificationSwiper skinstaplerSwiper tablet:h-[60vh]`}
+        className={`w-screen flex items-center justify-center specificationSwiper tablet:h-[60vh]`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
@@ -193,8 +187,8 @@ const Carousel = () => {
       </Swiper>
       
        <div
-                      className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[7%] right-0 mobile:bottom-0 mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%]  tablet:top-[93%] tablet:right-[35%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
-                      onClick={handleNext} // Trigger next slide
+                      className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[7%] right-0 mobile:bottom-0 mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%]  tablet:top-[93%] tablet:right-[35%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button border-[#222222] border cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+                      onClick={handleNext} 
                     >
                       <span
                         className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
@@ -209,8 +203,8 @@ const Carousel = () => {
                       </div>
                     </div>
                     <div
-                      className={`px-[1.2vw] py-[1.2vw] bottom-[7%] right-[6%] absolute z-[5] mobile:bottom-0 mobile:top-auto mobile:left-[37%] mobile:right-auto  translate-x-[-38%]  tablet:top-[93%] tablet:right-[48%] tablet:bottom-auto tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
-                      onClick={handlePrev} // Trigger previous slide
+                      className={`px-[1.2vw] py-[1.2vw] bottom-[7%] right-[6%] absolute z-[5] mobile:bottom-0 mobile:top-auto mobile:left-[37%] mobile:right-auto  translate-x-[-38%]  tablet:top-[93%] tablet:right-[48%] tablet:bottom-auto tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white border-[#222222] border`}
+                      onClick={handlePrev} 
                     >
                       <span
                         className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}

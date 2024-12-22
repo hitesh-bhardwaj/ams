@@ -35,22 +35,16 @@ const Hd2Carousel = () => {
   };
   });
 
-    // State to track which button was clicked
-    const [activeButton, setActiveButton] = useState("");
   
     const handleNext = () => {
       if (swiperRef.current) {
-        swiperRef.current.slideNext();
-        setActiveButton("next"); 
-        
+        swiperRef.current.slideNext(); // Move to the next slide
       }
     };
   
     const handlePrev = () => {
       if (swiperRef.current) {
-        swiperRef.current.slidePrev(); 
-        setActiveButton("prev"); 
-        
+        swiperRef.current.slidePrev(); // Move to the previous slide
       }
     };
      

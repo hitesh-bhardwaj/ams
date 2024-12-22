@@ -39,7 +39,7 @@ const Hero = () => {
         id="advastap-hero"
       >
         <div className="px-[10%] hero-container overflow-hidden  mobile:pt-[25%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[90vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[70vh]">
+          <div className="  flex flex-col h-screen w-full justify-center items-start  mobile:h-[90vh]  mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:h-[80vh]">
             <div className=" relative top-[10%]  mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 tablet:top-0 ">
               <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center relative z-[1] mobile:top-[-30%]">
                 <h1 className="text-[#CF181E] text-[5.3vw]  font-light aeonik uppercase  leading-[1] ">
@@ -65,7 +65,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse">
-              <div className="w-[80vw] h-[25vw] scale-[1.4] relative right-[-45%] bottom-[-20%] mobile:top-[75%] mobile:left-[12%] mobile:w-[90vw] mobile:h-[60vw] mobile:absolute tablet:w-[45vw] tablet:h-[45vw] pointer-evente-none tablet:left-[120%]">
+              <div className="w-[80vw] h-[25vw] scale-[1.4] relative right-[-45%] bottom-[-20%] mobile:top-[75%] mobile:left-[12%] mobile:w-[90vw] mobile:h-[60vw] mobile:absolute tablet:w-[45vw] tablet:h-[45vw] pointer-evente-none tablet:left-[120%] tablet:bottom-[-45%]">
                 <Image
                   className="object-contain hero-img-1"
                   src="/assets/advaspong/advaspong-hero.png"

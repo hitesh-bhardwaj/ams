@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section id='accessoriesHero' className='dark'>
-      <div className="w-screen h-screen relative overflow-hidden hero-container mobile:h-screen tablet:h-[70vh]">
+      <div className="w-screen h-screen relative overflow-hidden hero-container mobile:h-screen tablet:h-[80vh]">
         <Image
           src="/assets/accessories/accessories-hero-bg.png"
           fill

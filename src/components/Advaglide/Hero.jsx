@@ -5,7 +5,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="" id="advaglideHero">
-      <div className="w-screen h-screen relative overflow-hidden mobile:h-screen tablet:h-[70vh]">
+      <div className="w-screen h-screen relative overflow-hidden mobile:h-screen tablet:h-[80vh]">
         <Image
           src="/assets/advaglide/advaglide-bg.png"
           fill

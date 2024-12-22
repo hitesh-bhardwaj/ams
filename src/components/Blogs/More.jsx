@@ -23,44 +23,36 @@ const blogCardData = [
 ];
 
 const BlogCard = ({ para, link, img }) => (
-  <div
-    className={`group h-full w-full  fadeUp`}
-  >
-    <Link href={"#"}>
-      <div className="w-full h-full relative">
-        <div className=" w-full h-full  rounded-[2.5vw] overflow-hidden py-[1vw]">
-          <div className="w-full h-full absolute top-0 left-0 z-[2] bg-gradient-to-b from-transparent to-black/30"></div>
+    <Link href="#" className="group overflow-hidden  h-full w-full fadeUp">
+        <div className="w-full h-full overflow-hidden relative py-[1vw] rounded-[2.5vw]">
           <Image
             src={img}
             fill
             alt="blog image"
-            className="object-cover scale-[1.1] group-hover:scale-[1.1] transition-transform duration-500 ease-in-out  group-hover:blur-sm"
+            className="object-cover scale-[1.1] group-hover:scale-[1.1] transition-transform duration-500 ease-in-out group-hover:blur-sm"
           />
-          <div className="absolute inset-0 flex flex-col items-start justify-center z-[10] opacity-0 px-[3vw] group-hover:opacity-100 transition-opacity duration-500 ease bg-black/40 ">
-            <p
-              className={`text-white tracking-widest text-[1.25vw] w-[75%] font-light aeonik leading-[1.2]`}
-            >
+          <div className="absolute inset-0 flex flex-col items-start justify-center z-[10] opacity-0 px-[5%] group-hover:opacity-100 transition-opacity duration-500 ease bg-black/40">
+            <p className="text-white tracking-widest text-[1.25vw] w-[80%] font-light aeonik leading-[1.2]">
               {para}
             </p>
-          
           </div>
         </div>
-        <div className="w-full mt-[1vw] ">
-          <p
-            className={` leading-[1.2] text-[1.5vw]
-             text-[#111111] font-light aeonik`}
-          >
+        <div className="w-full mt-[1vw] px-[3%] z-[50]">
+          <p className="leading-[1.2] text-[1.25vw] text-[#111111] font-light aeonik">
             {link}
-            <span className="inline-block ml-[0.5vw]"> 
-                <Image src= "/assets/icons/arrow-up-right.svg"  alt="arrrow" height={10} width={10}/>
-                </span>
+            <span className="inline-block ml-[0.5vw]">
+              <Image
+                src="/assets/icons/arrow-up-right.svg"
+                alt="arrow"
+                height={10}
+                width={10}
+              />
+            </span>
           </p>
-        
-        </div>
-      </div>
+        </div>  
     </Link>
-  </div>
 );
+
 
 
 
@@ -81,7 +73,7 @@ data-para-anim
             More from ams
           </h2>
         </div>
-        <div  className="w-full h-[50vw] py-[3vw] grid grid-cols-12 row-span-2 space-x-[1.5vw] ">
+        <div  className="w-full h-[50vw] py-[3vw] grid grid-cols-12 row-span-2 space-x-[2vw] gap-y-[5vw]">
           <div className="col-span-9 col-start-1 row-span-2 row-start-1">
             <BlogCard {...blogCardData[0]}/>
           </div>

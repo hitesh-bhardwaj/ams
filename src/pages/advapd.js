@@ -36,7 +36,7 @@ const featureData = [
   },
   {
     src: "/assets/advamryl/feature-card2.png",
-    title: "Minimal memory for handling ease",
+    title: "Minimal memory for ease of handling",
   },
   {
     src: "/assets/advamryl/feature-card3.png",

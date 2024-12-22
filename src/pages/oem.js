@@ -25,7 +25,7 @@ export default function oem() {
       <Layout>
         <main>
           <section className="hero-container dark" id="hero">
-            <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[70vh]">
+            <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh]">
               <Image
                 className="hero-img top-0 left-0 right-0 bottom-0 object-cover h-full w-full absolute object-left"
                 src="/assets/oem/oem-hero-image.png"

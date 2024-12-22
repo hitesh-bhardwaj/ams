@@ -72,7 +72,7 @@ const Think = () => {
               ].map((text, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center gap-[2vw] px-[1vw] pr-[3vw] rounded-[1vw]  border-transparent group cursor-pointer relative mobile:flex-col mobile:items-center  transition-all duration-500 ease mobile:w-full mobile:rounded-[4vw] think-content hover:border hover:border-[#3A87C8]"
+                  className="flex items-center justify-center gap-[2vw] px-[1vw] pr-[3vw] rounded-[1vw]  border-transparent group cursor-pointer relative mobile:flex-col mobile:items-center  transition-all duration-500 ease mobile:w-full mobile:rounded-[4vw] think-content hover:border hover:border-[#3A87C8] hover:px-[3vw]"
                 >
                   {/* SVG Border */}
                  

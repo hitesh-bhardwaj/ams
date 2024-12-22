@@ -89,7 +89,7 @@ data-para-anim className="aeonik title-2">
                         >
                           {card.title}
                         </h4>
-                        <div className="w-[3vw] h-[1.2px] bg-[#143CA3]"></div>
+                        <div className="w-[3vw] h-[2px] bg-[#143CA3]"></div>
                         <p data-para-anim className="text-[1.2vw] font-light text-justify">
                           {card.detailedDescription}
                         </p>

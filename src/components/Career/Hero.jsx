@@ -26,7 +26,7 @@ const Hero = () => {
           className='w-full h-full object-cover left-0 top-0 absolute'
         />
         <div className="px-[12%] relative mobile:px-[5%] z-[10]">
-          <div className="flex h-[90vh] w-full flex-col justify-center items-start tablet:h-[70vh] mobile:h-screen mobile:justify-start mobile:pt-[35vw]">
+          <div className="flex h-[90vh] w-full flex-col justify-center items-start tablet:h-[80vh] mobile:h-screen mobile:justify-start mobile:pt-[35vw]">
             <div className="w-full">
               <h1 className={`title-1 aeonik  leading-[1] tablet:w-full w-[80%] mobile:w-full mobile:text-center`} >
                 <span

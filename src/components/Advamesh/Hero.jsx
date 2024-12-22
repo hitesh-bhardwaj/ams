@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className='dark w-screen h-screen relative overflow-hidden  mobile:h-screen tablet:h-[70vh]' id='advameshHero'>
+    <section className='dark w-screen h-screen relative overflow-hidden  mobile:h-screen tablet:h-[80vh]' id='advameshHero'>
       <div className="w-full h-full ">
         <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center  mobile:flex-col tablet:flex-col tablet:top-[22%]">
           <div className=" absolute left-[12%] top-[35%] mobile:left-[17%] mobile:w-[100%] tablet:left-[15%] mobile:top-[20%] tablet:top-[15%]">

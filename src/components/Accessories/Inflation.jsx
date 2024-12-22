@@ -32,7 +32,7 @@ const Inflation = () => {
     <section className="overflow-hidden relative  mobile:py-[15%] inflation-container pt-[7%] pb-[10%]" id="inflation">
     <div className="w-screen h-full container-lg  mobile:h-[140vh] tablet:h-[70vh] ">
       <div className="w-full h-full flex flex-col items-center justify-center  mobile:justify-between tablet:py-0">
-        <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:h-fit">
+        <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] z-[10]mobile:flex mobile:justify-center mobile:h-fit">
           <h2
 data-para-anim
             className="title-2 aeonik text-center w-[60%] mobile:text-center mobile:w-[90%]"
@@ -40,7 +40,7 @@ data-para-anim
             Inflation Device
           </h2>
         </div>
-        <div className="relative w-full h-full flex flex-col items-center justify-center">
+        <div className="relative w-full h-full flex flex-col items-center justify-center z-[10]">
           <div className="h-[35vw] w-[60vw] relative mobile:w-[150vw] mobile:h-[100vw] tablet:w-[100vw] mobile:mt-[20vw] tablet:h-[70vw]">
             <Image
               src="/assets/accessories/inflation-device.png"
@@ -51,7 +51,7 @@ data-para-anim
           </div> 
 
         </div>
-        <div className='w-full h-full mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center mobile:justify-end'>
+        <div className='w-full h-full mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center mobile:justify-end z-[10]'>
 
           <div className="absolute h-fit rounded-[1vw] px-[1vw] py-[1vw] glassmorphism-light flex flex-col items-start justify-center text-[#2A2A2A] left-[20%] top-[40%] card-up mobile:static mobile:w-[90vw] mobile:flex mobile:flex-col mobile:items-center mobile:py-[8vw] mobile:rounded-[4vw]  tablet:px-[2.5vw] tablet:py-[1.5vw] tablet:left-[10%]">
             <p  className="text-[1.67vw] font-light mobile:text-[6vw] tablet:text-[3.5vw]">Ergonomic design</p>
@@ -75,7 +75,7 @@ data-para-anim
        
       </div>
     </div>
-    <div className="absolute h-[100%] w-[100vw] top-0 left-0 z-[-1]">
+    <div className="absolute h-[100%] w-[100vw] top-0 left-0 z-[1]">
           <Image
             src="/assets/advastapcs/ergonomic-bg.png"
             fill

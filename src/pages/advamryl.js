@@ -36,7 +36,7 @@ const featureData = [
   },
   {
     src: "/assets/advamryl/feature-card2.png",
-    title: "Minimal memory for handling ease",
+    title: "Minimal memory for ease of handling",
   },
   {
     src: "/assets/advamryl/feature-card3.png",
@@ -74,7 +74,7 @@ const cardData = [
   },
   {
     title: "Tensile Strength",
-    description: "7 days   ~60%    ~55% <br/> 14days   ~40%   ~20%",
+    description: " Dyed  Undyed <br/> 7 days   ~60%    ~55% <br/> 14days   ~40%   ~20%",
     svg: "/assets/advamryl/tensile.svg"
 
   },
