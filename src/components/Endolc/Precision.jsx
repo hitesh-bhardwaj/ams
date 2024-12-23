@@ -139,8 +139,15 @@ data-para-anim
             className="object-cover"
           />
         </div>
-        <span className="w-[26vw] h-[1.5px] bg-[#B3B3B3] absolute  top-[63%] left-[32%] scale-0 line-draw mobile:hidden tablet:hidden"></span>
-        <span className="w-[28vw] h-[1.5px] bg-[#B3B3B3] absolute line-draw2 scale-0 top-[75%] left-[28%]  mobile:hidden tablet:hidden"></span>
+        <span className="dot absolute top-[63%] left-[32%] w-[0.8vw] h-[0.8vw] bg-[#B3B3B3] rounded-full mobile:hidden tablet:hidden"></span>
+<span className="w-[26vw] h-[1.5px] bg-[#B3B3B3] absolute top-[64%] left-[32%] scale-0 line-draw mobile:hidden tablet:hidden transform-origin-left"></span>
+
+<span className="dot absolute top-[75%] left-[28%] w-[0.8vw] h-[0.8vw] bg-[#B3B3B3] rounded-full mobile:hidden tablet:hidden"></span>
+<span className="w-[28vw] h-[1.5px] bg-[#B3B3B3] absolute line-draw2 scale-0 top-[75.5%] left-[28%] mobile:hidden tablet:hidden transform-origin-left"></span>
+
+
+
+
         <span className="hidden h-[1.5px] bg-[#B3B3B3] absolute mobile:block tablet:block mobile:w-[70vw] mobile:-rotate-[105deg] mobile:top-[54%] mobile:left-[26%] tablet:left-[35%] tablet:w-[22vw] tablet:top-[60%] tablet:-rotate-45"></span>
         <span className="hidden  h-[1.5px] bg-[#B3B3B3] absolute  mobile:block tablet:block mobile:w-[40vw] mobile:rotate-[130deg] mobile:top-[78%] mobile:left-[28%] tablet:w-[36vw] tablet:left-[30%] tablet:top-[75%]"></span>
       </section>

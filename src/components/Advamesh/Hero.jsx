@@ -17,7 +17,7 @@ const Hero = () => {
                   </span>
                 </h1>
             <div className='flex items-center mt-[0.2vw] mobile:items-start'>
-            <p data-para-anim className=" text-[1.25vw] uppercase font-light text-[#FFFFFF] leading-[1.2] tracking-wider mobile:text-[4.6vw]  mobile:w-[70%]  tablet:text-[3vw] t tablet:max-w-[70%]  mobile:text-center mobile:justify-center">
+            <p data-para-anim className=" text-[1.1vw] uppercase font-light text-[#FFFFFF] leading-[1.2] tracking-wider mobile:text-[4.6vw]  mobile:w-[70%]  tablet:text-[3vw] t tablet:max-w-[70%]  mobile:text-center mobile:justify-center">
             Advancing the Science of Tissue Reinforcement
                 </p>
               </div>

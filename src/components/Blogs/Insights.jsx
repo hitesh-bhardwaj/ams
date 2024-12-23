@@ -34,18 +34,21 @@ const NewsCard = ({ title, para, img }) => {
       
       <div>
       <p
-        data-para-anim
-        className="font-light text-[2.5vw] px-[2vw] py-[1vw] aeonik leading-[1.2]"
+       
+        className="font-light text-[2vw] px-[2vw] py-[1vw] aeonik leading-[1.2] fadeUp"
       >
         {title}
-      </p>
-      {/* <Image
-            className="inline w-[1.2vw] h-[1.2vw] ml-[2%] mt-[1.5vw] mobile:ml-[5%] mobile:w-[11%] relative z-[7] fadeUp invert"
+          <span className="inline-block">
+      <Image
+            className=" w-[1.2vw] h-[1.2vw] ml-[0.2vw]  mobile:ml-[5%] mobile:w-[11%] relative z-[7]"
             src="/assets/icons/arrow-up-right.svg"
             alt="arrow"
             width={50}
             height={50}
-          /> */}
+          />
+          </span>
+      </p>
+    
           </div>
          
           </div>
@@ -60,18 +63,17 @@ export default function Insights() {
     gsap.to(".swiper-slide", { scale: 0.8, duration: 0.5, ease: "power2.out" });
     gsap.to(swiper.slides[swiper.activeIndex], {
       scale: 1,
-      // xPercent:-2,
-      duration: 0.5,
-      ease: "power2.out",
+      duration: 1,
+      ease: "power3.out",
     });
     const prevSlide = swiper.slides[swiper.activeIndex - 1];
     const nextSlide = swiper.slides[swiper.activeIndex + 1];
 
     if (prevSlide) {
-      gsap.to(prevSlide, { scale: 0.7, duration: 0.5, ease: "power2.out" });
+      gsap.to(prevSlide, { scale: 0.8, duration: 1, ease: "power3.out" });
     }
     if (nextSlide) {
-      gsap.to(nextSlide, { scale: 0.7,  duration: 0.5, ease: "power2.out" });
+      gsap.to(nextSlide, { scale: 0.8,   duration: 1, ease: "power3.out" });
     }
   };
 
@@ -117,7 +119,7 @@ data-para-anim className="title-2 aeonik leading-[1.3]">
                 },
                 1024: {
                   slidesPerView: 2.5,
-                    spaceBetween: 20,
+                    spaceBetween: 0,
                 },
               }}
               onSlideChange={handleSlideChange}
@@ -126,13 +128,13 @@ data-para-anim className="title-2 aeonik leading-[1.3]">
               className={`h-full w-full ${styles.newsSwiper}`}
             >
               <SwiperSlide className="pb-[7vw]">
-                <NewsCard para={"The ADVASTAP Staplers 3-row series is here, setting a new benchmark in endo surgery. Designed to enhance precision and improve patient outcomes, our innovative stapling technology is transforming the surgical landscape. "}  title={"Discover the Next Leap in Endo Surgery  ↗"} img={"/assets/blogs/news1.png"}/>
+                <NewsCard para={"The ADVASTAP Staplers 3-row series is here, setting a new benchmark in endo surgery. Designed to enhance precision and improve patient outcomes, our innovative stapling technology is transforming the surgical landscape. "}  title={"Discover the Next Leap in Endo Surgery"} img={"/assets/blogs/news1.png"}/>
               </SwiperSlide>
               <SwiperSlide className="pb-[7vw]">
-                <NewsCard para={"Advanced MedTech Solutions is excited to showcase innovation at Arab Health 2025! Visit us to explore advanced solutions transforming healthcare."} title={"Arab Health 2025 ↗"} img={"/assets/blogs/news2.png"} />
+                <NewsCard para={"Advanced MedTech Solutions is excited to showcase innovation at Arab Health 2025! Visit us to explore advanced solutions transforming healthcare."} title={"Arab Health 2025 "} img={"/assets/blogs/news2.png"} />
               </SwiperSlide>
               <SwiperSlide className="pb-[7vw]">
-                <NewsCard para={"AMS is expanding the campus with the launch of its 60,000 sq. ft. Phase 2 facility, enhancing capabilities in medical device manufacturing, sustainability, and innovation. Featuring the Advanced MedTech Academy and advanced cleanroom spaces, this expansion sets new standards in global healthcare and patient care."} title={"Building the Future of MedTech ↗"} img={"/assets/blogs/news3.png"}/>
+                <NewsCard para={"AMS is expanding the campus with the launch of its 60,000 sq. ft. Phase 2 facility, enhancing capabilities in medical device manufacturing, sustainability, and innovation. Featuring the Advanced MedTech Academy and advanced cleanroom spaces, this expansion sets new standards in global healthcare and patient care."} title={"Building the Future of MedTech "} img={"/assets/blogs/news3.png"}/>
               </SwiperSlide>
             </Swiper>
           </div>

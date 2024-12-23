@@ -66,11 +66,11 @@ const PortfolioSwiper = ({ slidesData, textclass, width }) => {
                 // navigation={true}
                 loop={true}
                 autoplay={{
-                  delay: 1500,
-                  disableOnInteraction: false,
+                  delay: 3000,
+                  disableOnInteraction: true,
                 }}
                 effect={"creative"}
-                speed={2000}
+                speed={1000}
                 creativeEffect={{
                   prev: {
                     shadow: true,

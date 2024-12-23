@@ -53,7 +53,7 @@ const ProductDescription = ({ data }) => {
                 key={index}
                 className="flex flex-col justify-between items-center w-[28vw] h-[16vw]   product-description-card border relative rounded-[2vw] bg-white/50 mobile:w-[75vw] mobile:h-[90vw] mobile:flex-shrink-0  mobile:rounded-[9vw] tablet:w-[43vw] tablet:h-[30vw] "
               >
-                <div className="absolute top-10 right-10 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:left-[35%] mobile:top-[17%] tablet:w-[8vw] tablet:h-[8vw]">
+                <div className="absolute top-5 right-7 w-[4.5vw] h-[4.5vw] flex justify-end items-center mobile:h-[20vw] mobile:w-[20vw]  mobile:left-[35%] mobile:top-[17%] tablet:w-[8vw] tablet:h-[8vw]">
                   <div className="w-full h-full relative">
                     <div
                       className={`w-[5vw] h-[5vw] mobile:h-[25vw] mobile:w-[25vw] tablet:w-[10vw] tablet:h-[10vw] relative`}
@@ -65,20 +65,20 @@ const ProductDescription = ({ data }) => {
                   </div>
                 </div>
 
-                <div className="absolute bottom-[18%] left-[4%] px-[1vw] flex flex-col justify-start gap-[1vw] mobile:static mobile:w-full mobile:h-full mobile:justify-end mobile:pb-[10vw] mobile:px-[5vw] mobile:text-center">
+                <div className="absolute bottom-[10%] left-[4%] px-[1vw] flex flex-col justify-start gap-[1vw] mobile:static mobile:w-full mobile:h-full mobile:justify-end mobile:pb-[10vw] mobile:px-[5vw] mobile:text-center">
                   <p
 
                     className="text-[1.65vw] font-medium mobile:text-[6vw] tablet:text-[3vw]"
                   >
                     {card.title}
                   </p>
-                  <p
+                  <div
                     className="text-[1.5vw] font-light  mobile:text-[4vw] tablet:text-[2.5vw]"
                     dangerouslySetInnerHTML={{
                       __html: card.description,
                     }}
                   >
-                  </p>
+                  </div>
                 </div>
               </div>
             ))}

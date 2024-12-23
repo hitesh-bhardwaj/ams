@@ -21,7 +21,6 @@ const EdgeCard = {
     title: "- the confidence to suture with ease",
     src: "/assets/advamryl/advamryl-tray.png",
     para: "patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-    bgsrc: "/assets/advamryl/orange-rectangle.png",
   },
   card3: {
     title: "Knot Pull Tensile Strength",
@@ -74,7 +73,7 @@ const cardData = [
   },
   {
     title: "Tensile Strength",
-    description: " Dyed  Undyed <br/> 7 days   ~60%    ~55% <br/> 14days   ~40%   ~20%",
+    description: "<div style='margin-left:10vw; display:flex; align-items-center; justify-content:center; gap:4vw; line-height:1;'><p> Dyed</p>  <p>Undyed</p></div><div style='display:flex; align-items:center; justify-content:center; gap:4vw; line-height:1;'><p style='padding:0.5vw'> 7 days </p>   <p>~60% </p>  <p> ~55%</p></div>     <div style='display:flex; align-items:center; justify-content:center; gap:4vw; line-height:1;'><p style='padding:0.5vw'> 14 days </p>   <p>~40% </p>  <p> ~20%</p></div>",
     svg: "/assets/advamryl/tensile.svg"
 
   },

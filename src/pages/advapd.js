@@ -21,7 +21,7 @@ const EdgeCard = {
     title: "- the confidence to suture with ease",
     src: "/assets/advapd/advapdtray.png",
     para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-    bgsrc: "/assets/advapd/advapd-rectangle.png",
+  
   },
   card3: {
     title: "Knot Pull Tensile Strength",

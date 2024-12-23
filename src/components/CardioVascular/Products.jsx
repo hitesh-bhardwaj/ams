@@ -183,7 +183,7 @@ const handleNext = () => {
         <span className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 transition-all duration-300`} />
         <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
           <Image
-            src="/assets/home/arrow-right.png"
+            src="/assets/icons/arrow-forward.svg"
             alt="arrow-right"
             className="object-contain group-hover:invert transition-all duration-300"
             fill
@@ -196,9 +196,9 @@ const handleNext = () => {
         onClick={handlePrev}
       >
         <span className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 transition-all duration-300`} />
-        <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+        <div className="w-[1.6vw] h-[1.6vw] relative z-[6]  rotate-[120deg] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
           <Image
-            src="/assets/home/arrow-left.png"
+            src="/assets/icons/arrow-backward.svg"
             alt="arrow-left"
             className="object-contain group-hover:invert transition-all duration-300"
             fill
