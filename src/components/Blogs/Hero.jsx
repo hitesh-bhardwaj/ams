@@ -20,10 +20,10 @@ const Hero = () => {
             <div className={`w-[90%] mobile:w-full  tablet:w-full`}>
               <h1 className={`title-1 w-full aeonik capitalize leading-[1.21] text-[#FFFFFF] mobile:text-center overflow-hidden flex flex-col`} >
                 <span data-para-anim>
-                STORIES 
+                LATEST
                 </span>
                 <span data-para-anim>
-                 NEWS & EVENTS
+                STORIES & EVENTS 
                 </span>
               </h1>
             </div>
