@@ -28,18 +28,10 @@ export default function Footer() {
                   className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp tablet:mb-[3.5vw] ml-[-0.5vw]"
                 >
                   <span
-                    data-para-anim
-                    className="text-[5.3vw] text-head aeonik leading-[1] font-light mobile:text-[16vw] tablet:text-[7vw]"
+                    className="text-[5.3vw] fadeUp text-head aeonik leading-[1] font-light mobile:text-[16vw] tablet:text-[7vw]"
                   >
                     Contact
                   </span>
-                  <Image
-                    className="inline w-[7.35%] mobile:ml-[5%] mobile:w-[11%] relative z-[7] fadeUp"
-                    src="/assets/icons/arrow-up-right.svg"
-                    alt="arrow"
-                    width={50}
-                    height={50}
-                  />
                 </Link>
                 <div className="mb-[2.5vw]  mobile:mb-[5vw] mobile:mt-[5vw] mobile:flex mobile:flex-col mobile:justify-center mobile:items-center ">
                   <p className="w-[50%] content-p mb-[1vw] fadeUp mobile:w-[90%] mobile:text-center tablet:mb-[2vw]">
@@ -134,37 +126,29 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-span-5 col-start-9 flex justify-between mobile:flex mobile:flex-col mobile:mt-[8vw] mobile:justify-center mobile:items-center mobile:space-y-[8vw] tablet:col-start-8 tablet:row-start-1 tablet:gap-[5vw]">
+            <div className="col-span-5 col-start-8 flex justify-between mobile:flex mobile:flex-col mobile:mt-[8vw] mobile:justify-center mobile:items-center mobile:space-y-[8vw] tablet:col-start-8 tablet:row-start-1 tablet:gap-[5vw]">
               <div className="">
-                <h6 className="text-head content-p-lg mb-[1vw] fadeUp  mobile:text-center mobile:text-[7vw]">
-                  <span data-para-anim className="font-light">
-                    About Us
-                  </span>
-                </h6>
                 <ul className="space-y-[0.5vw] leading-[135%] fadeUp mobile:text-center mobile:space-y-[2vw]  mobile:mt-[5vw]">
                   <li className="footer-link">
-                    <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
-                      href="/#"
-                    >
-                      <span data-para-anim data-attr="Our Promise">
-                        Our Promise
+                    <Link className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit" href="/">
+                      <span data-para-anim data-attr="Home">
+                        Home
                       </span>
                     </Link>
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
-                      href="/#"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
+                      href="/about"
                     >
-                      <span data-para-anim data-attr="Leadership">
-                        Leadership
+                      <span data-para-anim data-attr="About">
+                        About
                       </span>
                     </Link>
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/manufacturing"
                     >
                       <span data-para-anim data-attr="Manufacturing">
@@ -174,21 +158,51 @@ export default function Footer() {
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/career"
                     >
-                      <span data-para-anim data-attr="Careers">
-                        Careers
+                      <span data-para-anim data-attr="Career">
+                        Career
                       </span>
                     </Link>
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
-                      href="/contact-us"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
+                      href="/blog"
                     >
-                      <span data-para-anim data-attr="Contact Us">
-                        Contact Us
+                      <span data-para-anim data-attr="Newsroom">
+                        Newsroom
+                      </span>
+                    </Link>
+                  </li>
+                  <li className="footer-link">
+                    <Link
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
+                      href="/ama"
+                    >
+                      <span data-para-anim data-attr="Advanced MedTech Academy">
+                        Advanced MedTech Academy
+                      </span>
+                    </Link>
+                  </li>
+                  <li className="footer-link">
+                    <Link
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
+                      href="/research-and-development"
+                    >
+                      <span data-para-anim data-attr="Research and Development">
+                        Research and Development
+                      </span>
+                    </Link>
+                  </li>
+                  <li className="footer-link">
+                    <Link
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
+                      href="/needle"
+                    >
+                      <span data-para-anim data-attr="Advanced Needle Technology">
+                        Advanced Needle Technology
                       </span>
                     </Link>
                   </li>
@@ -203,17 +217,17 @@ export default function Footer() {
                 <ul className="space-y-[0.5vw] leading-[135%] fadeUp mobile:space-y-[2vw] mobile:mt-[5vw]">
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/wound-care"
                     >
-                      <span data-para-anim data-attr="Wound Closure">
-                        Wound Closure
+                      <span data-para-anim data-attr="Wound Care">
+                        Wound Care
                       </span>
                     </Link>
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/endo"
                     >
                       <span data-para-anim data-attr="Endo Surgery">
@@ -223,7 +237,7 @@ export default function Footer() {
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/hernia"
                     >
                       <span data-para-anim data-attr="Hernia Solutions">
@@ -233,7 +247,7 @@ export default function Footer() {
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/interventional-cardiology"
                     >
                       <span
@@ -246,11 +260,21 @@ export default function Footer() {
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw]"
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/cardiovascular-solutions"
                     >
-                      <span data-para-anim data-attr="Cardiovascular Solutions">
-                        Cardiovascular Solutions
+                      <span data-para-anim data-attr="Cardiac Surgery">
+                        Cardiac Surgery
+                      </span>
+                    </Link>
+                  </li>
+                  <li className="footer-link">
+                    <Link
+                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
+                      href="/oem"
+                    >
+                      <span data-para-anim data-attr="Oem Solutions">
+                        OEM Solutions
                       </span>
                     </Link>
                   </li>

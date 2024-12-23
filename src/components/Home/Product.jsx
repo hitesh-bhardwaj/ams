@@ -265,23 +265,13 @@ export default function Product() {
                       </span>
                     </div>
                     <div className="flex justify-between items-center h-full w-full gap-[5vw] mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[7vw]">
-                      <div className="w-[75%] mobile:w-[70%]">
-                        <div className="w-[30vw] h-[24vw] relative mobile:w-[50vw] mobile:h-[50vw]">
-                          <Image
-                            className="fadeUp object-contain"
-                            src="/assets/home/advacryl-product.png"
-                            alt="Product Image"
-                            fill
-                          />
-                        </div>
-                        <div className="w-[30vw] h-[17vw] relative mt-[-5vw] mobile:w-[50vw] mobile:h-[30vw]">
-                          <Image
-                            className="fadeUp object-contain"
-                            src="/assets/home/advacryl-foil.png"
-                            alt="Product Image"
-                            fill
-                          />
-                        </div>
+                      <div className="w-[100%] h-[30vw] relative mobile:h-[80vw] ">
+                        <Image
+                          className="fadeUp object-contain "
+                          src="/assets/home/advacryl-hero.png"
+                          alt="Product Image"
+                          fill
+                      />
                       </div>
                       <div className="flex flex-col w-full pr-[3vw] mobile:justify-center mobile:items-center mobile:pr-[0vw] tablet:pr-0 mobile:w-[95%] mobile:text-center">
                         <h3 className="title-2 aeonik mb-[0.5vw] mobile:mb-[2vw] !text-[#9263A5] tablet:text-[6vw] tablet:leading-[1.1]">
@@ -360,7 +350,7 @@ export default function Product() {
                   </div>
                 </CardContainer>
               </SwiperSlide>
-            </Swiper> 
+            </Swiper>
           </div>
           <div
             className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[55%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[68%] tablet:right-[-2%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}

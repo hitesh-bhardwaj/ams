@@ -17,15 +17,15 @@ export default function hernia() {
       "Each polypropylene mesh is meticulously crafted to deliver exceptional strength, resilience, and biocompatibility, with a strong focus on infection resistance. Our advanced solutions support seamless tissue integration, reducing recurrence rates and elevating surgical outcomes. From open to minimally invasive surgeries, including robotic-assisted techniques, we provide versatile solutions tailored to a wide range of hernia repair needs, from inguinal to ventral procedures.",
     bigpara:
       "By leveraging inhouse technologies, AMS enhances the effectiveness of every repair while prioritizing patient comfort and swift recovery. We remain committed to adapting and designing products that meet evolving surgical demands, ensuring the best possible results for both surgeons and patients.",
-    src: "/assets/hernia/hernia-redefine.png",
+    src: "/assets/hernia/hernia-redefine.jpg",
   };
   const slidesData = [
     {
       title: "A Partner in Your Success ",
       src: "/assets/hernia/portfolio-1.png",
       srcsmall: "/assets/hernia/small1.png",
-      heading: "Enhancing Recovery and Comfort ",
-      para: "•	Our ADVAMESH portfolio is crafted to improve patient recovery by providing superior support, flexibility and encouraging natural tissue integration. ADVAMESH is engineered for better conformity and lower recurrence rates, facilitating a more comfortable and efficient healing process.",
+      heading: "<span style='color: #2a2a2a;'>Enhancing Recovery and Comfort</span>",
+      para: "<span style='color: #2a2a2a;'>Our ADVAMESH portfolio is crafted to improve patient recovery by providing superior support, flexibility and encouraging natural tissue integration. ADVAMESH is engineered for better conformity and lower recurrence rates, facilitating a more comfortable and efficient healing process.</span>",
     },
     {
       src: "/assets/hernia/portfolio-2.png",
@@ -37,7 +37,7 @@ export default function hernia() {
       src: "/assets/hernia/portfolio-3.png",
       srcsmall: "/assets/hernia/small3.png",
       heading: "Empowering Surgical Success",
-      para: "With AMS’s comprehensive range of hernia solutions, surgeons can perform repairs with greater confidence, precision, and efficiency. Our evidence-based designs and commitment to product superiority enhance the ease of surgery. These advanced tools not only streamline surgical practice but also support better outcomes, enabling surgeons to provide exceptional care and help patients get back to life faster.",
+      para: "With AMS's comprehensive range of hernia solutions, surgeons can perform repairs with greater confidence, precision, and efficiency. Our evidence-based designs and commitment to product superiority enhance the ease of surgery. These advanced tools not only streamline surgical practice but also support better outcomes, enabling surgeons to provide exceptional care and help patients get back to life faster.",
     },
   ];
   fadeUp();
@@ -56,8 +56,7 @@ export default function hernia() {
           />
           <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"w-[35%] tablet:w-[50%]"} />
           <Product />
-
-          <Portfolio currentlink={"/hernia"} sectionheading={"Our Advanced Therapies"}/>
+          <Portfolio currentlink={"/hernia"} sectionheading={"Our Advanced Therapies"} />
         </main>
       </Layout>
       <Media greaterThan='tablet'>

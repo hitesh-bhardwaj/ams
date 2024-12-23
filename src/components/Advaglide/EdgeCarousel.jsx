@@ -39,7 +39,7 @@ const EdgeCarousel = ({width}) => {
 data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
           Adva Glide Edge
         </h2>
-        <div className="relative fadeUp rounded-[2vw] ">
+        <div className="relative fadeUp rounded-[2vw]">
           <Media greaterThan="mobile">
             <div className="fadeUp">
               <Swiper
@@ -62,7 +62,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                   },
                 }}
                 modules={[FreeMode, Thumbs, EffectCreative, Autoplay]}
-                className={`endoSwiper mySwiper rounded-[2vw] `}
+                className={`rounded-[2vw] !w-[85vw]`}
                 thumbs={{
                   swiper:
                     thumbsSwiper && !thumbsSwiper.destroyed
@@ -82,7 +82,6 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                     </div>
                     <div className="absolute top-[50%] left-[8%] flex flex-col gap-[1vw]  mobile:top-[7%] mobile:left-[0%] mobile:items-center mobile:justify-center mobile:text-center tablet:top-[50%]">
                       <h2
-                        data-para-anim
                         className="text-black text-[2.2vw] aeonik font-light tablet:text-[4vw]"
                       >
                         Superior Navigability
@@ -143,7 +142,7 @@ data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div className={`absolute top-[90%] w-[${width}] left-[20%] endoSmallSwiperContainer fadeUp`}>
+            <div className={`absolute top-[90%] w-[${width}] left-[20%] endoSmallSwiperContainer`}>
               <Swiper
                 onSwiper={setThumbsSwiper}
                 spaceBetween={20}

@@ -4,7 +4,7 @@ import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import dynamic from "next/dynamic";
 import Layout from "@/components/Layout";
-import HomePageReel from "@/components/Home/HomePageReel";
+// import HomePageReel from "@/components/Home/HomePageReel";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
@@ -27,7 +27,7 @@ export default function Home() {
       <Layout>
         <main>
           <Hero />
-          <HomePageReel />
+          {/* <HomePageReel /> */}
           <Product />
           <Impact />
           <Career />

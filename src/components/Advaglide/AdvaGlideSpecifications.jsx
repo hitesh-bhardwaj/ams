@@ -4,18 +4,18 @@ import Specifications from "../Specifications";
 const AdvaGlideSpecifications = () => {
   return (
     <>
-        <Specifications
+      <Specifications
         textclass={"advastap-text"}
         bgimg={"/assets/advapro/specifications-bg.png"}
         heading={"Specification"}
         color={"#A883D7"}
       >
-          <div data-lenis-prevent className="w-full text-[1.25vw] font-light py-[3vw] text-[#4A4A4A] overflow-y-auto mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] tablet:py-[5vw] mobile:overflow-x-scroll  mobile:overflow-scroll mobile:mt-[7vw] ">
+        <div data-lenis-prevent className="w-full text-[1.25vw] font-light py-[3vw] text-[#4A4A4A] overflow-y-auto mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] tablet:py-[5vw] mobile:overflow-x-scroll  mobile:overflow-scroll mobile:mt-[7vw] ">
           <div className="flex w-full border-b border-[#DADADA] mobile:overflow-x-scroll mobile:w-[160vw]">
             <div className=" p-[1vw] pb-0 font-light w-[20vw] tablet:w-[20vw] mobile:w-[50vw]"> Product</div>
-              <div className="p-[1vw] pb-0 font-light tablet:w-[60vw] mobile:w-[100vw]">
+            <div className="p-[1vw] pb-0 font-light tablet:w-[60vw] mobile:w-[100vw]">
               Sterile Absorbable Haemostatic Gelatin Sponge
-              </div>
+            </div>
           </div>
 
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[160vw]">

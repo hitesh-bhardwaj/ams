@@ -41,7 +41,6 @@ export default function NavWrapper({ isMenuOpen }) {
 
     return (
         <div className="flex items-start gap-[2vw] mobile:flex-col text-left">
-            {/* Conditionally render the main menu */}
             {(currentMenu === null || window.innerWidth > 1024) && (
                 <MainNav onSelectMenu={goToMenu} />
             )}
@@ -73,12 +72,12 @@ export default function NavWrapper({ isMenuOpen }) {
 }
 function MainNav({ onSelectMenu }) {
     return (
-        <ul className='space-y-[0.5vw] mobile:space-y-[2vw] border-r pr-[3vw] border-[#d8d8d8] py-5 main-nav tablet:border-none mobile:border-none pl-[3vw]'>
+        <ul className='space-y-[0.5vw] mobile:space-y-[2vw] border-r pr-[3vw] border-[#d8d8d8] py-5 main-nav tablet:border-none mobile:border-none tablet:pl-[3vw]'>
             <li>
-                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/"} linkText="Homepage" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/"} linkText="Home" />
             </li>
             <li>
-                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/about"} linkText="About Us" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/about"} linkText="About" />
             </li>
             <li>
                 <NavButton className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' onClick={() => onSelectMenu('products')} linkText="Products" />
@@ -87,16 +86,16 @@ function MainNav({ onSelectMenu }) {
                 <NavButton className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' onClick={() => onSelectMenu('manufacturing')} linkText="Manufacturing" />
             </li>
             <li>
-                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/career"} linkText="Careers" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/career"} linkText="Career" />
             </li>
             <li>
-                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/blogs"} linkText="Stories" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/blogs"} linkText="Newsroom" />
             </li>
             <li>
-                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/contact-us"} linkText="Contact Us" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/contact-us"} linkText="Contact" />
             </li>
             <li>
-                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/ama"} linkText="Advanced Medtech Academy" />
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/ama"} linkText="Advanced MedTech Academy" />
             </li>
         </ul>
     );

@@ -99,7 +99,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               ></video>
             </div>
           </Media>
-          <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-14 grid-rows-5 tablet:grid-rows-5 tablet:h-[50vh] mobile:grid-cols-12">
+          <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-14 grid-rows-6 tablet:grid-rows-5 tablet:h-[50vh] mobile:grid-cols-12">
             <div className="w-[15vw] h-[2vw] absolute bottom-[5%] left-[4%] fadeUp tablet:h-[5vw] tablet:w-[20vw]">
               <Image
                 src="/assets/header/ams-slogan.webp"
@@ -148,15 +148,15 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               </div>
             </div>
 
-            <div className="col-start-5 row-span-4 h-full col-span-12 nav row-start-2 mobile:col-start-1 mobile:row-start-2 mobile:col-span-12 mobile:mt-[-15vw]">
+            <div className="col-start-5 row-span-5 h-full col-span-12 nav row-start-2 mobile:col-start-1 mobile:row-start-2 mobile:col-span-12 mobile:mt-[-15vw]">
               <NavWrapper isMenuOpen={isMenuOpen} />
               <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center mobile:w-[85%] mobile:bottom-10">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">
-                  <Link prefetch={false} href="#">
+                  <Link prefetch={false} href="/privacy-policy">
                     <span>Privacy Policy</span>
                   </Link>
                   <span>|</span>
-                  <Link href="#" prefetch={false}>
+                  <Link href="/terms-and-conditions" prefetch={false}>
                     <span>Terms & Conditions</span>
                   </Link>
                 </div>

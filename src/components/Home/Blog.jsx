@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
+import LinkButton from "../Button/LinkButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,7 +34,7 @@ export default function Blog() {
         <div className="px-[12%] flex items-start justify-between w-full tablet:flex-col mobile:flex-col mobile:items-center mobile:px-[5%]">
           <div ref={blogLeft} className="blog-left w-[45%] space-y-[2.5vw] mobile:w-[100%] mobile:space-y-[5vw] tablet:w-full">
             <h2 data-para-anim className="title-2 aeonik mobile:text-center">
-              <span>Stories</span>
+              <span>Newsroom</span>
             </h2>
             <p data-para-anim className="content-p w-[95%] tablet:w-[80%] mobile:w-full mobile:px-[3vw] mobile:pb-[15vw] mobile:text-center">
               Stay connected with the latest updates, breakthrough innovations, and exciting events that drive our progress.
@@ -71,11 +72,11 @@ const Card = ({ title, description, image, link }) => {
       <h5 data-para-anim className="text-[2.2vw] font-extralight leading-[1.2] mobile:text-[8vw] mobile:mb-[8vw] tablet:text-[3.5vw]">
         {title}
       </h5>
-      <p data-para-anim className="text-[0.94vw] font-light !mb-[1vw] mobile:text-[4.2vw] tablet:text-[2vw]" >
+      <p data-para-anim className="text-[0.94vw] font-light mobile:text-[4.2vw] tablet:text-[2vw]" >
         {description}
       </p>
       <div className="fadeUp !mb-[2vw] tablet:!mb-[4vw] mobile:!mb-[8vw] mobile:w-full mobile:text-center">
-        <PrimaryButton link={link} text="Read More" />
+        <LinkButton link={link} btnText="Read More"/>
       </div>
       <span className="block h-[1px] w-full bg-[#444444] lineDraw tablet:h-[0.5px]" />
     </div>

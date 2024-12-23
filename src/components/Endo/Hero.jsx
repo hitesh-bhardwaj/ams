@@ -21,7 +21,7 @@ const Hero = () => {
                         autoPlay
                         loop
                         muted
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover scale-x-[-1]"
                         poster="/assets/endo/hero-poster.png"
                     />
                 </div>

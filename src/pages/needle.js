@@ -5,7 +5,6 @@ import Hero from "@/components/Needle/Hero";
 import FeatureCards from "@/components/Needle/FeatureCards";
 import Advance from "@/components/Needle/Advance";
 import Layout from "@/components/Layout";
-import { fadeUp } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 
@@ -40,8 +39,6 @@ export default function needle() {
       para: "Every needle is subjected to stringent testing for sharpness, durability, and swage integrity, guaranteeing flawless performance and reliability in all surgical applications.",
     },
   ];
-
-  // fadeUp()
 
   return (
     <>

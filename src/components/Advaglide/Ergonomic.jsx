@@ -12,7 +12,7 @@ const Ergonomic = () => {
       >
         <div className="w-full container-lg flex justify-center">
           <h2
-data-para-anim
+            data-para-anim
             className="title-2 w-[60%] font-light aeonik text-center z-[10] mobile:w-[90%] tablet:text-[7vw] tablet:w-[90%]"
           >
             Revolutionised for the Most Challenging Environments
@@ -69,44 +69,38 @@ data-para-anim
           <span className="w-[0.5vw] h-[0.5vw] bg-blue-500 rounded-full mobile:w-[3vw] mobile:h-[3vw] tablet:w-[1.5vw] tablet:h-[1.5vw]"></span>
         </span>
         <p
-          className={`text-[1.4vw] font-light absolute top-[33%] right-[8%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${
-            visibleTextIndex === 0 ? "opacity-100" : "opacity-0"
-          }`}
+          className={`text-[1.4vw] font-light absolute top-[33%] right-[8%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${visibleTextIndex === 0 ? "opacity-100" : "opacity-0"
+            }`}
         >
           Precision Balloon Positioning
         </p>
         <p
-          className={`text-[1.4vw] font-light absolute top-[40%] right-[35%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${
-            visibleTextIndex === 1 ? "opacity-100" : "opacity-0"
-          }`}
+          className={`text-[1.4vw] font-light absolute top-[40%] right-[35%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${visibleTextIndex === 1 ? "opacity-100" : "opacity-0"
+            }`}
         >
           Optimized for Stability
         </p>
         <p
-          className={`text-[1.4vw] font-light absolute top-[45%] right-[45%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${
-            visibleTextIndex === 2 ? "opacity-100" : "opacity-0"
-          }`}
+          className={`text-[1.4vw] font-light absolute top-[45%] right-[45%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${visibleTextIndex === 2 ? "opacity-100" : "opacity-0"
+            }`}
         >
           Enhanced Flexibility
         </p>
         <p
-          className={`text-[1.4vw] font-light absolute top-[55%] left-[35%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${
-            visibleTextIndex === 3 ? "opacity-100" : "opacity-0"
-          }`}
+          className={`text-[1.4vw] font-light absolute top-[55%] left-[35%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${visibleTextIndex === 3 ? "opacity-100" : "opacity-0"
+            }`}
         >
           Innovative Design
         </p>
         <p
-          className={`text-[1.4vw] font-light absolute top-[62%] left-[27%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${
-            visibleTextIndex === 4 ? "opacity-100" : "opacity-0"
-          }`}
+          className={`text-[1.4vw] font-light absolute top-[62%] left-[27%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${visibleTextIndex === 4 ? "opacity-100" : "opacity-0"
+            }`}
         >
           Maximum Durability
         </p>
         <p
-          className={`text-[1.4vw] font-light absolute top-[65%] left-[20%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${
-            visibleTextIndex === 5 ? "opacity-100" : "opacity-0"
-          }`}
+          className={`text-[1.4vw] font-light absolute top-[65%] left-[20%] text-[#4a4a4a] transition-opacity duration-300 mobile:text-[5vw] tablet:text-[3.5vw] ${visibleTextIndex === 5 ? "opacity-100" : "opacity-0"
+            }`}
         >
           Seamless Integration
         </p>

@@ -12,14 +12,14 @@ export default function ManufacturingMenu({ onBack }) {
   }, []);
 
   return (
-    <div className="flex gap-5 items-start" ref={menuRef}>
+    <div className="flex gap-5 items-start mobile:pt-[10vw]" ref={menuRef}>
       <button className="h-[2vw] w-[2vw] p-[0.5vw] tablet:w-8 tablet:h-8 tablet:p-1.5 mobile:h-8 mobile:w-8 mobile:p-1.5 flex items-center justify-center rounded-full border border-black/50 group hover:bg-black duration-300" onClick={onBack}>
         <ArrowLeft className='w-full h-full group-hover:text-white duration-300'/>
       </button>
       <div className='flex items-start gap-[3vw] pt-1'>
         <ul className='space-y-[0.2vw] tablet:space-y-1 mobile:space-y-2'>
-          <li><NavLink href="/research-and-development" linkText="Research & Development" /></li>
-          <li><NavLink href="/oem" linkText="OEM Solutions" /></li>
+          <li><NavLink href="/manufacturing" linkText="Manufactuirng" /></li>
+          <li><NavLink href="/research-and-development" linkText="Research and Development" /></li>
           <li><NavLink href="/needle" linkText="Advanced Needle Technology" /></li>
         </ul>
       </div>
