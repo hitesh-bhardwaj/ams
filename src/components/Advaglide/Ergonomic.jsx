@@ -104,6 +104,9 @@ const Ergonomic = () => {
         >
           Seamless Integration
         </p>
+        <div className="absolute w-full h-full top-0 left-0">
+          <Image src="/assets/advaglide/advaglide-ergonomic-bg.png" fill alt="advaglide"/>
+          </div>
       </section>
     </>
   );

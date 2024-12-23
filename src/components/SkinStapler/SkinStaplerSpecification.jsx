@@ -5,6 +5,7 @@ import Image from 'next/image'
 const SkinStaplerSpecification = () => {
   return (
     <Specifications
+    paddingBottom={"!pb-[7vw]"}
     textclass={"advastap-text"}
     bgimg={"/assets/advastaplc/closure-bg-1.png"}
     heading={"Technical Specification"}

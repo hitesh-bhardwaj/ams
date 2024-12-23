@@ -78,7 +78,7 @@ export default function Footer() {
                     />
                   </Link>
                   <Link
-                    href="https://www.linkedin.com/company/advanced-medtech-solutions/" target="_blank"
+                    href="https://www.linkedin.com/company/13193029/admin/dashboard/" target="_blank"
                     className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                   >
                     <Image

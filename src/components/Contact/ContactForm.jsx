@@ -59,7 +59,6 @@ export default function ContactForm() {
      companyName:data.companyName
     };
     
-
     try {
       const res = await fetch("/api/contactform", {
         method: "POST",

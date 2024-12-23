@@ -103,13 +103,13 @@ export default function CareerForm({ onClose }) {
       className="fixed top-0 left-0 w-screen h-screen z-[998] flex justify-center items-center"
       id="formoem"
     >
-      <div className="w-[50vw] h-[45vw] p-[4vw] pb-[25%] mobile:p-0 rounded-[3vw] border-gray-200 bg-white mobile:border-none tablet:p-[5.5vw] fadeUp relative overflow-hidden">
+      <div className="w-[50vw] h-[45vw] p-[4vw] pb-[25%] mobile:p-0 rounded-[3vw] border-gray-200 bg-white mobile:border-none tablet:p-[5.5vw] fadeUp relative overflow-hidden mobile:h-[70vh] mobile:w-[90vw] tablet:h-[50vh] tablet:w-[80vw]">
         {alertVisible && (
           <div className="fixed top-[5%] left-[50%] translate-x-[-50%] w-[80vw] rounded-[1vw] h-[5vw] bg-green-500 text-white flex justify-center items-center text-lg z-50">
             Form Submitted Successfully!
           </div>
         )}
-        <div className="w-full flex flex-col gap-[2vw] mobile:w-full mobile:bg-white/50 mobile:rounded-[6vw] mobile:px-[7vw] mobile:py-[12vw] mobile:border mobile:gap-[5vw] mobile:justify-center tablet:w-full z-[5] relative">
+        <div className="w-full flex flex-col gap-[2vw] mobile:w-full mobile:px-[7vw] mobile:py-[12vw] mobile:gap-[5vw] mobile:justify-center tablet:w-full z-[5] relative">
           <h3
             data-para-anim
             className="aeonik text-[2.8vw] mobile:text-[8vw] mobile:text-center tablet:text-[4.5vw] font-light"
@@ -151,20 +151,20 @@ export default function CareerForm({ onClose }) {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <p className="text-[1.2vw] ml-[0.65vw] aeonik font-light mobile:text-[3vw] tablet:text-[1.8vw]">
+                        <p className="text-[1.2vw] ml-[0.65vw] aeonik font-light mobile:text-[4vw] mobile:ml-[2.4vw] tablet:text-[2.2vw] tablet:ml-[1.7vw]">
                           Upload Document
                         </p>
                       </FormControl>
                     </FormItem>
                   )}
                 />
-                <div className="w-full h-[4vw] border-b border-black/40 rounded-lg py-[1vw] mobile:h-[70vw] mobile:mt-[10vw] tablet:h-[30vw] tablet:mt-[4vw]">
+                <div className="w-full h-[4vw] border-b border-black/40 rounded-lg py-[1vw] mobile:h-[5vw] mobile:mt-[0vw] tablet:h-[5vw] mobile:pb-[5vw] tablet:mt-[4vw]">
                   <FormLabel
                     htmlFor="filename"
-                    className="w-full h-full bg-white flex items-center justify-start rounded-lg cursor-pointer ml-[0.65vw]"
+                    className="w-full h-full bg-white flex items-center justify-start rounded-lg cursor-pointer ml-[0.65vw] mobile:ml-[2.4vw] tablet:ml-[1.7vw]"
                   >
                     <div>
-                      <div className=" w-[2vw] h-[2vw] relative flex flex-col items-center justify-center">
+                      <div className=" w-[2vw] h-[2vw] relative flex flex-col items-center justify-center mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]">
                         {!fileName ? (
                           <Image
                             src={"/assets/career/resume-upload-icon.svg"}
@@ -243,7 +243,7 @@ export default function CareerForm({ onClose }) {
             </form>
           </Form>
         </div>
-        <div className="absolute bottom-[-37%] left-0 h-full w-full">
+        <div className="absolute bottom-[-37%] left-0 h-full w-full mobile:bottom-[-40%]">
           <Image
             src={"/assets/career/career-form-bg.png"}
             alt="career-form-bg-image"

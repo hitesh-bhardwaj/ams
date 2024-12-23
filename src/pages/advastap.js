@@ -21,7 +21,7 @@ const advastap = () => {
              <SpecificationsHd2/>
               <AdvastapHD3/>
               <Hd3Carousel/>
-              <SpecificationsHd3/>
+              <SpecificationsHd3 paddingBottom={"!pb-[7vw]"}/>
             </main>
           </Layout>
        

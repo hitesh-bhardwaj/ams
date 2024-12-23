@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useLenis } from "lenis/react";
 
-const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
+const Specifications = ({ children, heading, textclass, bgimg ,color, paddingBottom }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
   const lenis = useLenis();
@@ -40,7 +40,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
   return (
     <>
       <section id="specifications" className="relative ">
-        <div className="w-screen h-[30vh]  flex overflow-hidden items-center pt-[3vw] mobile:pt-0 pl-[10vw]  tablet:h-[15vh] mobile:h-[15vh] ">
+        <div className={`w-screen h-fit  flex overflow-hidden items-center pt-[7vw] pb-[4.5vw] mobile:pt-0 mobile:pb-0 pl-[10vw]  tablet:h-[15vh] mobile:h-[15vh] ${paddingBottom}`}>
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
               <div
@@ -48,7 +48,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
               >
                 <p>Specifications</p>
               </div>
-              <div className="h-[1.5vw] w-[1.5vw]  ml-[0.5vw] mt-[-2.8vw] mobile:h-[4vw] mobile:w-[4vw] mobile:mt-[1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1]">
+              <div className="h-[1.5vw] w-[1.5vw]  ml-[0.5vw] mt-[-2.8vw] mobile:h-[4vw] mobile:w-[4vw] mobile:mt-[1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1] z-10">
                 <svg
                   width="20"
                   height="20"
@@ -80,10 +80,10 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
               className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[999] bg-opacity-50 bg-black/80 "
               ref={modalRef}
             >
-              <div className="bg-[#efefef]  border  border-white rounded-[2vw] p-[3vw] pt-[4vw] w-[80vw] max-h-[95vh]  mobile:max-h-[95vh] mobile:py-[7vw] mobile:w-[95vw] mobile:rounded-[7vw]  tablet:w-[90vw] tablet:max-w-[95vw] tablet:rounded-[3.5vw] tablet:p-[4vw]">
+              <div className="bg-[#efefef]  border relative  border-white rounded-[2vw] p-[3vw] pt-[4vw] w-[80vw] max-h-[95vh]  mobile:max-h-[95vh] mobile:py-[7vw] mobile:w-[95vw] mobile:rounded-[7vw]  tablet:w-[90vw] tablet:max-w-[95vw] tablet:rounded-[3.5vw] tablet:p-[4vw]">
                 <div
                   onClick={closeModal}
-                  className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border-[2px] p-[1vw] rounded-full border-white h-[3.5vw] w-[3.5vw] mobile:w-[7.5vw] mobile:h-[7.5vw] mobile:p-[1.5vw] mobile:top-[6vw] mobile:right-[5vw] tablet:h-[6vw] tablet:w-[6vw] tablet:p-[1.5vw]"
+                  className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border p-[0.7vw] rounded-full border-[#2a2a2a] h-[2.5vw] w-[2.5vw] mobile:w-[7.5vw] mobile:h-[7.5vw] mobile:p-[1.5vw] mobile:top-[6vw] mobile:right-[5vw] tablet:h-[6vw] tablet:w-[6vw] tablet:p-[1.5vw]"
                 >
                   <div className="h-full w-full relative ">
                     <Image
