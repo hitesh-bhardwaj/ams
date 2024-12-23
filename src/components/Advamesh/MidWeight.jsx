@@ -29,17 +29,17 @@ data-para-anim
             </div>
           </div>
           <div className="absolute top-[32%] text-[1.25vw] left-[5%] h-[50vw] py-[5.4%] space-y-[25%] mobile:static mobile:space-y-0 mobile:flex mobile:flex-col mobile:gap-[8vw] mobile:justify-center mobile:mt-[50vh] mobile:w-full mobile:h-fit mobile:text-[6vw] tablet:static tablet:space-y-0 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center tablet:mt-[40vh] tablet:w-full tablet:h-fit tablet:gap-[5vw] tablet:text-[4vw]">
-              <div className="ml-[50%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center">
+              <div className="ml-[50%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
                 <p data-para-anim className=" leading-[1.2] font-light w-[21vw] text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:w-[80%] tablet:text-center">A Revolutionary Solution Engineered for Surgical Success</p>
               </div>
-              <div className="translate-y-[-110%] ml-[40%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center">
+              <div className="translate-y-[-110%] ml-[40%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
                 <p data-para-anim className=" leading-[1.2] font-light w-[25vw] text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal tablet:w-full">Dual Elasticity – Comfortable Healing</p>
               </div>
-              <div className="translate-y-[-150%] ml-[70%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center">
+              <div className="translate-y-[-150%] ml-[70%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
                 <p data-para-anim className=" leading-[1.2] font-light w-[25vw] whitespace-nowrap text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal 
                 tablet:w-full">Precise Mesh Positioning</p>
               </div>
-              <div className="translate-y-[-155%] ml-[40%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center">
+              <div className="translate-y-[-155%] ml-[40%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
                 <p data-para-anim className=" leading-[1.2] font-light w-[25vw] text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal 
                 tablet:w-full">Honeycomb Structure – Optimum Porosity</p>
               </div>

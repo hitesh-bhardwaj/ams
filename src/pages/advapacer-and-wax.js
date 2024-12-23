@@ -107,6 +107,8 @@ const advapacer = () => {
             src={"/assets/advapacer/advapacer-hero.png"}
             bgimg={"/assets/advapacer/advapacer-bg.png"}
             para2={"Monofilament Non-Absorbable Surgical Suture"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVAPACER is a twisted 316L stainless steel wire, featuring a dual coating of blue and blue-orange Low Densile Polyethylene (sheathed) for enhanced durability. The advanced coating offers smooth handling and minimizes tissue trauma, making it ideal for various surgical applications requiring precision and durability. "} />
           <ProductDescription data={cardData1} />

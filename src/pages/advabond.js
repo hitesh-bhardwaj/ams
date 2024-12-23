@@ -103,6 +103,8 @@ const advabond = () => {
             src={"/assets/advabond/advabond-hero.png"}
             bgimg={"/assets/advabond/advabond-hero-bg.png"}
             para2={"Enhancing confidence for everlasting support"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVABOND suture is a sterile, coated, braided, synthetic, non-absorbable surgical suture composed of Polyethylene Terephthalate. The suture is coated with Silicone which acts as a lubricant to mechanically improve the ease of passage through tissue and the overall handling qualities of the suture. No significant change in the retention of tensile strength of the suture occurs during the lifetime of the implantation."} />
           <Edge2

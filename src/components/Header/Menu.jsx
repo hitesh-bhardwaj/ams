@@ -152,18 +152,18 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               <NavWrapper isMenuOpen={isMenuOpen} />
               <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center mobile:w-[85%] mobile:bottom-10">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">
-                  <Link prefetch={false} href="/privacy-policy">
+                  <Link prefetch={false} href="/legal-pages/privacy-policy">
                     <span>Privacy Policy</span>
                   </Link>
                   <span>|</span>
-                  <Link href="/terms-and-conditions" prefetch={false}>
+                  <Link href="/legal-pages/terms-and-conditions" prefetch={false}>
                     <span>Terms & Conditions</span>
                   </Link>
                 </div>
                 <div className="flex gap-[1vw] mobile:items-center mobile:w-full mobile:justify-between">
                   <Link
                     target="_blank"
-                    href="#"
+                    href="https://www.facebook.com/AdvancedMedTechSolutions"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <Image
@@ -176,7 +176,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="#"
+                    href="https://www.linkedin.com/company/advanced-medtech-solutions/"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <Image
@@ -189,7 +189,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="#"
+                    href="https://twitter.com/AmsMedTech"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <Image
@@ -202,7 +202,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="#"
+                    href="https://www.instagram.com/officialamsltd/"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <Image
@@ -215,7 +215,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                   </Link>
                   <Link
                     target="_blank"
-                    href="#"
+                    href="https://www.youtube.com/channel/UCRwHSaWfb2ciojSBz3dhrUw"
                     className="opacity-60 hover:opacity-100 duration-300"
                   >
                     <Image

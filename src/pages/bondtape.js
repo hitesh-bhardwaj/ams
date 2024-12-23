@@ -102,6 +102,7 @@ const bondtape = () => {
             src={"/assets/advabondtape/advabond-tape-hero.png"}
             bgimg={"/assets/advabondtape/advabond-hero-bg.png"}
             para2={"Sterilised Surgical Needled Suture"}
+            overlay={"visible"}
           />
           <ProductDescription className={"text-[#F08144]"} data={cardData1} />
           <UmbilicalTape />

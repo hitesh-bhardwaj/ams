@@ -84,6 +84,8 @@ const advasteelcv = () => {
             src={"/assets/advasteel-cv/advasteel-cv-hero.png"}
             bgimg={"/assets/advasteel-cv/advasteel-cv-hero-bg.png"}
             para2={"Monofilament Non-Absorbable Surgical Suture"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVASTEEL monofilament is made from 316L stainless steel, a high-quality material used in surgical implants. It is renowned for its strength and non-absorbable properties, ensuring secure wound closure in various surgical procedures. ADVASTEEL represents a durable and reliable stainless steel suture, engineered for effective tissue approximation and long-lasting wound closure across a wide range of surgical applications."} />
           <Edge2

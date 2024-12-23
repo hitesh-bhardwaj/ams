@@ -102,6 +102,8 @@ const advacrylplus = () => {
             src={"/assets/advacryl-plus/advacryl-plus-hero.png"}
             bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
             para2={"Steady performance for superior confidence"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVACRYL PLUS suture is a braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. ADVACRYL PLUS suture is Triclosan coated antibacterial absorbable surgical suture assures consistent performance for confidence in a variety of soft tissue approximation by minimizing Surgical Site Infections (SSI)."} />
           <Edge

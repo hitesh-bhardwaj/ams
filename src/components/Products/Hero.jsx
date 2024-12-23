@@ -1,9 +1,10 @@
 import Image from "next/image";
 
-const Hero = ({ heading, tagline, para1, src,bgimg, para2,margin, className = "" }) => {
+const Hero = ({ heading, tagline, para1, src,bgimg, para2,margin, className = "",overlay }) => {
   return (
     <>
       <section className="hero tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden h-screen shadow-md drop-shdow-sm mobile:shadow-none py-[2%] tablet:h-[80vh]" id="hero">
+        <div className={`absolute w-screen h-screen top-0 left-0 bg-white/40 ${overlay}`}></div>
         <div className="px-[10%] relative hero-container mobile:mt-[25%] tablet:px-[5%] mobile:px-[8%]">
           <div className="flex h-full w-full justify-start items-center mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:justify-start tablet:h-[50vh]">
             <div className="pt-[15%] gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 mobile:pt-[0%] tablet:pt-0">

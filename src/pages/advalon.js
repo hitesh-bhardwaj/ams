@@ -99,6 +99,8 @@ const advalon = () => {
             src={"/assets/advalon/advalon-hero.png"}
             bgimg={"/assets/advalon/advalon-hero-bg.png"}
             para2={"Ideal selection for confidence in skin closure"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVALON suture is a non-absorbable sterile surgical suture composed of the long chain aliphatic polymers Nylon 6-6.6. ADVALON suture elicits a minimal initial inflammatory reaction in tissues which is followed by gradual encapsulation of the suture by fibrous connective tissues. ADVALON suture is effective as a pull-out suture due to its lack of adherence to tissue."} />
           <Edge2

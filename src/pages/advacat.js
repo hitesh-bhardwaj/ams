@@ -87,6 +87,8 @@ const advacat = () => {
             src={"/assets/advacat/advacat-hero.png"}
             bgimg={"/assets/advacat/advacat-hero-bg.png"}
             para2={"Steady performance for superior confidence"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVACAT suture is absorbable, sterile surgical suture composed of purified connective tissue (mostly collagen) derived from submucosal fibrous layer of sheep intestines. ADVACAT suture is available in plain and chromic. Chromic gut suture is treated with chromic salt solution to provide greater resistance to absorption & change the color to brown for improved visibility."} />
           <Edge2

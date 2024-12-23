@@ -98,6 +98,8 @@ const advalenecv = () => {
             src={"/assets/advalene-cv/advalene-cv-hero.png"}
             bgimg={"/assets/advalene/advalene-hero-bg.png"}
             para2={"With exceptional strength comes confidence that lasts"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVALENE Cardiovascular suture is a monofilament synthetic non-absorbable, sterile surgical suture composed of an isotactic crystalline stereoisomer of polypropylene, synthetic linear polyolefin. The suture is dyed with Phthalocyanine Blue to enhance visibility in tissue. Due to its relative biological inertness it is recommended for use where the least possible suture reaction is desired. ADVALENE Cardiovascular Suture an ideal choice for anastomosis."} />
           <Edge

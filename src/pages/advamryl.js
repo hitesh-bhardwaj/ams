@@ -103,6 +103,8 @@ const advamryl = () => {
             src={"/assets/advamryl/advamryl-hero.png"}
             bgimg={"/assets/advamryl/advamryl-hero-bg.png"}
             para2={"Steady performance for superior confidence"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVAMRYL suture is monofilament synthetic absorbable surgical suture prepared from a copolymer of Glycolide and epsilon-caprolactone. ADVAMRYL suture is colored violet to increase visibility and are also available undyed."} />
           <Edge

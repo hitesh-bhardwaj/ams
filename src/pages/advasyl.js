@@ -104,6 +104,8 @@ const advasyl = () => {
             src={"/assets/advasyl/advasyl-hero.png"}
             bgimg={"/assets/advasyl/advasyl-hero-bg.png"}
             para2={"Steady performance for superior confidence"}
+            overlay={"hidden"}
+
           />
           <Information info={"ADVASYL suture is non-absorbable, sterile, surgical suture composed of an organic protein called fibroin, derived from the domesticated species Bombyx mori (B. mori). The suture is processed to remove the natural waxes and sericin gum, dyed black and coated with a wax mixture to reduce capillarity and to increase surface lubricity, which enhances handling characteristics, ease of passage through tissue, and knot run-down properties."} />
           <Edge2
