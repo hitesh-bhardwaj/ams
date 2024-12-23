@@ -8,6 +8,7 @@ import HerniaSolutionsMenu from './HerniaSolutionsMenu';
 import InterventionalCardiologyMenu from './InterventionalCardiologyMenu';
 import CardiacSurgeryMenu from './CardiacSurgeryMenu';
 import { NavLink, NavButton } from './NavLink';
+import { ChevronRight } from 'lucide-react';
 
 export default function NavWrapper({ isMenuOpen }) {
     const [currentMenu, setCurrentMenu] = useState(null);
@@ -80,10 +81,26 @@ function MainNav({ onSelectMenu }) {
                 <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/about"} linkText="About" />
             </li>
             <li>
-                <NavButton className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' onClick={() => onSelectMenu('products')} linkText="Products" />
+                <button onClick={() => onSelectMenu('products')} className={`text-[1.5vw] fade-in-0 leading-tight text-body tablet:text-[2.5vw] mobile:text-[5.5vw] overflow-hidden block relative group aeonik font-light`}>
+                    <span
+                        data-attr="Products"
+                        className="inline-block transition-transform duration-500 ease-out after:absolute after:left-0 after:-bottom-0 after:translate-y-full after:content-[attr(data-attr)] group-hover:-translate-y-full"
+                    >
+                        Products
+                    </span>
+                    <ChevronRight className="inline-block w-[1.5vw] tablet:w-[2.5vw] mobile:w-[5vw] text-current mb-[1%] stroke-[1.2px]" />
+                </button>
             </li>
             <li>
-                <NavButton className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' onClick={() => onSelectMenu('manufacturing')} linkText="Manufacturing" />
+                <button onClick={() => onSelectMenu('manufacturing')} className={`text-[1.5vw] fade-in-0 leading-tight text-body tablet:text-[2.5vw] mobile:text-[5.5vw] overflow-hidden block relative group aeonik font-light`}>
+                    <span
+                        data-attr="Manufacturing"
+                        className="inline-block transition-transform duration-500 ease-out after:absolute after:left-0 after:-bottom-0 after:translate-y-full after:content-[attr(data-attr)] group-hover:-translate-y-full"
+                    >
+                        Manufacturing
+                    </span>
+                    <ChevronRight className="inline-block w-[1.5vw] tablet:w-[2.5vw] mobile:w-[5vw] text-current mb-[1%] stroke-[1.2px]" />
+                </button>
             </li>
             <li>
                 <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/career"} linkText="Career" />

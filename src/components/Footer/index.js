@@ -23,15 +23,17 @@ export default function Footer() {
                     do you have any questions?
                   </span>
                 </p>
-                <Link
-                  href="/contact-us"
-                  className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp tablet:mb-[3.5vw] ml-[-0.5vw]"
-                >
-                  <span
-                    className="text-[5.3vw] fadeUp text-head aeonik leading-[1] font-light mobile:text-[16vw] tablet:text-[7vw]"
-                  >
+                <Link href="/contact-us" className="flex items-baseline gap-[1.5vw] mb-[2.5vw] fadeUp tablet:mb-[3.5vw] ml-[-0.5vw] group">
+                  <span className="text-[5.3vw] fadeUp text-head aeonik leading-[1] font-light mobile:text-[16vw] tablet:text-[7vw] after:absolute relative after:block after:bg-current after:bottom-0 after:left-0 after:h-[0.2vw] after:w-full after:group-hover:scale-100 after:scale-0 after:origin-left after:duration-500">
                     Contact
                   </span>
+                  <Image
+                    className="inline w-[7.35%] mobile:ml-[5%] mobile:w-[11%] relative z-[7]"
+                    src="/assets/icons/arrow-up-right.svg"
+                    alt="arrow"
+                    width={50}
+                    height={50}
+                  />
                 </Link>
                 <div className="mb-[2.5vw]  mobile:mb-[5vw] mobile:mt-[5vw] mobile:flex mobile:flex-col mobile:justify-center mobile:items-center ">
                   <p className="w-[50%] content-p mb-[1vw] fadeUp mobile:w-[90%] mobile:text-center tablet:mb-[2vw]">
@@ -209,11 +211,11 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="w-[35%] mobile:w-full mobile:text-center tablet:w-full mobile:mt-[5vw]">
-                <h6 className="text-head content-p-lg mb-[1vw] fadeUp mobile:text-[7vw]">
+                {/* <h6 className="text-head content-p-lg mb-[1vw] fadeUp mobile:text-[7vw]">
                   <span data-para-anim className="font-light">
                     Products
                   </span>
-                </h6>
+                </h6> */}
                 <ul className="space-y-[0.5vw] leading-[135%] fadeUp mobile:space-y-[2vw] mobile:mt-[5vw]">
                   <li className="footer-link">
                     <Link
@@ -247,7 +249,7 @@ export default function Footer() {
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
+                      className="content-p text-head text-nowrap font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/interventional-cardiology"
                     >
                       <span

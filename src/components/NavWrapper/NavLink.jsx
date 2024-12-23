@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 export function NavLink ({ href, linkText, className="" }) {
@@ -10,7 +10,6 @@ export function NavLink ({ href, linkText, className="" }) {
             >
                 {linkText}
             </span>
-            <ArrowRight className="inline-block w-[1.5vw] tablet:w-[2.5vw] mobile:w-[5vw] text-current mb-[1%] group-hover:scale-100 stroke-[1.2px] opacity-0 group-hover:opacity-100 translate-x-[-50%] group-hover:translate-x-0 duration-300" />
         </Link>
     )
 }
@@ -24,7 +23,6 @@ export function NavButton ({ linkText, onClick, className="" }) {
             >
                 {linkText}
             </span>
-            <ArrowRight className="inline-block w-[1.5vw] tablet:w-[2.5vw] mobile:w-[5vw] text-current mb-[1%] group-hover:scale-100 stroke-[1.2px] opacity-0 group-hover:opacity-100 translate-x-[-50%] group-hover:translate-x-0 duration-300" />
         </button>
     )
 }

@@ -108,7 +108,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                 fill
               />
             </div>
-            <div className="flex h-fit justify-between items-center col-span-full mobile:h-[10vw]  mobile:mt-[5vw]">
+            <div className="flex h-fit justify-between items-center col-span-full mobile:h-[10vw] mobile:mt-[5vw]">
               <span
                 data-attr="home"
                 className="w-[7vw] h-[3vw] tablet:w-[15vw] tablet:h-[6vw] mobile:w-[25vw] mobile:h-[20vw] relative cursor-pointer"
@@ -126,7 +126,6 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
                   alt="AMS Logo Mobile"
                 />
               </span>
-
               <div>
                 <button
                   onClick={toggleMenu}

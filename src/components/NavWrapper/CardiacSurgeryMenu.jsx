@@ -14,11 +14,11 @@ export default function CardiacSurgeryMenu({ onBack }) {
   return (
     <>
       <div className="mobile:pt-[10vw]" ref={menuRef}>
-        <div className='flex gap-5 items-start'>
-          <button className="h-[2vw] w-[2vw] p-[0.5vw] tablet:w-8 tablet:h-8 tablet:p-1.5 mobile:h-8 mobile:w-8 mobile:p-1.5 flex items-center justify-center rounded-full border border-black/50 group hover:bg-black duration-300" onClick={onBack}>
+        <div className='flex gap-3 items-start'>
+          <button className="h-[2.5vw] w-[2.5vw] p-[0.5vw] tablet:w-8 tablet:h-8 tablet:p-1.5 mobile:h-8 mobile:w-8 mobile:p-1.5 flex items-center justify-center rounded-full border border-black/50 group hover:bg-black duration-300" onClick={onBack}>
             <ArrowLeft className='w-full h-full group-hover:text-white duration-300' />
           </button>
-          <NavLink href="/cardiovascular-solutions" linkText="Cardiac Surgery"/>
+          <NavLink className='mt-[0.4vw]' href="/cardiovascular-solutions" linkText="Cardiac Surgery"/>
         </div>
         <div className='flex items-start gap-[3vw] pt-4 mobile:flex-col mobile:gap-[5vw]'>
           <ul className='space-y-[0.2vw] mobile:space-y-1'>
