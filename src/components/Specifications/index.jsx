@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useLenis } from "lenis/react";
 
-const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
+const Specifications = ({ children, heading, textclass, bgimg ,color, paddingBottom }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
   const lenis = useLenis();
@@ -40,7 +40,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
   return (
     <>
       <section id="specifications" className="relative ">
-        <div className="w-screen h-[30vh]  flex overflow-hidden items-center pt-[3vw] mobile:pt-0 pl-[10vw]  tablet:h-[15vh] mobile:h-[15vh] ">
+        <div className={`w-screen h-fit  flex overflow-hidden items-center pt-[7vw] pb-[4.5vw] mobile:pt-0 mobile:pb-0 pl-[10vw]  tablet:h-[15vh] mobile:h-[15vh] ${paddingBottom}`}>
           <div className="flex items-center justify-center">
             <button onClick={openModal} className="flex items-center">
               <div
@@ -48,7 +48,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color }) => {
               >
                 <p>Specifications</p>
               </div>
-              <div className="h-[1.5vw] w-[1.5vw]  ml-[0.5vw] mt-[-2.8vw] mobile:h-[4vw] mobile:w-[4vw] mobile:mt-[1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1]">
+              <div className="h-[1.5vw] w-[1.5vw]  ml-[0.5vw] mt-[-2.8vw] mobile:h-[4vw] mobile:w-[4vw] mobile:mt-[1vw] tablet:h-[3vw] tablet:w-[3vw] mobile:scale-[1] z-10">
                 <svg
                   width="20"
                   height="20"

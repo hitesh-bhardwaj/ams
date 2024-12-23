@@ -1,10 +1,11 @@
 import React from 'react'
 import Specifications from "../Specifications";
 
-const AdvaspongSpecifications = () => {
+const AdvaspongSpecifications = ({}) => {
   return (
     <>
         <Specifications
+        paddingBottom={"!pb-[7vw]"}
         textclass={"advastap-text"}
         bgimg={"/assets/advaspong/specifications-bg.png"}
         heading={"Specification"}

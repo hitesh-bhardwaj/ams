@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
+import { Pagination } from "swiper/modules";
 
 
 const SutureCarouselSecond = () => {
@@ -55,25 +56,12 @@ const SutureCarouselSecond = () => {
 
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [activeButton, setActiveButton] = useState("");
-
-  const handleNext = () => {
-    if (swiperRef.current) swiperRef.current.slideNext();
-    setActiveButton("next");
-  };
-
-  const handlePrev = () => {
-    if (swiperRef.current) swiperRef.current.slidePrev();
-    setActiveButton("prev");
-  };
-
-
   const onSlideChange = (swiper) => {
     setActiveIndex(swiper.realIndex);
   };
 
   return (
-    <section className="w-screen h-[57vw] overflow-hidden mobile:h-[240vw] mobile:py-[10%] relative tablet:py-[7%] tablet:h-[120vw] py-[7%]" id="suture-carousel-second">
+    <section className="w-screen h-[63vw] overflow-hidden mobile:h-[210vw] mobile:py-[10%] relative tablet:py-[7%] tablet:h-[120vw] py-[7%]" id="suture-carousel-second">
       <div className="w-full h-fit flex flex-col gap-[1.5vw] items-center mobile:gap-[5vw]">
         <h2
 data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutures</h2>
@@ -89,7 +77,11 @@ data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutu
         slidesPerView={5}
         centeredSlides={true}
         roundLengths={true}
-        
+        pagination={{
+          clickable: true,
+          el: ".swiper-pagination-second",
+        }}
+        modules={[Pagination]}
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 0 },
           640: { slidesPerView: 1, spaceBetween: 0 },
@@ -138,63 +130,9 @@ data-para-anim className="title-2 aeonik mobile:text-center">Non Absorbable Sutu
 
     
     </div>
-    <div className="hidden mobile:block tablet:block" >
-      <div
-              className={`absolute z-[5] bottom-[5%] left-[63%] translate-x-[-65%] overflow-hidden py-[5vw] px-[5vw] tablet:p-[3vw] rounded-full next-button cursor-pointer tablet:left-[61%]  bg-white/50
-                ${
-                  activeButton === "next"
-                    ? " text-white border-none"
-                    : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
-              onClick={handleNext} // Trigger next slide
-            >
-              <span className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  ${
-                  activeButton === "next"
-                    ?"scale-100 opacity-100"
-                    : "scale-0 opacity-50"
-                } transition-all duration-300`}></span>
-              
-              <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
-              <Image
-                src="/assets/home/arrow-right.png"
-                alt="arrow-right"
-                className={`object-cover group-hover:invert transition-all duration-300 ${
-                    activeButton === "next"
-                      ? "invert"
-                      : "invert-0"
-                  } `}
-                fill
-              />
-            </div>
-            </div>
-            <div
-              className={`absolute z-[5] bottom-[5%] left-[39%] translate-x-[-38%] bg-white/50 overflow-hidden  py-[5vw] px-[5vw] tablet:p-[3vw] tablet:left-[43%] rounded-full prev-button cursor-pointer 
-                ${
-                  activeButton === "prev"
-                    ? " text-white border-none"
-                    : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
-              onClick={handlePrev} // Trigger previous slide
-            >
-               <span className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full ${
-                  activeButton === "prev"
-                    ?"scale-100 opacity-100"
-                    : "scale-0 opacity-50"
-                } transition-all duration-300`}></span>
-              <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
-              <Image
-                src="/assets/home/arrow-left.png"
-                alt="arrow-left"
-                className={`object-cover group-hover:invert transition-all duration-300 ${
-                    activeButton === "prev"
-                      ? "invert"
-                      : "invert-0"
-                  } `}
-                fill
-              />
-            </div>
-            </div>
-      </div>
+   
+      <div className="swiper-pagination-second mt-4 absolute bottom-[5%] !left-[47%] z-[10] w-full tablet:!left-[43%] tablet:!bottom-[10%] mobile:!left-[38%]"></div>
+      
     </section>
   );
 };

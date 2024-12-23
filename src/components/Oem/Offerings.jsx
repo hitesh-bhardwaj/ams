@@ -97,7 +97,7 @@ export default function Offerings() {
                         {smallContent.map((item, index) => (
                             <SwiperSlide key={index} className='h-full fadeUp'>
                                 <a href={`#card-item-${index + 1}`} className='links oemcard-button block h-full w-full'>
-                                    <div className='rounded-[3vw] p-[1vw] pb-0  h-full w-full bg-white duration-300 tablet:p-[2vw] mobile:p-[3.5vw] mobile:rounded-3xl'>
+                                    <div className='rounded-[3vw] p-[1vw]  h-full w-full bg-white duration-300 tablet:p-[2vw] mobile:p-[3.5vw] mobile:rounded-3xl'>
                                         <h3 className='aeonik text-center font-light my-[1vw] text-[1.2vw] tablet:text-[2.6vw] tablet:mb-4 mobile:text-[4.5vw] mobile:mb-4'>{item.title}</h3>
                                         <div className='rounded-[2vw] overflow-hidden h-[19vw] tablet:h-[30vw] mobile:h-[70vw] mobile:rounded-2xl'>
                                             <Image src={item.image} alt={item.title} className='object-cover h-full w-full' width={400} height={400} />

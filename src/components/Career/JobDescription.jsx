@@ -79,7 +79,7 @@ const JobDescription = ({ onClose }) => {
 
                   <ul className="list-disc">
                     <span className="mobile:font-medium">Key Responsibilities</span>
-                    <div className="pl-[2%]">
+                    <div className="pl-[2%] mobile:pl-[5%] tablet:pl-[5%]">
                       <li > Develop product strategies and roadmaps.</li>
                       <li>
                         Conduct market research to identify trends and
@@ -95,7 +95,7 @@ const JobDescription = ({ onClose }) => {
                   </ul>
                   <ul className="list-disc">
                     <span className="mobile:font-medium">Skills Required</span>
-                    <div className="pl-[2%]">
+                    <div className="pl-[2%] mobile:pl-[5%] tablet:pl-[5%]">
                       <li>
                         Strong understanding of interventional cardiology.
                       </li>

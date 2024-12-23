@@ -2,10 +2,11 @@ import React from "react";
 import Specifications from "../Specifications";
 import Image from "next/image";
 
-const SpecificationsHd3 = () => {
+const SpecificationsHd3 = ({paddingBottom}) => {
   return (
     <>
         <Specifications
+        paddingBottom={paddingBottom}
         textclass={"gradient-text"}
         bgimg={"/assets/advastap/specifications-bg.png"}
         heading={"Technical Specification"}

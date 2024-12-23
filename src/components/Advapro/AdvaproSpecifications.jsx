@@ -5,6 +5,7 @@ const AdvaproSpecifications = () => {
   return (
     <>
         <Specifications
+         paddingBottom={"!pb-[7vw]"}
         textclass={"advastap-text"}
         bgimg={"/assets/advapro/specifications-bg.png"}
         heading={"Specification"}

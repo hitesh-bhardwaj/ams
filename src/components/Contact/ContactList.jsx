@@ -1,8 +1,22 @@
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import ContactListForm from "./ContactListForm";
+import {useLenis} from "lenis/react"
 
 const ContactList = () => {
+  const [isOpen , setIsOpen] = useState(false)
+  const lenis = useLenis()
+  const openModal = () => {
+    lenis && lenis.stop();
+    document.body.style.overflow = "hidden";
+    setIsOpen(true);
+
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+    lenis && lenis.start();
+    document.body.style.overflow = "";
+  };
   return (
     <>
       <section
@@ -12,7 +26,7 @@ const ContactList = () => {
         <div className="container-lg h-full flex flex-col items-center gap-[5vw] ">
           <h2 data-para-anim className="title-2 aeonik">Contact AMS</h2>
           <div className="w-full flex justify-between fadeUp mobile:flex-col mobile:gap-12">
-            <Link href={"#"}>
+            <div className="cursor-pointer" onClick={openModal}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full">
                 <div className="w-full h-[16vw] rounded-[2vw] overflow-hidden relative mobile:h-[50vw]">
                   <Image
@@ -38,13 +52,13 @@ const ContactList = () => {
                   Empowering healthcare professionals with innovative medical solutions. Reach out for tailored product demos, comprehensive product insights, expert clinical support, and opportunities to collaborate in advancing patient care.
                 </p>
               </div>
-            </Link>
-            <Link href={"#"}>
+            </div>
+            <div className="cursor-pointer" onClick={openModal}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full">
                 <div className="w-full h-[16vw] rounded-[2vw] overflow-hidden relative mobile:h-[50vw]">
                   <Image
-                    src={"/assets/contact/contact-oem.png"}
-                    alt="healthcare"
+                    src={"/assets/contact/contact-other.png"}
+                    alt="oem image"
                     fill
                     className="object-cover"
                   />
@@ -65,13 +79,13 @@ const ContactList = () => {
                   Explore our expertise in OEM manufacturing. Reach out for bespoke product designs, high-quality manufacturing, and innovative medical device solutions.
                 </p>
               </div>
-            </Link>
-            <Link href={"#"}>
+            </div>
+            <div className="cursor-pointer" onClick={openModal}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full">
                 <div className="w-full h-[16vw] rounded-[2vw] overflow-hidden relative mobile:h-[50vw]">
                   <Image
-                    src={"/assets/contact/contact-other.png"}
-                    alt="healthcare"
+                    src={"/assets/contact/contact-oem.png"}
+                    alt="other-contact-image"
                     fill
                     className="object-cover"
                   />
@@ -92,9 +106,10 @@ const ContactList = () => {
                   Have a different query? We&apos;re here to assist. Get in touch for general questions, business inquiries, or more information about our offerings.
                 </p>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
+        {isOpen&&<ContactListForm onClose={closeModal}/>}
       </section>
     </>
   );

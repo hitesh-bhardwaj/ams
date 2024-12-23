@@ -5,6 +5,7 @@ const EndolcSpecifications = () => {
   return (
     <>
       <Specifications
+       paddingBottom={"!pb-[7vw]"}
         textclass={"advastap-text"}
         bgimg={"/assets/endolc/specifications-bg.png"}
         heading={"Specification"}

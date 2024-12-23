@@ -5,6 +5,7 @@ const SpecificationsManifold = () => {
   return (
     <>
       <Specifications
+       paddingBottom={"!pb-[7vw]"}
         textclass={"advastap-text"}
         bgimg={"/assets/accessories/specifications-bg.png"}
         heading={"Technical Specification"}

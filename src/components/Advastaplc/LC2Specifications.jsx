@@ -10,6 +10,7 @@ const LC2Specifications = () => {
         bgimg={"/assets/advastaplc/closure-bg-1.png"}
         heading={"Technical Specification"}
         color={"#FB4BCC"}
+        paddingBottom={"!pb-[7vw]"}
       >
         <div
           data-lenis-prevent

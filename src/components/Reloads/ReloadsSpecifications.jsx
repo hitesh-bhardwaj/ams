@@ -5,6 +5,7 @@ const ReloadsSpecifications = () => {
   return (
    <>
      <Specifications
+      paddingBottom={"!pb-[7vw]"}
         textclass={"reloads-text"}
         bgimg={"/assets/endolc/specifications-bg.png"}
         heading={"Specification"}

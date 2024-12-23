@@ -1,6 +1,24 @@
 import Image from "next/image";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger,useGSAP)
 
 const Genesis = ({ content, sParaWidth, bParaWidth }) => {
+  useGSAP(()=>{
+    gsap.to(".genesis-img",{
+      yPercent:30,
+      ease:"none",
+      scrollTrigger:{
+        trigger:".genesis-img",
+        start:"top 80%",
+        end:"bottom top",
+        scrub:true,
+        
+        
+      }
+    })
+  })
 
   return (
     <section className="genesis mobile:h-full overflow-hidden pt-[12%] tablet:pt-[15%] mobile:py-[20%] " id="genesis">
@@ -26,7 +44,7 @@ const Genesis = ({ content, sParaWidth, bParaWidth }) => {
         </div>
         <div className="rounded-[2.5vw] overflow-hidden absolute bottom-0 w-full h-[32vw] tablet:hidden mobile:hidden">
             <Image
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full scale-[1.2] genesis-img translate-y-[-15%]"
               src={content.src}
               alt="Genesis Image"
               width={1750}
