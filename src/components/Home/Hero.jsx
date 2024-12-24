@@ -15,7 +15,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVideoSrc("/assets/home/hero-final.mp4");
-    }, 1000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);

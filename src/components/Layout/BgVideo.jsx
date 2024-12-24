@@ -7,7 +7,7 @@ const BgVideo = ({ videoSrc }) => {
         const video = videoRef.current;
         setTimeout(() => {
             video.src = videoSrc;
-        }, 2000);
+        }, 3000);
     }, [videoSrc]);
 
     return (
