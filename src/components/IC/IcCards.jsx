@@ -1,93 +1,175 @@
-import React, { useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import React, { useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-// Import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 import { Media } from "../media";
+import { Swiper, SwiperSlide } from "swiper/react";
+import styles from "./styles.module.css";
+
+
+
+const productContent = [
+  {
+    title: "ADVAGLIDE",
+    src: "/assets/ic/adva-glide.png",
+    para: "AMS has advanced the science of flow restoration to provide minimally invasive products for use in Percutaneous Transluminal Coronary Angioplasty procedures for revascularisation of coronary arteries.",
+  },
+  {
+    title: "ADVAPRO",
+    src: "/assets/ic/adva-pro.png",
+    para: "AMS has redefined the science of vascular restoration with ADVA PRO, a Sirolimus Eluting Coronary Stent System engineered for safety and precision.",
+  },
+  {
+    title: "Coronary Accessories",
+    src: "/assets/ic/coronary-accessories.png",
+    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals with the tools they need for precision and efficiency in every procedure.",
+  },
+  {
+    title: "ADVAGLIDE",
+    src: "/assets/ic/adva-glide.png",
+    para: "AMS has advanced the science of flow restoration to provide minimally invasive products for use in Percutaneous Transluminal Coronary Angioplasty procedures for revascularisation of coronary arteries.",
+  },
+  {
+    title: "ADVAPRO",
+    src: "/assets/ic/adva-pro.png",
+    para: "AMS has redefined the science of vascular restoration with ADVA PRO, a Sirolimus Eluting Coronary Stent System engineered for safety and precision.",
+  },
+  {
+    title: "Coronary Accessories",
+    src: "/assets/ic/coronary-accessories.png",
+    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals with the tools they need for precision and efficiency in every procedure.",
+  },
+ 
+];
+const ProductCard = ({ title, src, para, index, activeSlide }) => {
+  const isActive = index === activeSlide;
+
+  return (
+    <div
+      className={`h-full border bg-white/50 border-[#DADADA] flex flex-col justify-between p-[3vw] pt-[1.5vw] rounded-[2.5vw] icProductCard transition-transform duration-500 ${
+        isActive ? "!bg-transparent !border-transparent items-start w-[45vw] !h-[45vw]" : "items-center w-[20vw] h-[30vw] !delay-800"
+      }`}
+    >
+      <h3
+        className={`font-light capitalize text-[#111111] aeonik ${
+          isActive ? "text-[2.92vw]" : "text-[1.9vw] text-center"
+        }`}
+      >
+        {title}
+      </h3>
+      <div
+        className={`absolute w-[23vw] h-[20vw]   transition-all duration-500 ease-in-out mt-[2vw] top-[20%] ic-card-image ${
+          isActive ? "scale-[1.5] !top-[30%] !left-[30%]" : ""
+        }`}
+      >
+        <Image src={src} fill alt="ic-products" className="object-contain"/>
+      </div>
+      <div>
+        <p
+          className={`text-[1.15vw] leading-[1.5] transition-opacity tracking-wider  duration-500  aeonik w-full px-[1vw] ${
+            isActive ? "visible" : "hidden"
+          }`}
+        >
+          {para}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 export default function IcCards() {
-  const [activeIndex, setActiveIndex] = useState(1); // Default active slide index
+
+  const swiperRef = useRef(null);
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handleNext = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  };
+
+  const handleSlideChange = (swiper) => {
+    setActiveSlide(swiper.realIndex);
+  };
 
   return (
     <>
       <section className="" id="cards-carousel">
         <Media greaterThan="tablet">
-          <div className="w-full h-full flex flex-col gap-[4vw] ">
-            <h2
-data-para-anim className="aeonik title-2 text-center capitalize">
-              Cardiac Surgery Product Line
-            </h2>
-            <div className="mt-[2vw] fadeUp">
-              <Swiper
-                effect={"coverflow"}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={3.2}
-                spaceBetween={10}
-                initialSlide={1} // Ensure the initial slide is centered
-                speed={1500}
-                coverflowEffect={{
-                  rotate: 60,
-                  stretch: 50,
-                  depth: 0,
-                  slideShadows: false,
-                }}
-                onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)} // Track the active slide
-                modules={[EffectCoverflow, Pagination]}
-                className="mySwiper ic-card"
-              >
-                {[1, 2, 3].map((slide, index) => (
-                  <SwiperSlide key={index}>
-                    <Link
-                      href={
-                        slide === 1
-                          ? "/advapro"
-                          : slide === 2
-                          ? "/advaglide"
-                          : "/accessories"
-                      }
-                    >
-                      <div
-                        className={`relative w-[30vw] ${
-                          activeIndex === index ? "h-[40vw]" : "h-[40vw]"
-                        } transition-all duration-500 rounded-[2vw] overflow-hidden flex flex-col px-[3vw] py-[4vw] items-center justify-between border border-gray-200 bg-white/50`}
-                      >
-                        <h4
-                          className={`aeonik uppercase font-light text-[3vw] text-center relative z-[7] ${
-                            slide == 3 ? "!text-[2.3vw] normal-case" : ""
-                          }`}
-                        >
-                          {slide === 1
-                            ? "ADVA PRO"
-                            : slide === 2
-                            ? "ADVA GLIDE"
-                            : "Coronary Accessories"}
-                        </h4>
-                        <div className="w-[30vw] h-full relative">
-                          <Image
-                            src={`/assets/ic/ic-card-${slide}.webp`}
-                            fill
-                            className={`object-contain ${
-                              slide % 2 == 1 ? "scale-[1.4]" : "scale-[0.9]"
-                            } ${slide == 2 ? "translate-y-[20%]" : ""}`}
-                            alt={`ic-card-${slide}`}
-                          />
-                        </div>
-                      </div>
-                    </Link>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+        <div className="w-screen h-[45vw] px-[3%] relative">
+        <div className="w-full h-full">
+          <Swiper
+            ref={swiperRef}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            loop={true}
+            slidesPerView={3}
+            spaceBetween={20}
+            speed={700}
+            centeredSlides={false} // Center the active slide
+            className={`mySwiper w-full h-full ${styles.icProductSwiper}`}
+            onSlideChange={handleSlideChange}
+          >
+            {productContent.map((product, index) => (
+              <SwiperSlide key={index}>
+                <ProductCard
+                  title={product.title}
+                  src={product.src}
+                  para={product.para}
+                  index={index}
+                  activeSlide={activeSlide}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div className="absolute left-[62%] bottom-[10%] flex items-center justify-center gap-[1vw]">
+          <span className="bg-[#1A1A1A] h-[1px] w-[31vw]"></span>
+          <p className="text-[2.9vw] aeonik font-light">
+            {String(activeSlide + 1).padStart(2, "0")}
+          </p>
+        </div>
+
+        <div
+          className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[10%] right-[38%] translate-x-[-65%] rounded-full next-button cursor-pointer bg-white/50 group hover:text-white`}
+          onClick={handleNext}
+        >
+          <span
+            className={`bg-[#222222] w-[100%] h-[100%] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+          />
+          <div className="w-[1.2vw] h-[1.2vw] relative z-[6]">
+            <Image
+              src="/assets/home/arrow-right.png"
+              alt="arrow-right"
+              className={`object-cover group-hover:invert duration-300`}
+              fill
+            />
           </div>
+        </div>
+        <div
+          className={`px-[1.2vw] py-[1.2vw] bottom-[10%] right-[45%] absolute z-[5] translate-x-[-38%] bg-white/50 rounded-full prev-button cursor-pointer group hover:text-white`}
+          onClick={handlePrev}
+        >
+          <span
+            className={`bg-[#222222] w-[100%] h-[100%] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+          />
+          <div className="w-[1.2vw] h-[1.2vw] relative z-[6] rotate-180">
+            <Image
+              src="/assets/home/arrow-left.png"
+              alt="arrow-left"
+              className={`object-cover group-hover:invert duration-300 rotate-180`}
+              fill
+            />
+          </div>
+        </div>
+      </div>
         </Media>
         <Media lessThan="desktop">
           <div className=" py-[5%]">

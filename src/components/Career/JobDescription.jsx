@@ -1,41 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import gsap from "gsap";
 import CareerForm from "./CareerForm";
 import styles from "../Button/style.module.css";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger,useGSAP)
 
 const JobDescription = ({ onClose }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
- 
-  // useGSAP(()=>{
-  //  gsap.from("#job-description",{
-  //   opacity:0,
-  //   duration:0.5,
-  //   scrollTrigger:{
-  //     trigger:"#job-description",
-  //     start:"top top",
-  //     end:"bottom bottom"
-  //   }
-  //  })
-  // })
-  useEffect(()=>{
-    const ctx = gsap.context(() => {
-        gsap.from("#job-description",{
-    opacity:0, 
-    duration:0.5,
-    scrollTrigger:{
-      trigger:"#job-description",
-      start:"top top",
-      end:"bottom bottom"
-    }})
-        
-    })
-    return () => ctx.revert();
-  },[])
-
   const handleBackgroundClick = (e) => {
     if (e.target.id === "job-description" || !e.target.id == "jd-block") {
       onClose();
@@ -50,7 +19,7 @@ const JobDescription = ({ onClose }) => {
       <section
         id="job-description"
         onClick={handleBackgroundClick}
-        className="w-screen h-screen fixed bg-black/60 z-[999] top-0 left-0"
+        className="w-screen h-screen fixed bg-black/60 z-[999] top-0 left-0 fade-in"
         // Close modal on click outside the card
       >
         {" "}

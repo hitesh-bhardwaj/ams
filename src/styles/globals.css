@@ -553,6 +553,21 @@ body {
 .uncover-swiper {
   overflow: visible !important;
 }
+
+/* fadein animation form */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Example usage */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards; /* Duration is 0.5s */
+}
 /* .surgicalSwiper .swiper-scrollbar .swiper-scrollbar-drag{
 background-color: #ffffff !important;
 color: #000 !important;

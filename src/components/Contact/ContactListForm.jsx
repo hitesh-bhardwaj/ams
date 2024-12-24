@@ -22,10 +22,7 @@ import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import { Textarea } from "../ui/textarea";
 import { useState } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger,useGSAP)
+
 
 const formSchema = z.object({
   FistName: z.string().min(3, {
@@ -61,17 +58,6 @@ export default function ContactListForm({ onClose , title }) {
     },
   });
 
-  useGSAP(()=>{
-    gsap.from("#contact-other-forms",{
-     opacity:0,
-     duration:0.5,
-     scrollTrigger:{
-       trigger:"#contact-other-forms",
-       start:"top top",
-       end:"bottom bottom"
-     }
-    })
-   })
 
   const onSubmit = async (data) => {
     console.log(data);
@@ -113,11 +99,11 @@ export default function ContactListForm({ onClose , title }) {
     setSelectedRole(value);
   };
   return (
-    <section className="w-screen h-screen flex justify-center items-center fixed top-0 left-0 overflow-hidden bg-black/60 z-[999] " id="contact-other-forms">
+    <section className="w-screen h-screen flex justify-center items-center fixed top-0 left-0 overflow-hidden bg-black/60 z-[999] fade-in " id="contact-other-forms">
       <div className="w-[75vw] h-[80%] bg-white relative py-[4vw] px-[2vw] rounded-[1vw]  overflow-hidden fadeup mobile:w-[90%] mobile:h-[70%] mobile:px-[5vw] mobile:py-[10vw] mobile:rounded-[4vw] tablet:rounded-[2vw] tablet:w-[80%] tablet:h-[70%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
         <div
           data-lenis-prevent
-          className="w-full h-[100%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
+          className="w-full h-[78%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
         >
             <h2 className="text-[3vw] aeonik !font-light mb-[2vw] tablet:text-[4.5vw] tablet:mb-[3vw] mobile:text-[7vw] mobile:mb-[7vw]">{title}</h2>
           <Form {...form}>

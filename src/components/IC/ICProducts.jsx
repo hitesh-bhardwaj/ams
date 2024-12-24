@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
@@ -7,22 +7,22 @@ import styles from "./styles.module.css";
 const productContent = [
   {
     title: "ADVAGLIDE",
-    src: "/assets/ic/advaglide.png",
+    src: "/assets/ic/adva-glide.png",
     para: "AMS has advanced the science of flow restoration to provide minimally invasive products.",
   },
   {
     title: "ADVAPRO",
-    src: "/assets/ic/advapro.png",
+    src: "/assets/ic/adva-pro.png",
     para: "AMS has advanced the science of flow restoration to provide minimally invasive products.",
   },
   {
     title: "Coronary Accessories",
-    src: "/assets/ic/accessories.png",
+    src: "/assets/ic/coronary-accessories.png",
     para: "AMS has advanced the science of flow restoration to provide minimally invasive products.",
   },
   {
     title: "Cardiovascular Stents",
-    src: "/assets/ic/advaglide.png",
+    src: "/assets/ic/adva-glide.png",
     para: "Our stents are designed for optimal performance and patient outcomes.",
   },
 ];
@@ -32,23 +32,23 @@ const ProductCard = ({ title, src, para, index, activeSlide }) => {
 
   return (
     <div
-      className={`h-full w-full border bg-white/50 border-[#DADADA] flex flex-col justify-between p-[3vw] rounded-[2.5vw] icProductCard transition-all duration-500 ${
-        isActive ? "bg-transparent border-none items-start" : "items-center"
+      className={`h-full border bg-white/50 border-[#DADADA] flex flex-col justify-between p-[3vw] pt-[1.5vw] rounded-[2.5vw] icProductCard transition-transform duration-500 ${
+        isActive ? "!bg-transparent !border-transparent items-start w-[45vw] !h-[40vw]" : "items-center w-[20vw] h-[30vw] !delay-800"
       }`}
     >
       <h3
-        className={`font-light capitalize text-[#111111] aeonik transition-all duration-500 ${
-          isActive ? "text-[2.92vw]" : "text-[1.9vw]"
+        className={`font-light capitalize text-[#111111] aeonik ${
+          isActive ? "text-[2.92vw]" : "text-[1.9vw] text-center"
         }`}
       >
         {title}
       </h3>
       <div
-        className={`relative transition-all duration-500 mt-[2vw] ${
-          isActive ? "w-[90%] h-[30vw]" : "w-[80%] h-[20vw]"
+        className={`absolute w-[23vw] h-[20vw]   transition-all duration-500 ease-in-out mt-[2vw] top-[20%] ic-card-image ${
+          isActive ? "scale-[1.5] !top-[30%] !left-[30%]" : ""
         }`}
       >
-        <Image src={src} fill alt="ic-products" />
+        <Image src={src} fill alt="ic-products" className="object-contain"/>
       </div>
       <div>
         <p
@@ -91,8 +91,10 @@ const ICProducts = () => {
             ref={swiperRef}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             loop={true}
-            slidesPerView={"auto"}
+            slidesPerView={3}
             spaceBetween={20}
+            speed={700}
+            centeredSlides={false} // Center the active slide
             className={`mySwiper w-full h-full ${styles.icProductSwiper}`}
             onSlideChange={handleSlideChange}
           >
@@ -117,13 +119,13 @@ const ICProducts = () => {
         </div>
 
         <div
-          className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[10%] right-[38%] mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer mobile:block group hover:text-white bg-white/50`}
+          className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[10%] right-[38%] translate-x-[-65%] rounded-full next-button cursor-pointer bg-white/50 group hover:text-white`}
           onClick={handleNext}
         >
           <span
-            className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+            className={`bg-[#222222] w-[100%] h-[100%] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
           />
-          <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+          <div className="w-[1.2vw] h-[1.2vw] relative z-[6]">
             <Image
               src="/assets/home/arrow-right.png"
               alt="arrow-right"
@@ -133,13 +135,13 @@ const ICProducts = () => {
           </div>
         </div>
         <div
-          className={`px-[1.2vw] py-[1.2vw] bottom-[10%] right-[45%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[37%] translate-x-[-38%] tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer mobile:block group hover:text-white`}
+          className={`px-[1.2vw] py-[1.2vw] bottom-[10%] right-[45%] absolute z-[5] translate-x-[-38%] bg-white/50 rounded-full prev-button cursor-pointer group hover:text-white`}
           onClick={handlePrev}
         >
           <span
-            className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+            className={`bg-[#222222] w-[100%] h-[100%] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
           />
-          <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
+          <div className="w-[1.2vw] h-[1.2vw] relative z-[6] rotate-180">
             <Image
               src="/assets/home/arrow-left.png"
               alt="arrow-left"
