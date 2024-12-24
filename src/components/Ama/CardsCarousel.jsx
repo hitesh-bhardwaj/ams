@@ -83,9 +83,7 @@ export default function CardsCarousel() {
                 ))}
               </Swiper>
             </div>
-            <Modal isOpen={isModalOpen} onClose={closeModal} >
-                    {content}
-                    </Modal>
+            
           </div>
         </Media>
 
@@ -100,7 +98,7 @@ export default function CardsCarousel() {
               <div className="w-full mobile:overflow-scroll mobile:mt-[5vw] mobile:fadeUp mobile:block hidden mobile:pr-[5%] fadeUp tablet:overflow-scroll tablet:block tablet:pr-[5%] overflow-visible tablet:mt-0">
                 <div className="mobile:flex mobile:flex-nowrap mobile:w-fit mobile:gap-[5vw] mobile:ml-[5vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[3vw] tablet:h-fit tablet:ml-[5vw]">
                   {cards.map((card, index) => (
-                    <div className="w-full h-full flex flex-col gap-[3vw] mobile:gap-[5vw]" key={index}>
+                    <div className="w-full h-full flex flex-col gap-[3vw] mobile:gap-[5vw]" key={index} onClick={() => openModal(index+1)}>
                       <div className="w-[85vw] h-[100vw] tablet:w-[40vw] tablet:h-[50vw] relative rounded-[6vw] tablet:rounded-[3vw] overflow-hidden" >
                         <Image
                           src={card.src}
@@ -121,6 +119,9 @@ export default function CardsCarousel() {
             </div>
           </div>
         </Media>
+        <Modal isOpen={isModalOpen} onClose={closeModal} >
+                    {content}
+                    </Modal>
       </section>
     </>
   );
@@ -131,10 +132,10 @@ const modalContent = [
     id: 1,
     description: (
       <div>
-        <h2 className="text-[2.5vw] font-light leading-[1.2]">Objective:</h2>
-        <p className="content-p py-[1vw]">The Gynaecology AMA Programs are designed for surgeons aiming to enhance their expertise in advanced gynaecological procedures, including hysterectomy, laparoscopic myomectomy, and vNotes techniques. Through theoretical sessions and live demonstrations led by renowned experts, participants gain valuable insights into the latest surgical advancements, equipping them with the skills to manage complex cases with precision and confidence.</p>
-        <h2 className="text-[2.5vw] font-light leading-[1.2]">Conclusion:</h2>
-        <p className="content-p py-[1vw]">These programs provide a comprehensive platform to refine clinical practice and expand surgical skills. By integrating advanced techniques into their expertise, participants can achieve optimal patient outcomes, improve reproductive health, and elevate the standard of care in gynaecological procedures.</p>
+        <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Objective:</h2>
+        <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The Gynaecology AMA Programs are designed for surgeons aiming to enhance their expertise in advanced gynaecological procedures, including hysterectomy, laparoscopic myomectomy, and vNotes techniques. Through theoretical sessions and live demonstrations led by renowned experts, participants gain valuable insights into the latest surgical advancements, equipping them with the skills to manage complex cases with precision and confidence.</p>
+        <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Conclusion:</h2>
+        <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">These programs provide a comprehensive platform to refine clinical practice and expand surgical skills. By integrating advanced techniques into their expertise, participants can achieve optimal patient outcomes, improve reproductive health, and elevate the standard of care in gynaecological procedures.</p>
       </div>
     ),
   },
@@ -142,10 +143,10 @@ const modalContent = [
     id: 2,
     description: (
       <div>
-      <h2 className="text-[2.5vw] font-light leading-[1.2]">Objective:</h2>
-      <p className="content-p py-[1vw]">TThe Surgical Suturing and Knotting Workshop is designed to equip participants with essential techniques for secure suturing and knotting. Focused on addressing challenges like tissue type, wound depth, and postoperative tension, the workshop enhances precision, adaptability, and cosmetic outcomes through hands-on training and expert guidance.</p>
-      <h2 className="text-[2.5vw] font-light leading-[1.2]">Conclusion:</h2>
-      <p className="content-p py-[1vw]">The workshop empowers participants with the confidence and skills to perform effective suturing and knotting. By mastering advanced techniques and material selection, attendees improve patient outcomes, enhance healing, and elevate their professional expertise.</p>
+      <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Objective:</h2>
+      <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">TThe Surgical Suturing and Knotting Workshop is designed to equip participants with essential techniques for secure suturing and knotting. Focused on addressing challenges like tissue type, wound depth, and postoperative tension, the workshop enhances precision, adaptability, and cosmetic outcomes through hands-on training and expert guidance.</p>
+      <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Conclusion:</h2>
+      <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The workshop empowers participants with the confidence and skills to perform effective suturing and knotting. By mastering advanced techniques and material selection, attendees improve patient outcomes, enhance healing, and elevate their professional expertise.</p>
     </div>
     ),
   },
@@ -153,10 +154,10 @@ const modalContent = [
       id: 3,
       description: (
         <div>
-        <h2 className="text-[2.5vw] font-light leading-[1.2]">Objective:</h2>
-        <p className="content-p py-[1vw]">The Nurturing Nursing Skills Program by AMS aims to empower nurses with enhanced leadership, technical, and soft skills to elevate the standard of patient care. This program strives to cultivate confident, capable nursing professionals who embody excellence and compassion, ensuring that healthcare delivery continuously improves to meet the demands of dynamic medical environments.</p>
-        <h2 className="text-[2.5vw] font-light leading-[1.2]">Conclusion:</h2>
-        <p className="content-p py-[1vw]">At AMS, we believe that investing in the growth of nurses is integral to shaping the future of healthcare. The Nurturing Nursing Skills Program reflects our commitment to fostering professional development, enhancing patient outcomes, and creating a culture of excellence in care delivery. By empowering nurses, we are not only advancing their careers but also contributing to a healthier, more compassionate world.</p>
+        <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Objective:</h2>
+        <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The Nurturing Nursing Skills Program by AMS aims to empower nurses with enhanced leadership, technical, and soft skills to elevate the standard of patient care. This program strives to cultivate confident, capable nursing professionals who embody excellence and compassion, ensuring that healthcare delivery continuously improves to meet the demands of dynamic medical environments.</p>
+        <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Conclusion:</h2>
+        <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">At AMS, we believe that investing in the growth of nurses is integral to shaping the future of healthcare. The Nurturing Nursing Skills Program reflects our commitment to fostering professional development, enhancing patient outcomes, and creating a culture of excellence in care delivery. By empowering nurses, we are not only advancing their careers but also contributing to a healthier, more compassionate world.</p>
       </div>
         ),
     },
@@ -164,10 +165,10 @@ const modalContent = [
       id: 4,
       description: (
         <div>
-        <h2 className="text-[2.5vw] font-light leading-[1.2]">Objective:</h2>
-        <p className="content-p py-[1vw]">These cardiac programs—Valve Repair Workshop, Pediatric Observership Programs, MICS Observerships, Hands-on Vascular Anastamosis Workshop, Hands-on Experience of Valve Repair & CABG Technique, and Advanced Cardiac Cadaver Workshop—are designed for surgeons to refine and elevate their skills. Attendees will learn from key opinion leaders and esteemed faculties through live surgery observations, interactive discussions, and dedicated sessions, gaining deep insights into advanced surgical techniques. This immersive learning environment will empower participants with the knowledge and expertise needed to apply these methods effectively in their practice. </p>
-        <h2 className="text-[2.5vw] font-light leading-[1.2]">Conclusion:</h2>
-        <p className="content-p py-[1vw]">Participants will gain both theoretical knowledge and practical experience, empowering them to effectively apply advanced techniques in their practice. This hands-on experience, combined with expert guidance and exposure to cutting-edge methods, will enhance professional growth and patient outcomes in cardiac surgery, setting a new standard for excellence.</p>
+        <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Objective:</h2>
+        <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">These cardiac programs—Valve Repair Workshop, Pediatric Observership Programs, MICS Observerships, Hands-on Vascular Anastamosis Workshop, Hands-on Experience of Valve Repair & CABG Technique, and Advanced Cardiac Cadaver Workshop—are designed for surgeons to refine and elevate their skills. Attendees will learn from key opinion leaders and esteemed faculties through live surgery observations, interactive discussions, and dedicated sessions, gaining deep insights into advanced surgical techniques. This immersive learning environment will empower participants with the knowledge and expertise needed to apply these methods effectively in their practice. </p>
+        <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Conclusion:</h2>
+        <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">Participants will gain both theoretical knowledge and practical experience, empowering them to effectively apply advanced techniques in their practice. This hands-on experience, combined with expert guidance and exposure to cutting-edge methods, will enhance professional growth and patient outcomes in cardiac surgery, setting a new standard for excellence.</p>
       </div>
         ),
     },
@@ -175,10 +176,10 @@ const modalContent = [
       id: 5,
      description:(
       <div>
-      <h2 className="text-[2.5vw] font-light leading-[1.2]">Objective:</h2>
-      <p className="content-p py-[1vw]">The General Surgery AMA Program is a comprehensive workshop series designed to enhance surgeons' skills in hernia repair, colorectal surgery, and hemorrhoidectomy/proctology procedures. Participants gain practical expertise through hands-on training with staplers and other essential instruments. Led by esteemed faculty and key opinion leaders, the program provides real-time insights into the complexities of these surgeries, ensuring surgeons are equipped with the latest techniques and tools.</p>
-      <h2 className="text-[2.5vw] font-light leading-[1.2]">Conclusion:</h2>
-      <p className="content-p py-[1vw]">The General Surgery AMA Program equips surgeons with the confidence and proficiency needed to perform complex procedures effectively. By mastering advanced techniques, participants not only improve patient outcomes but also foster their professional growth. With practical exposure and learning opportunities in real surgical settings, this program is a step toward achieving excellence in surgical care.</p>
+      <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Objective:</h2>
+      <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The General Surgery AMA Program is a comprehensive workshop series designed to enhance surgeons&apos; skills in hernia repair, colorectal surgery, and hemorrhoidectomy/proctology procedures. Participants gain practical expertise through hands-on training with staplers and other essential instruments. Led by esteemed faculty and key opinion leaders, the program provides real-time insights into the complexities of these surgeries, ensuring surgeons are equipped with the latest techniques and tools.</p>
+      <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Conclusion:</h2>
+      <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The General Surgery AMA Program equips surgeons with the confidence and proficiency needed to perform complex procedures effectively. By mastering advanced techniques, participants not only improve patient outcomes but also foster their professional growth. With practical exposure and learning opportunities in real surgical settings, this program is a step toward achieving excellence in surgical care.</p>
     </div>
      )
     },
