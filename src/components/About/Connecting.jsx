@@ -19,7 +19,7 @@ const Connecting = () => {
             </p>
           </div>
           <div className='fadeUp'>
-            <PrimaryButton link="/career" text="Career" />
+            <PrimaryButton link="/career" text="Career"  className='!pl-[4.5vw] mobile:!pl-[12vw]'/>
           </div>
         </div>
       </div>

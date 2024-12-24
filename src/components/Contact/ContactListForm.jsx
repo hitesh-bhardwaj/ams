@@ -18,13 +18,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import { Textarea } from "../ui/textarea";
-// import { Button } from "../ui/button";
 import { useState } from "react";
-// Update the ContactForm component
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger,useGSAP)
+
 const formSchema = z.object({
   FistName: z.string().min(3, {
     message: "Name must be at least 3 characters.",
@@ -42,7 +44,7 @@ const formSchema = z.object({
   }),
 });
 
-export default function ContactListForm({ onClose }) {
+export default function ContactListForm({ onClose , title }) {
   const [selectedRole, setSelectedRole] = useState("");
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -58,6 +60,18 @@ export default function ContactListForm({ onClose }) {
       Speciality: "",
     },
   });
+
+  useGSAP(()=>{
+    gsap.from("#contact-other-forms",{
+     opacity:0,
+     duration:0.5,
+     scrollTrigger:{
+       trigger:"#contact-other-forms",
+       start:"top top",
+       end:"bottom bottom"
+     }
+    })
+   })
 
   const onSubmit = async (data) => {
     console.log(data);
@@ -99,19 +113,20 @@ export default function ContactListForm({ onClose }) {
     setSelectedRole(value);
   };
   return (
-    <section className="w-screen h-screen flex justify-center items-center fixed top-0 left-0 overflow-hidden bg-black/60 z-[999] ">
-      <div className="w-[75vw] h-[80%] bg-white relative py-[4vw] px-[2vw] rounded-[1vw]  fadeup mobile:static mobile:w-full mobile:px-[5vw] mobile:border mobile:border-gray-300 mobile:py-[10vw] mobile:rounded-[4vw] mobile:bg-black/10 tablet:w-[50%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
+    <section className="w-screen h-screen flex justify-center items-center fixed top-0 left-0 overflow-hidden bg-black/60 z-[999] " id="contact-other-forms">
+      <div className="w-[75vw] h-[80%] bg-white relative py-[4vw] px-[2vw] rounded-[1vw]  overflow-hidden fadeup mobile:w-[90%] mobile:h-[70%] mobile:px-[5vw] mobile:py-[10vw] mobile:rounded-[4vw] tablet:rounded-[2vw] tablet:w-[80%] tablet:h-[70%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
         <div
           data-lenis-prevent
-          className="w-full h-[100%] overflow-scroll overflow-x-hidden px-[3vw]"
+          className="w-full h-[100%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
         >
+            <h2 className="text-[3vw] aeonik !font-light mb-[2vw] tablet:text-[4.5vw] tablet:mb-[3vw] mobile:text-[7vw] mobile:mb-[7vw]">{title}</h2>
           <Form {...form}>
             <form className="space-y-8 relative z-[10]  " onSubmit={form.handleSubmit(onSubmit)}>
               <div>
                 <Select onValueChange={handleValueChange}>
                   <SelectTrigger
                     aria-label="Select Country"
-                    className="w-full mobile:text-[4vw] mobile:w-[25vw] tablet:w-[10vw]"
+                    className="w-full mobile:text-[4vw]"
                   >
                     <SelectValue placeholder="Country*" />
                   </SelectTrigger>
@@ -130,7 +145,7 @@ export default function ContactListForm({ onClose }) {
                 <Select onValueChange={handleValueChange}>
                   <SelectTrigger
                     aria-label="Select Title"
-                    className="w-full mobile:text-[4vw] mobile:w-[25vw] tablet:w-[10vw]"
+                    className="w-full mobile:text-[4vw]"
                   >
                     <SelectValue placeholder="Salutation*" />
                   </SelectTrigger>
@@ -146,7 +161,7 @@ export default function ContactListForm({ onClose }) {
                 </Select>
               </div>
 
-              <div className="w-full flex gap-[2vw]">
+              <div className="w-full flex gap-[2vw] mobile:flex-col mobile:gap-[8vw]">
                 <FormField
                   control={form.control}
                   name="FirstName"
@@ -156,7 +171,7 @@ export default function ContactListForm({ onClose }) {
                         <Input
                           placeholder="First Name*"
                           {...field}
-                          className="w-[30vw]"
+                          className="w-[31vw] tablet:w-[34vw] mobile:w-full"
                         />
                       </FormControl>
                       <FormMessage />
@@ -172,7 +187,7 @@ export default function ContactListForm({ onClose }) {
                         <Input
                           placeholder="Last Name*"
                           {...field}
-                          className="w-[31vw]"
+                          className="w-[31.8vw] tablet:w-[34vw] mobile:w-full"
                         />
                       </FormControl>
                       <FormMessage />
@@ -265,7 +280,7 @@ export default function ContactListForm({ onClose }) {
                   </FormItem>
                 )}
               />
-              <p className="text-[1.1vw] mt-[2vw] font-light">
+              <p className="text-[1.1vw] mt-[2vw] font-light tablet:text-[2vw] mobile:text-[4vw]">
                 The personal data collected on this form, will be used to
                 validate your request & also manage our relationship with you.
                 Where you have provided your consent we will use your email
@@ -279,7 +294,7 @@ export default function ContactListForm({ onClose }) {
                 how it collects, processes, discloses, and retains your personal
                 data, please read our Privacy Policy.
               </p>
-              <div className="mt-[2vw]">
+              <div className="mt-[2vw] w-full flex justify-end">
                 <Button type="submit">
                   <div className={`${styles.btn}  !border-gray-200`}>
                     <div aria-hidden="true" className={styles.btnCircle}>
@@ -313,14 +328,15 @@ export default function ContactListForm({ onClose }) {
               </div>
             </form>
           </Form>
-        <div className="absolute bottom-0 opacity-50 left-0 w-full h-[10vw] z-[1]">
+        <div className="absolute bottom-0 opacity-50 left-0 w-full h-[10vw] z-[0] mobile:h-[20vw]">
+            <div className="absolute bottom-0 opacity-50 left-0 w-full h-[10vw] z-[1] bg-gradient-to-b from-white to-black"></div>
             <Image src={"/assets/contact/plant-bg.jpg"} alt="plant-bg" fill className="object-cover"/>
 
         </div>
         </div>
       </div>
       <button
-        className="absolute flex right-[3%] top-[5%]  items-center gap-3 z-[999]"
+        className="absolute flex right-[5%] top-[5%]  items-center gap-3 z-[999]"
         onClick={onClose}
       >
         <span className="w-[2.2vw] h-[2.2vw] flex justify-center items-center p-2 border border-head rounded-full tablet:w-[4vw] tablet:h-[4vw] mobile:w-[10vw] mobile:h-[10vw] mobile:p-[2.8vw]">

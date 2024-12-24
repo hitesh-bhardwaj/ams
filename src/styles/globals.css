@@ -662,9 +662,7 @@ color: #000 !important;
   .careerSwiper .swiper-slide {
     height: 115vw !important;
   }
-  .careerSwiper .swiper-pagination {
-    display: none;
-  }
+ 
 
   /* molecular swiper */
   .molecularSwiper .swiper-button-prev,

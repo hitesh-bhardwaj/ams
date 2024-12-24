@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className=" mb-[5%] hero-container" id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh]">
-        <div className="w-screen h-[23.5vw] absolute bottom-[-10%] tablet:h-[30vh]">
+        <div className="w-screen h-[23.5vw] absolute bottom-[-10%] tablet:h-[30vh] mobile:bottom-0">
           <Image
             className="hero-img absolute z-[2] object-contain"
             src="/assets/career/career-bg-hero.png"

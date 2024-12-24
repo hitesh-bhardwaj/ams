@@ -40,8 +40,8 @@
     }
 
     /* Hide pagination bullets on small screens */
-    .careerSwiper .swiper-pagination-bullet {
-        display: none;
+    .careerSwiper .swiper-pagination {
+        display: block !important;
     }
 
     /* Show custom next/prev buttons */

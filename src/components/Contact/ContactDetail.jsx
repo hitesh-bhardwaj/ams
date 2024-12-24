@@ -39,7 +39,7 @@ const ContactDetail = () => {
                   <p>Socials:</p>
                   <div className="social-icons flex items-bottom gap-[1vw] z-10 mobile:mb-[5vw] mobile:mt-[5vw] mobile:gap-[7vw] mobile:justify-center">
                     <Link
-                      href="/#"
+                      href="/https://www.facebook.com/AdvancedMedTechSolutions"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image
@@ -51,7 +51,7 @@ const ContactDetail = () => {
                       />
                     </Link>
                     <Link
-                      href="/#"
+                      href="/https://www.linkedin.com/company/advanced-medtech-solutions/"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image
@@ -63,7 +63,7 @@ const ContactDetail = () => {
                       />
                     </Link>
                     <Link
-                      href="/#"
+                      href="/https://x.com/AmsMedTech"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image
@@ -75,7 +75,7 @@ const ContactDetail = () => {
                       />
                     </Link>
                     <Link
-                      href="/#"
+                      href="/https://www.instagram.com/officialamsltd/"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image
@@ -87,7 +87,7 @@ const ContactDetail = () => {
                       />
                     </Link>
                     <Link
-                      href="/#"
+                      href="/https://www.youtube.com/channel/UCRwHSaWfb2ciojSBz3dhrUw"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image

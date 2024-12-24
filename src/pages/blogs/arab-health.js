@@ -11,7 +11,7 @@ const arabhealth = () => {
     <>
       <Layout>
         <main>
-          <Hero img={"/assets/blogs/blog-detail1.png"} title={" Reimagining Health, Redefining Care"} tagline={" Arab Health 2025"} width={"w-[60%]"}/>
+          <Hero img={"/assets/blogs/news2.png"} title={" Reimagining Health, Redefining Care"} tagline={" Arab Health 2025"} width={"w-[60%]"}/>
           <section id="blog-content" className="w-screen h-full py-[5vw] mobile:py-[10vw]">
             <div className="container-lg mobile:px-[5vw]">
             <h2

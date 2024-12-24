@@ -3,7 +3,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
-import styles from "../Button/style.module.css"
+import styles from "../Button/style.module.css";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger,useGSAP)
 
 import {
   Form,
@@ -33,7 +37,17 @@ export default function CareerForm({ onClose }) {
   const [fileError, setFileError] = useState(null);
   const [content, setContent] = useState(null);
   const [alertVisible, setAlertVisible] = useState(false); // State for alert visibility
-  
+  useGSAP(()=>{
+    gsap.from(".formcareer",{
+     opacity:0,
+     duration:0.5,
+     scrollTrigger:{
+       trigger:".formcareer",
+       start:"top top",
+       end:"bottom bottom"
+     }
+    })
+   })
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -100,8 +114,8 @@ export default function CareerForm({ onClose }) {
 
   return (
     <section
-      className="fixed top-0 left-0 w-screen h-screen z-[998] flex justify-center items-center"
-      id="formoem"
+      className="fixed top-0 left-0 w-screen h-screen z-[998] flex justify-center items-center formcareer"
+      id="formcareer"
     >
       <div className="w-[50vw] h-[45vw] p-[4vw] pb-[25%] mobile:p-0 rounded-[3vw] border-gray-200 bg-white mobile:border-none tablet:p-[5.5vw] fadeUp relative overflow-hidden mobile:h-[70vh] mobile:w-[90vw] tablet:h-[50vh] tablet:w-[80vw]">
         {alertVisible && (

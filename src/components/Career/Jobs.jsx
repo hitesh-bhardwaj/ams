@@ -8,7 +8,7 @@ import { useLenis } from 'lenis/react'
 import styles from "@/styles/careerSwiper.module.css";
 import JobDescription from "./JobDescription";
 import Image from "next/image";
-import CareerForm from "./CareerForm";
+
 
 const JobCard = ({ dept, designation, location, onClick }) => {
   return (

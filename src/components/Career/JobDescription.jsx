@@ -1,21 +1,40 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { useLenis } from "lenis/react";
-import PrimaryButton from "../Button/PrimaryButton";
 import CareerForm from "./CareerForm";
 import styles from "../Button/style.module.css";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger,useGSAP)
 
 const JobDescription = ({ onClose }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const modalRef = useRef(null);
-  const lenis = useLenis();
-
-  const openModal = () => {
-    setIsModalOpen(true);
-    lenis && lenis.stop();
-    document.body.style.overflow = "hidden";
-  };
+ 
+  // useGSAP(()=>{
+  //  gsap.from("#job-description",{
+  //   opacity:0,
+  //   duration:0.5,
+  //   scrollTrigger:{
+  //     trigger:"#job-description",
+  //     start:"top top",
+  //     end:"bottom bottom"
+  //   }
+  //  })
+  // })
+  useEffect(()=>{
+    const ctx = gsap.context(() => {
+        gsap.from("#job-description",{
+    opacity:0, 
+    duration:0.5,
+    scrollTrigger:{
+      trigger:"#job-description",
+      start:"top top",
+      end:"bottom bottom"
+    }})
+        
+    })
+    return () => ctx.revert();
+  },[])
 
   const handleBackgroundClick = (e) => {
     if (e.target.id === "job-description" || !e.target.id == "jd-block") {
@@ -39,9 +58,7 @@ const JobDescription = ({ onClose }) => {
           className="absolute flex right-[5%] top-[5%]  items-center gap-3 z-[999]"
           onClick={onClose}
         >
-          <span className="aeonik content-p text-head leading-tight !text-white">
-            Close
-          </span>
+        
           <span className="w-[2.2vw] h-[2.2vw] flex justify-center items-center p-2 border border-head rounded-full tablet:w-[4vw] tablet:h-[4vw] mobile:w-[10vw] mobile:h-[10vw] mobile:p-[2.8vw]">
             <Image
               src="/assets/icons/close-icon.svg"
@@ -68,7 +85,7 @@ const JobDescription = ({ onClose }) => {
               </div>
               <div
                 data-lenis-prevent
-                className="overflow-y-scroll overflow-visible h-full w-full"
+                className="overflow-y-auto overflow-visible h-full w-full"
               >
                 <div className="w-full h-full flex flex-col gap-[2vw] text-[1.3vw] !text-[#111111] relative z-[10] font-light mobile:text-[4vw] mobile:gap-[7vw] tablet:text-[2.5vw] tablet:gap-[4vw] tablet:pt-[4vw]">
                   <p>

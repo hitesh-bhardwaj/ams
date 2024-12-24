@@ -2,7 +2,6 @@
 import Genesis from "@/components/layoutComponents/Genesis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-
 import Layout from "@/components/Layout";
 import { fadeUp } from "@/components/gsapAnimations";
 import Portfolio from "@/components/Endo/Portfolio";

@@ -10,7 +10,7 @@ const medica = () => {
   return (
    <>
    <Layout>
-   <Hero img={"/assets/blogs/blog-detail1.png"} title={"It's a Wrap "} tagline={"A successful MEDICA 2024"} width={"w-full"}/>
+   <Hero img={"/assets/blogs/blog-3.png"} title={"It's a Wrap "} tagline={"A successful MEDICA 2024"} width={"w-full"}/>
    <section id="blog-content" className="w-screen h-full py-[5vw] mobile:py-[10vw]">
                <div className="container-lg mobile:px-[5vw]">
                <h2

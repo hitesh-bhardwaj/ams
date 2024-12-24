@@ -180,7 +180,7 @@ const content = [
             "He holds a Diploma in Pharmaceutical QC and Assurance Management, B. Sc. in Chemistry from Chaudhary Charan Singh University, Meerut, MBA in Operations Management and brings to Advanced MedTech Solutions a tenacious leadership and relentless commitment.",
         ],
         slideImage: "/assets/about/leadership/Davendra-Dhama-small.png",
-        slideImageBg: "/assets/about/leadership/Davendra-Dhama.png",
+        slideImageBg: "/assets/about/leadership/Devendra-Dhama.png",
     },
     {
         name: "Manuel Parente",

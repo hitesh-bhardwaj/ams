@@ -14,7 +14,7 @@ export default function Footer() {
             fill
           />
         </div>
-        <div className="container-sm px-[5vw] pt-[2vw] mobile:pt-[10vw]">
+        <div className="container-sm px-[5vw] pt-[2vw] mobile:pt-[10vw] tablet:pl-0 tablet:pr-[10vw]">
           <div className="grid grid-cols-12 pt-[3.5vw] pb-[1.5vw] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:pt-[6.5vw] tablet:pt-[5vw] ">
             <div className="col-span-6  mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
               <div className="mobile:flex mobile:items-center mobile:justify-center mobile:flex-col">
@@ -275,7 +275,7 @@ export default function Footer() {
                       className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/oem"
                     >
-                      <span data-para-anim data-attr="Oem Solutions">
+                      <span data-para-anim data-attr="OEM Solutions">
                         OEM Solutions
                       </span>
                     </Link>

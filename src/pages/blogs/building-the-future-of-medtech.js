@@ -11,7 +11,7 @@ const buildingTheFutureOfMedtech = () => {
   return (
     <>
     <Layout>
-    <Hero img={"/assets/blogs/blog-detail1.png"} title={"Building for Future of MedTech "} tagline={"Expansion of The AMS Campus"} width={"w-[60%]"}/>
+    <Hero img={"/assets/blogs/news3.png"} title={"Building for Future of MedTech "} tagline={"Expansion of The AMS Campus"} width={"w-[60%]"}/>
     <section id="blog-content" className="w-screen h-full py-[5vw] mobile:py-[10vw]">
                 <div className="container-lg mobile:px-[5vw]">
                 <h2

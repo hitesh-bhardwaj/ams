@@ -10,7 +10,7 @@ const shaping = () => {
   return (
     <>
    <Layout>
-   <Hero img={"/assets/blogs/blog-detail1.png"} title={"  Shaping the Future of Healthcare "} tagline={"Advanced Surgery & Advanced Cardiovascular"} width={"w-[60%]"}/>
+   <Hero img={"/assets/blogs/blog-1.png"} title={"  Shaping the Future of Healthcare "} tagline={"Advanced Surgery & Advanced Cardiovascular"} width={"w-[60%]"}/>
    <section id="blog-content" className="w-screen h-full py-[5vw] mobile:py-[10vw]">
                <div className="container-lg mobile:px-[5vw]">
                <h2
