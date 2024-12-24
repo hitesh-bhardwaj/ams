@@ -10,6 +10,7 @@ import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import UncoverCV from "@/components/Products/UncoverCV";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -40,44 +41,38 @@ const featureData = [
   {
     src: "/assets/advalene/features3.png",
     title: "Isotactic polymer maximum strength",
-  }
+  },
 ];
 const cardData = [
   {
     title: "Composition",
     description: "Polypropylene",
-    svg: "/assets/advalene-cv/composition.svg"
+    svg: "/assets/advalene-cv/composition.svg",
   },
   {
     title: "Colour",
     description: "Blue",
-    svg: "/assets/advalene-cv/color.svg"
-
+    svg: "/assets/advalene-cv/color.svg",
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 5-0",
-    svg: "/assets/advalene-cv/sizes.svg"
-
+    svg: "/assets/advalene-cv/sizes.svg",
   },
   {
     title: "Coating",
-    description:
-      "None",
-    svg: "/assets/advalene-cv/coating.svg"
-
+    description: "None",
+    svg: "/assets/advalene-cv/coating.svg",
   },
   {
     title: "Tensile Strength",
     description: "Permanent",
-    svg: "/assets/advalene-cv/tensile.svg"
-
+    svg: "/assets/advalene-cv/tensile.svg",
   },
   {
     title: "Absorption Profile",
     description: "Non Absorbable",
-    svg: "/assets/advalene-cv/absorption.svg"
-
+    svg: "/assets/advalene-cv/absorption.svg",
   },
 ];
 const advalenecv = () => {
@@ -85,7 +80,24 @@ const advalenecv = () => {
 
   return (
     <>
-
+      <NextSeo
+        title="Advalene CV – Polypropylene Suture for Cardiology"
+        description="Durable and reliable, Advalene CV is designed for precision in
+cardiovascular surgeries."
+        openGraph={{
+          title: "Advalene CV – Polypropylene Suture for Cardiology",
+          description:
+            "Durable and reliable, Advalene CV is designed for precision in cardiovascular surgeries.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/advalene-cv.png",
+              width: 1918,
+              height: 948,
+              alt: "Advalene CV – Polypropylene Suture for Cardiology",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero
@@ -99,23 +111,25 @@ const advalenecv = () => {
             bgimg={"/assets/advalene/advalene-hero-bg.png"}
             para2={"With exceptional strength comes confidence that lasts"}
             overlay={"hidden"}
-
           />
-          <Information info={"ADVALENE Cardiovascular suture is a monofilament synthetic non-absorbable, sterile surgical suture composed of an isotactic crystalline stereoisomer of polypropylene, synthetic linear polyolefin. The suture is dyed with Phthalocyanine Blue to enhance visibility in tissue. Due to its relative biological inertness it is recommended for use where the least possible suture reaction is desired. ADVALENE Cardiovascular Suture an ideal choice for anastomosis."} />
+          <Information
+            info={
+              "ADVALENE Cardiovascular suture is a monofilament synthetic non-absorbable, sterile surgical suture composed of an isotactic crystalline stereoisomer of polypropylene, synthetic linear polyolefin. The suture is dyed with Phthalocyanine Blue to enhance visibility in tissue. Due to its relative biological inertness it is recommended for use where the least possible suture reaction is desired. ADVALENE Cardiovascular Suture an ideal choice for anastomosis."
+            }
+          />
           <Edge
             sectionheading={"The ADVALENE Edge"}
             card1={EdgeCard.card1}
             card2={EdgeCard.card2}
             card3={EdgeCard.card3}
           />
-          <Features features={featureData}
-          />
+          <Features features={featureData} />
           <ProductDescription data={cardData} />
           <NextGeneration />
           <UncoverCV />
         </main>
       </Layout>
-      <Media greaterThan='tablet'>
+      <Media greaterThan="tablet">
         <BgVideo videoSrc={"/assets/bg-videos/advalon.mp4"} />
       </Media>
     </>

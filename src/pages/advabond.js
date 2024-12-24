@@ -92,19 +92,19 @@ const advabond = () => {
   return (
     <>
 <NextSeo
-        title="Advalon – Nylon Monofilament Surgical Suture"
-        description="Choose Advalon for reliable, non-absorbable nylon sutures ideal
-for soft tissue closure."
+        title="Advabond – Skin Adhesive for Wound Closure"
+        description="Advabond, a skin adhesive, provides quick, secure, and efficient
+wound closure without sutures."
         openGraph={{
-          title: "Advalon – Nylon Monofilament Surgical Suture",
+          title: "Advabond – Skin Adhesive for Wound Closure",
           description:
-            "Choose Advalon for reliable, non-absorbable nylon sutures ideal for soft tissue closure.",
+            "Advabond, a skin adhesive, provides quick, secure, and efficient wound closure without sutures.",
           images: [
             {
-              url: "https://amsdev01.vercel.app/assets/seo/advalon.png",
+              url: "https://amsdev01.vercel.app/assets/seo/advabond.png",
               width: 1918,
               height: 948,
-              alt: "Advalon – Nylon Monofilament Surgical Suture",
+              alt: "Advabond – Skin Adhesive for Wound Closure",
             },
           ],
         }}

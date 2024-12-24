@@ -5,6 +5,7 @@ import Layout from '@/components/Layout'
 import SurgicalOutcomes from '@/components/SurgicalOutcomes'
 import React from 'react'
 import { fadeUp, paraAnim } from '@/components/gsapAnimations'
+import { NextSeo } from 'next-seo'
 
 const surgicalData = [
   {
@@ -33,6 +34,25 @@ const advastapcs = () => {
   fadeUp();
   paraAnim();
   return (
+    <>
+     <NextSeo
+                title="Advastap CS – Circular Stapler for Gastrointestinal Use"
+                description="Advastap CS offers advanced circular stapling for reliable
+anastomosis in gastrointestinal surgeries."
+                openGraph={{
+                  title: "Advastap CS – Circular Stapler for Gastrointestinal Use",
+                  description:
+                    "Advastap CS offers advanced circular stapling for reliable anastomosis in gastrointestinal surgeries.",
+                  images: [
+                    {
+                      url: "https://amsdev01.vercel.app/assets/seo/advastapcs.png",
+                      width: 1918,
+                      height: 948,
+                      alt: "Advastap CS – Circular Stapler for Gastrointestinal Use",
+                    },
+                  ],
+                }}
+              />
     <Layout>
     <main>
         <Hero/>
@@ -41,6 +61,7 @@ const advastapcs = () => {
         <Specifications/>
     </main>
   </Layout>
+  </>
   )
 }
 

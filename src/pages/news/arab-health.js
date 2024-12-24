@@ -1,6 +1,7 @@
 import Hero from "@/components/BlogDetail/Hero";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import React from "react";
 
@@ -9,6 +10,10 @@ const arabhealth = () => {
   paraAnim();
   return (
     <>
+      <NextSeo
+               title="Arab Health"
+               description="Reimagining Health, Redefining Care: AMS at Arab Health 2025"
+               />
       <Layout>
         <main>
           <Hero img={"/assets/blogs/news2.png"} title={" Reimagining Health, Redefining Care"} tagline={" Arab Health 2025"} width={"w-[60%]"}/>

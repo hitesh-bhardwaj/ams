@@ -1,5 +1,6 @@
 import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 import Layout from '@/components/Layout'
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react'
 
@@ -8,6 +9,10 @@ const privacypolicy = () => {
   paraAnim();
   return (
    <>
+   <NextSeo
+           title="Privacy Policy | Advaced Medtech Solutions"
+           description="At AMS, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by AMS and how we use it."
+           />
    <Layout>
 <main>
   <section id='hero' className='relative'>

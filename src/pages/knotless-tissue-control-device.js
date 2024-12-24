@@ -9,6 +9,7 @@ import Paradigm from "@/components/Advagrip/Paradigm";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { fadeUp } from "@/components/gsapAnimations";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -46,6 +47,24 @@ const advaGrip = () => {
   fadeUp()
   return (
     <>
+    <NextSeo
+            title="Knotless Tissue Control Device – Advanced Wound Closure"
+            description="Achieve precision and efficiency with our knotless tissue control
+device for seamless wound management."
+            openGraph={{
+              title: "Knotless Tissue Control Device – Advanced Wound Closure",
+              description:
+                "Achieve precision and efficiency with our knotless tissue control device for seamless wound management.",
+              images: [
+                {
+                  url: "https://amsdev01.vercel.app/assets/seo/knotless-tissue.png",
+                  width: 1918,
+                  height: 948,
+                  alt: "Knotless Tissue Control Device – Advanced Wound Closure",
+                },
+              ],
+            }}
+          />
       <Layout>
         <main>
           <Hero />
