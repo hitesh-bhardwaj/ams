@@ -13,7 +13,7 @@ const ContactUsDetails = ({ userName, userEmail, userMessage , userNumber , user
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={"https://amsdev01.vercel.app/logo.svg"}
+            src={""}
             width="100"
             height="50"
             alt="Logo"

@@ -130,7 +130,7 @@ export default function IcCards() {
             ))}
           </Swiper>
         </div>
-        <div className="absolute left-[62%] bottom-[10%] flex items-center justify-center gap-[1vw]">
+        <div className="absolute left-[62%] bottom-[9%] flex items-center justify-center gap-[1vw]">
           <span className="bg-[#1A1A1A] h-[1px] w-[31vw]"></span>
           <p className="text-[2.9vw] aeonik font-light">
             {String(activeSlide + 1).padStart(2, "0")}
@@ -138,7 +138,7 @@ export default function IcCards() {
         </div>
 
         <div
-          className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[10%] right-[38%] translate-x-[-65%] rounded-full next-button cursor-pointer bg-white/50 group hover:text-white`}
+          className={`p-[1vw] absolute z-[5] bottom-[10%] right-[40%] translate-x-[-65%] rounded-full next-button cursor-pointer bg-white/50 group hover:text-white`}
           onClick={handleNext}
         >
           <span
@@ -154,7 +154,7 @@ export default function IcCards() {
           </div>
         </div>
         <div
-          className={`px-[1.2vw] py-[1.2vw] bottom-[10%] right-[45%] absolute z-[5] translate-x-[-38%] bg-white/50 rounded-full prev-button cursor-pointer group hover:text-white`}
+          className={`p-[1vw] bottom-[10%] right-[45%] absolute z-[5] translate-x-[-38%] bg-white/50 rounded-full prev-button cursor-pointer group hover:text-white`}
           onClick={handlePrev}
         >
           <span
