@@ -171,7 +171,7 @@ export default function Footer() {
                   <li className="footer-link">
                     <Link
                       className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
-                      href="/blog"
+                      href="/news"
                     >
                       <span data-para-anim data-attr="Newsroom">
                         Newsroom

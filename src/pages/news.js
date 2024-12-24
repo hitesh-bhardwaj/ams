@@ -9,7 +9,7 @@ import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Hero from "@/components/Blogs/Hero";
 import { NextSeo } from "next-seo";
 
-const blogs = () => {
+const news = () => {
   fadeUp();
   paraAnim();
   const content = {
@@ -23,11 +23,11 @@ const blogs = () => {
   return (
     <>
       <NextSeo
-        title="Blogs – Insights from Advanced MedTech"
+        title="News – Insights from Advanced MedTech"
         description="Explore healthcare trends, innovations, and expert opinions
 through our insightful blog posts."
         openGraph={{
-          title: "Blogs – Insights from Advanced MedTech",
+          title: "News – Insights from Advanced MedTech",
           description:
             "Explore healthcare trends, innovations, and expert opinions through our insightful blog posts.",
           images: [
@@ -35,7 +35,7 @@ through our insightful blog posts."
               url: "https://amsdev01.vercel.app/assets/seo/blogs.png",
               width: 1915,
               height: 948,
-              alt: "Blogs – Insights from Advanced MedTech",
+              alt: "News – Insights from Advanced MedTech",
             },
           ],
         }}
@@ -59,4 +59,4 @@ through our insightful blog posts."
   );
 };
 
-export default blogs;
+export default news;
