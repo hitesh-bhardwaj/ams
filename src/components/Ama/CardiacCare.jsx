@@ -16,7 +16,7 @@ const CardiacCare = () => {
                 <div className='w-full h-full flex justify-between flex-row-reverse mobile:flex-col-reverse mobile:gap-6'>
                     <div className='w-[45%] flex flex-col gap-[2vw] mt-[3.5vw] tablet:mt-0 tablet:w-1/2 mobile:w-full mobile:mt-0 mobile:gap-4'>
                         <h3 data-para-anim className='aeonik text-[3vw] leading-[1.25] font-light capitalize tablet:text-[4vw] mobile:text-[7.5vw]'>How do we put patients first in every aspect of care?</h3>
-                        <p className='content-p text-justify fadeUp mobile:text-center'>Our ethos — “What can I do to improve patient care?” — guides every initiative. With a global network of renowned faculty, AMA provides not just learning but lifelong mentorship, supported by expert advice from the industry&apos;s most distinguished professionals.</p>
+                        <p className='content-p text-justify fadeUp mobile:text-center'>Our ethos—&quot;What can I do to improve patient care?&quot;—guides every initiative. With a global network of renowned faculty, AMA provides not just learning but lifelong mentorship, supported by expert advice from the industry&apos;s most distinguished professionals.</p>
                     </div>
                     <div className='w-[45%] relative h-[35vw] rounded-[3vw] overflow-hidden fadeUp mt-[-13%] tablet:mt-0 tablet:h-full mobile:w-full mobile:h-[70vw] mobile:mt-0'>
                         <Image src={"/assets/ama/ama-3-1.png"} alt='ama-3-2' width={800} height={700} className='w-full h-full object-cover' />
