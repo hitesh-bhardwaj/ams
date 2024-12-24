@@ -8,6 +8,7 @@ import Layout from "@/components/Layout";
 import UmbilicalTape from "@/components/AdvabondTape/UmbilicalTape";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const cardData1 = [
   {
@@ -88,7 +89,24 @@ const bondtape = () => {
 
   return (
     <>
-
+<NextSeo
+        title="Bondtape – Surgical Skin Adhesive Tape"
+        description="Bondtape ensures secure wound closure with flexible adhesive
+tape for optimal patient comfort."
+        openGraph={{
+          title: "Bondtape – Surgical Skin Adhesive Tape",
+          description:
+            "Bondtape ensures secure wound closure with flexible adhesive tape for optimal patient comfort.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/bondatpe.png",
+              width: 1918,
+              height: 948,
+              alt: "Bondtape – Surgical Skin Adhesive Tape",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero

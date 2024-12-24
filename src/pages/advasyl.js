@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -91,7 +92,24 @@ const advasyl = () => {
 
   return (
     <>
-
+<NextSeo
+        title="Advasyl – Absorbable Hemostatic Agent"
+        description="Control bleeding effectively with Advasyl, a reliable and
+absorbable hemostatic solution for surgical use."
+        openGraph={{
+          title: "Advasyl – Absorbable Hemostatic Agent",
+          description:
+            "Control bleeding effectively with Advasyl, a reliable and absorbable hemostatic solution for surgical use.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/advasyl.png",
+              width: 1918,
+              height: 948,
+              alt: "Advasyl – Absorbable Hemostatic Agent",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero

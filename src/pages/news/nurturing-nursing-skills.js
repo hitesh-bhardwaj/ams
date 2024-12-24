@@ -2,12 +2,17 @@ import Hero from '@/components/BlogDetail/Hero'
 import Layout from '@/components/Layout'
 import React from 'react'
 import { fadeUp, paraAnim } from '@/components/gsapAnimations'
+import { NextSeo } from 'next-seo'
 
 const nurturingNursingSkills = () => {
     paraAnim();
     fadeUp();
   return (
     <>
+       <NextSeo
+                title="Nurturing Nursing Skils"
+                description="Nurturing the Future of Healthcare: AMS’s Nursing Skills Program"
+              />
     <Layout>
     <Hero img={"/assets/blogs/blog-2.png"} title={"Nurturing Nursing Skills Programs "} tagline={"Under the initiative of Advanced MedTech Academy"} width={"w-[60%]"}/>
     <section id="blog-content" className="w-screen h-full py-[5vw] mobile:py-[10vw]">

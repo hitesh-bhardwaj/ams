@@ -10,6 +10,7 @@ import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import UncoverCV from "@/components/Products/UncoverCV";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -88,7 +89,24 @@ const advabondcv = () => {
 
   return (
     <>
-
+ <NextSeo
+        title="Advabond CV – Skin Adhesive for Cardiovascular Use"
+        description="Advabond CV offers secure and efficient skin adhesive solutions
+for cardiovascular surgeries."
+        openGraph={{
+          title: "Advabond CV – Skin Adhesive for Cardiovascular Use",
+          description:
+            "Advabond CV offers secure and efficient skin adhesive solutions for cardiovascular surgeries.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/advabond-cv.png",
+              width: 1918,
+              height: 948,
+              alt: "Advabond CV – Skin Adhesive for Cardiovascular Use",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero

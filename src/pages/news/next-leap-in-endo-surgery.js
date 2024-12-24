@@ -3,12 +3,17 @@ import Layout from '@/components/Layout'
 import React from 'react'
 import Image from 'next/image'
 import { fadeUp, paraAnim } from '@/components/gsapAnimations'
+import { NextSeo } from 'next-seo'
 
 const nextLeapInEndoSurgery = () => {
     paraAnim();
           fadeUp();
   return (
     <>
+        <NextSeo
+            title="Next Leap in Endo Surgery"
+            description=" Discover the Next Leap in Endo Surgery: ADVASTAP 3-Row Series"
+          />
     <Layout>
     <Hero img={"/assets/blogs/news1.png"} title={"Discover the Next Leap in Endo Surgery  "} tagline={"3-Row Series"} width={"w-[70%]"}/>
     <section id="blog-content" className="w-screen h-full py-[5vw] mobile:py-[10vw]">

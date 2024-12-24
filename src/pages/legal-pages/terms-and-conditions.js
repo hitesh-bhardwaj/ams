@@ -1,5 +1,6 @@
 import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 import Layout from '@/components/Layout'
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import React from 'react'
 
@@ -8,6 +9,10 @@ const termsandconditions = () => {
     paraAnim();
   return (
     <>
+      <NextSeo
+               title="Terms And Conditions | Advaced Medtech Solutions"
+               description="These terms and conditions outline the rules and regulations for the use of Advanced MedTech Solution Pvt. Ltd.&apos;s Website, located at https://www.amsltd.com/."
+               />
     <Layout>
  <main>
    <section id='hero' className='relative'>
