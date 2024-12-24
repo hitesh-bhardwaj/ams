@@ -12,6 +12,7 @@ import { Media } from "@/components/media";
 import Hero from "@/components/IC/Hero";
 import ICProducts from "@/components/IC/ICProducts";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,6 +51,24 @@ export default function ic() {
 
   return (
     <>
+      <NextSeo
+            title="Interventional Cardiology Solutions"
+            description="Innovative devices for minimally invasive interventional
+cardiology procedures."
+            openGraph={{
+              title: "Interventional Cardiology Solutions",
+              description:
+                "Innovative devices for minimally invasive interventional cardiology procedures.",
+              images: [
+                {
+                  url: "https://amsdev01.vercel.app/assets/seo/interventional-cardiology.png",
+                  width: 1915,
+                  height: 948,
+                  alt: "Interventional Cardiology Solutions",
+                },
+              ],
+            }}
+          />
 
       <Layout>
         <main>

@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -89,7 +90,24 @@ const advalene = () => {
 
   return (
     <>
-
+<NextSeo
+        title="Advalene – Polypropylene Monofilament Suture"
+        description="Advalene offers exceptional knot security and flexibility for long-
+term non-absorbable applications."
+        openGraph={{
+          title: "Advalene – Polypropylene Monofilament Suture",
+          description:
+            "Advalene offers exceptional knot security and flexibility for long-term non-absorbable applications.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/advalene.png",
+              width: 1918,
+              height: 948,
+              alt: "Advalene – Polypropylene Monofilament Suture",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero

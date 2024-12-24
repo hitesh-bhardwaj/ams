@@ -32,7 +32,7 @@ export default function CardiacSurgeryMenu({ onBack }) {
           </ul>
           <ul className='space-y-[0.2vw] mobile:space-y-1'>
             <li className='font-normal text-[1.3vw] tablet:text-[2.2vw] mobile:text-[5vw]'>Ligation Solutions</li>
-            <li><NavLink className='uppercase' href="/advaclip" linkText="Advaclip" /></li>
+            <li><NavLink className='uppercase' href="/ligation-solutions" linkText="Advaclip" /></li>
           </ul>
         </div>
       </div>

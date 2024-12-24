@@ -25,7 +25,7 @@ export default function EndoSurgeryMenu({ onBack }) {
       <div className='flex items-start gap-[3vw] pt-2 mobile:flex-col mobile:gap-[5vw] tablet:pt-7 mobile:pt-[5vw]'>
         <ul className='space-y-[0.2vw] mobile:space-y-1'>
           <li className='font-normal text-[1.2vw] tablet:text-[2.2vw] mobile:text-[5vw]'>ADVASTAP Series</li>
-          <li><NavLink href="/advastaphd" linkText="Hemorrhoid Stapler" /></li>
+          <li><NavLink href="/advastap" linkText="Hemorrhoid Stapler" /></li>
           <li><NavLink href="/advastaplc" linkText="Linear Cutter" /></li>
           <li><NavLink href="/advastapcs" linkText="Circular Stapler" /></li>
           <li><NavLink href="/skinstapler" linkText="Skin Stapler" /></li>

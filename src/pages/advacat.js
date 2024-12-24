@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -74,7 +75,24 @@ const advacat = () => {
 
   return (
     <>
-
+<NextSeo
+        title="Advacat – Catgut Absorbable Surgical Suture"
+        description="Advacat delivers trusted performance for soft tissue
+approximation with natural absorption properties."
+        openGraph={{
+          title: "Advacat – Catgut Absorbable Surgical Suture",
+          description:
+            "Advacat delivers trusted performance for soft tissue approximation with natural absorption properties.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/advacat.png",
+              width: 1918,
+              height: 948,
+              alt: "Advacat – Catgut Absorbable Surgical Suture",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero

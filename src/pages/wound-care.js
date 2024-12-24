@@ -7,6 +7,7 @@ import { Media } from "@/components/media";
 import Hero from "@/components/Woundclosure/Hero";
 import SutureCarouselFirst from "@/components/Woundclosure/SutureCarouselFirst";
 import SutureCarouselSecond from "@/components/Woundclosure/SutureCarouselSecond";
+import { NextSeo } from "next-seo";
 import React from "react";
 
 const woundClosure = () => {
@@ -20,6 +21,24 @@ const woundClosure = () => {
   };
   return (
     <>
+     <NextSeo
+                title="Wound Care – Advanced Healing Solutions"
+                description="Explore wound care products designed to support effective
+healing and patient comfort."
+                openGraph={{
+                  title: "Wound Care – Advanced Healing Solutions",
+                  description:
+                    "Explore wound care products designed to support effective healing and patient comfort.",
+                  images: [
+                    {
+                      url: "https://amsdev01.vercel.app/assets/seo/wound-care.png",
+                      width: 1915,
+                      height: 948,
+                      alt: "Wound Care – Advanced Healing Solutions",
+                    },
+                  ],
+                }}
+              />
       <Layout>
         <main>
           <Hero/>

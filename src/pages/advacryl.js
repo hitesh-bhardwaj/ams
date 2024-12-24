@@ -93,10 +93,11 @@ const advacryl = () => {
     <>
 <NextSeo
       title="Advacryl – Braided Coated Polyglactin 910 Suture"
-      description="Discover Advacryl, a synthetic absorbable suture offering consistent performance for soft tissue approximation."
+      description="Discover Advacryl, a reliable synthetic absorbable suture for
+secure wound closure and optimal healing."
       openGraph={{
         title: "Advacryl – Braided Coated Polyglactin 910 Suture",
-        description: "Discover Advacryl, a synthetic absorbable suture offering consistent performance for soft tissue approximation.",
+        description: "Discover Advacryl, a reliable synthetic absorbable suture for secure wound closure and optimal healing..",
         images: [
           {
             url: "https://amsdev01.vercel.app/assets/seo/advacryl.png",

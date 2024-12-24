@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -90,7 +91,24 @@ const advamryl = () => {
 
   return (
     <>
-
+<NextSeo
+        title="Advamryl – Monofilament Absorbable Suture"
+        description="Advamryl, a monofilament absorbable suture, ensures smooth
+tissue passage and dependable wound support."
+        openGraph={{
+          title: "Advamryl – Monofilament Absorbable Suture",
+          description:
+            "Advamryl, a monofilament absorbable suture, ensures smooth tissue passage and dependable wound support.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/advamryl.png",
+              width: 1918,
+              height: 948,
+              alt: "Advamryl – Monofilament Absorbable Suture",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero

@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -84,6 +85,24 @@ const advacrylrapid = () => {
 
   return (
     <>
+     <NextSeo
+            title="Advacryl Rapid – Fast Absorption Surgical Suture"
+            description="Advacryl Rapid offers quick absorption for short-term wound
+closure needs with high reliability."
+            openGraph={{
+              title: "Advacryl Rapid – Fast Absorption Surgical Suture",
+              description:
+                "Advacryl Rapid offers quick absorption for short-term wound closure needs with high reliability.",
+              images: [
+                {
+                  url: "https://amsdev01.vercel.app/assets/seo/advacryl-rapid.png",
+                  width: 1915,
+                  height: 948,
+                  alt: "Advacryl Rapid – Fast Absorption Surgical Suture",
+                },
+              ],
+            }}
+          />
       <Layout>
         <main>
           <Hero

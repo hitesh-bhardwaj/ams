@@ -9,6 +9,7 @@ import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Discover from "@/components/Rnd/Discover";
+import { NextSeo } from "next-seo";
 
 export default function rnd() {
 
@@ -52,6 +53,24 @@ export default function rnd() {
 
   return (
     <>
+      <NextSeo
+            title="R&amp;D – Innovating Healthcare Technologies"
+            description="Driving innovation through extensive research and development
+in medical technologies."
+            openGraph={{
+              title: "R&amp;D – Innovating Healthcare Technologies",
+              description:
+                "Driving innovation through extensive research and development in medical technologies.",
+              images: [
+                {
+                  url: "https://amsdev01.vercel.app/assets/seo/rnd.png",
+                  width: 1915,
+                  height: 948,
+                  alt: "R&amp;D – Innovating Healthcare Technologies",
+                },
+              ],
+            }}
+          />
       <Layout>
         <main>
           <Hero

@@ -87,18 +87,19 @@ const advacrylplus = () => {
   return (
     <>
       <NextSeo
-        title="Advacryl Plus – Antibacterial Polyglactin 910 Suture"
-        description="Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to minimize surgical site infections."
+        title="Advacryl Plus – Antibacterial Polyglactin Suture"
+        description="Explore Advacryl Plus, a Triclosan-coated antibacterial suture
+designed to reduce surgical site infections."
         openGraph={{
-          title: "Advacryl Plus – Antibacterial Polyglactin 910 Suture",
+          title: "Advacryl Plus – Antibacterial Polyglactin Suture",
           description:
-            "Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to minimize surgical site infections.",
+            "Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to reduce surgical site infections.",
           images: [
             {
               url: "https://amsdev01.vercel.app/assets/seo/advacrylplus.png",
               width: 1918,
               height: 948,
-              alt: "Advacryl Plus – Antibacterial Polyglactin 910 Suture",
+              alt: "Advacryl Plus – Antibacterial Polyglactin Suture",
             },
           ],
         }}

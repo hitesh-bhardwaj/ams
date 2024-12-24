@@ -7,6 +7,7 @@ import { fadeUp, paraAnim } from '@/components/gsapAnimations';
 import Layout from '@/components/Layout'
 import BgVideo from '@/components/Layout/BgVideo';
 import { Media } from '@/components/media';
+import { NextSeo } from 'next-seo';
 import React from 'react'
 
 const contact = () => {
@@ -16,6 +17,22 @@ const contact = () => {
 
   return (
     <>
+     <NextSeo
+                  title="Contact Us – Advanced MedTech Solutions"
+                  description="Reach out to Advanced MedTech Solutions for inquiries, support,
+or collaborations. We are here to assist."
+                  openGraph={{
+                    title: "Contact Us – Advanced MedTech Solutions",
+                    description: "Reach out to Advanced MedTech Solutions for inquiries, support,or collaborations. We are here to assist.",
+                    images: [
+                      {
+                        url: "https://amsdev01.vercel.app/assets/seo/contact-us.png",
+                        width: 1915,
+                        height: 948,
+                        alt: "Contact Us – Advanced MedTech Solutions",
+                      },
+                    ],
+                  }}/>
       <Layout>
         <main>
           <Hero />

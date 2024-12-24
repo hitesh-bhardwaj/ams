@@ -39,7 +39,8 @@ const ContactDetail = () => {
                   <p>Socials:</p>
                   <div className="social-icons flex items-bottom gap-[1vw] z-10 mobile:mb-[5vw] mobile:mt-[5vw] mobile:gap-[7vw] mobile:justify-center">
                     <Link
-                      href="/https://www.facebook.com/AdvancedMedTechSolutions"
+                      href="https://www.facebook.com/AdvancedMedTechSolutions"
+                      target="_blank"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image
@@ -51,7 +52,8 @@ const ContactDetail = () => {
                       />
                     </Link>
                     <Link
-                      href="/https://www.linkedin.com/company/advanced-medtech-solutions/"
+                      href="https://www.linkedin.com/company/advanced-medtech-solutions"
+                      target="_blank"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image
@@ -63,7 +65,8 @@ const ContactDetail = () => {
                       />
                     </Link>
                     <Link
-                      href="/https://x.com/AmsMedTech"
+                      href="https://x.com/AmsMedTech"
+                      target="_blank"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image
@@ -75,7 +78,8 @@ const ContactDetail = () => {
                       />
                     </Link>
                     <Link
-                      href="/https://www.instagram.com/officialamsltd/"
+                      href="https://www.instagram.com/officialamsltd"
+                      target="_blank"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image
@@ -87,7 +91,8 @@ const ContactDetail = () => {
                       />
                     </Link>
                     <Link
-                      href="/https://www.youtube.com/channel/UCRwHSaWfb2ciojSBz3dhrUw"
+                      href="https://www.youtube.com/channel/UCRwHSaWfb2ciojSBz3dhrUw"
+                      target="_blank"
                       className="opacity-60 hover:opacity-100 duration-300 mobile:opacity-100"
                     >
                       <Image

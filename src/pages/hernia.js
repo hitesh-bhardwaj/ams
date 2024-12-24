@@ -9,6 +9,7 @@ import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import Hero from "@/components/Hernia/Hero";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 export default function hernia() {
   const content = {
@@ -45,7 +46,24 @@ export default function hernia() {
 
   return (
     <>
-
+  <NextSeo
+        title="Hernia Mesh – Reliable Surgical Solutions"
+        description="Hernia repair meshes for enhanced durability and patient safety in
+surgical procedures."
+        openGraph={{
+          title: "Hernia Mesh – Reliable Surgical Solutions",
+          description:
+            "Hernia repair meshes for enhanced durability and patient safety in surgical procedures.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/hernia.png",
+              width: 1915,
+              height: 948,
+              alt: "Hernia Mesh – Reliable Surgical Solutions",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero />

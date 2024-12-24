@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -21,7 +22,6 @@ const EdgeCard = {
     title: "- the confidence to suture with ease",
     src: "/assets/advapd/advapdtray.png",
     para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
-  
   },
   card3: {
     title: "Knot Pull Tensile Strength",
@@ -51,38 +51,32 @@ const cardData = [
   {
     title: "Composition",
     description: "Polydioxanone",
-    svg: "/assets/advapd/composition.svg"
+    svg: "/assets/advapd/composition.svg",
   },
   {
     title: "Colour",
     description: "Violet",
-    svg: "/assets/advapd/color.svg"
-
+    svg: "/assets/advapd/color.svg",
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 1 to 5-0",
-    svg: "/assets/advapd/sizes.svg"
-
+    svg: "/assets/advapd/sizes.svg",
   },
   {
     title: "Coating",
-    description:
-      "None",
-    svg: "/assets/advapd/coating.svg"
-
+    description: "None",
+    svg: "/assets/advapd/coating.svg",
   },
   {
     title: "Tensile Strength",
     description: "~80% | 14 Days <br/> ~70% | 28 Days",
-    svg: "/assets/advapd/tensile.svg"
-
+    svg: "/assets/advapd/tensile.svg",
   },
   {
     title: "Absorption Profile",
     description: "Essentially complete between 180 to 220 days",
-    svg: "/assets/advapd/absorption.svg"
-
+    svg: "/assets/advapd/absorption.svg",
   },
 ];
 
@@ -91,7 +85,24 @@ const advapd = () => {
 
   return (
     <>
-
+      <NextSeo
+        title="Advapd – Polydioxanone Absorbable Suture"
+        description="Long-term absorbable suture, Advapd ensures superior tensile
+strength and surgical reliability."
+        openGraph={{
+          title: "Advapd – Polydioxanone Absorbable Suture",
+          description:
+            "Long-term absorbable suture, Advapd ensures superior tensile strength and surgical reliability.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/advapd.png",
+              width: 1918,
+              height: 948,
+              alt: "Advapd – Polydioxanone Absorbable Suture",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero
@@ -105,23 +116,25 @@ const advapd = () => {
             bgimg={"/assets/advapd/advapd-hero-bg.png"}
             para2={"Steady performance for superior confidence"}
             overlay={"hidden"}
-
           />
-          <Information info={"ADVAPD suture is a monofilament synthetic absorbable sterile surgical suture composed of a copolymer made from the Polyester and Polydioxanone. ADVAPD suture is available in both dyed and undyed form. These sutures are particularly useful where the combination of an absorbable suture and extended wound support (up to six weeks) is desirable."} />
+          <Information
+            info={
+              "ADVAPD suture is a monofilament synthetic absorbable sterile surgical suture composed of a copolymer made from the Polyester and Polydioxanone. ADVAPD suture is available in both dyed and undyed form. These sutures are particularly useful where the combination of an absorbable suture and extended wound support (up to six weeks) is desirable."
+            }
+          />
           <Edge
             sectionheading={"The ADVAPD Edge"}
             card1={EdgeCard.card1}
             card2={EdgeCard.card2}
             card3={EdgeCard.card3}
           />
-          <Features features={featureData}
-          />
+          <Features features={featureData} />
           <ProductDescription data={cardData} />
           <NextGeneration />
           <Uncover />
         </main>
       </Layout>
-      <Media greaterThan='tablet'>
+      <Media greaterThan="tablet">
         <BgVideo videoSrc={"/assets/bg-videos/advapd.mp4"} />
       </Media>
     </>

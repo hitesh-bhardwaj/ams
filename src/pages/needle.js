@@ -7,7 +7,7 @@ import Advance from "@/components/Needle/Advance";
 import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
-
+import { NextSeo } from "next-seo";
 
 export default function needle() {
   const content = {
@@ -42,6 +42,24 @@ export default function needle() {
 
   return (
     <>
+      <NextSeo
+        title="Needle – High-Performance Surgical Needles"
+        description="Discover precision-engineered surgical needles for enhanced
+performance and reliability."
+        openGraph={{
+          title: "Needle – High-Performance Surgical Needles",
+          description:
+            "Discover precision-engineered surgical needles for enhanced performance and reliability.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/needle.png",
+              width: 1915,
+              height: 948,
+              alt: "Needle – High-Performance Surgical Needles",
+            },
+          ],
+        }}
+      />
 
       <Layout>
         <main>
@@ -51,12 +69,16 @@ export default function needle() {
             sParaWidth={"w-[40%] ml-[5%] mobile:ml-0 tablet:ml-0"}
             bParaWidth={"w-[70%]"}
           />
-          <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"w-[35%] tablet:w-[50%]"} />
+          <PortfolioSwiper
+            slidesData={slidesData}
+            textclass={"text-[#FFFFFF]"}
+            width={"w-[35%] tablet:w-[50%]"}
+          />
           <FeatureCards />
           <Advance />
         </main>
       </Layout>
-      <Media greaterThan='tablet'>
+      <Media greaterThan="tablet">
         <BgVideo videoSrc={"/assets/bg-videos/endo.mp4"} />
       </Media>
     </>

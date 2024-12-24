@@ -10,6 +10,7 @@ import Products from "@/components/CardioVascular/Products";
 import { Media } from "@/components/media";
 import Hero from "@/components/CardioVascular/Hero";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,16 +24,36 @@ export default function cardiovascular() {
     src: "/assets/cardioVascular/cardio-vascular-genesis-bg.png",
   };
 
-  fadeUp()
+  fadeUp();
 
   return (
     <>
-
+      <NextSeo
+        title="Cardiovascular Solutions – Advanced Devices"
+        description="Comprehensive cardiovascular solutions to enhance patient
+outcomes in surgical care."
+        openGraph={{
+          title: "Cardiovascular Solutions – Advanced Devices",
+          description:
+            "Comprehensive cardiovascular solutions to enhance patient outcomes in surgical care.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/cardiovascular-solutions.png",
+              width: 1915,
+              height: 948,
+              alt: "Cardiovascular Solutions – Advanced Devices",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
-         <Hero/>
-          <Genesis content={content} sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
-            bParaWidth={"w-[30%]"} />
+          <Hero />
+          <Genesis
+            content={content}
+            sParaWidth={"w-[50%] ml-[5%] mobile:ml-0 tablet:ml-0"}
+            bParaWidth={"w-[30%]"}
+          />
           <Media at="desktop">
             <Products />
           </Media>
@@ -42,10 +63,13 @@ export default function cardiovascular() {
           <Media at="tablet">
             <ProductCarousel />
           </Media>
-          <Portfolio currentlink={"/cardiovascular-solutions"} sectionheading={"Our Advanced Therapies"}/>
+          <Portfolio
+            currentlink={"/cardiovascular-solutions"}
+            sectionheading={"Our Advanced Therapies"}
+          />
         </main>
       </Layout>
-      <Media greaterThan='tablet'>
+      <Media greaterThan="tablet">
         <BgVideo videoSrc={"/assets/bg-videos/interventional-cardiology.mp4"} />
       </Media>
     </>

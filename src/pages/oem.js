@@ -7,6 +7,7 @@ import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import Image from "next/image";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 export default function oem() {
 
@@ -22,6 +23,24 @@ export default function oem() {
 
   return (
     <>
+      <NextSeo
+            title="OEM – Custom Medical Solutions"
+            description="Partner with us for custom OEM solutions designed to meet
+unique healthcare needs."
+            openGraph={{
+              title: "OEM – Custom Medical Solutions",
+              description:
+                "Partner with us for custom OEM solutions designed to meet unique healthcare needs.",
+              images: [
+                {
+                  url: "https://amsdev01.vercel.app/assets/seo/oem.png",
+                  width: 1915,
+                  height: 948,
+                  alt: "OEM – Custom Medical Solutions",
+                },
+              ],
+            }}
+          />
       <Layout>
         <main>
           <section className="hero-container dark" id="hero">

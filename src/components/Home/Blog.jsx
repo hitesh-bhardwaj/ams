@@ -69,13 +69,13 @@ const Card = ({ title, description, image, link }) => {
           width={640}
         />
       </div>
-      <h5 data-para-anim className="text-[2.2vw] font-extralight leading-[1.2] mobile:text-[8vw] mobile:mb-[8vw] tablet:text-[3.5vw]">
+      <h5  className="text-[2.2vw] font-extralight leading-[1.2] mobile:text-[8vw] mobile:mb-[8vw] tablet:text-[3.5vw]">
         {title}
       </h5>
-      <p data-para-anim className="text-[0.94vw] font-light mobile:text-[4.2vw] tablet:text-[2vw]" >
+      <p  className="text-[0.94vw] font-light mobile:text-[4.2vw] tablet:text-[2vw]" >
         {description}
       </p>
-      <div className="fadeUp !mb-[2vw] tablet:!mb-[4vw] mobile:!mb-[8vw] mobile:w-full mobile:text-center mobile:flex mobile:justify-center">
+      <div className=" !mb-[2vw] tablet:!mb-[4vw] mobile:!mb-[8vw] mobile:w-full mobile:text-center">
         <LinkButton link={link} btnText="Read More"/>
       </div>
       <span className="block h-[1px] w-full bg-[#444444] lineDraw tablet:h-[0.5px]" />
@@ -98,7 +98,7 @@ const content = [
   },
   {
     title: "The Next Leap in Endo Surgery 3-Row Series",
-    description: "The ADVASTAP Staplers 3-row series is here, setting a new benchmark in endo surgery. Designed to enhance precision and improve patient outcomes, our innovative stapling technology is transforming the surgical landscape.",
+    description: "The ADVASTAP Staplers 3-row series is here, setting a new benchmark in endo surgery. Designed to enhance precision and improve patient outcomes, our innovative stapling technology is revolutionizing the surgical landscape..",
     image: "/assets/home/blog-image-3.png",
     link: "/blogs/next-leap-in-endo-surgery",
   },
