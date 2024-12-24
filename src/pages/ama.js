@@ -18,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ama() {
   const content = {
     heading: "Advancing the Way We Learn",
-    smallpara: "Nestled within the state-of-the-art AMS manufacturing facility in Vadodara, Advanced Medtech Academy (AMA) is a beacon for advancing healthcare education. With a sprawling world-class infrastructure spanning ___ sq. ft., AMA is dedicated to empowering healthcare professionals through advanced simulation and academic training. We believe that skillful hands and confident minds are the foundation for improving patient outcomes and transforming lives.",
+    smallpara: "Nestled within the state-of-the-art AMS manufacturing facility in Vadodara, Advanced Medtech Academy (AMA) is a beacon for advancing healthcare education. With a sprawling world-class infrastructure spanning 20,000 sq. ft., AMA is dedicated to empowering healthcare professionals through advanced simulation and academic training. We believe that skillful hands and confident minds are the foundation for improving patient outcomes and transforming lives.",
     bigpara: "To support the professional growth of those who care for others, AMA’s mission is simple yet profound: to inspire and elevate the expertise of healthcare teams—surgeons, physicians, nurses, and paramedical staff. ",
     src: "/assets/ama/ama-genesis-bg.png",
   };

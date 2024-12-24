@@ -249,7 +249,7 @@ export default function Footer() {
                   </li>
                   <li className="footer-link">
                     <Link
-                      className="content-p text-head text-nowrap font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
+                      className="content-p text-head text-nowrap w-[130%] font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/interventional-cardiology"
                     >
                       <span
