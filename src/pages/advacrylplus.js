@@ -51,34 +51,33 @@ const cardData = [
   {
     title: "Composition",
     description: "90% Glycolide, 10% L-lactide",
-    svg: "/assets/advacryl-plus/composition.svg"
+    svg: "/assets/advacryl-plus/composition.svg",
   },
   {
     title: "Colour",
     description: "Undyed and Violet",
-    svg: "/assets/advacryl-plus/color.svg"
-
+    svg: "/assets/advacryl-plus/color.svg",
   },
   {
     title: "Available Sizes",
     description: "U.S.P. 2 to 4-0",
-    svg: "/assets/advacryl-plus/sizes.svg"
-
+    svg: "/assets/advacryl-plus/sizes.svg",
   },
   {
     title: "Coating",
-    description: "Poly (glycolide-co-lactide) (Glacomer 37) and Calcium Stearate, Triclosan",
-    svg: "/assets/advacryl-plus/coating.svg"
+    description:
+      "Poly (glycolide-co-lactide) (Glacomer 37) and Calcium Stearate, Triclosan",
+    svg: "/assets/advacryl-plus/coating.svg",
   },
   {
     title: "Tensile Strength",
     description: "~75% | 14 Days<br />~55% | 21 Days",
-    svg: "/assets/advacryl-plus/tensile.svg"
+    svg: "/assets/advacryl-plus/tensile.svg",
   },
   {
     title: "Absorption Profile",
     description: "Essentially complete up to 80 days",
-    svg: "/assets/advacryl-plus/absorption.svg"
+    svg: "/assets/advacryl-plus/absorption.svg",
   },
 ];
 
@@ -87,9 +86,23 @@ const advacrylplus = () => {
 
   return (
     <>
-<NextSeo 
-title='Advacryl Plus – Antibacterial Polyglactin 910 Suture'
-description='Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to minimize surgical site infections.'/>
+      <NextSeo
+        title="Advacryl Plus – Antibacterial Polyglactin 910 Suture"
+        description="Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to minimize surgical site infections."
+        openGraph={{
+          title: "Advacryl Plus – Antibacterial Polyglactin 910 Suture",
+          description:
+            "Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to minimize surgical site infections.",
+          images: [
+            {
+              url: "https://amsdev01.vercel.app/assets/seo/advacrylplus.png",
+              width: 1918,
+              height: 948,
+              alt: "Advacryl Plus – Antibacterial Polyglactin 910 Suture",
+            },
+          ],
+        }}
+      />
       <Layout>
         <main>
           <Hero
@@ -106,9 +119,12 @@ description='Explore Advacryl Plus, a Triclosan-coated antibacterial suture desi
             bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
             para2={"Steady performance for superior confidence"}
             overlay={"hidden"}
-
           />
-          <Information info={"ADVACRYL PLUS suture is a braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. ADVACRYL PLUS suture is Triclosan coated antibacterial absorbable surgical suture assures consistent performance for confidence in a variety of soft tissue approximation by minimizing Surgical Site Infections (SSI)."} />
+          <Information
+            info={
+              "ADVACRYL PLUS suture is a braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. ADVACRYL PLUS suture is Triclosan coated antibacterial absorbable surgical suture assures consistent performance for confidence in a variety of soft tissue approximation by minimizing Surgical Site Infections (SSI)."
+            }
+          />
           <Edge
             sectionheading={"The ADVACRYL PLUS Edge"}
             card1={EdgeCard.card1}
@@ -121,7 +137,7 @@ description='Explore Advacryl Plus, a Triclosan-coated antibacterial suture desi
           <Uncover />
         </main>
       </Layout>
-      <Media greaterThan='tablet'>
+      <Media greaterThan="tablet">
         <BgVideo videoSrc={"/assets/bg-videos/advacryl.mp4"} />
       </Media>
     </>

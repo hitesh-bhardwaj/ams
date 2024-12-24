@@ -27,7 +27,20 @@ export default function about() {
     <>
     <NextSeo 
     title='About Us – Advanced MedTech Solutions'
-    description='Learn about Advanced MedTech Solutions mission to make quality healthcare affordable and accessible globally.'/>
+    description='Learn about Advanced MedTech Solutions mission to make quality healthcare affordable and accessible globally.'
+    openGraph={{
+      title: "About Us – Advanced MedTech Solutions",
+      description: "'Learn about Advanced MedTech Solutions mission to make quality healthcare affordable and accessible globally.",
+      images: [
+        {
+          url: "https://amsdev01.vercel.app/assets/seo/about.png",
+          width: 1909,
+          height: 949,
+          alt: "About Us – Advanced MedTech Solutions",
+        },
+      ],
+    }}
+    />
       <Layout>
         <main>
           <Hero />
