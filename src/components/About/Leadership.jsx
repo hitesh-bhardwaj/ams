@@ -172,12 +172,14 @@ const content = [
         slideImageBg: "/assets/about/leadership/Sameer-Ramani.png",
     },
     {
-        name: "Davendra Dhama",
+        name: "DAVENDRA KUMAR DHAMA",
         title: "DIRECTOR, OPERATIONS",
         description: [
-            "Davendra Kumar Dhama is the Director of Operations at AMS. An effective project leader and problem solver with over 24 years of extensive experience in Medical Devices & Pharmaceuticals, Mr. Dhama cemented a legacy serving a 22 years tenure for Peters Surgical India. Some of his noteworthy achievements include setting up an independent surgical suture & needle manufacturing plant along with launching a new Cardiovascular suture technology into the South Asian markets whilst attaining to several FDA Regulatory & Quality Certifications.",
-            "At AMS, his demonstrative work ethic and crafty negotiating skills have added intrinsic value to the organizations success. His ability in launching successful projects over his reputed career in Medical Devices along with rich expertise in Regulatory affairs has helped develop and bring to market ADVA GLIDE, AMS' PTCA Balloon Catheter in collaboration with one of the foremost leading Swiss implantable device technologies.",
-            "He holds a Diploma in Pharmaceutical QC and Assurance Management, B. Sc. in Chemistry from Chaudhary Charan Singh University, Meerut, MBA in Operations Management and brings to Advanced MedTech Solutions a tenacious leadership and relentless commitment.",
+            "Davendra Kumar Dhama is a distinguished leader with over 30 years of experience in the medical devices and pharmaceutical industries. As the Director of Operations at AMS, he brings a profound understanding of manufacturing excellence, regulatory compliance, and strategic execution, driving the company’s mission to deliver innovative, high-quality healthcare solutions.",
+            "Throughout his career, Davendra has spearheaded the establishment of advanced manufacturing facilities for a diverse range of medical devices. His expertise lies in streamlining complex operations, optimizing manufacturing processes, and ensuring seamless regulatory compliance with international standards such as FDA, CE, and 510(k) certifications. These efforts have consistently enabled the successful entry of high-quality medical devices into competitive global markets.",
+            "A visionary leader, Davendra excels in fostering operational efficiency, cultivating high-performing teams, and driving initiatives that align with organizational goals. His comprehensive knowledge of regulatory frameworks and quality assurance ensures that all products meet the stringent requirements of the medical industry, while his strategic mindset supports innovation and scalability.",
+            "Davendra’s approach to leadership is defined by a focus on continuous improvement, operational innovation, and cross-functional collaboration. His ability to navigate complex challenges and implement sustainable solutions has significantly contributed to AMS's reputation as a trusted partner in advancing healthcare technologies." ,
+            "He holds a graduate degree in Science, Certification in Pharmaceutical Quality Control and Assurance Management, Lead Auditor for quality Management system and an MBA in Operations Management."
         ],
         slideImage: "/assets/about/leadership/Davendra-Dhama-small.png",
         slideImageBg: "/assets/about/leadership/Devendra-Dhama.png",
