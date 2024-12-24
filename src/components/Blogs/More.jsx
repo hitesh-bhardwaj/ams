@@ -6,24 +6,26 @@ import Link from "next/link";
 const blogCardData = [
   {
     para: "AMS serves as a healthcare ecosystem focused on the MedTech fields of Advanced Surgery & Advanced Cardiovascular.",
-    link: "Shaping the Future of Healthcare ",
+    title: "Shaping the Future of Healthcare ",
     img: "/assets/blogs/blog-1.png",
-    large: true,
+    link:"/blogs/shaping-the-future-of-healthcare"
   },
   {
-    para: "Learn the signs & take steps toward better management.",
-    link: "Nurturing Nursing Skills Programs ",
+    para: "The Nurturing Nursing Skills Program is designed to upskill emerging nurses by enhancing their leadership, soft skills, and technical expertise. Experienced professionals share insights to empower nurses, fostering growth, excellence, and improved patient care.",
+    title: "Nurturing Nursing Skills Programs ",
     img: "/assets/blogs/blog-2.png",
+    link:"/blogs/nurturing-nursing-skills"
   },
   {
-    para: "Knotting Workshop PIMS Hospital, Pondicherry",
-    link: "A successful MEDICA 2024",
+    para: "Thank you to all our visitors, partners, and organizers for an amazing event. Together, we’re innovating for a healthier future.  See you at MEDICA 2025! ",
+    title: "A successful MEDICA 2024",
     img: "/assets/blogs/blog-3.png",
+    link:"/blogs/medica-2024"
   },
 ];
 
-const BlogCard = ({ para, link, img }) => (
-    <Link href="#" className="group overflow-hidden  h-full w-full fadeUp">
+const BlogCard = ({ para, title, img,link }) => (
+    <Link href={link} className="group overflow-hidden  h-full w-full fadeUp">
         <div className="w-full h-full overflow-hidden relative py-[1vw] rounded-[2.5vw]">
           <Image
             src={img}
@@ -39,7 +41,7 @@ const BlogCard = ({ para, link, img }) => (
         </div>
         <div className="w-full mt-[1vw] px-[3%] z-[50]">
           <p className="leading-[1.2] text-[1.25vw] text-[#111111] font-light aeonik">
-            {link}
+            {title}
             <span className="inline-block ml-[0.5vw]">
               <Image
                 src="/assets/icons/arrow-up-right.svg"

@@ -9,6 +9,7 @@ import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 import { Media } from '@/components/media'
 import Leadership from '@/components/About/Leadership'
 import BgVideo from '@/components/Layout/BgVideo'
+import { NextSeo } from 'next-seo'
 
 export default function about() {
 
@@ -24,6 +25,9 @@ export default function about() {
 
   return (
     <>
+    <NextSeo 
+    title='About Us – Advanced MedTech Solutions'
+    description='Learn about Advanced MedTech Solutions mission to make quality healthcare affordable and accessible globally.'/>
       <Layout>
         <main>
           <Hero />

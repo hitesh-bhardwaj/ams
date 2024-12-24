@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from "next-seo";
 
 const EdgeCard = {
   card1: {
@@ -86,7 +87,9 @@ const advacrylplus = () => {
 
   return (
     <>
-
+<NextSeo 
+title='Advacryl Plus – Antibacterial Polyglactin 910 Suture'
+description='Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to minimize surgical site infections.'/>
       <Layout>
         <main>
           <Hero

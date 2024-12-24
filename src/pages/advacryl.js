@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
+import { NextSeo } from 'next-seo';
 
 const EdgeCard = {
   card1: {
@@ -90,7 +91,10 @@ const advacryl = () => {
 
   return (
     <>
-
+<NextSeo
+      title="Advacryl – Braided Coated Polyglactin 910 Suture"
+      description="Discover Advacryl, a synthetic absorbable suture offering consistent performance for soft tissue approximation."
+    />
       <Layout>
         <main>
           <Hero

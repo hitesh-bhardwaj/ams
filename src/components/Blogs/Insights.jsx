@@ -128,13 +128,13 @@ data-para-anim className="title-2 aeonik leading-[1.3]">
               className={`h-full w-full ${styles.newsSwiper}`}
             >
               <SwiperSlide className="pb-[7vw]">
-                <NewsCard para={"The ADVASTAP Staplers 3-row series is here, setting a new benchmark in endo surgery. Designed to enhance precision and improve patient outcomes, our innovative stapling technology is transforming the surgical landscape. "}  title={"Discover the Next Leap in Endo Surgery"} img={"/assets/blogs/news1.png"} link={"#"}/>
+                <NewsCard para={"The ADVASTAP Staplers 3-row series is here, setting a new benchmark in endo surgery. Designed to enhance precision and improve patient outcomes, our innovative stapling technology is transforming the surgical landscape.  "}  title={"Discover the Next Leap in Endo Surgery"} img={"/assets/blogs/news1.png"} link={"/blogs/next-leap-in-endo-surgery"}/>
               </SwiperSlide>
               <SwiperSlide className="pb-[7vw]">
                 <NewsCard para={"Advanced MedTech Solutions is excited to showcase innovation at Arab Health 2025! Visit us to explore advanced solutions transforming healthcare."} title={"Arab Health 2025 "} img={"/assets/blogs/news2.png"} link={"/blogs/arab-health"}/>
               </SwiperSlide>
               <SwiperSlide className="pb-[7vw]">
-                <NewsCard para={"AMS is expanding the campus with the launch of its 60,000 sq. ft. Phase 2 facility, enhancing capabilities in medical device manufacturing, sustainability, and innovation. Featuring the Advanced MedTech Academy and advanced cleanroom spaces, this expansion sets new standards in global healthcare and patient care."} title={"Building the Future of MedTech "} img={"/assets/blogs/news3.png"} link={"#"}/>
+                <NewsCard para={"AMS is expanding the campus with the launch of its 60,000 sq. ft. Phase 2 facility, enhancing capabilities in medical device manufacturing, sustainability, and innovation. Featuring the Advanced MedTech Academy and advanced cleanroom spaces, this expansion sets new standards in global healthcare and patient care. "} title={"Building the Future of MedTech "} img={"/assets/blogs/news3.png"} link={"/blogs/building-the-future-of-medtech"}/>
               </SwiperSlide>
             </Swiper>
           </div>
