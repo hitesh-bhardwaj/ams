@@ -4,12 +4,12 @@ import Hero from "@/components/Hero";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
-// import Innovation from "@/components/Rnd/Innovation";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Discover from "@/components/Rnd/Discover";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 export default function rnd() {
 
@@ -50,27 +50,20 @@ export default function rnd() {
       para: "We are shaping the next generation of therapies that will redefine healthcare and deliver better outcomes for patients across the globe.",
     },
   ];
-
+  const metadata = {
+    title: "R&amp;D – Innovating Healthcare Technologies",
+    description:
+      "Driving innovation through extensive research and development in medical technologies.",
+    img: "rnd.png",
+    alt: "R&amp;D – Innovating Healthcare Technologies",
+    slug: "research-and-development",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   return (
     <>
-      <NextSeo
-            title="R&amp;D – Innovating Healthcare Technologies"
-            description="Driving innovation through extensive research and development
-in medical technologies."
-            openGraph={{
-              title: "R&amp;D – Innovating Healthcare Technologies",
-              description:
-                "Driving innovation through extensive research and development in medical technologies.",
-              images: [
-                {
-                  url: "https://amsdev01.vercel.app/assets/seo/rnd.png",
-                  width: 1915,
-                  height: 948,
-                  alt: "R&amp;D – Innovating Healthcare Technologies",
-                },
-              ],
-            }}
-          />
+      <MetaData metadata={metadata}/>
+      <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

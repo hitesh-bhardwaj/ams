@@ -9,7 +9,8 @@ import Paradigm from "@/components/Advagrip/Paradigm";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { fadeUp } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -44,32 +45,25 @@ const FeatureCard = {
 };
 
 const advaGrip = () => {
+  const metadata = {
+    title: "Knotless Tissue Control Device – Advanced Wound Closure",
+    description:
+      "Achieve precision and efficiency with our knotless tissue control device for seamless wound management.",
+    img: "knotless-tissue.png",
+    alt: "Knotless Tissue Control Device – Advanced Wound Closure",
+    slug: "knotless-tissue-control-device",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp()
   return (
     <>
-    <NextSeo
-            title="Knotless Tissue Control Device – Advanced Wound Closure"
-            description="Achieve precision and efficiency with our knotless tissue control
-device for seamless wound management."
-            openGraph={{
-              title: "Knotless Tissue Control Device – Advanced Wound Closure",
-              description:
-                "Achieve precision and efficiency with our knotless tissue control device for seamless wound management.",
-              images: [
-                {
-                  url: "https://amsdev01.vercel.app/assets/seo/knotless-tissue.png",
-                  width: 1918,
-                  height: 948,
-                  alt: "Knotless Tissue Control Device – Advanced Wound Closure",
-                },
-              ],
-            }}
-          />
+   <MetaData metadata={metadata}/>
+   <WebpageJsonLd metadata={metadata} />
       <Layout>
         <main>
           <Hero />
           <TricCut />
-          {/* <AdvagripSpecifications/> */}
           <Edge2 visibility={"!hidden"}
             className={"hidden"}
             sectionheading={"The ADVAGRIP Edge"}

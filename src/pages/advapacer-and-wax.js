@@ -10,6 +10,8 @@ import Information from "@/components/Products/Information";
 import UncoverCV from "@/components/Products/UncoverCV";
 import BgVideo from "@/components/Layout/BgVideo";
 import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const cardData1 = [
   {
@@ -77,28 +79,22 @@ const cardData2 = [
 ];
 
 const advapacer = () => {
+  const metadata = {
+    title: "Advapacer and Wax – Bone Wax for Hemostasis",
+    description:
+      "Advapacer and Wax delivers effective hemostasis and surgical support with high-quality bone wax.",
+    img: "advapacer.png",
+    alt: "Advapacer and Wax – Bone Wax for Hemostasis",
+    slug: "advapacer-and-wax",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-      <NextSeo
-        title="Advapacer and Wax – Bone Wax for Hemostasis"
-        description="Advapacer and Wax delivers effective hemostasis and surgical
-support with high-quality bone wax."
-        openGraph={{
-          title: "Advapacer and Wax – Bone Wax for Hemostasis",
-          description:
-            "Advapacer and Wax delivers effective hemostasis and surgical support with high-quality bone wax.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advapacer.png",
-              width: 1918,
-              height: 948,
-              alt: "Advapacer and Wax – Bone Wax for Hemostasis",
-            },
-          ],
-        }}
-      />
+   <MetaData metadata={metadata}/>
+   <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

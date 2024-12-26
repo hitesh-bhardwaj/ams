@@ -5,31 +5,26 @@ import Performance from "@/components/Advapro/Performance";
 import SurgicalOutcomes from "@/components/Advapro/SurgicalOutcomes";
 import AdvaproSpecifications from "@/components/Advapro/AdvaproSpecifications";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const advapro = () => {
+  const metadata = {
+    title: "Advapro – Monofilament Polypropylene Mesh",
+    description:
+      "Advapro delivers reliable and strong polypropylene mesh for hernia repair and surgical support.",
+    img: "advapro.png",
+    alt: "Advapro – Monofilament Polypropylene Mesh",
+    slug: "advapro",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   paraAnim();
   fadeUp();
   return (
     <>
-      <NextSeo
-        title="Advapro – Monofilament Polypropylene Mesh"
-        description="Advapro delivers reliable and strong polypropylene mesh for
-hernia repair and surgical support."
-        openGraph={{
-          title: "Advapro – Monofilament Polypropylene Mesh",
-          description:
-            "Advapro delivers reliable and strong polypropylene mesh for hernia repair and surgical support.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advapro.png",
-              width: 1918,
-              height: 948,
-              alt: "Advapro – Monofilament Polypropylene Mesh",
-            },
-          ],
-        }}
-      />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

@@ -8,8 +8,6 @@ import { Media } from "../media";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./styles.module.css";
 
-
-
 const productContent = [
   {
     title: "ADVAGLIDE",
@@ -41,7 +39,6 @@ const productContent = [
     src: "/assets/ic/coronary-accessories.png",
     para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals with the tools they need for precision and efficiency in every procedure.",
   },
- 
 ];
 const ProductCard = ({ title, src, para, index, activeSlide }) => {
   const isActive = index === activeSlide;
@@ -49,7 +46,9 @@ const ProductCard = ({ title, src, para, index, activeSlide }) => {
   return (
     <div
       className={`h-full border bg-white/50 border-[#DADADA] flex flex-col justify-between p-[3vw] pt-[1.5vw] rounded-[2.5vw] icProductCard transition-transform duration-500 ${
-        isActive ? "!bg-transparent !border-transparent items-start w-[45vw] !h-[45vw]" : "items-center w-[20vw] h-[30vw] !delay-800"
+        isActive
+          ? "!bg-transparent !border-transparent items-start w-[45vw] !h-[46vw]"
+          : "items-center w-[20vw] h-[30vw] !delay-800"
       }`}
     >
       <h3
@@ -60,11 +59,17 @@ const ProductCard = ({ title, src, para, index, activeSlide }) => {
         {title}
       </h3>
       <div
-        className={`absolute w-[23vw] h-[20vw]   transition-all duration-500 ease-in-out mt-[2vw] top-[20%] ic-card-image ${
-          isActive ? "scale-[1.5] !top-[30%] !left-[30%]" : ""
-        }`}
+        className={`absolute w-[23vw] h-[20vw]   transition-all duration-500 ease-in-out mt-[2vw] top-[20%] ic-card-image 
+           ${index % 3 == 1 &&!isActive ? "!top-[15%] ml-[3vw]" : ""} ${index%3==0&&!isActive?"!top-[15%]":""}
+          ${
+            isActive && index % 3 == 0
+              ? "scale-[2.2] !top-[30%] !left-[30%]"
+              : ""
+          } ${
+          isActive && index % 3 == 1 ? "scale-[1.6] !top-[40%] !left-[30%]" : ""
+        } ${isActive ? "scale-[1.5] !top-[30%] !left-[30%] " : ""}`}
       >
-        <Image src={src} fill alt="ic-products" className="object-contain"/>
+        <Image src={src} fill alt="ic-products" className="object-contain" />
       </div>
       <div>
         <p
@@ -80,7 +85,6 @@ const ProductCard = ({ title, src, para, index, activeSlide }) => {
 };
 
 export default function IcCards() {
-
   const swiperRef = useRef(null);
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -104,78 +108,77 @@ export default function IcCards() {
     <>
       <section className="" id="cards-carousel">
         <Media greaterThan="tablet">
-        <div className="w-screen h-[45vw] px-[3%] relative">
-        <div className="w-full h-full">
-          <Swiper
-            ref={swiperRef}
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            loop={true}
-            slidesPerView={3}
-            spaceBetween={20}
-            speed={700}
-            centeredSlides={false} // Center the active slide
-            className={`mySwiper w-full h-full ${styles.icProductSwiper}`}
-            onSlideChange={handleSlideChange}
-          >
-            {productContent.map((product, index) => (
-              <SwiperSlide key={index}>
-                <ProductCard
-                  title={product.title}
-                  src={product.src}
-                  para={product.para}
-                  index={index}
-                  activeSlide={activeSlide}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div className="absolute left-[62%] bottom-[9%] flex items-center justify-center gap-[1vw]">
-          <span className="bg-[#1A1A1A] h-[1px] w-[31vw]"></span>
-          <p className="text-[2.9vw] aeonik font-light">
-            {String(activeSlide + 1).padStart(2, "0")}
-          </p>
-        </div>
+          <div className="w-screen h-[45vw] px-[3%] relative">
+            <div className="w-full h-full">
+              <Swiper
+                ref={swiperRef}
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                loop={true}
+                slidesPerView={3}
+                spaceBetween={20}
+                speed={700}
+                centeredSlides={false} // Center the active slide
+                className={`mySwiper w-full h-full ${styles.icProductSwiper}`}
+                onSlideChange={handleSlideChange}
+              >
+                {productContent.map((product, index) => (
+                  <SwiperSlide key={index}>
+                    <ProductCard
+                      title={product.title}
+                      src={product.src}
+                      para={product.para}
+                      index={index}
+                      activeSlide={activeSlide}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+            <div className="absolute left-[62%] bottom-[9%] flex items-center justify-center gap-[1vw]">
+              <span className="bg-[#1A1A1A] h-[1px] w-[31vw]"></span>
+              <p className="text-[2.9vw] aeonik font-light">
+                {String(activeSlide + 1).padStart(2, "0")}
+              </p>
+            </div>
 
-        <div
-          className={`p-[1vw] absolute z-[5] bottom-[10%] right-[40%] translate-x-[-65%] rounded-full next-button cursor-pointer bg-white/50 group hover:text-white`}
-          onClick={handleNext}
-        >
-          <span
-            className={`bg-[#222222] w-[100%] h-[100%] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
-          />
-          <div className="w-[1.2vw] h-[1.2vw] relative z-[6]">
-            <Image
-              src="/assets/home/arrow-right.png"
-              alt="arrow-right"
-              className={`object-cover group-hover:invert duration-300`}
-              fill
-            />
+            <div
+              className={`p-[1vw] absolute z-[5] bottom-[10%] right-[40%] translate-x-[-65%] rounded-full next-button cursor-pointer bg-white/50 group hover:text-white`}
+              onClick={handleNext}
+            >
+              <span
+                className={`bg-[#222222] w-[100%] h-[100%] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+              />
+              <div className="w-[1.2vw] h-[1.2vw] relative z-[6]">
+                <Image
+                  src="/assets/home/arrow-right.png"
+                  alt="arrow-right"
+                  className={`object-cover group-hover:invert duration-300`}
+                  fill
+                />
+              </div>
+            </div>
+            <div
+              className={`p-[1vw] bottom-[10%] right-[45%] absolute z-[5] translate-x-[-38%] bg-white/50 rounded-full prev-button cursor-pointer group hover:text-white`}
+              onClick={handlePrev}
+            >
+              <span
+                className={`bg-[#222222] w-[100%] h-[100%] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+              />
+              <div className="w-[1.2vw] h-[1.2vw] relative z-[6] rotate-180">
+                <Image
+                  src="/assets/home/arrow-left.png"
+                  alt="arrow-left"
+                  className={`object-cover group-hover:invert duration-300 rotate-180`}
+                  fill
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          className={`p-[1vw] bottom-[10%] right-[45%] absolute z-[5] translate-x-[-38%] bg-white/50 rounded-full prev-button cursor-pointer group hover:text-white`}
-          onClick={handlePrev}
-        >
-          <span
-            className={`bg-[#222222] w-[100%] h-[100%] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
-          />
-          <div className="w-[1.2vw] h-[1.2vw] relative z-[6] rotate-180">
-            <Image
-              src="/assets/home/arrow-left.png"
-              alt="arrow-left"
-              className={`object-cover group-hover:invert duration-300 rotate-180`}
-              fill
-            />
-          </div>
-        </div>
-      </div>
         </Media>
         <Media lessThan="desktop">
           <div className=" py-[5%]">
             <div className="w-full flex flex-col gap-[8vw] tablet:gap-[5vw]">
-              <h2
-data-para-anim className="aeonik title-2 text-center">
+              <h2 data-para-anim className="aeonik title-2 text-center">
                 Our Featured Programs
               </h2>
 

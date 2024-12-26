@@ -10,31 +10,26 @@ import LC3Carousel from "@/components/Advastaplc/LC3carousel";
 import LC3Specifications from "@/components/Advastaplc/LC3Specifications";
 import Layout from "@/components/Layout";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const advastaplc = () => {
+  const metadata = {
+    title: "Advastap LC – Linear Cutter Stapler",
+    description:
+      "Achieve superior tissue cutting and stapling precision with Advastap LC, a trusted linear cutter stapler.",
+    img: "advastaplc.png",
+    alt: "Advastap LC – Linear Cutter Stapler",
+    slug: "advastaplc",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
   return (
     <>
-       <NextSeo
-            title="Advastap LC – Linear Cutter Stapler"
-            description="Achieve superior tissue cutting and stapling precision with
-Advastap LC, a trusted linear cutter stapler."
-            openGraph={{
-              title: "Advastap LC – Linear Cutter Stapler",
-              description:
-                "Achieve superior tissue cutting and stapling precision with Advastap LC, a trusted linear cutter stapler.",
-              images: [
-                {
-                  url: "https://amsdev01.vercel.app/assets/seo/advastaplc.png",
-                  width: 1918,
-                  height: 948,
-                  alt: "Advastap LC – Linear Cutter Stapler",
-                },
-              ],
-            }}
-          />
+      <MetaData metadata={metadata}/>
+      <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

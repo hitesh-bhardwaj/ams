@@ -3,10 +3,18 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Media } from "../media";
 import Transition from "../Transition";
+import {
+  ImageObjectJsonLd,
+  OrganizationJsonLd,
+  WebsiteJsonLd,
+} from "@/lib/json-ld";
 
 const Layout = ({ children }) => {
   return (
     <>
+      <OrganizationJsonLd />
+      <WebsiteJsonLd />
+      <ImageObjectJsonLd />
       <Header />
       {children}
       <Footer />

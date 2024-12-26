@@ -18,7 +18,7 @@ export default function ManufacturingMenu({ onBack }) {
       </button>
       <div className='flex items-start gap-[3vw] pt-1'>
         <ul className='space-y-[0.2vw] tablet:space-y-1 mobile:space-y-2'>
-          <li><NavLink href="/manufacturing" linkText="Manufactuirng" /></li>
+          <li><NavLink href="/manufacturing" linkText="Manufacturing" /></li>
           <li><NavLink href="/research-and-development" linkText="Research and Development" /></li>
           <li><NavLink href="/needle" linkText="Advanced Needle Technology" /></li>
         </ul>

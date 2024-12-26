@@ -10,10 +10,10 @@ import "swiper/css/pagination";
 const SutureCarouselFirst = () => {
   const slidesData = [
     {
-      iconSrc: "/assets/woundclosure/advacat-box.png",
-      title: "Catgut - Chromic",
-      cardColor: "from-yellow-500/30",
-      src: "/advacat",
+      iconSrc: "/assets/woundclosure/advacryl-box.png",
+      title: "Polyglactine 910",
+      cardColor: "from-purple-500/30",
+      src: "/advacryl",
     },
     {
       iconSrc: "/assets/woundclosure/advacrylplus-box.png",
@@ -22,16 +22,10 @@ const SutureCarouselFirst = () => {
       src: "/advacrylplus",
     },
     {
-      iconSrc: "/assets/woundclosure/advapd-box.png",
-      title: "Polydioxanone",
-      cardColor: "from-gray-500/30",
-      src: "/advapd",
-    },
-    {
-      iconSrc: "/assets/woundclosure/advacryl-box.png",
-      title: "Polyglactine 910",
-      cardColor: "from-purple-500/30",
-      src: "/advacryl",
+      iconSrc: "/assets/woundclosure/advacrylrapid-box.png",
+      title: "Fast Absorbing Polyglactine 910",
+      cardColor: "from-red-500/30",
+      src: "/advacryl-rapid",
     },
     {
       iconSrc: "/assets/woundclosure/advamryl-box.png",
@@ -40,25 +34,28 @@ const SutureCarouselFirst = () => {
       src: "/advamryl",
     },
     {
-      iconSrc: "/assets/woundclosure/advacrylrapid-box.png",
-      title: "Fast Absorbing Polyglactine 910",
-      cardColor: "from-red-500/30",
-      src: "/advacryl-rapid",
+      iconSrc: "/assets/woundclosure/advapd-box.png",
+      title: "Polydioxanone",
+      cardColor: "from-gray-500/30",
+      src: "/advapd",
+    },
+    {
+      iconSrc: "/assets/woundclosure/advacat-box.png",
+      title: "Catgut - Chromic",
+      cardColor: "from-yellow-500/30",
+      src: "/advacat",
     },
   ];
 
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [activeButton, setActiveButton] = useState("");
 
   const handleNext = () => {
     if (swiperRef.current) swiperRef.current.slideNext();
-    setActiveButton("next");
   };
 
   const handlePrev = () => {
     if (swiperRef.current) swiperRef.current.slidePrev();
-    setActiveButton("prev");
   };
 
   const onSlideChange = (swiper) => {
@@ -90,13 +87,8 @@ const SutureCarouselFirst = () => {
           onSlideChange={onSlideChange}
           spaceBetween={150}
           slidesPerView={5}
-          pagination={{
-            clickable: true,
-            el: ".swiper-pagination",
-          }}
           centeredSlides={true}
           roundLengths={true}
-          modules={[Pagination]}
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 0 },
             640: { slidesPerView: 1, spaceBetween: 0 },
@@ -136,7 +128,7 @@ const SutureCarouselFirst = () => {
                     <h3
                       className={`text-[1.4vw] font-light text-center mb-[1vw] mobile:text-[6.5vw] tablet:text-[4vw] tablet:translate-y-[10vw] ${
                         activeIndex === index
-                          ? "text-[2vw] translate-y-[-3vw] mobile:text-[6.5vw] tablet:translate-y-[10vw] "
+                          ? "text-[2vw] translate-y-[-3vw] mobile:text-[6.5vw] "
                           : ""
                       } transition-all duration-300`}
                     >
@@ -148,9 +140,40 @@ const SutureCarouselFirst = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* Pagination Dots */}
       </div>
-        <div className="swiper-pagination mt-4 absolute bottom-[5%] left-[30%] tablet:!bottom-[10%]"></div>
+
+      <div
+        className={`px-[1.2vw] py-[1.2vw] absolute z-[200] bottom-0 right-[3%] mobile:bottom-0 mobile:top-auto mobile:right-auto mobile:left-[62%] tablet:bottom-[3%] translate-x-[-65%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+        onClick={handleNext}
+      >
+        <span
+          className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+        />
+        <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+          <Image
+            src="/assets/home/arrow-right.png"
+            alt="arrow-right"
+            className={`object-cover group-hover:invert duration-300`}
+            fill
+          />
+        </div>
+      </div>
+      <div
+        className={`px-[1.2vw] py-[1.2vw] bottom-0 right-[9%] absolute z-[200] mobile:bottom-0 mobile:top-auto mobile:left-[37%] mobile:right-auto translate-x-[-38%] tablet:right-[13%] tablet:bottom-[3%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
+        onClick={handlePrev}
+      >
+        <span
+          className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+        />
+        <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
+          <Image
+            src="/assets/home/arrow-left.png"
+            alt="arrow-left"
+            className={`object-cover group-hover:invert duration-300 rotate-180`}
+            fill
+          />
+        </div>
+      </div>
     </section>
   );
 };

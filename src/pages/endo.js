@@ -10,7 +10,8 @@ import { Media } from "@/components/media";
 import Hero from "@/components/Endo/Hero";
 import OtherProduct from "@/components/Endo/OtherProducts";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 export default function endo() {
   const content = {
@@ -43,30 +44,23 @@ export default function endo() {
       para: "From our forward-thinking design to their ability to handle the most complex surgical challenges, our staplers offer unparalleled performance and reliability. Designed for both efficiency and safety, ADVASTAP Series is the ultimate choice for advanced surgical procedures, setting new industry standards.",
     },
   ];
-
+  const metadata = {
+    title: "Endo Solutions – Minimally Invasive Devices",
+    description:
+      "Advanced endoscopic solutions for precise and minimally invasive medical procedures.",
+    img: "endo.png",
+    alt: "Endo Solutions – Minimally Invasive Devices",
+    slug: "endo",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
 
   return (
     <>
-      <NextSeo
-        title="Endo Solutions – Minimally Invasive Devices"
-        description="Advanced endoscopic solutions for precise and minimally
-invasive medical procedures."
-        openGraph={{
-          title: "Endo Solutions – Minimally Invasive Devices",
-          description:
-            "Advanced endoscopic solutions for precise and minimally invasive medical procedures.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/endo.png",
-              width: 1915,
-              height: 948,
-              alt: "Endo Solutions – Minimally Invasive Devices",
-            },
-          ],
-        }}
-      />
+   <MetaData metadata={metadata}/>
+   <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

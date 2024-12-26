@@ -6,31 +6,26 @@ import SkinStaplerSpecification from "@/components/SkinStapler/SkinStaplerSpecif
 import Think from "@/components/SkinStapler/Think";
 import React from "react";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const skinstapler = () => {
+  const metadata = {
+    title: "Skin Stapler – Quick and Secure Skin Closure",
+    description:
+      "Ensure fast and effective skin closure with our high-performance surgical skin stapler.",
+    img: "skinstapler.png",
+    alt: "Skin Stapler – Quick and Secure Skin Closure",
+    slug: "skinstapler",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
   return (
     <>
-      <NextSeo
-        title="Skin Stapler – Quick and Secure Skin Closure"
-        description="Ensure fast and effective skin closure with our high-performance
-surgical skin stapler."
-        openGraph={{
-          title: "Skin Stapler – Quick and Secure Skin Closure",
-          description:
-            "Ensure fast and effective skin closure with our high-performance surgical skin stapler.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/skinstapler.png",
-              width: 1918,
-              height: 948,
-              alt: "Skin Stapler – Quick and Secure Skin Closure",
-            },
-          ],
-        }}
-      />
+  <MetaData metadata={metadata}/>
+  <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

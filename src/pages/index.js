@@ -4,11 +4,11 @@ import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import dynamic from "next/dynamic";
 import Layout from "@/components/Layout";
-// import HomePageReel from "@/components/Home/HomePageReel";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const Product = dynamic(() => import("@/components/Home/Product"), {
   loading: () => <p>Loading products...</p>
@@ -19,32 +19,25 @@ const Blog = dynamic(() => import("@/components/Home/Blog"), {
 });
 
 export default function Home() {
-
+  const metadata = {
+    title: "Home – Advanced MedTech Solutions",
+    description: "Transforming global healthcare with advanced, affordable medical solutions. Explore our innovative product range.",
+    img: "homepage.png",
+    alt:"Home – Advanced MedTech Solutions",
+    slug: "",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  }
   fadeUp();
   paraAnim();
 
   return (
     <>
-    <NextSeo
-          title="Home – Advanced MedTech Solutions"
-          description="Transforming global healthcare with advanced, affordable
-medical solutions. Explore our innovative product range."
-          openGraph={{
-            title: "Home – Advanced MedTech Solutions",
-            description: "Transforming global healthcare with advanced, affordable medical solutions. Explore our innovative product range.",
-            images: [
-              {
-                url: "https://amsdev01.vercel.app/assets/seo/homepage.png",
-                width: 1915,
-                height: 948,
-                alt: "Home – Advanced MedTech Solutions",
-              },
-            ],
-          }}/>
+   <MetaData metadata={metadata} />
+   <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />
-          {/* <HomePageReel /> */}
           <Product />
           <Impact />
           <Career />

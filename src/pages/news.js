@@ -7,7 +7,8 @@ import Genesis from "@/components/layoutComponents/Genesis";
 import { Media } from "@/components/media";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Hero from "@/components/Blogs/Hero";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const news = () => {
   fadeUp();
@@ -20,26 +21,20 @@ const news = () => {
       "Explore how we’re driving meaningful change, guided by innovation, compassion, and a relentless dedication to improving lives. Whether it’s through revolutionary medical devices, empowering partnerships, or initiatives that bring care closer to communities, we are committed to creating a healthier tomorrow.  ",
     src: "/assets/blogs/blogs-genesis-bg.png",
   };
+  const metadata = {
+    title: "News – Insights from Advanced MedTech",
+    description:
+      "Explore healthcare trends, innovations, and expert opinions through our insightful blog posts.",
+    img: "blogs.png",
+    alt: "News – Insights from Advanced MedTech",
+    slug: "blogs",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   return (
     <>
-      <NextSeo
-        title="News – Insights from Advanced MedTech"
-        description="Explore healthcare trends, innovations, and expert opinions
-through our insightful blog posts."
-        openGraph={{
-          title: "News – Insights from Advanced MedTech",
-          description:
-            "Explore healthcare trends, innovations, and expert opinions through our insightful blog posts.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/blogs.png",
-              width: 1915,
-              height: 948,
-              alt: "News – Insights from Advanced MedTech",
-            },
-          ],
-        }}
-      />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

@@ -100,10 +100,10 @@ export default function ContactListForm({ onClose , title }) {
   };
   return (
     <section className="w-screen h-screen flex justify-center items-center fixed top-0 left-0 overflow-hidden bg-black/60 z-[999] fade-in " id="contact-other-forms">
-      <div className="w-[75vw] h-[80%] bg-white relative py-[4vw] px-[2vw] rounded-[1vw]  overflow-hidden fadeup mobile:w-[90%] mobile:h-[70%] mobile:px-[5vw] mobile:py-[10vw] mobile:rounded-[4vw] tablet:rounded-[2vw] tablet:w-[80%] tablet:h-[70%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
+      <div className="w-[75vw] h-[90%] bg-white relative py-[4vw] px-[2vw] rounded-[1vw]  overflow-hidden fadeup mobile:w-[90%] mobile:h-[70%] mobile:px-[5vw] mobile:py-[10vw] mobile:rounded-[4vw] tablet:rounded-[2vw] tablet:w-[80%] tablet:h-[70%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
         <div
           data-lenis-prevent
-          className="w-full h-[78%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
+          className="w-full h-[76%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
         >
             <h2 className="text-[3vw] aeonik !font-light mb-[2vw] tablet:text-[4.5vw] tablet:mb-[3vw] mobile:text-[7vw] mobile:mb-[7vw]">{title}</h2>
           <Form {...form}>
@@ -314,8 +314,7 @@ export default function ContactListForm({ onClose , title }) {
               </div>
             </form>
           </Form>
-        <div className="absolute bottom-0 opacity-50 left-0 w-full h-[10vw] z-[0] mobile:h-[20vw]">
-            <div className="absolute bottom-0 opacity-50 left-0 w-full h-[10vw] z-[1] bg-gradient-to-b from-white to-black"></div>
+        <div className="absolute bottom-0 opacity-80 left-0 w-full h-[12vw] z-[0] mobile:h-[20vw]">
             <Image src={"/assets/contact/plant-bg.jpg"} alt="plant-bg" fill className="object-cover"/>
 
         </div>

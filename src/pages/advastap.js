@@ -7,29 +7,26 @@ import Hero from "@/components/Advastap/Hero";
 import SpecificationsHd2 from "@/components/Advastap/SpecificationsHd2";
 import SpecificationsHd3 from "@/components/Advastap/SpecificationsHd3";
 import Layout from "@/components/Layout";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
+
 
 const advastap = () => {
+  const metadata = {
+    title: "Advastap – Surgical Stapler for Efficient Closure",
+    description:
+      "Advastap provides reliable and efficient wound closure with precise surgical stapling solutions.",
+    img: "advastap.png",
+    alt: "Advastap – Surgical Stapler for Efficient Closure",
+    slug: "advastap",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   return (
     <>
-      <NextSeo
-        title="Advastap – Surgical Stapler for Efficient Closure"
-        description="Advastap provides reliable and efficient wound closure with
-precise surgical stapling solutions."
-        openGraph={{
-          title: "Advastap – Surgical Stapler for Efficient Closure",
-          description:
-            "Advastap provides reliable and efficient wound closure with precise surgical stapling solutions.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advastap.png",
-              width: 1918,
-              height: 948,
-              alt: "Advastap – Surgical Stapler for Efficient Closure",
-            },
-          ],
-        }}
-      />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
+    
       <Layout>
         <main>
           <Hero />

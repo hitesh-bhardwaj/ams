@@ -9,9 +9,21 @@ import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import Hero from "@/components/Manufacturing/Hero";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 export default function manufacturing() {
+  const metadata = {
+    title: "Manufacturing – Advanced Healthcare Solutions",
+    description:
+      "Cutting-edge manufacturing processes for reliable, high-quality medical solutions and devices.",
+    img: "manufacturing.png",
+    alt: "Manufacturing – Advanced Healthcare Solutions",
+    slug: "manufacturing",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
 
@@ -26,24 +38,8 @@ export default function manufacturing() {
 
   return (
     <>
-      <NextSeo
-        title="Manufacturing – Advanced Healthcare Solutions"
-        description="Cutting-edge manufacturing processes for reliable, high-quality
-medical solutions and devices."
-        openGraph={{
-          title: "Manufacturing – Advanced Healthcare Solutions",
-          description:
-            "Cutting-edge manufacturing processes for reliable, high-quality medical solutions and devices.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/manufacturing.png",
-              width: 1915,
-              height: 948,
-              alt: "Manufacturing – Advanced Healthcare Solutions",
-            },
-          ],
-        }}
-      />
+      <MetaData metadata={metadata}/>
+      <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

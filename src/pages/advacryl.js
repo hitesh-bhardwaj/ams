@@ -10,7 +10,8 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from 'next-seo';
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -87,27 +88,22 @@ const cardData = [
   },
 ];
 const advacryl = () => {
+  const metadata = {
+    title: "Advacryl – Braided Coated Polyglactin 910 Suture",
+    description:
+      "Discover Advacryl, a reliable synthetic absorbable suture for secure wound closure and optimal healing.",
+    img: "advacryl.png",
+    alt: "Advacryl – Braided Coated Polyglactin 910 Suture",
+    slug: "advacryl",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-<NextSeo
-      title="Advacryl – Braided Coated Polyglactin 910 Suture"
-      description="Discover Advacryl, a reliable synthetic absorbable suture for
-secure wound closure and optimal healing."
-      openGraph={{
-        title: "Advacryl – Braided Coated Polyglactin 910 Suture",
-        description: "Discover Advacryl, a reliable synthetic absorbable suture for secure wound closure and optimal healing..",
-        images: [
-          {
-            url: "https://amsdev01.vercel.app/assets/seo/advacryl.png",
-            width: 1915,
-            height: 948,
-            alt: "Advacryl – Braided Coated Polyglactin 910 Suture",
-          },
-        ],
-      }}
-    />
+      <MetaData metadata={metadata}/>
+      <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

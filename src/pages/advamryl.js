@@ -10,7 +10,8 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -87,28 +88,22 @@ const cardData = [
 ];
 
 const advamryl = () => {
+  const metadata = {
+    title: "Advamryl – Monofilament Absorbable Suture",
+    description:
+      "Advamryl, a monofilament absorbable suture, ensures smooth tissue passage and dependable wound support.",
+    img: "advamryl.png",
+    alt: "Advamryl – Monofilament Absorbable Suture",
+    slug: "advamryl",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-<NextSeo
-        title="Advamryl – Monofilament Absorbable Suture"
-        description="Advamryl, a monofilament absorbable suture, ensures smooth
-tissue passage and dependable wound support."
-        openGraph={{
-          title: "Advamryl – Monofilament Absorbable Suture",
-          description:
-            "Advamryl, a monofilament absorbable suture, ensures smooth tissue passage and dependable wound support.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advamryl.png",
-              width: 1918,
-              height: 948,
-              alt: "Advamryl – Monofilament Absorbable Suture",
-            },
-          ],
-        }}
-      />
+   <MetaData metadata={metadata}/>
+   <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

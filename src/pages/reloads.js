@@ -5,31 +5,26 @@ import Unique from '@/components/Reloads/Unique'
 import Versatility from '@/components/Reloads/Versatility'
 import React from 'react'
 import { fadeUp, paraAnim } from '@/components/gsapAnimations'
-import { NextSeo } from 'next-seo'
+import MetaData from '@/components/Metadata'
+import { WebpageJsonLd } from '@/lib/json-ld'
 
 const reloads = () => {
+  const metadata = {
+    title: "Reloads – Stapler Reload Cartridges",
+    description:
+      "Compatible and reliable reload cartridges for seamless surgical stapling operations.",
+    img: "reloads.png",
+    alt: "Reloads – Stapler Reload Cartridges",
+    slug: "reloads",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
   return (
     <>
-    <NextSeo
-            title="Reloads – Stapler Reload Cartridges"
-            description="Compatible and reliable reload cartridges for seamless surgical
-stapling operations."
-            openGraph={{
-              title: "Reloads – Stapler Reload Cartridges",
-              description:
-                "Compatible and reliable reload cartridges for seamless surgical stapling operations.",
-              images: [
-                {
-                  url: "https://amsdev01.vercel.app/assets/seo/reloads.png",
-                  width: 1918,
-                  height: 948,
-                  alt: "Reloads – Stapler Reload Cartridges",
-                },
-              ],
-            }}
-          />
+   <MetaData metadata={metadata}/>
+   <WebpageJsonLd metadata={metadata}/>
     <Layout>
     <main>
         <Hero/>

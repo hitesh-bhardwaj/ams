@@ -5,9 +5,10 @@ import FormOem from "@/components/Oem/FormOem";
 import Layout from "@/components/Layout";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
-import Image from "next/image";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import Hero from "@/components/Oem/Hero";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 export default function oem() {
 
@@ -17,45 +18,27 @@ export default function oem() {
     bigpara: "AMS OEM features a dedicated team specializing in R&D and engineering, delivering medical device solutions tailored to OEM needs with unparalleled expertise. Our focus on performance, flexibility, and reliability drives innovation in medical technology.",
     src: "/assets/oem/oem-genesis-bg.png",
   };
-
+  const metadata = {
+    title: "OEM – Custom Medical Solutions",
+    description:
+      "Partner with us for custom OEM solutions designed to meet unique healthcare needs.",
+    img: "oem.png",
+    alt: "OEM – Custom Medical Solutions",
+    slug: "oem",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
 
   return (
     <>
-      <NextSeo
-            title="OEM – Custom Medical Solutions"
-            description="Partner with us for custom OEM solutions designed to meet
-unique healthcare needs."
-            openGraph={{
-              title: "OEM – Custom Medical Solutions",
-              description:
-                "Partner with us for custom OEM solutions designed to meet unique healthcare needs.",
-              images: [
-                {
-                  url: "https://amsdev01.vercel.app/assets/seo/oem.png",
-                  width: 1915,
-                  height: 948,
-                  alt: "OEM – Custom Medical Solutions",
-                },
-              ],
-            }}
-          />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
-          <section className="hero-container dark" id="hero">
-            <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh]">
-              <Image
-                className="hero-img top-0 left-0 right-0 bottom-0 object-cover h-full w-full absolute object-left"
-                src="/assets/oem/oem-hero-image.png"
-                alt="Hero Image"
-                width={1920}
-                height={1080}
-                priority={true}
-              />
-              <h1 className="hidden">AMS OEM</h1>
-            </div>
-          </section>
+          <Hero/>
+          
           <Genesis content={content} />
           <Offerings />
           <FormOem />

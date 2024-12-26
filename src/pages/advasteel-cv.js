@@ -10,6 +10,8 @@ import Information from "@/components/Products/Information";
 import UncoverCV from "@/components/Products/UncoverCV";
 import BgVideo from "@/components/Layout/BgVideo";
 import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -68,28 +70,22 @@ const cardData = [
 ];
 
 const advasteelcv = () => {
+  const metadata = {
+    title: "Advasteel CV – Stainless Steel Cardiovascular Suture",
+    description:
+      "Advasteel CV provides unmatched strength and precision for complex cardiovascular procedures.",
+    img: "advasteel-cv.png",
+    alt: "Advasteel CV – Stainless Steel Cardiovascular Suture",
+    slug: "advasteel-cv",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
- <NextSeo
-        title="Advasteel CV – Stainless Steel Cardiovascular Suture"
-        description="Advasteel CV provides unmatched strength and precision for
-complex cardiovascular procedures."
-        openGraph={{
-          title: "Advasteel CV – Stainless Steel Cardiovascular Suture",
-          description:
-            "Advasteel CV provides unmatched strength and precision for complex cardiovascular procedures.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advasteel-cv.png",
-              width: 1918,
-              height: 948,
-              alt: "Advasteel CV – Stainless Steel Cardiovascular Suture",
-            },
-          ],
-        }}
-      />
+    <MetaData metadata={metadata}/>
+    <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

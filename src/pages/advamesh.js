@@ -7,32 +7,28 @@ import MidWeightSpecifications from "@/components/Advamesh/MidWeightSpecificatio
 import Polypropylene from "@/components/Advamesh/Polypropylene";
 import PolypropyleneSpecifications from "@/components/Advamesh/PolypropyleneSpecifications";
 import Layout from "@/components/Layout";
+import MetaData from "@/components/Metadata";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import { WebpageJsonLd } from "@/lib/json-ld";
+
 
 const advamesh = () => {
+  const metadata = {
+    title: "Advamesh – Surgical Mesh for Hernia Repair",
+    description:
+      "Advamesh provides durable and flexible solutions for effective hernia repair and tissue support.",
+    img: "advamesh.png",
+    alt: "Advamesh – Surgical Mesh for Hernia Repair",
+    slug: "advamesh",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
   return (
     <>
-      <NextSeo
-        title="Advamesh – Surgical Mesh for Hernia Repair"
-        description="Advamesh provides durable and flexible solutions for effective
-hernia repair and tissue support."
-        openGraph={{
-          title: "Advamesh – Surgical Mesh for Hernia Repair",
-          description:
-            "Advamesh provides durable and flexible solutions for effective hernia repair and tissue support.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advamesh.png",
-              width: 1918,
-              height: 948,
-              alt: "Advamesh – Surgical Mesh for Hernia Repair",
-            },
-          ],
-        }}
-      />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

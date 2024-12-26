@@ -10,7 +10,8 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -83,28 +84,22 @@ const cardData = [
 ];
 
 const advalon = () => {
+  const metadata = {
+    title: "Advalon – Nylon Monofilament Surgical Suture",
+    description:
+      "Choose Advalon for reliable, non-absorbable nylon sutures ideal for soft tissue closure.",
+    img: "advalon.png",
+    alt: "Advalon – Nylon Monofilament Surgical Suture",
+    slug: "advalon",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-<NextSeo
-        title="Advalon – Nylon Monofilament Surgical Suture"
-        description="Choose Advalon for reliable, non-absorbable nylon sutures ideal
-for soft tissue closure."
-        openGraph={{
-          title: "Advalon – Nylon Monofilament Surgical Suture",
-          description:
-            "Choose Advalon for reliable, non-absorbable nylon sutures ideal for soft tissue closure.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advalon.png",
-              width: 1918,
-              height: 948,
-              alt: "Advalon – Nylon Monofilament Surgical Suture",
-            },
-          ],
-        }}
-      />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

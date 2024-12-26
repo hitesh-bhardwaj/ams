@@ -7,33 +7,28 @@ import Layout from "@/components/Layout";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 
 export default function career() {
+  const metadata = {
+    title: "Careers – Join Advanced MedTech Solutions",
+    description:
+      "Grow with us! Explore exciting career opportunities at Advanced MedTech Solutions and make an impact in healthcare.",
+    img: "career.png",
+    alt: "Careers – Join Advanced MedTech Solutions",
+    slug: "cardiovascular-solutions",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
 
   return (
     <>
-     <NextSeo
-            title="Careers – Join Advanced MedTech Solutions"
-            description="Grow with us! Explore exciting career opportunities at Advanced
-MedTech Solutions and make an impact in healthcare."
-            openGraph={{
-              title: "Careers – Join Advanced MedTech Solutions",
-              description:
-                "Grow with us! Explore exciting career opportunities at Advanced MedTech Solutions and make an impact in healthcare.",
-              images: [
-                {
-                  url: "https://amsdev01.vercel.app/assets/seo/career.png",
-                  width: 1915,
-                  height: 948,
-                  alt: "Careers – Join Advanced MedTech Solutions",
-                },
-              ],
-            }}
-          />
+    <MetaData metadata={metadata}/>
+    <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

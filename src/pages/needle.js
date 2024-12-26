@@ -7,7 +7,8 @@ import Advance from "@/components/Needle/Advance";
 import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 export default function needle() {
   const content = {
@@ -39,27 +40,21 @@ export default function needle() {
       para: "Every needle is subjected to stringent testing for sharpness, durability, and swage integrity, guaranteeing flawless performance and reliability in all surgical applications.",
     },
   ];
+  const metadata = {
+    title: "Needle – High-Performance Surgical Needles",
+    description:
+      "Discover precision-engineered surgical needles for enhanced performance and reliability.",
+    img: "needle.png",
+    alt: "Needle – High-Performance Surgical Needles",
+    slug: "needle",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
 
   return (
     <>
-      <NextSeo
-        title="Needle – High-Performance Surgical Needles"
-        description="Discover precision-engineered surgical needles for enhanced
-performance and reliability."
-        openGraph={{
-          title: "Needle – High-Performance Surgical Needles",
-          description:
-            "Discover precision-engineered surgical needles for enhanced performance and reliability.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/needle.png",
-              width: 1915,
-              height: 948,
-              alt: "Needle – High-Performance Surgical Needles",
-            },
-          ],
-        }}
-      />
+    <MetaData metadata={metadata}/>
+    <WebpageJsonLd metadata={metadata}/>
 
       <Layout>
         <main>

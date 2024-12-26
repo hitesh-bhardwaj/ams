@@ -6,32 +6,28 @@ import Hero from "@/components/Advakit/Hero";
 import Ortho from "@/components/Advakit/Ortho";
 import OrthoSpecifications from "@/components/Advakit/OrthoSpecifications";
 import Layout from "@/components/Layout";
+import MetaData from "@/components/Metadata";
 import { fadeUp , paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import { WebpageJsonLd } from "@/lib/json-ld";
+
 
 const advakit = () => {
+  const metadata = {
+    title: "Advakit – Comprehensive Surgical Kit",
+    description:
+      "Advakit provides a complete set of tools for efficient and precise surgical procedures.",
+    img: "advakit.png",
+    alt: "Advakit – Comprehensive Surgical Kit",
+    slug: "advakit",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
   return (
     <>
-     <NextSeo
-                 title="Advakit – Comprehensive Surgical Kit"
-                 description="Advakit provides a complete set of tools for efficient and precise
-surgical procedures."
-                 openGraph={{
-                   title: "Advakit – Comprehensive Surgical Kit",
-                   description:
-                     "Advakit provides a complete set of tools for efficient and precise surgical procedures.",
-                   images: [
-                     {
-                       url: "https://amsdev01.vercel.app/assets/seo/advakit.png",
-                       width: 1918,
-                       height: 948,
-                       alt: "Advakit – Comprehensive Surgical Kit",
-                     },
-                   ],
-                 }}
-               />
+   <MetaData metadata={metadata}/>
+   <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
            <Hero/>

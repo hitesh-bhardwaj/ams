@@ -11,6 +11,8 @@ import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
 import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -88,28 +90,22 @@ const cardData = [
 ];
 
 const advasyl = () => {
+  const metadata = {
+    title: "Advasyl – Absorbable Hemostatic Agent",
+    description:
+      "Control bleeding effectively with Advasyl, a reliable and absorbable hemostatic solution for surgical use.",
+    img: "advasyl.png",
+    alt: "Advasyl – Absorbable Hemostatic Agent",
+    slug: "advasyl",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-<NextSeo
-        title="Advasyl – Absorbable Hemostatic Agent"
-        description="Control bleeding effectively with Advasyl, a reliable and
-absorbable hemostatic solution for surgical use."
-        openGraph={{
-          title: "Advasyl – Absorbable Hemostatic Agent",
-          description:
-            "Control bleeding effectively with Advasyl, a reliable and absorbable hemostatic solution for surgical use.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advasyl.png",
-              width: 1918,
-              height: 948,
-              alt: "Advasyl – Absorbable Hemostatic Agent",
-            },
-          ],
-        }}
-      />
+<MetaData metadata={metadata}/>
+<WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

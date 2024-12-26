@@ -9,7 +9,8 @@ import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import Hero from "@/components/Hernia/Hero";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 export default function hernia() {
   const content = {
@@ -41,29 +42,23 @@ export default function hernia() {
       para: "With AMS's comprehensive range of hernia solutions, surgeons can perform repairs with greater confidence, precision, and efficiency. Our evidence-based designs and commitment to product superiority enhance the ease of surgery. These advanced tools not only streamline surgical practice but also support better outcomes, enabling surgeons to provide exceptional care and help patients get back to life faster.",
     },
   ];
+  const metadata = {
+    title: "Hernia Mesh – Reliable Surgical Solutions",
+    description:
+      "Hernia repair meshes for enhanced durability and patient safety in surgical procedures.",
+    img: "hernia.png",
+    alt: "Hernia Mesh – Reliable Surgical Solutions",
+    slug: "hernia",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
 
   return (
     <>
-  <NextSeo
-        title="Hernia Mesh – Reliable Surgical Solutions"
-        description="Hernia repair meshes for enhanced durability and patient safety in
-surgical procedures."
-        openGraph={{
-          title: "Hernia Mesh – Reliable Surgical Solutions",
-          description:
-            "Hernia repair meshes for enhanced durability and patient safety in surgical procedures.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/hernia.png",
-              width: 1915,
-              height: 948,
-              alt: "Hernia Mesh – Reliable Surgical Solutions",
-            },
-          ],
-        }}
-      />
+  <MetaData metadata={metadata}/>
+  <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

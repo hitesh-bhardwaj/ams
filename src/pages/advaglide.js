@@ -8,31 +8,26 @@ import BgVideo from "@/components/Layout/BgVideo";
 import { Media } from "@/components/media";
 import React from "react";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const advaglide = () => {
+  const metadata = {
+    title: "Advaglide – Lubricated Surgical Sutures",
+    description:
+      "Enhance precision and ease of use with Advaglide, lubricated sutures for smooth tissue passage.",
+    img: "advaglide.png",
+    alt: "Advaglide – Lubricated Surgical Sutures",
+    slug: "advaglide",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
   return (
     <>
-      <NextSeo
-        title="Advaglide – Lubricated Surgical Sutures"
-        description="Enhance precision and ease of use with Advaglide, lubricated
-sutures for smooth tissue passage."
-        openGraph={{
-          title: "Advaglide – Lubricated Surgical Sutures",
-          description:
-            "Enhance precision and ease of use with Advaglide, lubricated sutures for smooth tissue passage.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advaglide.png",
-              width: 1918,
-              height: 948,
-              alt: "Advaglide – Lubricated Surgical Sutures",
-            },
-          ],
-        }}
-      />
+      <MetaData metadata={metadata}/>
+      <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

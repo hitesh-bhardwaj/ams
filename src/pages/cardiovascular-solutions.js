@@ -10,7 +10,8 @@ import Products from "@/components/CardioVascular/Products";
 import { Media } from "@/components/media";
 import Hero from "@/components/CardioVascular/Hero";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,29 +24,23 @@ export default function cardiovascular() {
       "Together, we are shaping the future of cardiac surgery, advancing therapeutic options and improving patient quality of life.",
     src: "/assets/cardioVascular/cardio-vascular-genesis-bg.png",
   };
+  const metadata = {
+    title: "Cardiovascular Solutions – Advanced Devices",
+    description:
+      "Comprehensive cardiovascular solutions to enhance patient outcomes in surgical care.",
+    img: "cardiovascular-solutions.png",
+    alt: "Cardiovascular Solutions – Advanced Devices",
+    slug: "cardiovascular-solutions",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
 
   fadeUp();
 
   return (
     <>
-      <NextSeo
-        title="Cardiovascular Solutions – Advanced Devices"
-        description="Comprehensive cardiovascular solutions to enhance patient
-outcomes in surgical care."
-        openGraph={{
-          title: "Cardiovascular Solutions – Advanced Devices",
-          description:
-            "Comprehensive cardiovascular solutions to enhance patient outcomes in surgical care.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/cardiovascular-solutions.png",
-              width: 1915,
-              height: 948,
-              alt: "Cardiovascular Solutions – Advanced Devices",
-            },
-          ],
-        }}
-      />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

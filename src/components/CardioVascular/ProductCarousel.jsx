@@ -48,12 +48,13 @@ const ProductCarousel = () => {
       description3 : "",
     } ,
     {
-      title: "ADVANOVA",
-      para: "Monofilament Polyamide Blue (Treated)",
-      imageSrc: "/assets/cardioVascular/advanova.png",
+      src: "/ligation-solutions",
+      title: "ADVACLIP",
+      para: "Titanium Ligation Clip",
+      imageSrc: "/assets/cardioVascular/advaclip.png",
       description1: "Engineered to cater the specialized demands of intricate cardiac procedures.",
-      description2:" Ensures structural integrity within calcified tissues.",
-      description3 : "ADVAPASS & ADVAPOINT needles",
+      description2: "Ensures structural integrity within calcified tissues.",
+      description3: "ADVAPASS & ADVAPOINT needles",
     },
          
   ];
@@ -61,19 +62,17 @@ const ProductCarousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const swiperRef = useRef(null);
 
-  const [activeButton, setActiveButton] = useState("");
-
   const handleNext = () => {
     if (swiperRef.current) {
       swiperRef.current.slideNext();
-      setActiveButton("next");
+      
     }
   };
 
   const handlePrev = () => {
     if (swiperRef.current) {
       swiperRef.current.slidePrev();
-      setActiveButton("prev");
+      
     }
   };
   const handleSlideChange = (swiper) => {
@@ -118,8 +117,8 @@ const ProductCarousel = () => {
 
 
   return (
-    <section id="productCarousel" className="relative w-screen h-[110vh] overflow-hidden  mobile:h-[110vh] mobile:py-[15%] bg-white/30 py-[10vw] mt-[7%]  mobile:mb-[15%] tablet:h-[100vh] mobile:mt-0 ">
-      <div className="w-full h-full flex items-center justify-between pl-[5vw] mobile:flex-col-reverse tablet:flex-col-reverse mobile:pl-0">
+    <section id="productCarousel" className="relative w-screen overflow-hidden  mobile:h-[240vw] mobile:py-[10%] bg-white/30 mt-[7%]  mobile:mb-[15%] tablet:h-[100vh] mobile:mt-0 ">
+      <div className="w-full h-full flex items-center justify-end pl-[5vw] mobile:gap-[25vw] mobile:flex-col-reverse tablet:flex-col-reverse mobile:pl-0">
         <div className="w-[50%] mobile:w-full mobile:h-fit tablet:w-full tablet:h-[50vh]">
           <div className="mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
             <h2 className="title-2 aeonik mobile:text-center mobile:ml-0 mobile:px-[5vw] ">
@@ -142,7 +141,7 @@ const ProductCarousel = () => {
             </p>
           </div>
         </div>
-        <div className="w-[50vw] h-[110%] overflow-hidden mobile:w-full mobile:h-[40%] tablet:mt-[10%] tablet:w-full">
+        <div className="w-[50vw] h-[50%] overflow-hidden mobile:w-full mobile:h-[40%] tablet:mt-[10%] tablet:w-full">
           <Swiper
             ref={swiperRef}
             spaceBetween={20}
@@ -168,62 +167,40 @@ const ProductCarousel = () => {
           >
             {slidesData.map((slide, index) => (
               <SwiperSlide key={index}>
-                <div className="absolute w-[40vw] h-[12vw] z-[10] mobile:h-[80vw] mobile:w-[100vw] tablet:w-[90vw] tablet:h-[55vw]">
+                <div className="absolute w-[40vw] h-[12vw] z-[10] mobile:h-[80vw] mobile:w-[90vw] left-[5%] tablet:w-[90vw] tablet:h-[55vw] tablet:left-0">
                   <Image src={slide.imageSrc} alt={slide.title} fill className="mobile:object-contain tablet:object-contain"/>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
           <div
-            className={`px-[1.6vw] py-[1.6vw] absolute z-[5] bottom-[30%] right-[30%] mobile:top-[40%] mobile:right-auto mobile:left-[62%] translate-x-[-65%] mobile:bottom-auto tablet:top-auto tablet:bottom-[35%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50 tablet:right-0 
-                ${
-                  activeButton === "next"
-                    ? " text-white"
-                    : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
-            onClick={handleNext} // Trigger next slide
+            className={`px-[1.2vw] py-[1.2vw] absolute z-[5] mobile:top-[38%] mobile:right-auto mobile:left-[64%] translate-x-[-65%] tablet:top-[58%] tablet:right-[2%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+            onClick={handleNext}
           >
             <span
-              className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
-                activeButton === "next"
-                  ? "scale-100 opacity-100 "
-                  : "scale-0 opacity-50"
-              } transition-all duration-300`}
-            ></span>
-            <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+              className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+            />
+            <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
               <Image
                 src="/assets/home/arrow-right.png"
                 alt="arrow-right"
-                className={`object-cover group-hover:invert transition-all duration-300 ${
-                  activeButton === "next" ? "invert" : "invert-0"
-                } `}
+                className={`object-cover group-hover:invert duration-300`}
                 fill
               />
             </div>
           </div>
           <div
-            className={`px-[1.6vw] py-[1.6vw] top-[25%] right-[32%] absolute z-[5] mobile:bottom-auto mobile:right-auto mobile:top-[40%] mobile:left-[39%] translate-x-[-38%]  tablet:top-auto tablet:bottom-[35%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white tablet:right-[10%]
-                ${
-                  activeButton === "prev"
-                    ? " text-white"
-                    : "bg-transparent text-[#111111]"
-                } transition-colors duration-300`} // Added background color transition
-            onClick={handlePrev} // Trigger previous slide
+            className={`px-[1.2vw] py-[1.2vw]  absolute z-[5] mobile:top-[38%] mobile:left-[40%] translate-x-[-38%]  tablet:top-[58%] tablet:right-[13%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
+            onClick={handlePrev}
           >
             <span
-              className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 group-hover:opacity-100 ${
-                activeButton === "prev"
-                  ? "scale-100 opacity-100"
-                  : "scale-0 opacity-50"
-              } transition-all duration-300`}
-            ></span>
-            <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+              className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+            />
+            <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
               <Image
                 src="/assets/home/arrow-left.png"
                 alt="arrow-left"
-                className={`object-cover group-hover:invert transition-all duration-300 ${
-                  activeButton === "prev" ? "invert" : "invert-0"
-                } `}
+                className={`object-cover group-hover:invert duration-300 rotate-180`}
                 fill
               />
             </div>

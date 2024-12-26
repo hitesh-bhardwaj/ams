@@ -8,31 +8,26 @@ import SpecificationsManifold from "@/components/Accessories/SpecificationsManif
 import Layout from "@/components/Layout";
 import React from "react";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const accessories = () => {
+  const metadata = {
+    title: "Accessories – Supporting Surgical Solutions",
+    description: "Explore essential surgical accessories designed to enhance precision and efficiency during procedures.",
+    img: "accessories.png",
+    alt:"Accessories – Supporting Surgical Solutions",
+    slug: "accessories",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  }
+
   fadeUp();
   paraAnim();
   return (
     <>
-      <NextSeo
-        title="Accessories – Supporting Surgical Solutions"
-        description="Explore essential surgical accessories designed to enhance
-precision and efficiency during procedures."
-        openGraph={{
-          title: "Accessories – Supporting Surgical Solutions",
-          description:
-            "Explore essential surgical accessories designed to enhance precision and efficiency during procedures.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/accessories.png",
-              width: 1918,
-              height: 948,
-              alt: "Accessories – Supporting Surgical Solutions",
-            },
-          ],
-        }}
-      />
+    <MetaData metadata={metadata}/>
+    <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

@@ -10,7 +10,8 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -81,28 +82,22 @@ const cardData = [
   },
 ];
 const advacrylrapid = () => {
+  const metadata = {
+    title: "Advacryl Rapid – Fast Absorption Surgical Suture",
+    description:
+      "Advacryl Rapid offers quick absorption for short-term wound closure needs with high reliability.",
+    img: "advacryl-rapid.png",
+    alt: "Advacryl Rapid – Fast Absorption Surgical Suture",
+    slug: "advacryl-rapid",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-     <NextSeo
-            title="Advacryl Rapid – Fast Absorption Surgical Suture"
-            description="Advacryl Rapid offers quick absorption for short-term wound
-closure needs with high reliability."
-            openGraph={{
-              title: "Advacryl Rapid – Fast Absorption Surgical Suture",
-              description:
-                "Advacryl Rapid offers quick absorption for short-term wound closure needs with high reliability.",
-              images: [
-                {
-                  url: "https://amsdev01.vercel.app/assets/seo/advacryl-rapid.png",
-                  width: 1915,
-                  height: 948,
-                  alt: "Advacryl Rapid – Fast Absorption Surgical Suture",
-                },
-              ],
-            }}
-          />
+    <MetaData metadata={metadata}/>
+    <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

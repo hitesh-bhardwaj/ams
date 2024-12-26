@@ -5,7 +5,8 @@ import PoweredlcSpecifications from "@/components/PoweredLC/PoweredlcSpecificati
 import SurgicalOutcomes from "@/components/SurgicalOutcomes";
 import React from "react";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const surgicalData = [
   {
@@ -40,28 +41,22 @@ const surgicalData = [
   },
 ];
 const poweredlc = () => {
+  const metadata = {
+    title: "Powered LC – Advanced Surgical Stapler",
+    description:
+      "Experience enhanced control and efficiency with Powered LC, an advanced surgical stapler.",
+    img: "poweredlc.png",
+    alt: "Powered LC – Advanced Surgical Stapler",
+    slug: "poweredlc",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
   return (
     <>
-      <NextSeo
-        title="Powered LC – Advanced Surgical Stapler"
-        description="Experience enhanced control and efficiency with Powered LC, an
-advanced surgical stapler."
-        openGraph={{
-          title: "Powered LC – Advanced Surgical Stapler",
-          description:
-            "Experience enhanced control and efficiency with Powered LC, an advanced surgical stapler.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/poweredlc.png",
-              width: 1918,
-              height: 948,
-              alt: "Powered LC – Advanced Surgical Stapler",
-            },
-          ],
-        }}
-      />
+    <MetaData metadata={metadata}/>
+    <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

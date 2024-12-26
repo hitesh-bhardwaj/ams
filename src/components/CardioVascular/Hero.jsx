@@ -25,6 +25,7 @@ const Hero = () => {
                         poster="/assets/cardioVascular/cv-video-frame.webp"
                     />
                 </div>
+                
                 <div className="px-[12%] relative mobile:px-[5%]">
                     <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[80vh] mobile:justify-start mobile:pt-[35vw]">
                         <div className="w-[80%] mobile:w-full tablet:w-full">

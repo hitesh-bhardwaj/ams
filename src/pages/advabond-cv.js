@@ -10,7 +10,8 @@ import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import UncoverCV from "@/components/Products/UncoverCV";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -85,28 +86,22 @@ const cardData = [
 ];
 
 const advabondcv = () => {
+  const metadata = {
+    title: "Advabond CV – Skin Adhesive for Cardiovascular Use",
+    description: "Advabond CV offers secure and efficient skin adhesive solutions for cardiovascular surgeries.",
+    img: "advabond-cv.png",
+    alt:"Advabond CV – Skin Adhesive for Cardiovascular Use",
+    slug: "advabond-cv",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  }
+
   fadeUp();
 
   return (
     <>
- <NextSeo
-        title="Advabond CV – Skin Adhesive for Cardiovascular Use"
-        description="Advabond CV offers secure and efficient skin adhesive solutions
-for cardiovascular surgeries."
-        openGraph={{
-          title: "Advabond CV – Skin Adhesive for Cardiovascular Use",
-          description:
-            "Advabond CV offers secure and efficient skin adhesive solutions for cardiovascular surgeries.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advabond-cv.png",
-              width: 1918,
-              height: 948,
-              alt: "Advabond CV – Skin Adhesive for Cardiovascular Use",
-            },
-          ],
-        }}
-      />
+     <MetaData metadata={metadata} />
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

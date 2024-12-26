@@ -10,7 +10,8 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -81,28 +82,22 @@ const cardData = [
 ];
 
 const advapd = () => {
+  const metadata = {
+    title: "Advapd – Polydioxanone Absorbable Suture",
+    description:
+      "Long-term absorbable suture, Advapd ensures superior tensile strength and surgical reliability.",
+    img: "advapd.png",
+    alt: "Advapd – Polydioxanone Absorbable Suture",
+    slug: "advapd",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-      <NextSeo
-        title="Advapd – Polydioxanone Absorbable Suture"
-        description="Long-term absorbable suture, Advapd ensures superior tensile
-strength and surgical reliability."
-        openGraph={{
-          title: "Advapd – Polydioxanone Absorbable Suture",
-          description:
-            "Long-term absorbable suture, Advapd ensures superior tensile strength and surgical reliability.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advapd.png",
-              width: 1918,
-              height: 948,
-              alt: "Advapd – Polydioxanone Absorbable Suture",
-            },
-          ],
-        }}
-      />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

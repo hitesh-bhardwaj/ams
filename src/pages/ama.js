@@ -11,11 +11,22 @@ import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { Media } from "@/components/media";
 import CardiacCare from "@/components/Ama/CardiacCare";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ama() {
+  const metadata = {
+    title: "AMA – Association of Medical Advancements",
+    description:
+      "AMA fosters medical advancements through collaboration and innovation in healthcare technologies.",
+    img: "ama.png",
+    alt: "AMA – Association of Medical Advancements",
+    slug: "ama",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   const content = {
     heading: "Advancing the Way We Learn",
     smallpara: "Nestled within the state-of-the-art AMS manufacturing facility in Vadodara, Advanced Medtech Academy (AMA) is a beacon for advancing healthcare education. With a sprawling world-class infrastructure spanning 20,000 sq. ft., AMA is dedicated to empowering healthcare professionals through advanced simulation and academic training. We believe that skillful hands and confident minds are the foundation for improving patient outcomes and transforming lives.",
@@ -55,22 +66,8 @@ export default function ama() {
 
   return (
     <>
-     <NextSeo
-              title="AMA – Association of Medical Advancements"
-              description="AMA fosters medical advancements through collaboration and
-innovation in healthcare technologies."
-              openGraph={{
-                title: "AMA – Association of Medical Advancements",
-                description: "AMA fosters medical advancements through collaboration and innovation in healthcare technologies.",
-                images: [
-                  {
-                    url: "https://amsdev01.vercel.app/assets/seo/ama.png",
-                    width: 1915,
-                    height: 948,
-                    alt: "AMA – Association of Medical Advancements",
-                  },
-                ],
-              }}/>
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
 
       <Layout>
         <main>

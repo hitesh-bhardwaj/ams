@@ -10,7 +10,8 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const EdgeCard = {
   card1: {
@@ -82,28 +83,23 @@ const cardData = [
 ];
 
 const advacrylplus = () => {
+  const metadata = {
+    title: "Advacryl Plus – Antibacterial Polyglactin Suture",
+    description:
+      "Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to reduce surgical site infections.",
+    img: "advacrylplus.png",
+    alt: "Advacryl Plus – Antibacterial Polyglactin Suture",
+    slug: "advacrylplus",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-      <NextSeo
-        title="Advacryl Plus – Antibacterial Polyglactin Suture"
-        description="Explore Advacryl Plus, a Triclosan-coated antibacterial suture
-designed to reduce surgical site infections."
-        openGraph={{
-          title: "Advacryl Plus – Antibacterial Polyglactin Suture",
-          description:
-            "Explore Advacryl Plus, a Triclosan-coated antibacterial suture designed to reduce surgical site infections.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/advacrylplus.png",
-              width: 1918,
-              height: 948,
-              alt: "Advacryl Plus – Antibacterial Polyglactin Suture",
-            },
-          ],
-        }}
-      />
+
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

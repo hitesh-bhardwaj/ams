@@ -9,7 +9,8 @@ import { fadeUp, paraAnim } from '@/components/gsapAnimations'
 import { Media } from '@/components/media'
 import Leadership from '@/components/About/Leadership'
 import BgVideo from '@/components/Layout/BgVideo'
-import { NextSeo } from 'next-seo'
+import MetaData from '@/components/Metadata'
+import { WebpageJsonLd } from '@/lib/json-ld'
 
 export default function about() {
 
@@ -19,28 +20,23 @@ export default function about() {
     bigpara: "The desire to make a difference in patients' lives led to the creation of Advanced MedTech Solutions. Our relentless pursuit of excellence drives us to transform patient care worldwide.",
     src: "/assets/about/genesis.png"
   }
+  const metadata = {
+    title: "About Us – Advanced MedTech Solutions",
+    description: "Learn about Advanced MedTech Solutions mission to make quality healthcare affordable and accessible globally.",
+    img: "about.png",
+    alt:"About Us – Advanced MedTech Solutions",
+    slug: "about",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  }
 
   fadeUp();
   paraAnim();
 
   return (
     <>
-    <NextSeo 
-    title='About Us – Advanced MedTech Solutions'
-    description='Learn about Advanced MedTech Solutions mission to make quality healthcare affordable and accessible globally.'
-    openGraph={{
-      title: "About Us – Advanced MedTech Solutions",
-      description: "'Learn about Advanced MedTech Solutions mission to make quality healthcare affordable and accessible globally.",
-      images: [
-        {
-          url: "https://amsdev01.vercel.app/assets/seo/about.png",
-          width: 1909,
-          height: 949,
-          alt: "About Us – Advanced MedTech Solutions",
-        },
-      ],
-    }}
-    />
+   <MetaData metadata={metadata}/>
+   <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero />

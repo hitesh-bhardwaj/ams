@@ -13,6 +13,8 @@ import Hero from "@/components/IC/Hero";
 import ICProducts from "@/components/IC/ICProducts";
 import BgVideo from "@/components/Layout/BgVideo";
 import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,29 +48,23 @@ export default function ic() {
       para: "AMS delivers interventional cardiology solutions built on unmatched production excellence, pioneering technology, and relentless innovation, driving pathbreaking advancements in cardiac care.",
     },
   ];
+  const metadata = {
+    title: "Interventional Cardiology Solutions",
+    description:
+      "Innovative devices for minimally invasive interventional cardiology procedures.",
+    img: "interventional-cardiology.png",
+    alt: "Interventional Cardiology Solutions",
+    slug: "interventional-cardiology",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
   paraAnim();
 
   return (
     <>
-      <NextSeo
-            title="Interventional Cardiology Solutions"
-            description="Innovative devices for minimally invasive interventional
-cardiology procedures."
-            openGraph={{
-              title: "Interventional Cardiology Solutions",
-              description:
-                "Innovative devices for minimally invasive interventional cardiology procedures.",
-              images: [
-                {
-                  url: "https://amsdev01.vercel.app/assets/seo/interventional-cardiology.png",
-                  width: 1915,
-                  height: 948,
-                  alt: "Interventional Cardiology Solutions",
-                },
-              ],
-            }}
-          />
+      <MetaData metadata={metadata}/>
+      <WebpageJsonLd metadata={metadata}/>
 
       <Layout>
         <main>

@@ -9,6 +9,8 @@ import UmbilicalTape from "@/components/AdvabondTape/UmbilicalTape";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { NextSeo } from "next-seo";
+import MetaData from "@/components/Metadata";
+import { WebpageJsonLd } from "@/lib/json-ld";
 
 const cardData1 = [
   {
@@ -85,28 +87,22 @@ const cardData2 = [
   },
 ];
 const bondtape = () => {
+  const metadata = {
+    title: "Bondtape – Surgical Skin Adhesive Tape",
+    description:
+      "Bondtape ensures secure wound closure with flexible adhesive tape for optimal patient comfort.",
+    img: "bondtape.png",
+    alt: "Bondtape – Surgical Skin Adhesive Tape",
+    slug: "bondtape",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   fadeUp();
 
   return (
     <>
-<NextSeo
-        title="Bondtape – Surgical Skin Adhesive Tape"
-        description="Bondtape ensures secure wound closure with flexible adhesive
-tape for optimal patient comfort."
-        openGraph={{
-          title: "Bondtape – Surgical Skin Adhesive Tape",
-          description:
-            "Bondtape ensures secure wound closure with flexible adhesive tape for optimal patient comfort.",
-          images: [
-            {
-              url: "https://amsdev01.vercel.app/assets/seo/bondatpe.png",
-              width: 1918,
-              height: 948,
-              alt: "Bondtape – Surgical Skin Adhesive Tape",
-            },
-          ],
-        }}
-      />
+<MetaData metadata={metadata}/>
+<WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero

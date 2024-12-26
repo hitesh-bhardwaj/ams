@@ -1,16 +1,26 @@
 import Portfolio from "@/components/Endo/Portfolio";
-
 import Layout from "@/components/Layout";
 import BgVideo from "@/components/Layout/BgVideo";
 import Genesis from "@/components/layoutComponents/Genesis";
 import { Media } from "@/components/media";
+import MetaData from "@/components/Metadata";
 import Hero from "@/components/Woundclosure/Hero";
 import SutureCarouselFirst from "@/components/Woundclosure/SutureCarouselFirst";
 import SutureCarouselSecond from "@/components/Woundclosure/SutureCarouselSecond";
-import { NextSeo } from "next-seo";
+import { WebpageJsonLd } from "@/lib/json-ld";
 import React from "react";
 
 const woundClosure = () => {
+  const metadata = {
+    title: "Wound Care – Advanced Healing Solutions",
+    description:
+      "Explore wound care products designed to support effective healing and patient comfort.",
+    img: "wound-care.png",
+    alt: "Wound Care – Advanced Healing Solutions",
+    slug: "wound-care",
+    date_published: "2020-01-01T00:00",
+    date_modified: "2024-12-26T12:32",
+  };
   const content = {
     heading: "Seal of Confidence",
     smallpara:
@@ -21,24 +31,8 @@ const woundClosure = () => {
   };
   return (
     <>
-     <NextSeo
-                title="Wound Care – Advanced Healing Solutions"
-                description="Explore wound care products designed to support effective
-healing and patient comfort."
-                openGraph={{
-                  title: "Wound Care – Advanced Healing Solutions",
-                  description:
-                    "Explore wound care products designed to support effective healing and patient comfort.",
-                  images: [
-                    {
-                      url: "https://amsdev01.vercel.app/assets/seo/wound-care.png",
-                      width: 1915,
-                      height: 948,
-                      alt: "Wound Care – Advanced Healing Solutions",
-                    },
-                  ],
-                }}
-              />
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
           <Hero/>
