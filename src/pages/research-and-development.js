@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
-import Innovation from "@/components/Rnd/Innovation";
+// import Innovation from "@/components/Rnd/Innovation";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
@@ -84,7 +84,7 @@ in medical technologies."
           />
           <Genesis content={content} />
           <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"w-[35%] tablet:w-[50%]"} />
-          <Innovation />
+          {/* <Innovation /> */}
           <Discover />
           <Portfolio sectionheading={"Our Advanced Portfolio"} />
         </main>
