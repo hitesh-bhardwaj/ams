@@ -1,7 +1,6 @@
 import Hero from "@/components/BlogDetail/Hero";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
-import { NextSeo } from "next-seo";
 import Image from "next/image";
 import React from "react";
 
@@ -10,22 +9,19 @@ const arabhealth = () => {
   paraAnim();
   return (
     <>
-      <NextSeo
-               title="Arab Health"
-               description="Reimagining Health, Redefining Care: AMS at Arab Health 2025"
-               />
       <Layout>
         <main>
-          <Hero img={"/assets/blogs/news2.png"} title={" Reimagining Health, Redefining Care"} tagline={" Arab Health 2025"} width={"w-[60%]"}/>
+          <Hero img={"/assets/blogs/news2.png"} dark={"dark"}/>
           <section id="blog-content" className="w-screen h-full py-[5vw] mobile:py-[10vw]">
             <div className="container-lg mobile:px-[5vw]">
             <h2
-              data-para-anim
-              className="text-[2.5vw] font-light leading-[1.2] text-[#1a1a1a] aeonik  mobile:text-[6.5vw]  mobile:py-[3vw] tablet:text-[3.5vw]"
+              className="text-[3.2vw] font-light  leading-[1.2] text-[#1a1a1a] aeonik flex justify-center   text-center mobile:text-[7.2vw]  mobile:py-[3vw] tablet:text-[4vw]"
             >
-              Reimagining Health, Redefining Care: AMS at Arab Health 2025
+                <span data-para-anim className="w-[60%] tablet:w-[80%] mobile:w-[90%]">
+                Reimagining Health, Redefining Care: AMS at Arab Health 2025
+                </span>
             </h2>
-            <div className="py-[1vw] mobile:py-[5vw] fadeUp">
+            <div className="py-[1vw] pt-[3vw] mobile:py-[5vw] fadeUp">
               <p className="content-p py-[1vw]  mobile:py-[3vw]">As we embark on a journey to reshape the future of healthcare, Advanced MedTech Solutions (AMS) is proud to announce its participation in<span className="font-normal"> Arab Health 2025 </span>—the leading healthcare exhibition in the Middle East. This prestigious event will take place from <span className="font-normal">27th to 30th January 2025</span> at the <span className="font-normal">Dubai World Trade Center </span>, and we are thrilled to invite you to be part of this transformative experience.</p>
               <p className="content-p py-[1vw]  mobile:py-[3vw]">At AMS, innovation is at the heart of everything we do. Our dedication to advancing the science of surgery and cardiovascular care drives us to create groundbreaking solutions that empower healthcare professionals worldwide. Arab Health 2025 offers a unique platform to connect, collaborate, and showcase our cutting-edge technologies that are transforming lives across the globe.</p>
             </div>

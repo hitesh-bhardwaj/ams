@@ -79,6 +79,7 @@ export default function ama() {
             titleWidth={"!w-[100%]"}
             paraWidth={"max-w-[38vw]"}
             mode={"dark"}
+            textShadow={"text-shadow"}
           />
           <Genesis content={content} />
           <CardiacCare />

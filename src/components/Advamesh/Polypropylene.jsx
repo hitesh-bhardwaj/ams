@@ -5,7 +5,7 @@ const Polypropylene = () => {
   return (
     <section
         className="overflow-hidden mobile:py-[15%] relative py-[3%] tablet:py-[10%] bg-white/50"
-        id="polypropylene-mes"
+        id="polypropylene-mesh"
       >
         <div className="w-screen h-[65vw] container-lg z-[5] mobile:h-full tablet:h-full">
           <div className="w-full h-full flex flex-col items-center justify-center pb-[5vw] tablet:justify-start mobile:justify-start ">

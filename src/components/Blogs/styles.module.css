@@ -12,4 +12,22 @@
   left: 50%;
   margin-top: 5vw !important;
 }
+@media screen and (max-width: 541px) {
+.newsSwiper :global(.swiper-slide){
+  height: 80%;
+  width: 80%;
+}
+.newsSwiper :global(.swiper-scrollbar){
+  top:90%;
+}
+}
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+.newsSwiper :global(.swiper-slide){
+  height: 85%;
+}
+.newsSwiper :global(.swiper-wrapper){
+  padding-bottom: 8vw;
+}
+
+}
 

@@ -1,15 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import CSectionSpecifications from "@/components/Advakit/CSectionSpecifications";
+import AdvakitSpecifications from "@/components/Advakit/AdvakitSpecifications";
 import Hernia from "@/components/Advakit/Hernia";
-import HerniaSpecifications from "@/components/Advakit/HerniaSpecifications";
 import Hero from "@/components/Advakit/Hero";
 import Ortho from "@/components/Advakit/Ortho";
-import OrthoSpecifications from "@/components/Advakit/OrthoSpecifications";
 import Layout from "@/components/Layout";
 import MetaData from "@/components/Metadata";
-import { fadeUp , paraAnim } from "@/components/gsapAnimations";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { WebpageJsonLd } from "@/lib/json-ld";
-
 
 const advakit = () => {
   const metadata = {
@@ -26,16 +23,33 @@ const advakit = () => {
   paraAnim();
   return (
     <>
-   <MetaData metadata={metadata}/>
-   <WebpageJsonLd metadata={metadata}/>
+     <MetaData metadata={metadata}/>
+     <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
-           <Hero/>
-            <CSectionSpecifications/>
-            <Ortho/>
-            <OrthoSpecifications/>
-            <Hernia/>
-            <HerniaSpecifications/>
+          <Hero />
+          <AdvakitSpecifications
+            textclass={"reloads-text"}
+            bgimg={"/assets/endolc/specifications-bg.png"}
+            heading={"Specification"}
+            color={"#FB4BCC"}
+            link={"/advakit-csection.pdf"}
+          />
+          <Ortho />
+         <AdvakitSpecifications
+           textclass={"reloads-text"}
+           bgimg={"/assets/endolc/specifications-bg.png"}
+           heading={"Specification"}
+           color={"#FB4BCC"}
+           link={"/advakit-ortho.pdf"}/>
+          <Hernia />
+          <AdvakitSpecifications
+            textclass={"reloads-text"}
+            bgimg={"/assets/endolc/specifications-bg.png"}
+            heading={"Specification"}
+            color={"#FB4BCC"}
+            link={"/advakit-hernia.pdf"}
+          />
         </main>
       </Layout>
     </>

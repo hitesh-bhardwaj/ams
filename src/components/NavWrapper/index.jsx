@@ -103,6 +103,9 @@ function MainNav({ onSelectMenu }) {
                 </button>
             </li>
             <li>
+                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/ama"} linkText="Advanced MedTech Academy" />
+            </li>
+            <li>
                 <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/career"} linkText="Career" />
             </li>
             <li>
@@ -111,9 +114,7 @@ function MainNav({ onSelectMenu }) {
             <li>
                 <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/contact-us"} linkText="Contact" />
             </li>
-            <li>
-                <NavLink className='text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[5.5vw]' href={"/ama"} linkText="Advanced MedTech Academy" />
-            </li>
+           
         </ul>
     );
 }

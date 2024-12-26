@@ -151,7 +151,6 @@
       z-index: 1;
       background-image: linear-gradient(to right, #9E7BDF, #ac26b0, #1e40af);
       background-size: 400%;
-      
       color: white;
       transition: all 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }

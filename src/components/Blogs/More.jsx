@@ -35,9 +35,9 @@ const BlogCard = ({ para, title, img, link, innertitle, large }) => (
               src={img}
               fill
               alt="blog image"
-              className="object-cover scale-[1.1] group-hover:scale-[1.1] transition-transform duration-500 ease-in-out group-hover:blur-sm"
+              className="object-cover scale-[1.1] group-hover:scale-[1.1] transition-transform duration-500 ease-in-out group-hover:blur-sm mobile:group-hover:blur-0"
           />
-          <div className="absolute inset-0 flex flex-col items-start justify-center z-[10] opacity-0 px-[5%] group-hover:opacity-100 transition-opacity duration-500 ease bg-black/40">
+          <div className="absolute inset-0 flex flex-col items-start justify-center z-[10] opacity-0 px-[5%] group-hover:opacity-100 transition-opacity duration-500 ease bg-black/40 mobile:hidden">
               <p
                   data-para-anim
                   className={`py-[0.5vw] text-white font-light ${
@@ -55,8 +55,8 @@ const BlogCard = ({ para, title, img, link, innertitle, large }) => (
               </p>
           </div>
       </div>
-      <div className="w-full mt-[1vw] px-[3%] z-[50]">
-          <p className="leading-[1.2] text-[1.25vw] text-[#111111] font-light aeonik">
+      <div className="w-full mt-[1vw] px-[3%] z-[50] mobile:mt-[3vw]">
+          <p className="leading-[1.2] text-[1.25vw] text-[#111111] font-light aeonik mobile:text-[6vw] tablet:text-[4vw]">
               {title}
               <span className="inline-block ml-[0.5vw]">
                   <Image
@@ -64,6 +64,7 @@ const BlogCard = ({ para, title, img, link, innertitle, large }) => (
                       alt="arrow"
                       height={10}
                       width={10}
+                      className="mobile:h-[3.5vw] mobile:w-[3.5vw] mobile:ml-[1vw] tablet:h-[2vw] tablet:w-[2vw]"
                   />
               </span>
           </p>
@@ -77,30 +78,30 @@ const More = () => {
   return (
       <section
           id="more"
-          className="pb-[5%] relative overflow-hidden w-screen h-full mobile:pb-[30%] mobile:pt-[15vw]"
+          className="pb-[5%] relative overflow-hidden w-screen h-full mobile:pb-[20%] mobile:pt-[15vw] mobile:h-full tablet:pb-[10%]"
       >
-          <div className="w-full px-[4%]">
+          <div className="w-full px-[4%] tablet:px-[8%]">
               <div className="text-center flex flex-col items-center">
                   <h2
                       data-para-anim
-                      className="text-[2.7vw] font-light leading-[1.2] aeonik capitalize"
+                      className="text-[2.7vw] font-light leading-[1.2] aeonik capitalize mobile:text-[8vw] tablet:text-[5vw]"
                   >
                       More from ams
                   </h2>
               </div>
-              <div className="w-full h-[50vw] py-[3vw] grid grid-cols-12 row-span-2 space-x-[2vw] gap-y-[5vw]">
-                  <div className="col-span-9 col-start-1 row-span-2 row-start-1">
+              <div className="w-full h-[50vw] py-[3vw] grid grid-cols-12 row-span-2 space-x-[2vw] gap-y-[5vw] mobile:h-full mobile:flex mobile:flex-col mobile:space-y-[18vw] tablet:h-full tablet:flex tablet:flex-col tablet:space-y-[8vw]">
+                  <div className="col-span-9 col-start-1 row-span-2 row-start-1 mobile:h-[35vh] mobile:py-[5vw] tablet:h-[50vw] tablet:py-[3vw]">
                       <BlogCard {...blogCardData[0]} large={true} />
                   </div>
-                  <div className="col-span-3 col-start-10 row-start-1 row-span-1">
+                  <div className="col-span-3 col-start-10 row-start-1 row-span-1 mobile:h-[35vh] mobile:py-[5vw] tablet:h-[50vw] tablet:py-[3vw]">
                       <BlogCard {...blogCardData[1]} large={false} />
                   </div>
-                  <div className="col-span-3 col-start-10 row-start-2 row-span-1">
+                  <div className="col-span-3 col-start-10 row-start-2 row-span-1 mobile:h-[35vh] mobile:py-[5vw] tablet:h-[50vw] tablet:py-[3vw]">
                       <BlogCard {...blogCardData[2]} large={false} />
                   </div>
               </div>
-              <div className="w-full flex items-center justify-center py-[2vw]">
-                  <LinkButton link={"#"} btnText={"See More"} />
+              <div className="w-full flex items-center justify-center py-[2vw] mobile:mt-[10vw] tablet:mt-[5vw]">
+                  <LinkButton link={"#"} btnText={"See More"} className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}/>
               </div>
           </div>
       </section>

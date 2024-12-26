@@ -63,7 +63,7 @@ const Leadership = () => {
                             {content.map((content, key) => (
                                 <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative tablet:overflow-hidden mobile:overflow-hidden">
                                     <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full mobile:text-[15vw]">{content.name}</p>
-                                    <Image className="absolute w-[60%] top-[-10%] opacity-75 left-1/2 -translate-x-1/2 mobile:w-[100%] mobile:top-0" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={100} priority={false} />
+                                    <Image className="absolute w-[60%] top-[-10%] opacity-75 left-1/2 -translate-x-1/2 mobile:w-[100%] mobile:top-[-20%]" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={100} priority={false} />
                                 </div>
                             ))}
                         </div>

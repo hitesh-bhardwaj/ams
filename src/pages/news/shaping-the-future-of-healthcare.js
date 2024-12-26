@@ -17,9 +17,7 @@ const shaping = () => {
       <Layout>
         <Hero
           img={"/assets/blogs/blog-1.png"}
-          title={"  Shaping the Future of Healthcare "}
-          tagline={"Advanced Surgery & Advanced Cardiovascular"}
-          width={"w-[60%]"}
+          dark={"dark"}
         />
         <section
           id="blog-content"
@@ -28,9 +26,11 @@ const shaping = () => {
           <div className="container-lg mobile:px-[5vw]">
             <h2
               data-para-anim
-              className="text-[2.5vw] font-light leading-[1.2] text-[#1a1a1a] aeonik  mobile:text-[6.5vw]  mobile:py-[3vw] tablet:text-[3.5vw]"
+            className="text-[3.2vw] font-light  leading-[1.2] text-[#1a1a1a] aeonik flex justify-center   text-center mobile:text-[7.2vw]  mobile:py-[3vw] tablet:text-[4vw]"
             >
+              <span data-para-anim className="w-[60%] tablet:w-[80%] mobile:w-[90%]">
               Shaping the Future of Healthcare
+              </span>
             </h2>
             <div className="py-[1vw] mobile:py-[5vw] fadeUp">
               <p className="content-p py-[1vw]  mobile:py-[3vw]">

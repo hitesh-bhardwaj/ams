@@ -16,10 +16,7 @@ const buildingTheFutureOfMedtech = () => {
       />
       <Layout>
         <Hero
-          img={"/assets/blogs/news3.png"}
-          title={"Building for Future of MedTech "}
-          tagline={"Expansion of The AMS Campus"}
-          width={"w-[60%]"}
+          img={"/assets/blogs/news3.png"} dark={"dark"}
         />
         <section
           id="blog-content"
@@ -28,9 +25,12 @@ const buildingTheFutureOfMedtech = () => {
           <div className="container-lg mobile:px-[5vw]">
             <h2
               data-para-anim
-              className="text-[2.5vw] font-light leading-[1.2] text-[#1a1a1a] aeonik  mobile:text-[6.5vw]  mobile:py-[3vw] tablet:text-[3.5vw]"
+              className="text-[3.2vw] font-light  leading-[1.2] text-[#1a1a1a] aeonik flex justify-center   text-center mobile:text-[7.2vw]  mobile:py-[3vw] tablet:text-[4vw]"
             >
+               <span data-para-anim className="w-[60%] tablet:w-[80%] mobile:w-[90%]">
               AMS: Redefining Excellence in MedTech
+              </span>
+
             </h2>
             <div className="py-[1vw] mobile:py-[5vw] fadeUp">
               <p className="content-p py-[1vw]  mobile:py-[3vw]">

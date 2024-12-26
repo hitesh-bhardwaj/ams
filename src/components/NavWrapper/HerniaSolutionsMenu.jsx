@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { NavLink } from './NavLink';
 import { ArrowLeft } from 'lucide-react';
 
+
 export default function HerniaSolutionsMenu({ onBack }) {
   const menuRef = useRef(null);
 
@@ -10,6 +11,7 @@ export default function HerniaSolutionsMenu({ onBack }) {
     const links = menuRef.current.querySelectorAll("li");
     gsap.fromTo(links, { yPercent: 100, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, duration: 0.5, stagger: 0.05 });
   }, []);
+
 
   return (
     <div className="flex gap-5 items-start mobile:pt-[10vw]" ref={menuRef}>
@@ -20,10 +22,10 @@ export default function HerniaSolutionsMenu({ onBack }) {
         <ul className='space-y-[0.2vw] mobile:space-y-1'>
           <li><NavLink href="/hernia" linkText="Hernia Solutions" /></li>
           <li><NavLink href="/advamesh" linkText="ADVAMESH" /></li>
-          <li><NavLink href="/advamesh" linkText="ADVAMESH Medium Weight" /></li>
+          <li><NavLink href="/advamesh" linkText="ADVAMESH Medium Weight"  /></li>
           <li><NavLink href="/advamesh" linkText="ADVAMESH Macroporous" /></li>
         </ul>
       </div>
     </div>
-  );
+  ); 
 }

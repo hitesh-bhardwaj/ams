@@ -1,7 +1,7 @@
 import { ArrowRight, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export function NavLink ({ href, linkText, className="" }) {
+export function NavLink ({ href, linkText, className=""}) {
     return (
         <Link href={href} prefetch={false} className={`text-[1.3vw] fade-in-0 leading-tight text-body tablet:text-[2.3vw] mobile:text-[5vw] overflow-hidden block relative group aeonik font-light ${className}`}>
             <span

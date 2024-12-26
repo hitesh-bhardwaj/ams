@@ -1,10 +1,10 @@
 import Layout from '@/components/Layout'
 import Hero from '@/components/Reloads/Hero'
-import Specifications from '@/components/Reloads/ReloadsSpecifications'
 import Unique from '@/components/Reloads/Unique'
 import Versatility from '@/components/Reloads/Versatility'
 import React from 'react'
 import { fadeUp, paraAnim } from '@/components/gsapAnimations'
+import AdvakitSpecifications from '@/components/Advakit/AdvakitSpecifications'
 import MetaData from '@/components/Metadata'
 import { WebpageJsonLd } from '@/lib/json-ld'
 
@@ -30,7 +30,12 @@ const reloads = () => {
         <Hero/>
         <Versatility/>
         <Unique/>
-        <Specifications/>
+       <AdvakitSpecifications
+        paddingBottom={"!pb-[7vw]"}
+        textclass={"reloads-text"}
+        bgimg={"/assets/endolc/specifications-bg.png"}
+        color={"#FB4BCC"}
+        link={"/advastap-reloads.pdf"}/>
     </main>
   </Layout>
   </>

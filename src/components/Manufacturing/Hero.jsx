@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="px-[10%] relative h-full">
           <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:justify-center">
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50]">
-              <h1 data-para-anim className="title-1 aeonik capitalize !leading-[1.25] mobile:text-[12.5vw] text-[#FFFFFF] w-[90%]" >
+              <h1 data-para-anim className="title-1 aeonik capitalize !leading-[1.25] mobile:text-[12.5vw] text-[#FFFFFF] w-[90%] text-shadow" >
                 Ushering the next generation of medical device technology
               </h1>
               <p data-para-anim className="max-w-[40vw] mt-[4vw] mb-[4vw] !text-white text-[1.45vw] font-light tablet:text-[2.2vw] tablet:max-w-[50vw] mobile:text-[4vw] mobile:max-w-[90vw] mobile:text-center">

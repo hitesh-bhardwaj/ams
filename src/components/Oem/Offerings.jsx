@@ -162,7 +162,8 @@ export default function Offerings() {
                                             </div>
                                         </div>
                                         <div className='absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5'>
-                                            <button onClick={() => openModal(1)} aria-label='open specification modal' className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
+                                            <button className='flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl'>
+                                                <a href='/needle-brochure.pdf'   target='_blank'  className='flex items-center justify-center gap-2'>
                                                 <span className='text'>
                                                     Technical Specification{" "}
                                                 </span>
@@ -170,6 +171,7 @@ export default function Offerings() {
                                                     <path d="M3.01701 48.0165L48.0168 3.01677L3.01701 48.0165ZM48.0168 3.01677L48.0795 46.9876L48.0168 3.01677ZM48.0168 3.01677L4.04596 2.95404L48.0168 3.01677Z" fill="currentColor" />
                                                     <path d="M3.01701 48.0165L48.0168 3.01677M48.0168 3.01677L48.0795 46.9876M48.0168 3.01677L4.04596 2.95404" stroke="currentColor" strokeWidth="5" strokeLinecap="round" stroke-linejoin="round" />
                                                 </svg>
+                                                </a>
                                             </button>
                                         </div>
                                     </div>

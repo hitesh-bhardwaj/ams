@@ -7,69 +7,121 @@ const AdvaGlideSpecifications = () => {
       <Specifications
         textclass={"advastap-text"}
         bgimg={"/assets/advapro/specifications-bg.png"}
-        heading={"Specification"}
+        heading={"Technical Specification"}
         color={"#A883D7"}
       >
-        <div data-lenis-prevent className="w-full text-[1.25vw] font-light py-[3vw] text-[#4A4A4A] overflow-y-auto mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] tablet:py-[5vw] mobile:overflow-x-scroll  mobile:overflow-scroll mobile:mt-[7vw] ">
-          <div className="flex w-full border-b border-[#DADADA] mobile:overflow-x-scroll mobile:w-[160vw]">
-            <div className=" p-[1vw] pb-0 font-light w-[20vw] tablet:w-[20vw] mobile:w-[50vw]"> Product</div>
-            <div className="p-[1vw] pb-0 font-light tablet:w-[60vw] mobile:w-[100vw]">
-              Sterile Absorbable Haemostatic Gelatin Sponge
+       <div data-lenis-prevent className="w-full text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] overflow-y-scroll h-[70vh] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw] tablet:h-fit mobile:overflow-x-scroll mobile:h-fit">
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw]  pb-0 font-light w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Proximal Shaft Diameter
+            </div>
+            <div className="p-[1vw] pb-0 font-light w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            1.9 Fr. (0.63 mm)
             </div>
           </div>
 
-          <div className="flex w-full border-b border-[#DADADA] mobile:w-[160vw]">
-            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[20vw] mobile:w-[50vw]">Order code
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]   tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Distal Shaft Diameter
             </div>
-            <div className=" flex justify-start gap-[10vw] mobile:gap-[20vw] ">
-              <div className="p-[1vw] pb-0 w-[15vw] tablet:w-[25vw] mobile:w-[40vw]">ADVASPG-S
-              </div>
-              <div className="p-[1vw] pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw] "> ADVASPG-R
-              </div>
+
+            <div className="p-[1vw] pb-0  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            2.4 Fr. (0.82 mm)
             </div>
           </div>
 
-          <div className="flex w-full border-b border-[#DADADA] mobile:w-[160vw]">
-            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[20vw] mobile:w-[50vw]">Type</div>
-            <div className=" flex justify-start gap-[10vw] mobile:gap-[20vw]">
-              <div className="p-[1vw]  pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">Standard</div>
-              <div className="p-[1vw] pb-0  w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">Regular</div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Usable Catheter Length
+            </div>
+
+            <div className="p-[1vw] pb-0 w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            140 ± 2 cm
             </div>
           </div>
 
-          <div className="flex w-full border-b border-[#DADADA] mobile:w-[160vw]">
-            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[20vw] mobile:w-[50vw]">Material</div>
-            <div className=" flex justify-start gap-[10vw] mobile:gap-[20vw]">
-              <div className="p-[1vw] pb-0  w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">Purified Gelatin</div>
-              <div className="p-[1vw] pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">Purified Gelatin</div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Shaft Marker
+            </div>
+
+            <div className="p-[1vw] pb-0  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            9 4 ± 2 & 104 ÷ 2 cm
             </div>
           </div>
-          <div className="flex w-full border-b border-[#DADADA] mobile:w-[160vw]">
-            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[20vw] mobile:w-[50vw]">Dimensions</div>
-            <div className=" flex justify-start gap-[10vw] mobile:gap-[20vw] ">
-              <div className="p-[1vw] pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">80 × 50 x 10 mm</div>
-              <div className="p-[1vw]  pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">70 × 50 x 10 mm</div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            X-Ray Markers
+            </div>
+
+            <div className="p-[1vw] pb-0  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            2 Platinum Iridium Markers
             </div>
           </div>
-          <div className="flex w-full border-b border-[#DADADA] mobile:w-[160vw]">
-            <div className=" p-[1vw]  pb-0 w-[20vw] tablet:w-[20vw] mobile:w-[50vw]"> No. of items / pack</div>
-            <div className=" flex justify-start gap-[10vw] mobile:gap-[20vw]">
-              <div className="p-[1vw] pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">2</div>
-              <div className="p-[1vw] pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">2</div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Recommended Guiding Catheter
+            </div>
+
+            <div className="p-[1vw] pb-0  w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            5 Fr./ &quot;Kissing balloon&quot;: 6 Fr.
             </div>
           </div>
-          <div className="flex w-full border-b border-[#DADADA] mobile:w-[160vw]">
-            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[20vw] mobile:w-[50vw]">Sterilization</div>
-            <div className=" flex justify-start gap-[10vw] mobile:gap-[20vw]">
-              <div className="p-[1vw] pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">Gamma Radiation</div>
-              <div className="p-[1vw] pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">Gamma Radiation</div>
+
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Recommended Guide Wire
+            </div>
+
+            <div className="p-[1vw] pb-0 w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            0.014&quot; (0.356 mm)
             </div>
           </div>
-          <div className="flex w-full border-b border-[#DADADA] mobile:w-[160vw]">
-            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[20vw] mobile:w-[50vw]">Shelf life</div>
-            <div className=" flex justify-start gap-[10vw] mobile:gap-[20vw]">
-              <div className="p-[1vw] pb-0 w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">3 Years</div>
-              <div className="p-[1vw] pb-0  w-[15vw]  tablet:w-[25vw] mobile:w-[40vw]">3 Years</div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Balloon Characteristic
+            </div>
+
+            <div className="p-[1vw] pb-0 w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            Semi-Compliant
+            </div>
+          </div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Tip Entry Profile
+            </div>
+
+            <div className="p-[1vw] pb-0 w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            0.016&quot; (0.40 mm)
+            </div>
+          </div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Balloon Crossing Profile
+            </div>
+
+            <div className="p-[1vw] pb-0 w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            0.65 mm - 0.85 mm
+            </div>
+          </div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Balloon Material
+            </div>
+
+            <div className="p-[1vw] pb-0 w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            Polyamide
+            </div>
+          </div>
+          <div className="flex w-full border-b border-[#DADADA] gap-[5vw]  tablet:gap-[8vw] mobile:gap-[15vw] mobile:w-[130vw]">
+            <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[35vw] mobile:w-[70vw]">
+            Average Deflation Time
+            </div>
+
+            <div className="p-[1vw] pb-0 w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
+            3-10 sec
             </div>
           </div>
         </div>
