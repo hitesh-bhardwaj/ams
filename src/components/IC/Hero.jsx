@@ -33,7 +33,7 @@ const Hero = () => {
                                 Advancing the Science of Flow Restoration
                                 </span>
                             </h1>
-                            <p className={` max-w-[36vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[60vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
+                            <p className={` max-w-[36vw] mt-[3vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[60vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
                                 <span data-para-anim className='text-[#FFFFFF] leading-[1.4]  '>
                                 Every heartbeat tells a story of life, and at AMS, we are rewriting those stories with groundbreaking innovations. Our relentless pursuit of excellence is transforming the science of flow restoration, bringing hope and healing to millions affected by cardiovascular diseases.
                                 </span>

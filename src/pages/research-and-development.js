@@ -51,11 +51,11 @@ export default function rnd() {
     },
   ];
   const metadata = {
-    title: "R&amp;D – Innovating Healthcare Technologies",
+    title: "R&D – Innovating Healthcare Technologies",
     description:
       "Driving innovation through extensive research and development in medical technologies.",
     img: "rnd.png",
-    alt: "R&amp;D – Innovating Healthcare Technologies",
+    alt: "R&D – Innovating Healthcare Technologies",
     slug: "research-and-development",
     date_published: "2020-01-01T00:00",
     date_modified: "2024-12-26T12:32",

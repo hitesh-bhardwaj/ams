@@ -80,6 +80,7 @@ export default function ama() {
             paraWidth={"max-w-[38vw]"}
             mode={"dark"}
             textShadow={"text-shadow"}
+            textShadowPara = {'text-shadow-para'}
           />
           <Genesis content={content} />
           <CardiacCare />

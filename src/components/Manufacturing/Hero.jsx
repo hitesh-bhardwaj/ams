@@ -20,7 +20,7 @@ const Hero = () => {
               <h1 data-para-anim className="title-1 aeonik capitalize !leading-[1.25] mobile:text-[12.5vw] text-[#FFFFFF] w-[90%] text-shadow" >
                 Ushering the next generation of medical device technology
               </h1>
-              <p data-para-anim className="max-w-[40vw] mt-[4vw] mb-[4vw] !text-white text-[1.45vw] font-light tablet:text-[2.2vw] tablet:max-w-[50vw] mobile:text-[4vw] mobile:max-w-[90vw] mobile:text-center">
+              <p data-para-anim className="max-w-[40vw] mt-[3vw] mb-[4vw] !text-white text-[1.45vw] font-light tablet:text-[2.2vw] tablet:max-w-[50vw] mobile:text-[4vw] mobile:max-w-[90vw] mobile:text-center text-shadow-para">
                 At AMS, we are pioneering the future of medical device technology, harnessing cutting-edge manufacturing advancements to drive unparalleled quality, innovation, and agility in our processes.
               </p>
             </div>

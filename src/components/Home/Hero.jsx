@@ -67,8 +67,8 @@ export default function Hero() {
             <h1 data-para-anim className="title-1 aeonik capitalize mobile:text-center mobile:text-[15vw] text-[#ffffff] tablet:text-[10vw] text-shadow" >
               Advancing the way we care
             </h1>
-            <p className="font-light max-w-[50vw] text-[1.25vw] text-white mt-[4vw] mb-[7vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[5vw] mobile:mb-[15vw]  tablet:text-[2.5vw] tablet:max-w-[50vw]">
-              <span data-para-anim className="mobile:leading-[1.8]">
+            <p className="font-light max-w-[50vw] text-[1.25vw] text-white mt-[3vw] mb-[7vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[5vw] mobile:mb-[15vw]  tablet:text-[2.5vw] tablet:max-w-[50vw]">
+              <span data-para-anim className="mobile:leading-[1.8] text-shadow-para">
                 AMS is dedicated to advancing healthcare by providing meaningful
                 MedTech solutions, improving lives for patients around the
                 world.
@@ -79,6 +79,7 @@ export default function Hero() {
                 text={"About us"}
                 link={"/about"}
                 className={"secondary  !text-white"}
+                prefetch={false}
               />
             </div>
           </div>

@@ -34,7 +34,7 @@ const Hero = () => {
                                 Advancing the Science of Cardiothoracic Surgery
                                 </span>
                             </h1>
-                            <p className={` max-w-[35vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[80vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
+                            <p className={` max-w-[35vw] mt-[3vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[80vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
                                 <span data-para-anim className='text-[#FFFFFF] leading-[1.4]  '>
                                 At the forefront of cardiac care, we provide leading-edge solutions designed to enhance surgical precision and improve patient outcomes. With our advanced cardiac portfolio, we are setting new standards in the field of cardiothoracic therapy.
                                 </span>

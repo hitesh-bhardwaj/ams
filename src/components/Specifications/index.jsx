@@ -80,7 +80,7 @@ const Specifications = ({ children, heading, textclass, bgimg ,color, paddingBot
               className="fixed  w-screen h-screen top-0 left-0  flex items-center justify-center z-[999] bg-opacity-50 bg-black/80 "
               ref={modalRef}
             >
-              <div className="bg-[#efefef]  border relative  border-white rounded-[2vw] p-[3vw] pt-[4vw] w-[80vw] max-h-[95vh]  mobile:max-h-[95vh] mobile:py-[10vw] mobile:px-[5vw] mobile:w-[95vw] mobile:rounded-[7vw]  tablet:w-[90vw] tablet:max-w-[95vw] tablet:rounded-[3.5vw] tablet:p-[4vw]">
+              <div className="bg-[#efefef]  border relative  border-white rounded-[2vw] p-[3vw] pt-[4vw] w-[80vw] max-h-[95vh]  mobile:max-h-[95vh] mobile:py-[10vw] mobile:px-[5vw] mobile:w-[95vw] mobile:rounded-[7vw]  tablet:w-[90vw] tablet:max-w-[95vw] tablet:rounded-[3.5vw] tablet:p-[4vw] ">
                 <div
                   onClick={closeModal}
                   className="cursor-pointer absolute top-[2vw] right-[2vw] flex items-center justify-center text-white border p-[0.7vw] rounded-full border-[#2a2a2a] h-[2.5vw] w-[2.5vw] mobile:w-[7.5vw] mobile:h-[7.5vw] mobile:p-[2vw] mobile:top-[4vw] mobile:right-[4vw] tablet:h-[6vw] tablet:w-[6vw] tablet:p-[1.5vw]"

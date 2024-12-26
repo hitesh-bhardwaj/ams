@@ -34,7 +34,7 @@ const Hero = () => {
                   Join Our Mission to Create a Healthier World
                 </span>
               </h1>
-              <p className={`max-w-[30vw] mt-[2vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] mobile:text-center`}>
+              <p className={`max-w-[30vw] mt-[3vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] mobile:text-center`}>
                 <span data-para-anim className={`text-[#111111]`}>
                   Be a part of a team making a meaningful difference in healthcare.
                 </span>

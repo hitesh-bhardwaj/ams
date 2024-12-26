@@ -35,25 +35,24 @@ const Hero = () => {
             <div className="">
               <h1
                 data-para-anim
-                className="title-1 aeonik capitalize  leading-[1.25] mobile:text-center"
+                className="title-1 aeonik capitalize  leading-[1.2] mobile:text-center"
               >
-                <span className={`leading-[1.25] overflow-hidden text-black `}>
+                <span className={`leading-[1.2] overflow-hidden text-black `}>
                 The Next Generation 
                 </span>
                 <br />
-                <span className={`leading-[1.25] overflow-hidden text-black `}>
+                <span className={`leading-[1.2] overflow-hidden text-black `}>
                 of Needle Technology
                 </span>
               </h1>
               <h1
-                
                 className="title-1 aeonik   leading-[1] hidden mobile:block tablet:block"
               >
                 <span data-para-anim className={`leading-[1.25] overflow-hidden text-[#FFFFFF] text-center tablet:text-start `}>
                   
                 </span>
               </h1>
-              <p className={` max-w-[50vw] mt-[4vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] mobile:text-center `}>
+              <p className={` max-w-[50vw] mt-[3vw] mb-[4vw] content-p mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] mobile:text-center `}>
                 <span data-para-anim className={`text-black `}>
                 Advanced Needle Technologies uses the finest materials and advanced production processes to develop surgical needles that embody the highest levels of quality and performance.
                 </span>

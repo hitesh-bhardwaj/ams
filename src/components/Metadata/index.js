@@ -24,7 +24,7 @@ export default function MetaData({ metadata }) {
         ],
         siteName: "AMS",
       }}
-      canonical={`${homepage}/${slug}`}
+      canonical={`${homepage}${slug}`}
       languageAlternates={[
         {
           hrefLang: "x-default",

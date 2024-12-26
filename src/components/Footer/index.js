@@ -140,6 +140,7 @@ export default function Footer() {
                   </li>
                   <li className="footer-link">
                     <Link
+                    prefetch={false}
                       className="content-p text-head font-light mobile:text-[5vw] mobile:mx-auto mobile:w-fit"
                       href="/about"
                     >

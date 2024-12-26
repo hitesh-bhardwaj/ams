@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden="" ,mode,titleWidth="", textShadow}) => {
+const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden="" ,mode,titleWidth="", textShadow , textShadowPara}) => {
   return (
     <section className={`hero-container ${mode}`} id="hero">
       <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh]">
@@ -23,7 +23,7 @@ const Hero = ({title ,src, content , titleColor , paraWidth , titleHidden="" ,mo
                  {title}
                 </span>
               </h1>
-              <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[60vw] mobile:my-[7vw] tablet:text-[2.5vw] ${paraWidth}`}>
+              <p className={` max-w-[30vw] mt-[3vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[60vw] mobile:my-[7vw] tablet:text-[2.5vw] ${paraWidth} ${textShadowPara}`}>
                 <span data-para-anim className={`text-[#FFFFFF] leading-[1.4] ${titleColor?"text-black":""}`}>
                   {content}
                 </span>

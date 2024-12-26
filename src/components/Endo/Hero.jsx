@@ -33,7 +33,7 @@ const Hero = () => {
                                     Breaking New Ground in Endo Surgery
                                 </span>
                             </h1>
-                            <p className={` max-w-[32vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
+                            <p className={` max-w-[32vw] mt-[3vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
                                 <span data-para-anim className='text-[#FFFFFF] leading-[1.4]  '>
                                 From advanced surgical stapling solutions to seamless transitions across open and laparoscopic procedures, we deliver unmatched precision and reliability. The future of surgery is here—bold, transformative, and at your fingertips!
                                 </span>

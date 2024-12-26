@@ -33,7 +33,7 @@ const Hero = () => {
                                 Advancing the science of tissue reinforcement
                                 </span>
                             </h1>
-                            <p className={` max-w-[30vw] mt-[4vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
+                            <p className={` max-w-[30vw] mt-[3vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>
                                 <span data-para-anim className='text-[#FFFFFF] leading-[1.4]  '>
                                 Providing surgeons with innovative technologies for hernia repair across open, laparoscopic, and robotic-assisted techniques.
                                 </span>
