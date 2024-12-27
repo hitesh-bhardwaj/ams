@@ -1,11 +1,9 @@
 .swiperSlide{
     position: static;
 }
-
 .swiper :global(.swiper-wrapper) {
     position: static;
 }
-
 .swiper :global(.swiper-slide-active .leaderSwiperContent) {
     pointer-events: all;
     opacity: 1;

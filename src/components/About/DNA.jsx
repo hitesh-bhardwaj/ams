@@ -5,7 +5,7 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 const DNA = () => {
   return (
     <>
-      <section className='dna' id='dna'>
+      <section className='dna overflow-hidden w-screen' id='dna'>
         <div className='mx-auto py-[7%] tablet:py-[15%] mobile:py-[25%]'>
           <div className='mobile:w-full mobile:flex mobile:justify-center'>
             <h2

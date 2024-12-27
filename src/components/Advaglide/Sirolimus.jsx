@@ -16,7 +16,7 @@ const Sirolimus = () => {
             <PrimaryButton text={"See More"} link={"/advapro"} className={'!border-gray-200 '} />
           </div>
         </div>
-        <div className=' absolute w-[45vw] h-full right-0 scale-[1.1] top-[-14%] mobile:w-[90vw] mobile:top-[-21%] mobile:left-[5%] tablet:top-[-6%] tablet:right-[7%]'>
+        <div className=' absolute w-[45vw] h-full right-0 scale-[1.1] top-[-14%] mobile:w-[90vw] mobile:top-[-21%] mobile:left-[5%] tablet:top-[-3%] tablet:right-[7%]'>
           <Image src={"/assets/advaglide/advaglide-visit.png"} alt='advaglide-visit-bg' fill className='object-contain w-full h-full' />
         </div>
       </section>

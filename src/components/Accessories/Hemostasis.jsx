@@ -41,12 +41,12 @@ data-para-anim
           </h2>
         </div>
         <div className="relative w-full h-full flex flex-col items-center justify-center">
-          <div className="h-[43vw] w-[60vw] relative mobile:w-[160vw] mobile:h-[120vw] tablet:w-[100vw] tablet:h-[70vw]">
+          <div className="h-[43vw] w-[60vw] relative mobile:w-[160vw] mobile:h-[120vw] tablet:w-[100vw] tablet:h-[70vw] mobile:scale-[0.9] mobile:ml-[10%]">
             <Image
               src="/assets/accessories/hemostasis-valve.png"
               fill
               alt="Ergonomic Product"
-              className="object-contain fadeUp mobile:rotate-[-45deg]"
+              className="object-contain fadeUp mobile:rotate-[-45deg] "
             />
           </div>
 

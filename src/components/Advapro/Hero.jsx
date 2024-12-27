@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
 
           <div className="w-[60%] h-[80%] absolute right-0 bottom-0 hero-container tablet:w-[100%]  mobile:top-[48%]  tablet:left-[12%]">
-            <div className="w-full h-[50vw]  mobile:w-[100vw] mobile:h-[100vw] mobile:left-[-50%] relative tablet:w-[100vw] tablet:h-[80vw]">
+            <div className="w-full h-[50vw]  mobile:w-[100vw] mobile:h-[110vw] mobile:left-[-50%] relative tablet:w-[100vw] tablet:h-[80vw]">
               <Image
                 src="/assets/advapro/advapro-hero.png"
                 alt="advapro-hero-image"

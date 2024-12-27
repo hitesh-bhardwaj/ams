@@ -36,7 +36,7 @@ data-para-anim className="title-2 aeonik w-[60%] text-center mobile:w-[90%] tabl
                   <p data-para-anim className=" aeonik leading-[1.2] mobile:text-[6vw] mobile:text-center w-full mobile:w-full">Exceptional Penetration.</p>
                 </div>
               </div>
-              <div className="w-[15vw] h-[34vw] absolute right-[10%] top-0 mobile:w-[60vw] mobile:h-[80vw] mobile:right-[5%] mobile:top-[-15%] tablet:w-[25vw] tablet:h-[45vw] fadeUp">
+              <div className="w-[15vw] h-[34vw] absolute right-[10%] top-0 mobile:w-[60vw] mobile:h-[75vw] mobile:right-[5%] mobile:top-[-15%] tablet:w-[25vw] tablet:h-[45vw] fadeUp">
                 <Image fill src={"/assets/advagrip/paradigm-1.png"} alt="paradigm-1" className="mobile:rotate-[0deg]"/>
 
               </div>
@@ -50,7 +50,7 @@ data-para-anim className="title-2 aeonik w-[60%] text-center mobile:w-[90%] tabl
                 <Image fill src={"/assets/advagrip/paradigm-2.png"} alt=""/>
 
               </div>
-              <div className="w-[8vw] h-[8vw] absolute left-[10%] top-[55%] mobile:w-[30vw] mobile:h-[30vw] mobile:left-[50%] mobile:top-[42%] tablet:top-[65%]">
+              <div className="w-[8vw] h-[8vw] absolute left-[10%] top-[55%] mobile:w-[30vw] mobile:h-[30vw] mobile:left-[43%] mobile:top-[42%] tablet:top-[65%]">
                 <Image fill src={"/assets/advagrip/paradigm-3.png"} alt=""/>
 
               </div>

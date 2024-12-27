@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero h-screen mobile:mb-[20%] tablet:h-[80vh] overflow-hidden mobile:w-full bg-white" id="hero">
+      <section className="hero h-screen w-screen mobile:mb-[20%] tablet:h-[80vh] overflow-hidden mobile:w-full bg-white" id="hero">
         <div className="px-[10%] relative">
           <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:h-screen mobile:justify-center">
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50] mobile:pb-[20vw]">

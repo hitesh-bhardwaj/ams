@@ -23,7 +23,7 @@ const EdgeCard = {
   card2: {
     title: "- the confidence to suture with ease",
     src: "/assets/advalene-cv/advalene-cv-tray.png",
-    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    para: "ADVATRAY is a  patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
   },
   card3: {
     title: "Knot Pull Tensile Strength",

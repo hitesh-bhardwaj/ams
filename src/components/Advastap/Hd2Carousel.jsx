@@ -38,13 +38,13 @@ const Hd2Carousel = () => {
   
     const handleNext = () => {
       if (swiperRef.current) {
-        swiperRef.current.slideNext(); // Move to the next slide
+        swiperRef.current.slideNext();
       }
     };
   
     const handlePrev = () => {
       if (swiperRef.current) {
-        swiperRef.current.slidePrev(); // Move to the previous slide
+        swiperRef.current.slidePrev(); 
       }
     };
      
@@ -54,10 +54,8 @@ const Hd2Carousel = () => {
         <div className={`w-screen h-full py-[10vw] bg-[#020912]   text-white items-center flex justify-center swiper-container mobile:pb-[20%] `}>
         <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        
         scrollbar={true}
-        centeredSlides={true}
-        initialSlide={1}
+        
         modules={[Scrollbar]}
         breakpoints={{       
             541: {
@@ -71,6 +69,8 @@ const Hd2Carousel = () => {
             1024: {
               slidesPerView: 2,
               spaceBetween: 50,
+              centeredSlides:true,
+        initialSlide:1,
             },
           }}
         className={`w-screen flex items-center justify-center specificationSwiper  advastapSwiper fadeUp tablet:h-[50vh] cursor-grab`}
@@ -89,7 +89,7 @@ const Hd2Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[75%] tablet:left-[17%]'><span data-para-anim>Extensive closure with effective coverage.</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[15%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[75%] tablet:left-[17%]'><span data-para-anim>Extensive closure with effective coverage.</span></p>
                 </div>
             </div>
         </div>

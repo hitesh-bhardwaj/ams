@@ -62,7 +62,7 @@ const Ergonomic = () => {
           <span className="w-[0.5vw] h-[0.5vw] bg-blue-500 rounded-full mobile:w-[3vw] mobile:h-[3vw] tablet:w-[1.5vw] tablet:h-[1.5vw]"></span>
         </span>
         <span
-          className="w-[2vw] h-[2vw] bg-white/30 rounded-full absolute bottom-[16.5%] left-[28%] flex justify-center items-center cursor-pointer border mobile:w-[8vw] mobile:h-[8vw] tablet:w-[5vw] tablet:h-[5vw] z-[10] mobile:left-[20%] tablet:left-[30%] tablet:bottom-[22%]"
+          className="w-[2vw] h-[2vw] bg-white/30 rounded-full absolute bottom-[16.5%] left-[28%] flex justify-center items-center cursor-pointer border mobile:w-[8vw] mobile:h-[8vw] tablet:w-[5vw] tablet:h-[5vw] z-[10] mobile:left-[22%]  mobile:bottom-[20%] tablet:left-[30%] tablet:bottom-[22%]"
           onMouseEnter={() => setVisibleTextIndex(5)}
           onMouseLeave={() => setVisibleTextIndex(null)}
         >

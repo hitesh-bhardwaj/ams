@@ -1,35 +1,34 @@
-import React from "react";
-import Image from "next/image";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className={`hero-container dark`} id="hero">
-      <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh]">
-        <div className="w-full h-full absolute tablet:h-full">
-          <Image
-            className="hero-img object-cover h-full w-full brightness-75"
-            src="/assets/blogs/blogs-hero-bg.png"
-            alt="Hero Image"
-            priority={true}
-            width={1920}
-            height={1080}
-            
-          />
-        </div>
-        <div className="px-[12%] relative mobile:px-[5%]">
-          <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[80vh] mobile:justify-start mobile:pt-[35vw]">
-            <div className={`w-[90%] mobile:w-full  tablet:w-full`}>
-              <h1 className={`title-1 w-full aeonik capitalize leading-[1.21] text-[#FFFFFF] mobile:text-center overflow-hidden flex flex-col `} >
-                <span data-para-anim>
-                Newsroom
-                </span>
-                <span data-para-anim>
-                Latest Stories & Events 
-                </span>
-              </h1>
-            </div>
+    <section className='dark w-screen h-screen relative overflow-hidden  mobile:h-screen tablet:h-[80vh]' id='newsHero'>
+      <div className="w-full h-full ">
+        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center  mobile:flex-col tablet:flex-col tablet:top-[22%]">
+          <div className=" absolute left-[12%] top-[30%] mobile:left-[17%] mobile:w-[100%] tablet:left-[15%] mobile:top-[20%] tablet:top-[15%] z-[10]">
+            <h1
+              className="text-white text-[5.3vw] aeonik  leading-[1] hero-text font-light mobile:mb-[4vw] overflow-hidden">
+              <span
+                className={`leading-[1.2] overflow-hidden  text-[5.75vw] mobile:text-[13.2vw] tablet:text-[9vw]  z-[99]`}
+              >
+               Newsroom
+              </span>
+            </h1>
+            <div className='flex items-center mt-[0.2vw] mobile:items-start'>
+            <p data-para-anim className=" text-[1.1vw] uppercase font-light text-[#FFFFFF] leading-[1.2] tracking-wider mobile:text-[4.6vw]  mobile:w-[70%]  tablet:text-[3vw] t tablet:max-w-[70%]  mobile:text-center mobile:justify-center z-[10]">
+            Latest Stories & Events
+                </p>
+              </div>
           </div>
         </div>
+      </div>
+      <div className="absolute h-[100%] w-[100%] top-0 right-0  mobile:w-screen mobile:h-screen mobile:right-0 z-[1]">
+        <Image src="/assets/blogs/blogs-hero-bg.png"
+          fill
+          alt="news Hero bg"
+          className="object-cover object-top" />
       </div>
     </section>
   );

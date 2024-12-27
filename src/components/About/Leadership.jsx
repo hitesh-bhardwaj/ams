@@ -9,7 +9,7 @@ const Leadership = () => {
     const swiperRef = useRef(null);
 
     const handleSlideChange = (swiper) => {
-        const translatePercent = -(swiper.activeIndex * 16.66);
+        const translatePercent = -(swiper.activeIndex * 14.285);
         if (topBoxRef.current) {
             topBoxRef.current.style.transform = `translateX(${translatePercent}%)`;
         }
@@ -59,7 +59,7 @@ const Leadership = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[600%] h-[40vw] pt-[2vw] flex items-center absolute top-box duration-1000 mobile:pt-[5vw] mobile:h-[70vw]" ref={topBoxRef}>
+                        <div className="w-[700%] h-[40vw] pt-[2vw] flex items-center absolute top-box duration-1000 mobile:pt-[5vw] mobile:h-[70vw]" ref={topBoxRef}>
                             {content.map((content, key) => (
                                 <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative tablet:overflow-hidden mobile:overflow-hidden">
                                     <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full mobile:text-[15vw]">{content.name}</p>
@@ -153,26 +153,27 @@ const content = [
         name: "Jiten Surtani",
         title: "Executive Director",
         description: [
-            "Jiten Surtani is an Executive Director at Advanced MedTech Solutions (AMS) with over 18 years of experience in the finance industry. He was a founding partner at IIFL Investment Managers and was instrumental in the organizations evolution from a start up to one of India's leading private wealth management outfits. Strategic, yet tactical, his comprehensive knowledge of leveraging numerous investment opportunities and trading scenarios compliment his investment banking expertise.",
-            "His zeal to build various businesses have greatly contributed to AMS's growth and expansion. With an MBA from IIM Calcutta and Economic Honors from Shri Ram College of Commerce, Surtani leads by example with the proven ability to achieve and exceed all business development goals. Performance driven, he is a dynamic and invaluable asset to AMS.",
+            "Jiten Surtani is the Executive Director at Advanced MedTech Solutions (AMS), where he brings over 18 years of financial expertise and strategic leadership. As a founding partner at 360 One Wealth, he played an instrumental role in transforming the firm from a startup to a market leader in private wealth management, showcasing his ability to scale businesses and optimize growth strategies.",
+            "At AMS, Surtani leverages his financial acumen and business foresight to drive strategic initiatives, streamline operations, and accelerate the company’s expansion. His hands-on approach and focus on creating long-term value have been pivotal in strengthening AMS’s competitive edge.",
+            "A graduate of the Indian Institute of Management (IIM) Calcutta with an MBA and an honors graduate in Economics from Shri Ram College of Commerce, Surtani exemplifies visionary leadership and decisive execution, making him a cornerstone of AMS’s success."
         ],
         slideImage: "/assets/about/leadership/Jiten-Surtani-small.png",
         slideImageBg: "/assets/about/leadership/Jiten-Surtani.png",
     },
     {
         name: "Sameer Ramani",
-        title: "Director",
+        title: "Executive Director",
         description: [
-            "Sameer Ramani is a Director at Advanced MedTech Solutions with two decades of distinguished experience in global manufacturing . A seasoned entrepreneur, real estate developer and business driver, Sameer started his career in textile and apparel production with a significant footprint in the U.S. amidst a diverse exposure across Europe, Asia & Africa.",
-            "An outstanding leader, motivator and creative thinker, he excels in specialized marketing concepts, principles and tactics. Embracing the core values of integrity, innovation and growth, Sameer has been momentous in cultivating AMS' brand development & architecture, digital presence and cultural acuity.",
-            "He brings an extensive knowledge in the design and deployment of profitable manufacturing strategies and hands on experience in U.S Quality Control, Process Audit & Logistics. A dynamic public speaker and evangelizer he holds a Bachelor's degree in Economics from New York University amongst an expertise in Sales & Marketing, P.R. & Business Management.",
-            "Profoundly driven and perfectionistic, Sameer instills a spirit of ingenuity and resolve to AMS."
+            "Sameer Ramani serves as the Executive Director at Advanced MedTech Solutions bringing  over 25 years of distinguished experience in global manufacturing, real estate, entrepreneurship, and strategic business growth.Sameer began his career in textile and apparel production, establishing a robust presence in the U.S. market while honing expertise across Europe, Asia, and Africa. .",
+            " Throughout his journey, Sameer has spearheaded quality improvements, streamlined operations, and developed scalable manufacturing models, delivering consistent growth and operational excellence.Recognized for his ingenuity in driving sales growth and cultivating enduring partnerships, Sameer has played a pivotal role in accelerating business expansion.",
+            "His innovative approach to marketing has shaped AMS’s trajectory, advanced its global brand positioning, and opened new market avenues. As an engaging public speaker and motivational leader, he effectively inspires teams and aligns stakeholders with organizational goals.A motivational leader and engaging public speaker, Sameer inspires teams and aligns stakeholders with organizational objectives.",
+            "Holding a Bachelor’s degree in Economics from New York University, Sameer combines analytical acumen with visionary leadership. His deep understanding of market dynamics and customer engagement has been instrumental in propelling AMS’s success and fostering innovation on a global scale."
         ],
         slideImage: "/assets/about/leadership/Sameer-Ramani-small.png",
         slideImageBg: "/assets/about/leadership/Sameer-Ramani.png",
     },
     {
-        name: "DAVENDRA KUMAR DHAMA",
+        name: "Davendra Kumar Dhama",
         title: "DIRECTOR, OPERATIONS",
         description: [
             "Davendra Kumar Dhama is a distinguished leader with over 30 years of experience in the medical devices and pharmaceutical industries. As the Director of Operations at AMS, he brings a profound understanding of manufacturing excellence, regulatory compliance, and strategic execution, driving the company’s mission to deliver innovative, high-quality healthcare solutions.",
@@ -197,5 +198,17 @@ const content = [
         ],
         slideImage: "/assets/about/leadership/Manuel-Parente-small.png",
         slideImageBg: "/assets/about/leadership/Manuel-Parente.png",
+    },
+    {
+        name: "Bhavin Chauhan",
+        title: "ASSOCIATE DIRECTOR, FINANCE",
+        description: [
+            "Bhavin Chauhan is a highly accomplished finance professional with over two decades of experience spanning multiple industries, including real estate, retail, manufacturing, aviation, and healthcare. Demonstrated exceptional capabilities in managing complex financial environments and driving organizational growth.",
+            "A dynamic and consummate professional, Mr. Chauhan is responsible for the financial, legal and regulatory compliance and has been instrumental in setting up business processes to meet the organisational needs. ",
+            "With financial and commercial expertise has ensured seamless operations for the organisation. Enhanced performance of organisation by IT advancement of by successful implementation latest ERP platform in SAP and inhouse development of applications for sales support system.",
+            "He holds a Bachelor of commerce degree from Mumbai University, is a Chartered Accountant by Profession and IIM Ahmedabad Alumnus bringing an expertise in financial analysis, statutory compliance, Legal and treasury management.",
+        ],
+        slideImage: "/assets/about/leadership/Bhavin-Chauhan-small.png",
+        slideImageBg: "/assets/about/leadership/Bhavin-Chauhan.png",
     }
 ]

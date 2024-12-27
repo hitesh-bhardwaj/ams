@@ -10,34 +10,34 @@ import styles from "./styles.module.css";
 
 const productContent = [
   {
-    title: "ADVAGLIDE",
+    title: "ADVA GLIDE",
     src: "/assets/ic/adva-glide.png",
     para: "AMS has advanced the science of flow restoration to provide minimally invasive products for use in Percutaneous Transluminal Coronary Angioplasty procedures for revascularisation of coronary arteries.",
   },
   {
-    title: "ADVAPRO",
+    title: "ADVA PRO",
     src: "/assets/ic/adva-pro.png",
-    para: "AMS has redefined the science of vascular restoration with ADVA PRO, a Sirolimus Eluting Coronary Stent System engineered for safety and precision.",
+    para: "AMS has redefined the science of vascular restoration with ADVA PRO, a Sirolimus Eluting Coronary Stent System engineered for safety and precision",
   },
   {
     title: "Coronary Accessories",
     src: "/assets/ic/coronary-accessories.png",
-    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals with the tools they need for precision and efficiency in every procedure.",
+    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals",
   },
   {
-    title: "ADVAGLIDE",
+    title: "ADVA GLIDE",
     src: "/assets/ic/adva-glide.png",
     para: "AMS has advanced the science of flow restoration to provide minimally invasive products for use in Percutaneous Transluminal Coronary Angioplasty procedures for revascularisation of coronary arteries.",
   },
   {
-    title: "ADVAPRO",
+    title: "ADVA PRO",
     src: "/assets/ic/adva-pro.png",
-    para: "AMS has redefined the science of vascular restoration with ADVA PRO, a Sirolimus Eluting Coronary Stent System engineered for safety and precision.",
+    para: "AMS has redefined the science of vascular restoration with ADVA PRO, a Sirolimus Eluting Coronary Stent System engineered for safety and precision",
   },
   {
     title: "Coronary Accessories",
     src: "/assets/ic/coronary-accessories.png",
-    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals with the tools they need for precision and efficiency in every procedure.",
+    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals",
   },
 ];
 const ProductCard = ({ title, src, para, index, activeSlide }) => {
@@ -179,13 +179,13 @@ export default function IcCards() {
           <div className=" py-[5%]">
             <div className="w-full flex flex-col gap-[8vw] tablet:gap-[5vw]">
               <h2 data-para-anim className="aeonik title-2 text-center">
-                Our Featured Programs
+                Our IC Products
               </h2>
 
               <div className="w-full  mobile:mt-[5vw] mobile:fadeUp mobile:block hidden fadeUp tablet:overflow-scroll mobile:fadeUp tablet:block tablet:px-[5%] overflow-visible tablet:mt-0 ">
                 <div className=" mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:gap-[10vw] mobile:h-fit tablet:flex tablet:flex-nowrap tablet:w-fit tablet:gap-[2vw] tablet:h-fit ">
                   <Link
-                    href={"/advapro"}
+                    href={"/ADVA PRO"}
                     className="w-[85vw] h-[100vw] tablet:w-[45vw] tablet:h-[50vw] relative  overflow-hidden"
                   >
                     <div
@@ -220,11 +220,11 @@ export default function IcCards() {
                       >
                         Adva Glide
                       </h4>
-                      <div className="w-[85vw] h-full relative">
+                      <div className="w-[85vw] h-full relative ">
                         <Image
-                          src={`/assets/ic/ic-card-2.webp`}
+                          src={`/assets/ic/adva-glide.png`}
                           fill
-                          className={`object-contain scale-[1.1] translate-y-[20%] tablet:scale-[1] `}
+                          className={`object-contain scale-[1.1] translate-y-[20%] tablet:scale-[1.2] mobile:mt-[-15vw] tablet:mt-[-5vw]`}
                           alt={`ic-card-2`}
                         />
                       </div>

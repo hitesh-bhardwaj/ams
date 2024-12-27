@@ -61,7 +61,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex items-center justify-center z-[5] mobile:flex-col-reverse mobile:right-0 mobile:top-[20%] tablet:top-[30%]">
-              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-55%] top-[-5%] mobile:top-[80%] mobile:left-[65%] mobile:w-[55vw] mobile:h-[55vw] tablet:w-[45vw] tablet:h-[45vw] pointer-events-none tablet:right-[-110%] tablet:top-[10%]">
+              <div className="w-[80vw] h-[25vw]  scale-[2] relative right-[-55%] top-[-5%] mobile:top-[85%] mobile:left-[110%] mobile:w-[55vw] mobile:h-[55vw] tablet:w-[45vw] tablet:h-[45vw] pointer-events-none tablet:right-[-110%] tablet:top-[10%] mobile:scale-[1.8]">
                 <Image
                   className="object-contain hero-img-1 rotate-[90]"
                   src="/assets/poweredlc/poweredlc-1.png"

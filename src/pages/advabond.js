@@ -22,7 +22,7 @@ const EdgeCard = {
   card2: {
     title: "The Intelligent Dispensing System ",
     src: "/assets/advabond/advabond-edge2.png",
-    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    para: "ADVATRAY is a patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
   },
   card3: {
     title: "Knot Pull Tensile Strength",

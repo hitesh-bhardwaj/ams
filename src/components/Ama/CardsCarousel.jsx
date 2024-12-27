@@ -35,6 +35,8 @@ export default function CardsCarousel() {
     { src: "/assets/ama/ama-card-3.webp", alt: "ama-card-3", title:"Nurturing Nursing Skills Program" },
     { src: "/assets/ama/ama-card-4.webp", alt: "ama-card-4", title:"Cardiac Observership Programs" },
     { src: "/assets/ama/ama-card-5.webp", alt: "ama-card-5",title:"General Surgery AMA Program" },
+    { src: "/assets/ama/ama-card-6.jpg", alt: "ama-card-6",title:"Hands on Stapling Workshop" },
+
   ];
 
   return (
@@ -109,7 +111,7 @@ export default function CardsCarousel() {
                       </div>
                       <div className="w-full product-base-text flex justify-center">
                         <p className="aeonik font-light tracking-widest text-[5vw] text-center tablet:text-[2.5vw]">
-                          Nurturing Nursing Skills
+                         {card.title}
                         </p>
                       </div>
                     </div>
@@ -180,6 +182,17 @@ const modalContent = [
       <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The General Surgery AMA Program is a comprehensive workshop series designed to enhance surgeons&apos; skills in hernia repair, colorectal surgery, and hemorrhoidectomy/proctology procedures. Participants gain practical expertise through hands-on training with staplers and other essential instruments. Led by esteemed faculty and key opinion leaders, the program provides real-time insights into the complexities of these surgeries, ensuring surgeons are equipped with the latest techniques and tools.</p>
       <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Conclusion:</h2>
       <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The General Surgery AMA Program equips surgeons with the confidence and proficiency needed to perform complex procedures effectively. By mastering advanced techniques, participants not only improve patient outcomes but also foster their professional growth. With practical exposure and learning opportunities in real surgical settings, this program is a step toward achieving excellence in surgical care.</p>
+    </div>
+     )
+    },
+    {
+      id: 6,
+     description:(
+      <div>
+      <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Objective:</h2>
+      <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The Intensive 1-Day Hands-On Stapling Workshop is designed for junior surgeons to enhance their skills in open and laparoscopic surgeries. This workshop offers expert demonstrations, real-time learning, and hands-on practice with animal tissue and colon.</p>
+      <h2 className="text-[2.5vw] font-light leading-[1.2] mobile:text-[6.5vw] tablet:text-[3.5vw]">Conclusion:</h2>
+      <p className="content-p py-[1vw] mobile:py-[3vw] tablet:py-[2vw]">The Intensive 1-Day Hands-On Stapling Workshop is a prime opportunity for junior surgeons to upskill and gain confidence. With expert guidance and hands-on practice, participants will leave with advanced stapling techniques and practical knowledge to apply directly in their surgical careers.</p>
     </div>
      )
     },

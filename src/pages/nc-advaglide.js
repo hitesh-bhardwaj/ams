@@ -1,6 +1,5 @@
 import EdgeCarousel from "@/components/Advaglide/EdgeCarousel";
 import Ergonomic from "@/components/Advaglide/Ergonomic";
-import Hero from "@/components/Advaglide/Hero";
 import Sirolimus from "@/components/Advaglide/Sirolimus";
 import Layout from "@/components/Layout";
 import BgVideo from "@/components/Layout/BgVideo";
@@ -9,11 +8,12 @@ import React from "react";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
-import AdvaGlideSpecifications from "@/components/Advaglide/AdvaGlideSpecifications";
+import Hero from "@/components/NCAdvaglide/Hero";
+import NCAdvaGlideSpecifications from "@/components/NCAdvaglide/NCAdvaGlideSpecifications";
 
-const advaglide = () => {
+const ncadvaglide = () => {
   const metadata = {
-    title: "Advaglide – Lubricated Surgical Sutures",
+    title: "NC-Advaglide – Lubricated Surgical Sutures",
     description:
       "Enhance precision and ease of use with Advaglide, lubricated sutures for smooth tissue passage.",
     img: "advaglide.png",
@@ -30,10 +30,10 @@ const advaglide = () => {
       <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
-          <Hero />
+          <Hero/>
           <Ergonomic />
-          <EdgeCarousel width={"55%"} sectionHeading={"Adva Glide Egde"} />
-          <AdvaGlideSpecifications/>
+          <EdgeCarousel width={"55%"} sectionHeading={"NC ADVA GLIDE Edge"} />
+          <NCAdvaGlideSpecifications/>
           <Sirolimus />
         </main>
       </Layout>
@@ -44,4 +44,4 @@ const advaglide = () => {
   );
 };
 
-export default advaglide;
+export default ncadvaglide;

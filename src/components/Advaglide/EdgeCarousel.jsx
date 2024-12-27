@@ -15,7 +15,7 @@ import {
 import Image from "next/image";
 import { Media } from "../media";
 
-const EdgeCarousel = ({width}) => {
+const EdgeCarousel = ({width, sectionHeading,}) => {
   const slidesData = [
     {
       src: "/assets/advaglide/advaglide-carousel-1.png",
@@ -36,8 +36,8 @@ const EdgeCarousel = ({width}) => {
     >
       <div className="w-full relative h-full flex items-center flex-col gap-[5vw]">
         <h2
-data-para-anim className="title-2 aeonik font-light tablet:text-[7vw]">
-          Adva Glide Edge
+data-para-anim className="title-2 aeonik font-light  tablet:text-[7vw] mobile:text-center">
+         {sectionHeading}
         </h2>
         <div className="relative fadeUp rounded-[2vw]">
           <Media greaterThan="mobile">

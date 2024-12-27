@@ -12,7 +12,6 @@ import { Media } from "@/components/media";
 import Hero from "@/components/IC/Hero";
 import ICProducts from "@/components/IC/ICProducts";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
 

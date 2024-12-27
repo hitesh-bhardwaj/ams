@@ -14,11 +14,11 @@ const Polypropylene = () => {
 data-para-anim
                 className=" w-[70%] text-[3.95vw] font-light leading-[1.25] aeonik text-center text-[#111111]  mobile:text-center mobile:w-full mobile:text-[11vw] tablet:text-[7vw]"
               >
-                ADVAMESH polypropylene
+                ADVAMESH Polypropylene
               </h2>
             </div>
             <div className=" h-full w-full absolute left-[10%] top-[20%]  mobile:h-full   pt-[10vw] mobile:pb-[10%] mobile:top-0  tablet:h-full tablet:pb-[5%] tablet:top-[15%]">
-              <div className="h-[38vw] w-[50vw] relative mobile:w-[140vw] mobile:h-[100vw] mobile:left-[-35%] tablet:w-[80vw] tablet:h-[60vw] mobile:top-[15%] tablet:scale-[1.35] fadeUp">
+              <div className="h-[38vw] w-[50vw] relative mobile:w-[95vw] mobile:h-[100vw] mobile:left-[-10%] tablet:w-[80vw] tablet:h-[60vw] mobile:top-[15%] tablet:scale-[1.35] fadeUp">
                 <Image
                   src="/assets/advamesh/polypropylene.png"
                   fill

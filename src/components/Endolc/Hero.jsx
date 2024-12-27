@@ -58,10 +58,10 @@ const Hero = () => {
             </div>
             <div className="flex flex-col items-center justify-end z-[5] mobile:flex-col-reverse mobile:right-[5%] mobile:top-[20%]">
 
-              <div className="w-[80vw] h-[20vw] scale-[1.6] relative top-[35%] left-[20%] pointer-events-none mobile:top-[120%] mobile:left-auto mobile:right-[-65%] mobile:w-[50vw] mobile:h-[35vw] tablet:w-[25vw] tablet:h-[25vw] tablet:top-[60%] tablet:left-[60%]  z-10  tablet:absolute ">
+              <div className="w-[80vw] h-[20vw] scale-[1.6] relative top-[35%] left-[20%] pointer-events-none mobile:top-[120%] mobile:left-auto mobile:right-[-45%] mobile:w-[50vw] mobile:h-[35vw] tablet:w-[25vw] tablet:h-[25vw] tablet:top-[60%] tablet:left-[60%]  z-10  tablet:absolute ">
                 <Image
                 quality={100}
-                  className=" object-contain  mobile:rotate-[30deg] tablet:shadow-none hero-img"
+                  className=" object-contain  mobile:rotate-[30deg] tablet:shadow-none hero-img mobile:scale-[1.4]"
                   src="/assets/endolc/advastap-endolc.png"
                   alt="Hero Image"
                   priority={true}

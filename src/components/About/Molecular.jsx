@@ -55,7 +55,7 @@ const Molecular = () => {
   return (
     <>
       <section className="molecular h-[100vh] overflow-hidden tablet:h-[100vh] mobile:h-full mt-[8%] tablet:mt-[15%] mobile:py-[20%] relative" id="molecular" ref={molecularContainer}>
-        <div className="w-screen h-screen absolute z-[1] overflow-hidden mobile:h-[255vw] mobile:w-screen realative">
+        <div className="w-screen h-screen absolute z-[1] overflow-hidden mobile:h-[355vw] mobile:w-screen realative">
           <span className="absolute bg-white/25 top-0 left-0 right-0 bottom-0" />
           <LazyVideo
             poster={"/assets/about/about-molecular-poster.webp"}
@@ -109,6 +109,7 @@ const Molecular = () => {
                 {cardData.map((card, index) => (
                   <SwiperSlide key={index}>
                     <MolecularCard
+                     index={index}
                       symbol={card.symbol}
                       title={card.title}
                       description={card.description}
@@ -153,7 +154,7 @@ const Molecular = () => {
 export default Molecular;
 
 const MolecularCard = ({ symbol, smalltitle, title, description }) => (
-  <div className="molecular-card p-[3vw] bg-white/50 border rounded-[2.5vw] border-white backdrop-blur-sm mobile:w-[90vw] mobile:h-[120vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[45vw] tablet:h-full tablet:py-[4vw] mobile:rounded-[6vw]">
+  <div className="molecular-card p-[3vw] bg-white/50 border rounded-[2.5vw] border-white backdrop-blur-sm mobile:w-[90vw] mobile:h-[165vw] mobile:px-[6vw] mobile:py-[12vw] mobile:flex mobile:flex-col mobile:gap-[3vw] mobile:items-center tablet:w-[45vw] tablet:h-full tablet:py-[4vw] mobile:rounded-[6vw]">
     <div className="w-[6vw] h-[6vw] bg-[#143CA3] text-white flex flex-col items-center justify-center mobile:w-[20vw] rounded-[0.8vw] mobile:h-[20vw] mobile:gap-0 tablet:w-[10vw] tablet:h-[10vw] fadeUp">
       <p className="text-[3.3vw] mobile:text-[12vw] tablet:text-[5vw]">{symbol}</p>
       <p className="text-[0.6vw] mt-[-1vw] mobile:text-[2.5vw] tablet:text-[1.2vw] mobile:hidden mobile:mt-[-3vw] text-center">{smalltitle}</p>
@@ -161,7 +162,7 @@ const MolecularCard = ({ symbol, smalltitle, title, description }) => (
     <h2 data-para-anim className="text-[2.5vw] mt-[1vw] mb-[1.5vw] font-light mobile:text-[7.4vw] tablet:mt-[3vw] tablet:text-[4vw] mobile:mt-[6vw] mobile:text-center">
       {title}
     </h2>
-    <p className="content-p tablet:text-[2.5vw] tablet:leading-[1.3] mobile:text-center fadeUp mobile:text-lg" >{description}</p>
+    <p className={`content-p tablet:text-[2.5vw] tablet:leading-[1.3] mobile:text-center fadeUp mobile:text-lg `} >{description}</p>
   </div>
 );
 

@@ -57,7 +57,7 @@ const Card = ({ image, title, description, className = "" }) => {
         <h2 className={`text-[3vw] aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}>
           {title}
         </h2>
-        <p className="leading-[1.8] text-justify w-full text-[#2A2A2A] text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full">
+        <p className="leading-[1.8] text-justify w-full text-[#2A2A2A] text-[1.15vw] tablet:text-[2vw] mobile:text-[4.5vw] mobile:w-full mobile:text-center">
           {description}
         </p>
       </div>

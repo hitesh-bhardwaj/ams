@@ -52,8 +52,6 @@ const LC2Carousel = () => {
         <Swiper
          onSwiper={(swiper) => (swiperRef.current = swiper)}
         scrollbar={true}
-        centeredSlides={true}
-        initialSlide={1}
         modules={[Scrollbar]}
         breakpoints={{       
             541: {
@@ -67,6 +65,8 @@ const LC2Carousel = () => {
             1024: {
               slidesPerView: 2,
               spaceBetween: 50,
+              centeredSlides:true,
+              initialSlide:1
             },
           }}
         className={`w-screen flex items-center justify-center specificationSwiper lc2Swiper  tablet:h-[60vh] mobile:h-[90vh]`}

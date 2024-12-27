@@ -14,11 +14,11 @@ const MidWeight = () => {
 data-para-anim
                 className=" w-[70%] text-[3.95vw] font-light leading-[1.25] aeonik text-center capitalize  text-[#111111]  mobile:text-center mobile:w-full mobile:text-[11vw] tablet:text-[7.5vw]"
               >
-                ADVAMESH mid-weight
+                ADVAMESH Medium-Weight
               </h2>
             </div>
             <div className=" h-full w-full absolute left-[45%] top-[30%]  mobile:h-full   pt-[10vw] mobile:pb-[10%] mobile:top-[25%]  tablet:pb-[5%] tablet:left-0 tablet:top-[10%]">
-              <div className="h-[38vw] w-[50vw] relative mobile:w-[140vw] mobile:h-[100vw] mobile:left-[-65%]  mobile:top-0 tablet:w-[100vw] tablet:h-[50vw] tablet:top-[15%] tablet:scale-[1.5] fadeUp">
+              <div className="h-[38vw] w-[50vw] relative mobile:w-[90vw] mobile:h-[100vw] mobile:left-[-38%]  mobile:top-0 tablet:w-[100vw] tablet:h-[50vw] tablet:top-[15%] tablet:scale-[1.5] fadeUp">
                 <Image
                   src="/assets/advamesh/mid-weight.png"
                   fill

@@ -54,8 +54,8 @@ const Hero = () => {
                 </h1>
                 <div className='w-[80%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block lineDraw'></div>
             <div className='flex items-center mobile:w-[80%] mobile:justify-center  '>
-            <p  data-para-anim className=" text-[1.25vw] uppercase leading-[1.2] font-light tracking-wider mobile:text-[4.6vw]   tablet:text-[3vw] tablet:max-w-full  flex items-center justify-start mobile:text-center">
-          Linear {" "}Cutter 
+            <p   className=" text-[1.25vw] uppercase leading-[1.2] font-light tracking-wider mobile:text-[4.6vw]   tablet:text-[3vw] tablet:max-w-full  flex items-center justify-start fadeUp mobile:text-center">
+          Linear Cutter 
                 </p>
               <span className="w-[10vw] h-[1px] ml-[1vw] bg-black line mobile:hidden tablet:hidden lineSpan"></span>
               </div>

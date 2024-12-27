@@ -6,13 +6,18 @@ import BgVideo from "@/components/Layout/BgVideo";
 import Genesis from "@/components/layoutComponents/Genesis";
 import { Media } from "@/components/media";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import Hero from "@/components/Blogs/Hero";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
+import Hero from "@/components/Blogs/Hero";
 
 const news = () => {
   fadeUp();
   paraAnim();
+  const hero = {
+    title: " Newsroom",
+    src: "/assets/blogs/blogs-hero-bg.png",
+    content: " Latest Stories & Events ",
+  };
   const content = {
     heading: "Stories of Change",
     smallpara:
@@ -37,7 +42,7 @@ const news = () => {
      <WebpageJsonLd metadata={metadata}/>
       <Layout>
         <main>
-          <Hero />
+         <Hero/>
           <Genesis
             content={content}
             sParaWidth={"w-[30%] ml-[5%] mobile:ml-0 tablet:ml-0"}

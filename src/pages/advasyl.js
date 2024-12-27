@@ -10,7 +10,6 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
 
@@ -23,7 +22,7 @@ const EdgeCard = {
   card2: {
     title: "Needle pull tensile strength ",
     src: "/assets/advasyl/needle-pull.png",
-    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    para: "ADVATRAY is a  patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
   
   },
   card3: {

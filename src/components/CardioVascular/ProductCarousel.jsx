@@ -52,9 +52,9 @@ const ProductCarousel = () => {
       title: "ADVACLIP",
       para: "Titanium Ligation Clip",
       imageSrc: "/assets/cardioVascular/advaclip.png",
-      description1: "Engineered to cater the specialized demands of intricate cardiac procedures.",
-      description2: "Ensures structural integrity within calcified tissues.",
-      description3: "ADVAPASS & ADVAPOINT needles",
+      description1: "Secure precision with ADVACLIP Titanium Clips, delivering reliable vascular and tissue occlusion with superior biocompatibility and minimal tissue reaction.",
+      description2: "Designed for effective hemostasis, ADVACLIP is compatible with appliers tailored for Minimally Invasive Cardiac Surgery (MICS).",
+      description3: "A color-coded system ensures easy size identification, enhancing efficiency and accuracy during procedures.",
     },
          
   ];

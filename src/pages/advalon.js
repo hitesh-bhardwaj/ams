@@ -22,7 +22,7 @@ const EdgeCard = {
   card2: {
     title: "Inert Polymer ",
     src: "/assets/advalon/advalon-edge2.png",
-    para: " patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
+    para: "ADVATRAY is a patented dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
   
   },
   card3: {

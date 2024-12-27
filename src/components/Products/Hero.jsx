@@ -40,7 +40,7 @@ data-para-anim
 
               <div className="w-[40vw] h-[40vw] relative bottom-[10%] right-[15%]  mobile:bottom-0 mobile:w-[100vw] mobile:h-[80vw] mobile:left-0  tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
                 <Image
-                  className="object-contain mobile:object-cover"
+                  className="object-contain mobile:object-contain"
                   src={src}
                   alt="Hero Image"
                   priority={true}

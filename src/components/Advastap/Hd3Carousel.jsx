@@ -35,8 +35,7 @@ const Hd3Carousel = () => {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         
         scrollbar={true}
-        centeredSlides={true}
-        initialSlide={1}
+      
         modules={[Scrollbar]}
         breakpoints={{       
             541: {
@@ -50,6 +49,8 @@ const Hd3Carousel = () => {
             1024: {
               slidesPerView: 2,
               spaceBetween: 50,
+              centeredSlides:true,
+              initialSlide:1,
             },
           }}
         className={`w-screen flex items-center justify-center specificationSwiper   fadeUp tablet:h-[50vh] cursor-grab`}
@@ -66,9 +67,8 @@ const Hd3Carousel = () => {
                         alt='specification 1'
                         className='object-contain '
                         />
-
                     </div>
-                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Improved accessibility for precise placement of purse string suture</span></p>
+                    <p className='text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[12%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Improved accessibility for precise placement of purse string suture</span></p>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@ const Hd3Carousel = () => {
             <div className='w-full h-full flex flex-col justify-between gap-[2vw] mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw]  tablet:h-[45vh]'>
                 <p className='text-[2.3vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw]  tablet:h-[8vw]'><span data-para-anim>Robust and integrated anvil design</span></p>
                 <div className='bg-[#0F233D] rounded-[20px]  h-[32vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden mobile:h-[70vh] mobile:w-[85vw] tablet:h-[50vh]'>
-                    <div className='w-[60vw] h-[20vw]  relative top-[-10%] left-0 scale-[2]  mobile:h-[60vh] mobile:-rotate-45 mobile:left-[15%] mobile:top-[-10%] mobile:scale-[2] mobile:overflow-hidden tablet:h-[40vw] tablet:left-[-10%] tablet:scale-[1.2]' >
+                    <div className='w-[60vw] h-[20vw]  relative top-[-10%] left-0 scale-[2]  mobile:h-[60vh] mobile:-rotate-45 mobile:left-[15%] mobile:top-[-10%] mobile:scale-[1.6] mobile:overflow-hidden tablet:h-[40vw] tablet:left-[-10%] tablet:scale-[1.2]' >
                         <Image
                         src="/assets/advastap/pro2.png"
                         fill
@@ -87,7 +87,7 @@ const Hd3Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%]  font-light  mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Mitigates risk of accidental detachment due to anvil rod leaning</span></p>
+                    <p className='text-center aeonik text-[1.25vw] absolute bottom-[15%] left-[10%]  font-light  mobile:text-[4.7vw] mobile:w-[80%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%]'><span data-para-anim>Mitigates risk of accidental detachment due to anvil rod leaning</span></p>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@ const Hd3Carousel = () => {
                         />
 
                     </div>
-                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw]  font-light mobile:text-[4.7vw] mobile:w-[70%] mobile:bottom-[20%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[15%]'><span data-para-anim>With dentate line marking</span></p>
+                    <p className='text-center aeonik absolute bottom-[15%] left-[10%] text-[1.25vw]  font-light mobile:text-[4.7vw] mobile:w-[30%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[15%]'><span data-para-anim>With dentate line marking</span></p>
                 </div>
             </div>
         </div>

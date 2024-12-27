@@ -19,7 +19,7 @@ data-para-anim
               </h2>
             </div>
             <div className=" h-full w-full absolute left-[10%] top-[20%]  mobile:h-full   pt-[10vw] mobile:pb-[10%] mobile:left-0  tablet:h-full tablet:pb-[5%] tablet:top-[15%]">
-              <div className="h-[38vw] w-[50vw] relative mobile:w-[150vw] mobile:h-[80vw] mobile:left-[-15%]  mobile:top-0 tablet:w-[80vw] tablet:h-[60vw] tablet:scale-[1.2] fadeUp">
+              <div className="h-[38vw] w-[50vw] relative mobile:w-[90vw] mobile:h-[80vw] mobile:left-[5%]  mobile:top-0 tablet:w-[80vw] tablet:h-[60vw] tablet:scale-[1.2] fadeUp">
                 <Image
                   src="/assets/advamesh/macroporous.png"
                   fill
