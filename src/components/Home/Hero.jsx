@@ -60,15 +60,15 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative overflow-hidden dark bg-white tablet:bg-transparent" id="hero">
-      <div ref={background} className="px-[12%] w-full relative mobile:px-[5vw] tablet:px-[10%]">
-        <div className="flex h-dvh relative z-10 w-full justify-start items-center mobile:h-screen tablet:h-[80vh]">
-          <div className="w-[55%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-[85%] mt-[4vw]">
-            <h1 data-para-anim className="title-1 aeonik capitalize mobile:text-center mobile:text-[15vw] text-[#ffffff] tablet:text-[10vw] text-shadow" >
+    <section ref={containerRef} className="relative overflow-hidden bg-white mobile:bg-transparent tablet:bg-transparent" id="hero">
+      <div ref={background} className="px-[12%] w-full relative mobile:px-[5vw] tablet:px-[10%] mobile:flex mobile:flex-col-reverse mobile:pt-[20vw]">
+        <div className="flex h-dvh relative z-10 w-full justify-start items-center mobile:h-full mobile:items-start tablet:h-[80vh]">
+          <div className="w-[55%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-[85%] mt-[4vw] mobile:mt-[10vw]">
+            <h1 data-para-anim className="title-1 aeonik capitalize mobile:text-center mobile:text-[11vw] text-[#ffffff] tablet:text-[10vw] text-shadow mobile:text-[#111111] mobile:!drop-shadow-none" >
               Advancing the way we care
             </h1>
-            <p className="font-light max-w-[50vw] text-[1.25vw] text-white mt-[3vw] mb-[7vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:px-[5vw] mobile:mb-[15vw]  tablet:text-[2.5vw] tablet:max-w-[50vw]">
-              <span data-para-anim className="mobile:leading-[1.8] text-shadow-para">
+            <p className="font-light max-w-[50vw] text-[1.25vw] text-white mt-[3vw] mb-[7vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:mb-[15vw]  tablet:text-[2.5vw] tablet:max-w-[50vw] mobile:text-[#111111] ">
+              <span data-para-anim className="mobile:leading-[1.8] text-shadow-para mobile:!drop-shadow-none">
                 AMS is dedicated to advancing healthcare by providing meaningful
                 MedTech solutions, improving lives for patients around the
                 world.
@@ -78,14 +78,14 @@ export default function Hero() {
               <PrimaryButton
                 text={"About us"}
                 link={"/about"}
-                className={"secondary  !text-white"}
+                className={"secondary  !text-white !border-gray-200"}
                 prefetch={false}
               />
             </div>
           </div>
         </div>
 
-        <div className="absolute top-0 left-0 bottom-0 right-0 h-full w-full z-[1]">
+        <div className="absolute top-0 left-0 bottom-0 right-0 h-full w-full z-[1] mobile:relative mobile:h-[60vw] mobile:w-[100vw] mobile:ml-[-5vw]">
           <video
             poster="/assets/home/hero-video-poster.webp"
             autoPlay
@@ -97,8 +97,9 @@ export default function Hero() {
           />
         </div>
       </div>
+<div className="w-screen mobile:py-[15%] mobile:bg-white/50 mobile:mt-[20%]">
 
-      <div id="videoAnim" ref={videoAnim} className='h-[45vw] w-[90vw] overflow-hidden rounded-[2.5vw] scale-50 tablet:scale-100 mobile:scale-100 absolute z-[20] mx-auto left-1/2 translate-x-[-50%] tablet:relative tablet:translate-x-0 tablet:left-0 tablet:my-[15%] mobile:relative mobile:translate-x-0 mobile:left-0 mobile:my-[15%]'>
+      <div id="videoAnim" ref={videoAnim} className='h-[45vw] w-[90vw] overflow-hidden rounded-[2.5vw] scale-50 tablet:scale-100 mobile:scale-100 absolute z-[20] mx-auto left-1/2 translate-x-[-50%] tablet:relative tablet:translate-x-0 tablet:left-0 tablet:my-[15%] mobile:relative mobile:translate-x-0 mobile:left-0'>
         <LazyVideo
           poster={"/assets/home/homepage-reel-poster.webp"}
           type="video/mp4"
@@ -109,6 +110,7 @@ export default function Hero() {
           className='w-full h-full object-cover scale-[1.2]'
         />
       </div>
+</div>
     </section>
   );
 }

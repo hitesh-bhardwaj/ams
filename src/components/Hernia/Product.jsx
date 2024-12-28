@@ -1,23 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/rules-of-hooks */
-// "use client";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import styles from "@/styles/hernia.module.css"; // Import the module CSS
-import Link from "next/link";
+import styles from "@/styles/hernia.module.css";
 import Image from "next/image";
 import { Media } from "../media";
-
 gsap.registerPlugin(ScrollTrigger);
 
-const ProductCard = ({ img, heading, className, rotate, arrowColor }) => {
-
-
+const ProductCard = ({ img, heading, className, rotate, arrowColor,id }) => {
+ 
   return (
     <>
       <div className={`${rotate}`}>
-        <Link href={`/advamesh`}>
+        <a  href={`/advamesh#${id}`}>
           <div className={`bg-white w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}>
             <Image
               src={img}
@@ -59,7 +55,7 @@ const ProductCard = ({ img, heading, className, rotate, arrowColor }) => {
               </button>
             </div>
           </div>
-        </Link>
+        </a>
       </div>
     </>
   )
@@ -74,14 +70,17 @@ const Product = () => {
     {
       imgSrc: "/assets/hernia/product-1.png",
       heading: "Polypropylene Mesh",
+      id:"polypropylene-mesh"
     },
     {
       imgSrc: "/assets/hernia/product-3.png",
       heading: "Mid-Weight Mesh",
+      id:"mid-weight-mesh"
     },
     {
       imgSrc: "/assets/hernia/product-2.png",
       heading: "Macroporous Mesh",
+      id:"macroporous-mesh"
     },
 
 
@@ -174,6 +173,7 @@ const Product = () => {
                   <ProductCard
                     img={product.imgSrc}
                     heading={product.heading}
+                    id={product.id}
                     arrowColor={`${i == 1 ? true : ""}`}
                     className={`${i == 1 ? "text-white #ffffff " : ""}`}
                   />

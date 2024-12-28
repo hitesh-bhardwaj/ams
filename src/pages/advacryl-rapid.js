@@ -113,6 +113,7 @@ const advacrylrapid = () => {
             para2={
               "Swift Confidence for Superior Predictability"
             }
+            margin={"mobile:!mt-[24vw]"}
             overlay={"hidden"}
 
           />

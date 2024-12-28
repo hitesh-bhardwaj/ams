@@ -508,10 +508,11 @@ body {
   height: 100%;
 }
 .text-shadow{
-  text-shadow: 1px 1px 5px  rgb(40, 40, 40,0.6);
+  filter: drop-shadow(2px 2px 1.5px  rgb(40, 40, 40,0.8)) ;
 }
 .text-shadow-para{
-  text-shadow: 1px 1px 3px  rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(2px 2px 1.5px  rgb(0, 0, 0,0.8));
+
 }
 .draw {
   transition: color 0.5s;
@@ -569,18 +570,32 @@ body {
 .fade-in {
   animation: fadeIn 0.5s ease-in-out forwards; /* Duration is 0.5s */
 }
-/* .surgicalSwiper .swiper-scrollbar .swiper-scrollbar-drag{
+.advastap-carousel .swiper-scrollbar {
+  background: rgb(136, 136, 136) !important;
+}
+.advastap-carousel .swiper-scrollbar .swiper-scrollbar-drag{
 background-color: #ffffff !important;
-color: #000 !important;
-} */
+
+}
 
 @media screen and (max-width: 541px) {
-  ::-webkit-scrollbar {
-    height: 0;
+::-webkit-scrollbar {
+    height: 4px;
     width: 0;
+    padding-left: 20vw;
+    overflow: hidden;
   }
-
-  ::-webkit-scrollbar-thumb {
+ 
+  #feature-cards  ::-webkit-scrollbar{
+    display: none;
+  }
+  #cards-carousel ::-webkit-scrollbar{
+    display: none;
+  }
+  #product-description ::-webkit-scrollbar{
+    display: none;
+  }
+  #unique ::-webkit-scrollbar{
     display: none;
   }
 

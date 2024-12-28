@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const CardiacCare = () => {
     return (
-        <section className='pt-[12%] tablet:pt-[15%] mobile:pt-[25%]'>
+        <section className='pt-[12%] tablet:pt-[15%] mobile:pt-[10%]'>
             <div className='container-lg h-full tablet:flex tablet:flex-col justify-between gap-[5vw] mobile:text-center mobile:flex mobile:flex-col mobile:gap-12'>
                 <div className='w-full h-full justify-between flex mobile:flex-col-reverse mobile:gap-6'>
                     <div className='w-[45%] flex flex-col gap-[2vw] tablet:w-1/2 mobile:w-full mobile:gap-4'>

@@ -21,7 +21,7 @@ const UniqueCard=({src,title,para})=>{
 const Unique = () => {
   
   return (
-    <section id="unique" className='w-screen overflow-hidden relative  py-[7%] tablet:py-[10%] mobile:py-[20%]'>
+    <section id="unique" className='w-screen overflow-hidden relative  py-[7%] tablet:py-[10%] mobile:pb-[20%]'>
     <div className="w-screen h-full container-lg">
       <div className="w-full h-full flex flex-col items-center justify-center relative">
         <div className="w-full h-full flex flex-col items-center justify-center mobile:mb-[10vw] mobile:flex mobile:justify-center mobile:w-[90%]">

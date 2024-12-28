@@ -69,7 +69,7 @@ export default function Offerings() {
     return (
         <>
             <section id='offerings'>
-                <div className='offerings-container pt-[12%] tablet:pt-[15%] mobile:pt-[25%]'>
+                <div className='offerings-container pt-[12%] tablet:pt-[15%] mobile:pt-0'>
                     <h2 className='title-2 font-light text-center aeonik mb-[6vw] mobile:mb-10 fadeUp'>OEM Solutions</h2>
                     <Swiper
                         freeMode={true}
@@ -499,8 +499,8 @@ const modalContent = [
       >
         <p>Technical Specification</p>
       </div>
-      <div data-lenis-prevent  className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw] mobile:overflow-x-auto ">
-          <div className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw]">
+      <div   className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw]  ">
+          <div data-lenis-prevent className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw] mobile:overflow-x-auto">
             <div className=" p-[1vw] pb-0  font-light w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[40vw]">
             Composition
             </div>
@@ -620,7 +620,7 @@ const modalContent = [
           >
             <p>Technical Specification</p>
           </div>
-          <div  className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw] mobile:w-[120vw]  mobile:overflow-x-auto">
+          <div data-lenis-prevent className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw] mobile:w-[120vw] overflow-x-scroll">
               <div className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw]">
                 <div className=" p-[1vw] pb-0  font-light w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[60vw]">
                 Filament Diameter

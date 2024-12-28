@@ -41,7 +41,7 @@ export default function CardsCarousel() {
 
   return (
     <>
-      <section className="pb-[10%]" id="cards-carousel">
+      <section className="pb-[10%] w-screen overflow-hidden" id="cards-carousel">
         <Media greaterThan="tablet">
           <div className="w-full h-full flex flex-col gap-[4vw] ">
             <h2 data-para-anim className="aeonik title-2 text-center">

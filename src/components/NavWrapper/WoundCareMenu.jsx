@@ -37,7 +37,7 @@ export default function WoundCareMenu({ onBack }) {
               <li><NavLink className='uppercase' href="/advabond" linkText="Advabond" /></li>
               <li><NavLink className='uppercase' href="/advalon" linkText="Advalon" /></li>
               <li><NavLink className='uppercase' href="/advasyl" linkText="Advasyl" /></li>
-              <li><NavLink href="/bondtape" linkText="Umbilical Cotton Tape" /></li>
+              <li><NavLink href="/bondtape#umbilical-tape" linkText="Umbilical Cotton Tape" /></li>
               <li><NavLink className='uppercase' href="/bondtape" linkText="Advabond tape" /></li>
             </ul>
           </div>

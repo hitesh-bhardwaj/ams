@@ -50,7 +50,7 @@ const Hd2Carousel = () => {
      
   return (
     <>
-    <section id='advastap-specificationCarousel' className='overflow-hidden relative tablet:h-[60vh] mobile:h-full'>  
+    <section id='advastap-specificationCarousel' className='overflow-hidden relative tablet:h-[60vh] mobile:h-full advastap-carousel'>  
         <div className={`w-screen h-full py-[10vw] bg-[#020912]   text-white items-center flex justify-center swiper-container mobile:pb-[20%] `}>
         <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}

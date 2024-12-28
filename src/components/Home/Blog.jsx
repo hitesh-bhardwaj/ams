@@ -75,7 +75,7 @@ const Card = ({ title, description, image, link }) => {
       <p  className="text-[0.94vw] font-light mobile:text-[4.2vw] tablet:text-[2vw]" >
         {description}
       </p>
-      <div className=" !mb-[2vw] tablet:!mb-[4vw] mobile:!mb-[8vw] mobile:w-full mobile:text-center">
+      <div className=" !mb-[2vw] tablet:!mb-[4vw] mobile:!mb-[8vw] mobile:w-full mobile:text-center mobile:flex mobile:justify-center">
         <LinkButton link={link} btnText="Read More"/>
       </div>
       <span className="block h-[1px] w-full bg-[#444444] lineDraw tablet:h-[0.5px]" />

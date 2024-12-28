@@ -18,14 +18,14 @@ import styles from './styles.module.css'
 
 const PortfolioCard = ({ src, heading, para, textclass }) => {
   return (
-    <div className="w-[85vw] h-[50vw] relative rounded-[10px] mobile:h-[150vw] mobile:w-full mobile:rounded-2xl mobile:overflow-hidden mobile:border tablet:w-[90vw] tablet:h-[70vw] mobile:pt-[20%]">
-      <Image src={src} width={1800} height={900} alt="Hernia Slider" className="object-cover w-full h-full mobile:absolute mobile:left-0 mobile:top-0 mobile:z-[-1]" />
-      <div className="absolute top-[15%] left-[10%] flex flex-col gap-[2vw] w-[60%] tablet:w-[70%] tablet:top-[10%] mobile:w-full mobile:px-[8%] mobile:static mobile:z-[5] mobile:text-center" >
+    <div className="w-[85vw] h-[50vw] relative rounded-[10px] mobile:h-full mobile:w-full mobile:rounded-2xl mobile:overflow-hidden mobile:border-none tablet:w-[90vw] tablet:h-[70vw]">
+      <Image src={src} width={1800} height={900} alt="Hernia Slider" className="object-cover w-full h-full mobile:static mobile:h-[60vw] mobile:left-0 mobile:top-0 mobile:z-[-1] mobile:rounded-[5vw]" />
+      <div className="absolute top-[15%] left-[10%] flex flex-col gap-[2vw] w-[60%] tablet:w-[70%] tablet:top-[10%] mobile:w-full mobile:px-0 mobile:static mobile:z-[5] mobile:mt-[5vw] mobile:text-center" >
         <h2 
-          className={`${textclass} text-[2.8vw] !font-light mobile:text-[8.4vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[5vw] aeonik`}
+          className={`${textclass} text-[2.8vw] !font-light mobile:text-[8vw] tablet:text-[4vw] mobile:leading-[1.25] mobile:mb-[3vw] aeonik mobile:text-[#111111]`}
           dangerouslySetInnerHTML={{__html: heading}} />
         <p
-          className={`${textclass} text-[1.3vw] font-light w-[80%] mobile:text-[4.2vw] tablet:text-[2.2vw] tablet:w-full tablet:leading-[1.3] mobile:w-full`}
+          className={`${textclass} text-[1.3vw] font-light w-[80%] mobile:text-[4.2vw] tablet:text-[2.2vw] tablet:w-full tablet:leading-[1.3] mobile:w-full mobile:text-[#111111]`}
           dangerouslySetInnerHTML={{__html: para}}
           />
       </div>
@@ -107,7 +107,7 @@ const PortfolioSwiper = ({ slidesData, textclass, width }) => {
               <Swiper
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 slidesPerView={1}
-                spaceBetween={20}
+                spaceBetween={25}
                 navigation={false}
                 loop={true}
                 speed={500}

@@ -56,7 +56,7 @@ const ContactList = () => {
                   </div>
                 </div>
                 <p data-para-anim className="text-[1.25vw] leading-[1.4] aeonik font-light tablet:text-[2.2vw] mobile:text-xl">
-                  Empowering healthcare professionals with innovative medical solutions. Reach out for tailored product demos, comprehensive product insights, expert clinical support, and opportunities to collaborate in advancing patient care.
+                Join us in advancing MedTech solutions. Reach out for sales, distribution, clinical support, or collaboration opportunities. Submit a request, and a representative from AMS will get in touch with you shortly.
                 </p>
               </div>
             </div>
@@ -86,7 +86,7 @@ const ContactList = () => {
                   </div>
                 </div>
                 <p data-para-anim className="text-[1.25vw] leading-[1.4] aeonik font-light tablet:text-[2.2vw] mobile:text-xl">
-                  Explore our expertise in OEM manufacturing. Reach out for bespoke product designs, high-quality manufacturing, and innovative medical device solutions.
+                 Explore our expertise in OEM manufacturing. Reach out for bespoke product designs, high-quality manufacturing, and innovative medical device solutions.
                 </p>
               </div>
             </div>

@@ -13,9 +13,9 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero h-screen w-screen mobile:mb-[20%] tablet:h-[80vh] overflow-hidden mobile:w-full bg-white" id="hero">
+      <section className="hero h-screen tablet:h-[80vh] overflow-hidden mobile:w-full bg-white" id="hero">
         <div className="px-[10%] relative">
-          <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:h-screen mobile:justify-center">
+          <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:h-screen mobile:justify-start mobile:pt-[40vw]">
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50] mobile:pb-[20vw]">
               <h1
                 data-para-anim
@@ -29,7 +29,7 @@ const Hero = () => {
                   accessible for all.
               </p>
             </div>
-            <div className="absolute right-0 bottom-0 h-full">
+            <div className="absolute right-0 bottom-0 h-full mobile:bottom-[-5%]">
               <div className="w-[77vw] overflow-hidden h-full tablet:w-[100vw] tablet:h-[100%] mobile:w-[100vw] mobile:h-[60%] mobile:mt-[80%]">
                 <video
                   poster="/assets/about/about-hero-poster.webp"

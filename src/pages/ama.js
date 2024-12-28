@@ -2,7 +2,6 @@
 import Genesis from "@/components/layoutComponents/Genesis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import Hero from "@/components/Hero";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Discover from "@/components/Ama/Discover";
 import CardsCarousel from "@/components/Ama/CardsCarousel";
@@ -13,6 +12,7 @@ import CardiacCare from "@/components/Ama/CardiacCare";
 import BgVideo from "@/components/Layout/BgVideo";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
+import Hero from "@/components/Ama/Hero";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,7 +78,7 @@ export default function ama() {
             className="hidden"
             titleWidth={"!w-[100%]"}
             paraWidth={"max-w-[38vw]"}
-            mode={"dark"}
+            mode={""}
             textShadow={"text-shadow"}
             textShadowPara = {'text-shadow-para'}
           />

@@ -74,7 +74,7 @@ function FeatureCards() {
                         fill
                       />
                     </div>
-                    <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] opacity-0 origin-bottom group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                    <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[2vw] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out">
                       <div className="w-full h-full flex flex-col gap-[1vw] px-[2.5vw] py-[2vw]">
                         <h4
 
@@ -113,7 +113,7 @@ function FeatureCards() {
                     >
                       <div className="w-full h-full relative px-[7vw] py-[5vw] tablet:px-[4vw]">
                         <span
-                          className={`w-[10vw] h-[10vw] rounded-full  flex justify-center items-center bg-gray-500 text-white text-[10vw] leading-[1] font-light absolute top-[5%] right-[5%] tablet:w-[5vw] tablet:h-[5vw] tablet:text-[6vw]`}
+                          className={`w-[10vw] h-[10vw] rounded-full  flex justify-center items-center bg-gray-500 text-white text-[10vw] leading-[1] font-light absolute top-[5%] right-[5%] tablet:w-[5vw] tablet:h-[5vw] tablet:text-[6vw] group-hover:opacity-0`}
                         >
                           <p className="font-thin">+</p>
                         </span>
@@ -123,6 +123,10 @@ function FeatureCards() {
                         <p className={`text-[#143CA3] text-[5vw] font-light tablet:text-[2.5vw] group-hover:opacity-0 duration-200`}>
                           {card.description}
                         </p>
+                        <div className={`${index == 2 ? "" : "hidden"} absolute top-[40%] left-0 flex w-full justify-around mobile:text-[4vw] text-[#143CA3] group-hover:opacity-0 font-light `}>
+                      <p>AMS</p>
+                      <p>Others</p>
+                    </div>
                         <div
                           className={`w-[80vw] h-full absolute tablet:w-[50vw] ${index >= 1 ? "top-[20%] left-[5%]" : "top-0 left-0"}`}
                         >
@@ -134,7 +138,7 @@ function FeatureCards() {
                             fill
                           />
                         </div>
-                        <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[6vw] translate-y-[100%] origin-bottom group-hover:translate-y-[0] transition-all duration-500 ease-out">
+                        <div className="absolute w-full h-full z-[5] glassmorphism top-0 left-0 rounded-[6vw] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out">
                           <div className="w-full h-full flex flex-col gap-[4vw] px-[7vw] py-[5vw] tablet:px-[4vw]">
                             <h4 className="text-[8vw] aeonik font-light tablet:text-[4vw]">
                               {card.title}

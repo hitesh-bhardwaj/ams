@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 const PrimaryButton = ({text, className="" ,link, ...props }) => {
     return(
-        <Link href={link} {...props} className={`${styles.btn} ${className}`}>
+        <Link href={link} {...props} className={` ${styles.btn} !border-gray-200 ${className}`}>
             <div aria-hidden="true" className={styles.btnCircle}>
                 <div className={styles.btnCircleText}>
                     <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.btnIcon}>

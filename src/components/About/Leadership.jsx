@@ -102,7 +102,7 @@ const Leadership = () => {
                                             <p className="uppercase mb-[0.5vw] tablet:font-bold tablet:mb-2 mobile:text-[3.5vw] mobile:text-center mobile:mb-[8%]">{item.title}</p>
                                             <span className="bg-black/50 h-[1.5px] w-[3vw] block mb-[1.5vw] tablet:mb-[4vw] tablet:w-[30vw] mobile:hidden" />
                                             <div data-lenis-prevent className="overflow-y-scroll h-[60%] tablet:h-[55%] mobile:h-[70%]">
-                                                <div className="text-justify text-[1.1vw] font-extralight space-y-[3%] pr-3 tablet:text-lg mobile:text-[4vw]">
+                                                <div className="text-justify text-[1.1vw] font-extralight mobile:text-center space-y-[3%] pr-3 tablet:text-lg mobile:text-[4vw]">
                                                     {item.description.map((text, index) => (
                                                         <p key={index}>{text}</p>
                                                     ))}

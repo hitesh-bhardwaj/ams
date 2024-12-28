@@ -5,16 +5,16 @@ export default function Career() {
     return (
         <>
             <section className="p-y-sm" id="career">
-                <div className="container-lg relative px-[8%] py-[6%] overflow-hidden border border-[#00000038] rounded-[2.5vw] mobile:rounded-[7vw] mobile:py-[15%] fadeUp">
+                <div className="w-[90%] mx-auto relative px-[8%] py-[6%] overflow-hidden border border-[#00000038] mobile:w-[100vw] mobile:py-0 mobile:border-none rounded-[2.5vw] mobile:rounded-none fadeUp">
                 <LazyVideo
                     poster={"/assets/home/career-poster.webp"}
                     type="video/mp4"
                     autoPlay
                     loop
                     videoSrc={"/assets/home/career.mp4"}
-                    className='w-full h-full object-cover left-0 top-0 absolute'
+                    className='w-full h-full object-cover left-0 top-0 absolute mobile:h-[60vw]'
                     />
-                    <div className="w-[58%] h-[35vw] relative z-10 space-y-[1vw] tablet:w-[80%] tablet:h-[60vw] mobile:w-[100%] mobile:h-[180vw] mobile:space-y-[5vw] mobile:text-center mobile:flex-col " >
+                    <div className="w-[58%] h-[35vw] relative z-10 space-y-[1vw] tablet:w-[80%] tablet:h-[60vw] mobile:w-[100%] mobile:h-full mobile:space-y-[5vw] mobile:text-center mobile:flex-col mobile:mt-[70vw] " >
                         <h2 className="title-2 aeonik mobile:w-full">
                             <span data-para-anim className=" 1">
                                 Join Our Mission to
