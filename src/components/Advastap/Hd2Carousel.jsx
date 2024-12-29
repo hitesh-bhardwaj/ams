@@ -136,7 +136,7 @@ const Hd2Carousel = () => {
         </div>
           <div
                          className={`px-[1.2vw] py-[1.2vw] absolute z-[5] top-[82%] right-0 mobile:bottom-[3%] mobile:top-auto mobile:right-auto mobile:left-[64%] translate-x-[-65%] tablet:top-[95%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
-                         onClick={handleNext} // Trigger next slide
+                         onClick={handleNext}
                        >
                          <span
                            className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
@@ -152,7 +152,7 @@ const Hd2Carousel = () => {
                        </div>
                        <div
                          className={`px-[1.2vw] py-[1.2vw] top-[82%] right-[6%] absolute z-[5] mobile:bottom-[3%] mobile:top-auto mobile:left-[40%] mobile:right-auto translate-x-[-38%]  tablet:top-[95%] tablet:right-[10%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
-                         onClick={handlePrev} // Trigger previous slide
+                         onClick={handlePrev}
                        >
                          <span
                            className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}

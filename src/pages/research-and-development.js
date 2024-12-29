@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Genesis from "@/components/layoutComponents/Genesis";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Rnd/Hero";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Portfolio from "@/components/Endo/Portfolio";
 import Layout from "@/components/Layout";
@@ -72,7 +72,7 @@ export default function rnd() {
             content={hero.content}
             className="hidden"
             titleColor={true}
-            mode={"dark"}
+            mode={""}
             paraWidth={"max-w-[40vw]"}
           />
           <Genesis content={content} />
