@@ -1,57 +1,45 @@
 import Image from "next/image";
+import React from "react";
 
-const Hero = ({ heading, tagline, para1, src,bgimg, para2,margin, className = "",overlay }) => {
+const Hero = ({heading, tagline, para1, src,bgimg, para2, className = ""}) => {
   return (
     <>
-      <section className="hero tablet:mb-0 tablet:pr-[3%] w-screen overflow-hidden h-screen shadow-md drop-shdow-sm mobile:shadow-none py-[2%] tablet:h-[80vh]" id="hero">
-        <div className={`absolute w-screen h-screen top-0 left-0 bg-white/40 ${overlay}`}></div>
-        <div className="px-[10%] relative hero-container mobile:mt-[25%] tablet:px-[5%] mobile:px-[8%]">
-          <div className="flex h-full w-full justify-start items-center mobile:h-screen mobile:flex-col mobile:justify-start mobile:text-center mobile:gap-[2vw] tablet:justify-start tablet:h-[50vh]">
-            <div className="pt-[15%] gap-[4vw] mobile:w-full mobile:h-fit mobile:flex mobile:flex-col mobile:gap-0 mobile:pt-[0%] tablet:pt-0">
-              <div className="mobile:w-full mobile:h-full mobile:flex  mobile:flex-col mobile:gap-[2vw] mobile:items-center">
-                <h1 className="title-1 aeonik  leading-[1] overflow-hidden uppercase">
-                  <span
-data-para-anim
-                    className={`leading-[1.2] overflow-hidden uppercase text-[5.75vw] mobile:text-[13.2vw] ${className} tablet:text-[9vw]`}
-                  >
-                    {heading}
-                  </span> 
-                </h1>
-                <p data-para-anim className="uppercase  text-[1.25vw] leading-[1.25] tracking-wide mobile:text-[5vw] mobile:leading-[1.2] mobile:w-[80%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
-                  {tagline}
-                </p>
-              </div>
-              <div className="flex items-center justify-start ml-[-2vw] mobile:justify-center mobile:text-center mobile:ml-0 ">
-                <span className="w-[4.5vw] h-[2px] bg-black rotate-90 mobile:hidden tablet:w-[1.5px] tablet:rotate-0 tablet:h-[10vw] fadeUp"></span>
-                <p className="max-w-[25vw] ml-[-1vw] mt-[4vw] mb-[4vw] text-[1.65vw] leading-[1.1] font-light mobile:text-[4.8vw] mobile:max-w-full mobile:leading-[1.2] tablet:text-[2.5vw] tablet:max-w-[60%] tablet:leading-[1.2] tablet:ml-[2vw]">
-                  <span data-para-anim>{para1}</span>
-                </p>
-              </div>
+      <section className="w-screen h-screen relative overflow-hidden" id="product-hero">
+        <div className="container-lg ">
+          <div className="w-full flex flex-col gap-[2vw] justify-center h-screen pl-[5vw] mobile:justify-start mobile:items-center mobile:text-center mobile:pl-0 mobile:pt-[30vw] mobile:gap-[5vw] tablet:justify-start tablet:pt-[20vw]">
+            <div className="flex flex-col z-[10] mobile:gap-[5vw]">
+              <h1 className={`text-[6vw] font-light uppercase mobile:text-[13.2vw] mobile:leading-[1] aeonik tablet:text-[8.5vw] fadeUp ${className}`}>
+                {heading}
+              </h1>
+              <p data-para-anim className="text-[1.2vw] uppercase tracking-wide mobile:text-[4.5vw] mobile:normal-case tablet:text-[2.5vw] tablet:w-[90%]">
+                {tagline}
+              </p>
             </div>
-            <div className="absolute right-0 top-[10%] flex flex-col items-center justify-end  mobile:flex-col-reverse mobile:right-0 mobile:top-[25%] tablet:top-[65%]">
-              <div className="w-[55vw] h-[45vw] absolute bottom-[-20%] right-[5%] mobile:w-[100vw] mobile:h-[80vw] mobile:right-[10%] mobile:bottom-0 tablet:w-[65vw] tablet:h-[60vw] z-0 fadeUp">
+            <div className="relative pl-[1vw] w-[30%] z-[10] mt-[3vw] mobile:pl-0 mobile:w-[90%] mobile:mt-0 tablet:w-[50%] tablet:pl-[2vw]">
+              <span className="w-[2px] rounded-full h-[80%] absolute left-0 top-[50%] -translate-y-[50%] bg-black fadeUp mobile:hidden"></span>
+              <p data-para-anim className="text-[1.5vw] leading-[1.3] mobile:text-[4.5vw] mobile:font-light tablet:text-[2.5vw]">
+                {para1}
+              </p>
+            </div>
+            <div data-para-anim className="absolute right-[13%] bottom-[10%] z-[10] text-[1.45vw] mobile:static mobile:text-[4.5vw] mobile:font-light tablet:text-[3vw] tablet:bottom-[12%]">
+              {para2}
+            </div>
+            <div >
+              <div className="absolute z-[2] right-[7%] top-[20%] w-[40vw] h-[30vw] fadeUp mobile:bottom-0 mobile:top-auto mobile:w-[85vw] mobile:h-[100vw] mobile:right-[8%] tablet:w-[70vw] tablet:h-[50vw] tablet:top-auto tablet:bottom-[20%]">
                 <Image
-                  className="object-cover"
-                  src={bgimg}
-                  alt="Background Image"
-                  fill
-                />
-              </div>
-
-              <div className="w-[40vw] h-[40vw] relative bottom-[10%] right-[15%]  mobile:bottom-0 mobile:w-[100vw] mobile:h-[80vw] mobile:left-0  tablet:w-[55vw] tablet:h-[60vw] z-10 fadeUp ">
-                <Image
-                  className="object-contain mobile:object-contain"
                   src={src}
-                  alt="Hero Image"
-                  priority={true}
+                  alt="products-image"
+                  className="object-contain"
                   fill
                 />
               </div>
-
-              <div className={`mobile:mt-[7vw] mt-[-5vw] ${margin} ml-[-15vw] mobile:ml-0`}>
-                <p data-para-anim className="max-w-[25vw]  text-[1.45vw] leading-[1.2] font-light mobile:text-[5vw] mobile:max-w-[75vw] mobile:py-[10%] mobile:mb-[20%] tablet:text-[2.5vw] tablet:max-w-[52vw] tablet:mt-[-5vw] tablet:text-left">
-                  {para2}
-                </p>
+              <div className="absolute z-[1] right-[10%] top-[15%] w-[40vw] h-[40vw] fadeUp mobile:bottom-0 mobile:top-auto mobile:right-[10%] mobile:w-[90vw] mobile:h-[100vw] tablet:w-[80vw] tablet:h-[70vw] tablet:top-auto tablet:bottom-[10%]">
+                <Image
+                  src={bgimg}
+                  alt="products-bg"
+                  className="object-contain scale-[1.5]"
+                  fill
+                />
               </div>
             </div>
           </div>

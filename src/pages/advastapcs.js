@@ -5,7 +5,6 @@ import Layout from '@/components/Layout'
 import SurgicalOutcomes from '@/components/SurgicalOutcomes'
 import React from 'react'
 import { fadeUp, paraAnim } from '@/components/gsapAnimations'
-import { NextSeo } from 'next-seo'
 import MetaData from '@/components/Metadata'
 import { WebpageJsonLd } from '@/lib/json-ld'
 

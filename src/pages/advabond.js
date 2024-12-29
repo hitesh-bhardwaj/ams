@@ -110,7 +110,7 @@ const advabond = () => {
             src={"/assets/advabond/advabond-hero.png"}
             bgimg={"/assets/advabond/advabond-hero-bg.png"}
             para2={"Enhancing confidence for everlasting support"}
-            overlay={"hidden"}
+          
           />
           <Information
             info={

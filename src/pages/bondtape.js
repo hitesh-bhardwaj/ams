@@ -8,7 +8,6 @@ import Layout from "@/components/Layout";
 import UmbilicalTape from "@/components/AdvabondTape/UmbilicalTape";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
 

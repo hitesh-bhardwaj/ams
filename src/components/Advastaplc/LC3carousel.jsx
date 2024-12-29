@@ -76,11 +76,11 @@ const LC3Carousel = () => {
                 initialSlide: 1,
               },
             }}
-            className={`w-screen flex items-center justify-center lc3Swiper specificationSwiper   tablet:h-[60vh] mobile:h-[90vh]`}
+            className={`w-screen flex items-center justify-center lc3Swiper specificationSwiper   tablet:h-[60vh] mobile:h-[180vw]`}
           >
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
-                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
+                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
                   <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:h-[20vw] mobile:text-center tablet:text-[3vw] tablet:h-[8vw]">
                     <span data-para-anim>Advanced X-Shaped Technology</span>
                   </p>
@@ -93,7 +93,7 @@ const LC3Carousel = () => {
                         className="object-contain "
                       />
                     </div>
-                    <p className="text-center text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik font-light   text-[#2A2A2A] mobile:text-[7vw]  mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[5%] tablet:font-light tablet:w-[80%]">
+                    <p className="text-center text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik font-light   text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3] mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[5%] tablet:font-light tablet:w-[80%]">
                       <span data-para-anim>
                         Uniform compression ensures consistent perfusion across
                         staple line.
@@ -113,7 +113,7 @@ const LC3Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
-                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
+                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
                   <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:h-[20vw]  mobile:text-center tablet:text-[3vw] tablet:h-[8vw]">
                     <span data-para-anim>Fresh Blade Each Time</span>
                   </p>
@@ -126,7 +126,7 @@ const LC3Carousel = () => {
                         className="object-contain "
                       />
                     </div>
-                    <p className="text-center text-[1.25vw] absolute top-[15%] right-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[80%] tablet:left-[10%] tablet:font-light">
+                    <p className="text-center text-[1.25vw] absolute top-[15%] right-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[80%] tablet:left-[10%] tablet:font-light">
                       <span data-para-anim>
                         Clean cuts, less contamination.
                       </span>
@@ -145,7 +145,7 @@ const LC3Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
-                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
+                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
                   <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:h-[20vw]  mobile:text-center tablet:text-[3vw] tablet:h-[8vw]">
                     <span data-para-anim>Adjustable staple height.</span>
                   </p>
@@ -158,7 +158,7 @@ const LC3Carousel = () => {
                         className="object-contain "
                       />
                     </div>
-                    <p className="text-center text-[1.25vw] absolute bottom-[20%] right-[5%] aeonik font-light text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%]  tablet:left-[5%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[80%] tablet:font-light">
+                    <p className="text-center text-[1.25vw] absolute bottom-[20%] right-[5%] aeonik font-light text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3] mobile:font-light mobile:w-[70%] mobile:top-[80%] mobile:left-[15%]  tablet:left-[5%] mobile:z-50 tablet:text-[2.5vw] tablet:top-[80%] tablet:font-light">
                       <span data-para-anim>
                         Enhanced staple count visibility
                       </span>
@@ -177,7 +177,7 @@ const LC3Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
-                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
+                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
                   <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:h-[20vw]  mobile:text-center tablet:text-[3vw] tablet:h-[8vw]">
                     <span data-para-anim>Tissue Space Control Mechanism</span>
                   </p>
@@ -190,7 +190,7 @@ const LC3Carousel = () => {
                         className="object-contain "
                       />
                     </div>
-                    <p className="text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw] mobile:font-light mobile:w-[90%] mobile:bottom-[5%] mobile:left-[5%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]">
+                    <p className="text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3] mobile:font-light mobile:w-[90%] mobile:bottom-[5%] mobile:left-[5%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]">
                       <span data-para-anim>
                         Even pressure distribution from proximal to distal ends.
                       </span>
@@ -209,7 +209,7 @@ const LC3Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
-                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[80vh] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
+                <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
                   <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:h-[20vw]  mobile:text-center tablet:text-[3vw] tablet:h-[8vw]">
                     <span data-para-anim>Safety Lock</span>
                   </p>
@@ -222,7 +222,7 @@ const LC3Carousel = () => {
                         className="object-contain "
                       />
                     </div>
-                    <p className="text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[7vw]  mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[12%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]">
+                    <p className="text-center text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3]  mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[12%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light tablet:w-[85%]">
                       <span data-para-anim>
                         Avoids accidental misfiring before clamping.
                       </span>

@@ -114,7 +114,7 @@ const advabondcv = () => {
             src={"/assets/advabond-cv/advabond-cv-hero.png"}
             bgimg={"/assets/advabond/advabond-hero-bg.png"}
             para2={"Enhancing confidence for everlasting support"}
-            overlay={"hidden"}
+            
           />
           <Information info={"ADVABOND with Pledget suture is a sterile, coated, braided, synthetic, non-absorbable surgical suture composed of Polyethylene Terephthalate. The suture is coated with Silicone which acts as a lubricant to mechanically improve the ease of passage through tissue and the overall handling qualities of the suture. ADVABOND with Pledget suture elicits a minimal initial inflammatory reaction in tissues, which is followed by a gradual encapsulation of the suture by fibrous connective tissue. ADVABOND is the advanced solution for valve repair and replacement."} />
           <Edge2

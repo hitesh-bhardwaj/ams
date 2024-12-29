@@ -115,7 +115,7 @@ const advalene = () => {
             src={"/assets/advalene/advalene-hero.png"}
             bgimg={"/assets/advalene/advalene-hero-bg.png"}
             para2={"Steady performance for superior confidence"}
-            overlay={"hidden"}
+            
 
           />
           <Information info={"ADVALENE suture is a monofilament non-absorbable sterile surgical suture composed of an isotactic crystalline stereoisomer of polypropylene, a synthetic linear polyolefin. ADVALENE suture is dyed with Phthalocyanine Blue to enhance visibility in tissue. ADVALENE suture is not absorbed nor is subjected to degradation or weakening by the action of tissue enzymes. Due to its relative biological inertness it is recommended for use where the least possible suture reaction is desired."} />

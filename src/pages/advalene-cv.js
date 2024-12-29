@@ -106,7 +106,7 @@ const advalenecv = () => {
             src={"/assets/advalene-cv/advalene-cv-hero.png"}
             bgimg={"/assets/advalene/advalene-hero-bg.png"}
             para2={"With exceptional strength comes confidence that lasts"}
-            overlay={"hidden"}
+            
           />
           <Information
             info={

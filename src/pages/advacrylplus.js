@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Edge from "@/components/Products/Edge";
 import Features from "@/components/Products/Features";
-import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
 import Uncover from "@/components/Products/Uncover";
@@ -12,6 +11,8 @@ import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
+import Hero from "@/components/Products/Hero";
+
 
 const EdgeCard = {
   card1: {
@@ -103,19 +104,19 @@ const advacrylplus = () => {
       <Layout>
         <main>
           <Hero
-            margin={"mobile:mt-[30vw]"}
-            heading={"Advacryl Plus"}
-            className="text-[#855EA6]"
-            tagline={
-              "Antibacterial with Triclosan Braided Coated Polyglactin 910"
-            }
-            para1={
-              "Consistent performance for confidence in a variety of soft tissue approximation minimizing Surgical Site Infections (SSI)"
-            }
-            src={"/assets/advacryl-plus/advacryl-plus-hero.png"}
-            bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
-            para2={"Steady performance for superior confidence"}
-            overlay={"hidden"}
+           heading={"Advacryl Plus"}
+           className="text-[#855EA6]"
+           tagline={
+             "Antibacterial with Triclosan Braided Coated Polyglactin 910"
+           }
+           para1={
+             "Consistent performance for confidence in a variety of soft tissue approximation minimizing Surgical Site Infections (SSI)"
+           }
+           src={"/assets/advacryl-plus/advacryl-plus-hero.png"}
+           bgimg={"/assets/advacryl/advacryl-hero-bg.png"}
+           para2={"Steady performance for superior confidence"}
+          
+          
           />
           <Information
             info={

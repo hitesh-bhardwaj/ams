@@ -117,7 +117,7 @@ export default function Offerings() {
                             <div className='w-[90%] mx-auto h-full'>
                                 <div className={`${styles.cardHead}`}>
                                     <h4>Needle Technology</h4>
-                                    <p>Surgical Suture Needle</p>
+                                    <p className='mobile:!text-[3.8vw]'>Surgical Suture Needle</p>
                                 </div>
                                 <div className={styles.cardMain}>
                                     <Image
@@ -183,7 +183,7 @@ export default function Offerings() {
                             <div className='w-[90%] mx-auto h-full'>
                                 <div className={`${styles.cardHead}`}>
                                     <h4 className=''>Sternotomy Suture</h4>
-                                    <p className=''>316LVM Stainless Steel</p>
+                                    <p className='mobile:!text-[3.8vw]'>316LVM Stainless Steel</p>
                                 </div>
                                 <div className={styles.cardMain}>
                                     <Image
@@ -247,7 +247,7 @@ export default function Offerings() {
                             <div className='w-[90%] mx-auto h-full'>
                                 <div className={`${styles.cardHead}`}>
                                     <h4 className=''>Hernia Solutions</h4>
-                                    <p className=''>Monofilament Polypropylene Mesh</p>
+                                    <p className='mobile:!text-[3.8vw]'>Monofilament Polypropylene Mesh</p>
                                 </div>
                                 <div className={styles.cardMain}>
                                     <Image
@@ -305,7 +305,7 @@ export default function Offerings() {
                             <div className='w-[90%] mx-auto h-full'>
                                 <div className={`${styles.cardHead}`}>
                                     <h4 className=''>Stent Delivery Systems</h4>
-                                    <p className=''>Rapid Exchange Catheter</p>
+                                    <p className='mobile:!text-[3.8vw]'>Rapid Exchange Catheter</p>
                                 </div>
                                 <div className={styles.cardMain}>
                                     <Image
@@ -381,7 +381,7 @@ export default function Offerings() {
                             <div className='w-[90%] mx-auto h-full'>
                                 <div className={`${styles.cardHead}`}>
                                     <h4 className=''>Knotless Tissue Control Device</h4>
-                                    <p className=''>Polydioxanone | Poliglecaprone 25 | Polypropylene</p>
+                                    <p className='mobile:!text-[3.8vw]'>Polydioxanone | Poliglecaprone 25 | Polypropylene</p>
                                 </div>
                                 <div className={styles.cardMain}>
                                     <Image

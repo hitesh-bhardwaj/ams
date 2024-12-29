@@ -113,8 +113,7 @@ const advacrylrapid = () => {
             para2={
               "Swift Confidence for Superior Predictability"
             }
-            margin={"mobile:!mt-[24vw]"}
-            overlay={"hidden"}
+            
 
           />
           <Information info={" ADVACRYL RAPID is a braided synthetic absorbable suture made of 90% glycolide and 10% L-lactide. ADVACRYL RAPID in comparison to ADVACRYL has a rapid loss of strength and absorption rate. The characteristic rapid loss of strength is achieved by use of a polymer material with a lower molecular weight than regular ADVACRYL (polyglactin 910) suture."} />

@@ -124,19 +124,19 @@ const ProductCarousel = () => {
             <h2 className="title-2 aeonik mobile:text-center mobile:ml-0 mobile:px-[5vw] ">
               <span data-para-anim>{slidesData[activeSlide]?.title}</span>
             </h2>
-            <p className="text-[2.2vw] font-light mobile:text-[5.5vw] mobile:text-center mobile:w-[90%] tablet:text-[3.5vw]">
+            <p className="text-[2.2vw] font-light mobile:text-[5.5vw] mobile:text-center mobile:w-[85%] tablet:text-[3.5vw]">
               {slidesData[activeSlide]?.para}
             </p>
           </div>
           <div className="pt-[2vw]">
             
-            <p className="content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[1.5vw] tablet:text-[2.5vw] tablet:w-[95%]">
+            <p className="content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[5vw] mobile:py-[1.5vw] tablet:text-[2.5vw] tablet:w-[85%]">
               {slidesData[activeSlide].description1}
             </p>
-            <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[1.5vw] tablet:text-[2.5vw] tablet:w-[95%]">
+            <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[5vw] mobile:py-[1.5vw] tablet:text-[2.5vw] tablet:w-[85%]">
               {slidesData[activeSlide].description2}
             </p>
-            <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[2vw] mobile:py-[1.5vw] tablet:text-[2.5vw] tablet:w-[95%]">
+            <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[5vw] mobile:py-[1.5vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[activeSlide].description3}
             </p>
           </div>

@@ -62,9 +62,9 @@ export default function FormOem() {
   };
 
   return (
-    <section className="pt-[12%]" id="formoem">
+    <section className="pt-[12%] mobile:pb-[10%]" id="formoem">
       <div className="w-full h-full py-[8vw] border-gray-200 bg-white/50">
-        <div className="w-[75%] mx-auto font-light pr-[2vw] tablet:w-full">
+        <div className="w-[75%] mx-auto font-light pr-[2vw] tablet:w-full mobile:w-[95%] mobile:pr-0">
           <div className="w-full flex gap-[12vw] mobile:flex-col mobile:w-full mobile:items-center tablet:w-full tablet:px-[5vw] tablet:gap-[5vw] tablet:justify-between">
             <div className="w-[40%] flex flex-col gap-[2vw] mobile:w-full mobile:gap-[5vw] ">
               <h3 data-para-anim className="text-[2.8vw] aeonik mobile:text-[10vw] mobile:text-center tablet:text-[5vw] ">Get in Touch</h3>

@@ -110,7 +110,7 @@ const advapd = () => {
             src={"/assets/advapd/advapd-hero.png"}
             bgimg={"/assets/advapd/advapd-hero-bg.png"}
             para2={"Steady performance for superior confidence"}
-            overlay={"hidden"}
+            
           />
           <Information
             info={

@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Hero from "@/components/Products/Hero";
+// import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
 import { fadeUp } from "@/components/gsapAnimations";
@@ -9,9 +9,10 @@ import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import UncoverCV from "@/components/Products/UncoverCV";
 import BgVideo from "@/components/Layout/BgVideo";
-import { NextSeo } from "next-seo";
+
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
+import Hero from "@/components/Products/Hero";
 
 const cardData1 = [
   {
@@ -107,7 +108,7 @@ const advapacer = () => {
             src={"/assets/advapacer/advapacer-hero.png"}
             bgimg={"/assets/advapacer/advapacer-bg.png"}
             para2={"Monofilament Non-Absorbable Surgical Suture"}
-            overlay={"hidden"}
+            
           />
           <Information
             info={

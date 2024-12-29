@@ -627,7 +627,18 @@ background-color: #ffffff !important;
   .menu-btn .line-wrapper .line {
     height: 3px;
     width: 12vw;
-    right: 6vw;
+    right: 3vw;
+  }
+  .menu-btn {
+
+    height: 12vw;
+    width: 12vw;
+    
+  }
+  .menu-btn:before {
+
+    left: -25%;
+ 
   }
   .link-btn {
     font-size: 5.1vw;

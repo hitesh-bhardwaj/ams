@@ -27,8 +27,8 @@ const ContactList = () => {
         className="w-full h-full bg-white/50 py-[7%] mobile:py-[15%]"
         id="contact-list"
       >
-        <div className="container-lg h-full flex flex-col items-center gap-[5vw]">
-          <h2 data-para-anim className="title-2 aeonik">Contact AMS</h2>
+        <div className="container-lg h-full flex flex-col items-center gap-[5vw] ">
+          <h2 data-para-anim className="title-2 aeonik mobile:mb-[5vw]">Contact AMS</h2>
           <div className="w-full flex justify-between fadeUp mobile:flex-col mobile:gap-12 tablet:flex-wrap">
             <div className="cursor-pointer" onClick={() => openModal("Healthcare Providers")}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full tablet:w-[44vw]">

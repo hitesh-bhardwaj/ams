@@ -15,7 +15,7 @@ const Hero = () => {
     <>
       <section className="hero h-[100vh] tablet:h-[80vh] mobile:h-[100vh] overflow-hidden mobile:w-full" id="hero">
         <div className="px-[10%] relative h-full mobile:w-full mobile:flex mobile:flex-col-reverse mobile:px-0">
-          <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:h-full mobile:justify-start mobile:pt-[15vw]">
+          <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:h-full mobile:justify-start mobile:pt-[10vw]">
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center mobile:gap-[10vw] z-[50]">
               <h1 data-para-anim className="title-1 aeonik capitalize !leading-[1.25] mobile:text-[11vw] text-[#FFFFFF] w-[90%] text-shadow mobile:text-[#111111] mobile:!drop-shadow-none" >
                 Ushering the next generation of medical device technology

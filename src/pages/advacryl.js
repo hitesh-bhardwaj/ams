@@ -12,6 +12,7 @@ import Information from "@/components/Products/Information";
 import BgVideo from "@/components/Layout/BgVideo";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
+import NewHero from "@/components/Products/Hero";
 
 const EdgeCard = {
   card1: {
@@ -118,7 +119,7 @@ const advacryl = () => {
             para2={
               "With great versatility comes the confidence to meet specific needs"
             }
-            overlay={"hidden"}
+           
 
           />
           <Information info={"ADVACRYL suture is braided synthetic absorbable sterile surgical suture composed of a copolymer made from 90% Glycolide and 10% L-lactide. Braided ADVACRYL suture is coated with a mixture composed of Poly (Glycolide-co-lactide) (Glacomer 37) and calcium stearate. The suture is colored violet to increase visibility and is also available undyed."} />

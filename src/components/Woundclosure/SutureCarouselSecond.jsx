@@ -114,7 +114,7 @@ const SutureCarouselSecond = () => {
                   } transition-all duration-500 ease`}
                 >
                   <div
-                    className={`absolute w-full h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[90vw] mobile:h-[100vw] tablet:w-[85vw] tablet:h-[60vw]`}
+                    className={`absolute w-full h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[75vw] mobile:h-[80vw] mobile:top-[25%] tablet:w-[85vw] tablet:h-[60vw]`}
                   ></div>
 
                   <div
@@ -136,7 +136,7 @@ const SutureCarouselSecond = () => {
                   </div>
                   <div className="slider-circle-content w-[30vw] mobile:w-[90vw] tablet:w-[50vw] z-[10]">
                     <h3
-                      className={`text-[1.4vw] font-light text-center mb-[1vw] mobile:text-[6.5vw] tablet:text-[3vw] tablet:translate-y-[10vw] ${
+                      className={`text-[1.4vw] font-light text-center mb-[1vw] mobile:text-[6.5vw] tablet:text-[3vw] tablet:translate-y-[10vw] mobile:translate-y-[-10vw] ${
                         activeIndex === index
                           ? "text-[2vw] translate-y-[-3vw] tablet:translate-y-[10vw]"
                           : ""
