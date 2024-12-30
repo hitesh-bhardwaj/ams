@@ -62,7 +62,7 @@ const ContactList = () => {
                 </p>
               </div>
             </div>
-            <div className="cursor-pointer" onClick={() => openModal("OEM Solutions")}>
+            <div className="cursor-pointer" onClick={() => openModal("OEM Solutions","/assets/contact/plant-bg.png")}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full tablet:w-[44vw]">
                 <div className="w-full h-[16vw] rounded-[2vw] overflow-hidden relative mobile:h-[50vw] tablet:h-[25vw]">
                   <Image
@@ -92,7 +92,7 @@ const ContactList = () => {
                 </p>
               </div>
             </div>
-            <div className="cursor-pointer tablet:w-full tablet:flex tablet:justify-center tablet:mt-[3vw]" onClick={() => openModal("Other Enquiries")}>
+            <div className="cursor-pointer tablet:w-full tablet:flex tablet:justify-center tablet:mt-[3vw]" onClick={() => openModal("Other Enquiries","/assets/contact/plant-bg.png")}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full tablet:w-[44vw]">
                 <div className="w-full h-[16vw] rounded-[2vw] overflow-hidden relative mobile:h-[50vw] tablet:h-[25vw]">
                   <Image
