@@ -5,32 +5,8 @@ import 'swiper/css/scrollbar';
 import { Scrollbar } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css/navigation';
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Hd3Carousel = () => {
-    useGSAP(()=>{
-            if(globalThis.innerWidth>1024){
-            const tl = gsap.timeline({
-                scrollTrigger:{
-                    trigger:'.swiper-container'
-                }
-            });
-            tl.fromTo(".specificationSwiper .swiper-slide",{
-                xPercent:70,
-                opacity:0.5
-            },{
-                xPercent:0,
-                duration: 2,
-            delay: 0.3,
-            opacity:1,
-            ease: "power3.out",
-            })
-        };
-        });
-
         const swiperRef = useRef(null); 
 
       
@@ -73,9 +49,9 @@ const Hd3Carousel = () => {
         className={`w-screen flex items-center justify-center specificationSwiper tablet:h-[60vh] mobile:h-[130vw] advastap-carousel`}
       >
         <SwiperSlide>
-        <div className="py-[2vw] flex justify-center">
+        <div className="py-[2vw] flex justify-center fadeUp">
             <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]'>
-                <p className=' h-[5vw] leading-[1.2] text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw] text-[#FFFFFF]'><span data-para-anim>Elongated shaft</span></p>
+                <p className=' h-[5vw] leading-[1.2] text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw] text-[#FFFFFF]'><span >Elongated shaft</span></p>
                 <div className=' h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] tablet:h-[50vh] mobile:rounded-[9vw]'>
                     <div className='w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]'>
                         <Image
@@ -85,7 +61,7 @@ const Hd3Carousel = () => {
                         className='object-cover mobile:object-contain rounded-[3vw] tablet:rounded-[5vw] mobile:rounded-[9vw] '
                         />
                     </div> 
-                    <p className='text-[1.25vw] leading-[1.3] text-[#FFFFFF] absolute bottom-[15%] left-[10%] font-light aeonik   mobile:text-[5.5vw] mobile:w-[90%] mobile:top-auto mobile:bottom-[10%] mobile:font-light mobile:left-[5%] mobile:text-center  mobile:z-50 tablet:text-[2.5vw] tablet:top-[85%] tablet:font-light tablet:w-[40vw]'><span data-para-anim>Improved accessibility for precise placement of purse string suture</span></p>
+                    <p className='text-[1.25vw] leading-[1.3] text-[#FFFFFF] absolute bottom-[15%] left-[10%] font-light aeonik   mobile:text-[5.5vw] mobile:w-[90%] mobile:top-auto mobile:bottom-[10%] mobile:font-light mobile:left-[5%] mobile:text-center  mobile:z-50 tablet:text-[2.5vw] tablet:top-[85%] tablet:font-light tablet:w-[40vw]'><span >Improved accessibility for precise placement of purse string suture</span></p>
                    
                 </div>
                
@@ -93,9 +69,9 @@ const Hd3Carousel = () => {
         </div>
             </SwiperSlide>
             <SwiperSlide>
-        <div className="py-[2vw] flex justify-center">
+        <div className="py-[2vw] flex justify-center fadeUp">
             <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]'>
-                <p className='h-[5vw] leading-[1.2] text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw] text-[#FFFFFF]'><span data-para-anim>Robust and integrated anvil design</span></p>
+                <p className='h-[5vw] leading-[1.2] text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw] text-[#FFFFFF]'><span >Robust and integrated anvil design</span></p>
                 <div className='  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] '>
                     <div className='w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]'>
                         <Image
@@ -105,16 +81,16 @@ const Hd3Carousel = () => {
                         className='object-cover mobile:object-contain  rounded-[3vw] tablet:rounded-[5vw] mobile:rounded-[9vw]'
                         />
                     </div>
-                    <p className=' text-[1.25vw] text-[#FFFFFF] absolute bottom-[15%] left-[20%] aeonik  leading-[1.3]  font-light mobile:text-[5.5vw] mobile:w-[90%] mobile:font-light mobile:top-auto mobile:bottom-[10%] mobile:left-[5%]  mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light'><span data-para-anim>Mitigates risk of accidental detachment due to anvil rod leaning</span></p>
+                    <p className=' text-[1.25vw] text-[#FFFFFF] absolute bottom-[15%] left-[20%] aeonik  leading-[1.3]  font-light mobile:text-[5.5vw] mobile:w-[90%] mobile:font-light mobile:top-auto mobile:bottom-[10%] mobile:left-[5%]  mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light'><span >Mitigates risk of accidental detachment due to anvil rod leaning</span></p>
                 </div>
                
             </div>
         </div>
             </SwiperSlide>
             <SwiperSlide>
-        <div className="py-[2vw] flex justify-center">
+        <div className="py-[2vw] flex justify-center fadeUp">
             <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]'>
-                <p className=' h-[5vw] text-[2.5vw] font-light ml-[1.5vw] leading-[1.2] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw] text-[#FFFFFF]'><span data-para-anim>Deeper housing capacity</span></p>
+                <p className=' h-[5vw] text-[2.5vw] font-light ml-[1.5vw] leading-[1.2] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw] text-[#FFFFFF]'><span >Deeper housing capacity</span></p>
                 <div className=' h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw]  tablet:h-[50vh] '>
                     <div className='w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]'>
                         <Image
@@ -125,7 +101,7 @@ const Hd3Carousel = () => {
                         className='object-cover mobile:object-contain rounded-[3vw] mobile:rounded-[9vw] tablet:rounded-[5vw]'
                         />
                     </div>
-                    <p className=' text-[#FFFFFF] text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik  leading-[1.3] font-light mobile:text-[5.5vw] mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:top-auto mobile:left-[5%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]' ><span data-para-anim>With dentate line marking</span></p>
+                    <p className=' text-[#FFFFFF] text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik  leading-[1.3] font-light mobile:text-[5.5vw] mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:top-auto mobile:left-[5%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]' ><span >With dentate line marking</span></p>
                   
                 </div>
                

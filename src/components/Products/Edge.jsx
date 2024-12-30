@@ -7,9 +7,13 @@ const Edge = ({ sectionheading, card1, card2, card3, visibility }) => {
   paraAnim();
   const [activeCard, setActiveCard] = useState("card2");
 
+  
   const handleHover = (card) => { 
+    if(globalThis.innerWidth>1024){
     setActiveCard(card);
+    }
   };
+
 
   return (
     <>

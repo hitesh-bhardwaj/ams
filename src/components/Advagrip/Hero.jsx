@@ -57,7 +57,7 @@ const Hero = () => {
               </p>
               <div className="w-screen h-full text-white aeonik relative mobile:static mobile:w-full">
                 <p data-para-anim className="uppercase text-[14vw] tracking-wider opacity-10 font-light top-[-20%] absolute left-[-12%] mobile:hidden tablet:top-[80%]">advagrip</p>
-                <p className="text-[2.5vw] font-light absolute top-[45%] left-0 mobile:static mobile:text-[5vw] mobile:text-center tablet:top-[130%] fadeUp">A <span className=" text-white grip-gradient">Grip</span> Like No Other.</p>
+                <p className="text-[2.5vw] font-light absolute top-[45%] left-0 mobile:static mobile:text-[5vw] mobile:text-center tablet:top-[130%] fadeUp">A <span className=" text-white grip-gradient">GRIP</span> Like No Other.</p>
 
               </div>
             </div>

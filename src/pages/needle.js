@@ -68,6 +68,7 @@ export default function needle() {
             slidesData={slidesData}
             textclass={"text-[#FFFFFF]"}
             width={"w-[35%] tablet:w-[50%]"}
+            className={"brightness-[0.8]"}
           />
           <FeatureCards />
           <Advance />

@@ -1,6 +1,7 @@
 import AdvaspongSpecifications from '@/components/Advaspong/AdvaspongSpecifications'
 import Hero from '@/components/Advaspong/Hero'
 import Redefining from '@/components/Advaspong/Redefining'
+import { paraAnim } from '@/components/gsapAnimations'
 import Layout from '@/components/Layout'
 import MetaData from '@/components/Metadata'
 import { WebpageJsonLd } from '@/lib/json-ld'
@@ -17,6 +18,7 @@ const advaspong = () => {
     date_published: "2020-01-01T00:00",
     date_modified: "2024-12-26T12:32",
   };
+  paraAnim();
   return (
  <>
   <MetaData metadata={metadata} />

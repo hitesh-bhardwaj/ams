@@ -46,7 +46,7 @@ const UncoverCV = () => {
   const filteredCards = cards.filter(card => card.src !== currentRoute);
 
   return (
-    <section id="uncover" className="mobile:pb-[20%] py-[5%] w-screen overflow-hidden ">
+    <section id="uncovercv" className="mobile:pb-[20%] py-[5%] w-screen overflow-hidden ">
       <div className="flex flex-col items-center justify-center px-[4%] pb-[4%]">
         <div className="mobile:mb-[7vw]">
           <h2 className="title-2 aeonik">Uncover More</h2>
@@ -60,10 +60,8 @@ const UncoverCV = () => {
             freeMode={true}
             modules={[FreeMode]}
             breakpoints={{
-              540: { slidesPerView: 2.3,
-                
-               },
-              768: { slidesPerView: 2.4 },
+              540: { slidesPerView: 2.2 },
+              768: { slidesPerView: 2 },
               1024: { slidesPerView: 4 },
             }}
             className="uncover-swiper w-full h-full"

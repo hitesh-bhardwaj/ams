@@ -9,9 +9,12 @@ import SpecificationsHd3 from "@/components/Advastap/SpecificationsHd3";
 import Layout from "@/components/Layout";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 
 
 const advastap = () => {
+  fadeUp();
+  paraAnim();
   const metadata = {
     title: "Advastap – Surgical Stapler for Efficient Closure",
     description:

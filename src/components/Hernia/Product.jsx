@@ -74,7 +74,7 @@ const Product = () => {
     },
     {
       imgSrc: "/assets/hernia/product-3.png",
-      heading: "Mid-Weight Mesh",
+      heading: "Medium Weight Mesh",
       id:"mid-weight-mesh"
     },
     {

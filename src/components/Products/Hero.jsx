@@ -15,13 +15,13 @@ const Hero = ({heading, tagline, para1, src,bgimg, para2, className = ""}) => {
                 {tagline}
               </p>
             </div>
-            <div className="relative pl-[1vw] w-[30%] z-[10] mt-[3vw] mobile:pl-0 mobile:w-[90%] mobile:mt-0 tablet:w-[50%] tablet:pl-[2vw]">
+            <div className="relative pl-[1vw] w-[38%] z-[10] mt-[3vw] mobile:pl-0 mobile:w-[90%] mobile:mt-0 tablet:w-[50%] tablet:pl-[2vw]">
               <span className="w-[2px] rounded-full h-[80%] absolute left-0 top-[50%] -translate-y-[50%] bg-black fadeUp mobile:hidden"></span>
               <p data-para-anim className="text-[1.6vw] font-light leading-[1.1] mobile:text-[4.5vw] mobile:font-light tablet:text-[2.5vw]">
                 {para1}
               </p>
             </div>
-            <div data-para-anim className="absolute right-[13%] bottom-[5%] z-[10] text-[1.65vw] leading-[1.2] w-[35%] mobile:w-full mobile:static mobile:text-[4.5vw] mobile:font-light tablet:text-[3vw] tablet:bottom-[12%]">
+            <div data-para-anim className="absolute font-light right-[10%] bottom-[5%] z-[10] text-[1.65vw] leading-[1.2] w-[35%] mobile:w-full mobile:static mobile:text-[4.5vw] mobile:font-light tablet:text-[3vw] tablet:bottom-[12%]">
               {para2}
             </div>
             <div >

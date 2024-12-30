@@ -21,7 +21,7 @@ const Hero = () => {
                         autoPlay
                         loop
                         muted
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover brightness-[0.8]"
                         poster="/assets/hernia/hernia-hero-frame.png"
                     />
                 </div>

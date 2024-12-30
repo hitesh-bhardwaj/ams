@@ -2,14 +2,13 @@
 // import Hero from "@/components/Products/Hero";
 import NextGeneration from "@/components/Products/NextGeneration";
 import ProductDescription from "@/components/Products/ProductDescription";
-import { fadeUp } from "@/components/gsapAnimations";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Layout from "@/components/Layout";
 import Advawax from "@/components/Advawax/Advawax";
 import { Media } from "@/components/media";
 import Information from "@/components/Products/Information";
 import UncoverCV from "@/components/Products/UncoverCV";
 import BgVideo from "@/components/Layout/BgVideo";
-
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
 import Hero from "@/components/Products/Hero";
@@ -91,6 +90,7 @@ const advapacer = () => {
     date_modified: "2024-12-26T12:32",
   };
   fadeUp();
+  paraAnim();
 
   return (
     <>

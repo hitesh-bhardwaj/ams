@@ -43,14 +43,14 @@ const Features = ({ features }) => {
   const handleNext = () => {
     if (swiperRef.current) {
       swiperRef.current.slideNext();
-      setActiveButton("next");
+     
     }
   };
 
   const handlePrev = () => {
     if (swiperRef.current) {
       swiperRef.current.slidePrev();
-      setActiveButton("prev");
+    
     }
   };
 
@@ -89,39 +89,39 @@ data-para-anim className='title-2 aeonik'>Key Features</h2>
               ))}
             </Swiper>
             <div
-              className={`absolute z-[5] bottom-[10%] left-[63%] translate-x-[-65%] overflow-hidden border bg-white/50 py-[5vw] px-[5vw] rounded-full next-button cursor-pointer 
-              ${activeButton === "next" ? "text-white border-none" : "bg-transparent text-[#111111]"} transition-colors duration-300`}
+              className={`absolute z-[5] bottom-[10%] left-[63%] translate-x-[-65%] overflow-hidden border bg-white/50 py-[5vw] px-[5vw] rounded-full next-button cursor-pointer group hover:text-white border-black/20 
+            `}
               onClick={handleNext}
             >
               <span
-                className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full 
-                ${activeButton === "next" ? "scale-100 opacity-100" : "scale-0 opacity-50"} transition-all duration-300`}
+                className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full  group-hover:scale-100 duration-300
+               `}
               ></span>
               <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
                 <Image
                   src="/assets/home/arrow-right.png"
                   alt="arrow-right"
                   className={`object-cover group-hover:invert transition-all duration-300 
-                  ${activeButton === "next" ? "invert" : "invert-0"}`}
+                  `}
                   fill
                 />
               </div>
             </div>
             <div
-              className={`absolute z-[5] bottom-[10%] left-[37%] translate-x-[-38%] bg-white/50 overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button cursor-pointer 
-              ${activeButton === "prev" ? "text-white border-none" : "bg-transparent text-[#111111]"} transition-colors duration-300`}
+              className={`absolute z-[5] bottom-[10%] left-[37%] translate-x-[-38%] bg-white/50 overflow-hidden border py-[5vw] px-[5vw] rounded-full prev-button group cursor-pointer hover:text-white  border-black/20
+             `}
               onClick={handlePrev}
             >
               <span
-                className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full 
-                ${activeButton === "prev" ? "scale-100 opacity-100" : "scale-0 opacity-50"} transition-all duration-300`}
+                className={`bg-[#111111] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300
+               `}
               ></span>
               <div className="w-[1.6vw] h-[1.6vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw]">
                 <Image
                   src="/assets/home/arrow-left.png"
                   alt="arrow-left"
                   className={`object-cover group-hover:invert transition-all duration-300 
-                  ${activeButton === "prev" ? "invert" : "invert-0"}`}
+                 `}
                   fill
                 />
               </div>

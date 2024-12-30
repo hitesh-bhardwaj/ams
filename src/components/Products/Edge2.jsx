@@ -8,7 +8,9 @@ const Edge2 = ({ sectionheading, card1, card2, card3,className }) => {
     const [activeCard, setActiveCard] = useState("card2");
   
     const handleHover = (card) => { 
+      if(globalThis.innerWidth>1024){
       setActiveCard(card);
+      }
     };
 
   return (
@@ -50,7 +52,7 @@ data-para-anim className="title-2 aeonik text-center mobile:text-center">{sectio
                 </div>
               </div>
 
-              <div className={`edge-card2 py-[3vw] px-[1vw] h-[41vw] w-[21vw] duration-500 transition-all ease border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw]  ${
+              <div className={`edge-card2 py-[3vw] px-[1vw] h-[41vw] w-[21vw] duration-500 transition-all overflow-hidden ease border flex flex-col items-center justify-center gap-[5vw] rounded-[2vw] bg-white/50 mobile:w-[90vw] mobile:gap-[5vw] mobile:rounded-[9vw] mobile:py-[15vw] mobile:h-full  mobile:text-center tablet:h-[50vw] tablet:w-[50vw]  ${
                   activeCard === "card2" ? "w-[43vw]" : ""
                 }`}
                 onMouseEnter={() => handleHover("card2")}>

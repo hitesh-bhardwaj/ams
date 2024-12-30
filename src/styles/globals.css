@@ -585,7 +585,6 @@ background-color: #ffffff !important;
     padding-left: 20vw;
     overflow: hidden;
   }
- 
   #feature-cards  ::-webkit-scrollbar{
     display: none;
   }
@@ -599,6 +598,12 @@ background-color: #ffffff !important;
     display: none;
   }
   #products ::-webkit-scrollbar{
+    display: none;
+  }
+  #uncover ::-webkit-scrollbar{
+    display: none;
+  }
+  #uncovercv ::-webkit-scrollbar{
     display: none;
   }
 

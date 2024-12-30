@@ -7,40 +7,47 @@ import Link from "next/link";
 import { Media } from "../media";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./styles.module.css";
+import LinkButton from "../Button/LinkButton";
 
 const productContent = [
   {
     title: "ADVA GLIDE",
     src: "/assets/ic/adva-glide.png",
     para: "AMS has advanced the science of flow restoration to provide minimally invasive products for use in Percutaneous Transluminal Coronary Angioplasty procedures for revascularisation of coronary arteries.",
+   
   },
   {
     title: "ADVA PRO",
     src: "/assets/ic/adva-pro.png",
     para: "AMS has redefined the science of vascular restoration with ADVA PRO, a Sirolimus Eluting Coronary Stent System engineered for safety and precision",
+
   },
   {
     title: "Coronary Accessories",
     src: "/assets/ic/coronary-accessories.png",
-    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals",
+    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals with the tools they need for precision and efficiency in every procedure."
+    
   },
   {
     title: "ADVA GLIDE",
     src: "/assets/ic/adva-glide.png",
     para: "AMS has advanced the science of flow restoration to provide minimally invasive products for use in Percutaneous Transluminal Coronary Angioplasty procedures for revascularisation of coronary arteries.",
+   
   },
   {
     title: "ADVA PRO",
     src: "/assets/ic/adva-pro.png",
     para: "AMS has redefined the science of vascular restoration with ADVA PRO, a Sirolimus Eluting Coronary Stent System engineered for safety and precision",
+  
   },
   {
     title: "Coronary Accessories",
     src: "/assets/ic/coronary-accessories.png",
-    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals",
+    para: "At AMS, we understand that every detail matters in achieving optimal patient outcomes in interventional cardiology. Our comprehensive range of coronary accessories is designed to complement our primary devices, providing healthcare professionals with the tools they need for precision and efficiency in every procedure.",
+   
   },
 ];
-const ProductCard = ({ title, src, para, index, activeSlide }) => {
+const ProductCard = ({ title, src, para, index, activeSlide, link }) => {
   const isActive = index === activeSlide;
 
   return (
@@ -73,7 +80,7 @@ const ProductCard = ({ title, src, para, index, activeSlide }) => {
       </div>
       <div>
         <p
-          className={`text-[1.15vw] leading-[1.5] transition-opacity tracking-wider  duration-500  aeonik w-full px-[1vw] ${
+          className={`text-[1.15vw] leading-[1.5] transition-opacity tracking-wider  duration-500 w-full px-[1vw] ${
             isActive ? "visible" : "hidden"
           }`}
         >

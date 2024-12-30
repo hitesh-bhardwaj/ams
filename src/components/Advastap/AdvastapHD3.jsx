@@ -1,15 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react'
 import Image from 'next/image'
-import { paraAnim } from "../gsapAnimations";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const AdvastapHD2 = () => {
-  paraAnim();
-  
   useGSAP(() => {
     if(globalThis.innerWidth>1024){
     const tl = gsap.timeline({

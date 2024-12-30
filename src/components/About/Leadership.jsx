@@ -33,7 +33,7 @@ const Leadership = () => {
         <>
             <section id="leadership" className="bg-white/50">
                 <div className="w-full pt-[7%] mobile:py-[15%] h-[76vw] tablet:h-[100vw] mobile:h-[230vw]">
-                    <h3 className="aeonik title-2 text-center">The Vision of AMS Leadership</h3>
+                    <h3 className="aeonik title-2 text-center">AMS Leadership</h3>
                     <div className="relative w-screen overflow-hidden">
                         <div className="w-screen mobile:gap-8 px-[4vw] flex justify-between mobile:justify-center items-center top-[37%] z-10 absolute mobile:top-[90%] mobile:h-fit">
                             <div onClick={slidePrevious} className="px-[1.2vw] py-[1.2vw] z-[5] relative bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full cursor-pointer mobile:block group hover:text-white border border-black/20">
@@ -187,7 +187,7 @@ const content = [
     },
     {
         name: "Manuel Parente",
-        title: "ADVISOR INTERVENTIONAL CARDIOLOGY",
+        title: "ADVISOR, INTERVENTIONAL CARDIOLOGY",
         description: [
             "“Manuel Parente brings to AMS more than 40 years of global experience in Interventional Cardiology and Radiology. He served as a Director of Oerlikon Buhrle from 1981 to 1990 where he was responsible for ADATS & Patriot Missile systems (Switzerland and USA).",
             "Mr. Parente served as a Director and VP in Schneider Worldwide from 1991 to 1999 where he developed Catheter's like, Goldie, Medina, Bonnie and Maverick* (*PTCA Catheter for Boston Scientific in 1998/1999). He presented in numerous Congress' on various topics including catheters like Goldie, Bonnie and more, also in PTA balloon technology. He participated in securing more than 800 patents in Interventional Cardiology and Radiology products.",

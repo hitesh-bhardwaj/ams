@@ -70,8 +70,8 @@ const Work = () => {
             heading={"Our Work Environment"}
             src={"/assets/career/career-work.webp"}
             para={"Innovative, collaborative, and Driven by a mission to improve lives."}
-            btn={"Learn More About Us"}
-            link={"about"}
+            btn={"See Our Initiatives"}
+            link={"news"}
           />
 
         </div>
@@ -83,8 +83,8 @@ const Work = () => {
             para={
               "Ensuring every voice is heard, valued, and empowered."
             }
-            btn={"See Our Initiatives"}
-            link={"#"}
+            btn={"Learn More About Us"}
+            link={"about"}
 
           />
 

@@ -84,9 +84,9 @@ const More = () => {
               <div className="text-center flex flex-col items-center">
                   <h2
                       data-para-anim
-                      className="text-[2.7vw] font-light leading-[1.2] aeonik capitalize mobile:text-[8vw] tablet:text-[5vw]"
+                      className="text-[2.7vw] font-light leading-[1.2] aeonik  mobile:text-[8vw] tablet:text-[5vw]"
                   >
-                      More from ams
+                      More from AMS
                   </h2>
               </div>
               <div className="w-full h-[50vw] py-[3vw] grid grid-cols-12 row-span-2 space-x-[2vw] gap-y-[5vw] mobile:h-full mobile:flex mobile:flex-col mobile:space-y-[18vw] tablet:h-full tablet:flex tablet:flex-col tablet:space-y-[8vw]">

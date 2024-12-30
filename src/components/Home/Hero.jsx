@@ -15,7 +15,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVideoSrc("/assets/home/hero-final.mp4");
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -60,7 +60,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative overflow-hidden bg-white mobile:bg-transparent tablet:bg-transparent dark" id="hero">
+    <section ref={containerRef} className="relative overflow-hidden bg-white mobile:bg-transparent tablet:bg-transparent " id="hero">
       <div ref={background} className="px-[12%] w-full relative mobile:px-[5vw] tablet:px-[10%] mobile:flex mobile:flex-col-reverse">
         <div className="flex h-dvh relative z-10 w-full justify-start items-center mobile:h-full mobile:items-start tablet:h-[80vh]">
           <div className="w-[55%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-[85%] mt-[4vw] mobile:mt-[10vw]">
@@ -92,7 +92,7 @@ export default function Hero() {
             loop
             muted
             src={videoSrc}
-            className="w-full h-full object-cover object-left"
+            className="w-full h-full object-cover object-left brightness-[0.8]"
             playsInline
           />
         </div>

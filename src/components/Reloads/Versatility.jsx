@@ -88,13 +88,13 @@ const Versatility = () => {
           Stepped cartridge face
         </p>
       </div>
-      <span className="dot-1 absolute top-[57%] left-[39.5%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[17%] mobile:top-[47%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[71%] tablet:left-[50%] z-[5]">
+      <span className="dot-1 absolute top-[57%] left-[39.5%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[17%] mobile:top-[47%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[71%] tablet:left-[50%] z-[5] cursor-pointer">
         <span className="w-[0.8vw] h-[0.8vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw] tablet:w-[2vw] tablet:h-[2vw]"></span>
       </span>
-      <span className="dot-2 absolute top-[52%] left-[31%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[30%] mobile:top-[55%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[61%] tablet:left-[70%] z-[5]">
+      <span className="dot-2 absolute top-[52%] left-[31%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[30%] mobile:top-[55%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[61%] tablet:left-[70%] z-[5] cursor-pointer">
         <span className="w-[0.8vw] h-[0.8vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw] tablet:w-[2vw] tablet:h-[2vw]"></span>
       </span>
-      <span className="dot-3 absolute top-[52%] left-[47%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[17%] mobile:top-[38%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[60%] tablet:left-[45%] z-[5]">
+      <span className="dot-3 absolute top-[52%] left-[47%] w-[2vw] h-[2vw] bg-white/30 rounded-full flex justify-center items-center mobile:w-[8vw] mobile:h-[8vw] mobile:right-[17%] mobile:top-[38%] mobile:left-auto tablet:w-[3.5vw] tablet:h-[3.5vw] tablet:top-[60%] tablet:left-[45%] z-[5] cursor-pointer">
         <span className="w-[0.8vw] h-[0.8vw] bg-white rounded-full mobile:w-[4vw] mobile:h-[4vw] tablet:w-[2vw] tablet:h-[2vw]"></span>
       </span>
     </section>

@@ -9,7 +9,7 @@ const Security = () => {
              <div className="w-full h-full flex flex-col items-center justify-center mobile:flex mobile:justify-center z-[10]">
                <h2
                  data-para-anim
-                 className="title-2 aeonik text-center uppercase mobile:text-center mobile:w-[80%]"
+                 className="title-2 aeonik text-center uppercase mobile:text-center mobile:w-[80%] overflow-hidden"
                >
                Security redefined
                </h2>

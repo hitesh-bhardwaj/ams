@@ -55,7 +55,7 @@ const content = [
     link: "/hernia"
   },
   {
-    title: "Advanced Cardiovascular Solutions",
+    title: "Advanced Cardiac Surgery",
     image: "/assets/portfolio/Cardiovascular.png",
     link: "/cardiovascular-solutions"
   },

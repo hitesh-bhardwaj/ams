@@ -70,6 +70,7 @@ export default function Product() {
           <div className="fadeUp">
             <Swiper
               spaceBetween={70}
+              loop={true}
               breakpoints={{
                 1024: {
                   spaceBetween: 160
@@ -184,7 +185,7 @@ export default function Product() {
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
-                          link={"/advapro"}
+                          link={"/knotless-tissue-control-device"}
                           className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}
                         />
                       </div>

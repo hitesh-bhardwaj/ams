@@ -29,7 +29,7 @@ const slidesData = [
   {
     src: "/advasteel-cv",
     title: "ADVASTEEL",
-    para: "Monofilament stainless Steel 316 LVM",
+    para: "Monofilament Stainless Steel 316 LVM",
     imageSrc: "/assets/cardioVascular/advasteel-1.png",
     description1: "Excellent compatibility with body tissues for minimal tissue reactivity.",
     description2: "Advanced design with superior pliability conforming closely to contour of sternum.",
