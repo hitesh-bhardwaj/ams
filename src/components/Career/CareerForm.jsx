@@ -159,7 +159,7 @@ export default function CareerForm({ onClose }) {
                 <div className="w-full h-[4vw] border-b border-black/40 rounded-lg py-[1vw] mobile:h-[5vw] mobile:mt-[0vw] tablet:h-[5vw] mobile:pb-[5vw] tablet:mt-[4vw]">
                   <FormLabel
                     htmlFor="filename"
-                    className="w-full h-full bg-white flex items-center justify-start rounded-lg cursor-pointer ml-[0.65vw] mobile:ml-[2.4vw] tablet:ml-[1.7vw]"
+                    className="w-full h-full  flex items-center justify-start rounded-lg cursor-pointer ml-[0.65vw] mobile:ml-[2.4vw] tablet:ml-[1.7vw]"
                   >
                     <div>
                       <div className=" w-[2vw] h-[2vw] relative flex flex-col items-center justify-center mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]">
