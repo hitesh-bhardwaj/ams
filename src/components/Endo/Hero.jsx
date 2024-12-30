@@ -14,7 +14,7 @@ const Hero = () => {
     return (
         <section className='hero-container dark ' id="hero">
             <div className="w-[100vw] h-[100vh] relative overflow-hidden tablet:h-[80vh] mobile:h-[180vw]">
-                <div className="w-full h-full absolute mobile:static mobile:h-[75vw]">
+                <div className="w-full h-full absolute mobile:static mobile:h-[75vw] ">
                     <video
                         ref={videoRef}
                         playsInline
@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
                 <div className="px-[12%] relative mobile:px-[5%]">
                     <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[60vh] mobile:justify-start mobile:pt-[10vw] mobile:h-[80vw]">
-                        <div className="w-[70%] mobile:w-full">
+                        <div className="w-[70%] mobile:w-full tablet:w-full">
                             <h1 className='title-1 w-full aeonik  leading-[1] mobile:text-center'>
                                 <span data-para-anim className='leading-[1.21] overflow-hidden text-[#FFFFFF] mobile:w-full  mobile:text-[#111111]  mobile:text-center mobile:!drop-shadow-none  text-shadow  '>
                                     Breaking New Ground in Endo Surgery

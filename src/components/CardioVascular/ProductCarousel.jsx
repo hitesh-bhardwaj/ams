@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import gsap from "gsap";
 import styles from './styles.module.css'
+import PrimaryButton from '../Button/PrimaryButton';
+
 
 const ProductCarousel = () => {
   const slidesData = [
@@ -14,6 +16,7 @@ const ProductCarousel = () => {
       description1: "The enduring and comprehensive solution for valve replacement and valve repair procedures providing excellent tensile strength for permanent support.",
       description2:"Silicone coating designed for excellent handling enabling superior pliability and knotting characteristics.",
       description3 : "ADVAPLEDGET assures consistent performance providing smooth uniform construction for precise suture placement.",
+      src:"/advabond-cv"
     }   ,
     {
       title: "ADVALENE",
@@ -22,6 +25,7 @@ const ProductCarousel = () => {
       description1: "-The only Polypropylene with an advanced and unique dispensing system designed to deliver ease of suture dispensing with minimal memory in the suture strand.",
       description2: "Most inert monofilament structure makes ADVALENE Cardiovascular suture an ideal choice for anastomosis.",
       description3 : "ADVAPRIME needles are specially designed with an engineered tip to maintain shape and sharpness pass after pass for the most challenging calcified lesions & fibrotic blood vessels.",
+      src:"/advalene-cv"
     },
     {
       title: "ADVASTEEL",
@@ -30,6 +34,7 @@ const ProductCarousel = () => {
       description1: "Excellent compatibility with body tissues for minimal tissue reactivity.",
       description2:"Advanced design with superior pliability conforming closely to contour of sternum.",
       description3 : "High resistance to breakage during bend tightening by twisting with excellent knot security.",
+      src:"/advasteel-cv"
     } ,
     {
       title: "ADVAWAX",
@@ -38,6 +43,7 @@ const ProductCarousel = () => {
       description1: "ADVAWAX acts as a mechanical (tamponade) barrier helping in achieving local hemostasis of bone.",
       description2:"ADVAWAX minimizes formation of any foreign body or inflammatory reaction and delays bone regeneration.",
       description3 : "ADVAWAX provides ease of application due to smooth consistency.",
+      src:"/advapacer-and-wax"
     }  ,
     {
       title: "ADVAPACER",
@@ -46,6 +52,8 @@ const ProductCarousel = () => {
       description1: "Twisted 316L stainless steel wire, with blue Low Densile Polyethylene coating (sheathed), double needle in suture size 2-0, having a length of 60 cm.",
       description2:" Lead conductor resistant (14.50Ω/M)",
       description3 : "",
+      src:"/advapacer-and-wax"
+
     } ,
     {
       src: "/ligation-solutions",
@@ -55,6 +63,8 @@ const ProductCarousel = () => {
       description1: "Secure precision with ADVACLIP Titanium Clips, delivering reliable vascular and tissue occlusion with superior biocompatibility and minimal tissue reaction.",
       description2: "Designed for effective hemostasis, ADVACLIP is compatible with appliers tailored for Minimally Invasive Cardiac Surgery (MICS).",
       description3: "A color-coded system ensures easy size identification, enhancing efficiency and accuracy during procedures.",
+      src:"/ligation-solutions"
+
     },
          
   ];
@@ -117,9 +127,9 @@ const ProductCarousel = () => {
 
 
   return (
-    <section id="productCarousel" className="relative w-screen overflow-hidden  mobile:h-[240vw] mobile:py-[10%] bg-white/30 mt-[7%]  mobile:mb-[15%] tablet:h-[100vh] mobile:mt-0 ">
+    <section id="productCarousel" className="relative w-screen overflow-hidden  mobile:h-[280vw] mobile:py-[10%] bg-white/30 mt-[7%]  mobile:mb-[15%] tablet:h-[100vh] mobile:mt-0 ">
       <div className="w-full h-full flex items-center justify-end pl-[5vw] mobile:gap-[25vw] mobile:flex-col-reverse tablet:flex-col-reverse mobile:pl-0">
-        <div className="w-[50%] mobile:w-full mobile:h-fit tablet:w-full tablet:h-[50vh]">
+        <div className="w-[50%] mobile:w-full mobile:h-[68vw] tablet:w-full tablet:h-[50vh]">
           <div className="mobile:flex mobile:flex-col mobile:items-center mobile:justify-center">
             <h2 className="title-2 aeonik mobile:text-center mobile:ml-0 mobile:px-[5vw] ">
               <span data-para-anim>{slidesData[activeSlide]?.title}</span>
@@ -127,7 +137,7 @@ const ProductCarousel = () => {
             <p className="text-[2.2vw] font-light mobile:text-[5.5vw] mobile:text-center mobile:w-[85%] tablet:text-[3.5vw]">
               {slidesData[activeSlide]?.para}
             </p>
-          </div>
+          </div> 
           <div className="pt-[2vw]">
             
             <p className="content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[5vw] mobile:py-[1.5vw] tablet:text-[2.5vw] tablet:w-[85%]">
@@ -139,6 +149,9 @@ const ProductCarousel = () => {
             <p className=" content-p w-[85%] py-[1vw] mobile:w-full mobile:text-center mobile:px-[5vw] mobile:py-[1.5vw] tablet:text-[2.5vw] tablet:w-[95%]">
               {slidesData[activeSlide].description3}
             </p>
+            <div className='fadeUp mt-[4vw] flex items-center justify-center'>
+              <PrimaryButton text={"Read More"} link={slidesData[activeSlide].src} />
+            </div>
           </div>
         </div>
         <div className="w-[50vw] h-[50%] overflow-hidden mobile:w-full mobile:h-[40%] tablet:mt-[10%] tablet:w-full">

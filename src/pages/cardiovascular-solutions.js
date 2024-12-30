@@ -3,7 +3,7 @@ import Genesis from "@/components/layoutComponents/Genesis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Layout from "@/components/Layout";
-import { fadeUp } from "@/components/gsapAnimations";
+import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import Portfolio from "@/components/Endo/Portfolio";
 import ProductCarousel from "@/components/CardioVascular/ProductCarousel";
 import Products from "@/components/CardioVascular/Products";
@@ -36,6 +36,7 @@ export default function cardiovascular() {
   };
 
   fadeUp();
+  paraAnim();
 
   return (
     <>
