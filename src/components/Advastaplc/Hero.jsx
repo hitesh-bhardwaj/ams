@@ -52,7 +52,7 @@ const Hero = () => {
                   ADVASTAP LC
                   </span>
                 </h1>
-                <div className='w-[80%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block lineDraw'></div>
+                {/* <div className='w-[80%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block lineDraw'></div> */}
             <div className='flex items-center mobile:w-[80%] mobile:justify-center  '>
             <p   className=" text-[1.25vw] uppercase leading-[1.2] font-light tracking-wider mobile:text-[4.6vw]   tablet:text-[3vw] tablet:max-w-full  flex items-center justify-start fadeUp mobile:text-center">
           Linear Cutter 

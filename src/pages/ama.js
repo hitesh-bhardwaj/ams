@@ -35,7 +35,7 @@ export default function ama() {
   };
 
   const hero = {
-    title: "Advanced MedTech Academy (AMA)",
+    title: "Advanced MedTech Academy",
     src: "/assets/ama/ama-bg-hero.png",
     content: "AMA’s globally recognized for its industry experts and initiatives, centered on empowering healthcare professionals to achieve superior patient outcomes worldwide. By offering access to meticulously designed courses and workshops, AMA fosters a culture of learning that combines the science of medicine with the art of compassionate care.",
   };

@@ -83,19 +83,19 @@ const AdvaclipCarousel = () => {
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
                 <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]">
-                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw]">
-                    <span data-para-anim>Meticulously Designed</span>
+                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw]">
+                    <span data-para-anim>Meticulously Designed </span>
                   </p>
-                  <div className=" rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] tablet:h-[50vh] mobile:rounded-[9vw] tablet:rounded-[5vw]">
-                    <div className="w-full h-full absolute mobile:h-[70vw] mobile:w-[85vw]">
+                  <div className=" h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] tablet:h-[50vh] mobile:rounded-[9vw]">
+                    <div className="w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]">
                       <Image
                         src="/assets/ligation/advaclip-carousel-card1.png"
                         fill
                         alt="specification 1"
-                        className="object-cover mobile:object-contain "
+                        className="object-cover mobile:object-contain rounded-[3vw] tablet:rounded-[5vw] mobile:rounded-[9vw] "
                       />
                     </div>
-                    <p className="text-[1.25vw] leading-[1.3] absolute top-[15%] right-[10%] font-light aeonik  w-[40%] text-[#2A2A2A] mobile:text-[5.5vw] mobile:w-[90%] mobile:top-auto mobile:bottom-[10%] mobile:font-light mobile:left-[5%] mobile:text-center  mobile:z-50 tablet:text-[2.5vw] tablet:top-[85%] tablet:font-light tablet:w-[40vw]">
+                    <p className=" w-[40%] text-[1.25vw] leading-[1.3] absolute top-[15%] right-[10%] font-light aeonik  text-[#2A2A2A] mobile:text-[5.5vw] mobile:w-[90%] mobile:top-auto mobile:bottom-[10%] mobile:font-light mobile:left-[5%] mobile:text-center  mobile:z-50 tablet:text-[2.5vw] tablet:top-[85%] tablet:font-light tablet:w-[40vw]">
                       <span data-para-anim>
                         Inner cross-serration Innovative pull-tab adhesive
                         mechanism Single mold design
@@ -108,19 +108,19 @@ const AdvaclipCarousel = () => {
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
                 <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]">
-                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw]">
+                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw]">
                     <span data-para-anim>Revolutionizing Clip Integrity</span>
                   </p>
-                  <div className=" rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]">
-                    <div className="w-full h-full absolute mobile:h-[70vw] mobile:w-[85vw]">
+                  <div className="  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] ">
+                    <div className="w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]">
                       <Image
                         src="/assets/ligation/advaclip-carousel-card2.png"
                         fill
                         alt="specification 1"
-                        className="object-contain tablet:object-cover "
+                        className="object-cover mobile:object-contain  rounded-[3vw] tablet:rounded-[5vw] mobile:rounded-[9vw]"
                       />
                     </div>
-                    <p className="w-[38%] text-[1.25vw] absolute top-[15%] right-[10%] aeonik leading-[1.3] text-[#2A2A2A] font-light mobile:text-[5.5vw] mobile:w-[90%] mobile:font-light mobile:bottom-[10%] mobile:left-[5%] mobile:top-auto  mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light">
+                    <p className="w-[38%] text-[1.25vw] absolute top-[15%] right-[10%] aeonik  leading-[1.3] text-[#2A2A2A] font-light mobile:text-[5.5vw] mobile:w-[90%] mobile:font-light mobile:top-auto mobile:bottom-[10%] mobile:left-[5%]  mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light">
                       <span data-para-anim>
                       Novel knurling surface
                       Distinctive heart-shaped profile
@@ -133,19 +133,19 @@ const AdvaclipCarousel = () => {
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
                 <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]">
-                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw]">
+                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw]">
                     <span data-para-anim>Advaclip Appliers</span>
                   </p>
-                  <div className=" rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw] border">
-                    <div className="w-full h-full absolute mobile:h-[70vw] mobile:w-[85vw]">
+                  <div className=" h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw]  tablet:h-[50vh] t">
+                    <div className="w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]">
                       <Image
                         src="/assets/ligation/advaclip-carousel-card3.png"
                         fill
                         alt="specification 1"
-                        className="object-contain tablet:object-cover"
+                        className="object-cover mobile:object-contain rounded-[3vw] mobile:rounded-[9vw] tablet:rounded-[5vw]"
                       />
                     </div>
-                    <p className="w-[25%] text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[5.5vw] mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:top-auto mobile:left-[5%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]">
+                    <p className="w-[30%] text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[5.5vw] mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:top-auto mobile:left-[5%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]">
                       <span data-para-anim>
                       Diamond dusted jaws
                       Triangular surface
@@ -158,19 +158,19 @@ const AdvaclipCarousel = () => {
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
                 <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]">
-                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw]">
+                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw]">
                     <span data-para-anim>Laparoscopic Appliers</span>
                   </p>
-                  <div className=" rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]">
-                    <div className="w-full h-full absolute mobile:h-[70vw] mobile:w-[85vw]">
+                  <div className=" h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw]  tablet:h-[50vh] ">
+                    <div className="w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]">
                       <Image
                         src="/assets/ligation/advaclip-carousel-card4.png"
                         fill
                         alt="specification 1"
-                        className="object-contain tablet:object-cover"
+                        className="object-cover mobile:object-contain  rounded-[3vw]  mobile:rounded-[9vw] tablet:rounded-[5vw]"
                       />
                     </div>
-                    <p className=" w-[25%] text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[5.5vw] mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:top-auto mobile:left-[5%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]">
+                    <p className="w-[25%] text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[5.5vw] mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:top-auto mobile:left-[5%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]">
                       <span data-para-anim>
                       For Laparoscopic
                       Surgical Procedures
@@ -183,19 +183,19 @@ const AdvaclipCarousel = () => {
             <SwiperSlide>
               <div className="py-[2vw] flex justify-center">
                 <div className="w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]">
-                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw]">
+                  <p className="text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw]">
                     <span data-para-anim>Open Appliers</span>
                   </p>
-                  <div className=" rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw] ">
-                    <div className="w-full h-full absolute  mobile:h-[70vw] mobile:w-[85vw]">
+                  <div className="  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw]  tablet:h-[50vh] tablet:rounded-[5vw]">
+                    <div className=" w-full h-full absolute   mobile:h-[55vw] mobile:w-[85vw] ">
                       <Image
                         src="/assets/ligation/advaclip-carousel-card5.png"
                         fill
                         alt="specification 1"
-                        className="object-contain tablet:object-cover"
+                        className="object-cover mobile:object-contain  rounded-[3vw] mobile:rounded-[9vw] tablet:rounded-[5vw]"
                       />
                     </div>
-                    <p className=" text-[1.25vw] absolute top-[15%] right-[10%] aeonik  w-[20vw] text-[#2A2A2A]  leading-[1.3] font-light  mobile:text-[5.5vw]  mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:left-[5%] mobile:top-auto mobile:z-50 mobile:text-center tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light">
+                    <p className=" text-[1.25vw] absolute top-[15%] right-[10%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[5.5vw]  mobile:font-light mobile:w-[90%] mobile:bottom-[15%] mobile:left-[5%] mobile:top-auto mobile:z-50 mobile:text-center tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light">
                       <span data-para-anim>
                       For Open Surgical Procedures
                       </span>

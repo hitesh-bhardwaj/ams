@@ -15,7 +15,7 @@ const Hero = () => {
                   ADVASTAP RELOADS
                   </span>
                 </h1>
-                <div className="w-[70%] h-[1px] bg-black/50 hidden mobile:block mt-[4vw] lineDraw"></div>
+                {/* <div className="w-[70%] h-[1px] bg-black/50 hidden mobile:block mt-[4vw] lineDraw"></div> */}
                 <p data-para-anim className="text-[1.675vw] leading-[1.2] tracking-wide mt-[1vw] font-light mobile:text-[5vw] mobile:w-full mobile:text-center mobile:py-[2%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%] mobile:capitalize">
                 with tri-sure technology
                 </p>

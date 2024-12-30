@@ -15,10 +15,10 @@ const LC2Carousel = () => {
             if(globalThis.innerWidth>1024){
             const tl = gsap.timeline({
                 scrollTrigger:{
-                    trigger:'.lc2-swiper-container'
+                    trigger:'.swiper-container'
                 }
             });
-            tl.fromTo(".lc2Swiper .swiper-slide",{
+            tl.fromTo(".specificationSwiper .swiper-slide",{
                 xPercent:70,
                 opacity:0.5
             },{
@@ -31,8 +31,9 @@ const LC2Carousel = () => {
         };
         });
 
-        const swiperRef = useRef(null); // Create a ref for Swiper
+        const swiperRef = useRef(null); 
 
+      
         const handleNext = () => {
           if (swiperRef.current) {
             swiperRef.current.slideNext();
@@ -47,11 +48,13 @@ const LC2Carousel = () => {
      
   return (
     <>
-    <section id='lc2-carousel' className='overflow-hidden py-[5%] mobile:py-[15%] tablet:h-[80vh] '>  
-        <div className={`w-screen h-full text-[#2A2A2A] items-center flex justify-center lc2-swiper-container cursor-grab relative `}>
+    <section id='skinstapler-carousel' className='overflow-hidden tablet:h-[70vh] pb-[5%] mobile:h-[170vw] '>  
+        <div className={`w-screen h-full  py-[5vw] text-[#2A2A2A] items-center flex justify-center swiper-container cursor-grab relative mobile:items-start`}>
         <Swiper
          onSwiper={(swiper) => (swiperRef.current = swiper)}
         scrollbar={true}
+        centeredSlides={true}
+        initialSlide={1}
         modules={[Scrollbar]}
         breakpoints={{       
             541: {
@@ -65,29 +68,25 @@ const LC2Carousel = () => {
             1024: {
               slidesPerView: 2,
               spaceBetween: 50,
-              centeredSlides:true,
-              initialSlide:1
             },
           }}
-        className={`w-screen flex items-center justify-center specificationSwiper lc2Swiper  tablet:h-[60vh] mobile:h-[180vw]`}
+        className={`w-screen flex items-center justify-center specificationSwiper tablet:h-[60vh] mobile:h-[130vw]`}
       >
         <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
-                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] tablet:h-[10vw]'><span data-para-anim>Optimal and secure placement</span></p>
-                <div className=' rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]'>
-                    <div className='w-[80vw] h-[15vw]  relative top-[-5%] left-[15%] scale-[2.5] mobile:h-[100vw] mobile:-rotate-90 mobile:w-[100vw] mobile:left-[-10%] mobile:top-[-10%] mobile:scale-[1.3] tablet:scale-[1.3] tablet:h-[40vw] tablet:left-[20%]'>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]'>
+                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw]'><span data-para-anim>Optimal and secure placement</span></p>
+                <div className=' h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] tablet:h-[50vh] mobile:rounded-[9vw]'>
+                    <div className='w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]'>
                         <Image
-                        src="/assets/advastaplc/lc2-carousel-card-1.png"
+                        src="/assets/advastaplc/advastap-lc2-carousel-card1.png"
                         fill
                         alt='specification 1'
-                        className='object-contain '
+                        className='object-cover mobile:object-contain rounded-[3vw] tablet:rounded-[5vw] mobile:rounded-[9vw] '
                         />
-                    </div>
-                    <p className=' text-[1.25vw] absolute bottom-[15%] right-[10%] aeonik font-light  text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3] mobile:text-center mobile:font-light mobile:w-[70%] mobile:bottom-[10%] mobile:left-[15%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[10%] tablet:font-light'><span data-para-anim>Atraumatic anvil tip.</span></p>
-                    <div className='absolute h-[100%] w-[100%] z-[-1]'>
-                    <Image src="/assets/advastaplc/lc2-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
-                </div>
+                    </div> 
+                    <p className='text-[1.25vw] leading-[1.3] absolute bottom-[15%] right-[10%] font-light aeonik  text-[#2A2A2A] mobile:text-[5.5vw] mobile:w-[90%] mobile:top-auto mobile:bottom-[10%] mobile:font-light mobile:left-[5%] mobile:text-center  mobile:z-50 tablet:text-[2.5vw] tablet:top-[85%] tablet:font-light tablet:w-[40vw]'><span data-para-anim>Atraumatic anvil tip</span></p>
+                   
                 </div>
                
             </div>
@@ -95,21 +94,18 @@ const LC2Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
-                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] tablet:h-[10vw]'><span data-para-anim>Enhanced firing efficiency</span></p>
-                <div className=' rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]'>
-                    <div className='w-[45vw] h-[20vw]  relative top-[10%] left-[5%] scale-[1.2] mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-10%] mobile:top-[-5%] mobile:scale-[1.2] tablet:scale-[1.5] tablet:h-[40vw]'>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]'>
+                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw]'><span data-para-anim>Enhanced firing efficiency</span></p>
+                <div className='  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] '>
+                    <div className='w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]'>
                         <Image
-                        src="/assets/advastaplc/lc2-carousel-card-2.png"
-                        fill
+                        src="/assets/advastaplc/advastap-lc2-carousel-card2.png"
+                       fill
                         alt='specification 1'
-                        className='object-contain '
+                        className='object-cover mobile:object-contain  rounded-[3vw] tablet:rounded-[5vw] mobile:rounded-[9vw]'
                         />
                     </div>
-                    <p className=' text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik font-light text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3] mobile:text-center mobile:font-light mobile:w-[80%] mobile:bottom-[10%] mobile:left-[10%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[10%] tablet:font-light'><span data-para-anim>Two sided equipoised firing knob</span></p>
-                    <div className='absolute h-[100%] w-[100%] z-[-1]'>
-                    <Image src="/assets/advastaplc/lc2-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
-                </div>
+                    <p className=' text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik  leading-[1.3] text-[#2A2A2A] font-light mobile:text-[5.5vw] mobile:w-[90%] mobile:font-light mobile:top-auto mobile:bottom-[10%] mobile:left-[5%]  mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light'><span data-para-anim>Two sided equipoised firing knob</span></p>
                 </div>
                
             </div>
@@ -117,22 +113,21 @@ const LC2Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
-                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] tablet:h-[10vw]'><span data-para-anim>Innovative B-form staple technology 2</span></p>
-                <div className=' rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]'>
-                    <div className='w-[45vw] h-[20vw]  relative top-[10%]  right-[-15%]  mobile:h-[100vw]  mobile:w-[100vw] mobile:left-[-10%] mobile:top-[-5%] mobile:scale-[0.8] tablet:scale-[1] tablet:h-[40vw] tablet:left-[5%] tablet:top-[5%]'>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-0 tablet:h-[50vh]'>
+                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw]'><span data-para-anim>Innovative B-form staple technology 2</span></p>
+                <div className=' h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw]  tablet:h-[50vh] t'>
+                    <div className='w-full h-full absolute mobile:h-[55vw] mobile:w-[85vw]'>
                         <Image
-                        src="/assets/advastaplc/lc2-carousel-card-3.png"
+                        src="/assets/advastaplc/advastap-lc2-carousel-card3.png"
+                       
                         fill
                         alt='specification 1'
-                        className='object-contain '
+                        className='object-cover mobile:object-contain rounded-[3vw] mobile:rounded-[9vw] tablet:rounded-[5vw]'
                         />
                     </div>
-                    <p className=' text-[1.25vw] absolute bottom-[10%] left-[10%] aeonik font-light  w-[20vw] text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3] mobile:text-center mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[5%] tablet:font-light tablet:w-[45vw] tablet:left-[5%]'><span data-para-anim>Consistent tissue compression
+                    <p className='w-[40%] text-[1.25vw] absolute bottom-[15%] left-[15%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[5.5vw] mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:top-auto mobile:left-[5%] mobile:z-50 mobile:text-center  tablet:text-[2.5vw] tablet:bottom-[10%] tablet:left-[7%] tablet:font-light tablet:w-[40vw]' ><span data-para-anim>Consistent tissue compression
                     Minimised risk of leaks or bleeding</span></p>
-                    <div className='absolute h-[100%] w-[100%] z-[-1]'>
-                    <Image src="/assets/advastaplc/lc2-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
-                </div>
+                  
                 </div>
                
             </div>
@@ -140,22 +135,20 @@ const LC2Carousel = () => {
             </SwiperSlide>
             <SwiperSlide>
         <div className="py-[2vw] flex justify-center">
-            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[160vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
-                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] tablet:h-[10vw]'><span data-para-anim>Safety Lock</span></p>
-                <div className=' rounded-[3vw]  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[70vh] mobile:w-[85vw] mobile:rounded-[9vw] tablet:h-[50vh] tablet:rounded-[5vw]'>
-                    <div className='w-[45vw] h-[20vw]  relative top-[12%] right-[-5%]  mobile:h-[100vw] mobile:rotate-90 mobile:w-[100vw] mobile:left-[-10%] mobile:top-[-7%] mobile:scale-[1.2] tablet:scale-[1.2] tablet:h-[40vw] tablet:top-[5%]'>
+            <div className='w-full h-full flex flex-col justify-center gap-[2vw]  mobile:w-[85vw] mobile:h-[150vw] mobile:justify-center mobile:gap-[8vw] tablet:h-[50vh]'>
+                <p className='text-[2.5vw] font-light ml-[1.5vw] mobile:text-[8vw] mobile:text-center tablet:text-[3vw] mobile:h-[25vw] tablet:h-[8vw]'><span data-para-anim>Safety lock</span></p>
+                <div className='  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw]  tablet:h-[50vh] tablet:rounded-[5vw]'>
+                    <div className='  rounded-[3vw] w-full h-full absolute   mobile:h-[55vw] mobile:w-[85vw] mobile:rounded-[20vw] '>
                         <Image
-                        src="/assets/advastaplc/lc3-carousel-card-5.png"
+                        src="/assets/advastaplc/advastap-lc2-carousel-card4.png"
                         fill
                         alt='specification 1'
-                        className='object-contain '
+                        className='object-cover mobile:object-contain  rounded-[3vw] mobile:rounded-[9vw] tablet:rounded-[5vw]'
                         />
                     </div>
-                    <p className=' text-[1.25vw] absolute bottom-[10%] left-[10%] aeonik font-light w-[27vw] text-[#2A2A2A] mobile:text-[5vw] mobile:leading-[1.3] mobile:text-center mobile:font-light mobile:w-[80%] mobile:bottom-[5%] mobile:left-[10%] mobile:z-50 tablet:text-[2.5vw] tablet:bottom-[3%] tablet:w-[45vw] tablet:font-light tablet:left-[5%] '><span data-para-anim>Enclose the blades pre and post firing 
+                    <p className='w-[60%] text-[1.25vw] absolute bottom-[15%] left-[10%] aeonik  text-[#2A2A2A]  leading-[1.3] font-light mobile:text-[5.5vw]  mobile:font-light mobile:w-[90%] mobile:bottom-[10%] mobile:left-[5%] mobile:z-50 mobile:text-center tablet:text-[2.5vw] tablet:bottom-[5%] tablet:w-[40vw] tablet:font-light'><span data-para-anim>Enclose the blades pre and post firing 
                     Avoids accidental operational misfiring before clamping</span></p>
-                    <div className='absolute h-[100%] w-[100%] z-[-1]'>
-                    <Image src="/assets/advastaplc/lc2-carousel-card-bg.png" fill alt='carousel-card-1-bg' className='object-cover'/> 
-                </div>
+                  
                 </div>
                
             </div>
@@ -164,38 +157,39 @@ const LC2Carousel = () => {
        
       
       </Swiper>
-     <div
-                           className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[-3%] right-0 mobile:bottom-[-3%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%] tablet:top-[70%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50 border border-[#222222]`}
-                           onClick={handleNext} // Trigger next slide
-                         >
-                           <span
-                             className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
-                           />
-                           <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
-                             <Image
-                               src="/assets/home/arrow-right.png"
-                               alt="arrow-right"
-                               className={`object-cover group-hover:invert duration-300`}
-                               fill
-                             />
-                           </div>
-                         </div>
-                         <div
-                           className={`px-[1.2vw] py-[1.2vw] bottom-[-3%] right-[6%] absolute z-[5] mobile:bottom-[-3%] mobile:top-auto mobile:left-[37%] mobile:right-auto translate-x-[-38%]  tablet:top-[70%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white border border-[#222222]`}
-                           onClick={handlePrev} // Trigger previous slide
-                         >
-                           <span
-                             className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
-                           />
-                           <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
-                             <Image
-                               src="/assets/home/arrow-left.png"
-                               alt="arrow-left"
-                               className={`object-cover group-hover:invert duration-300 rotate-180`}
-                               fill
-                             />
-                           </div>
-                         </div>
+      
+       <div
+                      className={`px-[1.2vw] py-[1.2vw] absolute z-[5] bottom-[7%] right-0 mobile:bottom-[6%] mobile:top-auto mobile:right-auto mobile:left-[62%] translate-x-[-65%]  tablet:top-[93%] tablet:right-[35%] tablet:bottom-auto tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button border-[#222222] border cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+                      onClick={handleNext} 
+                    >
+                      <span
+                        className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+                      />
+                      <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw]">
+                        <Image
+                          src="/assets/home/arrow-right.png"
+                          alt="arrow-right"
+                          className={`object-cover group-hover:invert duration-300`}
+                          fill
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className={`px-[1.2vw] py-[1.2vw] bottom-[7%] right-[6%] absolute z-[5] mobile:bottom-[6%] mobile:top-auto mobile:left-[37%] mobile:right-auto  translate-x-[-38%]  tablet:top-[93%] tablet:right-[48%] tablet:bottom-auto tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white border-[#222222] border`}
+                      onClick={handlePrev} 
+                    >
+                      <span
+                        className={`bg-[#222222] w-[100%] h-[100%] z-[1] absolute top-0 left-0 origin-center scale-0 rounded-full group-hover:scale-100 duration-300`}
+                      />
+                      <div className="w-[1.2vw] h-[1.2vw] relative z-[6] mobile:w-[4.5vw] mobile:h-[4.5vw] tablet:w-[2.5vw] tablet:h-[2.5vw] rotate-180">
+                        <Image
+                          src="/assets/home/arrow-left.png"
+                          alt="arrow-left"
+                          className={`object-cover group-hover:invert duration-300 rotate-180`}
+                          fill
+                        />
+                      </div>
+                    </div>
         </div>
     </section>
     </>

@@ -17,9 +17,9 @@ const Hero = ({title ,src, content }) => {
         </div>
         <div className="px-[12%] relative mobile:px-[5%]">
           <div className="flex h-dvh w-full flex-col justify-center items-start tablet:h-[80vh] mobile:justify-start mobile:pt-[10vw]">
-            <div className={`w-full mobile:w-full tablet:w-full`}>
-              <h1 className={`title-1 w-full aeonik leading-[1] mobile:text-center mobile:text-[11vw] mobile:!drop-shadow-none`} >
-                <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#111111]  mobile:w-full mobile:text-center`}>
+            <div className={`w-[90%] mobile:w-full tablet:w-full`}>
+              <h1 className={`title-1 w-full aeonik  leading-[1] mobile:text-center mobile:text-[11vw] mobile:!drop-shadow-none `} >
+                <span data-para-anim className={`leading-[1.21] overflow-hidden text-[#111111] w-[80%] mobile:w-full mobile:text-center mobile:text-[#111111] `}>
                  {title}
                 </span>
               </h1>

@@ -62,7 +62,7 @@ const Leadership = () => {
                         <div className="w-[700%] h-[40vw] pt-[2vw] flex items-center absolute top-box duration-1000 mobile:pt-[5vw] mobile:h-[70vw]" ref={topBoxRef}>
                             {content.map((content, key) => (
                                 <div key={key} className="px-[5vw] text-center leader-1 h-full w-screen relative tablet:overflow-hidden mobile:overflow-hidden">
-                                    <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full mobile:text-[15vw]">{content.name}</p>
+                                    <p className="aeonik text-black/5 text-[11vw] text-nowrap font-light mt-[4vw] w-full mobile:text-[15vw] overflow-hidden">{content.name}</p>
                                     <Image className="absolute w-[60%] top-[-10%] opacity-75 left-1/2 -translate-x-1/2 mobile:w-[100%] mobile:top-[-20%]" src={content.slideImageBg} alt={`${content.name} image`} width={1000} height={1000} quality={100} priority={false} />
                                 </div>
                             ))}
@@ -98,7 +98,7 @@ const Leadership = () => {
                                             />
                                         </div>
                                         <div className="h-[24vw] w-[42vw] tablet:h-[40vw] tablet:w-3/4 bg-white/70 backdrop-blur-md rounded-[1.5vw] p-[2vw] tablet:p-[4vw] overflow-hidden border-white absolute top-0 left-1/2 -translate-x-1/2 duration-500 opacity-0 translate-y-[0%] leaderSwiperContent pointer-events-none mobile:w-full mobile:h-[100vw] mobile:relative mobile:py-[10vw] mobile:px-[7vw] mobile:rounded-2xl mobile:opacity-100 mobile:translate-y-[-15%]">
-                                            <h4 className="text-[2.5vw] aeonik mb-[0.5vw] tablet:text-[4vw] tablet:mb-2 mobile:text-[8vw] mobile:text-center">{item.name}</h4>
+                                            <h4 className="text-[2.5vw] aeonik mb-[0.5vw] tablet:text-[4vw] tablet:mb-2 mobile:text-[8vw] mobile:text-center ">{item.name}</h4>
                                             <p className="uppercase mb-[0.5vw] tablet:font-bold tablet:mb-2 mobile:text-[3.5vw] mobile:text-center mobile:mb-[8%]">{item.title}</p>
                                             <span className="bg-black/50 h-[1.5px] w-[3vw] block mb-[1.5vw] tablet:mb-[4vw] tablet:w-[30vw] mobile:hidden" />
                                             <div data-lenis-prevent className="overflow-y-scroll h-[60%] tablet:h-[55%] mobile:h-[70%]">

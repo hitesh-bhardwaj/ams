@@ -57,13 +57,13 @@ const Hero = () => {
               </div>
           </div>
 
-          <div className="w-[60%] h-full relative left-[40%] right-0 hero-container mobile:rotate-[88deg] mobile:w-full mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[5%] mobile:top-[25%] tablet:top-[10%] tablet:left-[5%]">
+          <div className="w-[75%] h-full relative left-[45%] right-0 hero-container mobile:rotate-[88deg] mobile:w-[180vw] mobile:h-[90%]  tablet:rotate-90 tablet:w-[100%] mobile:left-[5%] mobile:top-[30%] tablet:top-[25%] tablet:left-[5%]">
             <div className="w-full h-full">
               <Image
                 src="/assets/advastap/advastap-hero.png"
                 alt="side-image"
                 fill
-                className=" hero-img"
+                className=" hero-img object-contain"
               />
             </div>
           </div>

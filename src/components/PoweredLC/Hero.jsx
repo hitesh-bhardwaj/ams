@@ -50,7 +50,7 @@ const Hero = () => {
                    ADVASTAP POWERED LC
                   </span>
                 </h1>
-                <div className="hidden mobile:block w-[60%] h-[3px] mt-[3vw] bg-black/30 lineDraw"></div>
+                {/* <div className="hidden mobile:block w-[60%] h-[3px] mt-[3vw] bg-black/30 lineDraw"></div> */}
 
                 <p data-para-anim className="uppercase  text-[1.25vw] leading-[1] tracking-wider font-light mobile:text-[5vw] mobile:leading-[1.2] mobile:w-[80%] mobile:text-center mobile:py-[5%] mobile:tracking-normal tablet:text-[2.5vw] tablet:w-[60%] tablet:tracking-normal tablet:py-[3%]">
                 Powered Linear Cutter 3-row

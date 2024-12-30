@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const AdvastapHD2 = () => {
+const AdvastapHD3 = () => {
   paraAnim();
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -75,4 +75,4 @@ const AdvastapHD2 = () => {
   )
 }
 
-export default AdvastapHD2;
+export default AdvastapHD3;

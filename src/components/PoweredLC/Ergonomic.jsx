@@ -46,12 +46,12 @@ data-para-anim
             <div className=" h-[50vw] w-[80vw] mobile:h-full flex flex-col items-center justify-end tablet:w-full tablet:h-full">
              
                 <div className=" w-full h-full flex flex-col items-center justify-center mobile:h-fit">
-                  <div className="h-[50vw] w-[80vw] relative mobile:w-[200vw] mobile:h-[140vw] mobile:left-[25%] tablet:w-[100vw] tablet:h-[60vw] tablet:top-[-10%] tablet:left-0 fadeUp">
+                  <div className="h-[50vw] w-[100vw] relative mobile:w-[200vw] mobile:h-[140vw] mobile:left-[25%] tablet:w-[100vw] tablet:h-[60vw] tablet:top-[-10%] tablet:left-0 fadeUp">
                     <Image
                       src="/assets/poweredlc/ergonomic-lc2.png"
                       fill
                       alt="Ergonomic Product"
-                      className="object-cover"
+                      className="object-contain"
                     />
                   </div>
                   <div className="mobile:flex mobile:flex-col mobile:gap-[5vw] tablet:flex tablet:flex-wrap tablet:gap-[2vw] tablet:order-1">
