@@ -598,6 +598,9 @@ background-color: #ffffff !important;
   #unique ::-webkit-scrollbar{
     display: none;
   }
+  #products ::-webkit-scrollbar{
+    display: none;
+  }
 
   .title-1 {
     font-size: 13.3vw;

@@ -7,12 +7,14 @@ const ContactList = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [modalTitle, setModalTitle] = useState(""); // State to store the modal title
   const lenis = useLenis();
+  const [src, setSrc] = useState("");
 
-  const openModal = (title) => {
+  const openModal = (title,src) => {
     lenis && lenis.stop();
     document.body.style.overflow = "hidden";
     setModalTitle(title); // Set the modal title
     setIsOpen(true);
+    setSrc(src)
   };
 
   const closeModal = () => {
@@ -30,7 +32,7 @@ const ContactList = () => {
         <div className="container-lg h-full flex flex-col items-center gap-[5vw] ">
           <h2 data-para-anim className="title-2 aeonik mobile:mb-[5vw]">Contact AMS</h2>
           <div className="w-full flex justify-between fadeUp mobile:flex-col mobile:gap-12 tablet:flex-wrap">
-            <div className="cursor-pointer" onClick={() => openModal("Healthcare Providers")}>
+            <div className="cursor-pointer" onClick={() => openModal("Healthcare Providers" , "/assets/contact/plant-bg.png")}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full tablet:w-[44vw]">
                 <div className="w-full h-[16vw] rounded-[2vw] overflow-hidden relative mobile:h-[50vw] tablet:h-[25vw]">
                   <Image
@@ -122,7 +124,7 @@ const ContactList = () => {
             </div>
           </div>
         </div>
-        {isOpen && <ContactListForm title={modalTitle} onClose={closeModal} />}
+        {isOpen && <ContactListForm title={modalTitle} onClose={closeModal} src={src} />}
       </section>
     </>
   );

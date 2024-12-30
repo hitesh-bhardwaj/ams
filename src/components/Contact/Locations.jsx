@@ -24,7 +24,7 @@ const Locations = () => {
                   <p data-para-anim>Corporate HQ</p>
                   <p data-para-anim>
                     Somerset Road, #07-08 Triple One Somerset, Singapore -
-                    238164 T: (65) 63691080/ 891
+                    238164 <br/>T: (65) 63691080/ 891
                   </p>
                 </div>
               </div>
@@ -41,7 +41,7 @@ const Locations = () => {
                   <p data-para-anim>Corporate Office</p>
                   <p data-para-anim>
                     305, Ceejay House, F-Block, Shiv Sagar Estate,Dr. Annie
-                    Besant Road, Worli, Mumbai - 400018, India T: +91
+                    Besant Road, Worli, Mumbai - 400018, India <br/> T: +91
                     2224946100/ 01
                   </p>
                 </div>

@@ -30,7 +30,7 @@ const Hero = () => {
                         <div className="w-[80%] mobile:w-full tablet:w-full">
                             <h1 className='title-1 w-full aeonik   leading-[1] mobile:text-center'>
                                 <span data-para-anim className='leading-[1.21] overflow-hidden text-[#FFFFFF] w-[80%] mobile:w-full mobile:text-center  '>
-                                Advancing the science of tissue reinforcement
+                                Advancing the Science of Tissue Reinforcement
                                 </span>
                             </h1>
                             <p className={` max-w-[30vw] mt-[3vw] mb-[4vw] content-p mobile:text-center  mobile:max-w-[100%] tablet:max-w-[50vw] mobile:my-[7vw] tablet:text-[2.5vw]`}>

@@ -211,8 +211,8 @@ const Product = () => {
                     <ProductCard
                       img={product.imgSrc}
                       heading={product.heading}
-                      arrowColor={`${i == 2 ? true : ""}`}
-                      className={`${i == 2 ? "text-white #ffffff " : ""}`}
+                      arrowColor={`${i == 1 ? true : ""}`}
+                      className={`${i == 1? "text-white #ffffff " : ""}`}
                     />
                   </div>
                 ))}

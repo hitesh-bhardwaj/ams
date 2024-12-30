@@ -41,7 +41,7 @@ const formSchema = z.object({
   }),
 });
 
-export default function ContactListForm({ onClose , title }) {
+export default function ContactListForm({ onClose , title ,src}) {
   const [selectedRole, setSelectedRole] = useState("");
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -100,7 +100,7 @@ export default function ContactListForm({ onClose , title }) {
   };
   return (
     <section className="w-screen h-screen flex justify-center items-center fixed top-0 left-0 overflow-hidden bg-black/60 z-[999] fade-in " id="contact-other-forms">
-      <div className="w-[75vw] h-[90%] bg-white relative py-[4vw] px-[2vw] rounded-[1vw]  overflow-hidden fadeup mobile:w-[90%] mobile:h-[70%] mobile:px-[5vw] mobile:py-[10vw] mobile:rounded-[4vw] tablet:rounded-[2vw] tablet:w-[80%] tablet:h-[70%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
+      <div className="w-[50vw] h-[95%] bg-white relative py-[4vw] px-[2vw] rounded-[2.5vw]  overflow-hidden fadeup mobile:w-[90%] mobile:h-[70%] mobile:px-[5vw] mobile:py-[10vw] mobile:rounded-[4vw] tablet:rounded-[2vw] tablet:w-[80%] tablet:h-[70%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
         <div
           data-lenis-prevent
           className="w-full h-[76%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
@@ -147,40 +147,25 @@ export default function ContactListForm({ onClose , title }) {
                 </Select>
               </div>
 
-              <div className="w-full flex gap-[2vw] mobile:flex-col mobile:gap-[8vw]">
+             
                 <FormField
                   control={form.control}
-                  name="FirstName"
+                  name="FullName"
                   render={({ field }) => (
                     <FormItem className="required">
                       <FormControl>
                         <Input
-                          placeholder="First Name*"
+                          placeholder="Full Name (First and Last)*"
                           {...field}
-                          className="w-[31vw] tablet:w-[34vw] mobile:w-full"
+                          className="w-full tablet:w-[34vw] mobile:w-full"
                         />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-                <FormField
-                  control={form.control}
-                  name="LastName"
-                  render={({ field }) => (
-                    <FormItem className="required">
-                      <FormControl>
-                        <Input
-                          placeholder="Last Name*"
-                          {...field}
-                          className="w-[31.8vw] tablet:w-[34vw] mobile:w-full"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
+                
+             
 
               <FormField
                 control={form.control}
@@ -314,8 +299,8 @@ export default function ContactListForm({ onClose , title }) {
               </div>
             </form>
           </Form>
-        <div className="absolute bottom-0 opacity-80 left-0 w-full h-[12vw] z-[0] mobile:h-[20vw]">
-            <Image src={"/assets/contact/plant-bg.jpg"} alt="plant-bg" fill className="object-cover"/>
+        <div className="absolute bottom-0 opacity-80 left-0 w-[50vw] h-[25vw] z-[0] mobile:h-[20vw]">
+            <Image src={src} alt="plant-bg" fill className="object-cover"/>
 
         </div>
         </div>

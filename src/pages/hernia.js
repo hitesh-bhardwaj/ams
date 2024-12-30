@@ -26,13 +26,13 @@ export default function hernia() {
       title: "A Partner in Your Success ",
       src: "/assets/hernia/portfolio-1.png",
       srcsmall: "/assets/hernia/small1.png",
-      heading: "<span style='color: #2a2a2a;'>Enhancing Recovery and Comfort</span>",
+      heading: "<span style='color: #2a2a2a;'>Enhancing Recovery And Comfort</span>",
       para: "<span style='color: #2a2a2a;'>Our ADVAMESH portfolio is crafted to improve patient recovery by providing superior support, flexibility and encouraging natural tissue integration. ADVAMESH is engineered for better conformity and lower recurrence rates, facilitating a more comfortable and efficient healing process.</span>",
     },
     {
       src: "/assets/hernia/portfolio-2.png",
       srcsmall: "/assets/hernia/small2.png",
-      heading: "Excellence in Every Detail",
+      heading: "Excellence In Every Detail",
       para: "At AMS, our proprietary ADVAMESH Knitting Technology exemplifies our commitment to innovation and excellence in hernia repair solutions. This advanced in-house capability enables us to engineer high-quality, precision-knit polypropylene mesh tailored to meet diverse surgical requirements.",
     },
     {

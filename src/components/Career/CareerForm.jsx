@@ -241,7 +241,7 @@ export default function CareerForm({ onClose }) {
             </form>
           </Form>
         </div>
-        <div className="absolute bottom-[-37%] left-0 h-full w-full mobile:bottom-[-5%] mobile:h-[45vw] mobile:w-[120vw] mobile:left-[-18%]">
+        <div className="absolute bottom-[-20%] left-0 h-full w-full mobile:bottom-0 mobile:h-[70vw] mobile:w-[140vw] mobile:left-[-25%]">
           <Image
             src={"/assets/career/career-form-bg.png"}
             alt="career-form-bg-image"
