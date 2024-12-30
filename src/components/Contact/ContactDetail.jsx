@@ -24,7 +24,9 @@ const ContactDetail = () => {
                 <div className="flex flex-col gap-[0.5vw] text-[1.25vw] mobile:text-[5.5vw] mobile:w-full mobile:text-center mobile:gap-[4vw] tablet:text-[2.5vw]">
                   <h4>Manufacturing:</h4>
                   <p className="w-[65%] font-light mobile:w-full tablet:w-full">
-                    P-21-22, 25-26 & 34-35, GIDC Manjusar, Tal-Savli, Vadodara - 391775 Gujarat, India
+                  Advanced MedTech Solutions<br/> P-21-22, 25-26 & 34-35, GIDC
+                      Manjusar, Tal – Savli, Dist. – Vadodara -391775 Gujarat,
+                      India
                   </p>
                 </div>
                 <div className="flex flex-col gap-[0.5vw] text-[1.25vw] mobile:text-[5.5vw] mobile:w-full mobile:text-center mobile:gap-[1vw] tablet:text-[2.5vw]">

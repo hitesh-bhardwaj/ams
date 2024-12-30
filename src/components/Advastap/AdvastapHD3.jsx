@@ -61,7 +61,7 @@ const AdvastapHD2 = () => {
 
         </div>
 
-        <div className="w-screen h-[20%] flex items-center justify-center">
+        <div className="w-screen h-[18%] flex items-center justify-center">
       <div className="text-white text-[2.5vw] tracking-wider font uppercase gradient-text mobile:text-[4.1vw] tablet:text-[4.5vw]">
         <p>SAFE. SUPERIOR.</p>
         <span className="gradient-line"></span>

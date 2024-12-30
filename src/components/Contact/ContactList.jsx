@@ -2,23 +2,36 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ContactListForm from "./ContactListForm";
 import { useLenis } from "lenis/react";
+import OtherContactform from "./OtherContactform";
+import ContactOemform from "./ContactOemform";
 
 const ContactList = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [modalTitle, setModalTitle] = useState(""); // State to store the modal title
+  const [isOpen, setIsOpen] = useState(false); 
   const lenis = useLenis();
-  const [src, setSrc] = useState("");
+  const [isOpenOther , setIsOpenOther] = useState(false);
+  const [isOpenOem,setIsOpenOem] = useState(false)
 
-  const openModal = (title,src) => {
+  const openModal = () => {
     lenis && lenis.stop();
     document.body.style.overflow = "hidden";
-    setModalTitle(title); // Set the modal title
     setIsOpen(true);
-    setSrc(src)
+   
   };
+  const openOtherModal = () => {
+    lenis && lenis.stop();
+    document.body.style.overflow = "hidden";
+    setIsOpenOther(true);
+  };
+  const openOemModal =()=>{
+    lenis && lenis.stop();
+    document.body.style.overflow = "hidden";
+    setIsOpenOem(true);
 
+  }
   const closeModal = () => {
     setIsOpen(false);
+    setIsOpenOem(false);
+    setIsOpenOther(false)
     lenis && lenis.start();
     document.body.style.overflow = "";
   };
@@ -62,7 +75,7 @@ const ContactList = () => {
                 </p>
               </div>
             </div>
-            <div className="cursor-pointer" onClick={() => openModal("OEM Solutions","/assets/contact/plant-bg.png")}>
+            <div className="cursor-pointer" onClick={() => openOemModal()}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full tablet:w-[44vw]">
                 <div className="w-full h-[16vw] rounded-[2vw] overflow-hidden relative mobile:h-[50vw] tablet:h-[25vw]">
                   <Image
@@ -92,7 +105,7 @@ const ContactList = () => {
                 </p>
               </div>
             </div>
-            <div className="cursor-pointer tablet:w-full tablet:flex tablet:justify-center tablet:mt-[3vw]" onClick={() => openModal("Other Enquiries","/assets/contact/plant-bg.png")}>
+            <div className="cursor-pointer tablet:w-full tablet:flex tablet:justify-center tablet:mt-[3vw]" onClick={() => openOtherModal("Other Enquiries","/assets/contact/plant-bg.png")}>
               <div className="w-[29vw] h-full flex flex-col gap-[1.5vw] mobile:w-full tablet:w-[44vw]">
                 <div className="w-full h-[16vw] rounded-[2vw] overflow-hidden relative mobile:h-[50vw] tablet:h-[25vw]">
                   <Image
@@ -118,13 +131,15 @@ const ContactList = () => {
                   </div>
                 </div>
                 <p data-para-anim className="text-[1.25vw] leading-[1.4] aeonik font-light tablet:text-[2.2vw] mobile:text-xl">
-                  Have a different query? We&apos;re here to assist. Get in touch for general questions, business inquiries, or more information about our offerings.
+                Have a different query? We’re here to assist. Simply fill out the details for general questions, business inquiries, or more information about our offerings.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        {isOpen && <ContactListForm title={modalTitle} onClose={closeModal} src={src} />}
+        {isOpen && <ContactListForm onClose={closeModal}/>}
+        {isOpenOther&&<OtherContactform  onClose={closeModal} />}
+        {isOpenOem&&<ContactOemform onClose={closeModal}/>}
       </section>
     </>
   );

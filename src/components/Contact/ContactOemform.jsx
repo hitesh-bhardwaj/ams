@@ -41,7 +41,7 @@ const formSchema = z.object({
   }),
 });
 
-export default function ContactListForm({ onClose , title }) {
+export default function ContactOemform({ onClose}) {
   const [selectedRole, setSelectedRole] = useState("");
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -75,7 +75,7 @@ export default function ContactListForm({ onClose , title }) {
     };
 
     try {
-      const res = await fetch("/api/healthcare", {
+      const res = await fetch("/api/contactOem", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
@@ -105,7 +105,7 @@ export default function ContactListForm({ onClose , title }) {
           data-lenis-prevent
           className="w-full h-[76%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
         >
-            <h2 className="text-[3vw] aeonik !font-light mb-[2vw] tablet:text-[4.5vw] tablet:mb-[3vw] mobile:text-[7vw] mobile:mb-[7vw]">Healthcare Providers</h2>
+            <h2 className="text-[3vw] aeonik !font-light mb-[2vw] tablet:text-[4.5vw] tablet:mb-[3vw] mobile:text-[7vw] mobile:mb-[7vw]">OEM Solutions</h2>
           <Form {...form}>
             <form className="space-y-8 relative z-[10]  " onSubmit={form.handleSubmit(onSubmit)}>
               <div>
@@ -155,7 +155,7 @@ export default function ContactListForm({ onClose , title }) {
                         <Input
                           placeholder="Full Name (First and Last)*"
                           {...field}
-                          className=" mobile:w-full"
+                          className="mobile:w-full"
                         />
                       </FormControl>
                       <FormMessage />
@@ -300,7 +300,7 @@ export default function ContactListForm({ onClose , title }) {
               </div>
             </form>
           </Form>
-        <div className="absolute bottom-0  left-0 w-[50vw] h-[25vw] z-[0] mobile:h-[20vw] tablet:w-full tablet:h-[35vw]">
+        <div className="absolute bottom-0 left-0 w-[50vw] h-[25vw] z-[0] mobile:h-[20vw] tablet:w-full tablet:h-[35vw]">
             <Image src={"/assets/contact/plant-bg.png"} alt="plant-bg" fill className="object-cover"/>
 
         </div>

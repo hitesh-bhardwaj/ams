@@ -60,7 +60,7 @@ const AdvastapHD3 = () => {
 
     </div>
 
-    <div className="w-screen h-[20%] flex items-center justify-center mobile:h-[15%]">
+    <div className="w-screen h-[18%] flex items-center justify-center mobile:h-[15%]">
       <div className="text-white text-[2.5vw] tracking-wider font uppercase gradient-text mobile:text-[5vw] tablet:text-[4.5vw] ">
       <p>Raised to the</p>
         <span className="gradient-line"></span>

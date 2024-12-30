@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Image from "next/image";
+import Link from "next/link";
 import { Media } from "../media";
 import NavWrapper from "../NavWrapper";
 
@@ -11,8 +11,27 @@ gsap.registerPlugin(useGSAP);
 
 const Menu = ({ isMenuOpen, toggleMenu }) => {
   const mainMenu = useRef(null);
+  const mainMenuRef = useRef(null);
   const videoRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
+
+  const handleOutsideClick = (e) => {
+    if (!mainMenuRef.current.contains(e.target)) {
+      toggleMenu(); // Close the menu
+    }
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleOutsideClick);
+    } else {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [isMenuOpen]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -21,13 +40,12 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
           if (entry.isIntersecting) {
             const video = videoRef.current;
             if (video && !videoLoaded) {
-              // Set video source dynamically when it enters the viewport
               video.src = "/assets/header/ams-header-bg.mp4";
-              video.load(); // Ensure the video is loaded
-              video.play(); // Play the video when it's visible
-              setVideoLoaded(true); // Set video as loaded
+              video.load();
+              video.play();
+              setVideoLoaded(true);
             }
-            observer.unobserve(entry.target); // Stop observing once the video has loaded
+            observer.unobserve(entry.target);
           }
         });
       },
@@ -86,7 +104,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
         ref={mainMenu}
         className={`w-screen h-screen fixed left-0 z-[100] top-[-100%] mobile:h-full mobile:w-full`}
       >
-        <div className="bg-white h-[70%] w-full relative tablet:h-1/2 mobile:h-full">
+        <div className="bg-white h-[70%] w-full relative tablet:h-1/2 mobile:h-full menu" ref={mainMenuRef}>
           <Media greaterThan="mobile">
             <div className="w-[25%] tablet:w-[28%] h-full absolute">
               <video

@@ -41,7 +41,7 @@ const formSchema = z.object({
   }),
 });
 
-export default function ContactListForm({ onClose , title }) {
+export default function OtherContactform({ onClose}) {
   const [selectedRole, setSelectedRole] = useState("");
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -75,7 +75,7 @@ export default function ContactListForm({ onClose , title }) {
     };
 
     try {
-      const res = await fetch("/api/healthcare", {
+      const res = await fetch("/api/contactOther", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
@@ -100,12 +100,12 @@ export default function ContactListForm({ onClose , title }) {
   };
   return (
     <section className="w-screen h-screen flex justify-center items-center fixed top-0 left-0 overflow-hidden bg-black/60 z-[999] fade-in " id="contact-other-forms">
-      <div className="w-[50vw] h-[95%] bg-white relative py-[4vw] px-[2vw] rounded-[2.5vw]  overflow-hidden fadeup mobile:w-[90%] mobile:h-[70%] mobile:px-[5vw] mobile:py-[10vw] mobile:rounded-[4vw] tablet:rounded-[2vw] tablet:w-[80%] tablet:h-[70%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
+      <div className="w-[50vw] h-[95%] bg-white relative py-[4vw] px-[2vw] rounded-[2.5vw]  overflow-hidden fadeup mobile:w-[90%] mobile:h-[70%] mobile:px-[5vw] mobile:py-[10vw] mobile:rounded-[4vw] tablet:rounded-[2vw] tablet:w-[80%] tablet:h-[75%] tablet:px-[2vw] tablet:py-[3vw] tablet:bottom-[4%]">
         <div
           data-lenis-prevent
-          className="w-full h-[76%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
+          className="w-full h-[70%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] mobile:pb-[15vw]"
         >
-            <h2 className="text-[3vw] aeonik !font-light mb-[2vw] tablet:text-[4.5vw] tablet:mb-[3vw] mobile:text-[7vw] mobile:mb-[7vw]">Healthcare Providers</h2>
+            <h2 className="text-[3vw] aeonik !font-light mb-[2vw] tablet:text-[4.5vw] tablet:mb-[3vw] mobile:text-[7vw] mobile:mb-[7vw]">Other Enquiries</h2>
           <Form {...form}>
             <form className="space-y-8 relative z-[10]  " onSubmit={form.handleSubmit(onSubmit)}>
               <div>
@@ -300,8 +300,8 @@ export default function ContactListForm({ onClose , title }) {
               </div>
             </form>
           </Form>
-        <div className="absolute bottom-0  left-0 w-[50vw] h-[25vw] z-[0] mobile:h-[20vw] tablet:w-full tablet:h-[35vw]">
-            <Image src={"/assets/contact/plant-bg.png"} alt="plant-bg" fill className="object-cover"/>
+        <div className="absolute bottom-0 opacity-100 left-0 w-[50vw] h-[25vw] z-[0] mobile:h-[20vw] tablet:w-full tablet:h-[35vw]">
+            <Image src="/assets/contact/other-bg.png" alt="other-bg" fill className="object-cover"/>
 
         </div>
         </div>
