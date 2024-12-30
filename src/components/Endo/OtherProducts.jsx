@@ -7,7 +7,6 @@ import Link from "next/link";
 import styles from "@/styles/endocard.module.css"; // Import the module CSS
 import Image from "next/image";
 import { Media } from "../media";
-import LinkButton from "../Button/LinkButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,7 +23,7 @@ const ProductCard = ({ img, heading, link, text }) => {
           </h2>
           <p className="text-[1.15vw] tablet:text-lg mobile:text-lg font-extralight mb-[2vw]">{text}</p>
           <div href={link} className="link-btn">
-            <span className={`btn-text`}>See More</span>
+            <span className={`btn-text tablet:text-[2.5vw]`}>See More</span>
             
             <span className="btn-images">
                 <div>

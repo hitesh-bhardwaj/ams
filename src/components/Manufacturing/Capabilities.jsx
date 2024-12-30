@@ -28,7 +28,7 @@ const Capabilities = () => {
     <>
       <section id='capabilities'>
         <div className='container-lg flex flex-col items-center justify-center py-[7%] tablet:pt-[15%]'>
-          <h2 data-para-anim className="text-[6vw] mobile:text-[12vw] font-light aeonik mobile:mb-[5vw]">Our Capabilities</h2>
+          <h2 data-para-anim className="text-[5.5vw] mobile:text-[12vw] font-light aeonik mobile:mb-[5vw]">Our Capabilities</h2>
           <div className='mt-[5%] flex justify-between w-full px-[5%] tablet:gap-[5vw] mobile:flex-col mobile:gap-[10vw] tablet:flex-wrap tablet:px-[2%]'>
             {capabilitiesData.map((capability) => (
               <div key={capability.id} className={`capability-card group fadeUp ${capability.id == 3 ? "tablet:w-full tablet:flex tablet:justify-center" : ""}`}>

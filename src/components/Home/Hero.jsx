@@ -60,11 +60,11 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative overflow-hidden bg-white mobile:bg-transparent tablet:bg-transparent" id="hero">
-      <div ref={background} className="px-[12%] w-full relative mobile:px-[5vw] tablet:px-[10%] mobile:flex mobile:flex-col-reverse mobile:pt-[20vw]">
+    <section ref={containerRef} className="relative overflow-hidden bg-white mobile:bg-transparent tablet:bg-transparent dark" id="hero">
+      <div ref={background} className="px-[12%] w-full relative mobile:px-[5vw] tablet:px-[10%] mobile:flex mobile:flex-col-reverse">
         <div className="flex h-dvh relative z-10 w-full justify-start items-center mobile:h-full mobile:items-start tablet:h-[80vh]">
           <div className="w-[55%] mobile:w-full mobile:flex mobile:flex-col mobile:items-center mobile:justify-center tablet:w-[85%] mt-[4vw] mobile:mt-[10vw]">
-            <h1 data-para-anim className="title-1 aeonik capitalize mobile:text-center mobile:text-[11vw] text-[#ffffff] tablet:text-[10vw] text-shadow mobile:text-[#111111] mobile:!drop-shadow-none" >
+            <h1 data-para-anim className="title-1 aeonik mobile:text-center mobile:text-[11vw] text-[#ffffff] tablet:text-[10vw] text-shadow mobile:text-[#111111] mobile:!drop-shadow-none" >
               Advancing the way we care
             </h1>
             <p className="font-light max-w-[50vw] text-[1.25vw] text-white mt-[3vw] mb-[7vw] mobile:text-[4.5vw] mobile:max-w-[90vw] mobile:text-center mobile:mt-[10vw] mobile:mb-[15vw]  tablet:text-[2.5vw] tablet:max-w-[50vw] mobile:text-[#111111] ">
@@ -85,7 +85,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute top-0 left-0 bottom-0 right-0 h-full w-full z-[1] mobile:relative mobile:h-[60vw] mobile:w-[100vw] mobile:ml-[-5vw]">
+        <div className="absolute top-0 left-0 bottom-0 right-0 h-full w-full z-[1] mobile:relative mobile:h-[75vw] mobile:w-[100vw] mobile:ml-[-5vw]">
           <video
             poster="/assets/home/hero-video-poster.webp"
             autoPlay

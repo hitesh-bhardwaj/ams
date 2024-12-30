@@ -28,7 +28,7 @@ export default function ama() {
     date_modified: "2024-12-26T12:32",
   };
   const content = {
-    heading: "Advancing the Way We Learn",
+    heading: "Advancing the way We Learn",
     smallpara: "Nestled within the state-of-the-art AMS manufacturing facility in Vadodara, Advanced Medtech Academy (AMA) is a beacon for advancing healthcare education. With a sprawling world-class infrastructure spanning 20,000 sq. ft., AMA is dedicated to empowering healthcare professionals through advanced simulation and academic training. We believe that skillful hands and confident minds are the foundation for improving patient outcomes and transforming lives.",
     bigpara: "To support the professional growth of those who care for others, AMA’s mission is simple yet profound: to inspire and elevate the expertise of healthcare teams—surgeons, physicians, nurses, and paramedical staff. ",
     src: "/assets/ama/ama-genesis-bg.png",
@@ -44,19 +44,19 @@ export default function ama() {
       title: "Creating a Healthier World Together",
       src: "/assets/ama/ama-carousel-1.png",
       srcsmall: "/assets/ama/small1.png",
-      heading: "Personalized and insightful training:",
+      heading: "Personalized & Insightful Training:",
       para: "AMA’s structured courses span basic to advanced levels, covering cognitive skill development, advanced minimally invasive surgery, complex interventional cardiology and optimizing revascularization techniques.",
     },
     {
       src: "/assets/ama/ama-carousel-3.png",
       srcsmall: "/assets/ama/small2.png",
-      heading: "Extensive research and Science library:",
+      heading: "Extensive Research & Science library:",
       para: "With accessible learning anytime, anywhere—via classrooms, auditoriums, or online platforms—participants earn certifications, refine skills, and gain access to unparalleled resources, setting a new standard in medical education.",
     },
     {
       src: "/assets/ama/ama-carousel-2.png",
       srcsmall: "/assets/ama/small3.png",
-      heading: "State of the art hands on training center:",
+      heading: "State Of The-Art Hands-On Training Center:",
       para: "Our world-class facilities offer hands-on training with life-like models and ex-vivo and in-vivo tissue, bridging theory and real-world application. Insight-driven modules, enriched with live procedure observations and collaborative discussions, deliver an unmatched immersive experience.",
     },
   ];
@@ -74,13 +74,7 @@ export default function ama() {
           <Hero
             title={hero.title}
             src={hero.src}
-            content={hero.content}
-            className="hidden"
-            titleWidth={"!w-[100%]"}
-            paraWidth={"max-w-[38vw]"}
-            mode={""}
-            textShadow={"text-shadow"}
-            textShadowPara = {'text-shadow-para'}
+            content={hero.content}     
           />
           <Genesis content={content} />
           <CardiacCare />

@@ -15,11 +15,11 @@ const Hero = () => {
     <>
       <section className="hero h-screen tablet:h-[80vh] overflow-hidden mobile:w-full bg-white" id="hero">
         <div className="px-[10%] relative">
-          <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:h-screen mobile:justify-start mobile:pt-[40vw]">
+          <div className="flex h-dvh w-full justify-start items-center tablet:h-[80vh] mobile:flex-col mobile:h-screen mobile:justify-start mobile:pt-[30vw]">
             <div className="w-full mobile:flex mobile:justify-center mobile:items-center mobile:flex-col mobile:text-center z-[50] mobile:pb-[20vw]">
               <h1
                 data-para-anim
-                className="title-1 aeonik capitalize leading-[1.15] mobile:text-[12.5vw]"
+                className="title-1 aeonik leading-[1.15] mobile:text-[12.5vw]"
               >
                 Advancing Healthcare for Generations to Come
               </h1>

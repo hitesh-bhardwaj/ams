@@ -50,10 +50,10 @@ export default State;
 const Card = ({ image, title, description, className = "" }) => {
   return (
     <div className={`rounded-[45px] items-center border-[1px] border-gray-200 px-[4vw] py-[3vw] flex gap-[4vw] justify-between bg-white/50 tablet:flex-col tablet:h-[65vh] tablet:py-[5vw] tablet:rounded-[4vw] tablet:justify-start tablet:gap-[4vw] mobile:flex-col mobile:h-auto mobile:rounded-[9vw] mobile:py-[4vw] mobile:pb-[10vw] fadeUp ${className}`}>
-      <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[60vw] mobile:rounded-[6vw]">
+      <div className="h-[27vw] w-[46.5vw] relative rounded-[2.5vw] overflow-hidden tablet:h-[50vw] tablet:w-[82vw] tablet:rounded-[3vw] mobile:w-[82vw] mobile:h-[90vw] mobile:rounded-[6vw]">
         <Image src={image} width={870} height={520} alt={title} className="object-cover h-full w-full" />
       </div>
-      <div className={`flex flex-col w-[40%] font-light items-left justify-center gap-[2vw] tablet:w-[90%] tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw]`}>
+      <div className={`flex flex-col w-[40%] font-light items-left justify-center gap-[2vw] tablet:w-full tablet:ml-[1vw] mobile:w-full mobile:text-center mobile:ml-0 mobile:gap-[7vw]`}>
         <h2 className={`text-[3vw] aeonik text-[#111111] w-[100%] leading-[1.3] tablet:text-[5vw] mobile:text-[10vw] para-animation`}>
           {title}
         </h2>

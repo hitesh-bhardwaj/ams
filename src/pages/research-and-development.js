@@ -70,10 +70,6 @@ export default function rnd() {
             title={hero.title}
             src={hero.src}
             content={hero.content}
-            className="hidden"
-            titleColor={true}
-            mode={""}
-            paraWidth={"max-w-[40vw]"}
           />
           <Genesis content={content} />
           <PortfolioSwiper slidesData={slidesData} textclass={"text-[#FFFFFF]"} width={"w-[35%] tablet:w-[50%]"} />

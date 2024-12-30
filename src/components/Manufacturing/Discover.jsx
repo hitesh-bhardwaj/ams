@@ -7,14 +7,14 @@ export default function Discover() {
       <section className="pt-[0] pb-[7%] mobile:pb-[15%]" id="discover">
         <div className="px-[5%] h-full flex items-center justify-between tablet:gap-0 tablet:justify-between mobile:flex-col-reverse mobile:px-[5%] mobile:gap-8">
           <div className="w-[39.5vw] px-[2.5vw] py-[5vw] bg-white/50 rounded-[2.5vw] fadeUp overflow-hidden mobile:flex-col mobile:h-full mobile:py-[15vw] mobile:rounded-[6vw] tablet:h-[55vw] tablet:rounded-[3vw] tablet:w-[48%] mobile:w-full">
-            <div className="relative space-y-[3vw] mobile:order-1 mobile:flex mobile:flex-col mobile:justify-center mobile:gap-[5vw] mobile:w-full">
-              <h2 data-para-anim className="text-[2.5vw] tablet:text-[5vw] font-light aeonik mobile:text-center mobile:text-[10vw]">
+            <div className="relative space-y-[2.2vw] mobile:order-1 mobile:flex mobile:flex-col mobile:justify-center mobile:gap-[5vw] mobile:w-full">
+              <h2 data-para-anim className="text-[2.8vw] tablet:text-[5vw] aeonik mobile:text-center mobile:text-[11vw] mobile:font-light mobile:leading-[1.2]">
                 AMS OEM Solutions
               </h2>
               <p data-para-anim className="content-p pb-[1vw] mobile:text-center">
                 AMS offers specialized OEM solutions crafted to support medical device manufacturers in achieving excellence.
               </p>
-              <div className="fadeUp mobile:w-full mobile:flex mobile:justify-center">
+              <div className="fadeUp pt-[1.5vw] mobile:w-full mobile:flex mobile:justify-center">
                 <PrimaryButton link={"/oem"} text={"AMS OEM"} className="!border-gray-200" />
               </div>
             </div>

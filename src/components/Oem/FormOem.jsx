@@ -88,12 +88,12 @@ export default function FormOem() {
               </div>
             </div>
 
-            <div className="w-[40%] px-[3vw] rounded-[2.5vw] shadow-sm py-[2vw] mobile:w-[90%] bg-white mobile:rounded-[9vw] mobile:px-[10vw] mobile:py-[15vw] mobile:border mobile:items-center tablet:w-[50%] fadeUp">
-              <h3 className="aeonik text-[2.5vw] mobile:text-[9vw] mobile:text-center tablet:text-[4.5vw] mb-[2vw]">Send Message</h3>
+            <div className="w-[40%] px-[3vw] rounded-[2.5vw] shadow-sm py-[2vw] mobile:w-[90%] bg-white mobile:rounded-[9vw] mobile:py-[15vw] mobile:border mobile:items-center tablet:w-[50%] fadeUp">
+              <h3 className="aeonik text-[2.5vw] mobile:text-[9vw] mobile:text-center tablet:text-[4.5vw] mb-[2vw]">Send a Message</h3>
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-[1.5vw] mobile:space-y-[5vw] tablet:space-y-[3vw]"
+                  className="space-y-[1.5vw] mobile:space-y-[5vw] tablet:space-y-[3vw] mobile:px-[7vw]"
                 >
                   <FormField
                     control={form.control}

@@ -19,7 +19,7 @@ const Genesis = ({ content, sParaWidth, bParaWidth }) => {
   })
 
   return (
-    <section className="genesis mobile:h-full overflow-hidden pt-[12%] tablet:pt-[15%] mobile:py-[20%] " id="genesis">
+    <section className="genesis mobile:h-full overflow-hidden pt-[12%] tablet:pt-[15%] mobile:pt-[20%] mobile:pb-[10%]" id="genesis">
       <div className="container-lg mx-auto flex items-center justify-center flex-col relative pb-[7.5vw] tablet:pb-0 mobile:pb-0">
         <div className="genesis-card w-[80%] border-[1px] relative border-[#DADADA] z-[1] bg-white/70 backdrop-blur-sm rounded-[2.5vw] px-[1%] py-[5%] mobile:py-[15%] mobile:w-full tablet:w-[90%] mobile:rounded-[11vw]">
           <h2 data-para-anim className="title-2 aeonik ml-[5.5%] mobile:text-center mobile:ml-0 mobile:px-[5vw] tablet:ml-[6%] mobile:flex mobile:justify-center mobile:items-center kerning-none tablet:text-wrap">

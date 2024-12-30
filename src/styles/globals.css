@@ -508,10 +508,10 @@ body {
   height: 100%;
 }
 .text-shadow{
-  filter: drop-shadow(2px 2px 1.5px  rgb(40, 40, 40,0.8)) ;
+  filter: drop-shadow(2px 2px 1.5px  rgb(40, 40, 40,0.3)) ;
 }
 .text-shadow-para{
-  filter: drop-shadow(2px 2px 1.5px  rgb(0, 0, 0,0.8));
+  filter: drop-shadow(1px 1px 1px  rgb(0, 0, 0,0.3));
 
 }
 .draw {

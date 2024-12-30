@@ -104,7 +104,7 @@ const SutureCarouselFirst = () => {
                   } transition-all duration-500 ease`}
                 >
                   <div
-                    className={`absolute w-full h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[75vw] mobile:h-[80vw] mobile:top-[25%] tablet:w-[85vw] tablet:h-[60vw]`}
+                    className={`absolute w-full h-[30vw] rounded-tl-[5vw] rounded-tr-[5vw] top-[5%] border border-white box-cards bg-gradient-to-b ${slide.cardColor} to-gray-50 mobile:w-[75vw] mobile:h-[80vw] mobile:top-[25%] tablet:top-[20%] tablet:w-[70vw] tablet:h-[50vw]`}
                   ></div>
 
                   <div

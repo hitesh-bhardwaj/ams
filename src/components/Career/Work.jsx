@@ -69,7 +69,7 @@ const Work = () => {
             no={1}
             heading={"Our Work Environment"}
             src={"/assets/career/career-work.webp"}
-            para={"Innovative, collaborative, and driven by a mission to improve lives."}
+            para={"Innovative, collaborative, and Driven by a mission to improve lives."}
             btn={"Learn More About Us"}
             link={"about"}
           />
