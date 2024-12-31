@@ -1,19 +1,39 @@
 import React from "react";
-import { Body, Column, Container, Head, Hr, Html, Img, Link, Preview, Row, Section, Text} from "@react-email/components";
+import {
+  Body,
+  Column,
+  Container,
+  Head,
+  Hr,
+  Html,
+  Img,
+  Link,
+  Preview,
+  Row,
+  Section,
+  Text,
+} from "@react-email/components";
 
-const ContactDetails = ({ userName, userEmail, userMessage}) => {
-
-
+const  ContactOem= ({
+  Country,
+  Salutation,
+  FirstName,
+  LastName,
+  Email,
+  HospitalName,
+  Message,
+  ProductInterest,
+  Speciality,
+  TypeOfInterest,
+}) => {
   return (
     <Html>
       <Head />
-      <Preview>
-        Someone just filled OEM contact details on AMS website.
-      </Preview>
+      <Preview>Someone just filled contact details on AMS website.</Preview>
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={"https://amsdev01.vercel.app/logo.svg"}
+            src={"https://amsdev01.vercel.app/assets/icons/ams-logo.png"}
             width="100"
             height="50"
             alt="Logo"
@@ -21,34 +41,73 @@ const ContactDetails = ({ userName, userEmail, userMessage}) => {
           />
           <Text style={paragraph}>Hi,</Text>
           <Text style={paragraph}>
-            You have a new OEM contact form submission on the AMS website.
+            You have a new contact form submission on the AMS website
+            (Oem).
             <br />
             Below are the details.
           </Text>
           <Section>
             <Row style={row}>
-              <Column style={columnHead}>Name</Column>
-              <Column style={columnText}>{userName}</Column>
+              <Column style={columnHead}>Country</Column>
+              <Column style={columnText}>{Country}</Column>
             </Row>
             <Row style={row}>
+              <Column style={columnHead}>Salutation</Column>
+              <Column style={columnText}>{Salutation}</Column>
+            </Row>
+            <Row style={row}>
+              <Column style={columnHead}>First Name</Column>
+              <Column style={columnText}>{FirstName}</Column>
+            </Row>
+            <Row style={row}>
+              <Column style={columnHead}>Last Name</Column>
+              <Column style={columnText}>{LastName}</Column>
+            </Row>
+
+            <Row style={row}>
               <Column style={columnHead}>Email</Column>
-              <Column style={{...columnText, textDecoration: "underline", color: "#067df7"}}>{userEmail}</Column>
+              <Column
+                style={{
+                  ...columnText,
+                  textDecoration: "underline",
+                  color: "#067df7",
+                }}
+              >
+                {Email}
+              </Column>
+            </Row>
+
+            <Row style={row}>
+              <Column style={columnHead}>HospitalName</Column>
+              <Column style={columnText}>{HospitalName}</Column>
+            </Row>
+            <Row style={row}>
+              <Column style={columnHead}>ProductInterest</Column>
+              <Column style={columnText}>{ProductInterest}</Column>
+            </Row>
+            <Row style={row}>
+              <Column style={columnHead}>Speciality</Column>
+              <Column style={columnText}>{Speciality}</Column>
+            </Row>
+            <Row style={row}>
+              <Column style={columnHead}>Type of Interest</Column>
+              <Column style={columnText}>{TypeOfInterest}</Column>
             </Row>
             <Row style={row}>
               <Column style={columnHead}>Message</Column>
-              <Column style={columnText}>{userMessage}</Column>
+              <Column style={columnText}>{Message}</Column>
             </Row>
-           
           </Section>
           <Text style={footer}>
-            This form is submitted from <Link href="/oem">OEM Page</Link>
+            This form is submitted from{" "}
+            <Link href="/contact-us">Contact Page</Link>
           </Text>
-          <Text style={paragraph}>
-            - Team Ams
-          </Text>
+          <Text style={paragraph}>- Team Ams</Text>
           <Hr style={hr} />
           <Text style={footer}>
-          P-21-22, 25-26 & 34-35, GIDC Manjusar, Ta. Savli, Vadodara, Gujarat, India
+            Advanced MedTech Solutions
+            <br /> P-21-22, 25-26 & 34-35, GIDC Manjusar, Tal – Savli, Dist. –
+            Vadodara -391775 Gujarat, India
           </Text>
         </Container>
       </Body>
@@ -56,7 +115,7 @@ const ContactDetails = ({ userName, userEmail, userMessage}) => {
   );
 };
 
-export default ContactDetails;
+export default ContactOem;
 
 const main = {
   backgroundColor: "#ffffff",

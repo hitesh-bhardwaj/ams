@@ -8,22 +8,23 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async (req, res) => {
   try {
-    const {country, Salutation, FirstName,LastName, email,HospitalName, message , ProductInterest, Speciality  } = req.body;
+    const {Country, Salutation,FirstName, LastName, email,HospitalName, message , ProductInterest, Speciality,TypeOfInterest  } = req.body;
 
     const { data, error } = await resend.emails.send({
       from: "Ams <onboarding@resend.dev>",
       to: ["harshgoyalrss7@gmail.com"],
       subject: "New Lead: New Form Submission",
       react: HealthCare({
-        // Country:country,
-        // Salutation:Salutation,
+        Country:Country,
+        Salutation:Salutation,
         FirstName: FirstName,
-        LastName:LastName,
+        LasttName: LastName,
         Email:email,
         HospitalName:HospitalName,
         Message:message ,
-        // ProductInterest:ProductInterest,
+        ProductInterest:ProductInterest,
         Speciality:Speciality ,
+        TypeOfInterest:TypeOfInterest
        
       }),
     });

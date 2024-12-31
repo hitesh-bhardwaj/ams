@@ -14,7 +14,7 @@ import {
   Text,
 } from "@react-email/components";
 
-const HealthCare = ({
+const ContactOther = ({
   Country,
   Salutation,
   FirstName,
@@ -42,7 +42,7 @@ const HealthCare = ({
           <Text style={paragraph}>Hi,</Text>
           <Text style={paragraph}>
             You have a new contact form submission on the AMS website
-            (Healthcare).
+            (other).
             <br />
             Below are the details.
           </Text>
@@ -115,7 +115,7 @@ const HealthCare = ({
   );
 };
 
-export default HealthCare;
+export default ContactOther;
 
 const main = {
   backgroundColor: "#ffffff",

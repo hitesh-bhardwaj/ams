@@ -44,6 +44,7 @@ export default function CareerForm({ onClose }) {
   const fileRef = form.register("file");
   
   const onSubmit = async (data) => {
+    
     if (!fileName) {
       setFileError("File is required.");
       return;
