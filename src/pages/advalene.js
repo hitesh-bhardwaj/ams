@@ -16,7 +16,7 @@ import { WebpageJsonLd } from "@/lib/json-ld";
 const EdgeCard = {
   card1: {
     title: "Swage Point Integrity",
-    src: "/assets/advalene/lens.png",
+    src: "/assets/advalene/Lens.png",
     para: "Advanced Tipping",
   },
   card2: {

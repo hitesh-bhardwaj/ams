@@ -21,11 +21,11 @@ export default function HerniaSolutionsMenu({ onBack }) {
       <div className='flex items-start gap-[3vw] pt-1'>
         <ul className='space-y-[0.2vw] mobile:space-y-1'>
           <li><NavLink href="/hernia" linkText="Hernia Solutions" /></li>
-          <li><NavLink href="/advamesh" linkText="ADVAMESH" /></li>
+          <li><NavLink href="/advamesh#polypropylene-mesh" linkText="ADVAMESH" /></li>
           <li><NavLink href="/advamesh#mid-weight-mesh" linkText="ADVAMESH Medium Weight"/></li>
           <li><NavLink href="/advamesh#macroporous-mesh" linkText="ADVAMESH Macroporous" /></li>
         </ul>
       </div>
     </div>
   ); 
-}
+}  

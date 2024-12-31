@@ -42,7 +42,7 @@ export default function ic() {
     },
     {
       src: "/assets/ic/ic-carousel-img-3.png",
-      srcsmall:"/assets/ic/small3.png",
+      srcsmall:"/assets/ic/ic-small3-new.png",
       heading: "Crafting Tomorrow's Solutions, Today",
       para: "AMS delivers interventional cardiology solutions built on unmatched production excellence, pioneering technology, and relentless innovation, driving pathbreaking advancements in cardiac care.",
     },

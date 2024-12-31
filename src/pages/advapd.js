@@ -108,7 +108,7 @@ const advapd = () => {
               "Enduring performance for confidence in extended wound support"
             }
             src={"/assets/advapd/advapd-hero.png"}
-            bgimg={"/assets/advapd/advapd-hero-bg.png"}
+            bgimg={"/assets/advapd/advapd-hero-background.png"}
             para2={"Steady performance for superior confidence"}
             
           />

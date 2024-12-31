@@ -24,7 +24,7 @@ const AdvaclipCarousel = () => {
   return (
     <>
       <section
-        id="skinstapler-carousel"
+        id="advaclip-carousel"
         className="overflow-hidden tablet:h-[70vh] pb-[5%] mobile:h-[170vw] "
       >
         <div
@@ -34,7 +34,7 @@ const AdvaclipCarousel = () => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             scrollbar={true}
             centeredSlides={true}
-            initialSlide={1}
+           loop={true}
             modules={[Scrollbar]}
             breakpoints={{
               541: {

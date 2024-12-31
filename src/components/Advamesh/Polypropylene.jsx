@@ -28,24 +28,26 @@ data-para-anim
               </div>
             </div>
           </div>
-            <div className="text-[1.25vw] absolute top-[20%] left-[65%] h-[50vw] py-[5.4%] space-y-[25%] mobile:static mobile:space-y-0 mobile:flex mobile:flex-col mobile:gap-[8vw] mobile:justify-center mobile:mt-[40vh] mobile:w-full mobile:h-fit mobile:text-[6vw] tablet:static tablet:space-y-0 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center tablet:mt-[40vh] tablet:w-full tablet:h-fit tablet:gap-[5vw] tablet:text-[4vw]">
+            <div className="text-[1.25vw] absolute top-[18%] left-[65%] h-[50vw] py-[5.4%] space-y-[17%] mobile:static mobile:space-y-0 mobile:flex mobile:flex-col mobile:gap-[8vw] mobile:justify-center mobile:mt-[40vh] mobile:w-full mobile:h-fit mobile:text-[6vw] tablet:static tablet:space-y-0 tablet:flex tablet:flex-col tablet:justify-center tablet:items-center tablet:mt-[40vh] tablet:w-full tablet:h-fit tablet:gap-[5vw] tablet:text-[4vw]">
               <div className="mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
-                <p data-para-anim className=" leading-[1.2] font-light w-full text-[#2A2A2A]  mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal  ">Macroporosity: enhanced comfortable healing</p>
+                <p data-para-anim className=" leading-[1.2] font-light w-[70%] text-[#2A2A2A]  mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal  ">Specially engineered for open ventral and inguinal hernia repairs</p>
               </div>
-              <div className="translate-y-[-45%] ml-[20%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
-                <p data-para-anim className=" leading-[1.2] font-light w-full text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal  ">Innovative honeycomb structure</p>
+              <div className="translate-y-[-45%] ml-[18%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
+                <p data-para-anim className=" leading-[1.2] font-light w-[75%] text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal  ">Distinct inter-locking structure allows fibroblastic tissue response</p>
               </div>
-              <div className="translate-y-[-55%] ml-[30%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
-                <p data-para-anim className=" leading-[1.2] font-light w-full whitespace-nowrap text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal">Advanced warp-knitting technology</p>
+              <div className="translate-y-[-55%] ml-[22%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
+                <p data-para-anim className=" leading-[1.2] font-light w-[85%]  text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal">Ease of customization for confident clinical outcomes</p>
               </div>
-              <div className="translate-y-[-95%] ml-[30%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
-                <p data-para-anim className=" leading-[1.2] font-light w-full text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal">Superior strength and handling</p>
+              <div className="translate-y-[-95%] ml-[22%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
+                <p data-para-anim className=" leading-[1.2] font-light w-[90%] text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal">
+                Smooth rounded corners with unique knit structure prevents unraveling
+                </p>
               </div>
-              <div className="translate-y-[-120%] ml-[20%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
-                <p data-para-anim className=" leading-[1.2] font-light w-full text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal">Blue informative lines</p>
+              <div className="translate-y-[-190%] ml-[16%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
+                <p data-para-anim className=" leading-[1.2] font-light w-full text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal">Trim to size without fraying</p>
               </div>
-              <div className="translate-y-[-150%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
-                <p data-para-anim className=" leading-[1.2] whitespace-nowrap font-light w-full text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal">Suitable for laparoscopic & open procedures</p>
+              <div className="translate-y-[-180%] mobile:translate-y-0 mobile:ml-0 mobile:flex mobile:justify-center tablet:translate-y-0 tablet:ml-0 tablet:flex tablet:justify-center hover:scale-[1.05] duration-300 ease transition-all">
+                <p data-para-anim className=" leading-[1.2] whitespace-nowrap font-light w-full text-[#2A2A2A] mobile:w-[80%] mobile:text-center mobile:whitespace-normal tablet:whitespace-normal">Extensibility across X-axis and Y-axis</p>
               </div>
             </div>
             <div className="w-[50%] h-[50vw] absolute top-[20%] right-[30%] mobile:hidden tablet:hidden">

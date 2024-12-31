@@ -24,7 +24,7 @@ const Hero = () => {
                 ADVA GLIDE
               </span>
             </h1>
-            <div className="w-[75%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block lineDraw"></div>
+            {/* <div className="w-[75%] h-[1px] bg-black/50 my-[4vw] hidden mobile:block lineDraw"></div> */}
             <div className=" mobile:w-full">
               <p
                 data-para-anim

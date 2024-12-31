@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-
 import Portfolio from "@/components/Endo/Portfolio";
 import Product from "@/components/Endo/Product";
 import Genesis from "@/components/layoutComponents/Genesis";

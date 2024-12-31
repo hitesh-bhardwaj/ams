@@ -30,7 +30,7 @@ const AdvastapHD3 = () => {
   });
   return (
    <>
-  <section id='advastapAbout'>
+  <section id='advastap-hd3'>
   <div className="w-screen h-screen bg-[#020F20] overflow-hidden tablet:h-screen">
     <div className="w-screen h-[80%] bg-white relative overflow-hidden pt-[4vw] mobile:pt-[10vw] tablet:justify-center mobile:h-[85%] ">
     

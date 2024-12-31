@@ -34,7 +34,7 @@ const AdvastapLC2 = () => {
   });
   return (
    <>
-  <section id='advastapAbout' className='relative overflow-hidden w-screen'>
+  <section id='advastap-lc3' className='relative overflow-hidden w-screen'>
   <div className="w-screen h-[45vw] overflow-hidden mobile:h-[105vh] tablet:h-screen">
     <div className="w-screen h-[90%] relative overflow-hidden pt-[4vw] mobile:pt-[10vw] tablet:justify-center">
     

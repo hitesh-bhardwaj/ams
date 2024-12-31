@@ -33,7 +33,7 @@ const LC2Carousel = () => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             scrollbar={true}
             centeredSlides={true}
-            initialSlide={1}
+            loop={true}
             modules={[Scrollbar]}
             breakpoints={{
               541: {

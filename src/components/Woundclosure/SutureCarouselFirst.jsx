@@ -87,6 +87,7 @@ const SutureCarouselFirst = () => {
           onSlideChange={onSlideChange}
           spaceBetween={150}
           slidesPerView={5}
+          loop={true}
           centeredSlides={true}
           roundLengths={true}
           breakpoints={{
@@ -143,7 +144,7 @@ const SutureCarouselFirst = () => {
       </div>
 
       <div
-        className={`px-[1.2vw] py-[1.2vw] absolute z-[200] bottom-0 right-[3%] mobile:bottom-0 mobile:top-auto mobile:right-auto mobile:left-[62%] tablet:bottom-[3%] translate-x-[-65%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
+        className={`px-[1.2vw] py-[1.2vw] absolute z-[200] bottom-0 left-[53%] mobile:bottom-0 mobile:top-auto mobile:right-auto mobile:left-[62%] tablet:bottom-[3%] translate-x-[-65%] tablet:translate-y-[-70%] overflow-hidden mobile:p-[5vw] tablet:p-[2vw] rounded-full next-button cursor-pointer  mobile:block group hover:text-white bg-white/50`}
         onClick={handleNext}
       >
         <span
@@ -159,7 +160,7 @@ const SutureCarouselFirst = () => {
         </div>
       </div>
       <div
-        className={`px-[1.2vw] py-[1.2vw] bottom-0 right-[9%] absolute z-[200] mobile:bottom-0 mobile:top-auto mobile:left-[37%] mobile:right-auto translate-x-[-38%] tablet:right-[13%] tablet:bottom-[3%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
+        className={`px-[1.2vw] py-[1.2vw] bottom-0 left-[45%] absolute z-[200] mobile:bottom-0 mobile:top-auto mobile:left-[37%] mobile:right-auto translate-x-[-38%] tablet:right-[13%] tablet:bottom-[3%] tablet:translate-y-[-70%] bg-white/50 overflow-hidden  mobile:p-[5vw] tablet:p-[2vw] rounded-full prev-button cursor-pointer  mobile:block group hover:text-white`}
         onClick={handlePrev}
       >
         <span
