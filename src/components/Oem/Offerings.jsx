@@ -70,7 +70,7 @@ export default function Offerings() {
         <>
             <section id='offerings'>
                 <div className='offerings-container pt-[12%] tablet:pt-[15%] mobile:pt-0'>
-                    <h2 className='title-2 font-light text-center aeonik mb-[6vw] mobile:mb-10 fadeUp'>OEM Solutions</h2>
+                    <h2 className='title-2 font-light text-center aeonik mb-[2vw] mobile:mb-10 fadeUp'>OEM Solutions</h2>
                     <Swiper
                         freeMode={true}
                         scrollbar={
@@ -99,7 +99,7 @@ export default function Offerings() {
                                 <a href={`#card-item-${index + 1}`} className='links oemcard-button block h-full w-full'>
                                     <div className='rounded-[3vw] p-[1vw]  h-full w-full bg-white duration-300 tablet:p-[2vw] mobile:p-[3.5vw] mobile:rounded-3xl'>
                                         <h3 className='aeonik text-center font-light my-[1vw] text-[1.2vw] tablet:text-[2.6vw] tablet:mb-4 mobile:text-[4.5vw] mobile:mb-4'>{item.title}</h3>
-                                        <div className='rounded-[2vw] overflow-hidden h-[19vw] tablet:h-[30vw] mobile:h-[70vw] mobile:rounded-2xl'>
+                                        <div className='rounded-[2vw] overflow-hidden h-[15vw] tablet:h-[30vw] mobile:h-[70vw] mobile:rounded-2xl'>
                                             <Image src={item.image} alt={item.title} className='object-cover h-full w-full' width={400} height={400} />
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@ export default function Offerings() {
                     </Swiper>
                 </div>
 
-                <div className='w-screen h-full mt-[5%] overflow-hidden mobile:mt-10'>
+                <div className='w-screen h-full mt-[2%] overflow-hidden mobile:mt-10'>
 
                     <div className='w-[500%] flex whitespace-nowrap items-center card-container'>
 
@@ -616,11 +616,11 @@ const modalContent = [
         description: (
             <>
             <div
-            className={`text-[#111111] font-light text-[2.5vw] mt-[-3vw] leading-[1.2] mobile:text-[7vw] tablet:text-[5vw] mobile:mt-0  tablet:mt-[3vw]`}
+            className={`text-[#111111] font-light text-[2.5vw] mt-[-3vw] leading-[1.2] mobile:text-[7vw] tablet:text-[5vw] mobile:mt-0  tablet:mt-[3vw]`}  
           >
             <p>Technical Specification</p>
           </div>
-          <div data-lenis-prevent className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw] mobile:w-[120vw] overflow-x-scroll">
+          <div data-lenis-prevent className="w-full  text-[1.25vw] font-light py-[2vw] text-[#4A4A4A] mobile:text-[4.5vw] tablet:text-[2.5vw] mobile:py-[5vw] mobile:mt-[4vw] tablet:py-[3.5vw] mobile:w-[120vw] ">
               <div className="flex w-full border-b border-[#DADADA] gap-[5vw] tablet:gap-[8vw] mobile:gap-[15vw]">
                 <div className=" p-[1vw] pb-0  font-light w-[20vw] tablet:w-[30vw] text-[#4564AC] mobile:w-[60vw]">
                 Filament Diameter
