@@ -11,19 +11,19 @@ const SutureCarouselFirst = () => {
   const slidesData = [
     {
       iconSrc: "/assets/woundclosure/advacryl-box.png",
-      title: "Polyglactine 910",
+      title: "Polyglactin 910",
       cardColor: "from-purple-500/30",
       src: "/advacryl",
     },
     {
       iconSrc: "/assets/woundclosure/advacrylplus-box.png",
-      title: "Antibacterial Polyglactine 910",
+      title: "Antibacterial Polyglactin 910",
       cardColor: "from-purple-500/30",
       src: "/advacrylplus",
     },
     {
       iconSrc: "/assets/woundclosure/advacrylrapid-box.png",
-      title: "Fast Absorbing Polyglactine 910",
+      title: "Fast Absorbing Polyglactin 910",
       cardColor: "from-red-500/30",
       src: "/advacryl-rapid",
     },

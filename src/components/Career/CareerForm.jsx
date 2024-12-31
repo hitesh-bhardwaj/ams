@@ -3,7 +3,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
-import styles from "../Button/style.module.css";
 import {
   Form,
   FormControl,
@@ -14,7 +13,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const formSchema = z.object({
@@ -32,6 +31,19 @@ export default function CareerForm({ onClose }) {
   const [fileError, setFileError] = useState(null);
   const [content, setContent] = useState(null);
   const [alertVisible, setAlertVisible] = useState(false); // State for alert visibility
+  const [isLoading, setIsLoading] = useState(false);
+  const handleOutsideClick = (e) => {
+    if (e.target.classList.contains("background-overlay")) {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,6 +56,7 @@ export default function CareerForm({ onClose }) {
   const fileRef = form.register("file");
   
   const onSubmit = async (data) => {
+    setIsLoading(true);
     
     if (!fileName) {
       setFileError("File is required.");
@@ -99,7 +112,7 @@ export default function CareerForm({ onClose }) {
 
   return (
     <section
-      className="fixed top-0 left-0 w-screen h-screen z-[998] flex justify-center items-center"
+      className="fixed top-0 left-0 w-screen h-screen z-[998] flex justify-center items-center background-overlay"
       id="formcareer"
     >
       <div className="w-[50vw] h-[45vw] p-[4vw] pb-[25%] mobile:p-0 rounded-[3vw] border-gray-200 bg-white mobile:border-none tablet:p-[5.5vw] fadeUp relative overflow-hidden mobile:h-[70vh] mobile:w-[90vw] tablet:h-[50vh] tablet:w-[80vw] fade-in">
@@ -206,39 +219,27 @@ export default function CareerForm({ onClose }) {
                   />
                 </div>
               </div>
-              <Button
-                type="submit"
-                className="w-full flex justify-end pt-[2vw] mobile:flex mobile:justify-center tablet:flex tablet:justify-center"
-              >
-                <div className={`${styles.btn} !border-gray-200`}>
-                  <div aria-hidden="true" className={styles.btnCircle}>
-                    <div className={styles.btnCircleText}>
-                      <svg
-                        viewBox="0 0 10 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className={styles.btnIcon}
+              <div className="mt-[2vw] w-full flex justify-end">
+                <Button type="submit" className=" bg-purple-500 rounded-full w-[8vw] h-[3vw] relative mobile:w-[25vw] mobile:h-[10vw] tablet:w-[17vw] tablet:h-[7vw]">
+                {!isLoading ? (
+                      <span
+                        
                       >
-                        <path
-                          data-v-f4363f2a
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
-                          className={`${styles.btnPath}`}
+                       Submit
+                      </span>
+                    ) : (
+                      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-[100]">
+                        <Image
+                          src="/button-loading.png"
+                          alt="button-loading"
+                          className="animate-spin invert "
+                          width={20}
+                          height={20}
                         />
-                        <path
-                          data-v-f4363f2a
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
-                          className={`${styles.btnPath}`}
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <span className={styles.btnText}>Submit</span>
-                </div>
-              </Button>
+                        </div>
+                    )}
+                </Button>
+              </div>
             </form>
           </Form>
         </div>

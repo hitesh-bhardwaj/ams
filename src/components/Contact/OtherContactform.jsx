@@ -18,10 +18,11 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
-import styles from "../Button/style.module.css";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import CountrySelector from "../ui/country-selector";
+import { COUNTRIES } from "@/lib/countries";
 
 // Define validation schema using Zod
 const formSchema = z.object({
@@ -37,9 +38,6 @@ const formSchema = z.object({
   HospitalName: z
     .string()
     .min(2, { message: "Hospital name must be at least 2 characters." }),
-  ProductInterest: z
-    .string()
-    .nonempty({ message: "Product interest is required." }),
   Speciality: z.string().optional(),
   message: z
     .string()
@@ -50,6 +48,9 @@ const formSchema = z.object({
 });
 
 export default function ContactOemform({ onClose, title }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [country, setCountry] = useState("IN");
+  const [isLoading, setIsLoading] = useState(false);
   const formref = useRef(null);
   const handleOutsideClick = (e) => {
     if (e.target.classList.contains("background-overlay")) {
@@ -67,10 +68,10 @@ export default function ContactOemform({ onClose, title }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      Country: "",
+      Country: "IN",
       Salutation: "",
       FirstName: "",
-      LasttName: "",
+      LastName: "",
       email: "",
       HospitalName: "",
       ProductInterest: "",
@@ -82,6 +83,7 @@ export default function ContactOemform({ onClose, title }) {
 
   // Form submission handler
   const onSubmitForm = async (data) => {
+    setIsLoading(true);
     try {
       console.log("Form Submitted:", data);
       const res = await fetch("/api/contactOther", {
@@ -120,7 +122,7 @@ export default function ContactOemform({ onClose, title }) {
           className="w-full h-[70%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] z-[10] relative"
         >
           {alertVisible && (
-            <div className="fixed top-[5%] left-[50%] translate-x-[-50%] w-[80vw] rounded-[1vw] h-[5vw] bg-green-500 text-white mobile:h-[10vw] mobile:rounded-[3vw] flex justify-center items-center text-lg z-50 fade-in">
+            <div className="fixed top-[80%] left-[85%] w-[25vw] mobile:top-[5%] mobile:left-[50%] translate-x-[-50%] tablet:left-[50%] tablet:top-[5%] mobile:w-[80vw] rounded-[1vw] h-[5vw] bg-green-500 text-white mobile:h-[10vw] mobile:rounded-[3vw] flex justify-center items-center text-lg z-50 fade-in">
               Form Submitted Successfully!
             </div>
           )}
@@ -138,23 +140,22 @@ export default function ContactOemform({ onClose, title }) {
                 name="Country"
                 render={({ field }) => (
                   <FormItem>
-                    <Select onValueChange={field.onChange}>
-                      <SelectTrigger
-                        aria-label="Select Country"
-                        className="w-full"
-                      >
-                        <SelectValue placeholder="Country*" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectGroup>
-                          <SelectItem value="India">India</SelectItem>
-                          <SelectItem value="USA">USA</SelectItem>
-                          <SelectItem value="China">China</SelectItem>
-                          <SelectItem value="France">France</SelectItem>
-                          <SelectItem value="Russia">Russia</SelectItem>
-                        </SelectGroup>
-                      </SelectContent>
-                    </Select>
+                      <CountrySelector
+                      id={"country-selector"}
+                      open={isOpen}
+                      onToggle={() => setIsOpen(!isOpen)}
+                      onChange={(value) => {
+                        const selectedCountry = COUNTRIES.find(
+                          (option) => option.value === value
+                        );
+                        const countryTitle = selectedCountry?.title || ""; // Extract the title
+                        setCountry(value); // Maintain the selected value state if needed
+                        field.onChange(countryTitle); // Send the title instead of value
+                      }}
+                      selectedValue={COUNTRIES.find(
+                        (option) => option.value === country
+                      )}
+                    />
                     <FormMessage />
                   </FormItem>
                 )}
@@ -242,22 +243,6 @@ export default function ContactOemform({ onClose, title }) {
                 )}
               />
 
-              {/* Product Interest */}
-              {/* <FormField
-                control={form.control}
-                name="ProductInterest"
-                render={({ field }) => (
-                  <FormItem className="required">
-                    <FormControl>
-                      <Input
-                        placeholder="Primary Product of Interest*"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              /> */}
               <FormField
                 control={form.control}
                 name="Speciality"
@@ -345,35 +330,24 @@ export default function ContactOemform({ onClose, title }) {
 
               {/* Submit Button */}
               <div className="mt-[2vw] w-full flex justify-end">
-                <Button type="submit" className="">
-                  <div className={`${styles.btn}  !border-gray-200`}>
-                    <div aria-hidden="true" className={styles.btnCircle}>
-                      <div className={styles.btnCircleText}>
-                        <svg
-                          viewBox="0 0 10 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className={styles.btnIcon}
-                        >
-                          <path
-                            data-v-f4363f2a
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
-                            className={`${styles.btnPath}`}
-                          />
-                          <path
-                            data-v-f4363f2a
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
-                            className={`${styles.btnPath}`}
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <span className={styles.btnText}>Submit</span>
-                  </div>
+                <Button type="submit" className=" bg-purple-500 rounded-full w-[8vw] h-[3vw] relative mobile:w-[25vw] mobile:h-[10vw] tablet:w-[17vw] tablet:h-[7vw]">
+                {!isLoading ? (
+                      <span
+                        
+                      >
+                       Submit
+                      </span>
+                    ) : (
+                      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-[100]">
+                        <Image
+                          src="/button-loading.png"
+                          alt="button-loading"
+                          className="animate-spin invert "
+                          width={20}
+                          height={20}
+                        />
+                        </div>
+                    )}
                 </Button>
               </div>
             </form>

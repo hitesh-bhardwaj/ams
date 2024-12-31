@@ -11,14 +11,14 @@ export default async (req, res) => {
     const {Country, Salutation,FirstName, LastName, email,HospitalName, message , ProductInterest, Speciality,TypeOfInterest  } = req.body;
 
     const { data, error } = await resend.emails.send({
-      from: "Ams <onboarding@resend.dev>",
-      to: ["harshgoyalrss7@gmail.com"],
-      subject: "New Lead: New Form Submission",
+      from: "AMS <webforms@amsltd.com>",
+      to: ["info@amsltd.com"],
+      subject: "Contact Form Submission - Other Enquiry",
       react: ContactOther({
         Country:Country,
         Salutation:Salutation,
         FirstName: FirstName,
-        LasttName: LastName,
+        LastName: LastName,
         Email:email,
         HospitalName:HospitalName,
         Message:message ,

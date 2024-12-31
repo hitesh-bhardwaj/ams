@@ -22,6 +22,8 @@ import styles from "../Button/style.module.css";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import CountrySelector from "../ui/country-selector";
+import { COUNTRIES } from "@/lib/countries";
 
 // Define validation schema using Zod
 const formSchema = z.object({
@@ -50,7 +52,10 @@ const formSchema = z.object({
 });
 
 export default function ContactListForm({ onClose, title }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [country, setCountry] = useState("IN");
   const [alertVisible, setAlertVisible] = useState(false); // State for alert visibility
+  const [isLoading, setIsLoading] = useState(false);
 
   const formref = useRef(null);
   const handleOutsideClick = (e) => {
@@ -68,10 +73,10 @@ export default function ContactListForm({ onClose, title }) {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      Country: "",
+      Country: "IN",
       Salutation: "",
       FirstName: "",
-      LasttName: "",
+      LastName: "",
       email: "",
       HospitalName: "",
       ProductInterest: "",
@@ -83,6 +88,7 @@ export default function ContactListForm({ onClose, title }) {
 
   // Form submission handler
   const onSubmitForm = async (data) => {
+    setIsLoading(true);
     try {
       console.log("Form Submitted:", data);
       const res = await fetch("/api/healthcare", {
@@ -121,11 +127,11 @@ export default function ContactListForm({ onClose, title }) {
           className="w-full h-[76%] overflow-scroll overflow-x-hidden px-[3vw] pb-[7vw] z-[10] relative"
         >
           {alertVisible && (
-            <div className="fixed top-[5%] left-[50%] translate-x-[-50%] w-[80vw] rounded-[1vw] h-[5vw] bg-green-500 text-white mobile:h-[10vw] mobile:rounded-[3vw] flex justify-center items-center text-lg z-50 fade-in">
+            <div className="fixed top-[80%] left-[85%] w-[25vw] mobile:top-[5%] mobile:left-[50%] translate-x-[-50%] tablet:left-[50%] tablet:top-[5%] mobile:w-[80vw] rounded-[1vw] h-[5vw] bg-green-500 text-white mobile:h-[10vw] mobile:rounded-[3vw] flex justify-center items-center text-lg z-50 fade-in">
               Form Submitted Successfully!
             </div>
           )}
-          <h2 className="text-[3vw] font-light mb-[2vw] mobile:text-[7vw] mobile:mb-[8vw] tablet:text-[5vw]">
+          <h2 className="text-[3vw] font-light mb-[2vw] mobile:text-[7vw] mobile:mb-[8vw] tablet:text-[5vw] aeonik">
             {title || "Healthcare Providers"}
           </h2>
           <Form {...form}>
@@ -139,23 +145,16 @@ export default function ContactListForm({ onClose, title }) {
                 name="Country"
                 render={({ field }) => (
                   <FormItem>
-                    <Select onValueChange={field.onChange}>
-                      <SelectTrigger
-                        aria-label="Select Country"
-                        className="w-full"
-                      >
-                        <SelectValue placeholder="Country*" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectGroup>
-                          <SelectItem value="India">India</SelectItem>
-                          <SelectItem value="USA">USA</SelectItem>
-                          <SelectItem value="China">China</SelectItem>
-                          <SelectItem value="France">France</SelectItem>
-                          <SelectItem value="Russia">Russia</SelectItem>
-                        </SelectGroup>
-                      </SelectContent>
-                    </Select>
+                  <CountrySelector
+                            id={"country-selector"}
+                            open={isOpen}
+                            onToggle={() => setIsOpen(!isOpen)}
+                            onChange={(value) => {
+                                setCountry(value);
+                                field.onChange(value);
+                            }}
+                            selectedValue={COUNTRIES.find((option) => option.value === country)}
+                        />
                     <FormMessage />
                   </FormItem>
                 )}
@@ -168,7 +167,7 @@ export default function ContactListForm({ onClose, title }) {
                   name="Salutation"
                   render={({ field }) => (
                     <FormItem>
-                      <Select onValueChange={field.onChange}>
+                        <Select onValueChange={field.onChange}>
                         <SelectTrigger
                           aria-label="Select Title"
                           className="w-[8vw] mobile:text-[4vw] h-[3vw] tablet:w-[15vw] tablet:h-[5vw] mobile:w-[20vw] mobile:h-[10vw]"
@@ -185,6 +184,7 @@ export default function ContactListForm({ onClose, title }) {
                           </SelectGroup>
                         </SelectContent>
                       </Select>
+                      
                       <FormMessage />
                     </FormItem>
                   )}
@@ -346,35 +346,24 @@ export default function ContactListForm({ onClose, title }) {
 
               {/* Submit Button */}
               <div className="mt-[2vw] w-full flex justify-end">
-                <Button type="submit" className="">
-                  <div className={`${styles.btn}  !border-gray-200`}>
-                    <div aria-hidden="true" className={styles.btnCircle}>
-                      <div className={styles.btnCircleText}>
-                        <svg
-                          viewBox="0 0 10 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className={styles.btnIcon}
-                        >
-                          <path
-                            data-v-f4363f2a
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
-                            className={`${styles.btnPath}`}
-                          />
-                          <path
-                            data-v-f4363f2a
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
-                            className={`${styles.btnPath}`}
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <span className={styles.btnText}>Submit</span>
-                  </div>
+                <Button type="submit" className=" bg-purple-500 rounded-full w-[8vw] h-[3vw] relative mobile:w-[25vw] mobile:h-[10vw] tablet:w-[17vw] tablet:h-[7vw]">
+                {!isLoading ? (
+                      <span
+                        
+                      >
+                       Submit
+                      </span>
+                    ) : (
+                      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center z-[100]">
+                        <Image
+                          src="/button-loading.png"
+                          alt="button-loading"
+                          className="animate-spin invert "
+                          width={20}
+                          height={20}
+                        />
+                        </div>
+                    )}
                 </Button>
               </div>
             </form>

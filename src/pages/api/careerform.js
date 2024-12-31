@@ -10,9 +10,9 @@ export default async (req, res) => {
     const { name, email,content , filename} = req.body;
 
     const { data, error } = await resend.emails.send({
-      from: "Ams <onboarding@resend.dev>",
-      to: ["harshgoyalrss7@gmail.com"],
-      subject: "New inquiry: New Form Submission",
+      from: "AMS <webforms@amsltd.com>",
+      to: ["careers@amsltd.com"],
+      subject: "Career Form Submission - New Application",
       react: CareerDetails({
         userName: name,
         userEmail: email,

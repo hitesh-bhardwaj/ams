@@ -15,7 +15,7 @@ const SutureCarouselSecond = () => {
     },
     {
       iconSrc: "/assets/woundclosure/advabond-box.png",
-      title: "Polyster",
+      title: "Polyester",
       cardColor: "from-orange-500/30",
       src: "/advabond",
     },
