@@ -16,7 +16,7 @@ const shaping = () => {
       />
       <Layout>
         <Hero
-          img={"/assets/blogs/blog-1.png"}
+          img={"/assets/blogs/therapies-hero.jpg"}
           dark={"dark"}
         />
         <section
@@ -61,7 +61,7 @@ const shaping = () => {
             <div className="py-[2vw] fadeUp mobile:py-[5vw]">
               <div className="w-full h-[40vw] relative">
                 <Image
-                  src="/assets/blogs/blog-detail2.png"
+                  src="/assets/blogs/therapies-collage.jpg"
                   fill
                   alt="blog-detail"
                   className="object-cover rounded-[2.5vw]"

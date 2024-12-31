@@ -138,7 +138,7 @@ export default function Insights() {
                     "The ADVASTAP Staplers 3-row series is here, setting a new benchmark in endo surgery. Designed to enhance precision and improve patient outcomes, our innovative stapling technology is transforming the surgical landscape.   "
                   }
                   title={"3-Row Series"}
-                  img={"/assets/blogs/news1.png"}
+                  img={"/assets/blogs/3-row.jpg"}
                   link={"/news/next-leap-in-endo-surgery"}
                   innertitle={"Discover the Next Leap in Endo Surgery "}
                 />
@@ -149,7 +149,7 @@ export default function Insights() {
                     "Advanced MedTech Solutions is excited to showcase innovation at Arab Health 2025! Visit us to explore advanced solutions transforming healthcare."
                   }
                   title={"Arab Health 2025 "}
-                  img={"/assets/blogs/news2.png"}
+                  img={"/assets/blogs/arab-health.jpg"}
                   link={"/news/arab-health"}
                   innertitle={"Reimagining Health, Redefining Care"}
                 />
@@ -160,7 +160,7 @@ export default function Insights() {
                     "AMS is expanding the campus with the launch of its 60,000 sq. ft. Phase 2 facility, enhancing capabilities in medical device manufacturing, sustainability, and innovation. Featuring the Advanced MedTech Academy and advanced cleanroom spaces, this expansion sets new standards in global healthcare and patient care. "
                   }
                   title={"Expansion of The AMS Campus"}
-                  img={"/assets/blogs/news3.png"}
+                  img={"/assets/blogs/expansion.jpg"}
                   link={"/news/building-the-future-of-medtech"}
                   innertitle={"Building the Future of MedTech"}
                 />

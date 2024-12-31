@@ -16,7 +16,7 @@ const medica = () => {
       />
       <Layout>
         <Hero
-          img={"/assets/blogs/blog-3.png"}
+          img={"/assets/blogs/medica-hero.jpg"}
           dark={"dark"}
         />
         <section
@@ -60,7 +60,7 @@ const medica = () => {
             <div className="py-[2vw] fadeUp mobile:py-[5vw]">
               <div className="w-full h-[40vw] relative">
                 <Image
-                  src="/assets/blogs/blog-detail2.png"
+                  src="/assets/blogs/medica-collage.jpg"
                   fill
                   alt="blog-detail"
                   className="object-cover rounded-[2.5vw]"

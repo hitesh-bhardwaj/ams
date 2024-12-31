@@ -15,7 +15,7 @@ const nextLeapInEndoSurgery = () => {
         description=" Discover the Next Leap in Endo Surgery: ADVASTAP 3-Row Series"
       />
       <Layout>
-        <Hero img={"/assets/blogs/news1.png"}  dark={"dark"}/>
+        <Hero img={"/assets/blogs/3-row-hero.jpg"}  dark={"dark"}/>
         <section
           id="blog-content"
           className="w-screen h-full py-[5vw] mobile:py-[10vw]"
@@ -107,7 +107,7 @@ const nextLeapInEndoSurgery = () => {
             <div className="py-[2vw] fadeUp mobile:py-[5vw]">
               <div className="w-full h-[40vw] relative">
                 <Image
-                  src="/assets/blogs/blog-detail2.png"
+                  src="/assets/blogs/3-row-collage.jpg"
                   fill
                   alt="blog-detail"
                   className="object-cover rounded-[2.5vw]"

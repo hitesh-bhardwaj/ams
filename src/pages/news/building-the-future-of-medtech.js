@@ -16,7 +16,7 @@ const buildingTheFutureOfMedtech = () => {
       />
       <Layout>
         <Hero
-          img={"/assets/blogs/news3.png"} dark={"dark"}
+          img={"/assets/blogs/expansion-hero.jpg"} dark={""}
         />
         <section
           id="blog-content"
@@ -60,7 +60,7 @@ const buildingTheFutureOfMedtech = () => {
             <div className="py-[2vw] fadeUp mobile:py-[5vw]">
               <div className="w-full h-[40vw] relative">
                 <Image
-                  src="/assets/blogs/blog-detail2.png"
+                  src="/assets/blogs/expansion-collage.jpg"
                   fill
                   alt="blog-detail"
                   className="object-cover rounded-[2.5vw]"

@@ -11,7 +11,7 @@ const arabhealth = () => {
     <>
       <Layout>
         <main>
-          <Hero img={"/assets/blogs/news2.png"} dark={"dark"}/>
+          <Hero img={"/assets/blogs/arab-health-hero.jpg"} dark={"dark"}/>
           <section id="blog-content" className="w-screen h-full py-[5vw] mobile:py-[10vw]">
             <div className="container-lg mobile:px-[5vw]">
             <h2
@@ -46,7 +46,7 @@ const arabhealth = () => {
 
             <div className="py-[2vw] fadeUp mobile:py-[5vw]">
               <div className="w-full h-[40vw] relative">
-                <Image src="/assets/blogs/blog-detail2.png" fill alt="blog-detail" className="object-cover rounded-[2.5vw]"/>
+                <Image src="/assets/blogs/arab-health-collage.jpg" fill alt="blog-detail" className="object-cover rounded-[2.5vw]"/>
               </div>
             </div>
             <div className="py-[1vw] mobile:py-[5vw]">

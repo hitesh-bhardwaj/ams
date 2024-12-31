@@ -7,21 +7,21 @@ const blogCardData = [
   {
     para: "AMS serves as a healthcare ecosystem focused on the MedTech fields of Advanced Surgery & Advanced Cardiovascular.",
     title: "Advanced Surgery & Advanced Cardiovascular ",
-    img: "/assets/blogs/blog-1.png",
+    img: "/assets/blogs/therapies.jpg",
     link:"/news/shaping-the-future-of-healthcare",
     innertitle:"Shaping the Future of Healthcare"
   },
   {
     para: "The Nurturing Nursing Skills Program is designed to upskill emerging nurses by enhancing their leadership, soft skills, and technical expertise. Experienced professionals share insights to empower nurses, fostering growth, excellence, and improved patient care.",
     title: "Under the initiative of Advanced MedTech Academy ",
-    img: "/assets/blogs/blog-2.png",
+    img: "/assets/blogs/nursing.jpg",
     link:"/news/nurturing-nursing-skills",
     innertitle:"Nurturing Nursing Skills Programs "
   },
   {
     para: "Thank you to all our visitors, partners, and organizers for an amazing event. Together, we’re innovating for a healthier future.  See you at MEDICA 2025! ",
     title: "A successful MEDICA 2024",
-    img: "/assets/blogs/blog-3.png",
+    img: "/assets/blogs/medica.jpg",
     link:"/news/medica-2024",
     innertitle:"It's a Wrap "
   },
@@ -41,14 +41,14 @@ const BlogCard = ({ para, title, img, link, innertitle, large }) => (
               <p
                   data-para-anim
                   className={`py-[0.5vw] text-white font-light ${
-                      large ? "text-[2.5vw]" : "text-[1.25vw]"
+                      large ? "text-[2.5vw] !font-extralight" : "text-[1.25vw]"
                   }`}
               >
                   {innertitle}
               </p>
               <p
-                  className={`text-white tracking-wider  font-light leading-[1.2] ${
-                      large ? "text-[1.65vw] w-[80%]" : "text-[1.15vw] w-[100%]"
+                  className={`text-white tracking-wide  font-light leading-[1.2] ${
+                      large ? "text-[1.65vw] w-[80%] font-extralight" : "text-[1.15vw] w-[100%]"
                   }`}
               >
                   {para}

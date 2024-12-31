@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import React from "react";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
 import { NextSeo } from "next-seo";
+import Image from "next/image";
 
 const nurturingNursingSkills = () => {
   paraAnim();
@@ -15,7 +16,7 @@ const nurturingNursingSkills = () => {
       />
       <Layout>
         <Hero
-          img={"/assets/blogs/blog-2.png"}
+          img={"/assets/blogs/nursing-hero.jpg"}
         />
         <section
           id="blog-content"
@@ -84,6 +85,16 @@ const nurturingNursingSkills = () => {
                 excel in their roles.
               </p>
             </div>
+              <div className="py-[2vw] fadeUp mobile:py-[5vw]">
+                          <div className="w-full h-[40vw] relative">
+                            <Image
+                              src="/assets/blogs/nursing-collage.jpg"
+                              fill
+                              alt="blog-detail"
+                              className="object-cover rounded-[2.5vw]"
+                            />
+                          </div>
+                        </div>
 
             <div className="py-[1vw] mobile:py-[5vw] fadeUp">
               <h2 className="text-[2.5vw] font-light leading-[1.2] text-[#1a1a1a] aeonik mobile:text-[6.5vw]  mobile:py-[3vw] tablet:text-[3.5vw]">
