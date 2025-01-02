@@ -77,7 +77,7 @@ export default function Hero() {
             <div className="fadeUp">
               <PrimaryButton
                 text={"About us"}
-                link={"/about"}
+                link={"/about-us"}
                 className={"secondary  !text-white !border-gray-200"}
                 prefetch={false}
               />
