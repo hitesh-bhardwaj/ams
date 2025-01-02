@@ -1,7 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Genesis from "@/components/layoutComponents/Genesis";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import PortfolioSwiper from "@/components/layoutComponents/PortfolioSwiper";
 import Discover from "@/components/Ama/Discover";
 import CardsCarousel from "@/components/Ama/CardsCarousel";
@@ -13,8 +11,6 @@ import BgVideo from "@/components/Layout/BgVideo";
 import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
 import Hero from "@/components/Ama/Hero";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function ama() {
   const metadata = {
