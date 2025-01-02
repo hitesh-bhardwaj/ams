@@ -158,7 +158,7 @@ const Carousel = () => {
                   <div className="  h-[31vw] w-[48vw] pb-[2vw] flex flex-col gap-[4vw] overflow-hidden relative mobile:h-[100vw] mobile:w-[85vw]  tablet:h-[50vh] tablet:rounded-[5vw]">
                     <div className=" w-full h-full absolute   mobile:h-[55vw] mobile:w-[85vw] ">
                       <Image
-                        src="/assets/skinstapler/carousel-card5.png"
+                        src="/assets/skinstapler/carousle-card5.png"
                         fill
                         alt="specification 1"
                         className="object-cover mobile:object-contain  rounded-[3vw] mobile:rounded-[9vw] tablet:rounded-[5vw]"

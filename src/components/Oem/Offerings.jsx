@@ -181,7 +181,7 @@ export default function Offerings() {
                     <div className="absolute bottom-[10%] left-[20%] tablet:bottom-6 mobile:bottom-4 mobile:left-5">
                       <button className="flex items-center gap-2 text-[#4D7EC8] text-[1.25vw] font-normal tablet:text-[2.5vw] mobile:text-xl">
                         <a
-                          href="/needle-brochure.pdf"
+                          href="/infographics/needle-brochure.pdf"
                           target="_blank"
                           className="flex items-center justify-center gap-2"
                         >

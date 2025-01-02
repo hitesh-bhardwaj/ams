@@ -33,7 +33,7 @@ const advakit = () => {
             bgimg={"/assets/endolc/specifications-bg.png"}
             heading={"Specification"}
             color={"#FB4BCC"}
-            link={"/advakit-csection.pdf"}
+            link={"/infographics/advakit-csection.pdf"}
           />
           <Ortho />
          <AdvakitSpecifications
@@ -41,14 +41,14 @@ const advakit = () => {
            bgimg={"/assets/endolc/specifications-bg.png"}
            heading={"Specification"}
            color={"#FB4BCC"}
-           link={"/advakit-ortho.pdf"}/>
+           link={"/infographics/advakit-ortho.pdf"}/>
           <Hernia />
           <AdvakitSpecifications
             textclass={"reloads-text"}
             bgimg={"/assets/endolc/specifications-bg.png"}
             heading={"Specification"}
             color={"#FB4BCC"}
-            link={"/advakit-hernia.pdf"}
+            link={"/infographics/advakit-hernia.pdf"}
           />
         </main>
       </Layout>

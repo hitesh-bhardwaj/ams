@@ -35,7 +35,7 @@ const reloads = () => {
         textclass={"reloads-text"}
         bgimg={"/assets/endolc/specifications-bg.png"}
         color={"#FB4BCC"}
-        link={"/advastap-reloads.pdf"}/>
+        link={"/infographics/advastap-reloads.pdf"}/>
     </main>
   </Layout>
   </>

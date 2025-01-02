@@ -13,7 +13,7 @@ const ProductCard = ({ img, heading, className, rotate, arrowColor,id }) => {
   return (
     <>
       <div className={`${rotate}`}>
-        <a  href={`/advamesh#${id}`}>
+        <a  href={`/hernia-solutions/advamesh-hernia-mesh#${id}`}>
           <div className={`bg-white w-[25vw] h-[27vw] relative flex justify-center items-center  text-center text-[#fff] group overflow-hidden rounded-[20px] mobile:w-[85vw] mobile:h-[100vw] tablet:w-[40vw] tablet:h-[50vw]`}>
             <Image
               src={img}

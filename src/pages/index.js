@@ -23,7 +23,7 @@ export default function Home() {
     title: "Home – Advanced MedTech Solutions",
     description: "Transforming global healthcare with advanced, affordable medical solutions. Explore our innovative product range.",
     img: "homepage.png",
-    alt:"Home – Advanced MedTech Solutions",
+    alt: "Home – Advanced MedTech Solutions",
     slug: "",
     date_published: "2020-01-01T00:00",
     date_modified: "2024-12-26T12:32",
@@ -33,8 +33,8 @@ export default function Home() {
 
   return (
     <>
-   <MetaData metadata={metadata} />
-   <WebpageJsonLd metadata={metadata}/>
+      <MetaData metadata={metadata} />
+      <WebpageJsonLd metadata={metadata} />
       <Layout>
         <main>
           <Hero />
