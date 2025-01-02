@@ -151,7 +151,7 @@ const Product = () => {
     <section
       id="products"
       ref={sliderContainer}
-      className={`relative h-[100vh] ${styles.sliderContainer} overflow-x-hidden mobile:h-full pb-[5%] mobile:py-[10%] tablet:h-full`}
+      className={`relative h-[110vh] ${styles.sliderContainer} overflow-x-hidden mobile:h-full pb-[5%] mobile:py-[10%] tablet:h-full`}
     >
       <Media greaterThan="tablet">
         <div className="flex flex-col w-full h-screen justify-between pb-[1%]">
