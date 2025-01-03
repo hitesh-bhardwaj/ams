@@ -16,6 +16,7 @@ const NewsCard = ({ title, para, img, link, innertitle }) => {
             <Image
               src={img}
               fill
+              quality={50}
               alt="news-img"
               className="rounded-[2.5vw] object-cover"
             />

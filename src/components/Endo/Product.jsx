@@ -3,9 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
 import styles from "@/styles/endocard.module.css"; // Import the module CSS
-import Link from "next/link";
 import Image from "next/image";
 import { Media } from "../media";
 

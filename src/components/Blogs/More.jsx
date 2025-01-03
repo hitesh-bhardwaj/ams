@@ -34,8 +34,9 @@ const BlogCard = ({ para, title, img, link, innertitle, large }) => (
           <Image
               src={img}
               fill
+              quality={50}
               alt="blog image"
-              className="object-cover scale-[1.1] group-hover:scale-[1.1] transition-transform duration-500 ease-in-out group-hover:blur-sm mobile:group-hover:blur-0"
+              className="object-cover scale-[1.1] group-hover:scale-[1.1] transition-transform duration-500 ease-in-out group-hover:blur-sm mobile:group-hover:blur-0 "
           />
           <div className="absolute inset-0 flex flex-col items-start justify-center z-[10] opacity-0 px-[5%] group-hover:opacity-100 transition-opacity duration-500 ease bg-black/40 mobile:hidden">
               <p

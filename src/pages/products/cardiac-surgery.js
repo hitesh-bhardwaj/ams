@@ -49,10 +49,7 @@ export default function cardiacsurgery() {
           <Media at="desktop">
             <Products />
           </Media>
-          <Media at="mobile">
-            <ProductCarousel />
-          </Media>
-          <Media at="tablet">
+          <Media lessThan="desktop">
             <ProductCarousel />
           </Media>
           <Portfolio
