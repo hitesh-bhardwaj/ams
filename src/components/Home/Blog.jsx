@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import PrimaryButton from "../Button/PrimaryButton";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
