@@ -1,22 +1,23 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { Media } from "../media";
+// import { Media } from "../media";
 import LazyVideo from "../layoutComponents/LazyVideo";
 import "swiper/css/navigation";
 
 const Molecular = () => {
-
-  const molecularLeft = useRef(null);
   const molecularRight = useRef(null);
   const molecularContainer = useRef(null);
+  const [mobile,setMobile] = useState(false);
 
   if (globalThis.innerWidth > 640) {
+
     useEffect(() => {
+        setMobile(false)
         gsap.registerPlugin(ScrollTrigger);
         const ctx = gsap.context(() => {
           const tl = gsap.timeline({
@@ -36,6 +37,11 @@ const Molecular = () => {
         });
         return () => ctx.revert();
     }, []);
+  }
+  else{
+    useEffect(()=>{
+      setMobile(true)
+    },[])
   }
 
   const swiperRef = useRef(null);
@@ -69,7 +75,7 @@ const Molecular = () => {
         </div>
         <div className="container-sm py-[15%] relative z-[2] w-full h-full px-[4vw] mobile:px-0 tablet:px-0">
           <div className="flex items-start justify-between w-full mobile:flex-col mobile:w-[100%] mobile:gap-[10vw]">
-            <div className="molecular-left w-[50vw] space-y-[2.5vw] mobile:w-[100%] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:gap-[5vw] mobile:text-center tablet:w-[50%]" ref={molecularLeft} >
+            <div className="molecular-left w-[50vw] space-y-[2.5vw] mobile:w-[100%] mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:gap-[5vw] mobile:text-center tablet:w-[50%]" >
               <div className="w-[58%] mobile:w-[100%] tablet:w-full">
                 <h2 data-para-anim className="title-2 aeonik">
                   Molecular Foundations <br /> of AMS
@@ -82,7 +88,8 @@ const Molecular = () => {
               </p>
             </div>
 
-            <Media greaterThan="mobile">
+            {!mobile?(<>
+            
               <div ref={molecularRight} className="molecular-right w-[37.5vw] flex flex-col gap-y-[2vw] tablet:w-[60%]">
                 {cardData.map((card, index) => (
                   <MolecularCard
@@ -94,10 +101,9 @@ const Molecular = () => {
                   />
                 ))}
               </div>
-            </Media>
+            
+            </>):(<>
 
-
-            {/* Swiper for mobile view */}
             <div className="w-[47%] flex-col gap-y-[2vw] hidden mobile:flex mobile:flex-row mobile:w-[100%] mobile:h-full">
               <Swiper
                 navigation={false}
@@ -143,6 +149,13 @@ const Molecular = () => {
                 </div>
               </div>
             </div>
+
+            </>)}
+           
+
+
+
+            
 
           </div>
         </div>

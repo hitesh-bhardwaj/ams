@@ -26,9 +26,9 @@
     z-index: 1;
     display: block;
   }
-  .swiper-vertical > .swiper-wrapper {
+  /* .swiper-vertical > .swiper-wrapper {
     flex-direction: column;
-  }
+  } */
   .swiper-wrapper {
     position: relative;
     width: 100%;
@@ -58,9 +58,9 @@
     transition-property: transform;
     display: block;
   }
-  .swiper-slide-invisible-blank {
+  /* .swiper-slide-invisible-blank {
     visibility: hidden;
-  }
+  } */
   /* Auto Height */
   /* .swiper-autoheight,
   .swiper-autoheight .swiper-slide {
