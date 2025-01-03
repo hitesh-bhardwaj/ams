@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -7,8 +6,6 @@ import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper/modules";
 import styles from "./styles.module.css";
 import Link from "next/link";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const NewsCard = ({ title, para, img, link, innertitle }) => {
   return (

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import { useLenis } from 'lenis/react'
 import styles from "@/styles/careerSwiper.module.css";
 import JobDescription from "./JobDescription";
@@ -63,10 +63,6 @@ const Jobs = () => {
             slidesPerView={1}
             spaceBetween={150}
             speed={500}
-            // autoplay={{
-            //   delay: 2000,
-            //   disableOnInteraction: false,
-            // }}
             pagination={{
               clickable: true,
             }}
@@ -88,7 +84,7 @@ const Jobs = () => {
                 spaceBetween: 200,
               }
             }}
-            modules={[Pagination, Autoplay]}
+            modules={[Pagination]}
             className="MySwiper !px-[5vw]"
           >
             <SwiperSlide>
