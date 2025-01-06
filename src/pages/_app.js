@@ -13,7 +13,10 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <DefaultSeo {...nextSeoConfig}/>
+      <DefaultSeo {...nextSeoConfig} 
+      dangerouslySetAllPagesToNoIndex={true}
+      dangerouslySetAllPagesToNoFollow={true}
+      />
       <MediaContextProvider>
         <ReactLenis root>
           <AnimatePresence mode="wait">
