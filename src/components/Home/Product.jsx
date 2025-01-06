@@ -67,7 +67,7 @@ export default function Product() {
               breakpoints={{
                 1024: {
                   spaceBetween: 160,
-                },
+                }
               }}
               speed={1000}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -122,9 +122,7 @@ export default function Product() {
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
-                          link={
-                            "/interventional-cardiology/adva-glide-ptca-coronary-balloon-semi-compliant"
-                          }
+                          link={"/interventional-cardiology/adva-glide-ptca-coronary-balloon-semi-compliant"}
                           className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}
                         />
                       </div>
@@ -230,9 +228,7 @@ export default function Product() {
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
-                          link={
-                            "/interventional-cardiology/adva-pro-coronary-sirolimus-stent"
-                          }
+                          link={"/interventional-cardiology/adva-pro-coronary-sirolimus-stent"}
                           className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}
                         />
                       </div>
@@ -338,9 +334,7 @@ export default function Product() {
                         </p>
                         <LinkButton
                           btnText={"Learn More"}
-                          link={
-                            "/endo-surgery/advastap-powered-linear-cutter-stapler"
-                          }
+                          link={"/endo-surgery/advastap-powered-linear-cutter-stapler"}
                           className={"tablet:text-[2vw] tablet:mt-[-0.8vw]"}
                         />
                       </div>

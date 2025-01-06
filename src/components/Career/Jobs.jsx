@@ -2,13 +2,11 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 import { Pagination } from "swiper/modules";
 import { useLenis } from 'lenis/react'
 import styles from "@/styles/careerSwiper.module.css";
 import JobDescription from "./JobDescription";
 import Image from "next/image";
-
 
 const JobCard = ({ dept, designation, location, onClick }) => {
   return (
@@ -29,17 +27,18 @@ const JobCard = ({ dept, designation, location, onClick }) => {
   );
 };
 
-const Jobs = () => {
-  const swiperRef = useRef(null); // Create a ref for Swiper
+const Jobs = ({ jobs }) => {
+  const swiperRef = useRef(null);
   const [isModalOpen, setModalOpen] = useState(false);
-  const lenis = useLenis(); // Ref for Lenis instance
+  const [selectedJob, setSelectedJob] = useState(null);
 
-  // Open modal and stop Lenis
-  const handleCardClick = () => {
+  const lenis = useLenis();
+
+  const handleCardClick = (job) => {
     lenis && lenis.stop();
     document.body.style.overflow = "hidden";
+    setSelectedJob(job);
     setModalOpen(true);
-
   };
 
   // Close modal and restart Lenis
@@ -63,6 +62,7 @@ const Jobs = () => {
             slidesPerView={1}
             spaceBetween={150}
             speed={500}
+            loop={true}
             pagination={{
               clickable: true,
             }}
@@ -87,52 +87,22 @@ const Jobs = () => {
             modules={[Pagination]}
             className="MySwiper !px-[5vw]"
           >
-            <SwiperSlide>
-              <JobCard
-                dept={"Sales"}
-                designation={"Territory Sales Manager"}
-                location={"Jaipur"}
-                onClick={handleCardClick}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <JobCard
-                dept={"Marketing"}
-                designation={"Product Manager"}
-                location={"Delhi"}
-                onClick={handleCardClick}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <JobCard
-                dept={"Engineering"}
-                designation={"Senior Safety Manager"}
-                location={"Vadodara"}
-                onClick={handleCardClick}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <JobCard
-                dept={"Sales"}
-                designation={"Territory Sales Manager"}
-                location={"Jaipur"}
-                onClick={handleCardClick}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <JobCard
-                dept={"Sales"}
-                designation={"Territory Sales Manager"}
-                location={"Jaipur"}
-                onClick={handleCardClick}
-              />
-            </SwiperSlide>
+            {jobs.map((job, index) => (
+              <SwiperSlide key={index}>
+                <JobCard
+                  dept={job.jobfields.category}
+                  designation={job.title}
+                  location={job.jobfields.location}
+                  onClick={() => handleCardClick(job)}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
 
-      {/* Render JobDescription Modal */}
-      {isModalOpen && <JobDescription onClose={handleModalClose} />}
+      {isModalOpen && <JobDescription job={selectedJob} onClose={handleModalClose} />}
+      
     </section>
   );
 };

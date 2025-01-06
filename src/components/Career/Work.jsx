@@ -4,6 +4,7 @@ import PrimaryButton from "../Button/PrimaryButton";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const WorkCard = ({ no, heading, src, para, btn, link }) => {
@@ -35,7 +36,6 @@ const Work = () => {
 
   if (globalThis.innerWidth < 1024) {
   } else {
-    
     useGSAP(() => {
       const tl = gsap.timeline({
         scrollTrigger: {

@@ -6,7 +6,6 @@ import gsap from "gsap";
 import styles from './styles.module.css'
 import PrimaryButton from '../Button/PrimaryButton';
 
-
 const ProductCarousel = () => {
   const slidesData = [
     {

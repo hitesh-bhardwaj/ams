@@ -7,8 +7,8 @@ import Layout from "@/components/Layout";
 import { Media } from "@/components/media";
 import BgVideo from "@/components/Layout/BgVideo";
 import { fadeUp, paraAnim } from "@/components/gsapAnimations";
-import MetaData from "@/components/Metadata";
 import { WebpageJsonLd } from "@/lib/json-ld";
+import MetaData from "@/components/Metadata";
 
 const Product = dynamic(() => import("@/components/Home/Product"), {
   loading: () => <p>Loading products...</p>
@@ -20,10 +20,10 @@ const Blog = dynamic(() => import("@/components/Home/Blog"), {
 
 export default function Home() {
   const metadata = {
-    title: "Home – Advanced MedTech Solutions",
+    title: "Home - Advanced MedTech Solutions",
     description: "Transforming global healthcare with advanced, affordable medical solutions. Explore our innovative product range.",
     img: "homepage.png",
-    alt: "Home – Advanced MedTech Solutions",
+    alt: "Home - Advanced MedTech Solutions",
     slug: "",
     date_published: "2020-01-01T00:00",
     date_modified: "2024-12-26T12:32",
