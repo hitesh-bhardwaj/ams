@@ -63,8 +63,8 @@ const AdvastapSpecifications = () => {
           <div className="flex w-full border-b border-[#DADADA] mobile:w-[180vw]">
             <div className="flex-[0.5] p-[1vw] pb-0">Closed Stapler Height</div>
             <div className="flex-1 flex justify-between mobile:w-[100vw] ">
-              <div className="p-[1vw] pb-0   mobile:w-[80vw]">2.15÷0.2mm</div>
-              <div className="p-[1vw] pb-0   w-[20vw] mobile:w-[80vw]">2.25£0.2mm</div>
+              <div className="p-[1vw] pb-0   mobile:w-[80vw]">2.15±0.2mm</div>
+              <div className="p-[1vw] pb-0   w-[20vw] mobile:w-[80vw]">2.25±0.2mm</div>
             </div>
           </div>
 

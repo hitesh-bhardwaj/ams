@@ -54,8 +54,8 @@ const AdvastapLC2 = () => {
           </span>
         </h2>
         <p className="mb-[4vw] text-[1.65vw] tracking-tighter leading-[1.2] mobile:max-w-full tablet:max-w-full mobile:text-[4.75vw] mobile:my-[7vw] flex items-center justify-start mobile:justify-center tablet:justify-center tablet:text-[3vw] tablet:tracking-wider">
-          <span data-para-anim className="mobile:text-center uppercase tracking-wide mobile:tracking-normal font-light mobile:w-[80%]">
-          Stapling Just Got a Third Dimension.
+          <span data-para-anim className="mobile:text-center tracking-wide mobile:tracking-normal font-light mobile:w-[80%]">
+          STAPLING JUST GOT A THIRD DIMENSION.
           </span>
         </p>
       </div>

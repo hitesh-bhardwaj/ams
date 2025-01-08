@@ -92,15 +92,10 @@ export default function FormOem() {
                 <div className="flex mobile:w-full mobile:justify-center ">
                   <p data-para-anim className="text-[1.3vw] mobile:text-[4.5vw] tablet:text-[2.2vw] ">Email:</p>
                   <Link href="mailto:OEMservices@AMS.com" className="text-[1.3vw] mobile:text-[4.5vw] tablet:text-[2.2vw] fadeUp">
-                    <span className="block">OEMservices@AMS.com</span>
+                    <span className="block">oemsolutions@amsltd.com</span>
                   </Link>
                 </div>
-                <div className="flex mobile:w-full mobile:justify-center">
-                  <p className="text-[1.3vw] mobile:text-[4.5vw] tablet:text-[2.2vw]">Phone:</p>
-                  <Link href="tel:+91 25145 66145" className="text-[1.3vw] mobile:text-[4.5vw] tablet:text-[2.2vw] fadeUp">
-                    <span className="block">+91 25145 66145</span>
-                  </Link>
-                </div>
+                
               </div>
             </div>
 

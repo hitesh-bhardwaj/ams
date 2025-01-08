@@ -50,7 +50,7 @@ const PolypropyleneSpecifications = () => {
         </div>
 
         <div className="p-[1vw]  pb-0 w-[30vw] tablet:w-[55vw] mobile:w-[70vw]">
-        ~ 930 КРА
+        ~ 930 KPA
 
         </div>
       </div>
@@ -73,18 +73,18 @@ const PolypropyleneSpecifications = () => {
         <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[25vw] mobile:w-[50vw]">ADVAP0611
 
         </div>
-        <div className=" flex justify-start gap-[16vw] mobile:gap-[22vw] ">
-          <div className="p-[1vw] pb-0 ">Polypropylene (6 cm x 11 cm)
+        <div className=" flex justify-start gap-0 mobile:gap-[25vw] ">
+          <div className="p-[1vw] pb-0 w-[35vw] tablet:w-[50vw]">Polypropylene (6 cm x 11 cm)
           </div>
-          <div className="p-[1vw] pb-0 "> 3
+          <div className="p-[1vw] pb-0 flex justify-end w-full"> 3
           </div>
         </div>
       </div>
 
       <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
         <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[25vw] mobile:w-[50vw]">ADVAP1015</div>
-        <div className=" flex justify-start gap-[15.2vw] tablet:gap-[30vw] mobile:gap-[38vw]">
-          <div className="p-[1vw] pb-0 ">Polypropylene (10 cm x 15 cm)
+        <div className=" flex justify-start  mobile:gap-[25vw]">
+          <div className="p-[1vw] pb-0 w-[35vw] tablet:w-[50vw]">Polypropylene (10 cm x 15 cm)
 
           </div>
           <div className="p-[1vw]  pb-0">3</div>
@@ -93,8 +93,8 @@ const PolypropyleneSpecifications = () => {
 
       <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
         <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[25vw] mobile:w-[50vw]">ADVAP7615</div>
-        <div className=" flex justify-start gap-[15vw] mobile:gap-[25vw] ">
-          <div className="p-[1vw] pb-0 ">Polypropylene (7.6 cm x 15 cm)
+        <div className=" flex justify-start gap-0 mobile:gap-[25vw] ">
+          <div className="p-[1vw] pb-0 w-[35vw] tablet:w-[50vw]">Polypropylene (7.6 cm x 15 cm)
           </div>
           <div className="p-[1vw] pb-0 ">3</div>
         </div>
@@ -102,32 +102,32 @@ const PolypropyleneSpecifications = () => {
       <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
         <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[25vw] mobile:w-[50vw]">ADVAP1010
         </div>
-        <div className=" flex justify-start gap-[15.5vw] mobile:gap-[25vw] ">
-          <div className="p-[1vw] pb-0 ">Polypropylene (10 cm x 10 cm)
+        <div className=" flex justify-start gap-0 mobile:gap-[25vw] ">
+          <div className="p-[1vw] pb-0 w-[35vw] tablet:w-[50vw]">Polypropylene (10 cm x 10 cm)
           </div>
           <div className="p-[1vw] pb-0 ">3</div>
         </div>
       </div>
       <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
         <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[25vw] mobile:w-[50vw]">ADVAP1515</div>
-        <div className=" flex justify-start gap-[15.5vw] mobile:gap-[26vw] ">
-          <div className="p-[1vw]  pb-0">Polypropylene (15 cm x 15 cm)</div>
+        <div className=" flex justify-start gap-0 mobile:gap-[25vw] ">
+          <div className="p-[1vw]  pb-0 w-[35vw] tablet:w-[50vw]">Polypropylene (15 cm x 15 cm)</div>
           <div className="p-[1vw]  pb-0">3</div>
         </div>
       </div>
       <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
         <div className=" p-[1vw]  pb-0 w-[20vw] tablet:w-[25vw] mobile:w-[50vw]">ADVAP1520
         </div>
-        <div className=" flex justify-start gap-[15.5vw] mobile:gap-[26vw] ">
-          <div className="p-[1vw] pb-0 ">Polypropylene (15 cm x 20 cm)
+        <div className=" flex justify-start gap-0 mobile:gap-[25vw] ">
+          <div className="p-[1vw] pb-0 w-[35vw] tablet:w-[50vw]">Polypropylene (15 cm x 20 cm)
           </div>
           <div className="p-[1vw] pb-0 ">3</div>
         </div>
       </div>
       <div className="flex w-full border-b border-[#DADADA] mobile:w-[130vw]">
         <div className=" p-[1vw] pb-0 w-[20vw] tablet:w-[25vw] mobile:w-[50vw]">ADVAP3030</div>
-        <div className=" flex justify-start gap-[15vw] mobile:gap-[26vw] ">
-          <div className="p-[1vw]  pb-0">Polypropylene (30 cm x 30 cm)</div>
+        <div className=" flex justify-start gap-0 mobile:gap-[25vw] ">
+          <div className="p-[1vw]  pb-0 w-[35vw] tablet:w-[50vw]">Polypropylene (30 cm x 30 cm)</div>
           <div className="p-[1vw]  pb-0">1</div>
         </div>
       </div>

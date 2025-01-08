@@ -21,13 +21,13 @@ const surgicalData = [
   },
   {
     img: "/assets/advastapcs/surgical-card3.png",
-    para: "Ensures secure closures & reduces post-surgical complications.",
-    title:"Minimal Anastomotic Leakage"
+    para: "Minimal Leakage , fewer complications.",
+    title:"Uniform Compression Strong Anastomosis"
   },
   {
     img: "/assets/advastapcs/surgical-card4.png",
     para: "Ensures long-term surgical success.",
-    title:"Decreased Recurrence Rates"
+    title:"Superior Hemostatic Effect"
   },
   
 ];
