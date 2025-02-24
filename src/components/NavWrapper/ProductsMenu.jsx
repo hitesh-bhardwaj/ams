@@ -31,6 +31,7 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
                 className=""
                 linkText="Wound Care"
                 onClick={() => onSelectMenu("wound-care")}
+                onMouseEnter={()=>onSelectMenu('wound-care')}
               />
             </li>
             <li>
@@ -38,6 +39,7 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
                 className=""
                 linkText="Interventional Cardiology"
                 onClick={() => onSelectMenu("interventional-cardiology")}
+                onMouseEnter={()=>onSelectMenu('interventional-cardiology')}
               />
             </li>
             <li>
@@ -45,6 +47,7 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
                 className=""
                 linkText="Cardiac Surgery"
                 onClick={() => onSelectMenu("cardiac-surgery")}
+                onMouseEnter={()=>onSelectMenu('cardiac-surgery')}
               />
             </li>
             <li>
@@ -52,6 +55,7 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
                 className=""
                 linkText="Endo Surgery"
                 onClick={() => onSelectMenu("endo-surgery")}
+                onMouseEnter={()=>onSelectMenu('endo-surgery')}
               />
             </li>
             <li>
@@ -59,6 +63,7 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
                 className=""
                 linkText="Hernia Solutions"
                 onClick={() => onSelectMenu("hernia-solutions")}
+                onMouseEnter={()=>onSelectMenu('hernia-solutions')}
               />
             </li>
 
