@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Media } from "../media";
-import NavWrapper from "../NavWrapper";
+import NavWrapper from "../NavWrapper/index";
 
 gsap.registerPlugin(useGSAP);
 
@@ -165,7 +165,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               </div>
             </div>
 
-            <div className="col-start-5 row-span-5 h-full col-span-12 nav row-start-2 mobile:col-start-1 mobile:row-start-2 mobile:col-span-12 mobile:mt-[-15vw]">
+            <div className="col-start-4 row-span-5 pl-[3vw] h-full col-span-12 nav row-start-2 mobile:col-start-1 mobile:row-start-2 mobile:col-span-12 mobile:mt-[-15vw] tablet:pl-[7vw]">
               <NavWrapper isMenuOpen={isMenuOpen} />
               <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center mobile:w-[85%] mobile:bottom-10">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">

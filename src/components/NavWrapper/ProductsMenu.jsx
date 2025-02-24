@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { NavButton, NavLink } from "./NavLink";
 import { ArrowLeft } from "lucide-react";
 
-export default function ProductsMenu({ onBack, onSelectMenu }) {
+export default function ProductsMenu({ onBack, onSelectMenu ,onSelectSubMenu}) {
   const menuRef = useRef(null);
 
   useEffect(() => {
@@ -30,40 +30,40 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
               <NavButton
                 className=""
                 linkText="Wound Care"
-                onClick={() => onSelectMenu("wound-care")}
-                onMouseEnter={()=>onSelectMenu('wound-care')}
+              
+                onMouseEnter={()=>onSelectSubMenu('wound-care')}
               />
             </li>
             <li>
               <NavButton
                 className=""
                 linkText="Interventional Cardiology"
-                onClick={() => onSelectMenu("interventional-cardiology")}
-                onMouseEnter={()=>onSelectMenu('interventional-cardiology')}
+                
+                onMouseEnter={()=>onSelectSubMenu('interventional-cardiology')}
               />
             </li>
             <li>
               <NavButton
                 className=""
                 linkText="Cardiac Surgery"
-                onClick={() => onSelectMenu("cardiac-surgery")}
-                onMouseEnter={()=>onSelectMenu('cardiac-surgery')}
+              
+                onMouseEnter={()=>onSelectSubMenu('cardiac-surgery')}
               />
             </li>
             <li>
               <NavButton
                 className=""
                 linkText="Endo Surgery"
-                onClick={() => onSelectMenu("endo-surgery")}
-                onMouseEnter={()=>onSelectMenu('endo-surgery')}
+               
+                onMouseEnter={()=>onSelectSubMenu('endo-surgery')}
               />
             </li>
             <li>
               <NavButton
                 className=""
                 linkText="Hernia Solutions"
-                onClick={() => onSelectMenu("hernia-solutions")}
-                onMouseEnter={()=>onSelectMenu('hernia-solutions')}
+            
+                onMouseEnter={()=>onSelectSubMenu('hernia-solutions')}
               />
             </li>
 
@@ -72,6 +72,7 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
                 className="font-light"
                 href="/products/oem"
                 linkText="OEM Solutions"
+                onMouseEnter={()=>onSelectSubMenu(null)}
               />
             </li>
             <li>
@@ -79,6 +80,7 @@ export default function ProductsMenu({ onBack, onSelectMenu }) {
                 className="font-light"
                 href="/r-and-d/suture-needle-technology"
                 linkText="Advanced Needle Technology"
+                onMouseEnter={()=>onSelectSubMenu(null)}
               />
             </li>
           </ul>
