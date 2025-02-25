@@ -17,6 +17,7 @@ export default function NavWrapper({ isMenuOpen }) {
   useEffect(() => {
     if (!isMenuOpen) {
       setCurrentMenu(null);
+      setCurrentSubMenu(null);
     }
   }, [isMenuOpen]);
 
