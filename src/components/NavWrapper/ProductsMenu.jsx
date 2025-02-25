@@ -60,9 +60,9 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
           { height: "auto", opacity: 1, duration: 0.5, ease: "power2.out" }
         );
         gsap.to(
-          iconsRefs.current[newMenu],{
-            
-          }
+          iconsRefs.current[newMenu], {
+
+        }
         )
       }
 
@@ -72,7 +72,7 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
 
   return (
     <div
-      className={`flex gap-5 items-start mobile:flex-col tablet:flex-col ${windowWidth < 768 ? "mobile:pt-[10vw]" : ""}`}
+      className={`flex gap-5 mobile:gap-3 items-start mobile:flex-col tablet:flex-col ${windowWidth < 768 ? "mobile:pt-[10vw]" : ""}`}
       ref={menuRef}
     >
       <button
@@ -84,14 +84,14 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
       <div>
         {mobileWidth ? (
           <div className="flex items-start gap-[3vw] pt-1 mobile:flex-col mobile:gap-[5vw]">
-            <ul className="space-y-[0.2vw] mobile:space-y-1 aeonik">
+            <ul className="space-y-[0.5vw] mobile:space-y-1 aeonik">
               {/* ✅ Wound Care */}
               <li>
                 <div className="flex gap-[3vw] items-center">
                   <NavLink
                     linkText="Wound Care"
                     href="/products/wound-care"
-                    className="!text-[6vw] tablet:!text-[4vw]"
+                    className="!text-[5.5vw] tablet:!text-[3.5vw]"
                   />
                   <span
                     className="text-[9vw] leading-[0.9] mt-[-1vw] font-extralight cursor-pointer tablet:text-[6vw] "
@@ -148,7 +148,7 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                   <NavLink
                     linkText="Interventional Cardiology"
                     href="/products/interventional-cardiology"
-                    className="!text-[6vw]  tablet:!text-[4vw]"
+                    className="!text-[5.5vw]  tablet:!text-[3.5vw]"
                   />
                   <span
                     className="text-[9vw] leading-[0.9] mt-[-1vw] font-light cursor-pointer tablet:text-[6vw]"
@@ -200,7 +200,7 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                   <NavLink
                     linkText="Cardiac Surgery"
                     href="/products/cardiac-surgery"
-                    className="!text-[6vw]  tablet:!text-[4vw]"
+                    className="!text-[5.5vw] tablet:!text-[4vw]"
                   />
                   <span
                     className="text-[9vw] leading-[0.9] mt-[-1vw] font-light cursor-pointer tablet:text-[6vw]"
@@ -215,7 +215,7 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                   style={{ height: 0, opacity: 0 }}
                 >
                   <div className="w-full h-[1px] bg-black/30 mobile:my-[3vw] tablet:my-[1vw] ml-[-2vw]"></div>
-                  <ul className="space-y-[0.2vw] mobile:space-y-1">
+                  <ul className="space-y-[0.2vw] pb-[2vw]">
                     <li>
                       <NavLink
                         className=""
@@ -233,12 +233,13 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                   </ul>
                 </div>
               </li>
+
               <li>
                 <div className="flex gap-[3vw] items-center">
                   <NavLink
                     linkText="Endo Surgery"
                     href="/products/endo-surgery"
-                    className="!text-[6vw]  tablet:!text-[4vw]"
+                    className="!text-[5.5vw] tablet:!text-[3.5vw]"
                   />
                   <span
                     className="text-[9vw] leading-[0.9] mt-[-1vw] font-light cursor-pointer tablet:text-[6vw]"
@@ -306,12 +307,13 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                   </ul>
                 </div>
               </li>
+
               <li>
                 <div className="flex gap-[3vw] items-center">
                   <NavLink
                     linkText="Hernia Solutions"
                     href="/products/hernia-solutions"
-                    className="!text-[6vw]  tablet:!text-[4vw]"
+                    className="!text-[5.5vw] tablet:!text-[3.5vw]"
                   />
                   <span
                     className="text-[9vw] leading-[0.9] mt-[-1vw] font-light cursor-pointer tablet:text-[6vw]"
@@ -330,7 +332,7 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                     <li>
                       <a
                         href="/hernia-solutions/advamesh-hernia-mesh#polypropylene-mesh"
-                        className={`text-[1.3vw] fade-in-0 leading-tight text-body tablet:text-[2.3vw] mobile:text-[5vw] overflow-hidden block relative group aeonik font-light `}
+                        className={`text-[1.3vw] fade-in-0 leading-tight text-body tablet:text-[3vw] mobile:text-[5vw] overflow-hidden block relative group aeonik font-light `}
                       >
                         <span
                           data-attr="Polypropylene"
@@ -343,7 +345,7 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                     <li>
                       <a
                         href="/hernia-solutions/advamesh-hernia-mesh#medium-weight-mesh"
-                        className={`text-[1.3vw] fade-in-0 leading-tight text-body tablet:text-[2.3vw] mobile:text-[5vw] overflow-hidden block relative group aeonik font-light `}
+                        className={`text-[1.3vw] fade-in-0 leading-tight text-body tablet:text-[3vw] mobile:text-[5vw] overflow-hidden block relative group aeonik font-light `}
                       >
                         <span
                           data-attr="Medium Weight"
@@ -356,7 +358,7 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                     <li>
                       <a
                         href="/hernia-solutions/advamesh-hernia-mesh#macroporous-mesh"
-                        className={`text-[1.3vw] fade-in-0 leading-tight text-body tablet:text-[2.3vw] mobile:text-[5vw] overflow-hidden block relative group aeonik font-light `}
+                        className={`text-[1.3vw] fade-in-0 leading-tight text-body tablet:text-[3vw] mobile:text-[5vw] overflow-hidden block relative group aeonik font-light `}
                       >
                         <span
                           data-attr="Macroporous"
@@ -369,16 +371,18 @@ export default function ProductsMenu({ onBack, onSelectSubMenu }) {
                   </ul>
                 </div>
               </li>
+
               <li>
                 <NavLink
-                  className="font-light !text-[6vw]  tablet:!text-[4vw]"
+                  className="font-light !text-[5.5vw] tablet:!text-[3.5vw]"
                   href="/products/oem"
                   linkText="OEM Solutions"
                 />
               </li>
+
               <li>
                 <NavLink
-                  className="font-light !text-[6vw]  tablet:!text-[4vw]"
+                  className="font-light !text-[5.5vw]  tablet:!text-[3.5vw]"
                   href="/r-and-d/suture-needle-technology"
                   linkText="Advanced Needle Technology"
                 />

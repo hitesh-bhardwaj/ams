@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { ArrowLeft } from "lucide-react";
 import { NavLink } from "./NavLink";
 
 export default function CardiacSurgeryMenu({ onBack }) {
