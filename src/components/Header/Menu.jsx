@@ -104,7 +104,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
         ref={mainMenu}
         className={`w-screen h-screen fixed left-0 z-[100] top-[-100%] mobile:h-full mobile:w-full`}
       >
-        <div className="bg-white h-[75%] w-full relative tablet:h-1/2 mobile:h-full menu" ref={mainMenuRef}>
+        <div className="bg-white h-[75%] w-full relative tablet:h-4/5 mobile:h-full menu" ref={mainMenuRef}>
           <Media greaterThan="mobile">
             <div className="w-[25%] tablet:w-[28%] h-full absolute">
               <video
@@ -117,7 +117,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               ></video>
             </div>
           </Media>
-          <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-14 grid-rows-6 tablet:grid-rows-5 tablet:h-[50vh] mobile:grid-cols-12">
+          <div className="menu-container relative z-[1] w-full h-full px-[5%] py-[3%] grid grid-cols-14 grid-rows-6 tablet:grid-rows-5 tablet:h-[80vh] mobile:grid-cols-12">
             <div className="w-[15vw] h-[2vw] absolute bottom-[5%] left-[4%] fadeUp tablet:h-[5vw] tablet:w-[20vw]">
               <Image
                 src="/assets/header/ams-slogan.webp"
@@ -165,7 +165,7 @@ const Menu = ({ isMenuOpen, toggleMenu }) => {
               </div>
             </div>
 
-            <div className="col-start-4 row-span-5 pl-[3vw] h-full col-span-12 nav row-start-2 mobile:col-start-1 mobile:row-start-2 mobile:col-span-12 mobile:mt-[-15vw] tablet:pl-[7vw]">
+            <div className="col-start-4 row-span-5 pl-[3vw] h-full col-span-12 nav row-start-2 mobile:col-start-1 mobile:row-start-2 mobile:col-span-12 mobile:mt-[-15vw] tablet:pl-[7vw] tablet:mt-[-10vw]">
               <NavWrapper isMenuOpen={isMenuOpen} />
               <div className="flex justify-between items-center w-[60vw] absolute bottom-[7%] mobile:items-center mobile:justify-center mobile:w-[85%] mobile:bottom-10">
                 <div className="aeonik text-[0.9vw] text-[#1a1a1a] font-light space-x-2 tablet:text-[1.8vw] mobile:text-[2.5vw] mobile:hidden">

@@ -87,14 +87,14 @@ function MainNav({ onSelectMenu }) {
     <ul className="space-y-[0.3vw] mobile:space-y-[2vw] border-r pr-[3vw] border-[#d8d8d8] py-5 main-nav tablet:border-none mobile:border-none tablet:pl-[3vw] mobile:pt-[20vw]">
       <li>
         <NavLink
-          className="text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[6vw]"
+          className="text-[1.5vw] tablet:!text-[4vw] mobile:!text-[6vw]"
           href={"/"}
           linkText="Home"
         />
       </li>
       <li>
         <NavLink
-          className="text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[6vw]"
+          className="text-[1.5vw] tablet:!text-[4vw] mobile:!text-[6vw]"
           href={"/about-us"}
           linkText="About"
           prefetch={false}
@@ -104,7 +104,7 @@ function MainNav({ onSelectMenu }) {
         <button
           onClick={() => onSelectMenu("products")}
           onMouseEnter={() => onSelectMenu("products")}
-          className={`text-[1.5vw] fade-in-0 leading-tight text-body tablet:text-[2.5vw] mobile:text-[6vw] overflow-hidden block relative group aeonik font-light`}
+          className={`text-[1.5vw] fade-in-0 leading-tight text-body tablet:text-[4vw] mobile:text-[6vw] overflow-hidden block relative group aeonik font-light`}
         >
           <span
             data-attr="Products"
@@ -112,48 +112,48 @@ function MainNav({ onSelectMenu }) {
           >
             Products
           </span>
-          <ChevronRight className="inline-block w-[1.5vw] tablet:w-[2.5vw] mobile:w-[5vw] text-current mb-[1%] stroke-[1.2px]" />
+          <ChevronRight className="inline-block w-[1.5vw] tablet:w-[4vw] mobile:w-[5vw] text-current mb-[1%] stroke-[1.2px]" />
         </button>
       </li>
 
       <li>
         <NavLink
-          className="text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[6vw]"
+          className="text-[1.5vw] tablet:!text-[4vw] mobile:!text-[6vw]"
           href={"/manufacturing"}
           linkText="Manufacturing "
         />
       </li>
       <li>
         <NavLink
-          className="text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[6vw]"
+          className="text-[1.5vw] tablet:!text-[4vw] mobile:!text-[6vw]"
           href={"/research-and-development"}
           linkText="Research and Development "
         />
       </li>
       <li>
         <NavLink
-          className="text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[6vw]"
+          className="text-[1.5vw] tablet:!text-[4vw] mobile:!text-[6vw]"
           href={"/advanced-medtech-academy-ama"}
           linkText="Advanced MedTech Academy"
         />
       </li>
       <li>
         <NavLink
-          className="text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[6vw]"
+          className="text-[1.5vw] tablet:!text-[4vw] mobile:!text-[6vw]"
           href={"/career"}
           linkText="Career"
         />
       </li>
       <li>
         <NavLink
-          className="text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[6vw]"
+          className="text-[1.5vw] tablet:!text-[4vw] mobile:!text-[6vw]"
           href={"/newsroom"}
           linkText="Newsroom"
         />
       </li>
       <li>
         <NavLink
-          className="text-[1.5vw] tablet:!text-[2.5vw] mobile:!text-[6vw]"
+          className="text-[1.5vw] tablet:!text-[4vw] mobile:!text-[6vw]"
           href={"/contact-us"}
           linkText="Contact"
         />
